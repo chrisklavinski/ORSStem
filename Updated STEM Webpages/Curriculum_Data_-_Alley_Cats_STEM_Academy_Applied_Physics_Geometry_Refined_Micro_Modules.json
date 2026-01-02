@@ -1,0 +1,1990 @@
+{
+  "curriculumTitle": "Alley Cats STEM Academy: Applied Physics & Geometry (Refined Micro-Modules)",
+  "overview": "A rigorous, experiential learning curriculum situated in a 'living laboratory' environment (Bowling, Mini-Golf, Arcade). This curriculum is specifically designed for DOE TRIO programs to ensure strict separation between entertainment and education. It utilizes 21 distinct micro-activities to satisfy HEA requirements for instruction in mathematics and science. Students engage in data acquisition, statistical analysis, and geometric modeling using high-interest mechanics.",
+  "prerequisites": "Completion of Algebra I; concurrent enrollment or completion of high school Physical Science or Physics recommended.",
+  "targetAgeGroup": "High School (Ages 14-18)",
+  "totalDurationEstimate": "12.5 Hours (Total Instructional Time)",
+  "fieldTrips": [
+    {
+      "name": "Alley Cats Entertainment",
+      "location": "Arlington or Hurst, TX (Tarrant County)",
+      "description": "A multi-attraction venue housing bowling lanes, miniature golf courses, and an arcade. The venue serves as the physics laboratory for this curriculum.",
+      "relevanceToCurriculum": "The facility provides the necessary apparatus (lanes, inclined planes, projectile launchers) to conduct kinematics and geometry experiments that cannot be replicated in a standard classroom."
+    }
+  ],
+  "activities": [
+    {
+      "title": "Bowling Module 1: The Need for Speed (Kinematics)",
+      "description": "Students utilize the bowling lane as a friction-variable track to calculate average velocity, differentiating between the oil pattern (slide) and the dry backend (roll).",
+      "timeRequired": "45 Minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Stopwatch manipulation",
+        "Algebraic substitution",
+        "Unit conversion"
+      ],
+      "learningObjectives": [
+        "Measure time accurately using digital stopwatches.",
+        "Calculate average velocity using v = d/t.",
+        "Convert units from feet/second to meters/second."
+      ],
+      "teks": [
+        "Physics 4(B): Describe and analyze motion in one dimension using equations.",
+        "Physics 2(E): Design and implement investigative procedures."
+      ],
+      "texasStemStandards": [
+        "STEM Skills: Data acquisition and measurement.",
+        "STEM Content: Application of scientific laws."
+      ],
+      "materialsList": [
+        {
+          "item": "Digital Stopwatch",
+          "estimatedCost": "$0 (Student Phone)"
+        },
+        {
+          "item": "Lane Rental (Lab Fee)",
+          "estimatedCost": "$2.00 per student"
+        },
+        {
+          "item": "Data Collection Log",
+          "estimatedCost": "$0.10"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Assign 4-5 students per lane.",
+          "Define lane distance (60ft / 18.28m).",
+          "Supervise data collection."
+        ],
+        "detailed": [
+          "Explain that the distance from the foul line to the head pin is exactly 60 feet.",
+          "Instruct students to convert 60 feet to meters (approx 18.28m) before calculation.",
+          "Ensure students differentiate between the time the ball is released and when it crosses the foul line."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Roll ball 3 times.",
+          "Time from foul line to impact.",
+          "Calculate velocity."
+        ],
+        "detailed": [
+          "Designate one timer and one recorder per roll.",
+          "Roll the ball attempting to keep it on the lane.",
+          "Record the time elapsed from the moment the ball crosses the foul line until it hits the pins.",
+          "Calculate Velocity (v) = 18.28m / Time (s).",
+          "Average the velocity of three distinct rolls."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science",
+          "Exposure to STEM Careers"
+        ],
+        "allowableCosts": [
+          "Field Trips (Facility Rental/Lab Fees)",
+          "Instructional Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Provides rigorous laboratory science instruction mandated by the HEA. Cost of bowling is allowable as a facility rental fee for educational purposes.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in mathematics and science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Curriculum in math/science"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.405 - Allocable costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Kinematics (Velocity)",
+        "technology": "Precision Timing",
+        "engineering": "Ballistics",
+        "math": "Algebra I",
+        "crossCurricularLinks": [
+          "Physical Education"
+        ]
+      },
+      "careerPathways": [
+        "Mechanical Engineer",
+        "Kinesiologist",
+        "Sports Data Analyst"
+      ],
+      "collegePathways": [
+        "BS in Physics",
+        "BS in Mechanical Engineering"
+      ]
+    },
+    {
+      "title": "Bowling Module 2: Heavy Hitters (Momentum & Energy)",
+      "description": "Students analyze the relationship between mass and momentum by using bowling balls of varying weights (8lb vs 14lb) to observe impact force and pin scatter.",
+      "timeRequired": "45 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Vector multiplication",
+        "Observation",
+        "Hypothesis generation"
+      ],
+      "learningObjectives": [
+        "Calculate momentum (p=mv).",
+        "Compare Kinetic Energy (KE=0.5mv^2) vs Momentum.",
+        "Observe elastic vs inelastic collisions."
+      ],
+      "teks": [
+        "Physics 6(C): Calculate the mechanical energy of, power generated within, and momentum of a physical system.",
+        "Physics 6(D): Demonstrate and apply the laws of conservation of energy and momentum."
+      ],
+      "texasStemStandards": [
+        "STEM Fluency: Critical Thinking and Problem Solving."
+      ],
+      "materialsList": [
+        {
+          "item": "House Balls (8lb, 14lb)",
+          "estimatedCost": "$0 (Included in rental)"
+        },
+        {
+          "item": "Calculator",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Select balls with 4lb+ weight difference.",
+          "Review momentum formula.",
+          "Monitor safety."
+        ],
+        "detailed": [
+          "Instruct students to find a 'Light' ball (6-8lbs) and a 'Heavy' ball (12-14lbs).",
+          "Remind students that mass must be converted from lbs to kg (1 lb = 0.453 kg).",
+          "Ask students to attempt to throw both balls at the same speed."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Weigh balls and convert to kg.",
+          "Roll both balls.",
+          "Calculate momentum.",
+          "Compare pin scatter."
+        ],
+        "detailed": [
+          "Record the mass of Ball A and Ball B in kg.",
+          "Roll Ball A and use previous timing method to determine velocity.",
+          "Calculate Momentum (p) = mass * velocity.",
+          "Repeat for Ball B.",
+          "Qualitatively describe the sound and pin scatter difference between the two balls."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Field Trips"
+        ],
+        "programType": "Both",
+        "justification": "Direct application of Newton's laws and conservation of momentum.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in Science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Science Component"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404 - Reasonable costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Dynamics (Newton's Laws)",
+        "technology": "N/A",
+        "engineering": "Impact Engineering",
+        "math": "Linear Equations",
+        "crossCurricularLinks": [
+          "Automotive Safety"
+        ]
+      },
+      "careerPathways": [
+        "Automotive Safety Engineer",
+        "Physicist"
+      ],
+      "collegePathways": [
+        "BS in Applied Physics",
+        "BS in Material Science"
+      ]
+    },
+    {
+      "title": "Bowling Module 3: Coefficient of Friction",
+      "description": "Students calculate the coefficient of kinetic friction between the bowling ball and the oiled lane surface by observing deceleration.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Force diagrams",
+        "Solving for unknowns",
+        "Kinematic equations"
+      ],
+      "learningObjectives": [
+        "Calculate negative acceleration (deceleration).",
+        "Solve for mu (kinetic friction coefficient).",
+        "Understand tribology (study of friction)."
+      ],
+      "teks": [
+        "Physics 4(D): Calculate the effect of forces on objects, including friction.",
+        "Physics 4(F): Identify and describe motion relative to different frames of reference."
+      ],
+      "texasStemStandards": [
+        "STEM Content: Materials Science."
+      ],
+      "materialsList": [
+        {
+          "item": "Stopwatch",
+          "estimatedCost": "$0"
+        },
+        {
+          "item": "Lane Rental",
+          "estimatedCost": "Included"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain oil patterns.",
+          "Measure time at two intervals (0-30ft, 30-60ft).",
+          "Calculate deceleration."
+        ],
+        "detailed": [
+          "The lane is oiled heavily in the first 40ft and dry in the back 20ft.",
+          "Have students time the ball for the first half of the lane and the second half.",
+          "Use the difference in velocity to find deceleration (a).",
+          "Use F=ma and F_f = mu*N to solve for mu."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Time first half of lane.",
+          "Time second half.",
+          "Calculate change in velocity.",
+          "Solve for Friction Coefficient."
+        ],
+        "detailed": [
+          "Set up two timers: one for 0-30ft mark, one for 30-60ft mark.",
+          "Calculate v1 (initial) and v2 (final).",
+          "Calculate acceleration a = (v2 - v1) / t.",
+          "Assuming flat lane, a = -mu * g. Solve for mu."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Field Trips"
+        ],
+        "programType": "UBMS",
+        "justification": "Advanced physics concepts involving forces and tribology.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in Science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Lab Science"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.405 - Allocable"
+        ]
+      },
+      "stemConnections": {
+        "science": "Tribology (Friction)",
+        "technology": "Lubricants",
+        "engineering": "Chemical Engineering",
+        "math": "Algebra II",
+        "crossCurricularLinks": [
+          "Chemistry (Polymers)"
+        ]
+      },
+      "careerPathways": [
+        "Chemical Engineer",
+        "Petroleum Engineer"
+      ],
+      "collegePathways": [
+        "BS in Chemical Engineering",
+        "BS in Physics"
+      ]
+    },
+    {
+      "title": "Bowling Module 4: Rotational Energy (Spin)",
+      "description": "Students estimate the angular velocity (RPM) of a bowling ball to calculate its rotational kinetic energy compared to its translational kinetic energy.",
+      "timeRequired": "30 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Estimation",
+        "Rotational physics formulas",
+        "Video analysis"
+      ],
+      "learningObjectives": [
+        "Estimate Revolutions Per Minute (RPM).",
+        "Calculate Rotational KE (0.5 * I * w^2).",
+        "Discuss moment of inertia for a solid sphere."
+      ],
+      "teks": [
+        "Physics 5(B): Describe and analyze motion in one dimension using equations (extended to rotational).",
+        "Physics 6(D): Conservation of Energy."
+      ],
+      "texasStemStandards": [
+        "STEM Skills: Systems thinking."
+      ],
+      "materialsList": [
+        {
+          "item": "Smartphone Camera (Slow Mo)",
+          "estimatedCost": "$0"
+        },
+        {
+          "item": "Tape (to mark ball)",
+          "estimatedCost": "$0.05"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Place tape on ball for visibility.",
+          "Film the roll.",
+          "Count rotations."
+        ],
+        "detailed": [
+          "Use a piece of contrasting tape on the finger holes.",
+          "Film the ball rolling down the lane.",
+          "Count how many full rotations occur in 1 second.",
+          "Convert Rotations Per Second to Radians Per Second."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Mark ball.",
+          "Film roll.",
+          "Calculate angular velocity (w).",
+          "Calculate Rotational KE."
+        ],
+        "detailed": [
+          "Review video to count rotations (N) in time (t).",
+          "Calculate w = 2 * pi * (N/t).",
+          "Assume ball is a solid sphere (I = 0.4 * m * r^2).",
+          "Calculate Rotational KE = 0.5 * I * w^2."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Math",
+          "Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Application of rotational mechanics and energy conservation.",
+        "heaRequirements": [
+          "Sec. 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403"
+        ]
+      },
+      "stemConnections": {
+        "science": "Rotational Dynamics",
+        "technology": "High-speed Imaging",
+        "engineering": "Mechanical Systems",
+        "math": "Calculus Concepts",
+        "crossCurricularLinks": [
+          "Media Tech"
+        ]
+      },
+      "careerPathways": [
+        "Mechanical Engineer",
+        "Robotics Technician"
+      ],
+      "collegePathways": [
+        "BS in Mechanical Engineering"
+      ]
+    },
+    {
+      "title": "Bowling Module 5: Acoustic Physics (Speed of Sound)",
+      "description": "Students measure the delay between seeing the pins hit and hearing the crash to calculate the speed of sound.",
+      "timeRequired": "30 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Critical timing",
+        "Error analysis",
+        "Distance measurement"
+      ],
+      "learningObjectives": [
+        "Calculate speed of sound in air.",
+        "Understand the difference between light speed (instant) and sound speed.",
+        "Analyze experimental error."
+      ],
+      "teks": [
+        "Physics 7(A): Examine and describe oscillatory motion and wave propagation.",
+        "Physics 7(B): Investigate and analyze characteristics of waves."
+      ],
+      "texasStemStandards": [
+        "STEM Skills: Investigation."
+      ],
+      "materialsList": [
+        {
+          "item": "Stopwatch",
+          "estimatedCost": "$0"
+        },
+        {
+          "item": "Tape Measure (Long)",
+          "estimatedCost": "$5.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Stand far from the pins (behind settee).",
+          "Time visual impact vs auditory arrival.",
+          "Calculate speed."
+        ],
+        "detailed": [
+          "The distance needs to be significant (e.g., 80-100ft from pins).",
+          "Students watch for the ball hitting pins (start timer).",
+          "Students stop timer when they hear the crash.",
+          "Discuss human reaction time error vs actual travel time."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Measure distance to pins.",
+          "Time the delay.",
+          "Calculate speed.",
+          "Compare to 343 m/s."
+        ],
+        "detailed": [
+          "Stand as far back as possible.",
+          "Start timer when you SEE the impact.",
+          "Stop timer when you HEAR the impact.",
+          "Calculate Speed = Distance / Time.",
+          "Calculate percent error against standard speed of sound (343 m/s)."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Field Trips"
+        ],
+        "programType": "Both",
+        "justification": "Wave physics and experimental error analysis.",
+        "heaRequirements": [
+          "Sec. 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403"
+        ]
+      },
+      "stemConnections": {
+        "science": "Acoustics",
+        "technology": "Audio Engineering",
+        "engineering": "Soundproofing",
+        "math": "Algebra",
+        "crossCurricularLinks": [
+          "Music"
+        ]
+      },
+      "careerPathways": [
+        "Acoustical Engineer",
+        "Audio Technician"
+      ],
+      "collegePathways": [
+        "BS in Physics",
+        "Music Production"
+      ]
+    },
+    {
+      "title": "Bowling Module 6: Probability of the Spare",
+      "description": "Students record the remaining pin configurations (leaves) after the first ball to calculate the empirical probability of common spares (e.g., the 10-pin, 7-pin).",
+      "timeRequired": "45 Minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Data entry",
+        "Fractions/Percentages",
+        "Categorization"
+      ],
+      "learningObjectives": [
+        "Calculate empirical probability.",
+        "Create frequency tables.",
+        "Analyze data trends."
+      ],
+      "teks": [
+        "Statistics 5(A): Determine the probability of an event.",
+        "Statistics 2(A): Analyze data sets."
+      ],
+      "texasStemStandards": [
+        "STEM Skills: Data Analysis."
+      ],
+      "materialsList": [
+        {
+          "item": "Score Sheet",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Identify pin positions (1-10).",
+          "Record leaves for 20 frames.",
+          "Calculate percentages."
+        ],
+        "detailed": [
+          "Teach the numbering of the pin pyramid (1 is head pin, 7 and 10 are back corners).",
+          "Have students record exactly which pins stand after the first throw.",
+          "Aggregate class data to find the most common 'leave'."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Play game.",
+          "Draw remaining pins.",
+          "Tally results.",
+          "Calculate probabilities."
+        ],
+        "detailed": [
+          "For every frame where a strike is not thrown, draw the remaining pins.",
+          "Count how many times the 7-pin or 10-pin remained.",
+          "Probability = (Specific Leave Occurrences) / (Total Non-Strike Throws).",
+          "Compare with professional PBA statistics."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Math"
+        ],
+        "allowableCosts": [
+          "Field Trips"
+        ],
+        "programType": "Both",
+        "justification": "Introductory statistics and probability data collection.",
+        "heaRequirements": [
+          "Sec. 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.405"
+        ]
+      },
+      "stemConnections": {
+        "science": "N/A",
+        "technology": "Data Science",
+        "engineering": "N/A",
+        "math": "Statistics",
+        "crossCurricularLinks": [
+          "Sociology (Demographics)"
+        ]
+      },
+      "careerPathways": [
+        "Data Analyst",
+        "Statistician"
+      ],
+      "collegePathways": [
+        "BS in Statistics"
+      ]
+    },
+    {
+      "title": "Bowling Module 7: Biomechanics of the Swing",
+      "description": "Students model the arm as a pendulum to analyze period and frequency, discussing how arm length affects swing time.",
+      "timeRequired": "30 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Measurement",
+        "Pendulum physics",
+        "Modeling"
+      ],
+      "learningObjectives": [
+        "Apply pendulum formula T = 2*pi*sqrt(L/g).",
+        "Measure arm length.",
+        "Compare theoretical period to actual swing time."
+      ],
+      "teks": [
+        "Physics 7(A): Period of a pendulum.",
+        "Anatomy & Physiology 6(A): Biomechanics."
+      ],
+      "texasStemStandards": [
+        "STEM Content: Biological systems."
+      ],
+      "materialsList": [
+        {
+          "item": "Tape Measure",
+          "estimatedCost": "$0"
+        },
+        {
+          "item": "Stopwatch",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Measure student arm length (shoulder to ball).",
+          "Time the swing (backswing to release).",
+          "Compare with formula."
+        ],
+        "detailed": [
+          "Model the bowler's arm as a simple pendulum.",
+          "Measure length L in meters.",
+          "Calculate theoretical Period T.",
+          "Have student swing arm naturally and time it.",
+          "Discuss why muscles (torque) make it different from a free pendulum."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Measure arm.",
+          "Calculate T.",
+          "Time actual swing.",
+          "Analyze difference."
+        ],
+        "detailed": [
+          "Measure from shoulder pivot to center of hand.",
+          "Use T = 2*pi*sqrt(L/9.8).",
+          "Perform a relaxed swing and time the full cycle.",
+          "Explain why the actual swing might be faster (muscular force)."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Field Trips"
+        ],
+        "programType": "UBMS",
+        "justification": "Biophysics and simple harmonic motion.",
+        "heaRequirements": [
+          "Sec. 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics/Biology",
+        "technology": "Prosthetics",
+        "engineering": "Biomedical Engineering",
+        "math": "Algebra II",
+        "crossCurricularLinks": [
+          "Sports Science"
+        ]
+      },
+      "careerPathways": [
+        "Biomedical Engineer",
+        "Physical Therapist"
+      ],
+      "collegePathways": [
+        "BS in Kinesiology",
+        "BS in Biomedical Engineering"
+      ]
+    },
+    {
+      "title": "Golf Module 1: The Slope of the Green",
+      "description": "Students apply the concept of 'rise over run' to calculate the slope of inclined putting surfaces, simulating civil engineering surveying techniques.",
+      "timeRequired": "30 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Measurement with tape measure",
+        "Division",
+        "Estimation"
+      ],
+      "learningObjectives": [
+        "Calculate slope using algebraic methods (m = rise/run).",
+        "Measure vertical rise and horizontal run in a real-world setting."
+      ],
+      "teks": [
+        "Geometry 2(B): Derive and use the distance, slope, and midpoint formulas.",
+        "Geometry 5(A): Investigate patterns to make conjectures about geometric relationships."
+      ],
+      "texasStemStandards": [
+        "STEM Skills: Measurement and Data Analysis."
+      ],
+      "materialsList": [
+        {
+          "item": "Tape Measure / Ruler",
+          "estimatedCost": "$1.00"
+        },
+        {
+          "item": "Golf Course Admission",
+          "estimatedCost": "$2.00 per student portion"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Locate a hole with a clear incline.",
+          "Demonstrate measuring 'rise' by sighting horizontally.",
+          "Check slope calculations."
+        ],
+        "detailed": [
+          "Select a hole where the cup is significantly higher than the tee.",
+          "Show students how to measure 'run' (horizontal distance) along the ground.",
+          "Show students how to estimate 'rise' by holding a ruler vertical at the hole and sighting from the tee level."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Measure distance to hole (Run).",
+          "Estimate height difference (Rise).",
+          "Calculate m = Rise/Run."
+        ],
+        "detailed": [
+          "Use the tape measure to find the distance from the start of the slope to the top.",
+          "Measure the vertical height of the hill.",
+          "Divide the Rise by the Run to get the slope (m).",
+          "Express the slope as a percentage (grade)."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics"
+        ],
+        "allowableCosts": [
+          "Field Trips"
+        ],
+        "programType": "Both",
+        "justification": "Application of Geometry and Algebra II concepts in a field setting.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in Mathematics"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Math Curriculum"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403 - Necessary and Reasonable"
+        ]
+      },
+      "stemConnections": {
+        "science": "Geology (Topography)",
+        "technology": "Surveying Equipment",
+        "engineering": "Civil Engineering",
+        "math": "Geometry / Algebra",
+        "crossCurricularLinks": [
+          "Geography (Topographic Maps)"
+        ]
+      },
+      "careerPathways": [
+        "Civil Engineer",
+        "Land Surveyor",
+        "Landscape Architect"
+      ],
+      "collegePathways": [
+        "BS in Civil Engineering",
+        "BS in Construction Management"
+      ]
+    },
+    {
+      "title": "Golf Module 2: The Law of Reflection (Bank Shots)",
+      "description": "Students use the geometric properties of reflection to predict the path of a golf ball banking off a wall, proving angle of incidence equals angle of reflection.",
+      "timeRequired": "30 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Protractor usage",
+        "Angle estimation",
+        "Drawing geometric diagrams"
+      ],
+      "learningObjectives": [
+        "Apply the Law of Reflection.",
+        "Visualize the 'virtual image' or 'phantom hole' concept used in billiards and optics."
+      ],
+      "teks": [
+        "Geometry 4(B): Concepts of reflection and symmetry.",
+        "Physics 7(D): Characteristics and behaviors of waves (reflection)."
+      ],
+      "texasStemStandards": [
+        "STEM Skills: Modeling and Simulation."
+      ],
+      "materialsList": [
+        {
+          "item": "Protractor",
+          "estimatedCost": "$0.50"
+        },
+        {
+          "item": "String (optional for visualization)",
+          "estimatedCost": "$0.10"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Identify a hole requiring a bank shot.",
+          "Explain the wall is a mirror line.",
+          "Guide students to find the reflection point."
+        ],
+        "detailed": [
+          "Explain that the wall acts like a mirror.",
+          "Teach the 'Phantom Hole' method: Visualize the hole equidistant behind the wall.",
+          "Have students aim for the phantom hole to achieve the correct reflection angle."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Draw the shot diagram.",
+          "Measure approach angle.",
+          "Predict exit angle.",
+          "Test with a putt."
+        ],
+        "detailed": [
+          "Sketch the wall, the ball, and the hole.",
+          "Draw a line from the ball to the wall (Incidence).",
+          "Measure the angle relative to the wall normal (90 degrees).",
+          "Predict the Angle of Reflection.",
+          "Putt the ball and see if the physical result matches the geometric prediction."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Field Trips",
+          "Instructional Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Integrates Physics (Optics/Reflection) with Geometry (Transformations).",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in Math/Science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Core Curriculum"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.405 - Allocable costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Optics (Light Physics)",
+        "technology": "N/A",
+        "engineering": "Optical Engineering",
+        "math": "Geometry (Transformations)",
+        "crossCurricularLinks": [
+          "Art (Perspective)"
+        ]
+      },
+      "careerPathways": [
+        "Optical Engineer",
+        "Photonics Technician",
+        "Architect"
+      ],
+      "collegePathways": [
+        "BS in Physics (Optics concentration)",
+        "BArch (Architecture)"
+      ]
+    },
+    {
+      "title": "Golf Module 3: Centripetal Force",
+      "description": "Students analyze a curved putting path (or loop) to understand the centripetal force required to keep the ball on track without slipping.",
+      "timeRequired": "35 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Radius measurement",
+        "Force analysis",
+        "Algebra"
+      ],
+      "learningObjectives": [
+        "Identify center of curvature.",
+        "Discuss Fc = mv^2/r.",
+        "Analyze the role of friction/banking."
+      ],
+      "teks": [
+        "Physics 4(C): Analyze motion in two dimensions, including circular motion.",
+        "Physics 4(D): Calculate effect of forces (Centripetal)."
+      ],
+      "texasStemStandards": [
+        "STEM Skills: Modeling."
+      ],
+      "materialsList": [
+        {
+          "item": "String",
+          "estimatedCost": "$0"
+        },
+        {
+          "item": "Ruler",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Find a curved hole border.",
+          "Measure approximate radius.",
+          "Discuss speed limit."
+        ],
+        "detailed": [
+          "Have students approximate the radius of the turn using string.",
+          "Discuss that friction provides the centripetal force.",
+          "If velocity is too high, F_friction < mv^2/r, and the ball flies off."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Measure curve radius.",
+          "Putt at different speeds.",
+          "Observe failure point."
+        ],
+        "detailed": [
+          "Measure the radius (r) of the curve.",
+          "Putt slowly: does it hold the curve?",
+          "Putt fast: does it break the curve?",
+          "Explain the relationship between velocity and required force."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Field Trips"
+        ],
+        "programType": "UBMS",
+        "justification": "Circular motion physics.",
+        "heaRequirements": [
+          "Sec. 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403"
+        ]
+      },
+      "stemConnections": {
+        "science": "Circular Motion",
+        "technology": "N/A",
+        "engineering": "Highway Design",
+        "math": "Geometry (Circles)",
+        "crossCurricularLinks": [
+          "Driver's Ed"
+        ]
+      },
+      "careerPathways": [
+        "Civil Engineer",
+        "Automotive Engineer"
+      ],
+      "collegePathways": [
+        "BS in Civil Engineering"
+      ]
+    },
+    {
+      "title": "Golf Module 4: Impulse & Momentum",
+      "description": "Students investigate the relationship between the force of the putter stroke, the time of contact, and the resulting velocity of the ball.",
+      "timeRequired": "30 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Estimation",
+        "Impulse formula",
+        "Observation"
+      ],
+      "learningObjectives": [
+        "Define Impulse (J = F*t).",
+        "Relate Impulse to change in momentum.",
+        "Practice 'follow through' physics."
+      ],
+      "teks": [
+        "Physics 6(C): Momentum and Impulse.",
+        "Physics 6(D): Conservation laws."
+      ],
+      "texasStemStandards": [
+        "STEM Skills: Cause and Effect."
+      ],
+      "materialsList": [
+        {
+          "item": "Putter",
+          "estimatedCost": "Included"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Demonstrate 'tap' vs 'follow through'.",
+          "Explain contact time (t).",
+          "Compare resulting velocities."
+        ],
+        "detailed": [
+          "Show that a short 'tap' has small t, requiring large F for same velocity.",
+          "Show that a 'follow through' increases t, allowing smaller F for smooth control.",
+          "Discuss why follow through is taught in sports."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Putt with short jab.",
+          "Putt with long stroke.",
+          "Compare distance."
+        ],
+        "detailed": [
+          "Attempt to hit the ball the same distance using a 'jab' (short t) and a 'sweep' (long t).",
+          "Observe which is more consistent.",
+          "Explain using Impulse = Force x Time."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Field Trips"
+        ],
+        "programType": "Both",
+        "justification": "Physics of impulse and momentum.",
+        "heaRequirements": [
+          "Sec. 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.405"
+        ]
+      },
+      "stemConnections": {
+        "science": "Dynamics",
+        "technology": "Sports Equipment Design",
+        "engineering": "Safety Systems (Airbags)",
+        "math": "Algebra",
+        "crossCurricularLinks": [
+          "PE"
+        ]
+      },
+      "careerPathways": [
+        "Sports Scientist",
+        "Product Designer"
+      ],
+      "collegePathways": [
+        "BS in Kinesiology"
+      ]
+    },
+    {
+      "title": "Golf Module 5: Periodic Motion (Timing Obstacles)",
+      "description": "Students calculate the period and frequency of moving obstacles (windmills, doors) to mathematically determine the optimal window for putting.",
+      "timeRequired": "30 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Timing",
+        "Frequency calculation",
+        "Algebra"
+      ],
+      "learningObjectives": [
+        "Calculate Period (T) and Frequency (f).",
+        "Understand T = 1/f.",
+        "Predict open windows."
+      ],
+      "teks": [
+        "Physics 7(A): Oscillatory motion.",
+        "Algebra I 12(A): Functions."
+      ],
+      "texasStemStandards": [
+        "STEM Skills: Pattern recognition."
+      ],
+      "materialsList": [
+        {
+          "item": "Stopwatch",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Find moving obstacle.",
+          "Time full cycles.",
+          "Calculate safe window."
+        ],
+        "detailed": [
+          "Identify an obstacle that opens and closes or rotates.",
+          "Have students time 10 cycles and divide by 10 for average Period (T).",
+          "Determine the 'Open' duration vs 'Closed' duration."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Time 10 cycles.",
+          "Calculate Period T.",
+          "Measure 'Open' time.",
+          "Plan the putt."
+        ],
+        "detailed": [
+          "Start timer when obstacle opens, count 10 cycles, stop.",
+          "Average Time = Total Time / 10.",
+          "Calculate Frequency (f) = 1/T.",
+          "If the ball takes 2 seconds to reach the hole, when must you launch relative to the cycle?"
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Field Trips"
+        ],
+        "programType": "Both",
+        "justification": "Wave properties and periodic motion.",
+        "heaRequirements": [
+          "Sec. 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403"
+        ]
+      },
+      "stemConnections": {
+        "science": "Oscillations",
+        "technology": "Automation",
+        "engineering": "Control Systems",
+        "math": "Algebra",
+        "crossCurricularLinks": [
+          "Music (Rhythm)"
+        ]
+      },
+      "careerPathways": [
+        "Industrial Engineer",
+        "Process Control Tech"
+      ],
+      "collegePathways": [
+        "BS in Industrial Engineering"
+      ]
+    },
+    {
+      "title": "Golf Module 6: Vector Addition",
+      "description": "Students break down a complex putt (across a slope) into x (forward) and y (slope/gravity) vector components to determine the aim point.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Vector addition",
+        "Trigonometry",
+        "Diagramming"
+      ],
+      "learningObjectives": [
+        "Resolve vectors into components.",
+        "Add velocity vector and gravity vector.",
+        "Determine resultant vector."
+      ],
+      "teks": [
+        "Physics 4(C): Vector addition.",
+        "Pre-Calculus 4(A): Add and subtract vectors."
+      ],
+      "texasStemStandards": [
+        "STEM Skills: Computational Thinking."
+      ],
+      "materialsList": [
+        {
+          "item": "Graph Paper",
+          "estimatedCost": "$0.10"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Find sloped green.",
+          "Diagram forces.",
+          "Explain vector sum."
+        ],
+        "detailed": [
+          "The ball has a forward velocity vector provided by the putter.",
+          "Gravity provides a sideways acceleration vector (down slope).",
+          "Students must aim 'up slope' so the resultant vector points to the hole."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Draw hole and ball.",
+          "Draw slope vector.",
+          "Draw aim vector.",
+          "Calculate resultant."
+        ],
+        "detailed": [
+          "Visualize the grid on the green.",
+          "If gravity pulls the ball 2 units left, you must aim 2 units right.",
+          "Draw the vector diagram showing Aim + Gravity = Target."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Math"
+        ],
+        "allowableCosts": [
+          "Field Trips"
+        ],
+        "programType": "UBMS",
+        "justification": "Vector calculus concepts.",
+        "heaRequirements": [
+          "Sec. 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.405"
+        ]
+      },
+      "stemConnections": {
+        "science": "Kinematics",
+        "technology": "N/A",
+        "engineering": "Flight Dynamics",
+        "math": "Vectors",
+        "crossCurricularLinks": [
+          "Physics"
+        ]
+      },
+      "careerPathways": [
+        "Pilot",
+        "Navigator",
+        "Aerospace Engineer"
+      ],
+      "collegePathways": [
+        "BS in Aerospace Engineering"
+      ]
+    },
+    {
+      "title": "Golf Module 7: Friction & Deceleration",
+      "description": "Students compare the rolling distance of a ball on the 'green' (turf) vs the 'rough' (carpet/bricks) to analyze different friction coefficients.",
+      "timeRequired": "30 Minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Measurement",
+        "Comparison",
+        "Graphing"
+      ],
+      "learningObjectives": [
+        "Compare friction on different surfaces.",
+        "Measure stopping distance.",
+        "Understand energy loss to heat."
+      ],
+      "teks": [
+        "Physics 4(D): Friction forces.",
+        "IPC 4(D): Investigate effects of forces."
+      ],
+      "texasStemStandards": [
+        "STEM Skills: Investigation."
+      ],
+      "materialsList": [
+        {
+          "item": "Tape Measure",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Identify two surfaces.",
+          "Putt with constant force.",
+          "Measure distances."
+        ],
+        "detailed": [
+          "Have students try to use the same swing strength on the smooth turf and the rough boundary.",
+          "Measure how far the ball rolls on each.",
+          "Discuss why the rough stops it sooner (higher mu)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Putt on turf.",
+          "Measure distance.",
+          "Putt on rough.",
+          "Measure distance.",
+          "Compare."
+        ],
+        "detailed": [
+          "Perform 3 trials on the smooth green.",
+          "Perform 3 trials on the rough edge/carpet.",
+          "Calculate average distance for each.",
+          "Calculate ratio of distances."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Field Trips"
+        ],
+        "programType": "Both",
+        "justification": "Forces and materials science.",
+        "heaRequirements": [
+          "Sec. 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403"
+        ]
+      },
+      "stemConnections": {
+        "science": "Tribology",
+        "technology": "Tire Design",
+        "engineering": "Material Science",
+        "math": "Ratios",
+        "crossCurricularLinks": [
+          "Driver Safety"
+        ]
+      },
+      "careerPathways": [
+        "Material Scientist",
+        "Safety Inspector"
+      ],
+      "collegePathways": [
+        "BS in Materials Engineering"
+      ]
+    },
+    {
+      "title": "Arcade Module 1: Expected Value (Skeeball Statistics)",
+      "description": "Students collect data on scoring probabilities in Skeeball to calculate the Expected Value (EV) of a single throw, analyzing risk vs. reward strategies.",
+      "timeRequired": "30 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Data tabulation",
+        "Calculating means",
+        "Probability theory"
+      ],
+      "learningObjectives": [
+        "Calculate Expected Value (EV = P(x) * x).",
+        "Analyze risk vs reward in a closed system.",
+        "Construct a probability distribution table."
+      ],
+      "teks": [
+        "Statistics 2(D): Calculate the mean and variance of a discrete random variable.",
+        "Statistics 5(B): Evaluate the effectiveness of different strategies."
+      ],
+      "texasStemStandards": [
+        "STEM Fluency: Computational Thinking."
+      ],
+      "materialsList": [
+        {
+          "item": "Game Credits (Lab Supply)",
+          "estimatedCost": "$5.00 per student"
+        },
+        {
+          "item": "Notebook",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Define Expected Value.",
+          "Assign students to observe/play Skeeball.",
+          "Analyze the '100' hole vs '40' hole."
+        ],
+        "detailed": [
+          "Review the formula EV = Sum(Probability * Value).",
+          "Ask students to throw 9 balls aiming only for the '40' ring and record hits/misses.",
+          "Ask students to throw 9 balls aiming only for the '100' ring and record hits/misses.",
+          "Have them calculate which strategy yields the higher average score."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Throw 9 balls aiming for 40.",
+          "Throw 9 balls aiming for 100.",
+          "Calculate success rate %.",
+          "Calculate Expected Value."
+        ],
+        "detailed": [
+          "Record your total score when aiming for the safe target (40).",
+          "Record your total score when aiming for the risky target (100).",
+          "Calculate the experimental probability of hitting the 100 (Hits / Total Throws).",
+          "Multiply Probability * 100 to get the EV per ball.",
+          "Determine if the high-risk strategy is mathematically sound."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics"
+        ],
+        "allowableCosts": [
+          "Field Trips (Lab Fees)"
+        ],
+        "programType": "Both",
+        "justification": "This activity teaches college-level introductory statistics concepts (Expected Value) using a gamified data source. Game credits are allowable as they are essential for data generation.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in Mathematics"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Math Component"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403(a) - Necessary for performance of award"
+        ]
+      },
+      "stemConnections": {
+        "science": "N/A",
+        "technology": "Data Analysis",
+        "engineering": "Systems Analysis",
+        "math": "Statistics / Probability",
+        "crossCurricularLinks": [
+          "Economics (Risk Assessment)"
+        ]
+      },
+      "careerPathways": [
+        "Actuary",
+        "Data Scientist",
+        "Financial Analyst"
+      ],
+      "collegePathways": [
+        "BS in Statistics",
+        "BS in Economics",
+        "BS in Mathematics"
+      ]
+    },
+    {
+      "title": "Arcade Module 2: Basketball Projectile Motion",
+      "description": "Students use video analysis of arcade basketball shots to trace parabolic curves, identifying the vertex and calculating the quadratic equation of the shot.",
+      "timeRequired": "30 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Video recording",
+        "Coordinate graphing",
+        "Quadratics"
+      ],
+      "learningObjectives": [
+        "Describe projectile motion as a parabola.",
+        "Identify the vertex (h,k) of a flight path.",
+        "Discuss optimal launch angles (45 degrees)."
+      ],
+      "teks": [
+        "Physics 4(C): Analyze and describe accelerated motion in two dimensions, including projectile motion.",
+        "Algebra II 4(B): Write the equation of a parabola using given attributes."
+      ],
+      "texasStemStandards": [
+        "STEM Skills: Modeling.",
+        "STEM Content: Technology application."
+      ],
+      "materialsList": [
+        {
+          "item": "Smartphone (Camera)",
+          "estimatedCost": "$0"
+        },
+        {
+          "item": "Game Credits",
+          "estimatedCost": "$2.00 per student"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Pair students (Shooter & Recorder).",
+          "Film shot from the side (perpendicular).",
+          "Analyze the arc."
+        ],
+        "detailed": [
+          "Instruct the recording student to stand safely to the side to get a profile view of the shot.",
+          "Have the shooter aim for a 'swish' (high arc).",
+          "Review the video in slow motion to pause at the peak (vertex) of the ball's flight."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Film a made basket.",
+          "Sketch the curve.",
+          "Identify the Vertex.",
+          "Estimate launch angle."
+        ],
+        "detailed": [
+          "Watch the replay of the shot.",
+          "Draw the x/y axis on graph paper, assuming the release point is (0,y).",
+          "Mark the highest point the ball reached (Vertex).",
+          "Sketch the parabolic curve connecting release, vertex, and hoop.",
+          "Discuss: Did a higher arc increase the chance of the ball going in? Why?"
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Field Trips"
+        ],
+        "programType": "Both",
+        "justification": "Combines Algebra II (Quadratics) with Physics (Kinematics).",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in Math/Science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Academic Curriculum"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.405 - Allocable costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics (Kinematics)",
+        "technology": "Video Analysis",
+        "engineering": "Ballistics",
+        "math": "Algebra II (Quadratics)",
+        "crossCurricularLinks": [
+          "Multimedia Arts (Video Editing)"
+        ]
+      },
+      "careerPathways": [
+        "Ballistics Expert",
+        "Aerospace Engineer",
+        "Game Physics Programmer"
+      ],
+      "collegePathways": [
+        "BS in Aerospace Engineering",
+        "BS in Mathematics"
+      ]
+    },
+    {
+      "title": "Arcade Module 3: 2D Momentum (Air Hockey)",
+      "description": "Students video record air hockey puck collisions to analyze conservation of momentum in two dimensions, observing vector components before and after impact.",
+      "timeRequired": "35 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Vector addition",
+        "Video analysis",
+        "Conservation laws"
+      ],
+      "learningObjectives": [
+        "Observe elastic collisions.",
+        "Visualize momentum vectors in x and y.",
+        "Verify conservation of momentum."
+      ],
+      "teks": [
+        "Physics 6(D): Conservation of momentum in 1D and 2D.",
+        "Physics 4(C): Two-dimensional motion."
+      ],
+      "texasStemStandards": [
+        "STEM Skills: Scientific Inquiry."
+      ],
+      "materialsList": [
+        {
+          "item": "Air Hockey Table",
+          "estimatedCost": "Lab Fee"
+        },
+        {
+          "item": "Smartphone",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Film top-down view.",
+          "Collide two pucks.",
+          "Analyze angles."
+        ],
+        "detailed": [
+          "Have one student film from directly above the table.",
+          "Have students slide one puck into a stationary puck (oblique collision).",
+          "Review video to sketch the angle of departure for both pucks."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Film collision.",
+          "Draw vectors.",
+          "Check angles.",
+          "Discuss energy loss."
+        ],
+        "detailed": [
+          "Capture a clean collision between two pucks.",
+          "Sketch the path of Puck A before impact.",
+          "Sketch the V-shape paths of Puck A and B after impact.",
+          "Ideally, they split at near 90 degrees if elastic. Did they?"
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Field Trips"
+        ],
+        "programType": "UBMS",
+        "justification": "Advanced mechanics and 2D vector physics.",
+        "heaRequirements": [
+          "Sec. 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.405"
+        ]
+      },
+      "stemConnections": {
+        "science": "Particle Physics",
+        "technology": "Simulation Software",
+        "engineering": "Nuclear Engineering",
+        "math": "Vectors",
+        "crossCurricularLinks": [
+          "Billiards"
+        ]
+      },
+      "careerPathways": [
+        "Nuclear Physicist",
+        "Accident Reconstructionist"
+      ],
+      "collegePathways": [
+        "BS in Physics"
+      ]
+    },
+    {
+      "title": "Arcade Module 4: Human Reaction Time",
+      "description": "Students use reflex-based arcade games (e.g., Whack-a-Mole or light buttons) to measure neural reaction time and calculate signal transmission speed.",
+      "timeRequired": "30 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Data collection",
+        "Averaging",
+        "Biology basics"
+      ],
+      "learningObjectives": [
+        "Measure reaction time.",
+        "Discuss neural pathways.",
+        "Calculate statistical mean."
+      ],
+      "teks": [
+        "Biology 10(A): Nervous system interactions.",
+        "Statistics 2(A): Data analysis."
+      ],
+      "texasStemStandards": [
+        "STEM Content: Health Science."
+      ],
+      "materialsList": [
+        {
+          "item": "Reflex Game",
+          "estimatedCost": "Lab Fee"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Play reflex game.",
+          "Record scores/times.",
+          "Discuss biology."
+        ],
+        "detailed": [
+          "Use a game that requires immediate response to visual stimuli.",
+          "Explain the path: Eye -> Brain -> Spinal Cord -> Hand.",
+          "Discuss why visual reaction is usually ~250ms."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Play 3 rounds.",
+          "Record hits/misses.",
+          "Calculate average.",
+          "Compare with classmates."
+        ],
+        "detailed": [
+          "Play the game focusing on speed.",
+          "Record your reaction score.",
+          "Compare your time to the class average.",
+          "Discuss factors affecting reaction (fatigue, focus)."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Field Trips"
+        ],
+        "programType": "Both",
+        "justification": "Biology and statistics integration.",
+        "heaRequirements": [
+          "Sec. 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403"
+        ]
+      },
+      "stemConnections": {
+        "science": "Neuroscience",
+        "technology": "User Interface Design",
+        "engineering": "Human Factors",
+        "math": "Statistics",
+        "crossCurricularLinks": [
+          "Health"
+        ]
+      },
+      "careerPathways": [
+        "Neurologist",
+        "UX Designer"
+      ],
+      "collegePathways": [
+        "BS in Neuroscience",
+        "BS in Psychology"
+      ]
+    },
+    {
+      "title": "Arcade Module 5: Circuits & Logic (Pinball/Pacman)",
+      "description": "Students observe the input/output systems of arcade cabinets (joysticks, buttons, screens) to diagram the basic logic flow (If/Then) and circuit completion.",
+      "timeRequired": "30 Minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Logic flowcharts",
+        "Observation",
+        "Systems thinking"
+      ],
+      "learningObjectives": [
+        "Create a flow chart.",
+        "Understand input/process/output.",
+        "Identify Boolean logic (AND/OR)."
+      ],
+      "teks": [
+        "Computer Science I 4(B): Algorithms and flowcharts.",
+        "Physics 5(F): Electric circuits."
+      ],
+      "texasStemStandards": [
+        "STEM Skills: Computational Thinking."
+      ],
+      "materialsList": [
+        {
+          "item": "Notebook",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Select a game.",
+          "Map controls to actions.",
+          "Draw logic flow."
+        ],
+        "detailed": [
+          "Pick a simple game (e.g., Pac-Man or Pinball).",
+          "Ask: What is the input? (Button press). What is the output? (Flipper moves).",
+          "Ask: What is the logic? (IF ball hits bumper THEN add 100 points)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Choose game.",
+          "List Inputs/Outputs.",
+          "Draw flowchart.",
+          "Write pseudocode."
+        ],
+        "detailed": [
+          "Identify all buttons/sensors (Inputs).",
+          "Identify all lights/movements (Outputs).",
+          "Draw a flowchart showing: Start -> Input -> Decision -> Output.",
+          "Write one 'If/Then' statement representing a game rule."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Math"
+        ],
+        "allowableCosts": [
+          "Field Trips"
+        ],
+        "programType": "Both",
+        "justification": "Computer science principles and logic.",
+        "heaRequirements": [
+          "Sec. 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.405"
+        ]
+      },
+      "stemConnections": {
+        "science": "Electricity",
+        "technology": "Programming",
+        "engineering": "Electrical Engineering",
+        "math": "Logic",
+        "crossCurricularLinks": [
+          "Coding"
+        ]
+      },
+      "careerPathways": [
+        "Software Developer",
+        "Electrical Engineer"
+      ],
+      "collegePathways": [
+        "BS in Computer Science",
+        "BS in Electrical Engineering"
+      ]
+    },
+    {
+      "title": "Arcade Module 6: Gear Ratios (Racing Sims)",
+      "description": "Students utilize racing simulators to observe the relationship between engine RPM and vehicle speed, analyzing the concept of gear ratios and mechanical advantage.",
+      "timeRequired": "35 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Ratios",
+        "Graphing",
+        "Observation"
+      ],
+      "learningObjectives": [
+        "Understand gear ratios.",
+        "Relate RPM to Velocity.",
+        "Graph linear relationships."
+      ],
+      "teks": [
+        "Physics 6(A): Work and power.",
+        "Algebra I 3(B): Calculate rate of change."
+      ],
+      "texasStemStandards": [
+        "STEM Skills: Systems thinking."
+      ],
+      "materialsList": [
+        {
+          "item": "Racing Simulator",
+          "estimatedCost": "Lab Fee"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Drive in manual mode (if possible).",
+          "Observe RPM vs MPH.",
+          "Shift gears."
+        ],
+        "detailed": [
+          "In low gear, high RPM = low speed (high torque).",
+          "In high gear, low RPM = high speed.",
+          "Discuss trade-off between Torque and Speed."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Drive car.",
+          "Note RPM at 30mph in 1st gear.",
+          "Note RPM at 30mph in 2nd gear.",
+          "Compare."
+        ],
+        "detailed": [
+          "Accelerate to a constant speed (e.g., 40mph).",
+          "Observe the tachometer (RPM).",
+          "Shift up and observe how RPM drops while speed stays constant.",
+          "Explain why 1st gear is for starting (force) and 5th is for cruising."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Field Trips"
+        ],
+        "programType": "Both",
+        "justification": "Mechanical physics and algebra.",
+        "heaRequirements": [
+          "Sec. 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403"
+        ]
+      },
+      "stemConnections": {
+        "science": "Mechanics",
+        "technology": "Automotive Tech",
+        "engineering": "Mechanical Engineering",
+        "math": "Ratios",
+        "crossCurricularLinks": [
+          "Auto Shop"
+        ]
+      },
+      "careerPathways": [
+        "Automotive Engineer",
+        "Mechanic"
+      ],
+      "collegePathways": [
+        "BS in Mechanical Engineering"
+      ]
+    },
+    {
+      "title": "Arcade Module 7: Light & Optics (Gun Games)",
+      "description": "Students investigate how light-gun games function (using IR sensors or screen flash) to understand line-of-sight and optical calibration.",
+      "timeRequired": "30 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Geometry (Lines)",
+        "Optics basics",
+        "Calibration"
+      ],
+      "learningObjectives": [
+        "Understand Line of Sight.",
+        "Discuss sensor technology.",
+        "Calibrate a system."
+      ],
+      "teks": [
+        "Physics 7(D): Behavior of light.",
+        "Geometry 2(A): Euclidean geometry basics."
+      ],
+      "texasStemStandards": [
+        "STEM Content: Technology."
+      ],
+      "materialsList": [
+        {
+          "item": "Light Gun Game",
+          "estimatedCost": "Lab Fee"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Play shooting game.",
+          "Test off-axis accuracy.",
+          "Explain sensor mechanism."
+        ],
+        "detailed": [
+          "Explain that the gun reads light from the screen (or IR bars).",
+          "Have students stand at extreme angles to see if the 'hit' registers.",
+          "Discuss triangulation and calibration."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Aim at center.",
+          "Move left/right.",
+          "Find failure angle.",
+          "Discuss how it works."
+        ],
+        "detailed": [
+          "Stand directly in front and fire.",
+          "Step 45 degrees to the side and aim at the same spot.",
+          "Does the crosshair line up? Why or why not?",
+          "Hypothesize how the computer knows where you are pointing."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Field Trips"
+        ],
+        "programType": "Both",
+        "justification": "Optics and geometric positioning.",
+        "heaRequirements": [
+          "Sec. 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.405"
+        ]
+      },
+      "stemConnections": {
+        "science": "Optics",
+        "technology": "Sensors",
+        "engineering": "Computer Engineering",
+        "math": "Geometry",
+        "crossCurricularLinks": [
+          "Gaming"
+        ]
+      },
+      "careerPathways": [
+        "Optical Systems Engineer",
+        "Game Developer"
+      ],
+      "collegePathways": [
+        "BS in Computer Engineering"
+      ]
+    }
+  ]
+}

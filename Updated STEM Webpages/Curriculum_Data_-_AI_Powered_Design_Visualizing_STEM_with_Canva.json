@@ -1,0 +1,1101 @@
+{
+  "curriculumTitle": "AI-Powered Design: Visualizing STEM with Canva",
+  "overview": "This comprehensive 10-module curriculum leverages Canva's Artificial Intelligence tools (Magic Media, Magic Write, Magic Design, and Data Visualization) to teach High School students how to visualize complex scientific concepts, rapid-prototype engineering solutions, and communicate technical data. Designed specifically for TRIO Upward Bound and UBMS programs, the curriculum bridges the gap between digital literacy and rigorous STEM instruction, moving students from the ethics of AI to practical application in Biology, Chemistry, Physics, Engineering, and Mathematics.",
+  "prerequisites": "Basic computer literacy; Google Drive or LMS familiarity; Canva for Education account (free); Fundamental understanding of the Scientific Method.",
+  "targetAgeGroup": "High School (Ages 14-18)",
+  "totalDurationEstimate": "10 Hours (Ten 60-minute sessions)",
+  "fieldTrips": [
+    {
+      "name": "Perot Museum of Nature and Science - TECH Truck or Bio Lab",
+      "location": "Dallas, TX (Dallas County)",
+      "description": "A hands-on exploration of the 'Expanding Universe' hall and the 'Being Human' hall, focusing on how technology visualizes biological and astrophysical data.",
+      "relevanceToCurriculum": "Directly connects to Module 1 (Scientific Modeling) and Module 8 (Medical Imaging) by showing real-world application of visualization in museum exhibits."
+    },
+    {
+      "name": "University of Texas at Arlington (UTA) FabLab",
+      "location": "Arlington, TX (Tarrant County)",
+      "description": "A tour and workshop at a top-tier university fabrication laboratory utilizing 3D printing, laser cutting, and digital design.",
+      "relevanceToCurriculum": "Reinforces Module 2 (Rapid Prototyping) and Module 7 (Algorithmic Logic), providing exposure to a college-level engineering environment."
+    }
+  ],
+  "activities": [
+    {
+      "title": "Visualizing the Invisible: AI in Scientific Modeling",
+      "description": "Students use Canva's 'Magic Media' (Text-to-Image AI) to generate visualizations of microscopic biological structures or astrophysical phenomena. They will compare AI-generated images against textbook scientific diagrams to evaluate accuracy, limitations, and the role of AI in scientific communication.",
+      "timeRequired": "60 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Basic Biological Terminology",
+        "Critical Analysis",
+        "Digital File Management"
+      ],
+      "learningObjectives": [
+        "Define Generative AI and explain its potential applications in STEM fields.",
+        "Utilize prompt engineering to generate scientific imagery using Canva Magic Media.",
+        "Critique AI-generated images for scientific accuracy compared to peer-reviewed sources.",
+        "Design a comparative infographic showcasing the capabilities and limitations of AI modeling."
+      ],
+      "teks": [
+        "126.41 (c)(2)(C): Create and edit digital images, graphics, and animations.",
+        "112.34 (c)(3)(D): Evaluate the impact of scientific research on society and the environment.",
+        "130.362 (c)(5)(B): Use engineering graphics and standards to communicate technical information."
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Design Thinking - Prototyping",
+        "STEM Framework: Digital Literacy - Content Creation",
+        "STEM Framework: Communication - Scientific Visualization"
+      ],
+      "materialsList": [
+        {
+          "item": "Laptops/Chromebooks with Internet Access",
+          "estimatedCost": "$0 (Existing Equipment/Facility Cost)"
+        },
+        {
+          "item": "Canva for Education Accounts",
+          "estimatedCost": "$0 (Free for K-12 Schools)"
+        },
+        {
+          "item": "Projector/Smartboard",
+          "estimatedCost": "$0 (Existing Equipment)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Discuss scientific visualization.",
+          "Demonstrate Canva Magic Media.",
+          "Assign scientific subjects.",
+          "Review student comparisons."
+        ],
+        "detailed": [
+          "Begin with a 5-minute discussion on how scientists visualize things we cannot see (e.g., atoms, black holes).",
+          "Demonstrate Canva's 'Magic Media' tool. Show how changing the text prompt alters the image output.",
+          "Assign students a scientific subject (e.g., 'Mitochondria structure', 'Electron cloud model', 'Surface of Mars').",
+          "Instruct students to generate three iterations of their subject using different prompts.",
+          "Guide students to drag their best AI image into a design canvas and upload a textbook diagram of the same subject next to it.",
+          "Facilitate a closing discussion on the differences. Ask: 'Where did the AI fail? Where did it succeed?'"
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Open Canva Infographic.",
+          "Use Magic Media to generate a science image.",
+          "Find a verified textbook diagram.",
+          "Compare and annotate differences."
+        ],
+        "detailed": [
+          "Log in to Canva and open a new 'Infographic' design.",
+          "Navigate to the 'Apps' section on the left sidebar and select 'Magic Media'.",
+          "Type a descriptive prompt for your assigned scientific topic (e.g., 'Cross section of a plant cell, realistic style, 3d render').",
+          "Generate the image. If it looks inaccurate, refine your prompt (this is called Prompt Engineering) and try again.",
+          "Place your AI image on the left side of the canvas.",
+          "Search Google Images for a scientifically verified diagram of the same topic and place it on the right.",
+          "Add text boxes to annotate the differences, noting specific errors in the AI image versus the diagram.",
+          "Export your comparison as a PDF."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science (Bio/Chem/Physics concepts)",
+          "Exposure to the range of career options (Scientific Illustration/Data Science)",
+          "Instruction in literature or composition (Technical Writing/Prompting)"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453: Materials and supplies (Computing devices/software used for instruction)",
+          "2 CFR 200.461: Publication and printing costs (if printing infographics)"
+        ],
+        "programType": "Both",
+        "justification": "This activity directly supports the core curriculum instruction in science required by UB/UBMS by using technology to reinforce understanding of biological and physical structures.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b): Services (Instruction in science)",
+          "HEA Sec. 402C(b): Services (Exposure to academic programs)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1)(iii): Laboratory science instruction",
+          "34 CFR 645.11(b)(2): Other curriculum (Computer Science/Tech)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Understanding biological structures and astrophysical models through visualization.",
+        "technology": "Utilizing Generative AI (LLMs and Diffusion models) and prompt engineering.",
+        "engineering": "Iterative design process (refining prompts to achieve desired output).",
+        "math": "Geometry and spatial reasoning involved in layout design and 3D rendering concepts.",
+        "crossCurricularLinks": [
+          "Art (Digital Composition)",
+          "Media Literacy (Identifying Deepfakes/AI errors)"
+        ]
+      },
+      "careerPathways": [
+        "Scientific Illustrator",
+        "Bioinformatics Scientist",
+        "Prompt Engineer"
+      ],
+      "collegePathways": [
+        "B.S. Biology",
+        "B.F.A. Visual Communication Design",
+        "B.S. Computational Science"
+      ]
+    },
+    {
+      "title": "Rapid Prototyping: Engineering Solutions Pitch Deck",
+      "description": "Students act as engineering consultants to solve a specific community problem. They use Canva's 'Magic Write' to brainstorm solutions and 'Magic Design' to instantly generate a professional pitch deck, then refine the content based on realistic engineering constraints.",
+      "timeRequired": "60 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Problem Solving",
+        "Persuasive Writing",
+        "Basic Math (Estimation)"
+      ],
+      "learningObjectives": [
+        "Identify a local environmental or infrastructure problem.",
+        "Use AI language models to brainstorm potential engineering solutions.",
+        "Synthesize complex technical information into a concise presentation.",
+        "Evaluate AI-generated content for feasibility and modify it to meet engineering constraints."
+      ],
+      "teks": [
+        "130.362 (c)(2)(A): Identify and define an engineering problem.",
+        "127.14 (c)(1)(D): Demonstrate effective oral and written communication skills.",
+        "126.50 (c)(4)(G): Evaluate and select appropriate software for a specific task."
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Employability Skills - Innovation",
+        "STEM Framework: Communication - Technical Presentation",
+        "STEM Framework: Resilience - Problem Solving"
+      ],
+      "materialsList": [
+        {
+          "item": "Laptops/Chromebooks",
+          "estimatedCost": "$0 (Existing Equipment)"
+        },
+        {
+          "item": "Problem Scenario Cards (Printed)",
+          "estimatedCost": "$5.00 (Paper/Ink)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Assign engineering problems.",
+          "Demonstrate Magic Write for brainstorming.",
+          "Show Doc-to-Deck conversion.",
+          "Facilitate elevator pitches."
+        ],
+        "detailed": [
+          "Present 3-4 problem scenarios (e.g., 'The school needs a sustainable way to water the football field').",
+          "Group students into engineering teams of two.",
+          "Demonstrate 'Magic Write' in Canva Docs to brainstorm initial ideas.",
+          "Show how to convert a Doc to a Deck using the 'Magic Switch' or 'Magic Design' for presentations feature.",
+          "Instruct students to generate a slide deck, but emphasize they must manually edit the engineering constraints (budget, materials) because the AI guesses these.",
+          "Have each group present their solution in a 60-second elevator pitch using their slides."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Use Magic Write to list solutions.",
+          "Expand on best solution.",
+          "Convert Doc to Presentation.",
+          "Edit slides for engineering accuracy."
+        ],
+        "detailed": [
+          "Open a Canva Doc.",
+          "Click the '+' icon and select 'Magic Write'. Enter: 'List 5 engineering solutions for [Your Problem Scenario] focusing on sustainability.'",
+          "Select the best solution. Use Magic Write again to 'Expand on this solution including materials needed and estimated budget.'",
+          "Review the text. The AI is guessing—you must correct the materials and budget to be realistic based on your knowledge.",
+          "Click the 'Convert' button (Magic Switch) and select 'Transform to Presentation'.",
+          "Choose a style and let Canva build your slides.",
+          "Edit the slides to ensure the engineering science is accurate.",
+          "Prepare to present your solution."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics (Budgeting/Constraints)",
+          "Career awareness (Engineering/Project Management)",
+          "Mentoring (Peer-to-peer collaboration)"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453: Materials and supplies (instructional materials)",
+          "2 CFR 200.432: Conferences (if this is part of a larger STEM summit/workshop)"
+        ],
+        "programType": "UBMS",
+        "justification": "This activity fulfills the UBMS requirement to provide instruction in mathematics and science through hands-on project-based learning.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b): Instruction in mathematics",
+          "HEA Sec. 402C(e): UBMS rigorous curriculum"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1)(ii): Mathematics instruction",
+          "34 CFR 645.11(a)(6): Career options exposure"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Environmental science concepts related to the problem scenarios.",
+        "technology": "Application of AI for productivity and document-to-presentation conversion.",
+        "engineering": "The Engineering Design Process (Ask, Imagine, Plan).",
+        "math": "Estimation, budgeting, and resource allocation.",
+        "crossCurricularLinks": [
+          "Public Speaking",
+          "Business/Entrepreneurship"
+        ]
+      },
+      "careerPathways": [
+        "Project Engineer",
+        "Systems Engineer",
+        "Technical Consultant"
+      ],
+      "collegePathways": [
+        "B.S. Mechanical Engineering",
+        "B.S. Civil Engineering",
+        "Master of Business Administration (MBA)"
+      ]
+    },
+    {
+      "title": "Data Storytelling: AI-Enhanced Statistical Analysis",
+      "description": "Students analyze a raw dataset using Canva's 'Data Storytelling' features. They utilize AI tools to summarize trends and generate aesthetically pleasing yet statistically accurate charts, learning to avoid misleading visualizations.",
+      "timeRequired": "60 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Data Entry",
+        "Basic Statistics (Mean, Mode, Trend)",
+        "Visual Design"
+      ],
+      "learningObjectives": [
+        "Import data into visualization software.",
+        "Distinguish between clear and misleading data representation.",
+        "Use AI summarization tools to extract key insights from raw numbers.",
+        "Create a graphical abstract representing a statistical finding."
+      ],
+      "teks": [
+        "111.47 (c)(2)(E): Analyze data and describe the shape, center, and spread.",
+        "126.33 (c)(4)(B): Use digital tools to analyze and display data.",
+        "112.39 (c)(2)(G): Organize, analyze, evaluate, make inferences, and predict trends from data."
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Digital Literacy - Data Analysis",
+        "STEM Framework: Communication - Visual Literacy"
+      ],
+      "materialsList": [
+        {
+          "item": "Sample Datasets (CSV files)",
+          "estimatedCost": "$0"
+        },
+        {
+          "item": "Canva Accounts",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain Data Storytelling.",
+          "Distribute CSV files.",
+          "Demonstrate Charts tool.",
+          "Show AI data summarization."
+        ],
+        "detailed": [
+          "Discuss the concept of 'Data Storytelling' and how poor graphs can lie.",
+          "Provide students with a CSV file containing 50+ rows of data (e.g., tracking plant growth over 30 days).",
+          "Demonstrate how to use Canva's 'Charts' tool and connect data.",
+          "Show 'Magic Write' summarizing the data trends in a text box."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Open Presentation design.",
+          "Paste CSV data into Chart element.",
+          "Use Magic Write for summary.",
+          "Customize for readability."
+        ],
+        "detailed": [
+          "Open a new Presentation design in Canva.",
+          "Go to 'Elements' > 'Charts' and clear the dummy data.",
+          "Paste the provided dataset into the spreadsheet view.",
+          "Use 'Magic Write' to generate a 2-sentence summary of the trend shown in the data.",
+          "Customize the graph colors to ensure high contrast and readability.",
+          "Present the graph with the AI-generated insight clearly displayed."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics (Statistics/Probability)",
+          "Instruction in Technology (Data Analysis Software)"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453: Materials and supplies (Computing devices)"
+        ],
+        "programType": "UBMS",
+        "justification": "Directly supports the UBMS mandate for rigorous instruction in mathematics (statistics) and technology usage for scientific research.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b): Instruction in mathematics",
+          "HEA Sec. 402C(e): Computer science and data analysis"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1)(ii): Math component",
+          "34 CFR 645.11(b)(2): Elective technology instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Instructional supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Analyzing scientific data sets.",
+        "technology": "Data processing and visualization tools.",
+        "engineering": "Communicating technical results.",
+        "math": "Statistics, mean/median/mode, trend analysis.",
+        "crossCurricularLinks": [
+          "Journalism",
+          "Sociology"
+        ]
+      },
+      "careerPathways": [
+        "Data Analyst",
+        "Biostatistician",
+        "Market Research Analyst"
+      ],
+      "collegePathways": [
+        "B.S. Statistics",
+        "B.S. Data Science",
+        "B.A. Economics"
+      ]
+    },
+    {
+      "title": "Elemental Ethics: Designing Chemical Safety Protocols",
+      "description": "Students research hazardous chemicals and use AI to design modern safety posters. They use AI for context but must manually verify chemical symbols, emphasizing accuracy over aesthetics in safety engineering.",
+      "timeRequired": "60 Minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Research Skills",
+        "Safety Awareness",
+        "Graphic Layout"
+      ],
+      "learningObjectives": [
+        "Identify standard GHS (Globally Harmonized System) hazard symbols.",
+        "Design effective safety communication materials.",
+        "Understand the consequences of inaccurate technical communication.",
+        "Balance AI creativity with strict regulatory compliance."
+      ],
+      "teks": [
+        "112.35 (c)(1)(B): Demonstrate knowledge of safe laboratory practices.",
+        "130.402 (c)(2)(D): Interpret Material Safety Data Sheets (MSDS)."
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Safety - Lab Protocols",
+        "STEM Framework: Communication - Warning Systems"
+      ],
+      "materialsList": [
+        {
+          "item": "Canva Accounts",
+          "estimatedCost": "$0"
+        },
+        {
+          "item": "Printed MSDS examples",
+          "estimatedCost": "$2.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Review GHS symbols.",
+          "Assign chemicals.",
+          "Challenge: AI background, Verified Symbols.",
+          "Peer Safety Review."
+        ],
+        "detailed": [
+          "Review GHS symbols (flammable, corrosive, toxic, etc.).",
+          "Assign each student a specific chemical (e.g., Hydrochloric Acid, Benzene).",
+          "Challenge them to create a safety poster where the background is AI-generated (e.g., 'Industrial chemistry lab background') but the safety data is manually verified.",
+          "Conduct a peer review: Would this poster keep a worker safe?"
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Research MSDS for assigned chemical.",
+          "Generate thematic background with AI.",
+          "Add correct GHS symbols (Manually).",
+          "Add clear First Aid text."
+        ],
+        "detailed": [
+          "Research your assigned chemical's MSDS/SDS to find its hazards.",
+          "In Canva, use Magic Media to generate a thematic background (e.g., 'Bubbling test tubes, science aesthetic').",
+          "Overlay the CORRECT GHS symbols from the Elements library (do not generate these with AI as they may be hallucinated/incorrect).",
+          "Add clear, large text detailing First Aid measures.",
+          "Ensure the contrast makes the text readable from 5 feet away."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science (Chemistry/Safety)",
+          "Career Awareness (Industrial Hygiene/Safety Engineering)"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453: Instructional supplies"
+        ],
+        "programType": "Both",
+        "justification": "Safety instruction is a prerequisite for laboratory science participation in UB/UBMS summer components.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b): Instruction in laboratory science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1)(iii): Laboratory science",
+          "34 CFR 645.11(a)(6): Career exposure"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Chemical properties and hazards.",
+        "technology": "Digital graphic design for industrial application.",
+        "engineering": "Safety engineering and systems design.",
+        "math": "Understanding concentration percentages (if applicable).",
+        "crossCurricularLinks": [
+          "Civics (OSHA regulations)",
+          "Visual Arts"
+        ]
+      },
+      "careerPathways": [
+        "Industrial Hygienist",
+        "Chemical Safety Engineer",
+        "Lab Manager"
+      ],
+      "collegePathways": [
+        "B.S. Chemistry",
+        "B.S. Occupational Health and Safety",
+        "B.S. Chemical Engineering"
+      ]
+    },
+    {
+      "title": "Evolutionary Forecast: AI Modeling of Future Ecosystems",
+      "description": "Students apply principles of natural selection and climate science to predict how an animal might evolve over 1,000 years. They utilize AI image generation to visualize this 'future species' based on specific environmental constraints.",
+      "timeRequired": "60 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Understanding of Evolution",
+        "Descriptive Writing",
+        "Climate Science Basics"
+      ],
+      "learningObjectives": [
+        "Apply concepts of adaptation and natural selection.",
+        "Analyze climate change data to predict environmental shifts.",
+        "Use descriptive language (prompts) to translate biological traits into visual models.",
+        "Justify design choices based on biological principles."
+      ],
+      "teks": [
+        "112.34 (c)(7)(C): Analyze and evaluate how natural selection produces change in populations.",
+        "112.32 (c)(9)(C): Predict changes in ecosystems caused by changing environments."
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Critical Thinking - Predictive Modeling",
+        "STEM Framework: Creativity - Innovative Design"
+      ],
+      "materialsList": [
+        {
+          "item": "Canva Accounts",
+          "estimatedCost": "$0"
+        },
+        {
+          "item": "Climate Prediction Fact Sheets",
+          "estimatedCost": "$0 (Digital PDF)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Discuss natural selection mechanics.",
+          "Assign Biome and Climate Event.",
+          "List necessary biological adaptations.",
+          "Generate evolved species with AI."
+        ],
+        "detailed": [
+          "Discuss natural selection: traits that enhance survival become more common.",
+          "Assign a biome (Desert, Tundra, Ocean) and a 'Climate Event' (e.g., Tundra melts into marshland).",
+          "Ask students to choose an existing animal and list 3 traits it would need to evolve to survive.",
+          "Have students generate the evolved animal using Canva Magic Media."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Select animal and apply climate change scenario.",
+          "List 3 physical adaptations.",
+          "Write detailed prompt describing new traits.",
+          "Generate and label image."
+        ],
+        "detailed": [
+          "Select an animal (e.g., Polar Bear).",
+          "Imagine its habitat changes (e.g., no ice, much warmer).",
+          "Write down adaptations: Shorter fur? Webbed feet for swimming? Brown camouflage?",
+          "Construct a Canva prompt: 'A brown bear with webbed feet and sleek fur swimming in a marsh, realistic National Geographic style'.",
+          "Generate the image and label the specific adaptations using arrows."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science (Biology/Ecology)",
+          "Instruction in literature (Descriptive writing)"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453: Instructional materials"
+        ],
+        "programType": "Both",
+        "justification": "Reinforces core Biology curriculum regarding evolution and ecology, critical for high school science proficiency.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b): Instruction in science",
+          "HEA Sec. 402C(b): Instruction in literature"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1)(iii): Laboratory science",
+          "34 CFR 645.11(b)(1)(iv): Literature/Composition"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Evolutionary biology, ecology, climate science.",
+        "technology": "Generative AI modeling.",
+        "engineering": "Biomimicry concepts.",
+        "math": "Probability in genetics (conceptual).",
+        "crossCurricularLinks": [
+          "Creative Writing",
+          "Geography"
+        ]
+      },
+      "careerPathways": [
+        "Evolutionary Biologist",
+        "Climate Change Analyst",
+        "Conservation Scientist"
+      ],
+      "collegePathways": [
+        "B.S. Ecology and Evolutionary Biology",
+        "B.S. Environmental Science",
+        "B.S. Zoology"
+      ]
+    },
+    {
+      "title": "Mission to Mars: Branding a Space Expedition",
+      "description": "Students form a 'Space Agency' and design a mission patch and recruitment poster for a Mars colony. They combine physics concepts (gravity, atmosphere) with graphic design to create technically accurate yet inspiring imagery using AI tools.",
+      "timeRequired": "60 Minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Basic Physics (Gravity/Atmosphere)",
+        "Symbolism/Design",
+        "Collaboration"
+      ],
+      "learningObjectives": [
+        "Identify physical constraints of space travel.",
+        "Use symbolism to communicate mission goals.",
+        "Navigate AI text-to-image tools to create vector-style graphics.",
+        "Present a cohesive visual identity for a scientific mission."
+      ],
+      "teks": [
+        "112.33 (c)(5)(B): Describe the history and future of space exploration.",
+        "130.362 (c)(6)(A): Prepare a technical presentation."
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Communication - Technical Marketing",
+        "STEM Framework: Design - Visual Identity"
+      ],
+      "materialsList": [
+        {
+          "item": "Canva Accounts",
+          "estimatedCost": "$0"
+        },
+        {
+          "item": "Examples of NASA Mission Patches",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Show NASA patches/symbolism.",
+          "Discuss public support for science.",
+          "Instruction: Design Mars Mission Patch.",
+          "Ensure physics accuracy."
+        ],
+        "detailed": [
+          "Show examples of NASA Apollo and Artemis mission patches. Discuss the symbolism (e.g., 3 stars for 3 astronauts).",
+          "Explain that space missions require public support and funding, making design important.",
+          "Instruct students to design a patch for a mission to Mars, incorporating Mars' red color and its two moons (Phobos and Deimos)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Open Logo design in Canva.",
+          "Generate vector elements (Mars, Rocket).",
+          "Assemble patch with frames/text.",
+          "Verify physics accuracy (no wings)."
+        ],
+        "detailed": [
+          "Open a 'Logo' design in Canva.",
+          "Use Magic Media to generate elements: 'Vector illustration of Mars planet, flat style' or 'Rocket ship silhouette'.",
+          "Assemble the patch using circular frames.",
+          "Ensure the design reflects the physics of the mission (e.g., don't draw a plane with wings, as Mars has thin atmosphere).",
+          "Add the mission name using curved text."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science (Astronomy/Physics)",
+          "Exposure to career options (Aerospace Engineering)"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453: Instructional supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Aligns with UBMS focus on physical sciences and encourages interest in aerospace careers.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b): Instruction in science",
+          "HEA Sec. 402C(e): UBMS specific focus"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1)(iii): Lab science (Physics)",
+          "34 CFR 645.11(a)(6): Career exposure"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Astronomy, planetary geology.",
+        "technology": "Digital design software.",
+        "engineering": "Aerospace constraints.",
+        "math": "Geometry (Circles, symmetry).",
+        "crossCurricularLinks": [
+          "History (Space Race)",
+          "Marketing"
+        ]
+      },
+      "careerPathways": [
+        "Aerospace Engineer",
+        "Astrophysicist",
+        "Technical Communicator"
+      ],
+      "collegePathways": [
+        "B.S. Aerospace Engineering",
+        "B.S. Physics",
+        "B.S. Astronomy"
+      ]
+    },
+    {
+      "title": "Algorithmic Logic: AI Flowcharting for Coding",
+      "description": "Students learn the logic of computer programming by designing flowcharts. They use Canva's Whiteboard and 'Magic Write' to break down everyday tasks into algorithmic steps, visualizing conditional logic (If/Then/Else) before writing actual code.",
+      "timeRequired": "60 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Logical Reasoning",
+        "Sequencing",
+        "Systematic Thinking"
+      ],
+      "learningObjectives": [
+        "Decompose complex problems into step-by-step algorithms.",
+        "Utilize standard flowchart symbols (Start/End, Decision, Process).",
+        "Use AI to brainstorm edge cases in their logic.",
+        "Debug a peer's flowchart."
+      ],
+      "teks": [
+        "126.33 (c)(5)(A): Decompose problems into smaller, manageable sub-problems.",
+        "126.33 (c)(5)(B): Create algorithms to solve problems."
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Computational Thinking - Algorithms",
+        "STEM Framework: Logic - Flowcharting"
+      ],
+      "materialsList": [
+        {
+          "item": "Canva Whiteboard feature",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Define Algorithm and Flowchart symbols.",
+          "Task: Robot Sandwich Algorithm.",
+          "Use AI to identify 'Edge Cases'.",
+          "Review Logic Paths."
+        ],
+        "detailed": [
+          "Introduce the concept of an Algorithm: a set of rules to solve a problem.",
+          "Explain flowchart shapes: Ovals (Start/End), Rectangles (Action), Diamonds (Decision/Yes-No).",
+          "Task: Create an algorithm for a robot to 'Make a Sandwich'.",
+          "Use Magic Write to ask: 'What are potential errors a robot might encounter making a sandwich?' to help students improve their logic."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Open Whiteboard.",
+          "Map sandwich steps with shapes.",
+          "Add decision diamonds.",
+          "Use AI to find errors/edge cases.",
+          "Refine logic."
+        ],
+        "detailed": [
+          "Open a Canva Whiteboard.",
+          "Select 'Flowcharts' from the templates or elements.",
+          "Map out the steps to make a sandwich.",
+          "Include at least 3 decision diamonds (e.g., 'Is there bread?').",
+          "Use Magic Write to generate a list of 'Edge Cases' (unexpected situations).",
+          "Add paths to your flowchart to handle these edge cases."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics (Logic/Boolean Algebra)",
+          "Instruction in Technology (Computer Science principles)"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453: Computing devices"
+        ],
+        "programType": "UBMS",
+        "justification": "Computer Science and Computational Thinking are key components of the modern STEM curriculum mandated for UBMS programs.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b): Instruction in math",
+          "HEA Sec. 402C(e): Technology and Computer Science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1)(ii): Mathematics",
+          "34 CFR 645.11(b)(2): Elective technology"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Instructional Supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Scientific method (process flow).",
+        "technology": "Programming logic.",
+        "engineering": "Systems engineering.",
+        "math": "Boolean logic, sequencing.",
+        "crossCurricularLinks": [
+          "Philosophy (Logic)",
+          "Linguistics"
+        ]
+      },
+      "careerPathways": [
+        "Software Developer",
+        "Systems Analyst",
+        "Process Engineer"
+      ],
+      "collegePathways": [
+        "B.S. Computer Science",
+        "B.S. Information Systems",
+        "B.S. Mathematics"
+      ]
+    },
+    {
+      "title": "Medical Imaging: Augmented Reality Posters",
+      "description": "Students study human anatomy and create educational posters that explain a body system. They use AI to generate detailed 3D-style organ renders and organize them to show system interactions, simulating how medical illustrators work.",
+      "timeRequired": "60 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Anatomical Knowledge",
+        "Visual Hierarchy",
+        "Attention to Detail"
+      ],
+      "learningObjectives": [
+        "Identify major organs within a specific body system.",
+        "Explain the function of these organs.",
+        "Prompt AI for anatomically correct visualizations.",
+        "Arrange visual information hierarchically."
+      ],
+      "teks": [
+        "112.34 (c)(10)(A): Analyze the interactions of body systems.",
+        "130.203 (c)(2)(B): Identify anatomical structures and planes."
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Health Science - Anatomy",
+        "STEM Framework: Communication - Medical Illustration"
+      ],
+      "materialsList": [
+        {
+          "item": "Canva Accounts",
+          "estimatedCost": "$0"
+        },
+        {
+          "item": "Anatomy Textbooks for verification",
+          "estimatedCost": "$0 (Library)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Assign body systems.",
+          "Discuss Medical Illustration career.",
+          "Caution on AI anatomy errors.",
+          "Verify against textbooks."
+        ],
+        "detailed": [
+          "Assign body systems (Circulatory, Nervous, Digestive) to groups.",
+          "Discuss the career of Medical Illustration: combining art and deep scientific knowledge.",
+          "Warn that AI often messes up anatomy (extra fingers, wrong connections). Students must verify AI images against textbooks."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Create poster.",
+          "Generate organ image with AI.",
+          "Verify accuracy against textbook.",
+          "Label parts and summarize function."
+        ],
+        "detailed": [
+          "Create a large poster in Canva.",
+          "Use Magic Media to generate specific organs (e.g., 'Human heart cross section, medical illustration style, white background').",
+          "Compare the AI result to your textbook. If it's wrong, regenerate or find a stock photo.",
+          "Label the parts clearly.",
+          "Write a summary of how this system keeps the body alive."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science (Anatomy/Physiology)",
+          "Exposure to career options (Health Professions/Pre-Med)"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453: Instructional supplies"
+        ],
+        "programType": "Both",
+        "justification": "Supports student interest in health professions, a major career cluster for TRIO participants.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b): Instruction in lab science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1)(iii): Laboratory science",
+          "34 CFR 645.11(a)(6): Career exposure"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Anatomy and Physiology.",
+        "technology": "Medical imaging technology concepts.",
+        "engineering": "Biomedical engineering (implants/devices).",
+        "math": "Ratios/Proportions (Scaling organs).",
+        "crossCurricularLinks": [
+          "Health",
+          "Art"
+        ]
+      },
+      "careerPathways": [
+        "Radiologist",
+        "Medical Illustrator",
+        "Biomedical Engineer"
+      ],
+      "collegePathways": [
+        "B.S. Nursing",
+        "Pre-Med / B.S. Biology",
+        "M.S. Medical Visualization"
+      ]
+    },
+    {
+      "title": "Green Cities: Urban Planning with AI Generative Fill",
+      "description": "Students take a photo of a concrete-heavy area of their school or city and use Canva's 'Magic Edit' or 'Generative Fill' to reimagine it with sustainable infrastructure (green roofs, bike lanes, solar panels).",
+      "timeRequired": "60 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Civil Engineering Basics",
+        "Photo Editing",
+        "Environmental Awareness"
+      ],
+      "learningObjectives": [
+        "Identify features of sustainable urban design.",
+        "Evaluate the environmental impact of urban heat islands.",
+        "Use AI in-painting/editing tools to visualize infrastructure changes.",
+        "Propose a civil engineering project to local stakeholders."
+      ],
+      "teks": [
+        "112.37 (c)(9)(D): Describe how land use decisions affect the environment.",
+        "130.362 (c)(5)(D): Apply civil engineering concepts to a design."
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Sustainability - Green Design",
+        "STEM Framework: Engineering - Civil Planning"
+      ],
+      "materialsList": [
+        {
+          "item": "Digital Photos of School/City",
+          "estimatedCost": "$0"
+        },
+        {
+          "item": "Canva Accounts",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Capture photos of concrete areas.",
+          "Explain Urban Heat Islands.",
+          "Demonstrate Magic Edit.",
+          "Transform space to green hub."
+        ],
+        "detailed": [
+          "Walk students outside to take a photo of a parking lot or concrete wall, OR provide stock photos of urban sprawl.",
+          "Discuss 'Urban Heat Islands' and runoff issues.",
+          "Demonstrate 'Magic Edit': Select a parking space and type 'Community garden bed' to replace it.",
+          "Challenge students to increase the 'Green Score' of the image."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Upload photo.",
+          "Select Magic Edit.",
+          "Brush area to change.",
+          "Prompt for sustainable feature.",
+          "Repeat and annotate."
+        ],
+        "detailed": [
+          "Upload your photo to Canva.",
+          "Click the photo and select 'Magic Edit'.",
+          "Brush over a concrete area.",
+          "Prompt the AI to replace it with 'Bioswale', 'Solar charging station', or 'Native wildflower garden'.",
+          "Repeat until the space is transformed into a sustainable hub.",
+          "Add text bubbles explaining the environmental benefit of each change."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science (Environmental Science)",
+          "Instruction in Mathematics (Area/Resource calculation)",
+          "Career Awareness (Civil Engineering/Urban Planning)"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453: Instructional supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Combines environmental science with engineering design, fulfilling the interdisciplinary STEM focus of UBMS.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b): Instruction in science",
+          "HEA Sec. 402C(b): Instruction in math"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1)(i): Science",
+          "34 CFR 645.11(b)(1)(ii): Math"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Environmental science, botany.",
+        "technology": "AI photo manipulation.",
+        "engineering": "Civil engineering, urban planning.",
+        "math": "Area, percentage of green space.",
+        "crossCurricularLinks": [
+          "Civics/Government",
+          "Social Studies"
+        ]
+      },
+      "careerPathways": [
+        "Urban Planner",
+        "Civil Engineer",
+        "Landscape Architect"
+      ],
+      "collegePathways": [
+        "B.S. Civil Engineering",
+        "B.S. Environmental Design",
+        "Master of Urban Planning"
+      ]
+    },
+    {
+      "title": "The STEM Professional: AI-Assisted Portfolio Design",
+      "description": "Students curate their work from the previous modules into a professional digital portfolio or resume. They use AI to help articulate their soft skills and technical competencies, preparing them for college applications and internships.",
+      "timeRequired": "60 Minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Self-Reflection",
+        "Web Design Basics",
+        "Professional Writing"
+      ],
+      "learningObjectives": [
+        "Organize artifacts into a professional presentation.",
+        "Use AI to refine professional summaries and descriptions.",
+        "Identify top 3 STEM skills gained during the curriculum.",
+        "Prepare a digital portfolio for college admissions."
+      ],
+      "teks": [
+        "127.14 (c)(1)(A): Analyze personal interests and aptitudes.",
+        "127.14 (c)(3)(A): Create a personal portfolio."
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Employability - Career Readiness",
+        "STEM Framework: Communication - Professional Branding"
+      ],
+      "materialsList": [
+        {
+          "item": "Canva Website/Portfolio Templates",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Discuss college portfolios.",
+          "Demo Canva Websites.",
+          "Upload top 3 projects.",
+          "Draft 'About Me' with Magic Write."
+        ],
+        "detailed": [
+          "Explain that colleges and employers want to see *proof* of skills, not just grades.",
+          "Show how to create a 'Bio Link' website or Portfolio in Canva.",
+          "Instruct students to upload their best 3 projects from this workshop.",
+          "Use Magic Write to help them draft an 'About Me' section that highlights their STEM interests."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Start Portfolio Website.",
+          "Add photo and bio.",
+          "Upload projects (Mars Patch, Safety Poster, etc).",
+          "Refine text with AI.",
+          "Publish."
+        ],
+        "detailed": [
+          "Search for 'Portfolio Website' in Canva.",
+          "Create a homepage with your name and a professional photo.",
+          "Create a 'Projects' section. Upload your Mars Patch, Safety Poster, and Data Graph.",
+          "Use Magic Write: 'Write a professional summary for a high school student interested in Biomedical Engineering who knows Canva and Python.'",
+          "Edit the text to sound like *you*.",
+          "Publish the site and save the link."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Information on federal student financial aid (Scholarship prep)",
+          "Assistance in completing college entrance applications (Portfolio building)",
+          "Mentoring (Professional development)"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453: Computing devices"
+        ],
+        "programType": "Both",
+        "justification": "This is a mandatory service for all TRIO UB/UBMS projects: assisting students in preparing for postsecondary enrollment and application processes.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b): College application assistance"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Application assistance"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Reflection on scientific principles learned.",
+        "technology": "Web design and digital publishing.",
+        "engineering": "Review of engineering design process.",
+        "math": "N/A",
+        "crossCurricularLinks": [
+          "English/Language Arts",
+          "College/Career Prep"
+        ]
+      },
+      "careerPathways": [
+        "STEM Researcher",
+        "Undergraduate Research Assistant",
+        "Tech Intern"
+      ],
+      "collegePathways": [
+        "All STEM Majors",
+        "University Honors Colleges",
+        "Engineering Schools"
+      ]
+    }
+  ]
+}

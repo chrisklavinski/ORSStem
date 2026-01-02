@@ -1,0 +1,645 @@
+{
+  "curriculumTitle": "Seeing the Unseen: The Physics and Engineering of Medical Imaging (Modularized)",
+  "overview": "This curriculum module immerses students in the science behind non-invasive medical imaging, adapted into six 40-minute high-impact sessions. Students will explore the electromagnetic spectrum through X-ray simulations, understand sound wave reflection via Ultrasound modeling, and apply geometry to Computed Tomography (CT) scanning logic. The unit emphasizes the intersection of physics, anatomy, and mathematics while highlighting high-growth healthcare careers. Content is aligned with Texas Essential Knowledge and Skills (TEKS) and structured to meet Federal TRIO (UB/UBMS) grant objectives regarding rigorous laboratory science instruction.",
+  "prerequisites": "Completion of Algebra I; Co-enrollment or completion of High School Biology recommended.",
+  "targetAgeGroup": "High School (Ages 14-18)",
+  "totalDurationEstimate": "4 Hours (6 Modules of 40 Minutes)",
+  "fieldTrips": [
+    {
+      "name": "UT Southwestern Medical Center - Simulation Center",
+      "location": "Dallas, TX (Dallas County)",
+      "description": "A guided tour of one of the largest medical simulation centers in the nation, offering students a look at high-fidelity mannequins and diagnostic imaging training tools.",
+      "relevanceToCurriculum": "Directly correlates to the 'Medical Imaging' curriculum by showing how future doctors use the physics and engineering concepts discussed in class for training and diagnosis."
+    },
+    {
+      "name": "Perot Museum of Nature and Science - Engineering and Innovation Hall",
+      "location": "Dallas, TX (Dallas County)",
+      "description": "Exploration of the Texas Instruments Engineering and Innovation Hall, focusing on sensor technology and wave physics exhibits.",
+      "relevanceToCurriculum": "Reinforces Module 3 and 4 concepts regarding sensors, data collection, and the engineering design process."
+    }
+  ],
+  "activities": [
+    {
+      "title": "Module 1: The Electromagnetic Spectrum & X-Ray Physics",
+      "description": "Part 1 of the X-Ray unit. Students learn the physics of high-energy waves and prepare their 'patients' for analog simulation using photosensitive materials.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Introductory",
+      "requiredSkills": [
+        "Basic understanding of visible light",
+        "Hypothesis generation"
+      ],
+      "learningObjectives": [
+        "Identify the position of X-rays on the electromagnetic spectrum.",
+        "Explain the relationship between frequency, wavelength, and energy.",
+        "Hypothesize how material density affects wave absorption."
+      ],
+      "teks": [
+        "Physics 7(B): Investigate and analyze characteristics of waves, including velocity, frequency, amplitude, and wavelength.",
+        "Chemistry 6(B): Understand the electromagnetic spectrum and the mathematical relationships between energy, frequency, and wavelength."
+      ],
+      "texasStemStandards": [
+        "Science Practices: Planning and Carrying Out Investigations"
+      ],
+      "materialsList": [
+        {
+          "item": "Chicken bones or opaque plastic bone models",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Various density items (metal washers, cotton balls)",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "EM Spectrum Chart/Poster",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Lecture: Intro to EM Spectrum and X-rays (15 min).",
+          "Explain density/absorption logic (10 min).",
+          "Student Prep: Construct the 'patient' using bones/items (15 min).",
+          "Store setups in a light-proof box/bag for the next module."
+        ],
+        "detailed": [
+          "1. **Theory (15 mins):** Present the Electromagnetic Spectrum. Focus on why we use X-rays for bone (high energy passes through skin, absorbed by calcium).",
+          "2. **Hypothesis Generation (10 mins):** Show students the materials (metal, bone, cotton). Ask them to rank them by density and predict which will block the most light.",
+          "3. **Patient Construction (15 mins):** Have groups arrange their items on a standard piece of paper (as a placeholder) to finalize their design. They must create a scenario (e.g., 'Broken Arm with Screw').",
+          "4. **Storage:** Ensure designs are documented or kept safe for Module 2."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Learn how X-rays work compared to visible light.",
+          "Rank your test materials from least dense to most dense.",
+          "Design your 'patient' layout using the bones and objects provided.",
+          "Sketch your layout so you are ready for the darkroom next session."
+        ],
+        "detailed": [
+          "1. **Spectrum Analysis:** Identify where X-rays sit on the chart. Note that higher frequency = higher energy.",
+          "2. **Density Sorting:** You have metal, plastic/bone, and cotton. Which is most like a real bone? Which is most like soft tissue?",
+          "3. **Design:** Arrange your items to look like a medical injury (e.g., a fracture).",
+          "4. **Prediction:** On your worksheet, draw what you think the final image will look like. Which areas will be white? Which will be dark?"
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in laboratory science",
+          "Exposure to STEM careers"
+        ],
+        "allowableCosts": [
+          "Instructional supplies (bones, models)"
+        ],
+        "programType": "Both",
+        "justification": "Foundation setting for laboratory science. Prepares students for rigorous academic inquiry.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in science",
+          "Sec. 402C(e) - Exposure to academic programs"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(3) - Science instruction",
+          "34 CFR 645.11(b)(1) - Career awareness"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies costs, including costs of computing devices"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics: Wavelengths and frequency.",
+        "technology": "Radiography history.",
+        "engineering": "Material Science: Density properties.",
+        "math": "Inverse relationships (Frequency vs Wavelength).",
+        "crossCurricularLinks": [
+          "History: Wilhelm Röntgen."
+        ]
+      },
+      "careerPathways": [
+        "Radiologic Technologist",
+        "Medical Physicist"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Radiologic Sciences",
+        "Bachelor of Science in Physics"
+      ]
+    },
+    {
+      "title": "Module 2: Developing the Diagnosis (Analog Simulation)",
+      "description": "Part 2 of the X-Ray unit. Students expose their layouts to UV light using cyanotype paper, develop the images, and interpret the results as radiologists.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Laboratory safety protocols",
+        "Observation and inference"
+      ],
+      "learningObjectives": [
+        "Demonstrate how negative images are formed in radiology.",
+        "Analyze a 'shadow graph' to identify foreign objects vs. biological structures.",
+        "Formulate a diagnostic report based on visual data."
+      ],
+      "teks": [
+        "Physics 5(B): Demonstrate wave interactions including absorption and reflection.",
+        "Biology 2(H): Communicate valid conclusions supported by the data through written reports."
+      ],
+      "texasStemStandards": [
+        "STEM Career Awareness: Health Science"
+      ],
+      "materialsList": [
+        {
+          "item": "Sun-sensitive Cyanotype Paper (pack of 30)",
+          "estimatedCost": "$15.00"
+        },
+        {
+          "item": "Clear plastic sheet protectors",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "UV Flashlights or Sunlight",
+          "estimatedCost": "$12.00"
+        },
+        {
+          "item": "Water trays for rinsing",
+          "estimatedCost": "$2.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Darkroom Prep: Distribute cyanotype paper in dim light.",
+          "Transfer: Students move items from Module 1 onto the blue paper.",
+          "Exposure: Expose to UV/Sun (2-5 mins).",
+          "Development: Rinse in water (2 mins).",
+          "Analysis: Students write a 'Radiology Report'."
+        ],
+        "detailed": [
+          "1. **Setup (5 mins):** Dim the lights. Distribute one sheet of cyanotype paper per group.",
+          "2. **Transfer (5 mins):** Students quickly move their arranged objects onto the sensitive paper and cover with plastic to flatten.",
+          "3. **Exposure (10-15 mins):** Move to sunlight or turn on UV lamps. Explain that the UV light is acting as the 'Radiation'.",
+          "4. **Development (5 mins):** Remove objects. Rinse paper in water until the yellow chemical turns white/clear and the background turns blue.",
+          "5. **Assessment (10 mins):** Students analyze the contrast. White = Bone/Metal (High Density). Dark Blue = Air/Space (Low Density)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Place your 'patient' items on the blue paper.",
+          "Expose to the light source (X-ray beam).",
+          "Rinse the paper to stop the chemical reaction.",
+          "Analyze the image: Whiter areas meant the light was blocked.",
+          "Write your diagnosis report."
+        ],
+        "detailed": [
+          "1. **The Exposure:** Light travels in straight lines. Where your objects block the light, the paper remains unreacted.",
+          "2. **Chemical Reaction:** The water washes away the unreacted chemicals, leaving a white shadow.",
+          "3. **Radiologist Role:** Look at your final image. Can you tell the difference between the metal washer and the bone? Why is the cotton ball 'ghostly'?",
+          "4. **Report:** Write a 3-sentence diagnosis describing the injury shown in your X-ray."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in laboratory science",
+          "Mentoring (Peer review of diagnosis)"
+        ],
+        "allowableCosts": [
+          "Educational supplies (Chemical paper, trays) - Reasonable/Allocable"
+        ],
+        "programType": "UBMS",
+        "justification": "Hands-on laboratory science involving chemical reactions and physics principles. Supports UBMS objective of providing intensive instruction in science.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in science",
+          "Sec. 402E(b) - Hands-on research experience (UBMS)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(3) - Science instruction",
+          "34 CFR 645.43(a) - Scientific research activities (UBMS)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404 - Reasonable costs",
+          "2 CFR 200.453 - Materials and supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Chemistry: Photoreactivity.",
+        "technology": "Analog vs Digital imaging.",
+        "engineering": "Biomedical imaging systems.",
+        "math": "Ratios (Exposure time vs Contrast).",
+        "crossCurricularLinks": [
+          "Art: Negative space composition."
+        ]
+      },
+      "careerPathways": [
+        "Radiologist",
+        "Orthopedic Technician"
+      ],
+      "collegePathways": [
+        "Doctor of Medicine (M.D.)",
+        "Associate of Applied Science in Radiologic Technology"
+      ]
+    },
+    {
+      "title": "Module 3: Ultrasound Physics & The Coordinate Plane",
+      "description": "Part 1 of the Ultrasound unit. Focuses on the theory of sound waves (echolocation) and the mathematical setup of 3D mapping using grid systems.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Graphing on a Cartesian plane",
+        "Measurement with a ruler"
+      ],
+      "learningObjectives": [
+        "Explain the principle of echolocation/reflection.",
+        "Set up a 3-dimensional coordinate system (x, y, z).",
+        "Calibrate measurement tools for scientific accuracy."
+      ],
+      "teks": [
+        "Physics 7(E): Describe the nature of sound waves.",
+        "Math (Geometry) 11(D): Apply formulas for volume and coordinates in 3D."
+      ],
+      "texasStemStandards": [
+        "Computational Thinking"
+      ],
+      "materialsList": [
+        {
+          "item": "Pre-made Gelatin Phantoms (Teacher prepared prior)",
+          "estimatedCost": "$15.00"
+        },
+        {
+          "item": "Bamboo skewers",
+          "estimatedCost": "$2.00"
+        },
+        {
+          "item": "Rulers",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Note: Teacher must prep gelatin boxes 24 hours prior.",
+          "Lecture: How sound bounces (Sonar/Ultrasound).",
+          "Math Instruction: Introduce the X, Y, Z coordinate grid.",
+          "Student Activity: Draw grids on the container lids.",
+          "Calibration: Mark skewers in centimeters using rulers."
+        ],
+        "detailed": [
+          "1. **Prep Check:** Ensure gelatin boxes are set and opaque (taped sides).",
+          "2. **Theory (15 mins):** Explain that Ultrasound uses high-frequency sound. It calculates distance by Time x Speed. We are simulating this by physically probing.",
+          "3. **Math Setup (15 mins):** Students must draw a 1cm x 1cm grid on the lid of their box. Label columns (A, B, C...) and rows (1, 2, 3...). This is the X/Y plane.",
+          "4. **Tool Calibration (10 mins):** Students use rulers to mark their skewers (probes) every 0.5 cm to ensure accurate depth reading (Z-axis)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Listen to the briefing on Sound Waves.",
+          "Draw a grid on the lid of your mystery box.",
+          "Label the X-axis (Letters) and Y-axis (Numbers).",
+          "Use a ruler to mark measurements on your skewer probe.",
+          "Do not open the box!"
+        ],
+        "detailed": [
+          "1. **The Concept:** You are a computer. You need to map a 3D object you cannot see. You will use a grid system.",
+          "2. **Grid Construction:** Create your map. Precision matters. If your grid is sloppy, your medical image will be blurry.",
+          "3. **Calibration:** Mark your skewer. The depth the skewer goes into the box represents the time it takes for a sound wave to bounce back."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics (Geometry)",
+          "Academic advice (Course selection for Engineering)"
+        ],
+        "allowableCosts": [
+          "Lab supplies (Gelatin, containers)"
+        ],
+        "programType": "UBMS",
+        "justification": "Intensive math instruction applied to scientific phenomena, a core component of UBMS.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in mathematics",
+          "Sec. 402E(d)(1) - Intensive instruction in mathematics and science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(3) - Math instruction",
+          "34 CFR 645.11(b)(5) - Mentoring"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics: Wave reflection.",
+        "technology": "Sonar.",
+        "engineering": "Sensor design.",
+        "math": "Cartesian coordinates.",
+        "crossCurricularLinks": [
+          "Marine Biology (Dolphins)."
+        ]
+      },
+      "careerPathways": [
+        "Ultrasound Technician",
+        "Sonographer"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Diagnostic Medical Sonography",
+        "Bachelor of Science in Biomedical Engineering"
+      ]
+    },
+    {
+      "title": "Module 4: The Blind Biopsy (Data Collection)",
+      "description": "Part 2 of the Ultrasound unit. Students execute the experiment, systematically probing the phantom tissue and recording raw data for analysis.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Systematic data recording",
+        "Tactile observation"
+      ],
+      "learningObjectives": [
+        "Collect systematic scientific data.",
+        "Differentiate material properties (hardness/texture) via tactile feedback.",
+        "Record 3-variable data points (x, y, z)."
+      ],
+      "teks": [
+        "Science Practices: Collect and organize qualitative and quantitative data.",
+        "Health Science 1(A): Demonstrate basic medical procedures and standard precautions."
+      ],
+      "texasStemStandards": [
+        "Model-Based Reasoning"
+      ],
+      "materialsList": [
+        {
+          "item": "Gelatin Phantoms (from Module 3)",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Calibrated Skewers",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Data Entry Sheets / Excel",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Distribution: Give Phantoms back to student groups.",
+          "Instruction: Demonstrate safe/gentle probing technique.",
+          "Activity: Students probe every intersection on their grid.",
+          "Data Logging: Students record Depth (Z) and 'Feel' (Hard/Soft) for every coordinate."
+        ],
+        "detailed": [
+          "1. **Technique (5 mins):** Instruct students to push the skewer straight down (perpendicular). Slanted probes will ruin the data.",
+          "2. **Execution (30 mins):** This is the labor-intensive phase. Students must systematically check grid points (A1, A2, A3...).",
+          "3. **Differentiation:** If they hit the bottom of the box, record 'MAX'. If they hit an object, record the depth value.",
+          "4. **Tactile Feedback:** Ask them to note if the object felt hard (marble) or squishy (grape)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Insert probe at coordinate A-1.",
+          "Record the depth.",
+          "Record what you felt (Bottom of box? Something hard? Something squishy?).",
+          "Repeat for the whole grid.",
+          "Keep your data table neat."
+        ],
+        "detailed": [
+          "1. **Be the Transducer:** The ultrasound machine sends pulses thousands of times a second. You are doing it manually.",
+          "2. **Precision:** Ensure your probe goes straight down.",
+          "3. **Data Integrity:** Don't guess. If you aren't sure, probe that spot again. Your final grade depends on the accuracy of your map, not how fast you finish."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in laboratory science",
+          "Tutorial services"
+        ],
+        "allowableCosts": [
+          "Paper/Printing for data sheets"
+        ],
+        "programType": "Both",
+        "justification": "Standard laboratory practice: data collection and organization. Meets requirement for rigorous science component.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in science",
+          "Sec. 402C(b) - Tutorial services"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(3) - Science instruction",
+          "34 CFR 645.11(b)(1) - Academic support"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403 - Allocability of costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Geology: Seismology methods.",
+        "technology": "Data logging.",
+        "engineering": "Quality control.",
+        "math": "Tables and matrices.",
+        "crossCurricularLinks": [
+          "Geography: Topographical mapping."
+        ]
+      },
+      "careerPathways": [
+        "Data Analyst",
+        "Research Scientist"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Data Science",
+        "Bachelor of Science in Nursing"
+      ]
+    },
+    {
+      "title": "Module 5: 3D Reconstruction & Analysis",
+      "description": "Part 3 of the Ultrasound unit. Students translate their raw numerical data into a visual map to identify the hidden object, then verify against reality.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Graphing data",
+        "Pattern recognition"
+      ],
+      "learningObjectives": [
+        "Convert numerical data sets into visual representations (graphs/maps).",
+        "Analyze data to determine the size and shape of an unseen object.",
+        "Compare model predictions with physical reality (Error Analysis)."
+      ],
+      "teks": [
+        "Math (Geometry) 11(D): Volume and surface area.",
+        "Science Practices: Analyze and interpret data to derive meaning."
+      ],
+      "texasStemStandards": [
+        "Creativity and Innovation"
+      ],
+      "materialsList": [
+        {
+          "item": "Graph Paper or Laptops with Excel",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Colored Pencils",
+          "estimatedCost": "$5.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Instruction: How to plot Z-values (Depth) on a 2D map (Heat map style).",
+          "Activity: Students color-code their grid based on depth.",
+          "Prediction: Groups estimate the object shape/type.",
+          "The Reveal: Open the boxes and compare.",
+          "Discussion: False positives/negatives."
+        ],
+        "detailed": [
+          "1. **Visualization (10 mins):** Show how to turn numbers into a picture. Example: Depths of 0-2cm = Red, 2-4cm = Yellow, Bottom = Blue.",
+          "2. **Mapping (15 mins):** Students color their grid paper based on their data. The 'shape' of the tumor/organ should appear.",
+          "3. **Diagnosis (5 mins):** Based on the shape and the 'Hard/Soft' notes, what is it? (e.g., 'A 3cm round cyst').",
+          "4. **Verification (10 mins):** Remove the tape/lid. Pull the gelatin out. Compare the drawing to the real object. Discuss why errors happened (probe bent, object moved)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Create a color key for your depths (Shallow = Hot color, Deep = Cool color).",
+          "Color in your grid squares based on your data.",
+          "Look at the shape that emerges.",
+          "Make a final guess: What is inside?",
+          "Open the box and check your accuracy."
+        ],
+        "detailed": [
+          "1. **Data Processing:** A computer does this in milliseconds. You are doing the math manually to understand the logic.",
+          "2. **Topography:** You are making a topographical map of the object inside the gelatin.",
+          "3. **Error Analysis:** When you open the box, check your work. Did you miss a spot? Did you think the grape was a marble? Why?"
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics (Graphing/Data Analysis)",
+          "Exposure to STEM careers (Biomedical Engineering)"
+        ],
+        "allowableCosts": [
+          "Instructional supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "High-level application of mathematics to solve scientific problems, fulfilling UBMS 'intensive instruction' requirements.",
+        "heaRequirements": [
+          "Sec. 402E(d)(1) - Intensive math instruction",
+          "Sec. 402E(b) - Research experience"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(3) - Math instruction",
+          "34 CFR 645.43(a) - Hands-on experience"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics: Error analysis.",
+        "technology": "Digital Signal Processing.",
+        "engineering": "Imaging software.",
+        "math": "3D graphing.",
+        "crossCurricularLinks": [
+          "Computer Science: Algorithms."
+        ]
+      },
+      "careerPathways": [
+        "Biomedical Engineer",
+        "Radiologist"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Biomedical Engineering",
+        "Bachelor of Science in Mathematics"
+      ]
+    },
+    {
+      "title": "Module 6: Computed Tomography (CT) Logic",
+      "description": "A fast-paced module where students use clay modeling to understand Tomography (slicing) and algorithmic reconstruction.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Introductory",
+      "requiredSkills": [
+        "Spatial visualization",
+        "Collaboration"
+      ],
+      "learningObjectives": [
+        "Define Tomography as imaging by sections.",
+        "Visualize spatial relationships by converting 2D cross-sections into 3D mental models.",
+        "Collaborate to reconstruct a hidden object from limited data."
+      ],
+      "teks": [
+        "Geometry 4(A): Spatial reasoning and definitions.",
+        "Health Science 2(B): Technological advances."
+      ],
+      "texasStemStandards": [
+        "Communication and Collaboration"
+      ],
+      "materialsList": [
+        {
+          "item": "Modeling Clay (Multiple colors)",
+          "estimatedCost": "$10.00"
+        },
+        {
+          "item": "Dental floss (for slicing)",
+          "estimatedCost": "$3.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Concept: Explain CT = Many X-rays slices combined.",
+          "Build: Partners build a clay shape with a hidden center.",
+          "Slice: Use floss to cut thin wafers.",
+          "Reconstruct: Partner views slices only and draws the 3D interior.",
+          "Debrief: How computers handle this data."
+        ],
+        "detailed": [
+          "1. **Intro (5 mins):** CT Scanners spin around the body, taking slices. We will simulate this.",
+          "2. **Build (10 mins):** Students work in pairs. One builds a 'Mystery Organ' (clay ball with a star/shape inside of a different color).",
+          "3. **Slice (10 mins):** The builder slices the model using dental floss (clean cuts).",
+          "4. **Analyze (10 mins):** The builder shows the slices one by one to the partner. The partner must sketch the 3D internal shape.",
+          "5. **Closing (5 mins):** Discuss how this relates to finding tumors without surgery."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Partner A: Hide a shape inside a ball of clay.",
+          "Partner A: Slice the ball into thin layers with floss.",
+          "Partner B: Look at the layers one by one.",
+          "Partner B: Draw the hidden shape in 3D.",
+          "Check if you were right."
+        ],
+        "detailed": [
+          "1. **The Scanner:** If you are the builder, you are the scanner. You are generating the data (slices).",
+          "2. **The Algorithm:** If you are the guesser, you are the computer. You must take 2D flat circles and build a 3D picture in your head.",
+          "3. **Resolution:** Thinner slices = better image. If your slices are too thick, you might miss the detail of the hidden shape."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics (Spatial reasoning)",
+          "Educational services for economic literacy (Salary discussion)"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies (Clay)"
+        ],
+        "programType": "UB",
+        "justification": "Develops critical cognitive skills (spatial visualization) required for higher-level geometry and engineering.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in mathematics",
+          "Sec. 402C(b) - Career awareness"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(3) - Math instruction",
+          "34 CFR 645.11(b)(1) - Career awareness"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Anatomy: Cross-sections.",
+        "technology": "Voxel generation.",
+        "engineering": "Systems integration.",
+        "math": "Calculus (Integration concepts).",
+        "crossCurricularLinks": [
+          "Culinary Arts."
+        ]
+      },
+      "careerPathways": [
+        "CT Technologist",
+        "Medical Imaging Software Developer"
+      ],
+      "collegePathways": [
+        "Associate of Applied Science in Radiography",
+        "Bachelor of Science in Computer Science"
+      ]
+    }
+  ]
+}

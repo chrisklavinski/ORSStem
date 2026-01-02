@@ -1,0 +1,2133 @@
+{
+  "curriculumTitle": "Cultivating the Future: High School Agriculture & Horticulture STEM Pathway",
+  "overview": "This comprehensive curriculum is designed for TRIO Upward Bound (UB) and Upward Bound Math-Science (UBMS) programs to guide high school students through the principles of modern agriculture and horticulture. It consists of 20 modular activities that integrate Texas Essential Knowledge and Skills (TEKS) with federal grant objectives. The curriculum covers soil science, hydroponic engineering, precision agriculture, genetics, coding, fluid dynamics, and career pathways, providing a holistic view of the 'Farm to Future' pipeline.",
+  "prerequisites": "Basic Algebra I; 9th Grade Biology (recommended but not required); Signed Lab Safety Contract.",
+  "targetAgeGroup": "High School (Ages 14-18)",
+  "totalDurationEstimate": "20 sessions of 40 minutes (approx. 13-14 hours total contact time)",
+  "fieldTrips": [
+    {
+      "name": "Texas A&M AgriLife Research and Extension Center",
+      "location": "Dallas, TX (Dallas County)",
+      "description": "A tour of the Urban Agriculture and Forestry division, featuring controlled environment agriculture and turfgrass research.",
+      "relevanceToCurriculum": "Directly correlates to the hydroponics and precision agriculture modules, demonstrating university-level research applications."
+    },
+    {
+      "name": "Botanical Research Institute of Texas (BRIT)",
+      "location": "Fort Worth, TX (Tarrant County)",
+      "description": "Guided exploration of the herbarium and molecular genetics lab focused on plant conservation.",
+      "relevanceToCurriculum": "Connects to the 'Berry DNA Blueprint' and 'Mendel in the Garden' activities, showcasing professional botany careers."
+    },
+    {
+      "name": "Harvest Project at The Dallas Arboretum",
+      "location": "Dallas, TX (Dallas County)",
+      "description": "The Rory Meyers Children's Adventure Garden focuses on life and earth science with a specific edible garden lab.",
+      "relevanceToCurriculum": "Reinforces soil science, photosynthesis, and plant physiology concepts covered in the first half of the curriculum."
+    },
+    {
+      "name": "Cleburne State Park (Soil & Ecology Tour)",
+      "location": "Cleburne, TX (Johnson County)",
+      "description": "Field study of soil erosion, limestone filtration, and native plant identification.",
+      "relevanceToCurriculum": "Provides real-world context for the 'Erosion Engineers' activity and environmental science standards."
+    }
+  ],
+  "activities": [
+    {
+      "title": "Soil Detectives: The Chemistry of Growth",
+      "description": "Students act as soil scientists to analyze soil samples for pH, Nitrogen, Phosphorus, and Potassium (N-P-K) levels. They will determine which crops are best suited for specific soil profiles and calculate necessary amendments.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Lab Safety Protocols",
+        "Basic Measurement"
+      ],
+      "learningObjectives": [
+        "Analyze soil composition and chemical properties.",
+        "Understand the role of macronutrients in plant health.",
+        "Apply scientific methods to interpret data and make agricultural recommendations."
+      ],
+      "teks": [
+        "130.2(c)(10)(B) Identify the physical and chemical properties of soil.",
+        "112.35(c)(10)(A) Describe the unique role of carbon in biological systems (Chemistry).",
+        "130.25(c)(4)(A) Determine the chemical properties of soil."
+      ],
+      "texasStemStandards": [
+        "Science Practices: Planning and carrying out investigations.",
+        "STEM Content: Environmental Science and Chemistry integration."
+      ],
+      "materialsList": [
+        {
+          "item": "Soil Test Kits (N-P-K and pH)",
+          "estimatedCost": "$25.00 (per group of 4)"
+        },
+        {
+          "item": "Various Soil Samples (Sand, Clay, Potting Mix)",
+          "estimatedCost": "$10.00"
+        },
+        {
+          "item": "Safety Goggles and Gloves",
+          "estimatedCost": "$5.00 per student"
+        },
+        {
+          "item": "Data Collection Sheets",
+          "estimatedCost": "$0.00 (Printed)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Prepare soil samples A, B, C.",
+          "Review N-P-K cycle.",
+          "Demonstrate test kit usage."
+        ],
+        "detailed": [
+          "Prepare three distinct soil samples labeled A, B, and C prior to class.",
+          "Review the N-P-K cycle to ensure students understand what the tests represent.",
+          "Demonstrate proper handling of chemical reagents in the test kits.",
+          "Facilitate a discussion on how soil chemistry dictates regional agriculture."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Wear safety gear.",
+          "Sample soil.",
+          "Perform N-P-K and pH tests.",
+          "Record data."
+        ],
+        "detailed": [
+          "Put on safety gear.",
+          "Take a small sample from your assigned soil bucket.",
+          "Follow the test kit instructions to mix soil with the reagent for pH, N, P, and K.",
+          "Compare color changes to the reference chart.",
+          "Record data and hypothesize which crop (e.g., corn, blueberries, tomatoes) would thrive in your sample."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science",
+          "Academic Tutoring/Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Educational Supplies (2 CFR 200.453)",
+          "Instructional Costs"
+        ],
+        "programType": "Both",
+        "justification": "This activity provides rigorous instruction in laboratory science (Chemistry/Environmental Science), a mandatory service for Upward Bound and UBMS per HEA.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Instruction in laboratory science.",
+          "34 CFR 645.11(b) - Support for rigorous secondary school program of study."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies costs, including costs of computing devices."
+        ]
+      },
+      "stemConnections": {
+        "science": "Chemical reactions, soil ecology, and plant biology.",
+        "technology": "Use of chemical indicators and colorimetric analysis.",
+        "engineering": "N/A",
+        "math": "Ratio calculation for soil amendments.",
+        "crossCurricularLinks": [
+          "Environmental Systems",
+          "Chemistry"
+        ]
+      },
+      "careerPathways": [
+        "Soil Scientist",
+        "Agronomist",
+        "Environmental Consultant"
+      ],
+      "collegePathways": [
+        "BS in Environmental Soil Science",
+        "BS in Agronomy",
+        "BS in Chemistry"
+      ]
+    },
+    {
+      "title": "Hydro-Engineering: Designing Passive Systems",
+      "description": "Students explore sustainable horticulture by designing and building a small-scale Kratky (passive) hydroponic system. They will learn about water conservation and engineering design constraints.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Beginner/Intermediate",
+      "requiredSkills": [
+        "Measurement",
+        "Basic Tool Use"
+      ],
+      "learningObjectives": [
+        "Compare and contrast traditional soil farming with hydroponics.",
+        "Construct a functional passive hydroponic system.",
+        "Understand root respiration and nutrient solution delivery."
+      ],
+      "teks": [
+        "130.2(c)(14)(A) Identify methods of crop production.",
+        "130.362(c)(6)(A) Apply engineering design processes.",
+        "112.34(c)(12)(B) Compare variations and adaptations of organisms in different ecosystems (Biology)."
+      ],
+      "texasStemStandards": [
+        "Engineering Design Process: Prototyping and testing.",
+        "Sustainability: Resource conservation."
+      ],
+      "materialsList": [
+        {
+          "item": "Wide-mouth Mason Jars or Recycled Plastic Containers",
+          "estimatedCost": "$1.50 per student"
+        },
+        {
+          "item": "Net Cups (3 inch)",
+          "estimatedCost": "$0.50 per student"
+        },
+        {
+          "item": "Clay Pebbles or Rockwool",
+          "estimatedCost": "$10.00 (bulk bag)"
+        },
+        {
+          "item": "Lettuce or Herb Seedlings",
+          "estimatedCost": "$15.00 (flat of 20)"
+        },
+        {
+          "item": "Hydroponic Nutrient Solution",
+          "estimatedCost": "$15.00 (bottle)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Pre-mix nutrient solution.",
+          "Explain Kratky method.",
+          "Assist with assembly."
+        ],
+        "detailed": [
+          "Pre-mix the nutrient solution to the correct dilution strength.",
+          "Explain the 'Kratky Method' theory: as water level drops, air space increases for oxygenation.",
+          "Discuss the benefits of hydroponics in urban food deserts (Equity/Society connection).",
+          "Guide students in assembling the jars without damaging plant roots."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Wash media.",
+          "Insert seedling.",
+          "Fill reservoir.",
+          "Assemble unit."
+        ],
+        "detailed": [
+          "Wash the clay pebbles to remove dust.",
+          "Place the seedling carefully into the net cup and support it with pebbles.",
+          "Fill your jar with nutrient solution until it just touches the bottom of the net cup.",
+          "Place the net cup into the jar opening.",
+          "Label your jar with your name and date."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Exposure to Engineering and Technology",
+          "Academic Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Educational Supplies (2 CFR 200.453) - Containers, media, plants.",
+          "Curriculum Development"
+        ],
+        "programType": "Both",
+        "justification": "Supports UBMS focus on engineering design and technology application in science. Covers UB core curriculum in lab science.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in science.",
+          "Sec. 402C(b) - Guidance on education."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Instruction in laboratory science.",
+          "34 CFR 645.11(a)(6) - Exposure to range of career options."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "Plant physiology, root respiration, capillary action.",
+        "technology": "Controlled Environment Agriculture (CEA) concepts.",
+        "engineering": "System design and structural integrity of the growing vessel.",
+        "math": "Volume calculation and dilution ratios.",
+        "crossCurricularLinks": [
+          "Physics (Fluid Dynamics basics)",
+          "Biology"
+        ]
+      },
+      "careerPathways": [
+        "Hydroponic Grower",
+        "Greenhouse Systems Engineer",
+        "Urban Farmer"
+      ],
+      "collegePathways": [
+        "BS in Horticulture",
+        "BS in Agricultural Engineering",
+        "AAS in Greenhouse Management"
+      ]
+    },
+    {
+      "title": "Precision Ag: Intro to GIS and Remote Sensing",
+      "description": "Students step into the role of an ag-tech specialist using simulated satellite imagery (printed heat maps) to identify crop stress. They will define zones for variable rate irrigation.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Graph Analysis",
+        "Calculation"
+      ],
+      "learningObjectives": [
+        "Interpret Normalized Difference Vegetation Index (NDVI) maps.",
+        "Understand how technology increases agricultural efficiency.",
+        "Analyze spatial data to make management decisions."
+      ],
+      "teks": [
+        "130.2(c)(5)(C) Discuss the impact of technology on agriculture.",
+        "126.46(c)(6)(A) Analyze geospatial data (Technology Apps).",
+        "111.43(c)(2)(A) Use mathematical models to solve problems (Math Models)."
+      ],
+      "texasStemStandards": [
+        "Technology Operations: Using systems to analyze data.",
+        "Computational Thinking: Pattern recognition."
+      ],
+      "materialsList": [
+        {
+          "item": "Printed NDVI Color Maps (Simulated Fields)",
+          "estimatedCost": "$2.00 (Printing)"
+        },
+        {
+          "item": "Rulers and Calculators",
+          "estimatedCost": "$0.00 (School supply)"
+        },
+        {
+          "item": "Computer with Google Earth (Optional extension)",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Introduce NDVI.",
+          "Distribute maps.",
+          "Explain Precision Ag.",
+          "Review results."
+        ],
+        "detailed": [
+          "Introduce the concept of NDVI (healthy plants reflect near-infrared light).",
+          "Provide student groups with 'Field Maps' showing different colors (Green=Healthy, Red=Stressed).",
+          "Explain that 'Precision Agriculture' means treating different parts of a field differently.",
+          "Task students with calculating the percentage of the field that needs treatment."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Analyze map color zones.",
+          "Estimate acreage.",
+          "Calculate savings.",
+          "Write plan."
+        ],
+        "detailed": [
+          "Examine the field map provided.",
+          "Identify the 'Red Zones' where crops are failing.",
+          "Use the grid overlay to estimate the area (in acres) of the stressed zones.",
+          "Calculate how much fertilizer is saved if you only treat the stressed zones versus the whole field.",
+          "Draft a recommendation plan for the farmer."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Exposure to New Technologies"
+        ],
+        "allowableCosts": [
+          "Educational Supplies (Printing/Paper)",
+          "Software Licenses (if using paid GIS software)"
+        ],
+        "programType": "UBMS",
+        "justification": "Strongly aligns with UBMS mandate to provide instruction in mathematics and technology/computer science.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in mathematics.",
+          "Sec. 402E(b) (UBMS) - Instruction in computer science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Instruction in mathematics.",
+          "34 CFR 645.11(a)(6) - Career awareness in STEM."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "Electromagnetic spectrum (light reflection).",
+        "technology": "Geographic Information Systems (GIS), Satellite imagery.",
+        "engineering": "Systems optimization.",
+        "math": "Area calculation, percentages, and estimation.",
+        "crossCurricularLinks": [
+          "Geography",
+          "Computer Science"
+        ]
+      },
+      "careerPathways": [
+        "Precision Agriculture Specialist",
+        "GIS Analyst",
+        "Drone Pilot"
+      ],
+      "collegePathways": [
+        "BS in Geographic Information Systems",
+        "BS in Agricultural Systems Management",
+        "BS in Computer Science"
+      ]
+    },
+    {
+      "title": "The Business of Botany: Crop Yield Math",
+      "description": "A math-focused activity where students calculate potential yield and profit margins for different crops based on planting density, germination rates, and market prices.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Algebra I",
+        "Percentage Calculation"
+      ],
+      "learningObjectives": [
+        "Apply algebraic formulas to real-world agricultural scenarios.",
+        "Calculate profit margins and break-even points.",
+        "Analyze risk factors in agricultural economics."
+      ],
+      "teks": [
+        "130.2(c)(9)(A) Explain the role of economics in agriculture.",
+        "111.43(c)(1)(B) Use probability and statistics to describe real-world situations (Math Models).",
+        "130.25(c)(3)(B) Keep production records."
+      ],
+      "texasStemStandards": [
+        "Mathematical Reasoning: Quantitative analysis.",
+        "Economic Literacy: Cost-benefit analysis."
+      ],
+      "materialsList": [
+        {
+          "item": "Crop Data Sheets (Seeds per acre, Cost per seed, Market price)",
+          "estimatedCost": "$0.00 (Printed)"
+        },
+        {
+          "item": "Graphing Calculators",
+          "estimatedCost": "$0.00 (Student provided)"
+        },
+        {
+          "item": "Scenario Cards (Drought, Pest outbreak)",
+          "estimatedCost": "$0.00 (Printed)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Teach Profit Formula.",
+          "Distribute data.",
+          "Introduce 'Risk' variable.",
+          "Review results."
+        ],
+        "detailed": [
+          "Present the formula: Profit = (Yield × Price) - (Input Costs).",
+          "Distribute crop profiles (e.g., Corn vs. Soybeans vs. Hemp).",
+          "Midway through the calculation, introduce a 'Scenario Card' (e.g., 'Unexpected freeze reduces yield by 20%') to force recalculation.",
+          "Discuss how farmers use math to hedge risks."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Choose crop.",
+          "Calculate costs.",
+          "Calculate revenue.",
+          "Apply risk factor.",
+          "Determine final profit."
+        ],
+        "detailed": [
+          "Select a crop profile.",
+          "Calculate the input cost for a 100-acre field based on seed price and density.",
+          "Calculate the Expected Yield based on standard germination rates.",
+          "Determine total revenue.",
+          "Draw a 'Risk Card' and adjust your final profit calculation.",
+          "Determine if your farm stayed profitable."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Financial Literacy"
+        ],
+        "allowableCosts": [
+          "Educational Supplies",
+          "Instructional Staff"
+        ],
+        "programType": "Both",
+        "justification": "Directly satisfies the 'Instruction in Mathematics' component required by UB/UBMS, while also touching on financial literacy.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in mathematics.",
+          "Sec. 402C(b) - Financial literacy."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Instruction in mathematics.",
+          "34 CFR 645.11(a)(6) - Financial literacy/Economics."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "Biological variables affecting yield.",
+        "technology": "Spreadsheet software (if available).",
+        "engineering": "N/A",
+        "math": "Algebra, Statistics, Percentages.",
+        "crossCurricularLinks": [
+          "Economics",
+          "Business Information Management"
+        ]
+      },
+      "careerPathways": [
+        "Agricultural Economist",
+        "Farm Manager",
+        "Commodities Broker"
+      ],
+      "collegePathways": [
+        "BS in Agricultural Economics",
+        "BS in Agribusiness",
+        "BBA in Finance"
+      ]
+    },
+    {
+      "title": "Ag-Careers: Beyond the Tractor",
+      "description": "Students research and simulate interviews for high-tech careers in agriculture (e.g., Drone Pilot, Food Scientist, Ag Engineer, Hydrologist) to broaden their understanding of the field.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Research",
+        "Public Speaking"
+      ],
+      "learningObjectives": [
+        "Identify STEM careers within the agriculture sector.",
+        "Research educational requirements for specific careers.",
+        "Practice professional communication and interview skills."
+      ],
+      "teks": [
+        "130.2(c)(3)(A) Identify career opportunities in agriculture.",
+        "127.14(c)(1)(A) Research career pathways.",
+        "110.31(c)(25) Listening and Speaking (English)."
+      ],
+      "texasStemStandards": [
+        "Career Readiness: Understanding labor market trends.",
+        "Communication: Professional discourse."
+      ],
+      "materialsList": [
+        {
+          "item": "Tablets/Laptops for Research",
+          "estimatedCost": "$0.00 (Program assets)"
+        },
+        {
+          "item": "Career Profile Templates",
+          "estimatedCost": "$0.00 (Printed)"
+        },
+        {
+          "item": "Local University Ag Program Brochures",
+          "estimatedCost": "$0.00 (Request from universities)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Assign high-tech roles.",
+          "Monitor research.",
+          "Facilitate speed networking."
+        ],
+        "detailed": [
+          "Debunk the myth that agriculture is only about 'farming and manual labor'.",
+          "Assign each student a specific high-tech role to research.",
+          "Set up a 'Speed Networking' arrangement where students explain their job to a peer in 2 minutes.",
+          "Wrap up with a discussion on college majors that lead to these careers."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Research assigned job.",
+          "Complete profile.",
+          "Prepare elevator pitch.",
+          "Network with peers."
+        ],
+        "detailed": [
+          "Use the tablet to research your assigned career (Salary, Degree Required, Daily Tasks).",
+          "Fill out the Career Profile Template.",
+          "Prepare a 60-second 'elevator pitch' about why your job is crucial to feeding the world.",
+          "Participate in the speed networking round."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Career Exploration",
+          "Academic Advice and Assistance in Course Selection"
+        ],
+        "allowableCosts": [
+          "Speaker Fees (if bringing in a professional)",
+          "Field Trip Costs (if visiting a university ag dept)"
+        ],
+        "programType": "Both",
+        "justification": "Fulfills the mandatory service of providing information on career options and exposure to academic programs.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Guidance on secondary school reentry/entry to postsecondary.",
+          "Sec. 402C(b) - Career awareness."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(6) - Career awareness.",
+          "34 CFR 645.11(a)(5) - Guidance on postsecondary education."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.421 - Advertising and public relations (outreach materials).",
+          "2 CFR 200.453 - Supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "Food science, biology.",
+        "technology": "Ag-tech roles.",
+        "engineering": "Agricultural engineering.",
+        "math": "Salary and tuition calculation.",
+        "crossCurricularLinks": [
+          "Counseling",
+          "Speech/Communication"
+        ]
+      },
+      "careerPathways": [
+        "Food Scientist",
+        "Agricultural Engineer",
+        "Hydrologist"
+      ],
+      "collegePathways": [
+        "BS in Food Science",
+        "BS in Biological Systems Engineering",
+        "BS in Environmental Science"
+      ]
+    },
+    {
+      "title": "Mendel in the Garden: Probability and Genetics",
+      "description": "Students explore classical genetics by predicting phenotype ratios using Punnett squares and observing 'Fast Plant' variations. They will understand the probability of inherited traits in crops.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Basic Probability",
+        "Observation"
+      ],
+      "learningObjectives": [
+        "Predict offspring genotypes and phenotypes using Punnett squares.",
+        "Understand dominant and recessive traits in agriculture.",
+        "Calculate probability percentages for desired crop traits."
+      ],
+      "teks": [
+        "112.34(c)(6)(F) Predict possible outcomes of various genetic combinations.",
+        "130.25(c)(7)(A) Explain the benefits of plant breeding."
+      ],
+      "texasStemStandards": [
+        "Science Practices: Using models to represent systems.",
+        "Math in Science: Probability and statistics."
+      ],
+      "materialsList": [
+        {
+          "item": "Wisconsin Fast Plants (Seeds)",
+          "estimatedCost": "$20.00 (pack)"
+        },
+        {
+          "item": "Small Planting Pots/Soil",
+          "estimatedCost": "$10.00"
+        },
+        {
+          "item": "Punnett Square Worksheets",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Review Mendel's Laws.",
+          "Explain breeding goals.",
+          "Plant seeds."
+        ],
+        "detailed": [
+          "Review Gregor Mendel's laws of inheritance.",
+          "Explain how farmers use these principles to breed larger or sweeter crops.",
+          "Have students plant the Fast Seeds (which grow in weeks) to eventually verify predictions."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Determine parent genotype.",
+          "Complete Punnett square.",
+          "Calculate probabilities.",
+          "Plant seeds for testing."
+        ],
+        "detailed": [
+          "Determine the genotype of the parent plants provided.",
+          "Fill out the Punnett square to predict the ratio of purple vs. green stems.",
+          "Calculate the percentage chance of a recessive trait appearing.",
+          "Plant the seeds to test your prediction."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science",
+          "Instruction in Mathematics"
+        ],
+        "allowableCosts": [
+          "Educational Supplies (Seeds, Soil)"
+        ],
+        "programType": "Both",
+        "justification": "Biology (Genetics) is a core high school science component supported by UB/UBMS instruction.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "Genetics, inheritance, biology.",
+        "technology": "N/A",
+        "engineering": "Selective breeding (genetic engineering precursor).",
+        "math": "Probability, ratios, percentages.",
+        "crossCurricularLinks": [
+          "Biology",
+          "History (Scientific Revolution)"
+        ]
+      },
+      "careerPathways": [
+        "Plant Breeder",
+        "Geneticist",
+        "Seed Analyst"
+      ],
+      "collegePathways": [
+        "BS in Genetics",
+        "BS in Plant Breeding and Genetics",
+        "BS in Biology"
+      ]
+    },
+    {
+      "title": "Coding the Harvest: Micro-Controllers in Ag",
+      "description": "Introduction to agricultural automation. Students code a microcontroller (e.g., Micro:bit or Arduino) to read a soil moisture sensor and display a visual alert when water is needed.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Logic/Flowcharting",
+        "Basic Circuitry"
+      ],
+      "learningObjectives": [
+        "Write basic code loops and conditional statements (If/Then).",
+        "Interface hardware sensors with digital code.",
+        "Understand the concept of Internet of Things (IoT) in farming."
+      ],
+      "teks": [
+        "126.33(c)(5) Design solutions using computing devices.",
+        "130.2(c)(5)(C) Discuss impact of technology in agriculture."
+      ],
+      "texasStemStandards": [
+        "Computer Science: Algorithms and programming.",
+        "Technology: Computing systems."
+      ],
+      "materialsList": [
+        {
+          "item": "Micro:bit or Arduino Boards",
+          "estimatedCost": "$20.00 per unit"
+        },
+        {
+          "item": "Capacitive Soil Moisture Sensors",
+          "estimatedCost": "$3.00 per unit"
+        },
+        {
+          "item": "Alligator Clips",
+          "estimatedCost": "$5.00 per set"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Demo coding interface.",
+          "Explain analog vs digital signals.",
+          "Discuss IoT in ag."
+        ],
+        "detailed": [
+          "Demonstrate the block-based coding interface (MakeCode or Scratch).",
+          "Explain how a sensor sends an analog signal that the computer reads as a number.",
+          "Discuss how this technology saves water on massive industrial farms."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Wire sensor to board.",
+          "Write conditional code.",
+          "Test in dry/wet soil."
+        ],
+        "detailed": [
+          "Connect the moisture sensor to the microcontroller using alligator clips.",
+          "Write a code block: 'If reading < 500, show Sad Face'.",
+          "Write a code block: 'If reading > 500, show Happy Face'.",
+          "Test the sensor in dry soil versus wet soil."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Computer Science",
+          "Exposure to New Technologies"
+        ],
+        "allowableCosts": [
+          "Educational Supplies (Hardware is <$5000 cap threshold)",
+          "Instructional Costs"
+        ],
+        "programType": "UBMS",
+        "justification": "Core computer science and engineering instruction, specifically targeted at UBMS participants.",
+        "heaRequirements": [
+          "Sec. 402E(b) (UBMS) - Instruction in computer science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(6) - Exposure to STEM careers.",
+          "34 CFR 645.11(a)(1) - Instruction in math/science (computer science)."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Computing devices <$5000."
+        ]
+      },
+      "stemConnections": {
+        "science": "Conductivity of water.",
+        "technology": "Programming and IoT.",
+        "engineering": "Electrical engineering basics.",
+        "math": "Logic and variables.",
+        "crossCurricularLinks": [
+          "Computer Science",
+          "Physics"
+        ]
+      },
+      "careerPathways": [
+        "Automation Technician",
+        "Ag-Tech Developer",
+        "Systems Integrator"
+      ],
+      "collegePathways": [
+        "BS in Computer Science",
+        "BS in Agricultural Systems Technology",
+        "AAS in Mechatronics"
+      ]
+    },
+    {
+      "title": "Solar Scouting: Agrivoltaics Physics",
+      "description": "Students investigate 'Agrivoltaics' (mixing solar panels with farming). They simulate shade patterns to determine which crops can grow under solar panels, exploring light angles and energy efficiency.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Geometry (Angles)",
+        "Data Recording"
+      ],
+      "learningObjectives": [
+        "Understand the relationship between solar angle and shadow length.",
+        "Analyze the benefits of dual-use land (Energy + Food).",
+        "Measure light intensity (lumens)."
+      ],
+      "teks": [
+        "112.39(c)(6)(D) Investigate the characteristics of waves (Light) - Physics.",
+        "130.2(c)(15)(A) Identify energy sources in agriculture."
+      ],
+      "texasStemStandards": [
+        "Science Content: Physics and Energy.",
+        "Sustainability: Renewable energy integration."
+      ],
+      "materialsList": [
+        {
+          "item": "Flashlights (Simulated Sun)",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Cardboard 'Solar Panels'",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Lux Meter (or Phone App)",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Define Agrivoltaics.",
+          "Demonstrate light angles.",
+          "Assign shade-tolerant crops."
+        ],
+        "detailed": [
+          "Introduce Agrivoltaics: Plants cool the panels, panels shade the plants.",
+          "Have students angle flashlights to simulate morning, noon, and evening sun.",
+          "Discuss crops that prefer partial shade (lettuce, spinach)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Build model.",
+          "Simulate sun path.",
+          "Measure lumens.",
+          "Map planting zones."
+        ],
+        "detailed": [
+          "Set up your model solar farm using cardboard.",
+          "Move the flashlight in an arc to simulate the sun's path.",
+          "Measure light intensity under the panels using the Lux meter.",
+          "Map out the 'planting zones' that receive enough light for photosynthesis."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science (Physics)",
+          "Exposure to Engineering"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Physics instruction regarding light and energy, aligned with environmental sustainability.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Instruction in laboratory science (Physics)."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics of light, photosynthesis.",
+        "technology": "Solar photovoltaic technology.",
+        "engineering": "Site layout and optimization.",
+        "math": "Geometry (Angles).",
+        "crossCurricularLinks": [
+          "Physics",
+          "Environmental Science"
+        ]
+      },
+      "careerPathways": [
+        "Renewable Energy Technician",
+        "Sustainability Coordinator",
+        "Solar Site Surveyor"
+      ],
+      "collegePathways": [
+        "BS in Renewable Energy",
+        "BS in Physics",
+        "BS in Environmental Design"
+      ]
+    },
+    {
+      "title": "The pH of Preservation: Food Science",
+      "description": "Students learn the chemistry of food preservation by testing acidity levels. They simulate the canning process to understand how pH prevents botulism and microbial growth.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Safety Compliance",
+        "Color Chart Reading"
+      ],
+      "learningObjectives": [
+        "Define pH and its importance in food safety.",
+        "Identify the threshold pH (4.6) for safe water-bath canning.",
+        "Understand microbial growth inhibition."
+      ],
+      "teks": [
+        "130.25(c)(10)(B) Describe methods of food preservation.",
+        "112.35(c)(10)(G) Define acids and bases (Chemistry)."
+      ],
+      "texasStemStandards": [
+        "Science Practices: Safety and investigation.",
+        "Health: Food safety."
+      ],
+      "materialsList": [
+        {
+          "item": "pH Test Strips",
+          "estimatedCost": "$10.00"
+        },
+        {
+          "item": "Various Foods (Lemon, Tomato, Beans)",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Vinegar (Acidifier)",
+          "estimatedCost": "$2.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain pH 4.6 threshold.",
+          "Discuss Botulism.",
+          "Demonstrate acidification."
+        ],
+        "detailed": [
+          "Explain that low acid foods (pH > 4.6) require pressure canning to kill bacteria.",
+          "Discuss Botulism as a biological hazard.",
+          "Demonstrate how adding vinegar (acid) changes the safety profile of a food."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Mash food samples.",
+          "Test pH.",
+          "Sort Safe/Unsafe.",
+          "Acidify and re-test."
+        ],
+        "detailed": [
+          "Mash small samples of different foods.",
+          "Test the pH of each sample.",
+          "Sort foods into 'Safe for Water Bath' (High Acid) and 'Needs Pressure' (Low Acid).",
+          "Add vinegar to a Low Acid food and test if it shifts to the Safe zone."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science",
+          "Health/Nutritional Science"
+        ],
+        "allowableCosts": [
+          "Educational Supplies (Consumables)"
+        ],
+        "programType": "Both",
+        "justification": "Chemistry application in a real-world context (Food Science), fitting the science instruction component.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "Chemistry (Acids/Bases), Microbiology.",
+        "technology": "Food processing technology.",
+        "engineering": "N/A",
+        "math": "Logarithmic scale of pH.",
+        "crossCurricularLinks": [
+          "Culinary Arts",
+          "Chemistry"
+        ]
+      },
+      "careerPathways": [
+        "Food Safety Inspector",
+        "Product Developer",
+        "Quality Control Technician"
+      ],
+      "collegePathways": [
+        "BS in Food Science",
+        "BS in Microbiology",
+        "BS in Nutrition"
+      ]
+    },
+    {
+      "title": "Berry DNA Blueprint: Biotech Basics",
+      "description": "A hands-on biotechnology lab where students extract DNA from strawberries using household materials. They will visualize the genetic material that ag-scientists modify.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Lab Technique",
+        "Following Protocols"
+      ],
+      "learningObjectives": [
+        "Perform a DNA extraction protocol.",
+        "Understand the structure and function of DNA in plants.",
+        "Discuss the concept of GMOs (Genetically Modified Organisms)."
+      ],
+      "teks": [
+        "112.34(c)(6)(A) Identify components of DNA.",
+        "130.25(c)(8)(A) Explain the use of biotechnology in agriculture."
+      ],
+      "texasStemStandards": [
+        "Science Practices: Laboratory techniques.",
+        "Scientific Literacy: Understanding genetics."
+      ],
+      "materialsList": [
+        {
+          "item": "Strawberries",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Isopropyl Alcohol (chilled)",
+          "estimatedCost": "$3.00"
+        },
+        {
+          "item": "Dish Soap and Salt",
+          "estimatedCost": "$2.00"
+        },
+        {
+          "item": "Coffee Filters",
+          "estimatedCost": "$1.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain extraction chemistry.",
+          "Discuss ploidy (8 copies).",
+          "Facilitate GMO discussion."
+        ],
+        "detailed": [
+          "Explain that soap breaks the cell membrane and salt helps DNA clump.",
+          "Discuss that strawberries are octoploid (8 copies of chromosomes), yielding a lot of DNA.",
+          "Facilitate a neutral discussion on the ethics/science of GMOs."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Mash strawberry with buffer.",
+          "Filter liquid.",
+          "Add alcohol.",
+          "Spool DNA."
+        ],
+        "detailed": [
+          "Smash a strawberry in a bag with the extraction liquid (soap/salt/water).",
+          "Filter the liquid into a cup.",
+          "Slowly pour cold alcohol on top.",
+          "Watch the white strands (DNA) precipitate out of the solution.",
+          "Spool the DNA on a stick."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Classic biology lab activity fulfilling the laboratory science requirement for UB/UBMS.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "Cell biology, genetics, chemistry.",
+        "technology": "Biotechnology.",
+        "engineering": "Genetic engineering concepts.",
+        "math": "N/A",
+        "crossCurricularLinks": [
+          "Biology",
+          "Bioethics"
+        ]
+      },
+      "careerPathways": [
+        "Biotechnologist",
+        "Plant Geneticist",
+        "Lab Technician"
+      ],
+      "collegePathways": [
+        "BS in Biotechnology",
+        "BS in Molecular Biology",
+        "BS in Biochemistry"
+      ]
+    },
+    {
+      "title": "Vertical Farm Architects: Structural Engineering",
+      "description": "Students work in teams to design and build a model of a vertical farm tower that must support a specific weight (water/plants) while minimizing footprint, utilizing structural engineering principles.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Teamwork",
+        "Design Thinking"
+      ],
+      "learningObjectives": [
+        "Apply structural engineering concepts (load distribution, triangles).",
+        "Design for space efficiency.",
+        "Test and iterate on a physical prototype."
+      ],
+      "teks": [
+        "130.362(c)(5)(A) Describe the inputs and outputs of an engineering system.",
+        "130.2(c)(14)(C) Identify alternative growing methods."
+      ],
+      "texasStemStandards": [
+        "Engineering Design: Constraints and criteria.",
+        "Critical Thinking: Problem solving."
+      ],
+      "materialsList": [
+        {
+          "item": "Straws, Popsicle Sticks, Tape",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Weights (to simulate plants/water)",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Intro vertical farming.",
+          "Set load challenge.",
+          "Monitor construction.",
+          "Test to failure."
+        ],
+        "detailed": [
+          "Introduce Vertical Farming as a solution to urban population density.",
+          "Explain that water is heavy (8 lbs/gallon), so structures must be strong.",
+          "Challenge: Build the tallest tower that can hold a 1lb weight using limited materials."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Sketch design.",
+          "Build tower.",
+          "Test with weights.",
+          "Reinforce weak points."
+        ],
+        "detailed": [
+          "Sketch a design for your tower.",
+          "Construct the tower using the provided materials.",
+          "Test the tower by adding weights incrementally.",
+          "Identify failure points and reinforce them."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Exposure to Engineering",
+          "Instruction in Mathematics (Geometry)"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Engineering design challenge focused on physics and structural integrity, ideal for UBMS.",
+        "heaRequirements": [
+          "Sec. 402E(b) (UBMS) - Instruction in mathematics/science.",
+          "Sec. 402C(b) - Guidance on education/careers."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(6) - Exposure to STEM careers (Engineering)."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics (Force and Load).",
+        "technology": "Urban farming tech.",
+        "engineering": "Structural engineering.",
+        "math": "Geometry (Triangles for strength).",
+        "crossCurricularLinks": [
+          "Physics",
+          "Architecture"
+        ]
+      },
+      "careerPathways": [
+        "Structural Engineer",
+        "Urban Planner",
+        "Architect"
+      ],
+      "collegePathways": [
+        "BS in Civil Engineering",
+        "BS in Architecture",
+        "BS in Construction Management"
+      ]
+    },
+    {
+      "title": "Erosion Engineers: Soil Conservation",
+      "description": "Students simulate rainfall on different land slopes to observe soil erosion. They must engineer a mitigation strategy (terracing, cover crops) to reduce soil loss.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Measurement",
+        "Observation"
+      ],
+      "learningObjectives": [
+        "Understand the mechanics of soil erosion.",
+        "Evaluate the effectiveness of different conservation methods.",
+        "Relate soil health to water quality."
+      ],
+      "teks": [
+        "112.37(c)(7)(B) Analyze the impact of human activity on land.",
+        "130.25(c)(4)(C) Describe soil erosion and management."
+      ],
+      "texasStemStandards": [
+        "Science Practices: Modeling earth systems.",
+        "Sustainability: Land management."
+      ],
+      "materialsList": [
+        {
+          "item": "Paint Trays or Pans",
+          "estimatedCost": "$10.00"
+        },
+        {
+          "item": "Soil and Watering Cans",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Mulch, Sticks, Moss (Mitigation materials)",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Discuss Dust Bowl.",
+          "Explain run-off mechanics.",
+          "Set cleanliness challenge."
+        ],
+        "detailed": [
+          "Discuss the 'Dust Bowl' as a historical example of failed soil management.",
+          "Explain how run-off carries pollutants into waterways.",
+          "Challenge students to keep the water running off their 'land' as clear as possible."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Setup slope.",
+          "Measure control runoff.",
+          "Install defense.",
+          "Measure test runoff."
+        ],
+        "detailed": [
+          "Set up a slope using the pan and soil.",
+          "Pour water and measure the amount of soil that washes away (Control).",
+          "Rebuild the slope and install a defense (terraces, dams, or plant cover).",
+          "Pour water again and compare the sediment loss."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science (Environmental)",
+          "Instruction in Mathematics (Measurement)"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Environmental science activity addressing ecology and measurement.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "Geology, environmental science.",
+        "technology": "N/A",
+        "engineering": "Civil engineering (grading and drainage).",
+        "math": "Measurement and volume.",
+        "crossCurricularLinks": [
+          "Environmental Science",
+          "Geography"
+        ]
+      },
+      "careerPathways": [
+        "Conservation Scientist",
+        "Hydrologist",
+        "Civil Engineer"
+      ],
+      "collegePathways": [
+        "BS in Natural Resource Management",
+        "BS in Environmental Engineering",
+        "BS in Geology"
+      ]
+    },
+    {
+      "title": "Aquaponic Synergy: The Nitrogen Cycle",
+      "description": "Students investigate the symbiotic relationship between fish and plants. They test water samples from an aquaponic setup for Ammonia, Nitrite, and Nitrate to understand the bacterial conversion cycle.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Chemical Safety",
+        "Data Interpretation"
+      ],
+      "learningObjectives": [
+        "Diagram the Nitrogen Cycle.",
+        "Explain the role of Nitrosomonas and Nitrobacter bacteria.",
+        "Analyze water chemistry data to ensure fish and plant safety."
+      ],
+      "teks": [
+        "112.37(c)(6)(D) Relate the flow of matter (Carbon/Nitrogen cycles) to energy flow.",
+        "130.2(c)(14)(D) Describe aquaponic systems."
+      ],
+      "texasStemStandards": [
+        "Science Content: Biogeochemical cycles.",
+        "Systems Thinking: Interdependence."
+      ],
+      "materialsList": [
+        {
+          "item": "Aquarium Water Samples (Spiked with Ammonia for testing)",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Freshwater Test Master Kit",
+          "estimatedCost": "$30.00"
+        },
+        {
+          "item": "Diagram handouts",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Diagram Nitrogen Cycle.",
+          "Explain bacterial roles.",
+          "Supervise testing."
+        ],
+        "detailed": [
+          "Draw the cycle: Fish Waste (Ammonia) -> Bacteria 1 (Nitrite) -> Bacteria 2 (Nitrate) -> Plants (Food).",
+          "Explain that Ammonia and Nitrite are toxic to fish, but Nitrate is plant food.",
+          "Have students test samples representing different stages of a new tank setup."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Test samples A/B/C.",
+          "Record PPM.",
+          "Identify cycled system.",
+          "Explain plant role."
+        ],
+        "detailed": [
+          "Test Sample A, B, and C.",
+          "Record the PPM (parts per million) of Ammonia, Nitrite, and Nitrate.",
+          "Determine which sample comes from a 'cycled' (healthy) system and which is toxic.",
+          "Explain why plants are the 'filter' in this system."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science",
+          "Mentoring in STEM"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "High-level biology/chemistry application involving the nitrogen cycle, essential for HS science curriculum.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "Chemistry, Microbiology, Zoology.",
+        "technology": "Recirculating Aquaculture Systems (RAS).",
+        "engineering": "Bio-filter design.",
+        "math": "Data interpretation.",
+        "crossCurricularLinks": [
+          "Biology",
+          "Chemistry"
+        ]
+      },
+      "careerPathways": [
+        "Aquaculturist",
+        "Water Quality Technician",
+        "Marine Biologist"
+      ],
+      "collegePathways": [
+        "BS in Fisheries and Aquaculture",
+        "BS in Marine Biology",
+        "BS in Environmental Science"
+      ]
+    },
+    {
+      "title": "Logistics of Lunch: Supply Chain Math",
+      "description": "A math and logic activity where students map the journey of a strawberry from farm to table. They use graph theory (nodes and edges) to optimize transport routes and minimize carbon footprint.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Algebra",
+        "Critical Thinking"
+      ],
+      "learningObjectives": [
+        "Apply graph theory/network math to real-world problems.",
+        "Calculate fuel costs and carbon emissions.",
+        "Optimize logistical routes."
+      ],
+      "teks": [
+        "111.45(c)(3)(A) Use graph theory to model situations (Discrete Math).",
+        "130.2(c)(22)(A) Identify transportation methods in agriculture."
+      ],
+      "texasStemStandards": [
+        "Math in Context: Logistics and optimization.",
+        "Global Awareness: Carbon footprint."
+      ],
+      "materialsList": [
+        {
+          "item": "Maps/Graph Paper",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Calculators",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Intro Traveling Salesman Problem.",
+          "Provide maps and costs.",
+          "Challenge for lowest cost."
+        ],
+        "detailed": [
+          "Introduce the 'Traveling Salesman Problem' concept.",
+          "Provide a map with distribution centers, farms, and grocery stores.",
+          "Assign a cost per mile and a carbon cost per mile."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Draw network.",
+          "Calculate distances.",
+          "Find cheapest route.",
+          "Find greenest route."
+        ],
+        "detailed": [
+          "Draw a network graph connecting the farm to the customer via processing plants.",
+          "Calculate the total distance for three different routes.",
+          "Determine the most cost-effective route.",
+          "Determine the most eco-friendly route (they might differ!)."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Financial Literacy"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Advanced mathematics (Discrete Math/Graph Theory) applied to industry, fitting the UBMS rigor.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in mathematics."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Instruction in mathematics."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "Environmental impact (emissions).",
+        "technology": "Logistics software concepts.",
+        "engineering": "Systems engineering.",
+        "math": "Graph theory, algebra.",
+        "crossCurricularLinks": [
+          "Mathematics",
+          "Economics"
+        ]
+      },
+      "careerPathways": [
+        "Supply Chain Analyst",
+        "Logistics Manager",
+        "Operations Researcher"
+      ],
+      "collegePathways": [
+        "BS in Supply Chain Management",
+        "BS in Industrial Engineering",
+        "BBA in Operations Management"
+      ]
+    },
+    {
+      "title": "Integrated Pest Detective: Entomology Lab",
+      "description": "Students use microscopes to identify common agricultural pests (aphids, mites) versus beneficial insects (ladybugs). They design an Integrated Pest Management (IPM) plan.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Microscope Use",
+        "Classification"
+      ],
+      "learningObjectives": [
+        "Identify insects using dichotomous keys.",
+        "Differentiate between pests and beneficials.",
+        "Design an IPM strategy that minimizes chemical use."
+      ],
+      "teks": [
+        "130.25(c)(6)(A) Identify common pests.",
+        "112.34(c)(8)(C) Compare characteristics of taxonomic groups."
+      ],
+      "texasStemStandards": [
+        "Science Practices: Observation and classification.",
+        "Sustainability: Reduced chemical dependence."
+      ],
+      "materialsList": [
+        {
+          "item": "Stereo Microscopes or Hand Lenses",
+          "estimatedCost": "$0.00 (School equipment)"
+        },
+        {
+          "item": "Insect Specimens (or high-res photos)",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Dichotomous Key Handouts",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain IPM.",
+          "Demo microscopes.",
+          "Discuss economic thresholds."
+        ],
+        "detailed": [
+          "Explain IPM: Biological control (bugs eating bugs) vs. Chemical control.",
+          "Show students how to adjust the microscope focus.",
+          "Discuss the economic threshold: When does the cost of bugs exceed the cost of treatment?"
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Observe specimen.",
+          "Use key to identify.",
+          "Classify Friend/Foe.",
+          "Propose control method."
+        ],
+        "detailed": [
+          "Observe the specimen under the lens.",
+          "Use the dichotomous key (Does it have wings? How many legs?) to identify it.",
+          "Classify it as 'Friend' or 'Foe'.",
+          "Propose a way to control the 'Foe' without hurting the 'Friend'."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Biology lab instruction focusing on taxonomy and ecology.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "Entomology, ecology.",
+        "technology": "Microscopy.",
+        "engineering": "N/A",
+        "math": "Population sampling.",
+        "crossCurricularLinks": [
+          "Biology",
+          "Environmental Science"
+        ]
+      },
+      "careerPathways": [
+        "Entomologist",
+        "Pest Control Advisor",
+        "Extension Agent"
+      ],
+      "collegePathways": [
+        "BS in Entomology",
+        "BS in Plant Protection",
+        "BS in Biology"
+      ]
+    },
+    {
+      "title": "Fluid Dynamics in Irrigation: Physics of Flow",
+      "description": "Students explore Bernoulli's principle and pressure by designing a gravity-fed drip irrigation system. They calculate flow rates and ensure equal water distribution.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Algebra",
+        "Measurement"
+      ],
+      "learningObjectives": [
+        "Understand the relationship between height (head), pressure, and flow rate.",
+        "Calculate water usage over time.",
+        "Design a system with uniform distribution."
+      ],
+      "teks": [
+        "112.39(c)(5)(B) Investigate fluid dynamics (Physics).",
+        "130.25(c)(5)(B) Determine water requirements."
+      ],
+      "texasStemStandards": [
+        "Science Content: Fluid mechanics.",
+        "Engineering: Systems design."
+      ],
+      "materialsList": [
+        {
+          "item": "Tubing and Emitters (Drip tape)",
+          "estimatedCost": "$15.00"
+        },
+        {
+          "item": "Buckets (Reservoirs)",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Stopwatches and Measuring Cups",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain Head/Pressure.",
+          "Issue drip challenge.",
+          "Discuss friction loss."
+        ],
+        "detailed": [
+          "Explain that raising the water source increases pressure (Potential Energy).",
+          "Challenge students: Can you make the last hole in the tube drip as fast as the first?",
+          "Discuss friction loss in pipes."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Assemble tube line.",
+          "Test at 1ft height.",
+          "Test at 3ft height.",
+          "Graph results."
+        ],
+        "detailed": [
+          "Assemble a tubing line with holes every 6 inches.",
+          "Elevate the water bucket to 1 foot and measure flow rate at the first and last hole.",
+          "Elevate to 3 feet and measure again.",
+          "Graph the relationship between height and flow rate."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science (Physics)",
+          "Instruction in Mathematics"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Physics and engineering focus, analyzing fluid dynamics and calculation.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics (Fluid dynamics).",
+        "technology": "Irrigation tech.",
+        "engineering": "Hydraulic engineering.",
+        "math": "Calculus concepts (rates of change) simplified to algebra.",
+        "crossCurricularLinks": [
+          "Physics",
+          "Calculus"
+        ]
+      },
+      "careerPathways": [
+        "Irrigation Engineer",
+        "Hydraulics Technician",
+        "Water Resource Manager"
+      ],
+      "collegePathways": [
+        "BS in Mechanical Engineering",
+        "BS in Agricultural Engineering",
+        "AAS in Water Technology"
+      ]
+    },
+    {
+      "title": "Drone Flight Pathing: Geometry in the Sky",
+      "description": "Students plan a flight path for an agricultural drone to scan a field efficiently. They use geometry to ensure 100% coverage with minimal battery usage.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Geometry",
+        "Spatial Reasoning"
+      ],
+      "learningObjectives": [
+        "Apply geometric concepts (Area, Perimeter, Parallel lines).",
+        "Optimize a path algorithm.",
+        "Understand field-of-view (FOV) calculations."
+      ],
+      "teks": [
+        "111.41(c)(11)(B) Determine area of composite figures (Geometry).",
+        "130.2(c)(5)(B) Demonstrate use of global positioning systems."
+      ],
+      "texasStemStandards": [
+        "Math in Context: Geometric modeling.",
+        "Technology: Autonomous systems."
+      ],
+      "materialsList": [
+        {
+          "item": "Graph Paper/Maps of irregular fields",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Rulers/Protractors",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Define swath width.",
+          "Show flight patterns.",
+          "Provide irregular map."
+        ],
+        "detailed": [
+          "Introduce the concept of 'swath width' (how wide the camera sees).",
+          "Show examples of 'snake' patterns vs. 'spiral' patterns.",
+          "Give students an oddly shaped field map to complicate the path."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Calculate field area.",
+          "Draw path.",
+          "Calculate distance.",
+          "Optimize for turns."
+        ],
+        "detailed": [
+          "Calculate the area of the field.",
+          "Given a camera swath of 20ft, draw a flight path that covers the whole field.",
+          "Calculate the total distance flown.",
+          "Adjust the path to minimize turns (which waste battery)."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Exposure to New Technologies"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Applied geometry and technology exposure (UAVs).",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in mathematics."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Instruction in mathematics.",
+          "34 CFR 645.11(a)(6) - Exposure to STEM careers."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "N/A",
+        "technology": "Drones/UAVs.",
+        "engineering": "Path planning.",
+        "math": "Geometry, spatial reasoning.",
+        "crossCurricularLinks": [
+          "Geometry",
+          "Geography"
+        ]
+      },
+      "careerPathways": [
+        "Drone Pilot",
+        "Remote Sensing Specialist",
+        "Cartographer"
+      ],
+      "collegePathways": [
+        "BS in Aviation/UAV Systems",
+        "BS in Geomatics",
+        "BS in Geography"
+      ]
+    },
+    {
+      "title": "Compost Thermodynamics: The Heat is On",
+      "description": "Students explore exothermic chemical reactions by building mini-compost piles. They measure temperature changes over time to understand microbial respiration.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Measurement",
+        "Data Graphing"
+      ],
+      "learningObjectives": [
+        "Define exothermic reactions.",
+        "Understand the Carbon:Nitrogen ratio (Browns vs Greens).",
+        "Graph temperature data over time."
+      ],
+      "teks": [
+        "112.35(c)(11)(C) Use thermochemical equations (Chemistry).",
+        "130.25(c)(4)(B) Manage organic matter."
+      ],
+      "texasStemStandards": [
+        "Science Content: Thermodynamics.",
+        "Sustainability: Waste reduction."
+      ],
+      "materialsList": [
+        {
+          "item": "Thermometers (Probe)",
+          "estimatedCost": "$10.00"
+        },
+        {
+          "item": "Compost Ingredients (Grass, Leaves, Coffee)",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "2-Liter Bottles (Bioreactors)",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain exothermic bacteria.",
+          "Teach C:N Ratio.",
+          "Direct mixing."
+        ],
+        "detailed": [
+          "Explain that bacteria release heat as they break down food (just like humans).",
+          "Discuss the Ideal C:N ratio (30:1).",
+          "Have students mix different ratios to see which gets hottest."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Layer Greens/Browns.",
+          "Add water.",
+          "Record initial temp.",
+          "Predict peak temp."
+        ],
+        "detailed": [
+          "Layer 'Greens' (Nitrogen) and 'Browns' (Carbon) in the bottle.",
+          "Add water to dampen.",
+          "Insert the thermometer.",
+          "Record the temperature.",
+          "Predict how hot it will get by the next session."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Chemistry and Environmental Science instruction focusing on energy and reactions.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "Chemistry (Thermodynamics), Biology.",
+        "technology": "N/A",
+        "engineering": "Bioreactor design.",
+        "math": "Ratios and graphing.",
+        "crossCurricularLinks": [
+          "Chemistry",
+          "Environmental Science"
+        ]
+      },
+      "careerPathways": [
+        "Waste Management Specialist",
+        "Soil Health Coordinator",
+        "Environmental Engineer"
+      ],
+      "collegePathways": [
+        "BS in Environmental Science",
+        "BS in Waste Management",
+        "BS in Chemistry"
+      ]
+    },
+    {
+      "title": "Fungal Frontiers: Mycology Lab",
+      "description": "Students learn about the kingdom Fungi by inoculating substrate with mushroom spores. They explore the role of mycelium in soil networks and decomposition.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Sterile Technique",
+        "Observation"
+      ],
+      "learningObjectives": [
+        "Differentiate Fungi from Plants.",
+        "Understand the role of decomposers in the ecosystem.",
+        "Practice sterile laboratory technique."
+      ],
+      "teks": [
+        "112.34(c)(8)(C) Compare characteristics of kingdoms.",
+        "130.25(c)(14)(C) Produce specialty crops."
+      ],
+      "texasStemStandards": [
+        "Science Practices: Aseptic technique.",
+        "Content: Microbiology."
+      ],
+      "materialsList": [
+        {
+          "item": "Mushroom Grow Kits or Spawn",
+          "estimatedCost": "$25.00"
+        },
+        {
+          "item": "Spray bottles (Isopropyl alcohol)",
+          "estimatedCost": "$2.00"
+        },
+        {
+          "item": "Substrate (Coffee grounds or straw)",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Contrast Fungi vs Plants.",
+          "Discuss Mycelium.",
+          "Enforce sterility."
+        ],
+        "detailed": [
+          "Explain that mushrooms are more closely related to animals than plants.",
+          "Discuss the 'Wood Wide Web' (mycelial networks).",
+          "Emphasize sterility: mold competes with mushrooms."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Sterilize workspace.",
+          "Inoculate substrate.",
+          "Seal and vent bag.",
+          "Observe growth."
+        ],
+        "detailed": [
+          "Sterilize your workspace and hands.",
+          "Pasteurize the substrate (teacher does this beforehand or demonstrates).",
+          "Mix the mushroom spawn into the substrate.",
+          "Seal the bag and punch air holes.",
+          "Observe mycelial run (white web) over the coming weeks."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Biology lab instruction focusing on microbiology and sterile technique.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "Mycology, biology.",
+        "technology": "Sterile processing.",
+        "engineering": "N/A",
+        "math": "Growth rates.",
+        "crossCurricularLinks": [
+          "Biology",
+          "Culinary Arts"
+        ]
+      },
+      "careerPathways": [
+        "Mycologist",
+        "Specialty Crop Grower",
+        "Bioremediation Specialist"
+      ],
+      "collegePathways": [
+        "BS in Mycology (or Biology)",
+        "BS in Plant Pathology",
+        "BS in Microbiology"
+      ]
+    },
+    {
+      "title": "Capstone: The Martian Greenhouse",
+      "description": "The final challenge. Students synthesize all previous knowledge (soil, hydro, light, genetics) to design a food production system for a Mars colony, accounting for extreme constraints.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Public Speaking",
+        "Systems Integration"
+      ],
+      "learningObjectives": [
+        "Synthesize multi-disciplinary STEM knowledge.",
+        "Solve problems under extreme constraints (Low light, no soil, high radiation).",
+        "Present a cohesive technical proposal."
+      ],
+      "teks": [
+        "130.362(c)(3)(A) Use teamwork to solve problems.",
+        "112.33(c)(4)(A) Evaluate the impact of space research."
+      ],
+      "texasStemStandards": [
+        "Engineering Design: Systems integration.",
+        "Communication: Technical presentation."
+      ],
+      "materialsList": [
+        {
+          "item": "Poster Paper/Markers",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Access to previous modules' equipment",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Set Mars scenario.",
+          "Form teams.",
+          "Guide design process."
+        ],
+        "detailed": [
+          "Set the scene: Mars has 40% less sunlight, toxic soil, and limited water.",
+          "Divide students into specialist teams (Engineers, Biologists, Chemists).",
+          "Facilitate the design process."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Select crop.",
+          "Select method.",
+          "Select energy.",
+          "Draw and justify."
+        ],
+        "detailed": [
+          "Collaborate to design a greenhouse module.",
+          "Select the crop (Fast plants? High calorie?).",
+          "Select the method (Hydroponics? Treated regolith?).",
+          "Select the energy source.",
+          "Draw the schematic and justify your choices based on data from previous weeks."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Exposure to Engineering",
+          "Instruction in Science/Math"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Comprehensive STEM synthesis activity measuring student mastery of the curriculum.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in math/science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Instruction in math/science.",
+          "34 CFR 645.11(a)(6) - Exposure to STEM careers."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "Astrobiology.",
+        "technology": "Space systems.",
+        "engineering": "Systems engineering.",
+        "math": "Budgeting resources.",
+        "crossCurricularLinks": [
+          "Astronomy",
+          "Speech"
+        ]
+      },
+      "careerPathways": [
+        "Space Systems Engineer",
+        "Controlled Environment Specialist",
+        "Astrobiologist"
+      ],
+      "collegePathways": [
+        "BS in Aerospace Engineering",
+        "BS in Biosystems Engineering",
+        "BS in Astrophysics"
+      ]
+    }
+  ]
+}

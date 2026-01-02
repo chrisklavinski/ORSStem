@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level Up: The Science and Strategy of Video Game Design - Master STEM Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1e293b; }
+        .page-break { page-break-before: always; }
+        .avoid-break { break-inside: avoid; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab-btn.active { background-color: #4f46e5; color: white; border-color: #4f46e5; }
+        
+        /* Workbook specific styles */
+        .wb-checklist-item { display: flex; align-items: flex-start; margin-bottom: 12px; }
+        .wb-checkbox { width: 18px; height: 18px; border: 2px solid #cbd5e1; border-radius: 4px; margin-right: 12px; flex-shrink: 0; margin-top: 3px; }
+        .wb-box { background: #f8fafc; border: 1px solid #e2e8f0; padding: 20px; border-radius: 8px; font-size: 14px; }
+        
+        @media print {
+            body { background-color: white; }
+            .no-print { display: none !important; }
+            .tab-content { display: none !important; }
+            .tab-content.active { display: block !important; }
+            /* If user hits print, we want to respect the current tab, or maybe provide a print-all option. 
+               For simplicity, we print the active tab. */
+        }
+    </style>
+    <script>
+        function switchTab(id) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById('btn-' + id).classList.add('active');
+        }
+        function toggleSection(id) {
+            const content = document.getElementById('content-' + id);
+            const chevron = document.getElementById('chevron-' + id);
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                chevron.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                chevron.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</head>
+<body class="py-8 px-4 md:px-8 max-w-7xl mx-auto">
+    <!-- Navigation Tabs -->
+    <div class="flex justify-center mb-8 no-print sticky top-4 z-50">
+        <div class="bg-white p-2 rounded-2xl shadow-lg border border-gray-200 flex gap-2">
+            <button id="btn-guide" onclick="switchTab('guide')" class="tab-btn active px-6 py-2 rounded-xl font-bold text-sm text-slate-600 hover:bg-slate-50 border border-transparent transition-all">Master Guide</button>
+            <button id="btn-workbook" onclick="switchTab('workbook')" class="tab-btn px-6 py-2 rounded-xl font-bold text-sm text-slate-600 hover:bg-slate-50 border border-transparent transition-all">Teacher Workbook</button>
+            <button id="btn-narrative" onclick="switchTab('narrative')" class="tab-btn px-6 py-2 rounded-xl font-bold text-sm text-slate-600 hover:bg-slate-50 border border-transparent transition-all">Grant Narrative</button>
+        </div>
+    </div>
+
+    <!-- TAB 1: MASTER GUIDE -->
+    <div id="guide" class="tab-content active">
+        <header class="mb-8 text-center border-b-4 border-indigo-600 pb-12">
+            <div class="inline-block px-4 py-1 mb-4 bg-indigo-50 text-indigo-700 text-xs font-black uppercase tracking-widest rounded-full">STEM Architect Master Guide</div>
+            <h1 class="text-5xl font-black text-slate-900 mb-6">Level Up: The Science and Strategy of Video Game Design</h1>
+            <p class="text-2xl text-slate-500 font-medium max-w-4xl mx-auto leading-relaxed mb-8">A comprehensive 10-module STEM curriculum designed for Texas TRIO programs (UB/UBMS). It utilizes video game design concepts to facilitate rigorous instruction in Math, Physics, Computer Science, and Engineering. The curriculum aligns with Texas Essential Knowledge and Skills (TEKS) and prioritizes postsecondary readiness through specific career and college major exploration.</p>
+            <div class="flex justify-center gap-6 text-sm font-bold text-slate-400 uppercase tracking-widest">
+                <span>Target: High School (Grades 9-12)</span>
+                <span>&bull;</span>
+                <span>Total Time: 400 minutes (10 sessions x 40 minutes) + Field Trips</span>
+                <span>&bull;</span>
+                <span>Est. Cost: $18.35</span>
+            </div>
+        </header>
+
+        
+        <div class="mb-12 page-break">
+            <div class="bg-indigo-900 rounded-[2.5rem] p-12 text-white shadow-2xl relative overflow-hidden">
+                <h2 class="text-3xl font-black mb-8 flex items-center gap-4 border-b border-indigo-700 pb-4"><span>🚌</span> Field Expeditions (60mi Radius)</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <div class="bg-white/10 p-6 rounded-3xl border border-white/10 backdrop-blur-sm">
+                        <h3 class="text-xl font-bold text-white mb-1">National Videogame Museum</h3>
+                        <div class="text-xs font-bold uppercase tracking-widest text-indigo-300 mb-4 flex items-center gap-2"><span>📍</span> Frisco, TX (Collin County)</div>
+                        <p class="text-sm text-indigo-100 mb-4 leading-relaxed">A guided educational tour focusing on the history of computing hardware, software engineering evolution, and the video game industry ecosystem.</p>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-3xl border border-white/10 backdrop-blur-sm">
+                        <h3 class="text-xl font-bold text-white mb-1">The University of Texas at Dallas (UTD) - Computer Science Dept & Esports Arena</h3>
+                        <div class="text-xs font-bold uppercase tracking-widest text-indigo-300 mb-4 flex items-center gap-2"><span>📍</span> Richardson, TX (Dallas/Collin County)</div>
+                        <p class="text-sm text-indigo-100 mb-4 leading-relaxed">Campus visit including an admissions presentation, a tour of the Engineering and Computer Science building, and a visit to the varsity Esports facility.</p>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-3xl border border-white/10 backdrop-blur-sm">
+                        <h3 class="text-xl font-bold text-white mb-1">Six Flags Over Texas - Physics Day</h3>
+                        <div class="text-xs font-bold uppercase tracking-widest text-indigo-300 mb-4 flex items-center gap-2"><span>📍</span> Arlington, TX (Tarrant County)</div>
+                        <p class="text-sm text-indigo-100 mb-4 leading-relaxed">Students utilize accelerometers and timing devices to measure velocity and G-force on roller coasters.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-y-8">
+            
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(0)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">1</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Module 1: The Silicon Heart - Hardware & History</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-0" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-0" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students analyze the exponential growth of computing power via Moore's Law, graphing transistor density against time to understand hardware constraints in game development.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Analyze data representing exponential growth.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Understand physical limitations of silicon transistors (heat/size).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Correlate CPU/GPU specifications with software performance.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Graphing Calculator or Excel</span><span class="text-slate-400 font-mono text-xs">$0 (School Resource)</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Historical CPU Data Handout</span><span class="text-slate-400 font-mono text-xs">$0.10 per student</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Mathematics, Exposure to STEM Careers</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402C(b) - Instruction in Mathematics, 34 CFR 645.11(a)(1) - Curriculum instruction, 34 CFR 645.11(b)(1) - Math/Science rigour, 2 CFR 200.453 - Materials and supplies</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain Moore's Law (transistor count doubles approx every 2 years).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Provide dataset of processors from Intel 4004 (1971) to current Gen.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Have students plot Year (x) vs Transistor Count (y) on a semi-log plot.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(1)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">2</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Module 2: The Loot Box Logic - Probability</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-1" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-1" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students simulate game 'drop rates' using dice and spreadsheets to master probability, percentages, and expected value.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Calculate theoretical vs. experimental probability.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Understand Expected Value (EV).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Analyze RNG (Random Number Generation) ethics.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>20-sided dice (d20)</span><span class="text-slate-400 font-mono text-xs">$1.00 each</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Data recording sheets</span><span class="text-slate-400 font-mono text-xs">$0.05 each</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Mathematics, Academic Tutoring</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402C(b) - Instruction in Mathematics, 34 CFR 645.11(a)(1) - Curriculum instruction, 2 CFR 200.453 - Materials and supplies</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain that a '5% drop rate' means a 1 in 20 chance.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Assign 'Legendary Item' status to rolling a 20.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Have students roll 50 times to generate a sample set.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(2)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">3</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Module 3: Physics Engines - Projectile Motion</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-2" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-2" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Using the mechanics of artillery games (e.g., Angry Birds), students calculate trajectories, velocity vectors, and gravity simulation.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Calculate projectile motion components (X and Y velocity).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Understand simulation of gravity vectors.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Apply quadratic equations to motion.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Scientific Calculator</span><span class="text-slate-400 font-mono text-xs">$0 (School Resource)</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Projectile Problem Set</span><span class="text-slate-400 font-mono text-xs">$0.05 per student</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Laboratory Science, Instruction in Mathematics</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402C(b) - Instruction in Lab Science, 34 CFR 645.11(b)(1) - Math/Science curriculum, 2 CFR 200.453 - Materials and supplies</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Review decomposing vectors using Cosine and Sine.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Present problem: Initial velocity 50m/s at 45 degrees.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Walk through calculating time of flight and total range.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(3)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">4</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Module 4: Algorithmic Thinking - The 'Human' Program</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-3" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-3" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students learn coding logic by creating flowcharts and 'programming' a classmate to perform complex tasks, identifying bugs in logic.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Differentiate code and pseudocode.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Create flowcharts with conditionals (If/Else).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Debug logic errors.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Poster Paper</span><span class="text-slate-400 font-mono text-xs">$0.50 per group</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Markers</span><span class="text-slate-400 font-mono text-xs">$5.00 per pack</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Computer Science, Academic Tutoring</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402C(b) - Core Curriculum Instruction, 34 CFR 645.11(a)(1) - Curriculum instruction, 2 CFR 200.453 - Materials and supplies</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain Start/End (Oval), Process (Rectangle), Decision (Diamond).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Task: Guide a 'robot' (student) from door to desk avoiding a chair.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Ensure 'robots' do exactly what is written, even if it causes a crash.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(4)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">5</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Module 5: Xenobiology - Designing for Biomes</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-4" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-4" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students apply biological principles to design a game creature adapted for specific extreme environments (Ice, Lava, Deep Sea).</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Apply adaptation and natural selection concepts.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Understand homeostasis.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Link form to function in design.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Drawing Paper</span><span class="text-slate-400 font-mono text-xs">$0.10 per student</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Biome Fact Sheets</span><span class="text-slate-400 font-mono text-xs">$0 (Printable)</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Laboratory Science, Academic Guidance</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402C(b) - Instruction in Lab Science, 34 CFR 645.11(a)(1) - Curriculum instruction, 2 CFR 200.453 - Materials and supplies</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Assign environments: High Gravity, Underwater, or Extreme Cold.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Review how animals on Earth adapt (blubber, gills, bone density).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Ask students to justify their creature's features scientifically.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(5)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">6</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Module 6: Level Design Geometry</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-5" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-5" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students use coordinate geometry to map a game level, calculating area, perimeter, and travel distances between objectives.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Use distance formula on a coordinate plane.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Calculate area of composite shapes.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Understand scale factors.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Graph Paper</span><span class="text-slate-400 font-mono text-xs">$0.05 per sheet</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Rulers</span><span class="text-slate-400 font-mono text-xs">$0.50 each</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Mathematics, Tutoring</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402C(b) - Instruction in Mathematics, 34 CFR 645.11(a)(1) - Curriculum instruction, 2 CFR 200.453 - Materials and supplies</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Show how game engines use (x,y,z) coordinates.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Challenge: Design a Capture the Flag map where both teams are equidistant from the flag.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Check student math using the distance formula.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(6)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">7</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Module 7: The Physics of Sound (Foley)</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-6" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-6" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students explore sound waves by creating Foley effects for games using everyday objects, analyzing frequency and amplitude.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Understand sound as a mechanical wave.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Differentiate frequency (pitch) vs. amplitude (volume).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Explore material acoustic properties.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Props (Celery, Foil, Shoes)</span><span class="text-slate-400 font-mono text-xs">$10.00 total</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Recording Device (Phone/Laptop)</span><span class="text-slate-400 font-mono text-xs">$0 (School Resource)</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Laboratory Science, Exposure to Cultural Events</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402C(b) - Instruction in Lab Science, 34 CFR 645.11(a)(1) - Curriculum instruction, 2 CFR 200.453 - Materials and supplies</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Discuss compression and rarefaction.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Play a game clip with audio muted.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Task students to 'perform' the sound effects using the props provided.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(7)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">8</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Module 8: The Human Controller - Reaction Time</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-7" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-7" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students measure biological reaction times to understand input lag, neural pathways, and human performance limits.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Measure and average quantitative data.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Understand neural signal transmission.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Differentiate hardware vs. biological latency.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Meter Stick</span><span class="text-slate-400 font-mono text-xs">$1.00 each</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Calculator</span><span class="text-slate-400 font-mono text-xs">$0</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Laboratory Science, Instruction in Mathematics</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402C(b) - Instruction in Lab Science, 34 CFR 645.11(b)(1) - Math/Science rigour, 2 CFR 200.453 - Materials and supplies</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain the path: Eye > Optic Nerve > Brain > Motor Neuron > Finger.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Demonstrate the ruler drop test (catching a falling ruler).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Provide the formula to convert distance fallen (d) to time (t): t = sqrt(2d/g).</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(8)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">9</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Module 9: Gaming Economics - Inflation & Currency</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-8" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-8" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students analyze virtual economies to understand real-world principles like inflation, supply/demand, and purchasing power.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Define inflation and purchasing power.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Analyze supply and demand curves.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Understand exchange rates.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Scenario Worksheets</span><span class="text-slate-400 font-mono text-xs">$0 (Printable)</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Mathematics, Financial Literacy</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402C(b) - Financial Literacy, 34 CFR 645.11(a)(6) - Financial literacy, 2 CFR 200.453 - Materials and supplies</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Scenario: A bug allows players to print infinite Gold. Prices skyrocket.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain why 'more money' equals 'higher prices' (Inflation).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Ask students to design a 'Gold Sink' (a way to remove money from the game).</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(9)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">10</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Module 10: Press Start on Career - Pathways</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-9" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-9" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students map skills and interests to specific gaming careers, identifying necessary college majors, degrees, and HS coursework.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Identify STEM careers in gaming.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Map HS endorsements to college majors.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Create an academic roadmap.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Computer/Tablet</span><span class="text-slate-400 font-mono text-xs">$0 (School Resource)</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Career Map Template</span><span class="text-slate-400 font-mono text-xs">$0 (Printable)</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Academic Advice/Course Selection, Career Exploration</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402C(b) - Course Selection, Sec. 402C(b) - Career Counseling, 34 CFR 645.11(a)(2) - Postsecondary info, 34 CFR 645.11(a)(4) - Career awareness, N/A</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Show roles beyond 'Streamer': Producer, Engineer, Artist, QA, Analyst.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Compare degrees: CS (Technical) vs. Fine Arts (Creative) vs. Business (Production).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Guide students in filling out the 4-year plan template.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+        </div>
+    </div>
+
+    <!-- TAB 2: TEACHER WORKBOOK -->
+    <div id="workbook" class="tab-content max-w-4xl mx-auto">
+        <div class="text-center py-20 border-b-2 border-slate-900 mb-12">
+            <div class="text-xs font-black uppercase tracking-[0.3em] text-slate-400 mb-4">Official Workbook</div>
+            <h1 class="text-4xl font-black text-slate-900 mb-4">Level Up: The Science and Strategy of Video Game Design</h1>
+            <p class="text-lg font-serif italic text-slate-500">Instructor Checklists & Facilitation Notes</p>
+        </div>
+        
+        
+        <div class="mb-16">
+            <h2 class="text-2xl font-black text-slate-900 mb-6 border-b border-slate-200 pb-2">Field Expeditions Checklist</h2>
+            
+            <div class="wb-box mb-4 bg-white border-l-4 border-amber-500">
+                <div class="font-bold text-lg text-slate-900">National Videogame Museum</div>
+                <div class="text-xs font-bold uppercase text-amber-600 mb-2">Frisco, TX (Collin County)</div>
+                <p class="text-sm text-slate-600">A guided educational tour focusing on the history of computing hardware, software engineering evolution, and the video game industry ecosystem.</p>
+            </div>
+            <div class="wb-box mb-4 bg-white border-l-4 border-amber-500">
+                <div class="font-bold text-lg text-slate-900">The University of Texas at Dallas (UTD) - Computer Science Dept & Esports Arena</div>
+                <div class="text-xs font-bold uppercase text-amber-600 mb-2">Richardson, TX (Dallas/Collin County)</div>
+                <p class="text-sm text-slate-600">Campus visit including an admissions presentation, a tour of the Engineering and Computer Science building, and a visit to the varsity Esports facility.</p>
+            </div>
+            <div class="wb-box mb-4 bg-white border-l-4 border-amber-500">
+                <div class="font-bold text-lg text-slate-900">Six Flags Over Texas - Physics Day</div>
+                <div class="text-xs font-bold uppercase text-amber-600 mb-2">Arlington, TX (Tarrant County)</div>
+                <p class="text-sm text-slate-600">Students utilize accelerometers and timing devices to measure velocity and G-force on roller coasters.</p>
+            </div>
+        </div>
+
+        
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 1</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Module 1: The Silicon Heart - Hardware & History</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Graphing Calculator or Excel</div><div class="text-xs text-slate-500">Est: $0 (School Resource)</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Historical CPU Data Handout</div><div class="text-xs text-slate-500">Est: $0.10 per student</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Analyze data representing exponential growth.</li><li>Understand physical limitations of silicon transistors (heat/size).</li><li>Correlate CPU/GPU specifications with software performance.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain Moore's Law (transistor count doubles approx every 2 years).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Provide dataset of processors from Intel 4004 (1971) to current Gen.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Have students plot Year (x) vs Transistor Count (y) on a semi-log plot.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 2</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Module 2: The Loot Box Logic - Probability</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Beginner</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">20-sided dice (d20)</div><div class="text-xs text-slate-500">Est: $1.00 each</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Data recording sheets</div><div class="text-xs text-slate-500">Est: $0.05 each</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Calculate theoretical vs. experimental probability.</li><li>Understand Expected Value (EV).</li><li>Analyze RNG (Random Number Generation) ethics.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain that a '5% drop rate' means a 1 in 20 chance.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Assign 'Legendary Item' status to rolling a 20.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Have students roll 50 times to generate a sample set.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 3</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Module 3: Physics Engines - Projectile Motion</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Advanced</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Scientific Calculator</div><div class="text-xs text-slate-500">Est: $0 (School Resource)</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Projectile Problem Set</div><div class="text-xs text-slate-500">Est: $0.05 per student</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Calculate projectile motion components (X and Y velocity).</li><li>Understand simulation of gravity vectors.</li><li>Apply quadratic equations to motion.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Review decomposing vectors using Cosine and Sine.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Present problem: Initial velocity 50m/s at 45 degrees.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Walk through calculating time of flight and total range.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 4</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Module 4: Algorithmic Thinking - The 'Human' Program</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Beginner</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Poster Paper</div><div class="text-xs text-slate-500">Est: $0.50 per group</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Markers</div><div class="text-xs text-slate-500">Est: $5.00 per pack</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Differentiate code and pseudocode.</li><li>Create flowcharts with conditionals (If/Else).</li><li>Debug logic errors.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain Start/End (Oval), Process (Rectangle), Decision (Diamond).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Task: Guide a 'robot' (student) from door to desk avoiding a chair.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Ensure 'robots' do exactly what is written, even if it causes a crash.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 5</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Module 5: Xenobiology - Designing for Biomes</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Drawing Paper</div><div class="text-xs text-slate-500">Est: $0.10 per student</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Biome Fact Sheets</div><div class="text-xs text-slate-500">Est: $0 (Printable)</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Apply adaptation and natural selection concepts.</li><li>Understand homeostasis.</li><li>Link form to function in design.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Assign environments: High Gravity, Underwater, or Extreme Cold.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Review how animals on Earth adapt (blubber, gills, bone density).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Ask students to justify their creature's features scientifically.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 6</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Module 6: Level Design Geometry</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Graph Paper</div><div class="text-xs text-slate-500">Est: $0.05 per sheet</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Rulers</div><div class="text-xs text-slate-500">Est: $0.50 each</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Use distance formula on a coordinate plane.</li><li>Calculate area of composite shapes.</li><li>Understand scale factors.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Show how game engines use (x,y,z) coordinates.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Challenge: Design a Capture the Flag map where both teams are equidistant from the flag.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Check student math using the distance formula.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 7</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Module 7: The Physics of Sound (Foley)</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Beginner</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Props (Celery, Foil, Shoes)</div><div class="text-xs text-slate-500">Est: $10.00 total</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Recording Device (Phone/Laptop)</div><div class="text-xs text-slate-500">Est: $0 (School Resource)</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Understand sound as a mechanical wave.</li><li>Differentiate frequency (pitch) vs. amplitude (volume).</li><li>Explore material acoustic properties.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Discuss compression and rarefaction.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Play a game clip with audio muted.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Task students to 'perform' the sound effects using the props provided.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 8</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Module 8: The Human Controller - Reaction Time</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Meter Stick</div><div class="text-xs text-slate-500">Est: $1.00 each</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Calculator</div><div class="text-xs text-slate-500">Est: $0</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Measure and average quantitative data.</li><li>Understand neural signal transmission.</li><li>Differentiate hardware vs. biological latency.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain the path: Eye > Optic Nerve > Brain > Motor Neuron > Finger.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Demonstrate the ruler drop test (catching a falling ruler).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Provide the formula to convert distance fallen (d) to time (t): t = sqrt(2d/g).</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 9</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Module 9: Gaming Economics - Inflation & Currency</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Advanced</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Scenario Worksheets</div><div class="text-xs text-slate-500">Est: $0 (Printable)</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Define inflation and purchasing power.</li><li>Analyze supply and demand curves.</li><li>Understand exchange rates.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Scenario: A bug allows players to print infinite Gold. Prices skyrocket.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain why 'more money' equals 'higher prices' (Inflation).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Ask students to design a 'Gold Sink' (a way to remove money from the game).</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 10</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Module 10: Press Start on Career - Pathways</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Beginner</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Computer/Tablet</div><div class="text-xs text-slate-500">Est: $0 (School Resource)</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Career Map Template</div><div class="text-xs text-slate-500">Est: $0 (Printable)</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Identify STEM careers in gaming.</li><li>Map HS endorsements to college majors.</li><li>Create an academic roadmap.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Show roles beyond 'Streamer': Producer, Engineer, Artist, QA, Analyst.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Compare degrees: CS (Technical) vs. Fine Arts (Creative) vs. Business (Production).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Guide students in filling out the 4-year plan template.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+    </div>
+
+    <!-- TAB 3: GRANT NARRATIVE -->
+    <div id="narrative" class="tab-content max-w-3xl mx-auto font-serif leading-relaxed text-slate-800">
+        <div class="py-12">
+            <h1 class="font-sans text-3xl font-black text-slate-900 mb-8 border-b-2 border-slate-900 pb-4">Curriculum Narrative: Level Up – Integrating STEM Rigor through Video Game Design and Strategic Analysis</h1>
+            
+            <div class="mb-10">
+                <h2 class="font-sans text-lg font-bold text-indigo-800 mb-4 uppercase tracking-widest">Executive Summary</h2>
+                <p class="bg-slate-50 p-6 rounded-lg border-l-4 border-indigo-200">Level Up: The Science and Strategy of Video Game Design is a comprehensive 10-module STEM curriculum specifically engineered for High School students (Grades 9-12) within Texas TRIO Upward Bound and Upward Bound Math-Science programs. By leveraging the high-engagement domain of video game development, the curriculum delivers rigorous instruction in Algebra II, Physics, Computer Science, and Biology. Each module is designed to bridge the gap between abstract academic concepts and concrete professional applications, prioritizing postsecondary readiness through structured career exploration and college major alignment. The program encompasses 400 minutes of intensive classroom instruction supplemented by targeted field experiences, ensuring students develop the cognitive and technical competencies required for success in competitive STEM degree programs.</p>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="font-sans text-lg font-bold text-indigo-800 mb-4 uppercase tracking-widest">Compliance & Alignment</h2>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-2">DOE TRIO Compliance Strategy</h3>
+                    <p>This curriculum is meticulously designed to satisfy the legislative requirements for DOE TRIO Upward Bound (UB) and Upward Bound Math-Science (UBMS) programs. In accordance with the Higher Education Act (HEA) Section 402C(b), the program provides mandatory instruction in mathematics through Algebra II and Statistics, and in laboratory science through Physics and Biology modules. The curriculum complies with Title 34 CFR Part 645.11(a)(1), (b)(1), and (a)(4), addressing the mandates for academic instruction, increased rigor in math/science, and career awareness. Financial and administrative implementation follows EDGAR and 2 CFR 200.453 cost principles, ensuring that all proposed materials (e.g., graphing calculators, lab supplies, and instructional data sets) are necessary and reasonable for the performance of the federal award objectives, specifically the improvement of secondary school retention and postsecondary enrollment rates.</p>
+                </div>
+                <div>
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-2">Standards Alignment</h3>
+                    <p>The Level Up curriculum is rigorously aligned with the Texas Essential Knowledge and Skills (TEKS) and the Texas STEM Framework. Academic benchmarks include §111.43 (Algebra II) for exponential functions and quadratic modeling, §112.39 (Physics) for kinematics and wave characteristics, and §130.422 (Computer Science I) for hardware analysis and algorithmic logic. The curriculum utilizes the 'STEM Process' standards by requiring students to engage in data analysis, scientific inquiry, and computational thinking. By mapping directly to Texas's high school graduation endorsements in STEM, the curriculum ensures that students are not only meeting state graduation requirements but are also developing the specialized skills required by the Texas workforce in Information Technology and Advanced Engineering.</p>
+                </div>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="font-sans text-lg font-bold text-indigo-800 mb-4 uppercase tracking-widest">Field Expeditions</h2>
+                <p>The curriculum includes three high-impact field trip options within a 60-mile radius of Dallas, Tarrant, and Johnson counties, providing real-world context to theoretical instruction. Students visit the National Videogame Museum in Frisco (Collin County) to analyze the historical evolution of hardware and software engineering. A visit to the University of Texas at Dallas (UTD) Computer Science Department offers direct exposure to a Tier One research institution and specific 'Animation and Games' degree concentrations, facilitating the 'college going' culture required by TRIO. Finally, participation in Physics Day at Six Flags Over Texas in Arlington (Tarrant County) allows students to utilize accelerometers and timing devices to validate the Newtonian physics and projectile motion equations mastered during the classroom modules.</p>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="font-sans text-lg font-bold text-indigo-800 mb-4 uppercase tracking-widest">Module Narratives</h2>
+                
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Module 1: The Silicon Heart - Hardware & History</h3>
+                    <p class="text-sm text-slate-600">Students engage in a high-rigor analysis of computing evolution by investigating Moore's Law. Through graphing transistor density against historical timelines, students apply exponential functions to understand the physical constraints of hardware, bridging the gap between electrical engineering and software performance.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Module 2: The Loot Box Logic - Probability</h3>
+                    <p class="text-sm text-slate-600">This module demystifies complex statistics through the lens of game economy. Students simulate 'drop rates' using dice and spreadsheets, calculating theoretical versus experimental probability to master expected value and random number generation (RNG), skills directly transferable to data science and actuarial careers.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Module 3: Physics Engines - Projectile Motion</h3>
+                    <p class="text-sm text-slate-600">Focusing on advanced kinematics, students calculate trajectories and velocity vectors used in modern physics engines. By applying quadratic equations and trigonometry to determine flight paths, students see the immediate relevance of calculus and physics in software simulation and mechanical engineering.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Module 4: Algorithmic Thinking - The 'Human' Program</h3>
+                    <p class="text-sm text-slate-600">Students develop computational thinking by creating complex logic flowcharts. By 'programming' classmates to navigate obstacles, they learn to identify and debug logic errors, establishing a foundational understanding of Boolean algebra and the systems engineering mindset required for professional software development.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Module 5: Xenobiology - Designing for Biomes</h3>
+                    <p class="text-sm text-slate-600">Integrating life sciences, this module requires students to apply principles of adaptation, homeostasis, and natural selection. Students design creatures for extreme environments, justifying their biological features through a scientific lens that connects evolutionary biology with character design and astrobiology.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Module 6: Level Design Geometry</h3>
+                    <p class="text-sm text-slate-600">Using the Cartesian coordinate system, students design balanced game maps. They utilize the distance formula and area calculations of composite shapes to ensure spatial symmetry, providing a practical application for geometry and civil engineering concepts in a digital environment.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Module 7: The Physics of Sound (Foley)</h3>
+                    <p class="text-sm text-slate-600">Students explore the mechanical properties of sound waves by creating 'Foley' effects. By analyzing frequency and amplitude while manipulating physical objects to create digital audio, students gain a deep understanding of acoustics and wave physics relevant to audio engineering and material science.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Module 8: The Human Controller - Reaction Time</h3>
+                    <p class="text-sm text-slate-600">This lab-based module explores the intersection of biology and physics. Students measure neural latency through physical tests, using kinematics formulas to convert distance into time, thereby understanding the biological pathways of the nervous system and the technical constraints of input lag.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Module 9: Gaming Economics - Inflation & Currency</h3>
+                    <p class="text-sm text-slate-600">Students analyze virtual markets to understand macroeconomics. By graphing supply and demand curves and calculating the impact of currency devaluation within a game, they master financial literacy concepts like inflation and purchasing power, preparing them for degrees in finance or economics.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Module 10: Press Start on Career - Pathways</h3>
+                    <p class="text-sm text-slate-600">The capstone module facilitates direct postsecondary planning. Students map their personal interests to specific STEM career roles, research Texas-based university degree requirements, and draft a four-year high school academic roadmap to ensure they meet the prerequisites for competitive college admissions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

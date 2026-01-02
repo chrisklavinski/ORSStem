@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquatic Physics & Conservation: From Urban Watersheds to Gulf Marine Life (Texas Coastal Expedition Edition) - Master STEM Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1e293b; }
+        .page-break { page-break-before: always; }
+        .avoid-break { break-inside: avoid; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab-btn.active { background-color: #4f46e5; color: white; border-color: #4f46e5; }
+        
+        /* Workbook specific styles */
+        .wb-checklist-item { display: flex; align-items: flex-start; margin-bottom: 12px; }
+        .wb-checkbox { width: 18px; height: 18px; border: 2px solid #cbd5e1; border-radius: 4px; margin-right: 12px; flex-shrink: 0; margin-top: 3px; }
+        .wb-box { background: #f8fafc; border: 1px solid #e2e8f0; padding: 20px; border-radius: 8px; font-size: 14px; }
+        
+        @media print {
+            body { background-color: white; }
+            .no-print { display: none !important; }
+            .tab-content { display: none !important; }
+            .tab-content.active { display: block !important; }
+            /* If user hits print, we want to respect the current tab, or maybe provide a print-all option. 
+               For simplicity, we print the active tab. */
+        }
+    </style>
+    <script>
+        function switchTab(id) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById('btn-' + id).classList.add('active');
+        }
+        function toggleSection(id) {
+            const content = document.getElementById('content-' + id);
+            const chevron = document.getElementById('chevron-' + id);
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                chevron.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                chevron.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</head>
+<body class="py-8 px-4 md:px-8 max-w-7xl mx-auto">
+    <!-- Navigation Tabs -->
+    <div class="flex justify-center mb-8 no-print sticky top-4 z-50">
+        <div class="bg-white p-2 rounded-2xl shadow-lg border border-gray-200 flex gap-2">
+            <button id="btn-guide" onclick="switchTab('guide')" class="tab-btn active px-6 py-2 rounded-xl font-bold text-sm text-slate-600 hover:bg-slate-50 border border-transparent transition-all">Master Guide</button>
+            <button id="btn-workbook" onclick="switchTab('workbook')" class="tab-btn px-6 py-2 rounded-xl font-bold text-sm text-slate-600 hover:bg-slate-50 border border-transparent transition-all">Teacher Workbook</button>
+            <button id="btn-narrative" onclick="switchTab('narrative')" class="tab-btn px-6 py-2 rounded-xl font-bold text-sm text-slate-600 hover:bg-slate-50 border border-transparent transition-all">Grant Narrative</button>
+        </div>
+    </div>
+
+    <!-- TAB 1: MASTER GUIDE -->
+    <div id="guide" class="tab-content active">
+        <header class="mb-8 text-center border-b-4 border-indigo-600 pb-12">
+            <div class="inline-block px-4 py-1 mb-4 bg-indigo-50 text-indigo-700 text-xs font-black uppercase tracking-widest rounded-full">STEM Architect Master Guide</div>
+            <h1 class="text-5xl font-black text-slate-900 mb-6">Aquatic Physics & Conservation: From Urban Watersheds to Gulf Marine Life (Texas Coastal Expedition Edition)</h1>
+            <p class="text-2xl text-slate-500 font-medium max-w-4xl mx-auto leading-relaxed mb-8">An advanced, multi-day STEM curriculum connecting North Texas urban watersheds to the Texas Gulf Coast. This expanded modular program begins with classroom physics and local water analysis in the DFW area, followed by a residential field expedition to Galveston and Corpus Christi. Students investigate bioacoustics, fluid dynamics, and estuarine ecology, directly observing the Trinity River's termination point in Galveston Bay. This curriculum meets strict DOE TRIO compliance for summer residential components or rigorous academic field studies.</p>
+            <div class="flex justify-center gap-6 text-sm font-bold text-slate-400 uppercase tracking-widest">
+                <span>Target: High School (Ages 15-18)</span>
+                <span>&bull;</span>
+                <span>Total Time: 3-4 Days (Includes 12 classroom hours + Overnight Field Expedition)</span>
+                <span>&bull;</span>
+                <span>Est. Cost: $2830.00</span>
+            </div>
+        </header>
+
+        
+        <div class="mb-12 page-break">
+            <div class="bg-indigo-900 rounded-[2.5rem] p-12 text-white shadow-2xl relative overflow-hidden">
+                <h2 class="text-3xl font-black mb-8 flex items-center gap-4 border-b border-indigo-700 pb-4"><span>🚌</span> Field Expeditions (60mi Radius)</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <div class="bg-white/10 p-6 rounded-3xl border border-white/10 backdrop-blur-sm">
+                        <h3 class="text-xl font-bold text-white mb-1">Dallas World Aquarium (DWA)</h3>
+                        <div class="text-xs font-bold uppercase tracking-widest text-indigo-300 mb-4 flex items-center gap-2"><span>📍</span> Dallas, TX (Dallas County)</div>
+                        <p class="text-sm text-indigo-100 mb-4 leading-relaxed">Initial comparative study of river vs. marine ecosystems and introduction to closed-loop life support engineering.</p>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-3xl border border-white/10 backdrop-blur-sm">
+                        <h3 class="text-xl font-bold text-white mb-1">Texas A&M University at Galveston (TAMUG) & Wetlands</h3>
+                        <div class="text-xs font-bold uppercase tracking-widest text-indigo-300 mb-4 flex items-center gap-2"><span>📍</span> Galveston, TX (Galveston County)</div>
+                        <p class="text-sm text-indigo-100 mb-4 leading-relaxed">Campus tour of a premier maritime university followed by a marsh ecology excursion to analyze the output of the Trinity River watershed.</p>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-3xl border border-white/10 backdrop-blur-sm">
+                        <h3 class="text-xl font-bold text-white mb-1">Texas State Aquarium & Wildlife Rescue Center</h3>
+                        <div class="text-xs font-bold uppercase tracking-widest text-indigo-300 mb-4 flex items-center gap-2"><span>📍</span> Corpus Christi, TX (Nueces County)</div>
+                        <p class="text-sm text-indigo-100 mb-4 leading-relaxed">Behind-the-scenes engineering tour of large-scale aquatic habitats and the Sea Turtle rescue hospital.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-y-8">
+            
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(0)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">1</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Module 1: Fundamentals of Wave Physics</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 1.5 Hours</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-0" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-0" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">An introductory physics lesson using physical manipulatives to understand mechanical waves. Students establish the theoretical framework for sound propagation before moving to digital applications.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Differentiate between transverse and longitudinal waves.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Define frequency, amplitude, and wavelength.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Explain how medium density affects wave speed.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Slinkys (Metal and Plastic)</span><span class="text-slate-400 font-mono text-xs">$30</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Tuning Forks set</span><span class="text-slate-400 font-mono text-xs">$40</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Water tubs</span><span class="text-slate-400 font-mono text-xs">$15</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Laboratory Science, Instruction in Mathematics</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Section 402C: Instruction in laboratory science, 34 CFR 645.11(b)(1): Curriculum must include laboratory science, 2 CFR 200.403: Costs must be necessary and reasonable</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Introduce the concept of energy transfer through media.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Use slinkys to physically demonstrate the difference between transverse waves (ocean surface) and longitudinal waves (sound).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Discuss why sound travels faster in water (denser) than air, setting the stage for the bioacoustics lab.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(1)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">2</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Module 2: Digital Bioacoustics Laboratory</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 1.5 Hours</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-1" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-1" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">A computer-based lab where students apply physics concepts to biological contexts. Students use software to analyze dolphin vocalizations and calculate echolocation distances.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Analyze spectrograms of marine mammal vocalizations.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Calculate distance using time-delay of sound (d=vt/2).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Evaluate the impact of anthropogenic noise on specific frequencies.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Virtual Oscilloscope/Spectrogram Software (Audacity)</span><span class="text-slate-400 font-mono text-xs">$0</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Hydrophone Audio Files (NOAA)</span><span class="text-slate-400 font-mono text-xs">$0</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Headphones</span><span class="text-slate-400 font-mono text-xs">$0 (Student Provided)</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Laboratory Science, Instruction in Mathematics, Exposure to STEM technology</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Section 402C: Instruction in mathematics and laboratory science, 34 CFR 645.11(b)(1): Laboratory science, 34 CFR 645.11(b)(2): Mathematics, 2 CFR 200.405: Allocable costs</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Present the anatomy of the dolphin melon (lens) and jawbone (receiver).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Demonstrate how to load audio files into Audacity and identify 'clicks' vs 'whistles' on the spectrogram.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Guide students through the calculation: if sound in seawater is 1500 m/s and the echo returns in 0.05s, how far is the prey?</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(2)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">3</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Module 3: TAMUG Estuary Analysis (Galveston Field Lab)</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 3 Hours</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-2" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-2" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">On-site analysis at Galveston Island State Park or TAMUG wetlands. Students collect water samples to measure salinity gradients where the Trinity River meets the Gulf.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Measure salinity, pH, and dissolved oxygen using field probes.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Correlate water density with salinity levels.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Identify halophytic plant adaptations.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Refractometers</span><span class="text-slate-400 font-mono text-xs">$40</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Water Quality Test Kits</span><span class="text-slate-400 font-mono text-xs">$50</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Waders/Boots</span><span class="text-slate-400 font-mono text-xs">$100</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Science, Exposure to College Campuses (TAMUG)</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Section 402C: Exposure to college campuses, Section 402C: Instruction in science, 34 CFR 645.11(c): Summer instructional component, 34 CFR 645.40: Educational field trips, 2 CFR 200.474: Travel costs</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain the safety protocols for marsh walking (stingray shuffle).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Demonstrate how to use a refractometer to read specific gravity/salinity.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Assign groups to different distances from the shore to measure the salinity gradient.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(3)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">4</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Module 4: Corpus Christi Rehabilitation Engineering</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 4 Hours</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-3" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-3" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">A visit to the Texas State Aquarium Wildlife Rescue Center to study the intersection of physics (boat strikes, entanglement) and biology (rehabilitation).</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Analyze x-rays of sea turtles to identify anthropogenic trauma.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Understand the engineering behind life-support filtration systems.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Discuss the physics of buoyancy disorders in injured turtles.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Admission Tickets (TSA)</span><span class="text-slate-400 font-mono text-xs">$20-$30 per student</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Bus Charter (Overnight)</span><span class="text-slate-400 font-mono text-xs">$2500+</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Career exploration, Instruction in Science</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Section 402C: Career awareness, Section 402C: Cultural enrichment, 34 CFR 645.11(b)(6): Career counseling/exploration, 2 CFR 200.474: Commercial carrier travel costs</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Guide students through the rescue center viewing areas.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Discuss 'Bubble Butt' syndrome in turtles (trapped gas affecting buoyancy) and how weights are used (physics) to counteract it.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Have students interview an aquarist or vet tech about their daily routine.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(4)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">5</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Module 5: Statistical Modeling (Mark-Recapture)</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 1.5 Hours</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-4" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-4" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Post-trip math workshop. Students use the Lincoln-Petersen index to estimate population sizes, using data collected from the field trip (simulated) or provided datasets.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Apply the Lincoln-Petersen index formula (N = (M*C) / R).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Calculate percent error and standard deviation.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Interpret data validity.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Computer Lab with Excel/Sheets</span><span class="text-slate-400 font-mono text-xs">$0</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Bean/Bead simulation kits</span><span class="text-slate-400 font-mono text-xs">$10</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Mathematics, Tutoring</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Section 402C: Instruction in mathematics, 34 CFR 645.11(b)(2): Instruction in mathematics, 2 CFR 200.453: Materials and supplies</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Introduce the problem: 'How do we count fish in the ocean if we can't see them all?'</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Teach the Formula: N = (Marked First Catch * Total Second Catch) / Recaptured Marked.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Have students input data observed during the Galveston seine netting activity (simulated recapture).</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(5)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">6</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Module 6: Capstone - The Trinity Connection</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 2 Hours</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-5" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-5" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students synthesize their knowledge of physics, biology, and pollution to design a solution for the Trinity River watershed, linking local Dallas urban runoff to the health of the Galveston/Corpus ecosystems they visited.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Trace watershed pathways using GIS/Maps.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Design a physical or policy intervention for pollution.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Present a scientific argument based on field trip observations.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Poster paper / markers</span><span class="text-slate-400 font-mono text-xs">$20</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Google Earth (Digital)</span><span class="text-slate-400 font-mono text-xs">$0</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Science, Exposure to STEM careers (Environmental Engineering)</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Section 402C: Instruction in science, Section 402C: Academic advice, 34 CFR 645.11(b)(1): Laboratory science (Application), 2 CFR 200.403: Necessary costs</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Show the path from Dallas (Trinity River) -> Lake Livingston -> Galveston Bay -> Gulf of Mexico.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Remind students of the water quality tests they performed in Galveston.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Challenge students to design a 'Trash Trap' or a legislative policy to stop plastic at the source (Dallas) before it reaches the turtles in Corpus.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+        </div>
+    </div>
+
+    <!-- TAB 2: TEACHER WORKBOOK -->
+    <div id="workbook" class="tab-content max-w-4xl mx-auto">
+        <div class="text-center py-20 border-b-2 border-slate-900 mb-12">
+            <div class="text-xs font-black uppercase tracking-[0.3em] text-slate-400 mb-4">Official Workbook</div>
+            <h1 class="text-4xl font-black text-slate-900 mb-4">Aquatic Physics & Conservation: From Urban Watersheds to Gulf Marine Life (Texas Coastal Expedition Edition)</h1>
+            <p class="text-lg font-serif italic text-slate-500">Instructor Checklists & Facilitation Notes</p>
+        </div>
+        
+        
+        <div class="mb-16">
+            <h2 class="text-2xl font-black text-slate-900 mb-6 border-b border-slate-200 pb-2">Field Expeditions Checklist</h2>
+            
+            <div class="wb-box mb-4 bg-white border-l-4 border-amber-500">
+                <div class="font-bold text-lg text-slate-900">Dallas World Aquarium (DWA)</div>
+                <div class="text-xs font-bold uppercase text-amber-600 mb-2">Dallas, TX (Dallas County)</div>
+                <p class="text-sm text-slate-600">Initial comparative study of river vs. marine ecosystems and introduction to closed-loop life support engineering.</p>
+            </div>
+            <div class="wb-box mb-4 bg-white border-l-4 border-amber-500">
+                <div class="font-bold text-lg text-slate-900">Texas A&M University at Galveston (TAMUG) & Wetlands</div>
+                <div class="text-xs font-bold uppercase text-amber-600 mb-2">Galveston, TX (Galveston County)</div>
+                <p class="text-sm text-slate-600">Campus tour of a premier maritime university followed by a marsh ecology excursion to analyze the output of the Trinity River watershed.</p>
+            </div>
+            <div class="wb-box mb-4 bg-white border-l-4 border-amber-500">
+                <div class="font-bold text-lg text-slate-900">Texas State Aquarium & Wildlife Rescue Center</div>
+                <div class="text-xs font-bold uppercase text-amber-600 mb-2">Corpus Christi, TX (Nueces County)</div>
+                <p class="text-sm text-slate-600">Behind-the-scenes engineering tour of large-scale aquatic habitats and the Sea Turtle rescue hospital.</p>
+            </div>
+        </div>
+
+        
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 1</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Module 1: Fundamentals of Wave Physics</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 1.5 Hours</span>
+                        <span>📊 Beginner/Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Slinkys (Metal and Plastic)</div><div class="text-xs text-slate-500">Est: $30</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Tuning Forks set</div><div class="text-xs text-slate-500">Est: $40</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Water tubs</div><div class="text-xs text-slate-500">Est: $15</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Differentiate between transverse and longitudinal waves.</li><li>Define frequency, amplitude, and wavelength.</li><li>Explain how medium density affects wave speed.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Introduce the concept of energy transfer through media.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Use slinkys to physically demonstrate the difference between transverse waves (ocean surface) and longitudinal waves (sound).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Discuss why sound travels faster in water (denser) than air, setting the stage for the bioacoustics lab.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 2</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Module 2: Digital Bioacoustics Laboratory</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 1.5 Hours</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Virtual Oscilloscope/Spectrogram Software (Audacity)</div><div class="text-xs text-slate-500">Est: $0</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Hydrophone Audio Files (NOAA)</div><div class="text-xs text-slate-500">Est: $0</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Headphones</div><div class="text-xs text-slate-500">Est: $0 (Student Provided)</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Analyze spectrograms of marine mammal vocalizations.</li><li>Calculate distance using time-delay of sound (d=vt/2).</li><li>Evaluate the impact of anthropogenic noise on specific frequencies.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Present the anatomy of the dolphin melon (lens) and jawbone (receiver).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Demonstrate how to load audio files into Audacity and identify 'clicks' vs 'whistles' on the spectrogram.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Guide students through the calculation: if sound in seawater is 1500 m/s and the echo returns in 0.05s, how far is the prey?</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 3</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Module 3: TAMUG Estuary Analysis (Galveston Field Lab)</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 3 Hours</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Refractometers</div><div class="text-xs text-slate-500">Est: $40</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Water Quality Test Kits</div><div class="text-xs text-slate-500">Est: $50</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Waders/Boots</div><div class="text-xs text-slate-500">Est: $100</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Measure salinity, pH, and dissolved oxygen using field probes.</li><li>Correlate water density with salinity levels.</li><li>Identify halophytic plant adaptations.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain the safety protocols for marsh walking (stingray shuffle).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Demonstrate how to use a refractometer to read specific gravity/salinity.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Assign groups to different distances from the shore to measure the salinity gradient.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 4</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Module 4: Corpus Christi Rehabilitation Engineering</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 4 Hours</span>
+                        <span>📊 All Levels</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Admission Tickets (TSA)</div><div class="text-xs text-slate-500">Est: $20-$30 per student</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Bus Charter (Overnight)</div><div class="text-xs text-slate-500">Est: $2500+</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Analyze x-rays of sea turtles to identify anthropogenic trauma.</li><li>Understand the engineering behind life-support filtration systems.</li><li>Discuss the physics of buoyancy disorders in injured turtles.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Guide students through the rescue center viewing areas.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Discuss 'Bubble Butt' syndrome in turtles (trapped gas affecting buoyancy) and how weights are used (physics) to counteract it.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Have students interview an aquarist or vet tech about their daily routine.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 5</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Module 5: Statistical Modeling (Mark-Recapture)</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 1.5 Hours</span>
+                        <span>📊 Advanced</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Computer Lab with Excel/Sheets</div><div class="text-xs text-slate-500">Est: $0</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Bean/Bead simulation kits</div><div class="text-xs text-slate-500">Est: $10</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Apply the Lincoln-Petersen index formula (N = (M*C) / R).</li><li>Calculate percent error and standard deviation.</li><li>Interpret data validity.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Introduce the problem: 'How do we count fish in the ocean if we can't see them all?'</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Teach the Formula: N = (Marked First Catch * Total Second Catch) / Recaptured Marked.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Have students input data observed during the Galveston seine netting activity (simulated recapture).</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 6</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Module 6: Capstone - The Trinity Connection</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 2 Hours</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Poster paper / markers</div><div class="text-xs text-slate-500">Est: $20</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Google Earth (Digital)</div><div class="text-xs text-slate-500">Est: $0</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Trace watershed pathways using GIS/Maps.</li><li>Design a physical or policy intervention for pollution.</li><li>Present a scientific argument based on field trip observations.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Show the path from Dallas (Trinity River) -> Lake Livingston -> Galveston Bay -> Gulf of Mexico.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Remind students of the water quality tests they performed in Galveston.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Challenge students to design a 'Trash Trap' or a legislative policy to stop plastic at the source (Dallas) before it reaches the turtles in Corpus.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+    </div>
+
+    <!-- TAB 3: GRANT NARRATIVE -->
+    <div id="narrative" class="tab-content max-w-3xl mx-auto font-serif leading-relaxed text-slate-800">
+        <div class="py-12">
+            <h1 class="font-sans text-3xl font-black text-slate-900 mb-8 border-b-2 border-slate-900 pb-4">Aquatic Physics & Conservation: From Urban Watersheds to Gulf Marine Life (Texas Coastal Expedition Edition)</h1>
+            
+            <div class="mb-10">
+                <h2 class="font-sans text-lg font-bold text-indigo-800 mb-4 uppercase tracking-widest">Executive Summary</h2>
+                <p class="bg-slate-50 p-6 rounded-lg border-l-4 border-indigo-200">This comprehensive STEM curriculum provides a rigorous, multi-disciplinary exploration of the hydrological and ecological connection between the North Texas urban corridor and the Gulf Coast ecosystem. Designed for high-achieving high school students, the program bridges the gap between theoretical classroom physics and applied field research. Through a sequence of six modules, students progress from fundamental wave mechanics and digital bioacoustics to on-site estuarine analysis and population modeling. The curriculum culminates in a residential field expedition to the Texas coast, where students engage with higher education faculty and industry professionals, reinforcing the STEM pipeline and fostering environmental stewardship through the lens of physics and engineering.</p>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="font-sans text-lg font-bold text-indigo-800 mb-4 uppercase tracking-widest">Compliance & Alignment</h2>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-2">DOE TRIO Compliance Strategy</h3>
+                    <p>This program is specifically designed to meet the rigorous requirements for allowable services under the Higher Education Act (HEA) of 1965, Section 402C, and the associated regulations in 34 CFR Part 645. Specifically, the curriculum satisfies 34 CFR 645.11(b) by providing required instruction in laboratory science and mathematics, and 34 CFR 645.11(c) regarding summer residential components that simulate the college experience. All associated costs, including instructional supplies, transportation for educational field trips, and student per diem, are structured to remain compliant with EDGAR cost principles as outlined in 2 CFR 200.403 (necessary and reasonable), 2 CFR 200.453 (materials and supplies), and 2 CFR 200.474 (travel costs), ensuring all expenditures directly support the project's stated educational objectives and are allocable to the grant's goals.</p>
+                </div>
+                <div>
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-2">Standards Alignment</h3>
+                    <p>The curriculum is meticulously aligned with the Texas Essential Knowledge and Skills (TEKS) for Physics, Biology, Aquatic Science, and Statistics, ensuring high academic rigor. Specific alignments include Physics 7(A) and 7(B) regarding wave propagation and characteristics, IPC 5(G) for energy transfer, and Aquatic Science 10(A) and 12(B) concerning water pollutants and human impact on aquatic species. Furthermore, the program integrates the Texas STEM Framework by prioritizing Scientific Inquiry, Technology Integration, and Social Responsibility, providing students with a multifaceted educational experience that exceeds standard secondary requirements and prepares them for post-secondary STEM success.</p>
+                </div>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="font-sans text-lg font-bold text-indigo-800 mb-4 uppercase tracking-widest">Field Expeditions</h2>
+                <p>The curriculum leverages high-impact experiential learning through strategic field sites. Within the immediate DFW area (Dallas/Tarrant/Johnson counties), the Dallas World Aquarium serves as a critical baseline for comparative river-marine studies and life-support engineering. The expedition then expands to the Texas Gulf Coast, including a visit to Texas A&M University at Galveston (TAMUG) to expose students to maritime college life and estuarine ecology. Finally, the Texas State Aquarium in Corpus Christi provides a unique laboratory for studying the intersection of physics and veterinary science. These sites were selected for their ability to provide direct access to professional STEM environments and academic mentorship, justifying the travel as essential to the curriculum's rigor.</p>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="font-sans text-lg font-bold text-indigo-800 mb-4 uppercase tracking-widest">Module Narratives</h2>
+                
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Module 1: Fundamentals of Wave Physics</h3>
+                    <p class="text-sm text-slate-600">This module establishes a rigorous academic foundation by investigating the mechanical properties of wave propagation. Students utilize physical manipulatives to differentiate between transverse and longitudinal waves, applying conceptual modeling to understand how medium density—such as the transition from North Texas air to Gulf seawater—alters wave speed and energy transfer. This foundational physics unit ensures students possess the theoretical framework necessary for subsequent bioacoustics and sonar analysis.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Module 2: Digital Bioacoustics Laboratory</h3>
+                    <p class="text-sm text-slate-600">Transitioning from theory to technology, this module introduces students to digital signal processing and acoustical engineering. Utilizing professional-grade software like Audacity and NOAA hydrophone data, students analyze marine mammal vocalizations to calculate distance via time-delay constants. This laboratory experience emphasizes the impact of anthropogenic noise pollution on marine communication, directly connecting algebraic manipulation to real-world environmental challenges and careers in acoustical engineering.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Module 3: TAMUG Estuary Analysis (Galveston Field Lab)</h3>
+                    <p class="text-sm text-slate-600">In this immersive field lab, students conduct on-site chemical and physical analysis of the Trinity River's discharge into the Galveston Bay estuary. Students utilize refractometers and field probes to measure salinity gradients, pH, and dissolved oxygen, correlating water density with ecological health. This activity, conducted in proximity to the Texas A&M University at Galveston campus, provides vital exposure to collegiate-level field research and the career pathways of hydrologists and wetland ecologists.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Module 4: Corpus Christi Rehabilitation Engineering</h3>
+                    <p class="text-sm text-slate-600">Students investigate the practical application of physics in veterinary medicine at the Texas State Aquarium Wildlife Rescue Center. By analyzing trauma cases like sea turtle boat strikes, students apply free-body diagrams to understand buoyancy disorders and the engineering of life-support systems. This module focuses on the intersection of human-made mechanical force and biological consequences, highlighting careers in biomedical engineering and aquatic veterinary science.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Module 5: Statistical Modeling (Mark-Recapture)</h3>
+                    <p class="text-sm text-slate-600">This advanced mathematics module challenges students to estimate wildlife populations using the Lincoln-Petersen index. Students build digital models in Excel to process field data, calculating percent error and standard deviation to evaluate data validity. This module reinforces the 'Math' in STEM, teaching students that rigorous data analysis is the bedrock of scientific conservation and fisheries management, while developing essential spreadsheet literacy for college readiness.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Module 6: Capstone - The Trinity Connection</h3>
+                    <p class="text-sm text-slate-600">The capstone project requires a synthesis of the entire curriculum, where students trace the 'Trinity Connection' from DFW storm drains to the Gulf Coast. Using GIS mapping and design-thinking principles, students develop prototypes or policy solutions to mitigate urban pollution. This final presentation-based activity fosters critical thinking and social responsibility, requiring students to defend their scientific arguments and engineering designs to their peers and instructors.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

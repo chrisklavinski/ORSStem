@@ -1,0 +1,1813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravitrax Physics & Engineering: From Mechanics to Statistical Analysis - Master STEM Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1e293b; }
+        .page-break { page-break-before: always; }
+        .avoid-break { break-inside: avoid; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab-btn.active { background-color: #4f46e5; color: white; border-color: #4f46e5; }
+        
+        /* Workbook specific styles */
+        .wb-checklist-item { display: flex; align-items: flex-start; margin-bottom: 12px; }
+        .wb-checkbox { width: 18px; height: 18px; border: 2px solid #cbd5e1; border-radius: 4px; margin-right: 12px; flex-shrink: 0; margin-top: 3px; }
+        .wb-box { background: #f8fafc; border: 1px solid #e2e8f0; padding: 20px; border-radius: 8px; font-size: 14px; }
+        
+        @media print {
+            body { background-color: white; }
+            .no-print { display: none !important; }
+            .tab-content { display: none !important; }
+            .tab-content.active { display: block !important; }
+            /* If user hits print, we want to respect the current tab, or maybe provide a print-all option. 
+               For simplicity, we print the active tab. */
+        }
+    </style>
+    <script>
+        function switchTab(id) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById('btn-' + id).classList.add('active');
+        }
+        function toggleSection(id) {
+            const content = document.getElementById('content-' + id);
+            const chevron = document.getElementById('chevron-' + id);
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                chevron.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                chevron.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</head>
+<body class="py-8 px-4 md:px-8 max-w-7xl mx-auto">
+    <!-- Navigation Tabs -->
+    <div class="flex justify-center mb-8 no-print sticky top-4 z-50">
+        <div class="bg-white p-2 rounded-2xl shadow-lg border border-gray-200 flex gap-2">
+            <button id="btn-guide" onclick="switchTab('guide')" class="tab-btn active px-6 py-2 rounded-xl font-bold text-sm text-slate-600 hover:bg-slate-50 border border-transparent transition-all">Master Guide</button>
+            <button id="btn-workbook" onclick="switchTab('workbook')" class="tab-btn px-6 py-2 rounded-xl font-bold text-sm text-slate-600 hover:bg-slate-50 border border-transparent transition-all">Teacher Workbook</button>
+            <button id="btn-narrative" onclick="switchTab('narrative')" class="tab-btn px-6 py-2 rounded-xl font-bold text-sm text-slate-600 hover:bg-slate-50 border border-transparent transition-all">Grant Narrative</button>
+        </div>
+    </div>
+
+    <!-- TAB 1: MASTER GUIDE -->
+    <div id="guide" class="tab-content active">
+        <header class="mb-8 text-center border-b-4 border-indigo-600 pb-12">
+            <div class="inline-block px-4 py-1 mb-4 bg-indigo-50 text-indigo-700 text-xs font-black uppercase tracking-widest rounded-full">STEM Architect Master Guide</div>
+            <h1 class="text-5xl font-black text-slate-900 mb-6">Gravitrax Physics & Engineering: From Mechanics to Statistical Analysis</h1>
+            <p class="text-2xl text-slate-500 font-medium max-w-4xl mx-auto leading-relaxed mb-8">A 20-lesson comprehensive STEM curriculum for High School students (Upward Bound/UBMS) using Gravitrax marble run systems to explore Newtonian physics, kinetic and potential energy, engineering design constraints, and statistical quality control. The curriculum progresses from basic mechanical concepts to complex systems engineering and statistical data analysis, aligned with Texas TEKS for Physics and Mathematics.</p>
+            <div class="flex justify-center gap-6 text-sm font-bold text-slate-400 uppercase tracking-widest">
+                <span>Target: High School (Ages 14-18)</span>
+                <span>&bull;</span>
+                <span>Total Time: 800 minutes (20 sessions x 40 minutes)</span>
+                <span>&bull;</span>
+                <span>Est. Cost: $165.00</span>
+            </div>
+        </header>
+
+        
+        <div class="mb-12 page-break">
+            <div class="bg-indigo-900 rounded-[2.5rem] p-12 text-white shadow-2xl relative overflow-hidden">
+                <h2 class="text-3xl font-black mb-8 flex items-center gap-4 border-b border-indigo-700 pb-4"><span>🚌</span> Field Expeditions (60mi Radius)</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <div class="bg-white/10 p-6 rounded-3xl border border-white/10 backdrop-blur-sm">
+                        <h3 class="text-xl font-bold text-white mb-1">Six Flags Over Texas - Physics Day</h3>
+                        <div class="text-xs font-bold uppercase tracking-widest text-indigo-300 mb-4 flex items-center gap-2"><span>📍</span> Arlington, TX (Tarrant County)</div>
+                        <p class="text-sm text-indigo-100 mb-4 leading-relaxed">A guided educational tour of the theme park focusing on roller coaster physics, including G-force, centripetal force, and energy conservation.</p>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-3xl border border-white/10 backdrop-blur-sm">
+                        <h3 class="text-xl font-bold text-white mb-1">Perot Museum of Nature and Science - Texas Instruments Engineering and Innovation Hall</h3>
+                        <div class="text-xs font-bold uppercase tracking-widest text-indigo-300 mb-4 flex items-center gap-2"><span>📍</span> Dallas, TX (Dallas County)</div>
+                        <p class="text-sm text-indigo-100 mb-4 leading-relaxed">Interactive exploration of engineering challenges, robotics, and structural design.</p>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-3xl border border-white/10 backdrop-blur-sm">
+                        <h3 class="text-xl font-bold text-white mb-1">University of Texas at Arlington (UTA) - Civil Engineering Laboratory</h3>
+                        <div class="text-xs font-bold uppercase tracking-widest text-indigo-300 mb-4 flex items-center gap-2"><span>📍</span> Arlington, TX (Tarrant County)</div>
+                        <p class="text-sm text-indigo-100 mb-4 leading-relaxed">Campus visit and tour of the Civil Engineering department's concrete and steel testing labs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-y-8">
+            
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(0)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">1</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Activity 1: Introduction to Potential Energy & System Components</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-0" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-0" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students explore the Gravitrax components and establish the fundamental relationship between height (gravitational potential energy) and motion.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Identify and classify mechanical components of the Gravitrax system.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Define Gravitational Potential Energy (PEg).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Calculate PEg based on height measurements of the marble start point.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Gravitrax Pro Starter Set (1 per group of 3)</span><span class="text-slate-400 font-mono text-xs">$80.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Metric Rulers/Tape Measure</span><span class="text-slate-400 font-mono text-xs">$5.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Digital Scale (to weigh marbles)</span><span class="text-slate-400 font-mono text-xs">$15.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Laboratory Science, Instruction in Mathematics</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">HEA Sec. 402C(b) - Instruction in laboratory science and mathematics, 34 CFR 645.11(a)(1) - Curriculum instruction in science/math, 2 CFR 200.454 - Student Support Costs</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Instruct students to weigh the marble (mass) in kilograms using the digital scale.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Challenge students to build a simple track with the highest possible starting point using only the pillars provided.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Ensure students measure height in meters, not centimeters, for the Joule calculation.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(1)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">2</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Activity 2: Kinetic Energy & Conservation Principles</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-1" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-1" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students convert potential energy into kinetic energy, calculating theoretical vs. actual velocity to identify energy loss.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Calculate Kinetic Energy (KE).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Apply the Law of Conservation of Energy.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Analyze why theoretical velocity differs from actual velocity (friction).</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Gravitrax Kit</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Stopwatch (or Phone)</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Laboratory Science, Tutoring</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">HEA Sec. 402C(b) - Instruction in science, 34 CFR 645.11(b) - Academic tutoring, 2 CFR 200.404 - Reasonable costs for program objectives</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Review the formula for Kinetic Energy (KE = 0.5 * m * v^2).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Have students equate Initial PE to Final KE to solve for theoretical velocity.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Have students time the run over a known distance to find average velocity.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">4.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Lead discussion: Why is the measured velocity lower than the calculated velocity?</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(2)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">3</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Activity 3: Velocity Vectors & Slope Analysis</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-2" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-2" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Investigating how the angle of the track affects acceleration and velocity components.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Deconstruct gravity into vector components along a slope.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Determine how slope angle affects acceleration.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Graph the relationship between height difference and run time.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Gravitrax Kit</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Protractor</span><span class="text-slate-400 font-mono text-xs">$2.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Mathematics, Instruction in Laboratory Science</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">HEA Sec. 402C(b) - Mathematics instruction, 34 CFR 645.11(a)(1) - Required academic instruction, 2 CFR 200.403 - Allocability of costs</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Introduce vector resolution (gravity splitting into normal force and parallel force).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Challenge students to build 3 tracks with different slopes but the same total length.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Ask students to predict which slope yields the fastest time.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(3)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">4</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Activity 4: Friction Fighters - Energy Loss</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-3" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-3" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students experiment with different track configurations to minimize friction and maximize run distance.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Define friction and its effect on mechanical systems.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Identify sources of friction in the Gravitrax system (air resistance, rolling resistance, rail contact).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Optimize a track for maximum distance.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Gravitrax Kit</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Masking Tape (for floor marking)</span><span class="text-slate-400 font-mono text-xs">$3.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Laboratory Science</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">HEA Sec. 402C(b) - Instruction in Science, 34 CFR 645.11(a)(1) - Academic instruction, 2 CFR 200.404 - Reasonable Costs</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Discuss non-conservative forces (Friction) and where it occurs on the track.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Set a challenge: Who can make the marble roll the furthest on the floor after leaving the track, starting from a fixed height?</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Discuss why curved rails might introduce more friction than straight rails.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(4)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">5</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Activity 5: The Gauss Cannon - Magnetic Acceleration</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-4" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-4" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Analyzing the Magnetic Cannon component to understand magnetism and momentum transfer.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Explain the transfer of momentum in collisions.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Understand how magnetic potential energy is converted to kinetic energy.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Calculate the 'gain' in velocity provided by the cannon.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Gravitrax Kit (with Magnetic Cannon)</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Laboratory Science</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">HEA Sec. 402C(b) - Instruction in science, 34 CFR 645.11(a)(1) - Academic instruction, 2 CFR 200.403 - Allocability</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Introduce the concept of the Gauss Rifle/Cannon.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain that the magnet pulls the incoming ball (adding KE), and the impact transfers momentum to the outgoing ball, which leaves the magnetic field too fast to be pulled back.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Safety Note: Do not aim cannons at faces.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(5)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">6</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Activity 6: Circular Motion & Loops</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-5" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-5" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Using the loop component (if available) or tight curves to explore centripetal force.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Define Centripetal Force.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Calculate the minimum velocity required to complete a vertical loop.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Analyze the role of inertia in curves.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Gravitrax Kit (Loop expansion recommended)</span><span class="text-slate-400 font-mono text-xs">$15.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Laboratory Science, Instruction in Mathematics</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">HEA Sec. 402C(b) - Instruction in mathematics/science, 34 CFR 645.11(a)(1) - Academic instruction, 2 CFR 200.404 - Reasonable Costs</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Draw a free body diagram of a marble at the top of a loop.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Derive the minimum speed formula: v = sqrt(g*r).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Challenge students to find the minimum starting height required to clear the loop.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(6)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">7</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Activity 7: Projectile Motion (The Jump)</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-6" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-6" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students use the Trampoline or Jump components to analyze 2D projectile motion.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Analyze motion in X (horizontal) and Y (vertical) dimensions independently.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Predict landing spots based on launch velocity.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Adjust launch angles/heights to hit a target.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Gravitrax Kit (Jump/Trampoline)</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Carbon paper (optional for marking landing)</span><span class="text-slate-400 font-mono text-xs">$5.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Laboratory Science, Instruction in Mathematics</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">HEA Sec. 402C(b) - Instruction in math/science, 34 CFR 645.11(a)(1) - Academic instruction, 2 CFR 200.404 - Reasonable Costs</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Discuss independence of horizontal and vertical motion.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Set up a 'gap' in the track using the Jump component.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Have students calculate the horizontal distance the ball will travel based on estimated speed.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(7)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">8</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Activity 8: The Hammer - Mechanical Advantage</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-7" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-7" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Using the Hammer accessory to explore levers and torque.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Define Torque and Mechanical Advantage.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Identify the fulcrum, load, and effort in the Hammer component.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Explain how potential energy is stored in the raised hammer.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Gravitrax Kit (Hammer)</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Laboratory Science</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">HEA Sec. 402C(b) - Instruction in science, 34 CFR 645.11(a)(1) - Academic instruction, 2 CFR 200.403 - Allocability</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain the physics of a lever (Class 1, 2, 3).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Analyze the Hammer component: The incoming ball triggers the release (effort), converting the hammer's PE to KE to strike the second ball.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Discuss efficiency: Is energy gained or lost?</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(8)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">9</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Activity 9: Collisions & Momentum</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-8" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-8" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Creating head-on collisions or rear-end collisions to observe conservation of momentum.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Distinguish between elastic and inelastic collisions.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Apply Conservation of Momentum.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Observe energy transfer between identical masses.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Gravitrax Kit</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Laboratory Science</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">HEA Sec. 402C(b) - Instruction in science, 34 CFR 645.11(a)(1) - Academic instruction, 2 CFR 200.404 - Reasonable Costs</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Review p = mv.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Set up a scenario where one stationary marble is hit by a moving marble.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Ask students to predict the velocity of both marbles after impact (Newton's Cradle effect).</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(9)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">10</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Activity 10: Logic Gates & Switches</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-9" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-9" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Using switches/splitters to create mechanical logic (IF/THEN paths).</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Understand basic logic gates (OR, AND, NOT) physically.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Design a track that splits marbles alternately.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Predict pathing outcomes based on input sequence.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Gravitrax Kit (Switches/Splitters)</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Mathematics, Exposure to STEM Careers (Computer Science)</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">HEA Sec. 402C(b) - Instruction in math, HEA Sec. 402H - STEM emphasis, 34 CFR 645.11(a)(1) - Academic instruction, 34 CFR 645.11(a)(3) - Career exploration, 2 CFR 200.403 - Allocability</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Introduce the concept of a mechanical switch acting as a binary bit (Left = 0, Right = 1).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Challenge students to build a 'counter' that sends every 4th marble to a specific finish line.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(10)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">11</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Activity 11: Statistical Analysis I - Data Collection</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-10" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-10" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Introduction to statistical variability. Running a single track multiple times to collect a dataset.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Understand the importance of sample size.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Collect quantitative data (time) with precision.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Identify sources of error (human reaction time, release variation).</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Gravitrax Kit</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Stopwatches</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Excel/Google Sheets access</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Mathematics, Instruction in Laboratory Science</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">HEA Sec. 402C(b) - Math instruction, 34 CFR 645.11(a)(1) - Academic instruction, 2 CFR 200.404 - Reasonable Costs</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Discuss 'experimental error.'</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Assign teams to build a medium-complexity track.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Require 30 recorded runs of the exact same track.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">4.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Discuss why the time is not identical every run.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(11)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">12</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Activity 12: Statistical Analysis II - Central Tendency & Spread</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-11" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-11" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Analyzing the data from Activity 11 to calculate Mean, Median, Mode, and Standard Deviation.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Calculate Mean, Median, and Mode.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Calculate Standard Deviation (Sigma).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Determine if the track performance is 'reliable' (low Sigma).</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Data from Activity 11</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Scientific Calculator/Laptop</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Mathematics</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">HEA Sec. 402C(b) - Math instruction, 34 CFR 645.11(a)(1) - Academic instruction, 2 CFR 200.403 - Allocability</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Teach the formula for Standard Deviation.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain normal distribution (Bell Curve).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Have students visualize their data (Histogram).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">4.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Ask: Is the variation due to the track or the timer?</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(12)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">13</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Activity 13: Engineering Design Process - The Constraints Challenge</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-12" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-12" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students must build a track meeting specific criteria (e.g., exactly 10 seconds) with limited parts.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Apply the Engineering Design Process (Ask, Imagine, Plan, Create, Improve).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Work within defined constraints (materials and time).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Iterate designs based on testing.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Gravitrax Kit (Limited selection per group)</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Exposure to STEM Careers (Engineering)</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">HEA Sec. 402C(b) - Instruction in science, 34 CFR 645.11(a)(3) - Career exploration, 2 CFR 200.404 - Reasonable Costs</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Limit each group to 15 specific pieces.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Challenge: Build the longest duration track possible with these pieces.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Emphasize the 'Improve' phase of EDP.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(13)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">14</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Activity 14: Cost-Benefit Analysis (Simulated Budget)</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-13" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-13" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Assigning monetary values to parts. Students must build a functional track under a specific 'budget.'</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Perform a cost-benefit analysis.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Optimize a design for value (Function/Cost).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Manage a project budget.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Gravitrax Kit</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Price Sheet (Teacher created)</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Mathematics, Financial Literacy (Simulated)</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">HEA Sec. 402C(b) - Financial literacy, 34 CFR 645.11(a)(6) - Financial literacy instruction, 2 CFR 200.403 - Allocability</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Provide a price list (e.g., Rail=$10, Pillar=$5, Gauss Cannon=$100).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Set a budget (e.g., $200).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Challenge: Build a track with at least one loop and one jump under budget.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(14)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">15</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Activity 15: Collaborative Systems</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-14" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-14" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Merging two groups' tracks into one giant system.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Collaborate across teams to solve interface problems.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Standardize connection points.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Manage complex system integration.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Gravitrax Kits (Multiple)</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Exposure to STEM Careers</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">HEA Sec. 402H - STEM focus, 34 CFR 645.11(a)(3) - Career exploration, 2 CFR 200.404 - Reasonable Costs</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Pair up student groups.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Task: Connect Group A's end point to Group B's start point.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Discuss 'System Integration' challenges in real engineering.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(15)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">16</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Activity 16: Elevation Engineering</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-15" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-15" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Focusing on verticality. Building multi-level structures using the Pro Vertical expansion concepts.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Analyze structural stability and center of gravity.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Design support structures for high-elevation loads.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Manage potential energy across multiple tiers.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Gravitrax Pro Vertical Expansion (optional, or use all pillars)</span><span class="text-slate-400 font-mono text-xs">$25.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Exposure to STEM Careers (Civil Engineering)</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">HEA Sec. 402C(b) - Instruction in Science, 34 CFR 645.11(a)(1) - Academic instruction, 2 CFR 200.403 - Allocability</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Discuss civil engineering concepts: Columns, beams, and load bearing.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Challenge: Build a track that has 3 distinct 'floors' or levels directly above each other.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(16)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">17</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Activity 17: Rube Goldberg Integration</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-16" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-16" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Incorporating non-Gravitrax items (dominoes, bells, cups) triggered by the marble.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Design complex chain reactions.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Calculate energy transfer to external objects.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Innovate using mixed media.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Gravitrax Kit</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Classroom supplies (cups, dominoes, tape, string)</span><span class="text-slate-400 font-mono text-xs">$10.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Laboratory Science</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">HEA Sec. 402C(b) - Instruction in science, 34 CFR 645.11(a)(1) - Academic instruction, 2 CFR 200.404 - Reasonable Costs</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain Rube Goldberg machines (overly complex machines for simple tasks).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Goal: The marble must trigger an event outside the track (e.g., knock over a cup, ring a bell).</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(17)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">18</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Activity 18: Final Capstone - Planning & Design</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-17" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-17" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Phase 1 of the final project. Teams plan a massive track incorporating all learned physics and statistical proofs.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Synthesize all curriculum concepts.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Create a detailed project plan and schematic.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Assign team roles (Project Manager, Architect, Engineer).</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Graph Paper/Whiteboards</span><span class="text-slate-400 font-mono text-xs">$5.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Exposure to STEM Careers, Instruction in Mathematics</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">HEA Sec. 402H - STEM focus, 34 CFR 645.11(a)(3) - Career exploration, 2 CFR 200.403 - Allocability</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Introduce the Final Capstone: A showcase track that includes a loop, a jump, a cannon, and a statistical prediction of run time.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Require a blueprint before building starts.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(18)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">19</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Activity 19: Final Capstone - Construction & Testing</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-18" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-18" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Phase 2 of the final project. Building, testing, and collecting data for the final report.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Execute an engineering design plan.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Troubleshoot unforeseen mechanical issues.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Collect final performance data.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>All Gravitrax components</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Laboratory Science</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">HEA Sec. 402C(b) - Instruction in Science, 34 CFR 645.11(a)(1) - Academic instruction, 2 CFR 200.404 - Reasonable Costs</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Facilitate construction.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Act as a consultant: Ask questions like 'Why is the ball falling off there?' rather than fixing it for them.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Remind them to record data for their presentation.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(19)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">20</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Activity 20: The Gravitrax Expo - Presentation</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-19" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-19" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students present their final builds, explaining the physics and statistics behind them to the class.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Communicate technical information to an audience.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Justify design decisions using data.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Demonstrate the finalized system.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Projector/Screen (optional)</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Exposure to STEM Careers, Mentoring</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">HEA Sec. 402C(b) - Mentoring/Personal Counseling, 34 CFR 645.11(b) - Personal counseling/mentoring, 2 CFR 200.454 - Student Support Costs</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Host a mini-expo.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Evaluate groups based on: Design complexity, reliability (did it work during the demo?), and explanation of physics/math concepts.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Award certificates (e.g., 'Fastest Track', 'Best Engineering').</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+        </div>
+    </div>
+
+    <!-- TAB 2: TEACHER WORKBOOK -->
+    <div id="workbook" class="tab-content max-w-4xl mx-auto">
+        <div class="text-center py-20 border-b-2 border-slate-900 mb-12">
+            <div class="text-xs font-black uppercase tracking-[0.3em] text-slate-400 mb-4">Official Workbook</div>
+            <h1 class="text-4xl font-black text-slate-900 mb-4">Gravitrax Physics & Engineering: From Mechanics to Statistical Analysis</h1>
+            <p class="text-lg font-serif italic text-slate-500">Instructor Checklists & Facilitation Notes</p>
+        </div>
+        
+        
+        <div class="mb-16">
+            <h2 class="text-2xl font-black text-slate-900 mb-6 border-b border-slate-200 pb-2">Field Expeditions Checklist</h2>
+            
+            <div class="wb-box mb-4 bg-white border-l-4 border-amber-500">
+                <div class="font-bold text-lg text-slate-900">Six Flags Over Texas - Physics Day</div>
+                <div class="text-xs font-bold uppercase text-amber-600 mb-2">Arlington, TX (Tarrant County)</div>
+                <p class="text-sm text-slate-600">A guided educational tour of the theme park focusing on roller coaster physics, including G-force, centripetal force, and energy conservation.</p>
+            </div>
+            <div class="wb-box mb-4 bg-white border-l-4 border-amber-500">
+                <div class="font-bold text-lg text-slate-900">Perot Museum of Nature and Science - Texas Instruments Engineering and Innovation Hall</div>
+                <div class="text-xs font-bold uppercase text-amber-600 mb-2">Dallas, TX (Dallas County)</div>
+                <p class="text-sm text-slate-600">Interactive exploration of engineering challenges, robotics, and structural design.</p>
+            </div>
+            <div class="wb-box mb-4 bg-white border-l-4 border-amber-500">
+                <div class="font-bold text-lg text-slate-900">University of Texas at Arlington (UTA) - Civil Engineering Laboratory</div>
+                <div class="text-xs font-bold uppercase text-amber-600 mb-2">Arlington, TX (Tarrant County)</div>
+                <p class="text-sm text-slate-600">Campus visit and tour of the Civil Engineering department's concrete and steel testing labs.</p>
+            </div>
+        </div>
+
+        
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 1</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Activity 1: Introduction to Potential Energy & System Components</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Beginner</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Gravitrax Pro Starter Set (1 per group of 3)</div><div class="text-xs text-slate-500">Est: $80.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Metric Rulers/Tape Measure</div><div class="text-xs text-slate-500">Est: $5.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Digital Scale (to weigh marbles)</div><div class="text-xs text-slate-500">Est: $15.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Identify and classify mechanical components of the Gravitrax system.</li><li>Define Gravitational Potential Energy (PEg).</li><li>Calculate PEg based on height measurements of the marble start point.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Instruct students to weigh the marble (mass) in kilograms using the digital scale.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Challenge students to build a simple track with the highest possible starting point using only the pillars provided.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Ensure students measure height in meters, not centimeters, for the Joule calculation.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 2</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Activity 2: Kinetic Energy & Conservation Principles</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Gravitrax Kit</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Stopwatch (or Phone)</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Calculate Kinetic Energy (KE).</li><li>Apply the Law of Conservation of Energy.</li><li>Analyze why theoretical velocity differs from actual velocity (friction).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Review the formula for Kinetic Energy (KE = 0.5 * m * v^2).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Have students equate Initial PE to Final KE to solve for theoretical velocity.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Have students time the run over a known distance to find average velocity.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">04</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Lead discussion: Why is the measured velocity lower than the calculated velocity?</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 3</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Activity 3: Velocity Vectors & Slope Analysis</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Gravitrax Kit</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Protractor</div><div class="text-xs text-slate-500">Est: $2.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Deconstruct gravity into vector components along a slope.</li><li>Determine how slope angle affects acceleration.</li><li>Graph the relationship between height difference and run time.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Introduce vector resolution (gravity splitting into normal force and parallel force).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Challenge students to build 3 tracks with different slopes but the same total length.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Ask students to predict which slope yields the fastest time.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 4</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Activity 4: Friction Fighters - Energy Loss</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Beginner</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Gravitrax Kit</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Masking Tape (for floor marking)</div><div class="text-xs text-slate-500">Est: $3.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Define friction and its effect on mechanical systems.</li><li>Identify sources of friction in the Gravitrax system (air resistance, rolling resistance, rail contact).</li><li>Optimize a track for maximum distance.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Discuss non-conservative forces (Friction) and where it occurs on the track.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Set a challenge: Who can make the marble roll the furthest on the floor after leaving the track, starting from a fixed height?</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Discuss why curved rails might introduce more friction than straight rails.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 5</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Activity 5: The Gauss Cannon - Magnetic Acceleration</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Advanced</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Gravitrax Kit (with Magnetic Cannon)</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Explain the transfer of momentum in collisions.</li><li>Understand how magnetic potential energy is converted to kinetic energy.</li><li>Calculate the 'gain' in velocity provided by the cannon.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Introduce the concept of the Gauss Rifle/Cannon.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain that the magnet pulls the incoming ball (adding KE), and the impact transfers momentum to the outgoing ball, which leaves the magnetic field too fast to be pulled back.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Safety Note: Do not aim cannons at faces.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 6</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Activity 6: Circular Motion & Loops</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Advanced</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Gravitrax Kit (Loop expansion recommended)</div><div class="text-xs text-slate-500">Est: $15.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Define Centripetal Force.</li><li>Calculate the minimum velocity required to complete a vertical loop.</li><li>Analyze the role of inertia in curves.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Draw a free body diagram of a marble at the top of a loop.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Derive the minimum speed formula: v = sqrt(g*r).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Challenge students to find the minimum starting height required to clear the loop.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 7</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Activity 7: Projectile Motion (The Jump)</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Advanced</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Gravitrax Kit (Jump/Trampoline)</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Carbon paper (optional for marking landing)</div><div class="text-xs text-slate-500">Est: $5.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Analyze motion in X (horizontal) and Y (vertical) dimensions independently.</li><li>Predict landing spots based on launch velocity.</li><li>Adjust launch angles/heights to hit a target.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Discuss independence of horizontal and vertical motion.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Set up a 'gap' in the track using the Jump component.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Have students calculate the horizontal distance the ball will travel based on estimated speed.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 8</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Activity 8: The Hammer - Mechanical Advantage</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Gravitrax Kit (Hammer)</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Define Torque and Mechanical Advantage.</li><li>Identify the fulcrum, load, and effort in the Hammer component.</li><li>Explain how potential energy is stored in the raised hammer.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain the physics of a lever (Class 1, 2, 3).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Analyze the Hammer component: The incoming ball triggers the release (effort), converting the hammer's PE to KE to strike the second ball.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Discuss efficiency: Is energy gained or lost?</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 9</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Activity 9: Collisions & Momentum</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Gravitrax Kit</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Distinguish between elastic and inelastic collisions.</li><li>Apply Conservation of Momentum.</li><li>Observe energy transfer between identical masses.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Review p = mv.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Set up a scenario where one stationary marble is hit by a moving marble.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Ask students to predict the velocity of both marbles after impact (Newton's Cradle effect).</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 10</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Activity 10: Logic Gates & Switches</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Advanced</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Gravitrax Kit (Switches/Splitters)</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Understand basic logic gates (OR, AND, NOT) physically.</li><li>Design a track that splits marbles alternately.</li><li>Predict pathing outcomes based on input sequence.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Introduce the concept of a mechanical switch acting as a binary bit (Left = 0, Right = 1).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Challenge students to build a 'counter' that sends every 4th marble to a specific finish line.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 11</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Activity 11: Statistical Analysis I - Data Collection</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Gravitrax Kit</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Stopwatches</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Excel/Google Sheets access</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Understand the importance of sample size.</li><li>Collect quantitative data (time) with precision.</li><li>Identify sources of error (human reaction time, release variation).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Discuss 'experimental error.'</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Assign teams to build a medium-complexity track.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Require 30 recorded runs of the exact same track.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">04</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Discuss why the time is not identical every run.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 12</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Activity 12: Statistical Analysis II - Central Tendency & Spread</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Advanced</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Data from Activity 11</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Scientific Calculator/Laptop</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Calculate Mean, Median, and Mode.</li><li>Calculate Standard Deviation (Sigma).</li><li>Determine if the track performance is 'reliable' (low Sigma).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Teach the formula for Standard Deviation.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain normal distribution (Bell Curve).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Have students visualize their data (Histogram).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">04</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Ask: Is the variation due to the track or the timer?</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 13</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Activity 13: Engineering Design Process - The Constraints Challenge</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Gravitrax Kit (Limited selection per group)</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Apply the Engineering Design Process (Ask, Imagine, Plan, Create, Improve).</li><li>Work within defined constraints (materials and time).</li><li>Iterate designs based on testing.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Limit each group to 15 specific pieces.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Challenge: Build the longest duration track possible with these pieces.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Emphasize the 'Improve' phase of EDP.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 14</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Activity 14: Cost-Benefit Analysis (Simulated Budget)</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Gravitrax Kit</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Price Sheet (Teacher created)</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Perform a cost-benefit analysis.</li><li>Optimize a design for value (Function/Cost).</li><li>Manage a project budget.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Provide a price list (e.g., Rail=$10, Pillar=$5, Gauss Cannon=$100).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Set a budget (e.g., $200).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Challenge: Build a track with at least one loop and one jump under budget.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 15</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Activity 15: Collaborative Systems</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Gravitrax Kits (Multiple)</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Collaborate across teams to solve interface problems.</li><li>Standardize connection points.</li><li>Manage complex system integration.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Pair up student groups.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Task: Connect Group A's end point to Group B's start point.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Discuss 'System Integration' challenges in real engineering.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 16</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Activity 16: Elevation Engineering</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Advanced</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Gravitrax Pro Vertical Expansion (optional, or use all pillars)</div><div class="text-xs text-slate-500">Est: $25.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Analyze structural stability and center of gravity.</li><li>Design support structures for high-elevation loads.</li><li>Manage potential energy across multiple tiers.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Discuss civil engineering concepts: Columns, beams, and load bearing.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Challenge: Build a track that has 3 distinct 'floors' or levels directly above each other.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 17</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Activity 17: Rube Goldberg Integration</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Advanced</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Gravitrax Kit</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Classroom supplies (cups, dominoes, tape, string)</div><div class="text-xs text-slate-500">Est: $10.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Design complex chain reactions.</li><li>Calculate energy transfer to external objects.</li><li>Innovate using mixed media.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain Rube Goldberg machines (overly complex machines for simple tasks).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Goal: The marble must trigger an event outside the track (e.g., knock over a cup, ring a bell).</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 18</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Activity 18: Final Capstone - Planning & Design</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Advanced</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Graph Paper/Whiteboards</div><div class="text-xs text-slate-500">Est: $5.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Synthesize all curriculum concepts.</li><li>Create a detailed project plan and schematic.</li><li>Assign team roles (Project Manager, Architect, Engineer).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Introduce the Final Capstone: A showcase track that includes a loop, a jump, a cannon, and a statistical prediction of run time.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Require a blueprint before building starts.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 19</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Activity 19: Final Capstone - Construction & Testing</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Advanced</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">All Gravitrax components</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Execute an engineering design plan.</li><li>Troubleshoot unforeseen mechanical issues.</li><li>Collect final performance data.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Facilitate construction.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Act as a consultant: Ask questions like 'Why is the ball falling off there?' rather than fixing it for them.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Remind them to record data for their presentation.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 20</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Activity 20: The Gravitrax Expo - Presentation</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Projector/Screen (optional)</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Communicate technical information to an audience.</li><li>Justify design decisions using data.</li><li>Demonstrate the finalized system.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Host a mini-expo.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Evaluate groups based on: Design complexity, reliability (did it work during the demo?), and explanation of physics/math concepts.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Award certificates (e.g., 'Fastest Track', 'Best Engineering').</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+    </div>
+
+    <!-- TAB 3: GRANT NARRATIVE -->
+    <div id="narrative" class="tab-content max-w-3xl mx-auto font-serif leading-relaxed text-slate-800">
+        <div class="py-12">
+            <h1 class="font-sans text-3xl font-black text-slate-900 mb-8 border-b-2 border-slate-900 pb-4">Curriculum Narrative: Gravitrax Physics & Engineering: From Mechanics to Statistical Analysis</h1>
+            
+            <div class="mb-10">
+                <h2 class="font-sans text-lg font-bold text-indigo-800 mb-4 uppercase tracking-widest">Executive Summary</h2>
+                <p class="bg-slate-50 p-6 rounded-lg border-l-4 border-indigo-200">This 20-session STEM curriculum is designed to provide high school students, particularly those in Upward Bound and Upward Bound Math-Science programs, with a rigorous, hands-on exploration of classical mechanics and data science. By utilizing the Gravitrax Pro modular system, students bridge the gap between abstract theoretical physics and tangible engineering application. The program scaffolds learning from fundamental Newtonian concepts—such as potential and kinetic energy—into complex systems engineering, project management, and statistical quality control. This curriculum is engineered to foster college readiness by mirroring university-level laboratory environments where iterative design and quantitative analysis are paramount.</p>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="font-sans text-lg font-bold text-indigo-800 mb-4 uppercase tracking-widest">Compliance & Alignment</h2>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-2">DOE TRIO Compliance Strategy</h3>
+                    <p>This curriculum aligns with the United States Department of Education (DOE) TRIO Upward Bound and UBMS program requirements as outlined in the Higher Education Act (HEA) Section 402C(b), specifically providing 'instruction in laboratory science' and 'instruction in mathematics.' Pursuant to 34 CFR Part 645.11, the activities provide required services in academic tutoring and instruction in core subjects. Furthermore, all associated equipment and field trip costs meet the 'necessary and reasonable' criteria for student support costs under EDGAR/2 CFR 200 Subpart E. The curriculum specifically targets the UBMS mandate for intensive STEM exposure, providing students with experience in data-driven research and exposure to STEM career pathways as required by HEA Sec. 402H.</p>
+                </div>
+                <div>
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-2">Standards Alignment</h3>
+                    <p>The curriculum is meticulously mapped to the Texas Essential Knowledge and Skills (TEKS) for Physics and Mathematics. Specifically, it addresses Physics standards 4(C) for two-dimensional motion, 6(B) for energy transformations, and 6(D) for conservation laws. Mathematical alignment includes Statistics standards 2(B) for experimental design and 4(A) for standard deviation. The course also integrates the Texas STEM Framework, emphasizing the Engineering Design Process (EDP), collaborative systems thinking, and technical communication, ensuring students meet the high rigor expected of college-bound scholars in the state of Texas.</p>
+                </div>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="font-sans text-lg font-bold text-indigo-800 mb-4 uppercase tracking-widest">Field Expeditions</h2>
+                <p>To reinforce classroom concepts, the curriculum includes three strategic field trips within the Dallas-Fort Worth metroplex. Students will visit Six Flags Over Texas (Tarrant County) for 'Physics Day' to witness macro-scale applications of energy conservation and centripetal force. A visit to the Perot Museum of Nature and Science (Dallas County) provides deep-dive exploration into structural engineering and robotics within the Texas Instruments Innovation Hall. Finally, a tour of the University of Texas at Arlington (UTA) Civil Engineering Laboratories (Tarrant County) connects high school experiments to professional materials testing and collegiate research, offering essential campus exposure for TRIO participants.</p>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="font-sans text-lg font-bold text-indigo-800 mb-4 uppercase tracking-widest">Module Narratives</h2>
+                
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Introduction to Potential Energy & System Components</h3>
+                    <p class="text-sm text-slate-600">Students begin by conducting an inventory of mechanical components, classifying them by function. Through a controlled lab experiment, they calculate Gravitational Potential Energy (PEg) using precise measurements of mass and height, establishing the foundational physics required for complex builds.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Kinetic Energy & Conservation Principles</h3>
+                    <p class="text-sm text-slate-600">This module challenges students to apply the Law of Conservation of Energy. By comparing theoretical final velocity to measured velocity, students identify energy dissipation in the system, introducing them to the concept of efficiency and non-conservative forces.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Velocity Vectors & Slope Analysis</h3>
+                    <p class="text-sm text-slate-600">Utilizing trigonometry, students deconstruct gravity into vector components. By testing various slope angles, they graph the relationship between incline and acceleration, mirroring the analytical work required in civil and mechanical engineering.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Friction Fighters - Energy Loss</h3>
+                    <p class="text-sm text-slate-600">Focusing on tribology and mechanical efficiency, students experiment with track configurations to minimize rolling and air resistance. This activity emphasizes the iterative design process as students strive to maximize displacement through friction reduction.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">The Gauss Cannon - Magnetic Acceleration</h3>
+                    <p class="text-sm text-slate-600">Students explore electromagnetism and momentum transfer through the use of magnetic accelerators. This lesson provides high-level instruction on how magnetic potential energy can be harvested to perform mechanical work, introducing concepts of particle acceleration.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Circular Motion & Loops</h3>
+                    <p class="text-sm text-slate-600">Focusing on centripetal force and inertia, students calculate the minimum velocity required for a marble to complete a vertical loop. This activity bridges the gap between classroom theory and real-world amusement park engineering.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Projectile Motion (The Jump)</h3>
+                    <p class="text-sm text-slate-600">Students analyze two-dimensional kinematics by designing track gaps. By separating horizontal and vertical motion vectors, they must predict landing coordinates, applying quadratic equations to hit specific targets.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">The Hammer - Mechanical Advantage</h3>
+                    <p class="text-sm text-slate-600">This module introduces simple machines, specifically levers and torque. Students analyze the mechanical advantage provided by the 'Hammer' component, calculating how energy is stored and released through a fulcrum-based trigger.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Collisions & Momentum</h3>
+                    <p class="text-sm text-slate-600">Students investigate elastic and inelastic collisions by creating scenarios that demonstrate the conservation of momentum. They observe energy transfer between identical masses, providing a physical model for Newton’s third law.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Logic Gates & Switches</h3>
+                    <p class="text-sm text-slate-600">Connecting mechanics to computer science, students use mechanical switches to build binary logic paths. This activity introduces systems thinking and the 'if-then' logic used in automation and programming.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Statistical Analysis I - Data Collection</h3>
+                    <p class="text-sm text-slate-600">Shifting to quantitative research, students run 30 trials of a single track to collect a robust dataset. This module teaches the importance of sample size and the identification of experimental error in a laboratory setting.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Statistical Analysis II - Central Tendency & Spread</h3>
+                    <p class="text-sm text-slate-600">Students process their data from the previous module, calculating mean, median, and standard deviation. They create histograms to visualize the bell curve of their system's performance, learning how engineers ensure product reliability.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Engineering Design Process - The Constraints Challenge</h3>
+                    <p class="text-sm text-slate-600">Students are given a 'Budget' of limited parts and a specific time goal (e.g., exactly 10 seconds). This encourages creative problem-solving and the optimization of resources, a critical skill in industrial engineering.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Cost-Benefit Analysis (Simulated Budget)</h3>
+                    <p class="text-sm text-slate-600">Incorporating financial literacy, students are assigned costs for every component used. They must justify the 'purchase' of premium parts (like cannons) against the expected performance gains, mirroring corporate project management.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Collaborative Systems</h3>
+                    <p class="text-sm text-slate-600">Two independent teams must merge their tracks into a single functional system. This requires professional communication and the standardization of interfaces, simulating multi-departmental engineering projects.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Elevation Engineering</h3>
+                    <p class="text-sm text-slate-600">Focusing on statics and structural stability, students use vertical expansion components to build multi-story tracks. They must manage the center of gravity and column load-bearing to prevent structural failure.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Rube Goldberg Integration</h3>
+                    <p class="text-sm text-slate-600">Students are encouraged to innovate by integrating non-standard classroom objects into their builds. This promotes out-of-the-box thinking and tests their ability to transfer energy across different material types.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Final Capstone - Planning & Design</h3>
+                    <p class="text-sm text-slate-600">Teams begin their final project by creating detailed blueprints and project schedules. They must assign roles such as Project Manager and Architect, ensuring accountability and organizational structure.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Final Capstone - Construction & Testing</h3>
+                    <p class="text-sm text-slate-600">In the construction phase, teams execute their blueprints and conduct unit testing. This phase emphasizes troubleshooting, resilience, and the application of all physical and mathematical concepts learned throughout the course.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">The Gravitrax Expo - Presentation</h3>
+                    <p class="text-sm text-slate-600">The curriculum concludes with a formal expo where students present their builds to peers and instructors. They must provide a technical defense of their design choices, showcasing their data, cost analysis, and mastery of physics principles.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

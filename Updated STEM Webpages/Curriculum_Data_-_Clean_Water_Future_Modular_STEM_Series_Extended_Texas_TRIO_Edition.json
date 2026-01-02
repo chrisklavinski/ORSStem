@@ -1,0 +1,979 @@
+{
+  "curriculumTitle": "Clean Water Future: Modular STEM Series (Extended) - Texas TRIO Edition",
+  "overview": "A comprehensive ten-module STEM curriculum designed for High School TRIO (Upward Bound/UBMS) students in the North Texas region. Adapted for 40-minute instructional blocks plus one field experience, this series guides students from understanding physical filtration to chemical analysis, industrial observation, and engineering design. Ideally suited for Saturday Academies or Summer Bridge programs to fulfill rigorous math/science curriculum requirements.",
+  "prerequisites": "Algebra I (enrolled or completed), 8th Grade Science. Basic familiarity with computer navigation.",
+  "targetAgeGroup": "High School (Ages 14-18)",
+  "totalDurationEstimate": "10 Hours (9 Modules of 40 Minutes + 4 Hour Field Trip)",
+  "fieldTrips": [
+    {
+      "name": "Tarrant Regional Water District (TRWD) or Fort Worth Rolling Hills Water Treatment Plant",
+      "location": "Fort Worth, TX (Tarrant County)",
+      "description": "A guided industrial tour of a major municipal water treatment facility serving North Texas. Students observe flocculation basins, sedimentation tanks, and filtration beds.",
+      "relevanceToCurriculum": "Directly correlates to Modules 2, 3, and 7 by visualizing the industrial scaling of filtration and flocculation concepts. Provides career exposure to municipal engineering."
+    },
+    {
+      "name": "Trinity River Audubon Center",
+      "location": "Dallas, TX (Dallas County)",
+      "description": "An environmental center focusing on the Trinity River ecosystem, wetland filtration, and water quality testing in a field setting.",
+      "relevanceToCurriculum": "Reinforces ecological concepts from Module 1 and provides a setting for field testing water samples using skills from Module 4."
+    }
+  ],
+  "activities": [
+    {
+      "title": "Module 1: The Physics of Dirty Water (Theory & Prep)",
+      "description": "Students investigate the properties of mixtures and solutions, define turbidity, and prepare 'synthetic' contaminated water for testing.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Introductory",
+      "requiredSkills": [
+        "Observation",
+        "Measurement",
+        "Note-taking"
+      ],
+      "learningObjectives": [
+        "Define turbidity and permeability.",
+        "Differentiate between heterogeneous and homogeneous mixtures.",
+        "Prepare standardized test samples for experimentation."
+      ],
+      "teks": [
+        "SCI.ENV.5.B: Identify water filtration systems",
+        "SCI.CHEM.10.B: Describe separation techniques"
+      ],
+      "texasStemStandards": [
+        "Indicator 1.C: Inquiry-Based Learning"
+      ],
+      "materialsList": [
+        {
+          "item": "Clear Cups or Beakers",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Topsoil, Cooking Oil, Leaf Litter",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Turbidity Chart (Printable)",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Define 'Potable Water' vs. 'Grey Water'.",
+          "Explain turbidity using the chart.",
+          "Guide students to mix soil, oil, and water.",
+          "Hypothesis generation."
+        ],
+        "detailed": [
+          "Introduction (10 mins): Lead a discussion on global water access. Define 'Turbidity' as the cloudiness or haziness of a fluid.",
+          "Lab Prep (20 mins): Instruct students to create a 'Standard Contaminant' by mixing 500ml water, 2 tbsp soil, and 1 tsp oil.",
+          "Hypothesis (10 mins): Ask students to predict which filtration material (sand vs gravel vs cotton) will catch the oil versus the dirt."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Mix the soil and water vigorously.",
+          "Add the oil and observe where it settles.",
+          "Compare your mixture to the Turbidity Chart.",
+          "Write down your prediction."
+        ],
+        "detailed": [
+          "Mixture Creation: In your beaker, combine the water and soil. Stir until cloudy. Add the oil.",
+          "Observation: Hold your beaker up to the light. Use the chart to rate the turbidity from 1 (clear) to 10 (opaque).",
+          "Scientific Log: Record the initial rating. This is your 'Control' data point."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science",
+          "Academic Tutoring"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies (Consumables)"
+        ],
+        "programType": "Both",
+        "justification": "Provides rigorous laboratory science instruction required by the grant.",
+        "heaRequirements": [
+          "SEC. 402C. UPWARD BOUND PROGRAM (b) REQUIRED SERVICES (1) Academic tutoring",
+          "SEC. 402C. UPWARD BOUND PROGRAM (b) REQUIRED SERVICES (3) Instruction in... science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1) - Instruction in laboratory science"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies costs, including costs of computing devices"
+        ]
+      },
+      "stemConnections": {
+        "science": "Mixtures vs Solutions, Density.",
+        "technology": "Standardization tools.",
+        "engineering": "Defining the problem.",
+        "math": "Ratios (mixing ingredients).",
+        "crossCurricularLinks": [
+          "Health (Waterborne diseases)"
+        ]
+      },
+      "careerPathways": [
+        "Environmental Technician",
+        "Water Resource Specialist"
+      ],
+      "collegePathways": [
+        "BS Environmental Science",
+        "BS Geology"
+      ]
+    },
+    {
+      "title": "Module 2: The Filtration Engineer (Construction)",
+      "description": "Students apply civil engineering concepts to construct a multi-stage bio-sand filter using granular media of varying porosity.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Introductory",
+      "requiredSkills": [
+        "Hand-eye coordination",
+        "Following schematic diagrams"
+      ],
+      "learningObjectives": [
+        "Design a filtration apparatus.",
+        "Understand the relationship between particle size and filtration efficiency.",
+        "Construct a layered filtration system."
+      ],
+      "teks": [
+        "SCI.ENV.9.C: Waste management impacts"
+      ],
+      "texasStemStandards": [
+        "Indicator 3.A: STEM Design Process"
+      ],
+      "materialsList": [
+        {
+          "item": "2L Plastic Bottles (Recycled)",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Activated Charcoal",
+          "estimatedCost": "$15.00"
+        },
+        {
+          "item": "Fine Sand & Coarse Gravel",
+          "estimatedCost": "$10.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Demonstrate cutting the bottle safely.",
+          "Explain the logic of layering (Fine to Coarse vs Coarse to Fine).",
+          "Supervise the building process."
+        ],
+        "detailed": [
+          "Safety (5 mins): Ensure care is taken with scissors/box cutters.",
+          "Theory (5 mins): Explain that typical filters go from Coarse (top) to Fine (bottom).",
+          "Construction (30 mins): Students cut bottles, invert the top, and layer: Cotton, Charcoal, Sand, Gravel."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Cut the bottom 2 inches off the bottle.",
+          "Flip the top upside down into the base.",
+          "Insert cotton ball into the neck.",
+          "Layer materials: Charcoal -> Sand -> Gravel."
+        ],
+        "detailed": [
+          "Fabrication: Create your housing. Ensure the cap is OFF.",
+          "Layering Logic: The charcoal traps chemicals. The sand catches small dirt. The gravel catches big leaves.",
+          "Assembly: Add about 2 inches of each material. Make sure they are level."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Hands-on engineering activity aligning with standard science curriculum (Environmental Systems).",
+        "heaRequirements": [
+          "SEC. 402C. UPWARD BOUND PROGRAM (b) REQUIRED SERVICES (3) Instruction in science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1) - Instruction in laboratory science"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Geology (Porosity).",
+        "technology": "Filtration mechanics.",
+        "engineering": "Civil engineering (Material selection).",
+        "math": "Volume estimation.",
+        "crossCurricularLinks": [
+          "Geography (Aquifer locations)"
+        ]
+      },
+      "careerPathways": [
+        "Civil Engineer",
+        "Hydrologist"
+      ],
+      "collegePathways": [
+        "BS Civil Engineering",
+        "BS Hydrology"
+      ]
+    },
+    {
+      "title": "Module 3: Testing & Flocculation (Analysis)",
+      "description": "Students test their filters, measure flow rate and turbidity reduction, and explore chemical flocculants for enhanced purification.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Data collection",
+        "Timing/Stopwatch use"
+      ],
+      "learningObjectives": [
+        "Calculate flow rate.",
+        "Quantify turbidity reduction.",
+        "Observe chemical flocculation."
+      ],
+      "teks": [
+        "SCI.CHEM.10.B: Separation techniques"
+      ],
+      "texasStemStandards": [
+        "Indicator 5.B: Communication of Results"
+      ],
+      "materialsList": [
+        {
+          "item": "Completed Filters (from Mod 2)",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Alum (Flocculant)",
+          "estimatedCost": "$8.00"
+        },
+        {
+          "item": "Stopwatch",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Have students pour dirty water into filters.",
+          "Time the process.",
+          "Demonstrate Alum on remaining dirty water."
+        ],
+        "detailed": [
+          "Testing (20 mins): Students pour 250ml of dirty water. Calculate mL/minute.",
+          "Analysis (10 mins): Visually compare the filtered water to the original.",
+          "Extension (10 mins): Add Alum to a beaker of dirty water. Show how particles clump (floc) and settle."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Pour water slowly into the center of the gravel.",
+          "Time how long it takes to fill the collection cup.",
+          "Add Alum to the leftover dirty water and watch the reaction."
+        ],
+        "detailed": [
+          "The Trial: Pour steadily. Record the time.",
+          "Data: Rate the new turbidity (1-10). Did the filter work?",
+          "Flocculation: Watch the teacher add the white powder (Alum). Observe the 'floc' (clumps) forming."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Chemicals (Consumables)"
+        ],
+        "programType": "Both",
+        "justification": "Application of mathematical concepts (rate calculation) to scientific observation.",
+        "heaRequirements": [
+          "SEC. 402C. UPWARD BOUND PROGRAM (b) REQUIRED SERVICES (3) Instruction in mathematics"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(2) - Instruction in mathematics"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Chemical reactions (coagulation).",
+        "technology": "Water treatment process.",
+        "engineering": "Efficiency analysis.",
+        "math": "Flow Rate (Volume/Time), Percent Change.",
+        "crossCurricularLinks": [
+          "Social Studies (Infrastructure)"
+        ]
+      },
+      "careerPathways": [
+        "Water Quality Analyst",
+        "Wastewater Operator"
+      ],
+      "collegePathways": [
+        "BS Chemistry",
+        "AAS Water Quality Management"
+      ]
+    },
+    {
+      "title": "Module 4: Chemical Analysis & Safety",
+      "description": "Introduction to chemical water quality parameters including pH, alkalinity, and contaminants. Emphasis on lab safety protocols.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Lab Safety Compliance",
+        "Color matching"
+      ],
+      "learningObjectives": [
+        "Demonstrate lab safety with chemical handling.",
+        "Measure pH and alkalinity using indicators.",
+        "Interpret water quality data."
+      ],
+      "teks": [
+        "SCI.CHEM.10.A: Role of water in solutions"
+      ],
+      "texasStemStandards": [
+        "Indicator 4.A: Critical Thinking"
+      ],
+      "materialsList": [
+        {
+          "item": "Water Quality Test Strips",
+          "estimatedCost": "$20.00"
+        },
+        {
+          "item": "Water Samples (Vinegar spiked, Salt spiked)",
+          "estimatedCost": "$2.00"
+        },
+        {
+          "item": "Safety Goggles",
+          "estimatedCost": "$5.00/pair"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Review Lab Safety rules (PPE).",
+          "Distribute 'Mystery Water' samples.",
+          "Teach how to read test strip color charts."
+        ],
+        "detailed": [
+          "Safety (10 mins): Mandatory goggles check. Discuss acid/base safety.",
+          "Technique (10 mins): Demonstrate 'Dip and Read'. Wait exactly 15 seconds.",
+          "Lab (20 mins): Students test 3 samples: Tap Water, Mystery A (Acidic), Mystery B (Saline/Basic). Record results."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Put on Goggles.",
+          "Dip strip into sample for 2 seconds.",
+          "Compare colors to the bottle chart.",
+          "Record pH and Alkalinity."
+        ],
+        "detailed": [
+          "Safety: Chemicals are invisible. Assume all water is dangerous in a lab.",
+          "Measurement: Dip the strip. Match the pads on the strip to the box. Accurate matching is crucial.",
+          "Inference: If pH is 4, is it acidic or basic? What might be in the water?"
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Lab Consumables (Strips)",
+          "Safety Equipment"
+        ],
+        "programType": "UBMS",
+        "justification": "Prepares students for college-level chemistry labs by teaching standard safety and analytical techniques.",
+        "heaRequirements": [
+          "SEC. 402C. UPWARD BOUND PROGRAM (b) REQUIRED SERVICES (3) Instruction in science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1) - Instruction in laboratory science"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Chemistry (Acids/Bases).",
+        "technology": "Chemical indicators.",
+        "engineering": "Quality Control.",
+        "math": "Logarithmic scales (pH).",
+        "crossCurricularLinks": [
+          "Health (Body pH balance)"
+        ]
+      },
+      "careerPathways": [
+        "Lab Technician",
+        "Chemist"
+      ],
+      "collegePathways": [
+        "BS Chemistry",
+        "BS Biochemistry"
+      ]
+    },
+    {
+      "title": "Module 5: Thermal Separation (Distillation Lab)",
+      "description": "Students set up and perform a distillation to separate water from dissolved solids (salt) or miscible liquids.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Thermal safety",
+        "Apparatus assembly"
+      ],
+      "learningObjectives": [
+        "Observe phase changes (Liquid to Gas to Liquid).",
+        "Construct a distillation apparatus.",
+        "Explain how thermal energy separates mixtures."
+      ],
+      "teks": [
+        "SCI.CHEM.10.B: Separation techniques"
+      ],
+      "texasStemStandards": [
+        "Indicator 1.C: Inquiry-Based Learning"
+      ],
+      "materialsList": [
+        {
+          "item": "Hot Plates",
+          "estimatedCost": "$0.00 (Lab Equip)"
+        },
+        {
+          "item": "Florence Flasks, Stoppers, Tubing",
+          "estimatedCost": "$50.00"
+        },
+        {
+          "item": "Ice Bath (Bowls + Ice)",
+          "estimatedCost": "$5.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain the Water Cycle relationship.",
+          "Guide setup of flask, tubing, and ice bath.",
+          "Start the boiling process.",
+          "Monitor safety strictly."
+        ],
+        "detailed": [
+          "Concept (5 mins): Distillation is just boiling and catching the steam.",
+          "Setup (15 mins): Flask on heater -> Tubing out top -> Tubing coils through ice bath -> Drips into clean beaker.",
+          "Action (20 mins): Turn on heat. Bring to boil. Collect at least 20ml."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Secure the flask on the hot plate.",
+          "Run the tube from the flask into the ice bath container.",
+          "Turn on heat to medium-high.",
+          "Collect the liquid drops."
+        ],
+        "detailed": [
+          "Setup: Ensure the tubing is not kinked. The 'Ice Bath' cools the steam so it turns back into water.",
+          "Observation: Watch the phase change. The water turns to invisible gas, travels the tube, and turns back to liquid drops.",
+          "Safety: Do not touch the hot plate or the flask glass."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Lab Equipment usage"
+        ],
+        "programType": "UBMS",
+        "justification": "Intensive laboratory experience involving thermal dynamics and state changes.",
+        "heaRequirements": [
+          "SEC. 402C. UPWARD BOUND PROGRAM (b) REQUIRED SERVICES (3) Instruction in science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1) - Instruction in laboratory science"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.439 - Equipment and other capital expenditures (if purchasing hot plates)"
+        ]
+      },
+      "stemConnections": {
+        "science": "Thermodynamics, Phase Changes.",
+        "technology": "Distillation columns.",
+        "engineering": "Process engineering.",
+        "math": "Temperature monitoring.",
+        "crossCurricularLinks": [
+          "Physics (Energy transfer)"
+        ]
+      },
+      "careerPathways": [
+        "Chemical Engineer",
+        "Petrochemical Operator"
+      ],
+      "collegePathways": [
+        "BS Chemical Engineering",
+        "AAS Process Technology"
+      ]
+    },
+    {
+      "title": "Module 6: Verification & Concentration (Math)",
+      "description": "Post-lab analysis of the distilled water. Students use math to calculate concentration removal and verify purity.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Algebraic calculation",
+        "Calculator use"
+      ],
+      "learningObjectives": [
+        "Verify purification via chemical testing.",
+        "Calculate concentration (Molarity or ppm).",
+        "Compare energy costs of filtration vs. distillation."
+      ],
+      "teks": [
+        "SCI.CHEM.10.D: Calculate concentration"
+      ],
+      "texasStemStandards": [
+        "Indicator 5.B: Communication of Results"
+      ],
+      "materialsList": [
+        {
+          "item": "Distilled Water (from Mod 5)",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Test Strips",
+          "estimatedCost": "$0.00 (from Mod 4)"
+        },
+        {
+          "item": "Calculators",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Test the distilled water pH and salinity.",
+          "Teach the concentration formula (Mass/Volume).",
+          "Calculate efficiency."
+        ],
+        "detailed": [
+          "Verification (10 mins): Use strips on the distilled water. It should be neutral and salt-free.",
+          "Math Lesson (20 mins): If we started with 10g salt in 1L water, and ended with 0g salt, what was the % efficiency? Introduce PPM (Parts Per Million).",
+          "Discussion (10 mins): Why don't we distill all our drinking water? (Energy cost/Fuel)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Test your clear water.",
+          "Calculate how much salt was left behind in the flask.",
+          "Discuss energy usage."
+        ],
+        "detailed": [
+          "Data Analysis: If the strip says '0' hardness, you succeeded. Check the bottom of the boiling flask (crust).",
+          "Math: Calculate Concentration. C = Mass of Solute / Volume of Solvent. If you had 500ml water and 5g salt, C = 10g/L.",
+          "Critical Thinking: Distillation cleans better than the sand filter, but it took electricity."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics"
+        ],
+        "allowableCosts": [
+          "Instructional Staff"
+        ],
+        "programType": "Both",
+        "justification": "Fulfills the math component of the curriculum by applying algebra to chemistry contexts.",
+        "heaRequirements": [
+          "SEC. 402C. UPWARD BOUND PROGRAM (b) REQUIRED SERVICES (3) Instruction in mathematics"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(2) - Instruction in mathematics"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.430 - Compensation of personal services"
+        ]
+      },
+      "stemConnections": {
+        "science": "Conservation of Mass.",
+        "technology": "Desalination tech.",
+        "engineering": "Cost-benefit analysis.",
+        "math": "Molarity, Percentages.",
+        "crossCurricularLinks": [
+          "Economics (Resource management)"
+        ]
+      },
+      "careerPathways": [
+        "Process Control Engineer",
+        "Quality Assurance Manager"
+      ],
+      "collegePathways": [
+        "BS Applied Mathematics",
+        "BS Industrial Engineering"
+      ]
+    },
+    {
+      "title": "Module 7: Industrial Scale & Careers",
+      "description": "Transition from lab bench to city scale. Students explore careers in municipal water treatment and the engineering challenges of scaling up.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Critical Reading",
+        "System Analysis"
+      ],
+      "learningObjectives": [
+        "Understand the difference between batch and continuous processing.",
+        "Identify STEM careers in water management.",
+        "Analyze a flow diagram of a treatment plant."
+      ],
+      "teks": [
+        "CTE.ENG.3.A: Analyze the system",
+        "CTE.STEM.1.A: Employability skills"
+      ],
+      "texasStemStandards": [
+        "Indicator 6.A: Career Exploration"
+      ],
+      "materialsList": [
+        {
+          "item": "Projector/Screen",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Diagrams of Local Water Plant",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Show diagrams of a Reverse Osmosis plant.",
+          "Discuss 'Scaling Up'.",
+          "Highlight specific jobs: Operator, Engineer, Inspector."
+        ],
+        "detailed": [
+          "Context (15 mins): Show the difference between a beaker (Batch) and a pipe system (Continuous).",
+          "Career Spotlight (15 mins): Discuss the 'Water Treatment Operator' (Trade) vs 'Civil Engineer' (Degree).",
+          "Pre-Departure (10 mins): Prepare students for the upcoming field trip. Assign students to look for specific machinery (pumps, settling tanks) during the visit."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Examine the plant diagram.",
+          "Identify where filtration happens in the city system.",
+          "Select a career role to investigate briefly."
+        ],
+        "detailed": [
+          "System Analysis: Trace the water from the river to the tap on the diagram. Locate the pumps and filters.",
+          "Scaling: If your filter took 5 minutes for 1 cup, how many filters does a city need?",
+          "Career: Would you rather design the system (Engineer) or run the system daily (Operator)?"
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Exposure to STEM Careers",
+          "Mentoring"
+        ],
+        "allowableCosts": [
+          "Guest Speaker Fees (optional)"
+        ],
+        "programType": "UBMS",
+        "justification": "Directly addresses the UBMS mandate to expose students to careers in science and engineering.",
+        "heaRequirements": [
+          "SEC. 402C. UPWARD BOUND PROGRAM (b) REQUIRED SERVICES (5) Guidance on secondary school reentry or... career awareness"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(6) - Career awareness"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.459 - Professional service costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Environmental Science.",
+        "technology": "Industrial Control Systems (SCADA).",
+        "engineering": "Systems Engineering.",
+        "math": "Scale factors.",
+        "crossCurricularLinks": [
+          "Civics (Public Works)"
+        ]
+      },
+      "careerPathways": [
+        "Civil Engineer",
+        "Plant Operator"
+      ],
+      "collegePathways": [
+        "BS Civil Engineering",
+        "AAS Environmental Technology"
+      ]
+    },
+    {
+      "title": "Module 8: Field Experience - Site Visit",
+      "description": "A guided site visit to a water treatment facility (e.g., TRWD or Trinity River Audubon Center) to observe industrial-scale filtration.",
+      "timeRequired": "4 Hours (Travel + Tour)",
+      "difficultyLevel": "Experiential",
+      "requiredSkills": [
+        "Professional behavior",
+        "Active listening"
+      ],
+      "learningObjectives": [
+        "Connect classroom filtration models to industrial reality.",
+        "Interview STEM professionals about educational pathways.",
+        "Identify safety protocols on an active industrial site."
+      ],
+      "teks": [
+        "CTE.STEM.1.D: Career opportunities",
+        "CTE.CIVIL.6.A: Water treatment systems"
+      ],
+      "texasStemStandards": [
+        "Indicator 6.C: Field Experiences"
+      ],
+      "materialsList": [
+        {
+          "item": "Bus/Van Transportation",
+          "estimatedCost": "$300.00"
+        },
+        {
+          "item": "Student Lunches",
+          "estimatedCost": "$10.00/student"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Confirm bus and tour reservation.",
+          "Collect liability waivers.",
+          "Facilitate Q&A with site engineers."
+        ],
+        "detailed": [
+          "Logistics: Contact facilities like Tarrant Regional Water District or Fort Worth Rolling Hills.",
+          "Preparation: Ensure students have notebooks and required PPE. Brief students on behavioral expectations.",
+          "Execution: Guide students to identify the 'Flocculation Basins' and 'Sand Filters' discussed in Modules 2 and 3."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Wear long pants and closed-toe shoes.",
+          "Bring a notebook to record answers.",
+          "Ask at least one career-related question."
+        ],
+        "detailed": [
+          "Observation: Compare the plant's sand filters to your bottle filter. How do they clean the sand without throwing it away?",
+          "Interview: Ask the operator or engineer: 'What certifications or degrees do you need for this position?'",
+          "Reflection: Note the scale of the pipes and pumps."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Field Trips",
+          "Exposure to STEM Careers"
+        ],
+        "allowableCosts": [
+          "Transportation",
+          "Meals (during field trip)"
+        ],
+        "programType": "Both",
+        "justification": "Field trip provides necessary career exposure and academic enrichment not available in the classroom.",
+        "heaRequirements": [
+          "SEC. 402C. UPWARD BOUND PROGRAM (d) PERMISSIBLE SERVICES (2) Field trips"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(5) - Career awareness",
+          "34 CFR 645.40 - What are permissible costs?"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.438 - Entertainment costs (Field trips for educational purposes are allowable exceptions)"
+        ]
+      },
+      "stemConnections": {
+        "science": "Hydrology.",
+        "technology": "Industrial Automation.",
+        "engineering": "Infrastructure Design.",
+        "math": "Volume flow rates (MGD - Million Gallons per Day).",
+        "crossCurricularLinks": [
+          "Government (Municipal Services)"
+        ]
+      },
+      "careerPathways": [
+        "Water Plant Operator",
+        "Environmental Engineer"
+      ],
+      "collegePathways": [
+        "BS Environmental Engineering",
+        "BS Public Health"
+      ]
+    },
+    {
+      "title": "Module 9: CAD Basics (Digital Design)",
+      "description": "Students log into CAD software to learn basic geometric manipulation, designing a simple cylindrical filter housing.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Computer Literacy",
+        "Spatial Reasoning"
+      ],
+      "learningObjectives": [
+        "Navigate 3D design workspace.",
+        "Manipulate geometric primitives (cylinders, holes).",
+        "Design a hollow enclosure with inlet/outlet."
+      ],
+      "teks": [
+        "CTE.ENG.5.A: Use CAD software"
+      ],
+      "texasStemStandards": [
+        "Indicator 3.B: Technology Integration"
+      ],
+      "materialsList": [
+        {
+          "item": "Computers",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Tinkercad or Fusion 360 Account",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Log students into Tinkercad/Onshape.",
+          "Tutorial: Move, Scale, Group/Hole.",
+          "Challenge: Create a hollow cylinder."
+        ],
+        "detailed": [
+          "Setup (10 mins): Get everyone logged in. Show the 'Workplane'.",
+          "Tutorial (15 mins): Demonstrate dragging a cylinder, making a smaller 'hole' cylinder, aligning them, and grouping them to create a pipe/cup.",
+          "Practice (15 mins): Students must create the basic shell of their filter cartridge."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Open your CAD software.",
+          "Drag a cylinder to the workplane.",
+          "Create a hole to make it hollow.",
+          "Add an opening for water to enter."
+        ],
+        "detailed": [
+          "Basics: Learn to rotate your view. If you can't see it from all sides, you can't build it.",
+          "The Shell: Create a cylinder 50mm wide. Create a 'hole' cylinder 45mm wide. Align them and 'Group' them.",
+          "Ports: Add a small hole on the side for water to flow in."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Elective Subjects (Computer Science/Engineering)"
+        ],
+        "allowableCosts": [
+          "Computer Lab Fees",
+          "Software Licenses"
+        ],
+        "programType": "Both",
+        "justification": "Provides instruction in technology and engineering, aligning with Competitive Priority Preferences for computer science exposure.",
+        "heaRequirements": [
+          "SEC. 402C. UPWARD BOUND PROGRAM (b) REQUIRED SERVICES (3) Instruction in... elective courses"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(4) - Instruction in elective subjects"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies (computing devices)"
+        ]
+      },
+      "stemConnections": {
+        "science": "Spatial reasoning.",
+        "technology": "CAD/CAM.",
+        "engineering": "Mechanical Design.",
+        "math": "Geometry (Cylinders, Diameter vs Radius).",
+        "crossCurricularLinks": [
+          "Art (Digital Sculpting)"
+        ]
+      },
+      "careerPathways": [
+        "Mechanical Engineer",
+        "Drafter"
+      ],
+      "collegePathways": [
+        "BS Mechanical Engineering",
+        "AAS Computer Aided Drafting"
+      ]
+    },
+    {
+      "title": "Module 10: Digital Prototype Review (Engineering)",
+      "description": "Students finalize their digital designs and participate in a design review to evaluate manufacturability and efficiency.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Public Speaking",
+        "Critical Evaluation"
+      ],
+      "learningObjectives": [
+        "Finalize a 3D model for prototyping.",
+        "Evaluate designs against constraints.",
+        "Present technical justification for design choices."
+      ],
+      "teks": [
+        "CTE.ENG.5.A: Use CAD software"
+      ],
+      "texasStemStandards": [
+        "Indicator 6.A: Career Exploration"
+      ],
+      "materialsList": [
+        {
+          "item": "Computers",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Projector for presentations",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Allow 20 mins for final design tweaks.",
+          "Conduct 'Design Review' where students show screens.",
+          "Critique based on: 'Is it watertight?', 'Will it 3D print?'"
+        ],
+        "detailed": [
+          "Finalize (20 mins): Students add the outlet port and check wall thickness.",
+          "Review (15 mins): Select 3-4 students to project their work. Ask the class to find potential failure points.",
+          "Conclusion (5 mins): Summarize the journey from sand bottles to digital engineering."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Finish your design.",
+          "Check for gaps or impossible geometry.",
+          "Prepare 2 sentences explaining why your design is efficient.",
+          "Present or submit your file."
+        ],
+        "detailed": [
+          "Design Check: Zoom in close. Are your pipes connected?",
+          "Manufacturability: If we sent this to a 3D printer, would it fall over?",
+          "Pitch: Explain your design. 'I made the walls thick to handle high pressure'."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Elective Subjects",
+          "Exposure to STEM Careers"
+        ],
+        "allowableCosts": [
+          "Software Licensing"
+        ],
+        "programType": "Both",
+        "justification": "Culminating activity that integrates technology skills with communication and critical thinking.",
+        "heaRequirements": [
+          "SEC. 402C. UPWARD BOUND PROGRAM (b) REQUIRED SERVICES (3) Instruction in elective courses"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(4) - Instruction in elective subjects"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.430 - Compensation of personal services (Instructor time)"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics (Pressure).",
+        "technology": "Rapid Prototyping.",
+        "engineering": "Design Review Process.",
+        "math": "Geometric tolerancing.",
+        "crossCurricularLinks": [
+          "English (Technical Communication)"
+        ]
+      },
+      "careerPathways": [
+        "Product Designer",
+        "Mechanical Engineer"
+      ],
+      "collegePathways": [
+        "BS Industrial Design",
+        "BS Manufacturing Engineering"
+      ]
+    }
+  ]
+}

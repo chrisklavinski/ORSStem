@@ -1,0 +1,802 @@
+{
+  "curriculumTitle": "Powering the Future: Micro-Grids and Renewable Energy Systems (Modular)",
+  "overview": "This comprehensive hands-on curriculum utilizes a 300W/260Wh portable solar generator to teach high school students the principles of photovoltaic energy conversion, battery storage technology, electrical load calculation, and sustainable engineering design. Adjusted for standard scheduling, this curriculum is divided into eight 40-minute sessions suitable for daily classroom instruction or segmented Saturday Academy workshops. It is designed to meet strict DOE TRIO compliance for instruction in Mathematics and Laboratory Science.",
+  "prerequisites": "Completion of Algebra I (TEKS 111.39); Familiarity with basic Physical Science concepts (TEKS 112.39).",
+  "targetAgeGroup": "High School (Ages 14-18)",
+  "totalDurationEstimate": "5 Hours 20 Minutes (8 Sessions x 40 Minutes)",
+  "fieldTrips": [
+    {
+      "name": "Tarrant County College - South Campus (Renewable Energy Technology Center)",
+      "location": "Fort Worth, TX (Tarrant County)",
+      "description": "A guided tour of the TCC Renewable Energy Technology program facilities, including their solar arrays and wind turbine simulators.",
+      "relevanceToCurriculum": "Directly correlates with the solar physics and career pathways discussed in Sessions 1 and 8. Demonstrates post-secondary technical degree options (AAS)."
+    },
+    {
+      "name": "Perot Museum of Nature and Science - Tom Hunt Energy Hall",
+      "location": "Dallas, TX (Dallas County)",
+      "description": "Interactive exploration of the Energy Hall, focusing on the transition from traditional hydrocarbons to renewable energy grids.",
+      "relevanceToCurriculum": "Reinforces the 'Blackout Scenario' (Sessions 6-7) by visualizing energy grid infrastructure and resource management."
+    }
+  ],
+  "activities": [
+    {
+      "title": "Session 1: The Physics of Photovoltaics",
+      "description": "Introduction to solar energy physics, electron flow, and safety protocols for handling DC current systems.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Basic observation",
+        "Safety compliance"
+      ],
+      "learningObjectives": [
+        "Explain the photovoltaic effect and how solar panels convert irradiance into DC current.",
+        "Identify safety protocols for handling DC electrical equipment.",
+        "Differentiate between potential energy (Voltage) and current (Amperage)."
+      ],
+      "teks": [
+        "Physics 112.39(c)(5)(B): Demonstrate that moving electric charges produce magnetic fields.",
+        "Physics 112.39(c)(6)(D): Investigate movement of thermal energy by radiation."
+      ],
+      "texasStemStandards": [
+        "Science Practices: Planning and carrying out investigations.",
+        "STEM Career Awareness: Introduction to Electrical Engineering."
+      ],
+      "materialsList": [
+        {
+          "item": "Portable Power Station (260Wh) with 40W Solar Panel",
+          "estimatedCost": "$250.00 per station"
+        },
+        {
+          "item": "Safety Glasses",
+          "estimatedCost": "$5.00 per student"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Introduce unit and equipment.",
+          "Lecture on Photovoltaic Effect.",
+          "Brief on DC safety.",
+          "Demonstrate panel connection."
+        ],
+        "detailed": [
+          "Introduce the unit and the portable power station equipment, ensuring all safety warnings are read.",
+          "Lecture on the Photovoltaic Effect: How photons knock electrons loose from silicon atoms to create current.",
+          "Brief students on safety regarding DC current (low voltage but high safety standards required, avoid moisture).",
+          "Demonstrate the basic connection of the panel to the generator unit using the Anderson Power Pole or MC4 connectors."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Examine panel.",
+          "Practice connections.",
+          "Hypothesize solar intensity effects."
+        ],
+        "detailed": [
+          "Examine the solar panel construction (silicon wafer design) without touching the glass directly.",
+          "Practice connecting and disconnecting the MC4 or Anderson connectors safely under supervision.",
+          "Hypothesize how sunlight intensity affects electron flow and write down predictions."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science",
+          "Exposure to Engineering and Technology Careers"
+        ],
+        "allowableCosts": [
+          "Educational Supplies (Solar Generators)",
+          "Safety Equipment"
+        ],
+        "programType": "Both",
+        "justification": "Provides foundational science instruction required for laboratory activities. Equipment is <$5,000 unit cost, classified as supplies.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1) (UB): Instruction in science.",
+          "HEA Sec. 402E(b)(1) (UBMS): Instruction in physical sciences."
+        ],
+        "cfrCitations": [
+          "34 CFR § 645.11(b)(1)(iii): Science instruction requirement.",
+          "34 CFR § 645.43(c): Purchase of test materials and academic supplies."
+        ],
+        "edgarCitations": [
+          "2 CFR § 200.453: Materials and supplies costs, including computing devices.",
+          "2 CFR § 200.94: Definition of Supplies (acquisition cost less than $5,000)."
+        ]
+      },
+      "stemConnections": {
+        "science": "Atomic structure, photons, and electron movement.",
+        "technology": "Photovoltaic cells and semiconductor technology.",
+        "engineering": "Safety engineering and connector design.",
+        "math": "Basic variable relationships (Input vs Output).",
+        "crossCurricularLinks": [
+          "History: The discovery of the photoelectric effect (Einstein)."
+        ]
+      },
+      "careerPathways": [
+        "Solar Photovoltaic Installer",
+        "Electrical Engineer",
+        "Occupational Health & Safety Specialist"
+      ],
+      "collegePathways": [
+        "BS in Electrical Engineering",
+        "BS in Physics",
+        "AAS in Occupational Safety"
+      ]
+    },
+    {
+      "title": "Session 2: Solar Lab - Angle and Efficiency",
+      "description": "Field experiment measuring input variance based on angle of incidence and partial shading.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Data recording",
+        "Protractor usage"
+      ],
+      "learningObjectives": [
+        "Calculate the efficiency loss caused by sub-optimal angles of incidence.",
+        "Analyze the impact of partial shading on series vs. parallel solar cells.",
+        "Record and graph data regarding wattage input."
+      ],
+      "teks": [
+        "Environmental Systems 112.37(c)(6)(D): Analyze impact of renewable energy.",
+        "Physics 112.39(c)(2)(H): Analyze data to formulate reasonable explanations."
+      ],
+      "texasStemStandards": [
+        "Science Practices: Collecting and analyzing data.",
+        "Engineering Practices: Using mathematics and computational thinking."
+      ],
+      "materialsList": [
+        {
+          "item": "Portable Power Station & Solar Panel",
+          "estimatedCost": "Included in Session 1"
+        },
+        {
+          "item": "Protractor and Ruler",
+          "estimatedCost": "$5.00 per set"
+        },
+        {
+          "item": "Cardboard (for shading)",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Move class outdoors.",
+          "Assign roles.",
+          "Guide angle testing.",
+          "Facilitate efficiency discussion."
+        ],
+        "detailed": [
+          "Move class outdoors or to a direct sunlight window.",
+          "Assign roles per group: Panel Holder, Protractor Reader, Data Recorder.",
+          "Guide students to tilt panels at 0, 30, 45, and 90 degrees relative to the sun.",
+          "Facilitate discussion on why 40W panels rarely hit 40W (heat loss, atmospheric interference, conversion efficiency)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Establish Max Baseline.",
+          "Log wattage at angles.",
+          "Test shading efficiency.",
+          "Calculate percentage drops."
+        ],
+        "detailed": [
+          "Connect the solar panel and aim directly at the sun to establish 'Max Baseline' wattage.",
+          "Adjust angles in 15-degree increments and log the wattage for each angle.",
+          "Cover 25% of the panel with cardboard and record the immediate drop in efficiency (simulating clouds/leaves).",
+          "Calculate the percentage difference between the rated 40W and actual max achieved."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science",
+          "Mentoring"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Direct laboratory science activity involving data collection and analysis.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1) (UB): Instruction in science.",
+          "HEA Sec. 402E(b) (UBMS): Research activities."
+        ],
+        "cfrCitations": [
+          "34 CFR § 645.11(b)(1): Core curriculum instruction.",
+          "34 CFR § 645.11(b)(2): Personal counseling (mentoring during group work)."
+        ],
+        "edgarCitations": [
+          "2 CFR § 200.453: Materials and supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics of light and thermodynamics.",
+        "technology": "Data logging displays and sensors.",
+        "engineering": "Optimization of physical placement.",
+        "math": "Geometry (Angles) and Percentages.",
+        "crossCurricularLinks": [
+          "Geography: Latitude/Longitude effects on solar angles."
+        ]
+      },
+      "careerPathways": [
+        "Solar Site Assessor",
+        "Field Service Technician",
+        "Data Analyst"
+      ],
+      "collegePathways": [
+        "BS in Environmental Science",
+        "AAS in Renewable Energy Technology",
+        "BS in Applied Mathematics"
+      ]
+    },
+    {
+      "title": "Session 3: The Energy Bank - AC/DC & Inverters",
+      "description": "Exploration of battery storage technology, the difference between AC and DC power, and inverter mechanics.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Multiplication",
+        "Systems thinking"
+      ],
+      "learningObjectives": [
+        "Differentiate between Direct Current (DC) and Alternating Current (AC).",
+        "Understand the function and efficiency loss of an inverter.",
+        "Define 'Watt-hour' as a unit of capacity."
+      ],
+      "teks": [
+        "Physics 112.39(c)(6)(F): Design, construct, and calculate power used by electric circuit elements."
+      ],
+      "texasStemStandards": [
+        "Technology Practices: Understanding systems.",
+        "Science Practices: Developing and using models."
+      ],
+      "materialsList": [
+        {
+          "item": "Portable Power Station",
+          "estimatedCost": "Included in Session 1"
+        },
+        {
+          "item": "Whiteboard/Projector",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain DC vs AC.",
+          "Diagram Inverter/Efficiency.",
+          "Define Wh vs W."
+        ],
+        "detailed": [
+          "Explain that batteries store DC, but wall outlets provide AC (Tesla vs Edison concept).",
+          "Draw a diagram of an inverter converting DC to AC and explain the 'Heat Tax' (efficiency loss ~15% due to heat dissipation).",
+          "Define Wh (Watt-hours) as the 'size of the gas tank' and Watts (W) as 'how fast you drive'."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Identify Ports.",
+          "Hypothesize efficiency.",
+          "Calculate usable capacity."
+        ],
+        "detailed": [
+          "Identify the DC ports (USB, 12V) vs AC ports (Wall outlet) on the generator.",
+          "Hypothesize which port is more efficient for charging a phone and why (DC to DC vs DC to AC to DC).",
+          "Calculate the usable capacity of a 260Wh battery if the inverter is 85% efficient (260 * 0.85)."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science",
+          "Tutoring"
+        ],
+        "allowableCosts": [
+          "Curriculum Development"
+        ],
+        "programType": "UBMS",
+        "justification": "Deep dive into electrical theory and thermodynamics (inverter heat loss) suitable for UBMS rigor.",
+        "heaRequirements": [
+          "HEA Sec. 402E(b)(1) (UBMS): Instruction in mathematics and science."
+        ],
+        "cfrCitations": [
+          "34 CFR § 645.11(b)(1): Instruction in core subjects."
+        ],
+        "edgarCitations": [
+          "2 CFR § 200.407: Prior written approval (if curriculum development costs are claimed)."
+        ]
+      },
+      "stemConnections": {
+        "science": "Electromagnetism and Thermodynamics.",
+        "technology": "Inverter technology and MOSFETs.",
+        "engineering": "System efficiency and heat management.",
+        "math": "Multiplication and ratios.",
+        "crossCurricularLinks": [
+          "Economics: Cost-benefit analysis of efficiency."
+        ]
+      },
+      "careerPathways": [
+        "Power Electronics Engineer",
+        "Battery Systems Engineer",
+        "Electrician"
+      ],
+      "collegePathways": [
+        "BS in Electrical Engineering",
+        "AAS in Electronics Technology",
+        "BS in Chemical Engineering (Battery Chemistry)"
+      ]
+    },
+    {
+      "title": "Session 4: Load Analysis Lab",
+      "description": "Students measure actual power consumption of various devices to understand Surge vs. Continuous watts.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Data collection",
+        "Precision reading"
+      ],
+      "learningObjectives": [
+        "Measure actual wattage draw of appliances.",
+        "Distinguish between Peak Surge and Continuous running watts.",
+        "Identify 'Vampire Loads' (power drawn when devices are off)."
+      ],
+      "teks": [
+        "Physics 112.39(c)(6)(F): Power used by electric circuit elements."
+      ],
+      "texasStemStandards": [
+        "Science Practices: Planning investigations.",
+        "Math Practices: Attending to precision."
+      ],
+      "materialsList": [
+        {
+          "item": "Portable Power Station",
+          "estimatedCost": "Included in Session 1"
+        },
+        {
+          "item": "Various Loads (Fan, Laptop, Lamp)",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Kill-A-Watt Meter (Optional)",
+          "estimatedCost": "$25.00 per unit"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Demo reading Output Watts.",
+          "Discuss Peak/Surge limits.",
+          "Guide measurement activity."
+        ],
+        "detailed": [
+          "Demonstrate how to read the 'Output Watts' on the generator display.",
+          "Discuss the 300W Peak limit. Explain what happens if we plug in a hair dryer (1500W). Demonstrate overload protection safely.",
+          "Guide students to measure devices one by one and record values."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Create Data Table.",
+          "Measure Laptop loads.",
+          "Measure Fan loads."
+        ],
+        "detailed": [
+          "Create a data table for: Device Name, Rated Watts (sticker), Actual Watts (measured).",
+          "Plug in a laptop; observe the wattage when idle vs. when opening a large application (CPU surge).",
+          "Plug in a fan; observe wattage at Low, Medium, and High settings."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science",
+          "Exposure to STEM Careers"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Hands-on measurement and data recording activity.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1) (UB): Instruction in science."
+        ],
+        "cfrCitations": [
+          "34 CFR § 645.11(b)(1): Laboratory science instruction."
+        ],
+        "edgarCitations": [
+          "2 CFR § 200.453: Materials and supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "Energy consumption and conservation.",
+        "technology": "Digital sensors and LCD displays.",
+        "engineering": "Load balancing and circuit protection.",
+        "math": "Data tabulation and reading scales.",
+        "crossCurricularLinks": [
+          "Environmental Science: Energy conservation."
+        ]
+      },
+      "careerPathways": [
+        "Energy Auditor",
+        "Facilities Manager",
+        "Compliance Inspector"
+      ],
+      "collegePathways": [
+        "BS in Energy Management",
+        "BS in Industrial Engineering",
+        "Certificate in Energy Auditing"
+      ]
+    },
+    {
+      "title": "Session 5: The Math of Battery Life",
+      "description": "A math-focused session calculating runtime formulas and predictions based on data collected in Session 4.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Algebra I",
+        "Dimensional Analysis"
+      ],
+      "learningObjectives": [
+        "Apply dimensional analysis to solve for Time (T).",
+        "Calculate runtime using the formula: T = (Capacity Wh * Efficiency) / Load W.",
+        "Compare theoretical calculations with real-world observed 'Time to Empty' values."
+      ],
+      "teks": [
+        "Math Models 111.43(c)(3): Use problem-solving, mathematical language, and real-world situations to analyze models."
+      ],
+      "texasStemStandards": [
+        "Math Practices: Modeling with mathematics.",
+        "Communication: Communicating mathematical reasoning."
+      ],
+      "materialsList": [
+        {
+          "item": "Calculator",
+          "estimatedCost": "$10.00 or student supplied"
+        },
+        {
+          "item": "Data from Session 4",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Present Runtime Formula.",
+          "Walk through sample problem.",
+          "Assign problem set."
+        ],
+        "detailed": [
+          "Present the Runtime Formula on the board: Time = (Battery Wh x 0.85) / Load Watts.",
+          "Walk through a sample problem: 260Wh battery, 85% efficiency, 60W lightbulb.",
+          "Assign a problem set based on the devices measured in the previous session."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Calculate Fan runtime.",
+          "Calculate Phone recharges.",
+          "Compare Math vs. Display."
+        ],
+        "detailed": [
+          "Calculate how long the generator will last powering the fan on High (using your measured watts from Session 4).",
+          "Calculate how many times the generator can recharge a phone (Assume Phone battery = 12Wh).",
+          "Compare your math to the 'Time to Empty' number displayed on the generator screen during the lab."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Tutoring"
+        ],
+        "allowableCosts": [
+          "Educational Supplies (Calculators)",
+          "Curriculum Development"
+        ],
+        "programType": "UBMS",
+        "justification": "Focuses explicitly on the 'Instruction in Mathematics' service required by TRIO, applying algebra to real-world physics.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1) (UB): Instruction in mathematics.",
+          "HEA Sec. 402E(b)(1) (UBMS): Instruction in mathematics."
+        ],
+        "cfrCitations": [
+          "34 CFR § 645.11(b)(1)(ii): Math instruction requirement."
+        ],
+        "edgarCitations": [
+          "2 CFR § 200.453: Materials and supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "Conservation of energy.",
+        "technology": "Battery management systems logic.",
+        "engineering": "Predictive modeling and constraints.",
+        "math": "Algebra and dimensional analysis.",
+        "crossCurricularLinks": []
+      },
+      "careerPathways": [
+        "System Integrator",
+        "Operations Analyst",
+        "Cost Estimator"
+      ],
+      "collegePathways": [
+        "BS in Mathematics",
+        "BS in Systems Engineering",
+        "BBA in Operations Management"
+      ]
+    },
+    {
+      "title": "Session 6: The Blackout Scenario - Budgeting",
+      "description": "Introduction to the Engineering Challenge. Students receive emergency profiles and begin the energy budgeting process.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Critical Thinking",
+        "Resource Allocation"
+      ],
+      "learningObjectives": [
+        "Prioritize critical vs. non-critical electrical loads.",
+        "Design a power budget plan based on strict resource constraints."
+      ],
+      "teks": [
+        "Engineering Design 130.365(c)(5): Solve problems using the engineering design process.",
+        "Environmental Systems 112.37(c)(5)(B): Evaluate costs and benefits of resource use."
+      ],
+      "texasStemStandards": [
+        "Engineering Practices: Defining problems and constraints.",
+        "Social Studies: Understanding resource scarcity."
+      ],
+      "materialsList": [
+        {
+          "item": "Scenario Cards (e.g., Medical Needs, Comm Needs)",
+          "estimatedCost": "$0.00 (Printable)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Divide teams.",
+          "Hand out Emergency Profiles.",
+          "Set Constraints.",
+          "Instruct Load List creation."
+        ],
+        "detailed": [
+          "Divide students into teams of 3-4.",
+          "Hand out 'Emergency Profiles' (Scenario A: Nebulizer needed for asthma; Scenario B: Radio comms needed for rescue).",
+          "Set the Constraint: 1 full charge (260Wh) + limited solar refill opportunities.",
+          "Instruct students to list every device they *want* vs. *need* to survive."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Analyze Scenario.",
+          "Create Load List.",
+          "Identify Critical Loads.",
+          "Calculate Total Demand."
+        ],
+        "detailed": [
+          "Analyze your assigned scenario and identify the 'Must-Haves'.",
+          "Create a 'Load List' of all required devices and their wattage.",
+          "Determine which devices are life-safety critical and which are luxury.",
+          "Begin calculating the total Watt-hours required for a 24-hour period if everything ran constantly (to prove it's impossible)."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science/Engineering",
+          "Exposure to Cultural/Academic Programs"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Problem-based learning simulating real-world engineering constraints.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) (UB): Academic advice and assistance in course selection (via engineering problem solving)."
+        ],
+        "cfrCitations": [
+          "34 CFR § 645.11(b)(1): Core instruction."
+        ],
+        "edgarCitations": [
+          "2 CFR § 200.453: Supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "Resource management.",
+        "technology": "Systems integration.",
+        "engineering": "Requirements gathering and trade-off analysis.",
+        "math": "Estimation and summation.",
+        "crossCurricularLinks": [
+          "Civics: Disaster response and community resilience."
+        ]
+      },
+      "careerPathways": [
+        "Emergency Management Director",
+        "Microgrid Architect",
+        "Logistics Coordinator"
+      ],
+      "collegePathways": [
+        "BS in Civil Engineering",
+        "BS in Emergency Management",
+        "BS in Logistics"
+      ]
+    },
+    {
+      "title": "Session 7: The Blackout Scenario - Scheduling Simulation",
+      "description": "Students create a 24-hour timeline integrating solar recharge rates to ensure the battery never hits 0%.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Graphing",
+        "Logic"
+      ],
+      "learningObjectives": [
+        "Create a time-domain simulation of energy usage.",
+        "Calculate solar recharge rates (Wh input) based on a 4-hour sun window.",
+        "Optimize a system to prevent failure (0% battery)."
+      ],
+      "teks": [
+        "Engineering Design 130.365(c)(5): Engineering design process.",
+        "Math Models 111.43(c)(3): Analyze models."
+      ],
+      "texasStemStandards": [
+        "Engineering Practices: Optimizing design solutions.",
+        "Math Practices: Modeling."
+      ],
+      "materialsList": [
+        {
+          "item": "Graph Paper or Excel/Google Sheets",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Provide Solar Constraint.",
+          "State Challenge goal.",
+          "Guide Timeline creation."
+        ],
+        "detailed": [
+          "Provide the Solar Constraint: Assume 4 hours of sun (10am-2pm) at 30W average input (Total +120Wh).",
+          "Challenge: The battery must last 24 hours. It cannot drop below 0%.",
+          "Guide students to create a timeline (00:00 to 23:59) mapping Wh usage vs Time."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Draw/Setup Graph.",
+          "Plot Energy Drain.",
+          "Plot Solar Gain.",
+          "Optimize Schedule."
+        ],
+        "detailed": [
+          "Draw a graph with Time (X-axis) and Battery % (Y-axis). Start at 100%.",
+          "Plot the energy drain as devices are used throughout the day.",
+          "Plot the energy gain during the solar window (add energy during 10 AM - 2 PM).",
+          "Adjust the usage schedule (turn off devices) if the line hits zero."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Technology Fees (if using software)"
+        ],
+        "programType": "UBMS",
+        "justification": "Advanced modeling and simulation activity aligning with UBMS goals for rigorous STEM curriculum.",
+        "heaRequirements": [
+          "HEA Sec. 402E(b)(1) (UBMS): Mathematics and science instruction."
+        ],
+        "cfrCitations": [
+          "34 CFR § 645.11(b)(1): Core instruction."
+        ],
+        "edgarCitations": [
+          "2 CFR § 200.453: Supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "Environmental variables and insolation.",
+        "technology": "Simulation and modeling software.",
+        "engineering": "Systems control and optimization.",
+        "math": "Rate of change and inequalities.",
+        "crossCurricularLinks": []
+      },
+      "careerPathways": [
+        "Grid Operator",
+        "Renewable Energy Consultant",
+        "Project Manager"
+      ],
+      "collegePathways": [
+        "BS in Industrial Engineering",
+        "BS in Computer Science (Modeling)",
+        "BS in Renewable Energy Engineering"
+      ]
+    },
+    {
+      "title": "Session 8: Grid Defense & Career Pathways",
+      "description": "Teams present their defense of their micro-grid strategy, followed by a discussion on careers in Renewable Energy.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Public Speaking",
+        "Synthesis"
+      ],
+      "learningObjectives": [
+        "Present a technical justification for an energy management plan.",
+        "Identify careers in the renewable energy sector (Solar Technician, Grid Engineer).",
+        "Reflect on the importance of resilient infrastructure."
+      ],
+      "teks": [
+        "Career Development 127.14(c)(1): Investigate one or more careers within the STEM endorsement."
+      ],
+      "texasStemStandards": [
+        "STEM Career Awareness: Renewable Energy.",
+        "Communication: Arguing from evidence."
+      ],
+      "materialsList": [
+        {
+          "item": "Projector",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Facilitate presentations.",
+          "Critique plans.",
+          "Present Career Pathways.",
+          "Discuss College Majors."
+        ],
+        "detailed": [
+          "Facilitate 5-minute presentations from each group.",
+          "Critique plans based on feasibility (e.g., 'Did you account for clouds during the solar window?').",
+          "Present career pathways: Solar Installer (Trade), Electrical Engineer (Degree), Grid Operator (Tech).",
+          "Discuss college majors that lead to these fields and local Texas universities with strong programs."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Present Graph.",
+          "Explain Trade-offs.",
+          "Participate in Q&A."
+        ],
+        "detailed": [
+          "Present your 24-hour energy graph to the class.",
+          "Explain the hardest choice you had to make (e.g., turning off the fridge to charge the radio).",
+          "Participate in the Q&A regarding renewable energy careers and required degrees."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Career Exploration",
+          "Exposure to Engineering Careers"
+        ],
+        "allowableCosts": [
+          "Speaker Fees (if applicable)",
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Satisfies 'Career Exploration' requirement for both UB and UBMS.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(4) (UB): Guidance on secondary school reentry or alternative education programs (Career Guidance)."
+        ],
+        "cfrCitations": [
+          "34 CFR § 645.11(b)(6): Career awareness.",
+          "34 CFR § 645.11(a)(5): Exposure to college programs."
+        ],
+        "edgarCitations": [
+          "2 CFR § 200.459: Professional service costs (if guest speaker is hired)."
+        ]
+      },
+      "stemConnections": {
+        "science": "Societal impact of science.",
+        "technology": "Future grid technologies (Smart Grid).",
+        "engineering": "Engineering ethics and resilience.",
+        "math": "Communicating data.",
+        "crossCurricularLinks": [
+          "English Language Arts: Persuasive speaking."
+        ]
+      },
+      "careerPathways": [
+        "Solar Sales Consultant",
+        "Sustainability Director",
+        "Utility Lineman"
+      ],
+      "collegePathways": [
+        "BS in Sustainable Development",
+        "MBA in Energy Commerce",
+        "AAS in Power Transmission"
+      ]
+    }
+  ]
+}

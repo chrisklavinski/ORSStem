@@ -1,0 +1,621 @@
+{
+  "curriculumTitle": "Retro-Future Engineering: Building a Desktop Arcade Machine",
+  "overview": "This modular STEM curriculum guides students through the engineering, programming, and construction of a desktop arcade cabinet. Designed for TRIO Upward Bound and UBMS programs, it integrates Geometry (CAD), Computer Science (Linux/OS), Physics (Circuitry), and Engineering (Assembly). The program emphasizes the 'Maker' mindset while adhering to strict federal cost principles, ensuring all hardware is justified as educational supplies for rigorous laboratory instruction in math and science.",
+  "prerequisites": "8th Grade Mathematics (Pre-Algebra), basic computer literacy (typing, mouse usage), and 8th Grade Reading proficiency.",
+  "targetAgeGroup": "High School (Ages 14-18)",
+  "totalDurationEstimate": "16 Hours (24 Modules of 40 Minutes each)",
+  "fieldTrips": [
+    {
+      "name": "UTA FabLab (University of Texas at Arlington)",
+      "location": "Arlington, TX (Tarrant County)",
+      "description": "A tour of a state-of-the-art digital fabrication laboratory within a university library setting. Students view large-scale 3D printers, laser cutters, and CNC machines.",
+      "relevanceToCurriculum": "Directly correlates to the CAD and manufacturing modules. Fulfills UBMS requirement for exposure to university research facilities and engineering equipment."
+    },
+    {
+      "name": "Mouser Electronics Global Distribution Center",
+      "location": "Mansfield, TX (Tarrant/Johnson County)",
+      "description": "A guided tour of one of the world's largest electronic component distributors, showcasing logistics, automation, and the sheer volume of electronic components.",
+      "relevanceToCurriculum": "Connects the circuit theory modules to the global supply chain. Demonstrates career pathways in industrial engineering and logistics."
+    },
+    {
+      "name": "Perot Museum of Nature and Science - Engineering and Innovation Hall",
+      "location": "Dallas, TX (Dallas County)",
+      "description": "Interactive exhibits focusing on robotics, structures, and coding.",
+      "relevanceToCurriculum": "Reinforces physics and programming concepts introduced in the curriculum while providing general academic enrichment."
+    }
+  ],
+  "activities": [
+    {
+      "title": "Module 1.1: Design Thinking & Physical Constraints",
+      "description": "Students begin the engineering process by analyzing physical constraints. Using calipers, they measure the hardware components (screen, Raspberry Pi) to determine the minimum internal volume required for their housing.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Arithmetic",
+        "Ruler reading"
+      ],
+      "learningObjectives": [
+        "Accurately measure physical objects using digital calipers.",
+        "Apply geometric concepts to calculate minimum surface area.",
+        "Draft a preliminary 2D sketch with defined dimensions."
+      ],
+      "teks": [
+        "111.43 (c)(4): Geometry - Apply formulas for volume and surface area.",
+        "130.362 (c)(5)(B): Engineering Design - Prepare technical sketches."
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Scientific Inquiry",
+        "STEM Fluency Skills: Critical Thinking"
+      ],
+      "materialsList": [
+        {
+          "item": "Digital Calipers",
+          "estimatedCost": "$15.00"
+        },
+        {
+          "item": "Graph Paper",
+          "estimatedCost": "$0.10"
+        },
+        {
+          "item": "Component Mock-ups (or actual hardware)",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Teach caliper usage (zeroing, mm reading).",
+          "Explain tolerance/clearance.",
+          "Oversee sketching."
+        ],
+        "detailed": [
+          "Demonstrate how to zero out digital calipers and read measurements in millimeters.",
+          "Explain the concept of 'tolerance'—why a 50mm board needs a >50mm gap.",
+          "Challenge students to calculate the total volume required for the electronics."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Measure screen/board dimensions.",
+          "Sketch box with 5mm clearance.",
+          "Calculate surface area."
+        ],
+        "detailed": [
+          "Measure the width, height, and depth of the screen and controller board.",
+          "Record all measurements on graph paper.",
+          "Sketch a rough box design that includes 5mm of clearance on all sides.",
+          "Calculate the total surface area of wood needed based on your sketch."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Exposure to Engineering Careers"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies (Calipers, Graph Paper)"
+        ],
+        "programType": "Both",
+        "justification": "Provides rigorous math instruction (geometry/measurement). Calipers are necessary instructional supplies (2 CFR 200.453) for the lab activity.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction in mathematics."
+        ],
+        "cfrCitations": [
+          "34 CFR § 645.11(a)(1): Instruction in Mathematics."
+        ],
+        "edgarCitations": [
+          "2 CFR § 200.453: Materials and supplies costs, including costs of computing devices."
+        ]
+      },
+      "stemConnections": {
+        "science": "Measurement accuracy and error.",
+        "technology": "Use of precision measurement tools.",
+        "engineering": "Constraint-based design.",
+        "math": "Geometry and arithmetic.",
+        "crossCurricularLinks": [
+          "Art (Sketching)",
+          "History (Evolution of measurement standards)"
+        ]
+      },
+      "careerPathways": [
+        "Industrial Designer",
+        "Mechanical Engineer",
+        "Quality Control Inspector"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Mechanical Engineering",
+        "Bachelor of Architecture",
+        "Associate of Applied Science in Drafting"
+      ]
+    },
+    {
+      "title": "Module 1.2: Introduction to CAD Software",
+      "description": "Students transition their 2D sketches into a digital environment. This session focuses strictly on navigating the CAD interface (Tinkercad or Fusion 360) and creating the control panel surface.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Mouse navigation",
+        "Basic Geometry"
+      ],
+      "learningObjectives": [
+        "Navigate a 3D workspace (pan, zoom, orbit).",
+        "Create and dimension basic geometric shapes (rectangles, cylinders).",
+        "Utilize the 'Extrude' tool to create 3D forms from 2D sketches."
+      ],
+      "teks": [
+        "130.365 (c)(6)(A): Engineering Design - Use engineering graphics and design concepts.",
+        "126.33 (c)(4): Computer Science - Digital citizenship and software usage."
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Prototyping and Modeling",
+        "STEM Fluency Skills: Technology Skills"
+      ],
+      "materialsList": [
+        {
+          "item": "Computer with Internet Access",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "CAD Software License (Educational)",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Login to CAD.",
+          "Explain X, Y, Z axis.",
+          "Demo extrusion."
+        ],
+        "detailed": [
+          "Guide students to the CAD login page.",
+          "Demonstrate the 'Workplane' concept.",
+          "Walk through creating a 200mm x 100mm rectangle and extruding it to 5mm thickness."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Login.",
+          "Create 'Control_Panel_v1'.",
+          "Draw and Extrude rectangle."
+        ],
+        "detailed": [
+          "Log in to the CAD software.",
+          "Create a new design file titled 'Control_Panel_v1'.",
+          "Draw a rectangle matching the dimensions from Module 1.1.",
+          "Extrude the shape to represent the thickness of the material (e.g., MDF or Acrylic)."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Technology",
+          "Exposure to Engineering Careers"
+        ],
+        "allowableCosts": [
+          "Educational Software (if paid license is needed)"
+        ],
+        "programType": "UBMS",
+        "justification": "Direct instruction in technology and engineering design tools. Aligns with UBMS goals of computer literacy.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b): Instruction in laboratory science/technology."
+        ],
+        "cfrCitations": [
+          "34 CFR § 645.11(a)(1): Instruction in Laboratory Science."
+        ],
+        "edgarCitations": [
+          "2 CFR § 200.453: Materials and supplies (Software)."
+        ]
+      },
+      "stemConnections": {
+        "science": "N/A",
+        "technology": "Computer Aided Design (CAD).",
+        "engineering": "Digital prototyping.",
+        "math": "Coordinate planes (X, Y, Z axis).",
+        "crossCurricularLinks": [
+          "Visual Arts (3D Modeling)"
+        ]
+      },
+      "careerPathways": [
+        "CAD Technician",
+        "Civil Engineer",
+        "Product Designer"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Civil Engineering",
+        "Associate of Science in Computer Aided Drafting and Design"
+      ]
+    },
+    {
+      "title": "Module 2.1: The Hardware-Software Handshake",
+      "description": "Students analyze the single-board computer (Raspberry Pi). They learn about ARM architecture vs. x86 and perform the Operating System flashing process.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "File management",
+        "Reading comprehension"
+      ],
+      "learningObjectives": [
+        "Identify components of a single-board computer (GPIO, CPU, RAM).",
+        "Understand the function of an Operating System (OS).",
+        "Flash a disk image (ISO) to storage media."
+      ],
+      "teks": [
+        "130.421 (c)(3)(A): Computer Maintenance - Install and configure operating systems.",
+        "126.33 (c)(5): Computer Science I - Hardware/Software interaction."
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Computational Thinking",
+        "STEM Fluency Skills: Information Media"
+      ],
+      "materialsList": [
+        {
+          "item": "Raspberry Pi 4/5",
+          "estimatedCost": "$60.00"
+        },
+        {
+          "item": "MicroSD Card (32GB)",
+          "estimatedCost": "$10.00"
+        },
+        {
+          "item": "Computer for Flashing",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain SD card as Hard Drive.",
+          "Explain Flashing vs Copying.",
+          "Supervise Imager usage."
+        ],
+        "detailed": [
+          "Explain that the MicroSD card acts as the hard drive.",
+          "Discuss the difference between 'Copy/Paste' and 'Flashing' an image.",
+          "Supervise the use of Raspberry Pi Imager to ensure the correct OS is selected."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Plug SD card into PC.",
+          "Open Imager software.",
+          "Select Emulation OS.",
+          "Write and Verify."
+        ],
+        "detailed": [
+          "Insert the MicroSD card into the adapter and plug it into the computer.",
+          "Open Raspberry Pi Imager software.",
+          "Select 'Emulation' OS (e.g., RetroPie or Batocera) from the list.",
+          "Execute the 'Write' command and verify the checksum."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science (Computer Science)",
+          "Academic Tutoring"
+        ],
+        "allowableCosts": [
+          "Computer Hardware (Raspberry Pi)",
+          "Computing Accessories (SD Cards)"
+        ],
+        "programType": "UBMS",
+        "justification": "Purchase of computing devices is allowable as they are essential to the curriculum (2 CFR 200.453). This is a lab science module focusing on computer architecture.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b): Instruction in science/computer science."
+        ],
+        "cfrCitations": [
+          "34 CFR § 645.11(a)(1): Instruction in Laboratory Science."
+        ],
+        "edgarCitations": [
+          "2 CFR § 200.453: Materials and supplies (Computing Devices)."
+        ]
+      },
+      "stemConnections": {
+        "science": "N/A",
+        "technology": "Operating Systems and Storage Media.",
+        "engineering": "Computer Engineering.",
+        "math": "Binary storage capacities (GB to MB).",
+        "crossCurricularLinks": [
+          "Logic"
+        ]
+      },
+      "careerPathways": [
+        "Embedded Systems Engineer",
+        "IT Support Specialist",
+        "Computer Hardware Engineer"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Computer Engineering",
+        "Bachelor of Science in Information Technology"
+      ]
+    },
+    {
+      "title": "Module 2.2: Linux Command Line Basics",
+      "description": "With the OS installed, students boot the system and access the Linux terminal. This session focuses on text-based navigation and basic file management commands.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Typing",
+        "Attention to detail"
+      ],
+      "learningObjectives": [
+        "Navigate a file system using Command Line Interface (CLI).",
+        "Use basic Linux commands (ls, cd, sudo, reboot).",
+        "Connect to a network via terminal."
+      ],
+      "teks": [
+        "126.33 (c)(7): Computer Science - Software design and development.",
+        "130.421 (c)(10): Computer Maintenance - Troubleshooting."
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Computational Thinking",
+        "STEM Fluency Skills: Communication"
+      ],
+      "materialsList": [
+        {
+          "item": "Raspberry Pi Workstation (Monitor, Keyboard, Pi)",
+          "estimatedCost": "$0.00 (Existing)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain CLI utility.",
+          "Exit GUI (F4).",
+          "Simon Says command activity."
+        ],
+        "detailed": [
+          "Explain why CLI is used in servers and engineering (low resource usage, high control).",
+          "Guide students to press F4 (or equivalent) to exit the GUI.",
+          "Lead a 'Simon Says' style activity using terminal commands."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Boot Pi.",
+          "Exit to Terminal.",
+          "Practice ls, cd, sudo."
+        ],
+        "detailed": [
+          "Boot the Raspberry Pi.",
+          "Exit the graphical interface to access the Terminal.",
+          "Type 'ls' to list directories.",
+          "Use 'cd' to navigate into the configuration folder.",
+          "Run 'sudo raspi-config' to access system settings."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Computer Science",
+          "Mentoring"
+        ],
+        "allowableCosts": [
+          "N/A (Utilizes previously purchased hardware)"
+        ],
+        "programType": "UBMS",
+        "justification": "Rigorous Computer Science lesson focusing on Operating System fundamentals and syntax.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b): Instruction in computer science."
+        ],
+        "cfrCitations": [
+          "34 CFR § 645.11(a)(1): Instruction in Computer Science."
+        ],
+        "edgarCitations": [
+          "N/A"
+        ]
+      },
+      "stemConnections": {
+        "science": "N/A",
+        "technology": "Linux Kernel, CLI, Network Protocols.",
+        "engineering": "Software Engineering.",
+        "math": "Logic and syntax.",
+        "crossCurricularLinks": [
+          "Language Arts (Syntax/Grammar)"
+        ]
+      },
+      "careerPathways": [
+        "Systems Administrator (SysAdmin)",
+        "DevOps Engineer",
+        "Cybersecurity Analyst"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Computer Science",
+        "Bachelor of Science in Cybersecurity"
+      ]
+    },
+    {
+      "title": "Module 3.1: Circuit Theory and Continuity",
+      "description": "Before wiring, students learn the physics of the switches they will use. They use multimeters to understand the difference between Normally Open (NO) and Normally Closed (NC) circuits.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Observation",
+        "Safety awareness"
+      ],
+      "learningObjectives": [
+        "Define voltage, current, and resistance.",
+        "Differentiate between open and closed circuits.",
+        "Use a multimeter to test for continuity."
+      ],
+      "teks": [
+        "112.39 (c)(5): Physics - Investigate current and voltage.",
+        "130.368 (c)(6): AC/DC Electronics - Build circuits from schematics."
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Scientific Inquiry",
+        "STEM Fluency Skills: Critical Thinking"
+      ],
+      "materialsList": [
+        {
+          "item": "Multimeter",
+          "estimatedCost": "$15.00"
+        },
+        {
+          "item": "Arcade Button (Microswitch)",
+          "estimatedCost": "$2.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Draw circuit diagram.",
+          "Demo Multimeter beep.",
+          "Explain NO vs NC."
+        ],
+        "detailed": [
+          "Draw a simple circuit diagram on the board.",
+          "Demonstrate the 'beep' setting on the multimeter (continuity).",
+          "Have students predict what happens when the button is pressed versus released."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Set meter to Continuity.",
+          "Test COM and NO.",
+          "Test COM and NC.",
+          "Observe changes on press."
+        ],
+        "detailed": [
+          "Set the multimeter to Continuity Mode.",
+          "Touch the probes to the 'COM' and 'NO' prongs on the microswitch.",
+          "Observe that no sound plays until the button is pressed.",
+          "Switch to 'COM' and 'NC' and observe the inverse behavior."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science (Physics)",
+          "Mentoring"
+        ],
+        "allowableCosts": [
+          "Small Tools (Multimeters)",
+          "Educational Supplies (Electronic Components)"
+        ],
+        "programType": "Both",
+        "justification": "Physics lab activity. Tools and supplies are necessary to teach the concepts of electricity and circuitry.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b): Instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR § 645.11(a)(1): Instruction in Laboratory Science."
+        ],
+        "edgarCitations": [
+          "2 CFR § 200.453: Materials and supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics (Electricity).",
+        "technology": "Electronic Testing Tools.",
+        "engineering": "Electrical Systems.",
+        "math": "Logic states (0 and 1).",
+        "crossCurricularLinks": [
+          "Physics"
+        ]
+      },
+      "careerPathways": [
+        "Electrical Technician",
+        "Avionics Technician",
+        "Electrical Engineer"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Electrical Engineering",
+        "Associate of Applied Science in Electronics Technology"
+      ]
+    },
+    {
+      "title": "Module 4.1: Mechanical Assembly Strategy",
+      "description": "Students organize their materials and begin the physical assembly of the cabinet structure. This session focuses on proper tool usage, fastening techniques, and structural integrity.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Fine motor skills",
+        "Teamwork"
+      ],
+      "learningObjectives": [
+        "Identify and select appropriate tools for assembly.",
+        "Execute basic fastening techniques (screwing, gluing).",
+        "Follow a technical assembly guide."
+      ],
+      "teks": [
+        "130.322 (c)(2): Principles of Applied Engineering - Tool safety.",
+        "127.14 (c)(1): Project-Based Research - Problem solving."
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Engineering Design Process",
+        "STEM Fluency Skills: Collaboration"
+      ],
+      "materialsList": [
+        {
+          "item": "Cabinet Kit (Wood/Acrylic panels)",
+          "estimatedCost": "$40.00"
+        },
+        {
+          "item": "Screwdriver Set",
+          "estimatedCost": "$10.00"
+        },
+        {
+          "item": "Wood Glue",
+          "estimatedCost": "$5.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Safety Review.",
+          "Explain Dry Fit.",
+          "Assign team roles."
+        ],
+        "detailed": [
+          "Review safety protocols (pinch points, sharp edges).",
+          "Explain the 'Dry Fit' technique (assembling without glue first).",
+          "Assign roles if working in teams (e.g., Parts Manager, Assembly Lead)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Inventory parts.",
+          "Dry fit structure.",
+          "Glue and screw.",
+          "Clean excess glue."
+        ],
+        "detailed": [
+          "Lay out all cabinet panels and verify against the inventory list.",
+          "Perform a dry fit of the main box structure.",
+          "Apply glue to joints and screw panels together.",
+          "Wipe away excess glue immediately."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Exposure to Engineering Careers",
+          "Academic Enrichment"
+        ],
+        "allowableCosts": [
+          "Educational Supplies (Construction Materials)"
+        ],
+        "programType": "Both",
+        "justification": "Engineering fabrication activity. The resulting equipment remains the property of the TRIO program for future cohorts (prevents 'gift of public funds' issues).",
+        "heaRequirements": [
+          "HEA Sec. 402C(b): Exposure to academic programs and careers."
+        ],
+        "cfrCitations": [
+          "34 CFR § 645.11(b)(1): Workshops and Counseling."
+        ],
+        "edgarCitations": [
+          "2 CFR § 200.453: Materials and supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "Material science (Wood properties).",
+        "technology": "N/A",
+        "engineering": "Mechanical Assembly.",
+        "math": "Spatial reasoning.",
+        "crossCurricularLinks": [
+          "Vocational Training"
+        ]
+      },
+      "careerPathways": [
+        "Manufacturing Engineer",
+        "Carpenter",
+        "Product Assembler"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Manufacturing Engineering",
+        "Bachelor of Science in Industrial Engineering"
+      ]
+    }
+  ]
+}

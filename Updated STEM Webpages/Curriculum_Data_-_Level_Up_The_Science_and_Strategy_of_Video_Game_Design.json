@@ -1,0 +1,988 @@
+{
+  "curriculumTitle": "Level Up: The Science and Strategy of Video Game Design",
+  "overview": "A comprehensive 10-module STEM curriculum designed for Texas TRIO programs (UB/UBMS). It utilizes video game design concepts to facilitate rigorous instruction in Math, Physics, Computer Science, and Engineering. The curriculum aligns with Texas Essential Knowledge and Skills (TEKS) and prioritizes postsecondary readiness through specific career and college major exploration.",
+  "prerequisites": "Completion of Algebra I is recommended. Familiarity with basic graphing calculator functions.",
+  "targetAgeGroup": "High School (Grades 9-12)",
+  "totalDurationEstimate": "400 minutes (10 sessions x 40 minutes) + Field Trips",
+  "fieldTrips": [
+    {
+      "name": "National Videogame Museum",
+      "location": "Frisco, TX (Collin County)",
+      "description": "A guided educational tour focusing on the history of computing hardware, software engineering evolution, and the video game industry ecosystem.",
+      "relevanceToCurriculum": "Directly supports Module 1 (Hardware/History) and Module 10 (Careers). Students visualize the evolution of Moore's Law and explore STEM careers in preservation and design."
+    },
+    {
+      "name": "The University of Texas at Dallas (UTD) - Computer Science Dept & Esports Arena",
+      "location": "Richardson, TX (Dallas/Collin County)",
+      "description": "Campus visit including an admissions presentation, a tour of the Engineering and Computer Science building, and a visit to the varsity Esports facility.",
+      "relevanceToCurriculum": "Reinforces college pathways (CS/Engineering majors). UTD has a specific 'Animation and Games' concentration within their ATEC program, aligning with the curriculum's career focus."
+    },
+    {
+      "name": "Six Flags Over Texas - Physics Day",
+      "location": "Arlington, TX (Tarrant County)",
+      "description": "Students utilize accelerometers and timing devices to measure velocity and G-force on roller coasters.",
+      "relevanceToCurriculum": "Real-world application of Module 3 (Physics Engines). Students compare simulated physics engines to real-world Newtonian physics."
+    }
+  ],
+  "activities": [
+    {
+      "title": "Module 1: The Silicon Heart - Hardware & History",
+      "description": "Students analyze the exponential growth of computing power via Moore's Law, graphing transistor density against time to understand hardware constraints in game development.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Graphing linear and exponential functions",
+        "Data interpretation"
+      ],
+      "learningObjectives": [
+        "Analyze data representing exponential growth.",
+        "Understand physical limitations of silicon transistors (heat/size).",
+        "Correlate CPU/GPU specifications with software performance."
+      ],
+      "teks": [
+        "§111.43 (Algebra II): 2(A) Graphing exponential functions.",
+        "§130.422 (Computer Science I): 4(A) Identify hardware components."
+      ],
+      "texasStemStandards": [
+        "STEM Content: Advanced Mathematics",
+        "STEM Career: Information Technology"
+      ],
+      "materialsList": [
+        {
+          "item": "Graphing Calculator or Excel",
+          "estimatedCost": "$0 (School Resource)"
+        },
+        {
+          "item": "Historical CPU Data Handout",
+          "estimatedCost": "$0.10 per student"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Introduce Moore's Law.",
+          "Distribute data.",
+          "Guide graphing."
+        ],
+        "detailed": [
+          "Explain Moore's Law (transistor count doubles approx every 2 years).",
+          "Provide dataset of processors from Intel 4004 (1971) to current Gen.",
+          "Have students plot Year (x) vs Transistor Count (y) on a semi-log plot."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Plot the data points.",
+          "Calculate doubling time.",
+          "Predict future specs."
+        ],
+        "detailed": [
+          "Using the provided data, plot the growth of transistors over the last 50 years.",
+          "Determine if the growth is linear or exponential.",
+          "Calculate the approximate doubling time based on your graph line."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Exposure to STEM Careers"
+        ],
+        "allowableCosts": [
+          "Educational Supplies (Paper/Toner) - 2 CFR 200.453"
+        ],
+        "programType": "Both",
+        "justification": "Direct instruction in Algebra II concepts required for postsecondary STEM success.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in Mathematics"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Curriculum instruction",
+          "34 CFR 645.11(b)(1) - Math/Science rigour"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Materials Science (Silicon/Semiconductors)",
+        "technology": "Microprocessors and Lithography",
+        "engineering": "Hardware Architecture",
+        "math": "Exponential Growth and Logarithms",
+        "crossCurricularLinks": [
+          "History (Technological Revolution)"
+        ]
+      },
+      "careerPathways": [
+        "Hardware Engineer",
+        "Semiconductor Process Engineer",
+        "Systems Architect"
+      ],
+      "collegePathways": [
+        "B.S. Computer Engineering",
+        "B.S. Electrical Engineering",
+        "B.S. Materials Science"
+      ]
+    },
+    {
+      "title": "Module 2: The Loot Box Logic - Probability",
+      "description": "Students simulate game 'drop rates' using dice and spreadsheets to master probability, percentages, and expected value.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Basic arithmetic",
+        "Fractions to decimals conversion"
+      ],
+      "learningObjectives": [
+        "Calculate theoretical vs. experimental probability.",
+        "Understand Expected Value (EV).",
+        "Analyze RNG (Random Number Generation) ethics."
+      ],
+      "teks": [
+        "§111.47 (Statistics): 4(A) Probability distributions.",
+        "§130.422 (CS I): 4(C) Random functions."
+      ],
+      "texasStemStandards": [
+        "STEM Process: Data Analysis",
+        "STEM Content: Statistics"
+      ],
+      "materialsList": [
+        {
+          "item": "20-sided dice (d20)",
+          "estimatedCost": "$1.00 each"
+        },
+        {
+          "item": "Data recording sheets",
+          "estimatedCost": "$0.05 each"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Define Drop Rate.",
+          "Run simulation.",
+          "Compare results."
+        ],
+        "detailed": [
+          "Explain that a '5% drop rate' means a 1 in 20 chance.",
+          "Assign 'Legendary Item' status to rolling a 20.",
+          "Have students roll 50 times to generate a sample set."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Calculate theoretical odds.",
+          "Roll dice 50 times.",
+          "Analyze experimental data."
+        ],
+        "detailed": [
+          "Determine the percentage chance of rolling a 20 on a d20.",
+          "Conduct 50 trials, recording every result.",
+          "Compare your actual 'drop rate' to the theoretical 5% rate."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Academic Tutoring"
+        ],
+        "allowableCosts": [
+          "Educational Supplies (Dice) - 2 CFR 200.453"
+        ],
+        "programType": "Both",
+        "justification": "Provides rigorous math instruction in probability and statistics.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in Mathematics"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Curriculum instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "N/A",
+        "technology": "RNG Algorithms",
+        "engineering": "N/A",
+        "math": "Probability, Statistics, Ratios",
+        "crossCurricularLinks": [
+          "Ethics (Gambling psychology)"
+        ]
+      },
+      "careerPathways": [
+        "Data Scientist",
+        "Game Economy Designer",
+        "Actuary"
+      ],
+      "collegePathways": [
+        "B.S. Statistics",
+        "B.S. Mathematics",
+        "B.S. Data Science"
+      ]
+    },
+    {
+      "title": "Module 3: Physics Engines - Projectile Motion",
+      "description": "Using the mechanics of artillery games (e.g., Angry Birds), students calculate trajectories, velocity vectors, and gravity simulation.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Algebra II (Quadratics)",
+        "Basic Trigonometry (SOH CAH TOA)"
+      ],
+      "learningObjectives": [
+        "Calculate projectile motion components (X and Y velocity).",
+        "Understand simulation of gravity vectors.",
+        "Apply quadratic equations to motion."
+      ],
+      "teks": [
+        "§112.39 (Physics): 4(C) Laws of Motion.",
+        "§111.43 (Algebra II): 4(B) Quadratic functions."
+      ],
+      "texasStemStandards": [
+        "STEM Content: Physics",
+        "STEM Process: Scientific Inquiry"
+      ],
+      "materialsList": [
+        {
+          "item": "Scientific Calculator",
+          "estimatedCost": "$0 (School Resource)"
+        },
+        {
+          "item": "Projectile Problem Set",
+          "estimatedCost": "$0.05 per student"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Review kinematics.",
+          "Present 'launch' scenario.",
+          "Solve for landing point."
+        ],
+        "detailed": [
+          "Review decomposing vectors using Cosine and Sine.",
+          "Present problem: Initial velocity 50m/s at 45 degrees.",
+          "Walk through calculating time of flight and total range."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Decompose velocity vector.",
+          "Calculate peak height.",
+          "Calculate distance."
+        ],
+        "detailed": [
+          "Break the initial velocity into vertical (Vy) and horizontal (Vx) components.",
+          "Use gravity (-9.8m/s^2) to find how long the object stays in the air.",
+          "Multiply total time by Vx to find where the projectile lands."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science",
+          "Instruction in Mathematics"
+        ],
+        "allowableCosts": [
+          "Educational Supplies - 2 CFR 200.453"
+        ],
+        "programType": "UBMS",
+        "justification": "Supports UBMS mandate for instruction in laboratory science (Physics) and mathematics.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in Lab Science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1) - Math/Science curriculum"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Newtonian Physics (Kinematics)",
+        "technology": "Physics Engines (Unity/Unreal)",
+        "engineering": "Simulation Accuracy",
+        "math": "Trigonometry, Calculus (Derivatives)",
+        "crossCurricularLinks": [
+          "Military Science (Ballistics)"
+        ]
+      },
+      "careerPathways": [
+        "Physics Programmer",
+        "Mechanical Engineer",
+        "Simulation Specialist"
+      ],
+      "collegePathways": [
+        "B.S. Physics",
+        "B.S. Mechanical Engineering",
+        "B.S. Applied Mathematics"
+      ]
+    },
+    {
+      "title": "Module 4: Algorithmic Thinking - The 'Human' Program",
+      "description": "Students learn coding logic by creating flowcharts and 'programming' a classmate to perform complex tasks, identifying bugs in logic.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Logical reasoning",
+        "Communication"
+      ],
+      "learningObjectives": [
+        "Differentiate code and pseudocode.",
+        "Create flowcharts with conditionals (If/Else).",
+        "Debug logic errors."
+      ],
+      "teks": [
+        "§130.421 (Fundamentals of CS): 4(A) Algorithms.",
+        "§126.33 (TAPS): 4(A) Computational Thinking."
+      ],
+      "texasStemStandards": [
+        "STEM Process: Computational Thinking",
+        "STEM Skill: Problem Solving"
+      ],
+      "materialsList": [
+        {
+          "item": "Poster Paper",
+          "estimatedCost": "$0.50 per group"
+        },
+        {
+          "item": "Markers",
+          "estimatedCost": "$5.00 per pack"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Teach flowchart symbols.",
+          "Assign navigation task.",
+          "Oversee execution."
+        ],
+        "detailed": [
+          "Explain Start/End (Oval), Process (Rectangle), Decision (Diamond).",
+          "Task: Guide a 'robot' (student) from door to desk avoiding a chair.",
+          "Ensure 'robots' do exactly what is written, even if it causes a crash."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Write pseudocode.",
+          "Draw flowchart.",
+          "Test and Debug."
+        ],
+        "detailed": [
+          "Break the task down into single steps (pseudocode).",
+          "Draw the flowchart using correct shapes.",
+          "Have a partner execute the code literally. Fix any steps that cause errors."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Computer Science",
+          "Academic Tutoring"
+        ],
+        "allowableCosts": [
+          "Educational Supplies - 2 CFR 200.453"
+        ],
+        "programType": "Both",
+        "justification": "Foundational Computer Science instruction, a core component of STEM curriculum.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Core Curriculum Instruction"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Curriculum instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "N/A",
+        "technology": "Algorithms, Logic",
+        "engineering": "Systems Engineering",
+        "math": "Boolean Algebra, Logic Gates",
+        "crossCurricularLinks": [
+          "Philosophy (Logic)"
+        ]
+      },
+      "careerPathways": [
+        "Software Engineer",
+        "AI Developer",
+        "Gameplay Programmer"
+      ],
+      "collegePathways": [
+        "B.S. Computer Science",
+        "B.S. Software Engineering",
+        "B.S. Information Systems"
+      ]
+    },
+    {
+      "title": "Module 5: Xenobiology - Designing for Biomes",
+      "description": "Students apply biological principles to design a game creature adapted for specific extreme environments (Ice, Lava, Deep Sea).",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Basic Biology concepts",
+        "Creative drawing"
+      ],
+      "learningObjectives": [
+        "Apply adaptation and natural selection concepts.",
+        "Understand homeostasis.",
+        "Link form to function in design."
+      ],
+      "teks": [
+        "§112.34 (Biology): 7(C) Evolutionary mechanisms.",
+        "§112.34 (Biology): 11(A) Homeostasis."
+      ],
+      "texasStemStandards": [
+        "STEM Content: Life Sciences",
+        "STEM Skill: Creativity and Innovation"
+      ],
+      "materialsList": [
+        {
+          "item": "Drawing Paper",
+          "estimatedCost": "$0.10 per student"
+        },
+        {
+          "item": "Biome Fact Sheets",
+          "estimatedCost": "$0 (Printable)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Assign extreme biomes.",
+          "Review adaptations.",
+          "Critique designs."
+        ],
+        "detailed": [
+          "Assign environments: High Gravity, Underwater, or Extreme Cold.",
+          "Review how animals on Earth adapt (blubber, gills, bone density).",
+          "Ask students to justify their creature's features scientifically."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Analyze biome constraints.",
+          "Sketch creature.",
+          "Label adaptations."
+        ],
+        "detailed": [
+          "Identify the challenges of your biome (e.g., cold = heat loss).",
+          "Design a creature that solves these problems.",
+          "Label 3 specific biological features and explain their function."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science",
+          "Academic Guidance"
+        ],
+        "allowableCosts": [
+          "Educational Supplies - 2 CFR 200.453"
+        ],
+        "programType": "Both",
+        "justification": "Reinforces Biology curriculum standards through application.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in Lab Science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Curriculum instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Biology, Ecology, Anatomy",
+        "technology": "Biomimicry",
+        "engineering": "Bio-engineering",
+        "math": "Scale and Proportion",
+        "crossCurricularLinks": [
+          "Art (Character Design)"
+        ]
+      },
+      "careerPathways": [
+        "Concept Artist",
+        "Zoologist",
+        "Astrobiologist"
+      ],
+      "collegePathways": [
+        "B.S. Biology",
+        "B.S. Evolutionary Biology",
+        "B.F.A. Game Art/Animation"
+      ]
+    },
+    {
+      "title": "Module 6: Level Design Geometry",
+      "description": "Students use coordinate geometry to map a game level, calculating area, perimeter, and travel distances between objectives.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Cartesian coordinates",
+        "Distance formula"
+      ],
+      "learningObjectives": [
+        "Use distance formula on a coordinate plane.",
+        "Calculate area of composite shapes.",
+        "Understand scale factors."
+      ],
+      "teks": [
+        "§111.41 (Geometry): 2(B) Coordinate geometry.",
+        "§111.41 (Geometry): 11(B) Area of regular polygons."
+      ],
+      "texasStemStandards": [
+        "STEM Content: Mathematics",
+        "STEM Skill: Modeling"
+      ],
+      "materialsList": [
+        {
+          "item": "Graph Paper",
+          "estimatedCost": "$0.05 per sheet"
+        },
+        {
+          "item": "Rulers",
+          "estimatedCost": "$0.50 each"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Discuss coordinate maps.",
+          "Challenge: Balanced Map.",
+          "Verify calculations."
+        ],
+        "detailed": [
+          "Show how game engines use (x,y,z) coordinates.",
+          "Challenge: Design a Capture the Flag map where both teams are equidistant from the flag.",
+          "Check student math using the distance formula."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Draw map on graph.",
+          "Define coordinates.",
+          "Calculate distances."
+        ],
+        "detailed": [
+          "Draw a top-down map on graph paper.",
+          "Assign coordinates to Spawn A, Spawn B, and the Objective.",
+          "Calculate the distance from each spawn to the objective to prove map balance."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Tutoring"
+        ],
+        "allowableCosts": [
+          "Educational Supplies - 2 CFR 200.453"
+        ],
+        "programType": "Both",
+        "justification": "Instruction in Geometry, specifically coordinate geometry and measurement.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in Mathematics"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Curriculum instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "N/A",
+        "technology": "Vector Graphics",
+        "engineering": "Civil/Spatial Engineering",
+        "math": "Geometry, Coordinate Systems",
+        "crossCurricularLinks": [
+          "Urban Planning"
+        ]
+      },
+      "careerPathways": [
+        "Level Designer",
+        "Urban Planner",
+        "Civil Engineer"
+      ],
+      "collegePathways": [
+        "B.S. Civil Engineering",
+        "B. Architecture",
+        "B.S. Mathematics"
+      ]
+    },
+    {
+      "title": "Module 7: The Physics of Sound (Foley)",
+      "description": "Students explore sound waves by creating Foley effects for games using everyday objects, analyzing frequency and amplitude.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Observation",
+        "Use of recording tools"
+      ],
+      "learningObjectives": [
+        "Understand sound as a mechanical wave.",
+        "Differentiate frequency (pitch) vs. amplitude (volume).",
+        "Explore material acoustic properties."
+      ],
+      "teks": [
+        "§112.39 (Physics): 7(A) Wave characteristics.",
+        "§117.310 (Music): 2(A) Sound manipulation."
+      ],
+      "texasStemStandards": [
+        "STEM Content: Physics",
+        "STEM Skill: Communication"
+      ],
+      "materialsList": [
+        {
+          "item": "Props (Celery, Foil, Shoes)",
+          "estimatedCost": "$10.00 total"
+        },
+        {
+          "item": "Recording Device (Phone/Laptop)",
+          "estimatedCost": "$0 (School Resource)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain sound waves.",
+          "Play silent clip.",
+          "Supervise recording."
+        ],
+        "detailed": [
+          "Discuss compression and rarefaction.",
+          "Play a game clip with audio muted.",
+          "Task students to 'perform' the sound effects using the props provided."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Identify needed sounds.",
+          "Select materials.",
+          "Record and analyze."
+        ],
+        "detailed": [
+          "List sounds needed for the clip (footsteps, wind, impact).",
+          "Experiment with materials to match the sound (e.g., breaking celery for bones).",
+          "Record the effect and explain the wave physics involved."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science",
+          "Exposure to Cultural Events"
+        ],
+        "allowableCosts": [
+          "Educational Supplies - 2 CFR 200.453"
+        ],
+        "programType": "Both",
+        "justification": "Connects Physics curriculum (Wave theory) with technical and artistic application.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in Lab Science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Curriculum instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Acoustics, Wave Physics",
+        "technology": "Audio Engineering",
+        "engineering": "Material Science",
+        "math": "Frequency Analysis (Hertz)",
+        "crossCurricularLinks": [
+          "Music / Performing Arts"
+        ]
+      },
+      "careerPathways": [
+        "Audio Engineer",
+        "Acoustic Engineer",
+        "Sound Designer"
+      ],
+      "collegePathways": [
+        "B.S. Audio Engineering",
+        "B.S. Physics (Acoustics)",
+        "B.A. Sound Design"
+      ]
+    },
+    {
+      "title": "Module 8: The Human Controller - Reaction Time",
+      "description": "Students measure biological reaction times to understand input lag, neural pathways, and human performance limits.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Data collection",
+        "Averaging"
+      ],
+      "learningObjectives": [
+        "Measure and average quantitative data.",
+        "Understand neural signal transmission.",
+        "Differentiate hardware vs. biological latency."
+      ],
+      "teks": [
+        "§112.34 (Biology): 10(A) Nervous System.",
+        "§111.47 (Statistics): 2(B) Data collection."
+      ],
+      "texasStemStandards": [
+        "STEM Content: Life Science",
+        "STEM Process: Data Analysis"
+      ],
+      "materialsList": [
+        {
+          "item": "Meter Stick",
+          "estimatedCost": "$1.00 each"
+        },
+        {
+          "item": "Calculator",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain neural path.",
+          "Demo drop test.",
+          "Guide calculations."
+        ],
+        "detailed": [
+          "Explain the path: Eye > Optic Nerve > Brain > Motor Neuron > Finger.",
+          "Demonstrate the ruler drop test (catching a falling ruler).",
+          "Provide the formula to convert distance fallen (d) to time (t): t = sqrt(2d/g)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Perform drop test.",
+          "Calculate time.",
+          "Find average."
+        ],
+        "detailed": [
+          "Partner A drops the ruler, Partner B catches it. Repeat 10 times.",
+          "Convert distance to time using the provided physics formula.",
+          "Calculate your average reaction time."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science",
+          "Instruction in Mathematics"
+        ],
+        "allowableCosts": [
+          "Educational Supplies - 2 CFR 200.453"
+        ],
+        "programType": "UBMS",
+        "justification": "Integrates Biology (neuroscience) with Physics (kinematics) and Math.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in Lab Science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1) - Math/Science rigour"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Neuroscience, Anatomy",
+        "technology": "Input Latency",
+        "engineering": "Human-Computer Interaction (HCI)",
+        "math": "Averages, Standard Deviation",
+        "crossCurricularLinks": [
+          "Health Science"
+        ]
+      },
+      "careerPathways": [
+        "Neuroscientist",
+        "HCI Researcher",
+        "Esports Trainer"
+      ],
+      "collegePathways": [
+        "B.S. Neuroscience",
+        "B.S. Kinesiology",
+        "B.S. Biomedical Engineering"
+      ]
+    },
+    {
+      "title": "Module 9: Gaming Economics - Inflation & Currency",
+      "description": "Students analyze virtual economies to understand real-world principles like inflation, supply/demand, and purchasing power.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Algebra I",
+        "Graphing"
+      ],
+      "learningObjectives": [
+        "Define inflation and purchasing power.",
+        "Analyze supply and demand curves.",
+        "Understand exchange rates."
+      ],
+      "teks": [
+        "§118.4 (Economics): 2(B) Supply and Demand.",
+        "§111.43 (Algebra II): 3(A) Linear modeling."
+      ],
+      "texasStemStandards": [
+        "STEM Content: Mathematics",
+        "STEM Career: Finance/Data Analysis"
+      ],
+      "materialsList": [
+        {
+          "item": "Scenario Worksheets",
+          "estimatedCost": "$0 (Printable)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Intro Hyperinflation.",
+          "Explain currency devaluation.",
+          "Solicit solutions."
+        ],
+        "detailed": [
+          "Scenario: A bug allows players to print infinite Gold. Prices skyrocket.",
+          "Explain why 'more money' equals 'higher prices' (Inflation).",
+          "Ask students to design a 'Gold Sink' (a way to remove money from the game)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Graph Supply/Price.",
+          "Calculate inflation.",
+          "Propose solution."
+        ],
+        "detailed": [
+          "Graph the relationship between Gold Supply and Potion Prices.",
+          "Calculate the new price of an item if inflation is 10% per week for 5 weeks.",
+          "Design a game mechanic that removes gold from the economy to stabilize prices."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Financial Literacy"
+        ],
+        "allowableCosts": [
+          "Educational Supplies - 2 CFR 200.453"
+        ],
+        "programType": "Both",
+        "justification": "Meets the Financial Literacy requirement for TRIO programs using engaging models.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Financial Literacy"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(6) - Financial literacy"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "N/A",
+        "technology": "Blockchain / Virtual Currency",
+        "engineering": "Systems Optimization",
+        "math": "Calculus (Rates of change), Algebra",
+        "crossCurricularLinks": [
+          "Economics / Social Studies"
+        ]
+      },
+      "careerPathways": [
+        "Economist",
+        "Data Analyst",
+        "Monetization Designer"
+      ],
+      "collegePathways": [
+        "B.S. Economics",
+        "B.S. Finance",
+        "B.S. Mathematics"
+      ]
+    },
+    {
+      "title": "Module 10: Press Start on Career - Pathways",
+      "description": "Students map skills and interests to specific gaming careers, identifying necessary college majors, degrees, and HS coursework.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Internet Research",
+        "Self-reflection"
+      ],
+      "learningObjectives": [
+        "Identify STEM careers in gaming.",
+        "Map HS endorsements to college majors.",
+        "Create an academic roadmap."
+      ],
+      "teks": [
+        "§127.14 (Career Prep): 1(A) Career planning.",
+        "§127.15 (Project-Based Research): 1(B) Research skills."
+      ],
+      "texasStemStandards": [
+        "STEM Career: Career Exploration",
+        "STEM Skill: Self-Management"
+      ],
+      "materialsList": [
+        {
+          "item": "Computer/Tablet",
+          "estimatedCost": "$0 (School Resource)"
+        },
+        {
+          "item": "Career Map Template",
+          "estimatedCost": "$0 (Printable)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Present industry roles.",
+          "Discuss degree requirements.",
+          "Facilitate planning."
+        ],
+        "detailed": [
+          "Show roles beyond 'Streamer': Producer, Engineer, Artist, QA, Analyst.",
+          "Compare degrees: CS (Technical) vs. Fine Arts (Creative) vs. Business (Production).",
+          "Guide students in filling out the 4-year plan template."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Select career.",
+          "Research colleges.",
+          "List HS courses."
+        ],
+        "detailed": [
+          "Pick one career from the provided list.",
+          "Find 3 Texas universities that offer a major for that career.",
+          "List 3 electives/courses you can take in High School to prepare."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Academic Advice/Course Selection",
+          "Career Exploration"
+        ],
+        "allowableCosts": [
+          "None required"
+        ],
+        "programType": "Both",
+        "justification": "Mandatory TRIO service: assisting students in course selection and career counseling.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Course Selection",
+          "Sec. 402C(b) - Career Counseling"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(2) - Postsecondary info",
+          "34 CFR 645.11(a)(4) - Career awareness"
+        ],
+        "edgarCitations": [
+          "N/A"
+        ]
+      },
+      "stemConnections": {
+        "science": "N/A",
+        "technology": "IT Careers",
+        "engineering": "Software Engineering",
+        "math": "Data Science Careers",
+        "crossCurricularLinks": [
+          "Counseling"
+        ]
+      },
+      "careerPathways": [
+        "Game Producer",
+        "QA Tester",
+        "Technical Artist"
+      ],
+      "collegePathways": [
+        "B.S. Computer Science",
+        "B.F.A. Interactive Design",
+        "B.B.A. Project Management"
+      ]
+    }
+  ]
+}

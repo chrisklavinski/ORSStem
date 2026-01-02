@@ -1,0 +1,1813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architectural Engineering & Design: From Foundations to Future Skylines - Master STEM Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1e293b; }
+        .page-break { page-break-before: always; }
+        .avoid-break { break-inside: avoid; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab-btn.active { background-color: #4f46e5; color: white; border-color: #4f46e5; }
+        
+        /* Workbook specific styles */
+        .wb-checklist-item { display: flex; align-items: flex-start; margin-bottom: 12px; }
+        .wb-checkbox { width: 18px; height: 18px; border: 2px solid #cbd5e1; border-radius: 4px; margin-right: 12px; flex-shrink: 0; margin-top: 3px; }
+        .wb-box { background: #f8fafc; border: 1px solid #e2e8f0; padding: 20px; border-radius: 8px; font-size: 14px; }
+        
+        @media print {
+            body { background-color: white; }
+            .no-print { display: none !important; }
+            .tab-content { display: none !important; }
+            .tab-content.active { display: block !important; }
+            /* If user hits print, we want to respect the current tab, or maybe provide a print-all option. 
+               For simplicity, we print the active tab. */
+        }
+    </style>
+    <script>
+        function switchTab(id) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById('btn-' + id).classList.add('active');
+        }
+        function toggleSection(id) {
+            const content = document.getElementById('content-' + id);
+            const chevron = document.getElementById('chevron-' + id);
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                chevron.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                chevron.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</head>
+<body class="py-8 px-4 md:px-8 max-w-7xl mx-auto">
+    <!-- Navigation Tabs -->
+    <div class="flex justify-center mb-8 no-print sticky top-4 z-50">
+        <div class="bg-white p-2 rounded-2xl shadow-lg border border-gray-200 flex gap-2">
+            <button id="btn-guide" onclick="switchTab('guide')" class="tab-btn active px-6 py-2 rounded-xl font-bold text-sm text-slate-600 hover:bg-slate-50 border border-transparent transition-all">Master Guide</button>
+            <button id="btn-workbook" onclick="switchTab('workbook')" class="tab-btn px-6 py-2 rounded-xl font-bold text-sm text-slate-600 hover:bg-slate-50 border border-transparent transition-all">Teacher Workbook</button>
+            <button id="btn-narrative" onclick="switchTab('narrative')" class="tab-btn px-6 py-2 rounded-xl font-bold text-sm text-slate-600 hover:bg-slate-50 border border-transparent transition-all">Grant Narrative</button>
+        </div>
+    </div>
+
+    <!-- TAB 1: MASTER GUIDE -->
+    <div id="guide" class="tab-content active">
+        <header class="mb-8 text-center border-b-4 border-indigo-600 pb-12">
+            <div class="inline-block px-4 py-1 mb-4 bg-indigo-50 text-indigo-700 text-xs font-black uppercase tracking-widest rounded-full">STEM Architect Master Guide</div>
+            <h1 class="text-5xl font-black text-slate-900 mb-6">Architectural Engineering & Design: From Foundations to Future Skylines</h1>
+            <p class="text-2xl text-slate-500 font-medium max-w-4xl mx-auto leading-relaxed mb-8">A comprehensive 20-lesson STEM curriculum exploring the intersection of art, engineering, and mathematics through architecture. Designed specifically for DOE TRIO programs (UB/UBMS) in Texas, this course scaffolds students from historical foundations to structural physics, transitioning into modern CAD technology and sustainable design. The curriculum emphasizes college readiness in STEM fields, utilizing Texas Essential Knowledge and Skills (TEKS) and fulfilling federal grant objectives regarding rigorous curriculum and exposure to postsecondary programs.</p>
+            <div class="flex justify-center gap-6 text-sm font-bold text-slate-400 uppercase tracking-widest">
+                <span>Target: High School (Ages 14-18)</span>
+                <span>&bull;</span>
+                <span>Total Time: 20 Sessions (40-60 Minutes each)</span>
+                <span>&bull;</span>
+                <span>Est. Cost: $218.80</span>
+            </div>
+        </header>
+
+        
+        <div class="mb-12 page-break">
+            <div class="bg-indigo-900 rounded-[2.5rem] p-12 text-white shadow-2xl relative overflow-hidden">
+                <h2 class="text-3xl font-black mb-8 flex items-center gap-4 border-b border-indigo-700 pb-4"><span>🚌</span> Field Expeditions (60mi Radius)</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <div class="bg-white/10 p-6 rounded-3xl border border-white/10 backdrop-blur-sm">
+                        <h3 class="text-xl font-bold text-white mb-1">University of Texas at Arlington - CAPPA Tour</h3>
+                        <div class="text-xs font-bold uppercase tracking-widest text-indigo-300 mb-4 flex items-center gap-2"><span>📍</span> Arlington, TX (Tarrant County)</div>
+                        <p class="text-sm text-indigo-100 mb-4 leading-relaxed">A guided tour of the College of Architecture, Planning, and Public Affairs (CAPPA) at UTA, including the Digital Fabrication Lab.</p>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-3xl border border-white/10 backdrop-blur-sm">
+                        <h3 class="text-xl font-bold text-white mb-1">Perot Museum of Nature and Science - Engineering Hall</h3>
+                        <div class="text-xs font-bold uppercase tracking-widest text-indigo-300 mb-4 flex items-center gap-2"><span>📍</span> Dallas, TX (Dallas County)</div>
+                        <p class="text-sm text-indigo-100 mb-4 leading-relaxed">Interactive exploration of the Texas Instruments Engineering and Innovation Hall, focusing on structural dynamics and materials.</p>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-3xl border border-white/10 backdrop-blur-sm">
+                        <h3 class="text-xl font-bold text-white mb-1">Kimbell Art Museum (Louis Kahn Building)</h3>
+                        <div class="text-xs font-bold uppercase tracking-widest text-indigo-300 mb-4 flex items-center gap-2"><span>📍</span> Fort Worth, TX (Tarrant County)</div>
+                        <p class="text-sm text-indigo-100 mb-4 leading-relaxed">Architectural tour focusing on the cycloid barrel vaults and natural light diffusion systems designed by Louis Kahn.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-y-8">
+            
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(0)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">1</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">1. Form Follows Function: Introduction to Architecture</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 Minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-0" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-0" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students define architecture and analyze everyday buildings to understand the relationship between aesthetic form and practical function.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Define architecture and distinguish it from construction.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Analyze a structure based on the principle of 'Form Follows Function'.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Identify key architectural styles in their local community.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Sketchbooks (Architectural Journals)</span><span class="text-slate-400 font-mono text-xs">$2.00 per student</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Graphite Pencils (HB, 2B) and Erasers</span><span class="text-slate-400 font-mono text-xs">$0.50 per student</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Exposure to academic programs, Mentoring</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Section 402C(b) (Academic improvement services), 34 CFR 645.11(a)(1) (Curriculum improvement), 34 CFR 645.43(a) (Upward Bound Services), 2 CFR 200.453 (Supplies: Sketchbooks are necessary for the performance of the award)</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Present slides showing contrasting buildings (e.g., a Gothic cathedral vs. a modern office).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Lead a discussion on why buildings look the way they do, introducing the phrase 'Form Follows Function' (Louis Sullivan).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Introduce the sketchbooks as their 'Architectural Journal' for the course, emphasizing that architects think through drawing.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(1)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">2</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">2. Ancient Engineering: The Geometry of Pyramids</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 Minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-1" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-1" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Exploration of the structural stability of the pyramid shape and the mathematics behind calculating volume and surface area.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Calculate the slope, volume, and surface area of a pyramid.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Understand why the pyramid shape was structurally necessary for ancient civilizations.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Heavy Cardstock</span><span class="text-slate-400 font-mono text-xs">$5.00 per class</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Masking Tape</span><span class="text-slate-400 font-mono text-xs">$2.00 per class</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Sand (for load testing)</span><span class="text-slate-400 font-mono text-xs">$5.00 per class</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Mathematics, Tutoring</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Section 402C(b) (Core curriculum instruction), 34 CFR 645.11(b)(1) (Instruction in Math), 34 CFR 645.11(b)(2) (Instruction in Science), 2 CFR 200.453</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Review the geometric formulas for pyramids (Volume = 1/3 Base x Height).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Discuss the distribution of weight in a wide-base structure versus a vertical column.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Challenge students to build the tallest paper pyramid that can hold a 1lb sandbag.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(2)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">3</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">3. The Golden Ratio in Classical Architecture</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 Minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-2" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-2" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students investigate the Parthenon and Greek orders to understand how the Golden Ratio (Phi) influences aesthetic proportions.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Define the Golden Ratio (1:1.618).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Apply algebraic ratios to architectural measurement.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Identify Doric, Ionic, and Corinthian columns.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Rulers and Calipers</span><span class="text-slate-400 font-mono text-xs">$15.00 per set</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>High-res prints of Parthenon/Greek Temples</span><span class="text-slate-400 font-mono text-xs">$1.00 per class</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Mathematics</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Section 402C(b) (Math instruction), 34 CFR 645.43(a)(3) (Math instruction), 2 CFR 200.453</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Teach the mathematical derivation of Phi (1.618...).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Show examples of the Golden Rectangle overlay on the Parthenon.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Guide students in measuring printed images to verify if the proportions fit the ratio.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(3)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">4</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">4. The Roman Arch: Keystone Physics</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 Minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-3" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-3" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">A physics-focused lesson on how arches redirect vertical force into horizontal thrust, allowing for open spaces.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Explain compression forces in an arch.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Identify the role of the keystone.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Construct a self-supporting arch.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>High-density Foam blocks or Wooden Voussoirs</span><span class="text-slate-400 font-mono text-xs">$20.00 per kit</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Laboratory Science, Instruction in Mathematics</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Section 402C(b) (Lab science instruction), 34 CFR 645.11(b)(1) (Instruction in Science), 2 CFR 200.453</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Demonstrate how a beam fails under load (bending) versus an arch (compression).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Draw force vectors on the board showing load transfer down the arch legs.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Supervise the construction of a voussoir arch using the kits.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(4)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">5</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">5. Gothic Engineering: Flying Buttresses</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 Minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-4" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-4" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Understanding how external supports allow for taller walls and larger windows (stained glass) by counteracting lateral thrust.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Understand the concept of lateral thrust.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Design a support system to prevent wall collapse.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Relate structural innovation to aesthetic changes (light).</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Cardboard</span><span class="text-slate-400 font-mono text-xs">$0.00 (Recycled)</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Hot Glue Guns and Glue Sticks</span><span class="text-slate-400 font-mono text-xs">$10.00 per unit</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Small Weights (washers)</span><span class="text-slate-400 font-mono text-xs">$10.00 set</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Laboratory Science</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Section 402C(b), 34 CFR 645.11(b)(1), 2 CFR 200.453</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain the limitations of the Roman Arch (thick walls needed to contain thrust).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Introduce the Pointed Arch and Flying Buttress concepts.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Challenge students to build two walls that support a heavy roof without collapsing outward.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(5)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">6</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">6. Tension vs. Compression: Bridge Building I</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 Minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-5" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-5" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Introduction to the two primary forces in engineering through a truss analysis.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Differentiate between tension and compression.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Identify truss members under tension vs compression.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Build a simple truss.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Popsicle Sticks / Craft Sticks</span><span class="text-slate-400 font-mono text-xs">$5.00 per 1000</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>White PVA Glue</span><span class="text-slate-400 font-mono text-xs">$2.00 per bottle</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Laboratory Science, Exposure to Engineering</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Section 402C(b), 34 CFR 645.11(b)(1), 2 CFR 200.453</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Draw a truss bridge on the board.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Use colored markers to indicate which beams are being squeezed (compression-Red) and which are pulled (tension-Blue).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain why triangles are rigid geometric shapes compared to squares.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(6)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">7</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">7. Blueprint Basics: Scale and Measurement</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 Minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-6" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-6" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students learn to read and use an architect's scale ruler to interpret floor plans.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Read an architectural scale ruler (1/4" = 1').</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Convert real-world measurements to scale measurements.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Draw a simple room to scale.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Architectural Scale Rulers</span><span class="text-slate-400 font-mono text-xs">$6.00 each</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Graph Paper (1/4 inch grid)</span><span class="text-slate-400 font-mono text-xs">$0.10 per sheet</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Mathematics</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Section 402C(b), 34 CFR 645.43(a)(3), 2 CFR 200.453</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Demonstrate the different sides of the scale ruler (specifically the 1/4 inch scale).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain why scale is necessary (buildings don't fit on paper).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Provide a worksheet with lines to measure and convert.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(7)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">8</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">8. Orthographic Projection: Elevations</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 Minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-7" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-7" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Learning to visualize 3D objects in 2D space by drawing front, side, and top views.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Understand the concept of orthographic projection.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Draw the elevations of a simple object (e.g., a lego house).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Align views correctly on drafting paper.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>LEGO bricks (assorted)</span><span class="text-slate-400 font-mono text-xs">$20.00 set</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Drafting Paper / Vellum</span><span class="text-slate-400 font-mono text-xs">$0.20 per sheet</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Mathematics, Exposure to Engineering</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Section 402C(b), 34 CFR 645.11(b)(1), 2 CFR 200.453</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain the 'Glass Box' theory of projection (unfolding the sides of a box).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Show examples of blueprints (Plan, Section, Elevation).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Assign each student a unique Lego structure to document.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(8)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">9</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">9. Material Science: Concrete Lab</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 Minutes (Plus drying time)</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-8" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-8" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Mixing and testing different ratios of sand, cement, and aggregate to understand material strength.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Understand the chemical reaction of hydration.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Compare concrete mixes with different aggregate ratios.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Mold concrete into test shapes.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Quick-dry cement</span><span class="text-slate-400 font-mono text-xs">$15.00 per bucket</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Sand/Gravel</span><span class="text-slate-400 font-mono text-xs">$5.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Paper cups (molds)</span><span class="text-slate-400 font-mono text-xs">$3.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Safety Goggles/Gloves</span><span class="text-slate-400 font-mono text-xs">$2.00 per student</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Laboratory Science</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Section 402C(b), 34 CFR 645.11(b)(1), 2 CFR 200.453</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Review safety protocols (cement is caustic and can burn skin).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain the chemistry of curing (it's not 'drying', it is an exothermic chemical reaction called hydration).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Assign different mix ratios to different groups (e.g., 1:1 vs 1:3).</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(9)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">10</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">10. Earthquake Engineering: Shake Tables</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 Minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-9" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-9" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Designing structures that can withstand lateral seismic loads using a simple shake table.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Understand resonance and damping.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Build a tower with cross-bracing.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Test failure points under dynamic load.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Straws and Masking Tape</span><span class="text-slate-400 font-mono text-xs">$5.00 per class</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Cardboard, Marbles, Rubber Bands (Shake Table)</span><span class="text-slate-400 font-mono text-xs">$2.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Laboratory Science, Exposure to Engineering</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Section 402C(b), 34 CFR 645.11(b)(1), 2 CFR 200.453</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Discuss how earthquakes affect buildings (shear force/lateral movement).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Show videos of tuned mass dampers in skyscrapers.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Create a simple shake table (cardboard platform rolling on marbles with rubber bands for tension).</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(10)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">11</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">11. Digital Design: Intro to CAD (Tinkercad)</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 Minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-10" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-10" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Introduction to Computer-Aided Design (CAD) using free browser-based software to create digital 3D models.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Navigate 3D space on a computer screen.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Place and resize primitive shapes.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Group objects to create complex forms.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Computers/Chromebooks</span><span class="text-slate-400 font-mono text-xs">$0.00 (Existing)</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Internet Access</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Mathematics (Geometry), Exposure to Technology</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Section 402C(b), 34 CFR 645.43(a)(3), 2 CFR 200.453</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Demonstrate the workplane, camera controls, and basic shapes in Tinkercad.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain additive vs subtractive modeling (Holes vs Solids).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Assign a simple task: Build a digital house with a roof and door.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(11)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">12</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">12. 3D Modeling: Interior Walls</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 Minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-11" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-11" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Advanced CAD usage to design interior layouts with specific dimensions and partitions.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Design to specific dimensions in CAD.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Create interior partitions.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Understand wall thickness.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Computers</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Exposure to Engineering/Technology</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Section 402C(b), 34 CFR 645.11(b)(1), 2 CFR 200.453</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Discuss standard wall thickness (4.5 to 6 inches for residential).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Show how to use the 'ruler' tool in CAD for precision placement.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Challenge students to create a 2-bedroom layout within a set footprint.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(12)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">13</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">13. Site Analysis: Topography</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 Minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-12" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-12" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Understanding contour lines and how to design buildings that respect the landscape using physical models.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Read a topographical map.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Create a physical model of a landscape using layers (chipboard).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Determine the best location for a building on a slope.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Corrugated Cardboard</span><span class="text-slate-400 font-mono text-xs">$0.00 (Recycled)</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>X-Acto Knives (Teacher supervision required)</span><span class="text-slate-400 font-mono text-xs">$15.00 set</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Self-Healing Cutting Mats</span><span class="text-slate-400 font-mono text-xs">$20.00 set</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Laboratory Science</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Section 402C(b), 34 CFR 645.11(b)(1), 2 CFR 200.453</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain contour intervals (lines close together = steep).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Show how flat cardboard layers stacked up create a slope (topography model).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Discuss cut-and-fill strategies for placing foundations.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(13)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">14</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">14. Solar Studies: Orientation and Light</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 Minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-13" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-13" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Analyzing the path of the sun to optimize building orientation for energy efficiency using simulation.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Understand the sun's path (East to West, angle changes by season).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Orient a building to maximize/minimize heat gain.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Design overhangs for shading.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Flashlights (Sun simulator)</span><span class="text-slate-400 font-mono text-xs">$10.00 pack</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Cardboard House Models (from previous lessons)</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Laboratory Science</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Section 402C(b), 34 CFR 645.11(b)(1), 2 CFR 200.453</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain passive solar design principles (Heat gain in winter, shade in summer).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Demonstrate high summer sun vs. low winter sun angles using flashlight.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Discuss window placement (South facing for gain).</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(14)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">15</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">15. HVAC & Airflow: Ventilation Simulation</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 Minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-14" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-14" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Using simple smoke or streamers to visualize airflow and understand natural ventilation dynamics.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Understand the Stack Effect (hot air rises).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Design cross-ventilation strategies.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Visualize invisible fluid dynamics.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Clear plastic box or aquarium</span><span class="text-slate-400 font-mono text-xs">$15.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Incense stick or fog source</span><span class="text-slate-400 font-mono text-xs">$10.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Laboratory Science</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Section 402C(b), 34 CFR 645.11(b)(1), 2 CFR 200.453</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Define HVAC (Heating, Ventilation, Air Conditioning).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Demonstrate the 'Stack Effect' using a heat source (lamp) and smoke in a box.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain how windows on opposite walls create airflow (Cross ventilation).</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(15)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">16</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">16. Sustainable Design: The Passive House</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 Minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-15" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-15" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students integrate previous lessons to design a home that requires minimal energy inputs.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Synthesize concepts of orientation, insulation, and materials.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Draw a section view showing sustainable features.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Explain the benefits of Green Building.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Drawing Paper</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Colored Pencils</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Laboratory Science</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Section 402C(b), 34 CFR 645.11(b)(1), 2 CFR 200.453</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Introduce LEED certification and Passive House standards.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Discuss insulation (R-value) and thermal bridging.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Show examples of green roofs, rainwater harvesting, and solar power.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(16)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">17</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">17. Project Management: Cost Estimation</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 Minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-16" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-16" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">The math of construction—calculating the cost of materials for a simple room renovation.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Calculate area of walls and floor.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Determine paint and flooring quantities needed.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Create a budget spreadsheet.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Calculators</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Mock Price List (Handout)</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Mathematics, Financial Literacy (Budgeting)</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Section 402C(b), 34 CFR 645.43(a)(3), 2 CFR 200.453</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Provide a simple floor plan (e.g., 10x12 room).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Provide unit prices (e.g., Paint covers 400sqft for $30; Flooring is $2/sqft).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain contingency funds (adding extra for mistakes).</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(17)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">18</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">18. Landscape Architecture: Zoning and Flow</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 Minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-17" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-17" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Designing the outdoor space to complement the building and serve human needs through botany and planning.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Distinguish between hardscape and softscape.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Design circulation paths.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Create a landscape plan.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Green construction paper</span><span class="text-slate-400 font-mono text-xs">$5.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Glue and Markers</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in Laboratory Science (Botany context)</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Section 402C(b), 34 CFR 645.11(b)(1), 2 CFR 200.453</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Define Landscape Architecture (it's not just gardening).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Discuss the importance of native plants (xeriscaping) in Texas climates.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain how people move through outdoor spaces (paths of desire).</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(18)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">19</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">19. Urban Planning: The Neighborhood Layout</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 Minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-18" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-18" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Scaling up from a single building to a community, focusing on zoning, infrastructure, and civic responsibility.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Understand zoning (Residential vs Commercial vs Industrial).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Plan a walkable community.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Place infrastructure (roads, power).</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Large Butcher Paper</span><span class="text-slate-400 font-mono text-xs">$5.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Markers</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Exposure to Academic Programs</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Section 402C(b), 34 CFR 645.43(a), 2 CFR 200.453</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain why factories aren't usually next to houses (Zoning codes).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Discuss the concept of the '15-minute city' (everything needed is within walking distance).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Divide class into groups acting as the 'City Council'.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(19)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">20</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">20. Capstone: The Dream Community Center</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 Minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-19" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-19" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Final presentation where students apply all learned skills to design a community center.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Synthesize structural, aesthetic, and functional design.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Present a design proposal verbally.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Critique peer work constructively.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Presentation Board (Tri-fold)</span><span class="text-slate-400 font-mono text-xs">$3.00 per student</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Mentoring, Exposure to Academic Programs</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Section 402C(b), 34 CFR 645.43(a), 2 CFR 200.453</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Set the prompt: Design a community center for your neighborhood.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Establish rubric: Must include floor plan, elevation, and one sustainable feature.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Facilitate the 'Design Jury' (presentations).</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+        </div>
+    </div>
+
+    <!-- TAB 2: TEACHER WORKBOOK -->
+    <div id="workbook" class="tab-content max-w-4xl mx-auto">
+        <div class="text-center py-20 border-b-2 border-slate-900 mb-12">
+            <div class="text-xs font-black uppercase tracking-[0.3em] text-slate-400 mb-4">Official Workbook</div>
+            <h1 class="text-4xl font-black text-slate-900 mb-4">Architectural Engineering & Design: From Foundations to Future Skylines</h1>
+            <p class="text-lg font-serif italic text-slate-500">Instructor Checklists & Facilitation Notes</p>
+        </div>
+        
+        
+        <div class="mb-16">
+            <h2 class="text-2xl font-black text-slate-900 mb-6 border-b border-slate-200 pb-2">Field Expeditions Checklist</h2>
+            
+            <div class="wb-box mb-4 bg-white border-l-4 border-amber-500">
+                <div class="font-bold text-lg text-slate-900">University of Texas at Arlington - CAPPA Tour</div>
+                <div class="text-xs font-bold uppercase text-amber-600 mb-2">Arlington, TX (Tarrant County)</div>
+                <p class="text-sm text-slate-600">A guided tour of the College of Architecture, Planning, and Public Affairs (CAPPA) at UTA, including the Digital Fabrication Lab.</p>
+            </div>
+            <div class="wb-box mb-4 bg-white border-l-4 border-amber-500">
+                <div class="font-bold text-lg text-slate-900">Perot Museum of Nature and Science - Engineering Hall</div>
+                <div class="text-xs font-bold uppercase text-amber-600 mb-2">Dallas, TX (Dallas County)</div>
+                <p class="text-sm text-slate-600">Interactive exploration of the Texas Instruments Engineering and Innovation Hall, focusing on structural dynamics and materials.</p>
+            </div>
+            <div class="wb-box mb-4 bg-white border-l-4 border-amber-500">
+                <div class="font-bold text-lg text-slate-900">Kimbell Art Museum (Louis Kahn Building)</div>
+                <div class="text-xs font-bold uppercase text-amber-600 mb-2">Fort Worth, TX (Tarrant County)</div>
+                <p class="text-sm text-slate-600">Architectural tour focusing on the cycloid barrel vaults and natural light diffusion systems designed by Louis Kahn.</p>
+            </div>
+        </div>
+
+        
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 1</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">1. Form Follows Function: Introduction to Architecture</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 Minutes</span>
+                        <span>📊 Beginner</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Sketchbooks (Architectural Journals)</div><div class="text-xs text-slate-500">Est: $2.00 per student</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Graphite Pencils (HB, 2B) and Erasers</div><div class="text-xs text-slate-500">Est: $0.50 per student</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Define architecture and distinguish it from construction.</li><li>Analyze a structure based on the principle of 'Form Follows Function'.</li><li>Identify key architectural styles in their local community.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Present slides showing contrasting buildings (e.g., a Gothic cathedral vs. a modern office).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Lead a discussion on why buildings look the way they do, introducing the phrase 'Form Follows Function' (Louis Sullivan).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Introduce the sketchbooks as their 'Architectural Journal' for the course, emphasizing that architects think through drawing.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 2</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">2. Ancient Engineering: The Geometry of Pyramids</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 Minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Heavy Cardstock</div><div class="text-xs text-slate-500">Est: $5.00 per class</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Masking Tape</div><div class="text-xs text-slate-500">Est: $2.00 per class</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Sand (for load testing)</div><div class="text-xs text-slate-500">Est: $5.00 per class</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Calculate the slope, volume, and surface area of a pyramid.</li><li>Understand why the pyramid shape was structurally necessary for ancient civilizations.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Review the geometric formulas for pyramids (Volume = 1/3 Base x Height).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Discuss the distribution of weight in a wide-base structure versus a vertical column.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Challenge students to build the tallest paper pyramid that can hold a 1lb sandbag.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 3</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">3. The Golden Ratio in Classical Architecture</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 Minutes</span>
+                        <span>📊 Advanced</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Rulers and Calipers</div><div class="text-xs text-slate-500">Est: $15.00 per set</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">High-res prints of Parthenon/Greek Temples</div><div class="text-xs text-slate-500">Est: $1.00 per class</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Define the Golden Ratio (1:1.618).</li><li>Apply algebraic ratios to architectural measurement.</li><li>Identify Doric, Ionic, and Corinthian columns.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Teach the mathematical derivation of Phi (1.618...).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Show examples of the Golden Rectangle overlay on the Parthenon.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Guide students in measuring printed images to verify if the proportions fit the ratio.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 4</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">4. The Roman Arch: Keystone Physics</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 Minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">High-density Foam blocks or Wooden Voussoirs</div><div class="text-xs text-slate-500">Est: $20.00 per kit</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Explain compression forces in an arch.</li><li>Identify the role of the keystone.</li><li>Construct a self-supporting arch.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Demonstrate how a beam fails under load (bending) versus an arch (compression).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Draw force vectors on the board showing load transfer down the arch legs.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Supervise the construction of a voussoir arch using the kits.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 5</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">5. Gothic Engineering: Flying Buttresses</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 Minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Cardboard</div><div class="text-xs text-slate-500">Est: $0.00 (Recycled)</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Hot Glue Guns and Glue Sticks</div><div class="text-xs text-slate-500">Est: $10.00 per unit</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Small Weights (washers)</div><div class="text-xs text-slate-500">Est: $10.00 set</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Understand the concept of lateral thrust.</li><li>Design a support system to prevent wall collapse.</li><li>Relate structural innovation to aesthetic changes (light).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain the limitations of the Roman Arch (thick walls needed to contain thrust).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Introduce the Pointed Arch and Flying Buttress concepts.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Challenge students to build two walls that support a heavy roof without collapsing outward.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 6</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">6. Tension vs. Compression: Bridge Building I</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 Minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Popsicle Sticks / Craft Sticks</div><div class="text-xs text-slate-500">Est: $5.00 per 1000</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">White PVA Glue</div><div class="text-xs text-slate-500">Est: $2.00 per bottle</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Differentiate between tension and compression.</li><li>Identify truss members under tension vs compression.</li><li>Build a simple truss.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Draw a truss bridge on the board.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Use colored markers to indicate which beams are being squeezed (compression-Red) and which are pulled (tension-Blue).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain why triangles are rigid geometric shapes compared to squares.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 7</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">7. Blueprint Basics: Scale and Measurement</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 Minutes</span>
+                        <span>📊 Beginner</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Architectural Scale Rulers</div><div class="text-xs text-slate-500">Est: $6.00 each</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Graph Paper (1/4 inch grid)</div><div class="text-xs text-slate-500">Est: $0.10 per sheet</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Read an architectural scale ruler (1/4" = 1').</li><li>Convert real-world measurements to scale measurements.</li><li>Draw a simple room to scale.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Demonstrate the different sides of the scale ruler (specifically the 1/4 inch scale).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain why scale is necessary (buildings don't fit on paper).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Provide a worksheet with lines to measure and convert.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 8</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">8. Orthographic Projection: Elevations</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 Minutes</span>
+                        <span>📊 Advanced</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">LEGO bricks (assorted)</div><div class="text-xs text-slate-500">Est: $20.00 set</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Drafting Paper / Vellum</div><div class="text-xs text-slate-500">Est: $0.20 per sheet</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Understand the concept of orthographic projection.</li><li>Draw the elevations of a simple object (e.g., a lego house).</li><li>Align views correctly on drafting paper.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain the 'Glass Box' theory of projection (unfolding the sides of a box).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Show examples of blueprints (Plan, Section, Elevation).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Assign each student a unique Lego structure to document.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 9</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">9. Material Science: Concrete Lab</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 Minutes (Plus drying time)</span>
+                        <span>📊 Advanced</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Quick-dry cement</div><div class="text-xs text-slate-500">Est: $15.00 per bucket</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Sand/Gravel</div><div class="text-xs text-slate-500">Est: $5.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Paper cups (molds)</div><div class="text-xs text-slate-500">Est: $3.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Safety Goggles/Gloves</div><div class="text-xs text-slate-500">Est: $2.00 per student</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Understand the chemical reaction of hydration.</li><li>Compare concrete mixes with different aggregate ratios.</li><li>Mold concrete into test shapes.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Review safety protocols (cement is caustic and can burn skin).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain the chemistry of curing (it's not 'drying', it is an exothermic chemical reaction called hydration).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Assign different mix ratios to different groups (e.g., 1:1 vs 1:3).</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 10</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">10. Earthquake Engineering: Shake Tables</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 Minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Straws and Masking Tape</div><div class="text-xs text-slate-500">Est: $5.00 per class</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Cardboard, Marbles, Rubber Bands (Shake Table)</div><div class="text-xs text-slate-500">Est: $2.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Understand resonance and damping.</li><li>Build a tower with cross-bracing.</li><li>Test failure points under dynamic load.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Discuss how earthquakes affect buildings (shear force/lateral movement).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Show videos of tuned mass dampers in skyscrapers.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Create a simple shake table (cardboard platform rolling on marbles with rubber bands for tension).</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 11</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">11. Digital Design: Intro to CAD (Tinkercad)</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 Minutes</span>
+                        <span>📊 Beginner</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Computers/Chromebooks</div><div class="text-xs text-slate-500">Est: $0.00 (Existing)</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Internet Access</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Navigate 3D space on a computer screen.</li><li>Place and resize primitive shapes.</li><li>Group objects to create complex forms.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Demonstrate the workplane, camera controls, and basic shapes in Tinkercad.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain additive vs subtractive modeling (Holes vs Solids).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Assign a simple task: Build a digital house with a roof and door.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 12</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">12. 3D Modeling: Interior Walls</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 Minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Computers</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Design to specific dimensions in CAD.</li><li>Create interior partitions.</li><li>Understand wall thickness.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Discuss standard wall thickness (4.5 to 6 inches for residential).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Show how to use the 'ruler' tool in CAD for precision placement.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Challenge students to create a 2-bedroom layout within a set footprint.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 13</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">13. Site Analysis: Topography</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 Minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Corrugated Cardboard</div><div class="text-xs text-slate-500">Est: $0.00 (Recycled)</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">X-Acto Knives (Teacher supervision required)</div><div class="text-xs text-slate-500">Est: $15.00 set</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Self-Healing Cutting Mats</div><div class="text-xs text-slate-500">Est: $20.00 set</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Read a topographical map.</li><li>Create a physical model of a landscape using layers (chipboard).</li><li>Determine the best location for a building on a slope.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain contour intervals (lines close together = steep).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Show how flat cardboard layers stacked up create a slope (topography model).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Discuss cut-and-fill strategies for placing foundations.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 14</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">14. Solar Studies: Orientation and Light</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 Minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Flashlights (Sun simulator)</div><div class="text-xs text-slate-500">Est: $10.00 pack</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Cardboard House Models (from previous lessons)</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Understand the sun's path (East to West, angle changes by season).</li><li>Orient a building to maximize/minimize heat gain.</li><li>Design overhangs for shading.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain passive solar design principles (Heat gain in winter, shade in summer).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Demonstrate high summer sun vs. low winter sun angles using flashlight.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Discuss window placement (South facing for gain).</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 15</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">15. HVAC & Airflow: Ventilation Simulation</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 Minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Clear plastic box or aquarium</div><div class="text-xs text-slate-500">Est: $15.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Incense stick or fog source</div><div class="text-xs text-slate-500">Est: $10.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Understand the Stack Effect (hot air rises).</li><li>Design cross-ventilation strategies.</li><li>Visualize invisible fluid dynamics.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Define HVAC (Heating, Ventilation, Air Conditioning).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Demonstrate the 'Stack Effect' using a heat source (lamp) and smoke in a box.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain how windows on opposite walls create airflow (Cross ventilation).</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 16</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">16. Sustainable Design: The Passive House</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 Minutes</span>
+                        <span>📊 Advanced</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Drawing Paper</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Colored Pencils</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Synthesize concepts of orientation, insulation, and materials.</li><li>Draw a section view showing sustainable features.</li><li>Explain the benefits of Green Building.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Introduce LEED certification and Passive House standards.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Discuss insulation (R-value) and thermal bridging.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Show examples of green roofs, rainwater harvesting, and solar power.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 17</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">17. Project Management: Cost Estimation</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 Minutes</span>
+                        <span>📊 Beginner</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Calculators</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Mock Price List (Handout)</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Calculate area of walls and floor.</li><li>Determine paint and flooring quantities needed.</li><li>Create a budget spreadsheet.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Provide a simple floor plan (e.g., 10x12 room).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Provide unit prices (e.g., Paint covers 400sqft for $30; Flooring is $2/sqft).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain contingency funds (adding extra for mistakes).</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 18</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">18. Landscape Architecture: Zoning and Flow</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 Minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Green construction paper</div><div class="text-xs text-slate-500">Est: $5.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Glue and Markers</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Distinguish between hardscape and softscape.</li><li>Design circulation paths.</li><li>Create a landscape plan.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Define Landscape Architecture (it's not just gardening).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Discuss the importance of native plants (xeriscaping) in Texas climates.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain how people move through outdoor spaces (paths of desire).</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 19</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">19. Urban Planning: The Neighborhood Layout</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 Minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Large Butcher Paper</div><div class="text-xs text-slate-500">Est: $5.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Markers</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Understand zoning (Residential vs Commercial vs Industrial).</li><li>Plan a walkable community.</li><li>Place infrastructure (roads, power).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain why factories aren't usually next to houses (Zoning codes).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Discuss the concept of the '15-minute city' (everything needed is within walking distance).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Divide class into groups acting as the 'City Council'.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 20</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">20. Capstone: The Dream Community Center</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 Minutes</span>
+                        <span>📊 Advanced</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Presentation Board (Tri-fold)</div><div class="text-xs text-slate-500">Est: $3.00 per student</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Synthesize structural, aesthetic, and functional design.</li><li>Present a design proposal verbally.</li><li>Critique peer work constructively.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Set the prompt: Design a community center for your neighborhood.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Establish rubric: Must include floor plan, elevation, and one sustainable feature.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Facilitate the 'Design Jury' (presentations).</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+    </div>
+
+    <!-- TAB 3: GRANT NARRATIVE -->
+    <div id="narrative" class="tab-content max-w-3xl mx-auto font-serif leading-relaxed text-slate-800">
+        <div class="py-12">
+            <h1 class="font-sans text-3xl font-black text-slate-900 mb-8 border-b-2 border-slate-900 pb-4">Curriculum Narrative: Architectural Engineering & Design: From Foundations to Future Skylines</h1>
+            
+            <div class="mb-10">
+                <h2 class="font-sans text-lg font-bold text-indigo-800 mb-4 uppercase tracking-widest">Executive Summary</h2>
+                <p class="bg-slate-50 p-6 rounded-lg border-l-4 border-indigo-200">Architectural Engineering & Design: From Foundations to Future Skylines is a rigorous, 20-lesson STEM curriculum designed to bridge the gap between abstract mathematical concepts and tangible career pathways in the built environment. Targeted at high school participants in DOE TRIO Upward Bound and UBMS programs, the course scaffolds learners from the historical physics of ancient structures to modern computer-aided design (CAD) and sustainable urban planning. By integrating hands-on laboratory science with technical drafting and financial literacy, the curriculum prepares students for postsecondary success in architecture, civil engineering, and construction management while fostering a deep understanding of the intersection between art and structural physics.</p>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="font-sans text-lg font-bold text-indigo-800 mb-4 uppercase tracking-widest">Compliance & Alignment</h2>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-2">DOE TRIO Compliance Strategy</h3>
+                    <p>This curriculum is designed in strict adherence to the Higher Education Act (HEA) Section 402C(b), which mandates that Upward Bound projects provide instruction in core subject areas, including mathematics through pre-calculus and laboratory science. Under 34 CFR Part 645.11 and 645.43, the services provided—including exposure to STEM careers and academic tutoring—are qualifying activities. All associated costs, including consumable laboratory materials (cement, cardstock, and drafting tools) and educational software, align with the 'necessary and reasonable' cost principles outlined in EDGAR/2 CFR 200.453 regarding materials and supplies. This program specifically supports the UBMS mandate for intensive math and science instruction to encourage entry into STEM professions.</p>
+                </div>
+                <div>
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-2">Standards Alignment</h3>
+                    <p>The curriculum is meticulously mapped to the Texas Essential Knowledge and Skills (TEKS) for Principles of Architecture (130.42), Architectural Design I (130.46), and Engineering Design (130.362). Furthermore, it integrates Mathematics TEKS for Geometry (111.43) and Algebra I (111.39) through practical application in scale and load-bearing calculations. The instructional design follows the Texas STEM Framework, emphasizing Inquiry-Based Learning (TS.3.A), Communication of Ideas (TS.5.B), and the Engineering Design Process (TS.1.C), ensuring that students develop the cognitive complexity required for the Texas Success Initiative (TSI) and subsequent college-level coursework.</p>
+                </div>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="font-sans text-lg font-bold text-indigo-800 mb-4 uppercase tracking-widest">Field Expeditions</h2>
+                <p>Students will engage in high-impact experiential learning through strategic field trips within the Dallas, Tarrant, and Johnson County corridor. Proposed site visits include the University of Texas at Arlington College of Architecture, Planning, and Public Affairs (CAPPA) to visualize postsecondary pathways; the Perot Museum of Nature and Science Engineering Hall to observe dynamic structural physics; and the Kimbell Art Museum in Fort Worth to analyze Louis Kahn’s revolutionary use of geometry and natural light. These excursions fulfill federal requirements for exposure to postsecondary programs while reinforcing lesson-specific concepts like solar studies and seismic engineering through direct observation of professional-grade facilities.</p>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="font-sans text-lg font-bold text-indigo-800 mb-4 uppercase tracking-widest">Module Narratives</h2>
+                
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">1. Form Follows Function: Introduction to Architecture</h3>
+                    <p class="text-sm text-slate-600">Students begin by exploring the philosophical and practical foundations of architecture, analyzing how the intended use of a space dictates its aesthetic form. This introductory session establishes the 'Architectural Journal' as a tool for inquiry, requiring students to use observation and sketching to classify local architectural styles and redesign objects for new functions.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">2. Ancient Engineering: The Geometry of Pyramids</h3>
+                    <p class="text-sm text-slate-600">This module transitions into the mathematics of ancient structures, where students apply algebraic formulas to calculate the volume, surface area, and slope of pyramids. The lesson culminates in a weight-distribution challenge that tests the structural integrity of paper prototypes under the stress of static loads.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">3. The Golden Ratio in Classical Architecture</h3>
+                    <p class="text-sm text-slate-600">Focusing on the intersection of mathematics and beauty, students investigate the Parthenon and Greek orders to derive the Golden Ratio (Phi). Through the use of calipers and high-resolution architectural prints, students practice precision measurement and apply algebraic ratios to verify classical aesthetic proportions.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">4. The Roman Arch: Keystone Physics</h3>
+                    <p class="text-sm text-slate-600">This physics-focused lab challenges students to build self-supporting voussoir arches. By analyzing force vectors and the role of the keystone, students learn how vertical gravity is converted into lateral thrust, a foundational concept for understanding modern civil engineering and masonry.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">5. Gothic Engineering: Flying Buttresses</h3>
+                    <p class="text-sm text-slate-600">Students explore the evolution of structural supports by analyzing the limitations of Romanesque thick-walled construction. Through hands-on modeling with cardboard and weights, they design and test flying buttresses to prevent wall collapse, demonstrating how structural innovation allows for the creation of open, light-filled spaces.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">6. Tension vs. Compression: Bridge Building I</h3>
+                    <p class="text-sm text-slate-600">This lesson introduces the two primary forces acting on all structures through truss analysis. Students use color-coded diagrams and craft-stick modeling to identify members under tension and compression, emphasizing the geometric rigidity of the triangle in modern bridge design.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">7. Blueprint Basics: Scale and Measurement</h3>
+                    <p class="text-sm text-slate-600">Developing vocational skills, students learn to use an architect's scale ruler to interpret technical drawings. This module focuses on the mathematical conversion of real-world measurements to 1/4-inch scale, culminating in the creation of a scaled floor plan of their own classroom.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">8. Orthographic Projection: Elevations</h3>
+                    <p class="text-sm text-slate-600">To improve spatial visualization, students utilize the 'Glass Box' theory to project 3D objects into 2D drafting space. Students document complex shapes by drawing top, front, and side elevations, a core competency required for collegiate architectural and mechanical engineering programs.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">9. Material Science: Concrete Lab</h3>
+                    <p class="text-sm text-slate-600">In this chemistry-integrated lab, students explore the hydration process and exothermic reactions involved in concrete production. By mixing various ratios of aggregate and cement, students observe how chemical composition affects the strength and durability of structural building materials.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">10. Earthquake Engineering: Shake Tables</h3>
+                    <p class="text-sm text-slate-600">Students apply geophysics and structural analysis to design buildings capable of withstanding lateral seismic loads. Utilizing custom shake tables, students test their prototypes for resonance and deformation, iterating on their designs through the addition of cross-bracing and tuned mass dampers.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">11. Digital Design: Intro to CAD (Tinkercad)</h3>
+                    <p class="text-sm text-slate-600">Introducing modern industry standards, this lesson provides a foundation in Computer-Aided Design (CAD). Students learn to navigate a 3D workplane, utilizing additive and subtractive modeling techniques to create digital architectural prototypes, fostering critical digital literacy.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">12. 3D Modeling: Interior Walls</h3>
+                    <p class="text-sm text-slate-600">Building upon CAD basics, students design complex interior layouts while considering real-world constraints such as wall thickness and circulation. This module emphasizes precision and the use of technical measurement tools within a digital environment to create functional 2-bedroom floor plans.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">13. Site Analysis: Topography</h3>
+                    <p class="text-sm text-slate-600">This lesson integrates earth science by teaching students to interpret topographical maps. Students construct physical landscape models using layered cardboard to represent contour intervals, determining optimal building placement based on slope and environmental conditions.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">14. Solar Studies: Orientation and Light</h3>
+                    <p class="text-sm text-slate-600">Students analyze the sun's path to optimize building orientation for energy efficiency. By simulating seasonal sun angles with light sources, they learn to design passive solar features like awnings and south-facing windows to minimize heat gain and maximize natural light.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">15. HVAC & Airflow: Ventilation Simulation</h3>
+                    <p class="text-sm text-slate-600">Focusing on thermodynamics and fluid dynamics, this lab uses visual smoke simulations to demonstrate the 'Stack Effect' and cross-ventilation. Students learn how air pressure and temperature differentials influence the design of healthy, breathable building interiors.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">16. Sustainable Design: The Passive House</h3>
+                    <p class="text-sm text-slate-600">Students synthesize their knowledge of insulation, orientation, and materials to design a 'Passive House' that requires minimal energy. This module introduces LEED standards and challenges students to produce a detailed cross-section of an eco-friendly structure.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">17. Project Management: Cost Estimation</h3>
+                    <p class="text-sm text-slate-600">This financial literacy module applies arithmetic and spreadsheet logic to construction budgeting. Students calculate the surface areas of a renovation project and apply unit pricing to create a professional-grade cost estimate, including contingency funds for waste.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">18. Landscape Architecture: Zoning and Flow</h3>
+                    <p class="text-sm text-slate-600">Broadening the scope to the outdoor environment, students explore landscape design and xeriscaping. They learn to balance hardscape and softscape elements, utilizing native Texas plant species to create functional and aesthetically pleasing site plans.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">19. Urban Planning: The Neighborhood Layout</h3>
+                    <p class="text-sm text-slate-600">Students transition from individual buildings to community systems, exploring the principles of zoning and the '15-minute city.' Collaborating in 'City Councils,' they design walkable neighborhood maps that integrate infrastructure, housing, and civic spaces.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">20. Capstone: The Dream Community Center</h3>
+                    <p class="text-sm text-slate-600">The curriculum concludes with a formal design jury. Students apply all technical, mathematical, and aesthetic concepts to design a community center, presenting their final plans, models, and engineering justifications to an audience to demonstrate mastery of the curriculum's objectives.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

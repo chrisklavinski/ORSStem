@@ -1,0 +1,683 @@
+{
+  "curriculumTitle": "Industrial Illumination: Engineering Pipe Lamps",
+  "overview": "A comprehensive 6-lesson project-based learning module where High School students explore electrical physics, structural engineering, and industrial design by constructing functional lamps using PVC and Black Iron piping. Students will progress from low-cost prototyping with PVC to creating finished industrial-style steel lamps, utilizing materials standard in construction and trade industries. This curriculum integrates Texas STEM standards with federal TRIO objectives.",
+  "prerequisites": "Completion of Algebra I (for variable equations) and basic familiarity with laboratory safety protocols.",
+  "targetAgeGroup": "High School (Ages 14-18)",
+  "totalDurationEstimate": "240 minutes (6 sessions, 40 minutes each)",
+  "fieldTrips": [
+    {
+      "name": "Tarrant County College (South Campus) - Center of Excellence for Energy Technology",
+      "location": "5301 Campus Dr, Fort Worth, TX 76119",
+      "description": "A tour of the HVAC, Electrical, and Construction Technology labs at TCC South. Students will observe industrial pipe-fitting and commercial wiring on a large scale.",
+      "relevanceToCurriculum": "Directly correlates to the pipe-fitting and electrical wiring skills learned in the classroom, showing the collegiate pathway for these trades."
+    },
+    {
+      "name": "The Perot Museum of Nature and Science - Texas Instruments Engineering and Innovation Hall",
+      "location": "2201 N Field St, Dallas, TX 75201",
+      "description": "Exploration of the Engineering Hall, specifically exhibits focusing on circuits, structures, and materials science.",
+      "relevanceToCurriculum": "Reinforces the physics concepts of electricity and structural integrity utilized in the lamp design process."
+    }
+  ],
+  "activities": [
+    {
+      "title": "Lesson 1: The Physics of Light & Electrical Safety",
+      "description": "Students learn the fundamentals of AC electricity, circuit safety, and how to use a multimeter before touching construction materials. This establishes the safety baseline for the course.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Introductory",
+      "requiredSkills": [
+        "Basic arithmetic",
+        "Listening skills",
+        "Visual observation"
+      ],
+      "learningObjectives": [
+        "Understand basic AC current flow and the function of hot, neutral, and ground wires.",
+        "Demonstrate proper safety protocols for handling electrical components.",
+        "Identify the components of a standard lamp socket assembly."
+      ],
+      "teks": [
+        "Physics 112.39(c)(5)(F): Design, construct, and calculate in terms of current through, potential difference across, resistance of, and power used by electric circuit elements.",
+        "Integrated Physics and Chemistry 112.38(c)(5)(A): Demonstrate safe practices during laboratory and field investigations."
+      ],
+      "texasStemStandards": [
+        "Science Knowledge and Skills",
+        "STEM Content Application"
+      ],
+      "materialsList": [
+        {
+          "item": "Digital Multimeters",
+          "estimatedCost": "$15.00 each (Program Equipment)"
+        },
+        {
+          "item": "Lamp Socket Kits (for demonstration)",
+          "estimatedCost": "$6.00 each"
+        },
+        {
+          "item": "Safety Glasses",
+          "estimatedCost": "$3.00 each"
+        },
+        {
+          "item": "Wire Strippers",
+          "estimatedCost": "$8.00 each (Program Equipment)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Introduce AC circuit concepts.",
+          "Demonstrate wire stripping.",
+          "Explain wire color coding.",
+          "Demonstrate multimeter usage."
+        ],
+        "detailed": [
+          "Draw a complete circuit on the whiteboard showing source, load, and ground.",
+          "Demonstrate the tactile feel of stripping wire without cutting the copper strands using 14-gauge or 16-gauge strippers.",
+          "Detail the breakdown: Black (Hot/Load), White (Neutral), Green/Bare (Ground).",
+          "Show students how to set the multimeter to the Continuity (beep) setting to test for broken wires."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Strip sample wires.",
+          "Test continuity with multimeter.",
+          "Diagram a lamp circuit.",
+          "Take safety quiz."
+        ],
+        "detailed": [
+          "Take a 6-inch piece of spare wire and practice stripping 1/2 inch of insulation off both ends.",
+          "Touch multimeter probes to opposite ends of the wire; listen for the tone to confirm continuity.",
+          "Draw a schematic in your notebook labeling the Plug, Switch, Socket, and Bulb.",
+          "Complete the safety assessment with 100% accuracy before proceeding to tools."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science",
+          "Exposure to Engineering and Tech Careers"
+        ],
+        "allowableCosts": [
+          "Educational Supplies (Wire, Safety Glasses)",
+          "Equipment (Multimeters - if useful life > 1 year and cost < $5000)"
+        ],
+        "programType": "Both",
+        "justification": "Direct instruction in physics (electricity) meets the mandatory curriculum requirement for UB/UBMS.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Instruction in laboratory science",
+          "HEA Sec. 402E(b) - Instruction in science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(2) - Instruction in science",
+          "34 CFR 645.11(b)(1) - Academic instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies costs, including costs of computing devices",
+          "2 CFR 200.313 - Equipment management requirements"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics of electricity, electron flow, and conductivity.",
+        "technology": "Use of digital diagnostic tools (multimeters).",
+        "engineering": "Safety protocols in electrical engineering.",
+        "math": "Ohm's Law calculations (Voltage = Current x Resistance).",
+        "crossCurricularLinks": [
+          "Vocational Trades (Electrician)",
+          "Physics"
+        ]
+      },
+      "careerPathways": [
+        "Licensed Electrician",
+        "Electrical Engineer",
+        "Safety Inspector"
+      ],
+      "collegePathways": [
+        "B.S. Electrical Engineering",
+        "A.A.S. Electrical Technology",
+        "Occupational Safety and Health Certificate"
+      ]
+    },
+    {
+      "title": "Lesson 2: Design, BOM, and Budgeting",
+      "description": "Students use engineering design principles to sketch their lamp concepts. They must calculate the necessary pipe lengths and create a Bill of Materials (BOM) based on real-world pricing from Lowe's/Home Depot.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Multiplication/Addition (Money)",
+        "Geometry (Dimensions)",
+        "Web Navigation"
+      ],
+      "learningObjectives": [
+        "Create orthographic sketches of a 3D object.",
+        "Calculate total project cost using a Bill of Materials.",
+        "Differentiate between fitting types (elbows, tees, flanges, couplings)."
+      ],
+      "teks": [
+        "Engineering Design and Presentation I 130.362(c)(5)(A): Sketch and draw using orthographic projections.",
+        "Mathematical Models with Applications 111.43(c)(1)(B): Use a problem-solving model that incorporates analyzing given information, formulating a plan or strategy, determining a solution, justifying the solution, and evaluating the problem-solving process."
+      ],
+      "texasStemStandards": [
+        "Engineering Design Process",
+        "Creativity and Innovation"
+      ],
+      "materialsList": [
+        {
+          "item": "Graph Paper / Engineering Notebooks",
+          "estimatedCost": "$2.00 per student"
+        },
+        {
+          "item": "Lowe's/Home Depot Printed Catalogs or Tablets for Price Lookup",
+          "estimatedCost": "$0.00 (Online Resource)"
+        },
+        {
+          "item": "Rulers/Calipers",
+          "estimatedCost": "$5.00 each (Program Equipment)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain NPT vs actual diameter.",
+          "Show fitting examples.",
+          "Guide SKU lookup.",
+          "Set budget constraints."
+        ],
+        "detailed": [
+          "Explain that 1/2 inch NPT pipe actually has an outer diameter closer to 0.84 inches (critical for design).",
+          "Pass around physical examples of an Elbow 90, Street Elbow, Tee, and Floor Flange.",
+          "Demonstrate how to locate specific black iron pipe SKUs on Home Depot or Lowe's websites.",
+          "Establish the project constraints: Total materials must not exceed $30.00."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Sketch two design concepts.",
+          "Label fittings.",
+          "Create BOM spreadsheet.",
+          "Refine design to meet budget."
+        ],
+        "detailed": [
+          "Draw a 'Front View' and 'Side View' of your lamp on graph paper.",
+          "Label every joint (e.g., '1/2 inch 90-degree elbow').",
+          "List every single part required in a spreadsheet column.",
+          "Look up prices for each part, sum the total, and modify the design if the cost exceeds $30."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Academic Tutoring (Math/Budgeting)"
+        ],
+        "allowableCosts": [
+          "Educational Supplies (Paper, Pencils)",
+          "Computing Devices (Tablets for price lookup)"
+        ],
+        "programType": "Both",
+        "justification": "This lesson focuses on applied mathematics (budgeting, geometry) and engineering design, satisfying the math instruction component.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Instruction in mathematics",
+          "HEA Sec. 402E(b) - Exposure to new technologies"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(2) - Instruction in mathematics",
+          "34 CFR 645.11(b)(6) - Financial literacy (budgeting component)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Material properties (weight distribution).",
+        "technology": "Online database research for parts sourcing.",
+        "engineering": "Drafting and design logic; component compatibility.",
+        "math": "Budgeting, summation, geometry, and measurement.",
+        "crossCurricularLinks": [
+          "Economics",
+          "Art/Design"
+        ]
+      },
+      "careerPathways": [
+        "Cost Estimator",
+        "Industrial Designer",
+        "CAD Technician"
+      ],
+      "collegePathways": [
+        "B.S. Industrial Engineering",
+        "B.F.A. Industrial Design",
+        "A.A.S. Computer Aided Drafting and Design"
+      ]
+    },
+    {
+      "title": "Lesson 3: PVC Prototype Construction",
+      "description": "Students build their lamp structures using Schedule 40 PVC. This allows for low-cost errors and learning threading/fitting mechanics before moving to expensive steel.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Measurement reading",
+        "Hand tool usage"
+      ],
+      "learningObjectives": [
+        "Measure and cut PVC pipe to specific design lengths.",
+        "Assemble a stable mechanical structure.",
+        "Understand tolerance and friction fits."
+      ],
+      "teks": [
+        "Principles of Architecture 130.42(c)(10)(B): Use appropriate tools and equipment safely.",
+        "Geometry 111.41(c)(11)(B): Determine the area of composite two-dimensional figures comprised of combinations of polygons and circles (relevant to base stability)."
+      ],
+      "texasStemStandards": [
+        "Communication and Collaboration",
+        "Critical Thinking"
+      ],
+      "materialsList": [
+        {
+          "item": "1/2 inch Schedule 40 PVC Pipe (10ft length)",
+          "estimatedCost": "$6.00 per length"
+        },
+        {
+          "item": "PVC Fittings (Elbows, Tees, Adapters)",
+          "estimatedCost": "$0.50 - $1.50 each"
+        },
+        {
+          "item": "PVC Cutters",
+          "estimatedCost": "$12.00 each (Program Equipment)"
+        },
+        {
+          "item": "Measuring Tape",
+          "estimatedCost": "$5.00 each (Program Equipment)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Demonstrate PVC cutters.",
+          "Explain dry fitting.",
+          "Discuss Center of Gravity.",
+          "Supervise cutting."
+        ],
+        "detailed": [
+          "Show how to ratchet the PVC cutters slowly to get a straight cut; do not force it.",
+          "Explain that we are 'dry fitting' (no glue) because we reuse these parts for the next class, but real plumbing requires solvent welding.",
+          "Discuss the Center of Gravity: if the lamp head extends too far forward, the base must be heavy or wide enough to counter it.",
+          "Maintain strict supervision at the cutting station to ensure fingers remain clear of blades."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Measure and mark PVC.",
+          "Cut pipe sections.",
+          "Assemble frame.",
+          "Test stability."
+        ],
+        "detailed": [
+          "Using your BOM from Lesson 2, mark the cut lines on the long PVC pipe with a marker.",
+          "Use the ratcheting cutters to create your pipe segments.",
+          "Press the pipes into the fittings firmly to assemble the lamp shape.",
+          "Place the lamp on a flat surface. Tap it gently. If it falls, you must redesign the legs/base."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Mentoring",
+          "Exposure to STEM Programs"
+        ],
+        "allowableCosts": [
+          "Workshop materials (PVC pipe is a consumable supply)"
+        ],
+        "programType": "UBMS",
+        "justification": "Hands-on engineering fabrication. While valid for UB, this aligns strongly with UBMS goals of providing intensive STEM experiences.",
+        "heaRequirements": [
+          "HEA Sec. 402E(b) - Hands-on experience in laboratories"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1) - Personal counseling (Mentoring during build)",
+          "34 CFR 645.11(a)(2) - Science instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Statics (Physics) - Center of mass.",
+        "technology": "Manufacturing technology.",
+        "engineering": "Structural engineering and assembly.",
+        "math": "Measurement conversions and precision.",
+        "crossCurricularLinks": [
+          "Construction Technology",
+          "Sculpture"
+        ]
+      },
+      "careerPathways": [
+        "Plumber / Pipefitter",
+        "Structural Engineer",
+        "Manufacturing Assembler"
+      ],
+      "collegePathways": [
+        "B.S. Civil Engineering",
+        "A.A.S. Construction Management",
+        "A.A.S. Manufacturing Technology"
+      ]
+    },
+    {
+      "title": "Lesson 4: Wiring the PVC Lamp",
+      "description": "Students install the electrical components into their PVC prototype. They will pull wire through the tubing and wire the socket. This bridges the structural build with the electrical theory.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Fine motor skills",
+        "Sequence following",
+        "Knot tying"
+      ],
+      "learningObjectives": [
+        "Successfully fish electrical wire through a tubular conduit.",
+        "Wire a polarized plug and socket correctly (Hot to Brass, Neutral to Silver).",
+        "Tie an Underwriter's Knot for strain relief."
+      ],
+      "teks": [
+        "Principles of Construction 130.42(c)(10)(C): Demonstrate knowledge of electrical safety.",
+        "Physics 112.39(c)(5)(E): Characterize materials as conductors or insulators."
+      ],
+      "texasStemStandards": [
+        "Resilience and Perseverance",
+        "STEM Content Application"
+      ],
+      "materialsList": [
+        {
+          "item": "Lamp Cord sets (18 gauge)",
+          "estimatedCost": "$5.00 each"
+        },
+        {
+          "item": "Make-a-Lamp Socket Kits",
+          "estimatedCost": "$6.00 each"
+        },
+        {
+          "item": "Electrical Tape",
+          "estimatedCost": "$2.00 roll"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Teach Underwriter's Knot.",
+          "Identify Ribbed vs Smooth wire.",
+          "Explain polarization.",
+          "Inspect wiring."
+        ],
+        "detailed": [
+          "Demonstrate the 'Underwriter's Knot' which prevents the wire from being ripped out of the socket terminals if the cord is yanked.",
+          "Show close-ups of the wire insulation: Ribbed/Squared is Neutral, Smooth/Round is Hot.",
+          "Explain that the wide blade on a plug is Neutral, connecting to the silver screw, ensuring the threaded socket shell is never electrified.",
+          "Physically inspect every student's connections before allowing them to close the socket shell."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Fish wire through pipe.",
+          "Strip wire ends.",
+          "Tie strain-relief knot.",
+          "Connect terminals.",
+          "Close socket."
+        ],
+        "detailed": [
+          "Feed the cut end of the lamp cord from the bottom of the PVC base up to the top opening.",
+          "Separate the two wires about 2 inches down and strip 1/2 inch off the ends.",
+          "Tie the Underwriter's Knot inside the socket base.",
+          "Connect the Smooth (Hot) wire to the Brass screw and the Ribbed (Neutral) wire to the Silver screw. Tighten clockwise.",
+          "Snap the socket shell together until it clicks."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Lab Science",
+          "Technical Skills Training"
+        ],
+        "allowableCosts": [
+          "Educational Supplies (Lamp kits)"
+        ],
+        "programType": "Both",
+        "justification": "Direct application of physics principles. The lamp kits are allowable supplies as they are necessary for the instruction of electrical circuits.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Instruction in science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(2) - Science instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Conductivity and insulation.",
+        "technology": "Electrical systems.",
+        "engineering": "Electrical engineering and systems integration.",
+        "math": "Logic (Circuit topology).",
+        "crossCurricularLinks": [
+          "Residential Wiring",
+          "Safety Management"
+        ]
+      },
+      "careerPathways": [
+        "Residential Wireman",
+        "Avionics Technician",
+        "Electrical Systems Assembler"
+      ],
+      "collegePathways": [
+        "A.A.S. Mechatronics",
+        "B.S. Electrical Engineering",
+        "Certificate in Electrical Technology"
+      ]
+    },
+    {
+      "title": "Lesson 5: Industrial Steel Lamp Build",
+      "description": "Students graduate to Black Iron Pipe. This involves handling heavier materials, cleaning industrial grease, and dealing with thread friction. This lesson simulates real-world trade work.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Physical strength (moderate)",
+        "Attention to detail",
+        "Process following"
+      ],
+      "learningObjectives": [
+        "Assemble threaded steel pipe with proper torque.",
+        "Clean and prep industrial materials (degreasing).",
+        "Compare material properties of PVC vs. Steel (density, rigidity)."
+      ],
+      "teks": [
+        "Manufacturing Engineering Technology II 130.369(c)(6)(B): Perform material processing.",
+        "Chemistry 112.35(c)(4)(A): Differentiate between physical and chemical changes and properties (oxidation/rust prevention)."
+      ],
+      "texasStemStandards": [
+        "Employability Skills",
+        "Design Process"
+      ],
+      "materialsList": [
+        {
+          "item": "1/2 inch Black Iron Pipe Nipples (various lengths)",
+          "estimatedCost": "$2.00 - $6.00 each"
+        },
+        {
+          "item": "Black Iron Fittings (Elbows, Flanges)",
+          "estimatedCost": "$2.50 - $6.00 each"
+        },
+        {
+          "item": "Degreaser / Shop Rags",
+          "estimatedCost": "$10.00 per class"
+        },
+        {
+          "item": "Work Gloves",
+          "estimatedCost": "$3.00 pair"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Safety warning (grease/weight).",
+          "Discuss Galvanic Corrosion.",
+          "Explain thread friction.",
+          "Guide cleaning process."
+        ],
+        "detailed": [
+          "Warn students that black iron pipes come coated in protective oil that stains clothes. Gloves are mandatory.",
+          "Discuss 'Galvanic Corrosion' (Science connection) - why we don't mix copper and steel directly without a dielectric union usually.",
+          "Explain that pipe threads are tapered (NPT), meaning they get tighter as you turn them, creating a mechanical seal.",
+          "Demonstrate how to thoroughly degrease the pipe before assembly so the lamp is clean for home use."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Wear gloves and clean pipes.",
+          "Assemble base flange.",
+          "Feed wire during assembly.",
+          "Tighten connections."
+        ],
+        "detailed": [
+          "Put on gloves. Spray degreaser on the iron pipes and wipe aggressively with rags until the black oil is gone.",
+          "Screw the vertical pipe into the heavy floor flange.",
+          "Feed the electrical wire through the pipes *as you build*. You cannot push the wire through sharp iron elbows after the lamp is fully built.",
+          "Tighten all connections by hand, then use a tool (or strong grip) to add a 1/4 turn for security."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Exposure to Career and Technical Education (CTE)",
+          "Mentoring"
+        ],
+        "allowableCosts": [
+          "Educational Supplies (Pipes, Fittings, Cleaning supplies)"
+        ],
+        "programType": "UB",
+        "justification": "Provides exposure to skilled trades and engineering materials. Allowable as an enrichment workshop material cost.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Exposure to career opportunities"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(5) - Career awareness",
+          "34 CFR 645.40 - Allowable costs"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Chemistry (Solvents/Degreasers, Oxidation).",
+        "technology": "Industrial materials processing.",
+        "engineering": "Mechanical assembly and material science.",
+        "math": "Rotational geometry (threads per inch).",
+        "crossCurricularLinks": [
+          "Industrial Arts",
+          "Chemistry"
+        ]
+      },
+      "careerPathways": [
+        "Materials Scientist",
+        "Petroleum Engineer",
+        "Pipefitter / Steamfitter"
+      ],
+      "collegePathways": [
+        "B.S. Materials Science & Engineering",
+        "B.S. Petroleum Engineering",
+        "A.A.S. Welding Technology"
+      ]
+    },
+    {
+      "title": "Lesson 6: Final Wiring, Testing, and Analysis",
+      "description": "Final wiring of the steel lamp, bulb installation, safety testing, and a cost/benefit analysis presentation comparing the PVC prototype to the Steel final product.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Public speaking",
+        "Critical analysis",
+        "Final assembly"
+      ],
+      "learningObjectives": [
+        "Complete the manufacturing assembly of a consumer product.",
+        "Perform quality assurance (QA) testing.",
+        "Present a cost-benefit analysis of materials used."
+      ],
+      "teks": [
+        "Scientific Research and Design 130.372(c)(2)(H): Communicate valid conclusions supported by the data through various methods such as lab reports, labeled drawings, or graphic organizers.",
+        "Economics with Emphasis on the Free Enterprise System 118.4(c)(2)(B): Analyze the relationship between cost and production."
+      ],
+      "texasStemStandards": [
+        "Communication and Collaboration",
+        "Global Citizenship"
+      ],
+      "materialsList": [
+        {
+          "item": "LED Edison Bulbs",
+          "estimatedCost": "$5.00 each"
+        },
+        {
+          "item": "Felt pads (for lamp base)",
+          "estimatedCost": "$0.50 per lamp"
+        },
+        {
+          "item": "Presentation Rubrics",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Conduct final safety check.",
+          "Discuss Value vs Cost.",
+          "History of Incandescent Bulb.",
+          "Evaluate presentations."
+        ],
+        "detailed": [
+          "Perform a continuity check on every lamp to ensure no short circuits exist before plugging into the wall.",
+          "Facilitate a discussion: The PVC lamp cost $12, the Steel lamp cost $30. Why would a customer pay $60 for the steel one? (Aesthetics, Durability).",
+          "Briefly discuss Thomas Edison, the carbon filament, and the shift to LED efficiency.",
+          "Use the rubric to evaluate student communication skills during their analysis presentation."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Wire final socket.",
+          "Apply finish protections.",
+          "Install bulb and test.",
+          "Present analysis."
+        ],
+        "detailed": [
+          "Wire the final socket on the steel lamp using the skills from Lesson 4.",
+          "Stick felt pads to the bottom of the iron flange to prevent it from scratching furniture.",
+          "Install the LED bulb, plug it in, and switch it on (after teacher approval).",
+          "Stand and present: Total Cost, Hardest Challenge, and One Improvement you would make for Version 2.0."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Math/Science",
+          "Academic Support"
+        ],
+        "allowableCosts": [
+          "Educational Supplies (Bulbs, finishing materials)"
+        ],
+        "programType": "Both",
+        "justification": "The final presentation solidifies the academic learning objectives (Math/Science analysis). The supplies remain allowable as project materials.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Instruction in core curriculum",
+          "HEA Sec. 402E(b) - Scientific research exposure"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(2) - Instruction in literature/composition (presentation skills)",
+          "34 CFR 645.11(b)(6) - Financial literacy (cost analysis)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Energy efficiency (LED vs Incandescent).",
+        "technology": "Consumer product design.",
+        "engineering": "Quality Assurance (QA) and testing.",
+        "math": "Cost benefit analysis (Economics).",
+        "crossCurricularLinks": [
+          "Public Speaking",
+          "Entrepreneurship"
+        ]
+      },
+      "careerPathways": [
+        "Product Manager",
+        "Quality Assurance (QA) Engineer",
+        "Entrepreneur"
+      ],
+      "collegePathways": [
+        "Master of Business Administration (MBA)",
+        "B.S. Engineering Management",
+        "B.A. Communications"
+      ]
+    }
+  ]
+}

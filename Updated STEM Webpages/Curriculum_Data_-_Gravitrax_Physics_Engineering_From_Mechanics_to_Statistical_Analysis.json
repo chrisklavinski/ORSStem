@@ -1,0 +1,1832 @@
+{
+  "curriculumTitle": "Gravitrax Physics & Engineering: From Mechanics to Statistical Analysis",
+  "overview": "A 20-lesson comprehensive STEM curriculum for High School students (Upward Bound/UBMS) using Gravitrax marble run systems to explore Newtonian physics, kinetic and potential energy, engineering design constraints, and statistical quality control. The curriculum progresses from basic mechanical concepts to complex systems engineering and statistical data analysis, aligned with Texas TEKS for Physics and Mathematics.",
+  "prerequisites": "Completion of Algebra I (for variable manipulation and quadratic equations); enrollment in or completion of High School Physics is recommended but not required.",
+  "targetAgeGroup": "High School (Ages 14-18)",
+  "totalDurationEstimate": "800 minutes (20 sessions x 40 minutes)",
+  "fieldTrips": [
+    {
+      "name": "Six Flags Over Texas - Physics Day",
+      "location": "Arlington, TX (Tarrant County)",
+      "description": "A guided educational tour of the theme park focusing on roller coaster physics, including G-force, centripetal force, and energy conservation.",
+      "relevanceToCurriculum": "Direct real-world application of the Gravitrax loop and slope concepts (Activities 2, 3, and 6) on a macro scale."
+    },
+    {
+      "name": "Perot Museum of Nature and Science - Texas Instruments Engineering and Innovation Hall",
+      "location": "Dallas, TX (Dallas County)",
+      "description": "Interactive exploration of engineering challenges, robotics, and structural design.",
+      "relevanceToCurriculum": "Reinforces the Engineering Design Process (Activity 13) and structural engineering concepts (Activity 16)."
+    },
+    {
+      "name": "University of Texas at Arlington (UTA) - Civil Engineering Laboratory",
+      "location": "Arlington, TX (Tarrant County)",
+      "description": "Campus visit and tour of the Civil Engineering department's concrete and steel testing labs.",
+      "relevanceToCurriculum": "Connects curriculum activities regarding materials, load-bearing structures, and friction to collegiate research."
+    }
+  ],
+  "activities": [
+    {
+      "title": "Activity 1: Introduction to Potential Energy & System Components",
+      "description": "Students explore the Gravitrax components and establish the fundamental relationship between height (gravitational potential energy) and motion.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Measurement",
+        "Basic Algebra"
+      ],
+      "learningObjectives": [
+        "Identify and classify mechanical components of the Gravitrax system.",
+        "Define Gravitational Potential Energy (PEg).",
+        "Calculate PEg based on height measurements of the marble start point."
+      ],
+      "teks": [
+        "Physics 6(B): Investigate examples of kinetic and potential energy and their transformations.",
+        "Physics 2(E): Design and implement investigative procedures."
+      ],
+      "texasStemStandards": [
+        "STEM 1(A): Apply the engineering design process.",
+        "STEM 4(B): Use appropriate tools and technology."
+      ],
+      "materialsList": [
+        {
+          "item": "Gravitrax Pro Starter Set (1 per group of 3)",
+          "estimatedCost": "$80.00"
+        },
+        {
+          "item": "Metric Rulers/Tape Measure",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Digital Scale (to weigh marbles)",
+          "estimatedCost": "$15.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Distribute kits and allow 10 minutes for open exploration/inventory.",
+          "Guide students to calculate Potential Energy (PE = mgh) at the start."
+        ],
+        "detailed": [
+          "Instruct students to weigh the marble (mass) in kilograms using the digital scale.",
+          "Challenge students to build a simple track with the highest possible starting point using only the pillars provided.",
+          "Ensure students measure height in meters, not centimeters, for the Joule calculation."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Inventory your kit and build a simple high slope.",
+          "Calculate the Potential Energy of your marble."
+        ],
+        "detailed": [
+          "Identify base plates, pillars, tracks, and the starter block.",
+          "Weigh your marble and record the mass in kg.",
+          "Build a simple single-track slope starting at the highest elevation possible.",
+          "Measure the height (h) from the table to the release point in meters.",
+          "Calculate the Potential Energy: PE = mass × 9.8 × height."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science",
+          "Instruction in Mathematics"
+        ],
+        "allowableCosts": [
+          "Educational Supplies (Gravitrax Kits)",
+          "Curriculum Materials"
+        ],
+        "programType": "Both",
+        "justification": "Provides rigorous supplemental instruction in Physics (Energy) through hands-on laboratory experience.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Instruction in laboratory science and mathematics"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Curriculum instruction in science/math"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.454 - Student Support Costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics: Gravitational Potential Energy concepts.",
+        "technology": "Use of digital measurement tools.",
+        "engineering": "Structural stability of vertical pillars.",
+        "math": "Algebraic calculation of PE = mgh.",
+        "crossCurricularLinks": [
+          "Mathematics (Algebra)",
+          "Physical Science"
+        ]
+      },
+      "careerPathways": [
+        "Mechanical Engineer",
+        "Physicist"
+      ],
+      "collegePathways": [
+        "B.S. Physics",
+        "B.S. Mechanical Engineering"
+      ]
+    },
+    {
+      "title": "Activity 2: Kinetic Energy & Conservation Principles",
+      "description": "Students convert potential energy into kinetic energy, calculating theoretical vs. actual velocity to identify energy loss.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Algebra II",
+        "Data Collection"
+      ],
+      "learningObjectives": [
+        "Calculate Kinetic Energy (KE).",
+        "Apply the Law of Conservation of Energy.",
+        "Analyze why theoretical velocity differs from actual velocity (friction)."
+      ],
+      "teks": [
+        "Physics 6(D): Demonstrate and apply the laws of conservation of energy.",
+        "Physics 4(B): Describe and analyze motion in one dimension."
+      ],
+      "texasStemStandards": [
+        "STEM 3(A): Use critical thinking to solve problems.",
+        "STEM 2(C): Collect and analyze data."
+      ],
+      "materialsList": [
+        {
+          "item": "Gravitrax Kit",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Stopwatch (or Phone)",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Review KE formula and conservation of energy.",
+          "Facilitate velocity calculation comparison."
+        ],
+        "detailed": [
+          "Review the formula for Kinetic Energy (KE = 0.5 * m * v^2).",
+          "Have students equate Initial PE to Final KE to solve for theoretical velocity.",
+          "Have students time the run over a known distance to find average velocity.",
+          "Lead discussion: Why is the measured velocity lower than the calculated velocity?"
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Rebuild the track and calculate theoretical velocity.",
+          "Measure actual velocity and compare."
+        ],
+        "detailed": [
+          "Calculate the theoretical final velocity assuming 100% energy transfer (PE_top = KE_bottom).",
+          "Measure the length of the track.",
+          "Release the marble and time how long it takes to reach the bottom.",
+          "Calculate average velocity (Distance / Time) and compare it to the theoretical maximum."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science",
+          "Tutoring"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Reinforces core science curriculum (Physics) regarding conservation of energy laws.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Instruction in science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b) - Academic tutoring"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404 - Reasonable costs for program objectives"
+        ]
+      },
+      "stemConnections": {
+        "science": "Energy transformation (Potential to Kinetic).",
+        "technology": "Data collection using timing devices.",
+        "engineering": "System efficiency analysis.",
+        "math": "Solving quadratic equations for velocity.",
+        "crossCurricularLinks": [
+          "Mathematics (Quadratics)"
+        ]
+      },
+      "careerPathways": [
+        "Energy Systems Engineer",
+        "Automotive Engineer"
+      ],
+      "collegePathways": [
+        "B.S. General Engineering",
+        "B.S. Applied Physics"
+      ]
+    },
+    {
+      "title": "Activity 3: Velocity Vectors & Slope Analysis",
+      "description": "Investigating how the angle of the track affects acceleration and velocity components.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Trigonometry",
+        "Graphing"
+      ],
+      "learningObjectives": [
+        "Deconstruct gravity into vector components along a slope.",
+        "Determine how slope angle affects acceleration.",
+        "Graph the relationship between height difference and run time."
+      ],
+      "teks": [
+        "Physics 4(D): Calculate the effect of forces on objects, including the law of inertia.",
+        "Math Models 5(A): Use quadratic functions to model situations."
+      ],
+      "texasStemStandards": [
+        "STEM 5(B): Interpret data to draw conclusions."
+      ],
+      "materialsList": [
+        {
+          "item": "Gravitrax Kit",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Protractor",
+          "estimatedCost": "$2.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Introduce vector resolution (gravity splitting).",
+          "Compare tracks of equal length but different slopes."
+        ],
+        "detailed": [
+          "Introduce vector resolution (gravity splitting into normal force and parallel force).",
+          "Challenge students to build 3 tracks with different slopes but the same total length.",
+          "Ask students to predict which slope yields the fastest time."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Build three tracks with different angles.",
+          "Record run times and graph the results."
+        ],
+        "detailed": [
+          "Construct three track sections with varying steepness (using height tiles).",
+          "Measure the angle of each track using a protractor.",
+          "Run the marble on each track 3 times and record average times.",
+          "Create a simple graph: X-axis (Angle), Y-axis (Time)."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Advanced physics instruction regarding vector analysis and forces.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Mathematics instruction"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Required academic instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403 - Allocability of costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Forces on an inclined plane.",
+        "technology": "N/A",
+        "engineering": "Civil engineering concepts (road grading).",
+        "math": "Trigonometry (Sine/Cosine) for vectors.",
+        "crossCurricularLinks": [
+          "Pre-Calculus"
+        ]
+      },
+      "careerPathways": [
+        "Civil Engineer",
+        "Surveyor"
+      ],
+      "collegePathways": [
+        "B.S. Civil Engineering",
+        "B.S. Mathematics"
+      ]
+    },
+    {
+      "title": "Activity 4: Friction Fighters - Energy Loss",
+      "description": "Students experiment with different track configurations to minimize friction and maximize run distance.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Observation",
+        "Controlled Testing"
+      ],
+      "learningObjectives": [
+        "Define friction and its effect on mechanical systems.",
+        "Identify sources of friction in the Gravitrax system (air resistance, rolling resistance, rail contact).",
+        "Optimize a track for maximum distance."
+      ],
+      "teks": [
+        "Physics 4(F): Identify and describe motion relative to different frames of reference.",
+        "Physics 6(A): Investigate work and power."
+      ],
+      "texasStemStandards": [
+        "STEM 1(C): Evaluate designs."
+      ],
+      "materialsList": [
+        {
+          "item": "Gravitrax Kit",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Masking Tape (for floor marking)",
+          "estimatedCost": "$3.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Discuss non-conservative forces (Friction).",
+          "Run a contest for the longest floor roll distance."
+        ],
+        "detailed": [
+          "Discuss non-conservative forces (Friction) and where it occurs on the track.",
+          "Set a challenge: Who can make the marble roll the furthest on the floor after leaving the track, starting from a fixed height?",
+          "Discuss why curved rails might introduce more friction than straight rails."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Build a ramp to launch the marble onto the floor.",
+          "Optimize the track to maximize distance."
+        ],
+        "detailed": [
+          "Build a ramp starting at exactly 4 height tiles high.",
+          "Experiment with the track path leading to the floor exit.",
+          "Measure the distance the marble rolls on the flat floor.",
+          "Modify the track (remove curves, check connections) to try and increase the distance."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Hands-on inquiry-based science learning focused on forces and motion.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Instruction in Science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Academic instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404 - Reasonable Costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Frictional forces and energy dissipation.",
+        "technology": "N/A",
+        "engineering": "Efficiency optimization.",
+        "math": "Measurement and data comparison.",
+        "crossCurricularLinks": [
+          "Physics"
+        ]
+      },
+      "careerPathways": [
+        "Tribologist",
+        "Mechanical Engineer"
+      ],
+      "collegePathways": [
+        "B.S. Materials Science",
+        "B.S. Mechanical Engineering"
+      ]
+    },
+    {
+      "title": "Activity 5: The Gauss Cannon - Magnetic Acceleration",
+      "description": "Analyzing the Magnetic Cannon component to understand magnetism and momentum transfer.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Conceptual Physics",
+        "Safety Awareness"
+      ],
+      "learningObjectives": [
+        "Explain the transfer of momentum in collisions.",
+        "Understand how magnetic potential energy is converted to kinetic energy.",
+        "Calculate the 'gain' in velocity provided by the cannon."
+      ],
+      "teks": [
+        "Physics 6(F): Investigate magnetic fields and their origin.",
+        "Physics 6(C): Calculate mechanical energy power and momentum."
+      ],
+      "texasStemStandards": [
+        "STEM 6(A): Apply principles of physics."
+      ],
+      "materialsList": [
+        {
+          "item": "Gravitrax Kit (with Magnetic Cannon)",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Introduce the Gauss Rifle/Cannon concept.",
+          "Oversee experiments with input/output velocity."
+        ],
+        "detailed": [
+          "Introduce the concept of the Gauss Rifle/Cannon.",
+          "Explain that the magnet pulls the incoming ball (adding KE), and the impact transfers momentum to the outgoing ball, which leaves the magnetic field too fast to be pulled back.",
+          "Safety Note: Do not aim cannons at faces."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Set up the Magnetic Cannon.",
+          "Observe how input speed affects output speed."
+        ],
+        "detailed": [
+          "Set up a flat track with the Magnetic Cannon in the middle.",
+          "Roll a marble slowly into the input side.",
+          "Observe the velocity of the output marble.",
+          "Experiment: Does the speed of the incoming marble affect the speed of the outgoing marble significantly? Test and record."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Specialized instruction in electromagnetism and mechanics.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Instruction in science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Academic instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403 - Allocability"
+        ]
+      },
+      "stemConnections": {
+        "science": "Magnetism and Momentum.",
+        "technology": "Magnetic propulsion systems.",
+        "engineering": "Energy boosting mechanisms.",
+        "math": "Momentum equations (p=mv).",
+        "crossCurricularLinks": [
+          "Physics (Electromagnetism)"
+        ]
+      },
+      "careerPathways": [
+        "Electromagnetic Engineer",
+        "Particle Physicist"
+      ],
+      "collegePathways": [
+        "B.S. Electrical Engineering",
+        "B.S. Physics"
+      ]
+    },
+    {
+      "title": "Activity 6: Circular Motion & Loops",
+      "description": "Using the loop component (if available) or tight curves to explore centripetal force.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Geometry",
+        "Algebra"
+      ],
+      "learningObjectives": [
+        "Define Centripetal Force.",
+        "Calculate the minimum velocity required to complete a vertical loop.",
+        "Analyze the role of inertia in curves."
+      ],
+      "teks": [
+        "Physics 4(C): Analyze and describe accelerated motion in two dimensions, including circular motion.",
+        "Physics 4(D): Calculate the effect of forces."
+      ],
+      "texasStemStandards": [
+        "STEM 3(B): Apply scientific theories."
+      ],
+      "materialsList": [
+        {
+          "item": "Gravitrax Kit (Loop expansion recommended)",
+          "estimatedCost": "$15.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Diagram the forces at the top of a loop.",
+          "Derive minimum speed formula."
+        ],
+        "detailed": [
+          "Draw a free body diagram of a marble at the top of a loop.",
+          "Derive the minimum speed formula: v = sqrt(g*r).",
+          "Challenge students to find the minimum starting height required to clear the loop."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Install the loop component.",
+          "Determine the minimum height needed for the marble to complete the loop."
+        ],
+        "detailed": [
+          "Install the Loop component.",
+          "Start the marble from 3 height tiles. Does it make it?",
+          "Increase height by 1 tile until the marble successfully completes the loop.",
+          "Measure the radius of the loop and calculate the theoretical minimum speed needed at the top."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science",
+          "Instruction in Mathematics"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Advanced physics concepts (circular motion) preparing students for college-level mechanics.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Instruction in mathematics/science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Academic instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404 - Reasonable Costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Centripetal force and gravity.",
+        "technology": "N/A",
+        "engineering": "Roller coaster design.",
+        "math": "Geometry (circles) and Algebra.",
+        "crossCurricularLinks": [
+          "Calculus (Derivatives)"
+        ]
+      },
+      "careerPathways": [
+        "Amusement Ride Engineer",
+        "Aeronautical Engineer"
+      ],
+      "collegePathways": [
+        "B.S. Mechanical Engineering",
+        "B.S. Aerospace Engineering"
+      ]
+    },
+    {
+      "title": "Activity 7: Projectile Motion (The Jump)",
+      "description": "Students use the Trampoline or Jump components to analyze 2D projectile motion.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Vector Analysis",
+        "Quadratic Equations"
+      ],
+      "learningObjectives": [
+        "Analyze motion in X (horizontal) and Y (vertical) dimensions independently.",
+        "Predict landing spots based on launch velocity.",
+        "Adjust launch angles/heights to hit a target."
+      ],
+      "teks": [
+        "Physics 4(C): Analyze accelerated motion in two dimensions (projectile motion).",
+        "Math Pre-Calculus 2(K): Analyze projectile motion."
+      ],
+      "texasStemStandards": [
+        "STEM 4(A): Demonstrate analytical skills."
+      ],
+      "materialsList": [
+        {
+          "item": "Gravitrax Kit (Jump/Trampoline)",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Carbon paper (optional for marking landing)",
+          "estimatedCost": "$5.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain independence of X and Y motion.",
+          "Facilitate a target-hitting challenge."
+        ],
+        "detailed": [
+          "Discuss independence of horizontal and vertical motion.",
+          "Set up a 'gap' in the track using the Jump component.",
+          "Have students calculate the horizontal distance the ball will travel based on estimated speed."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Set up a jump and a landing target.",
+          "Adjust height and speed to hit the target accurately."
+        ],
+        "detailed": [
+          "Construct a track with a Jump component.",
+          "Place a landing target (piece of paper) where you think the ball will land.",
+          "Run the trial. Measure the error distance.",
+          "Adjust the starting height to change initial velocity and hit the target."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science",
+          "Instruction in Mathematics"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Core physics curriculum alignment (Projectile Motion).",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Instruction in math/science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Academic instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404 - Reasonable Costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Kinematics in 2D.",
+        "technology": "Ballistics calculations.",
+        "engineering": "Targeting systems.",
+        "math": "Parabolic functions.",
+        "crossCurricularLinks": [
+          "Pre-Calculus"
+        ]
+      },
+      "careerPathways": [
+        "Ballistics Expert",
+        "Aerospace Engineer"
+      ],
+      "collegePathways": [
+        "B.S. Physics",
+        "B.S. Applied Mathematics"
+      ]
+    },
+    {
+      "title": "Activity 8: The Hammer - Mechanical Advantage",
+      "description": "Using the Hammer accessory to explore levers and torque.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Diagramming",
+        "Algebra"
+      ],
+      "learningObjectives": [
+        "Define Torque and Mechanical Advantage.",
+        "Identify the fulcrum, load, and effort in the Hammer component.",
+        "Explain how potential energy is stored in the raised hammer."
+      ],
+      "teks": [
+        "Physics 6(A): Investigate and calculate work and power.",
+        "Physics 6(C): Calculate mechanical energy."
+      ],
+      "texasStemStandards": [
+        "STEM 1(A): Apply engineering design."
+      ],
+      "materialsList": [
+        {
+          "item": "Gravitrax Kit (Hammer)",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain the 3 classes of levers.",
+          "Analyze the Hammer component as a lever system."
+        ],
+        "detailed": [
+          "Explain the physics of a lever (Class 1, 2, 3).",
+          "Analyze the Hammer component: The incoming ball triggers the release (effort), converting the hammer's PE to KE to strike the second ball.",
+          "Discuss efficiency: Is energy gained or lost?"
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Install the Hammer.",
+          "Diagram the lever mechanics and test upward propulsion."
+        ],
+        "detailed": [
+          "Install the Hammer component in a track.",
+          "Observe the trigger mechanism closely.",
+          "Draw a diagram labeling the fulcrum and the lever arm.",
+          "Test if the Hammer can drive a marble up a slope steeper than the one the trigger marble came down."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Physics instruction on simple machines and energy conservation.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Instruction in science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Academic instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403 - Allocability"
+        ]
+      },
+      "stemConnections": {
+        "science": "Torque and Levers.",
+        "technology": "Mechanical triggers.",
+        "engineering": "Mechanical linkage design.",
+        "math": "Ratio and proportion.",
+        "crossCurricularLinks": [
+          "Physics"
+        ]
+      },
+      "careerPathways": [
+        "Mechanical Engineer",
+        "Industrial Designer"
+      ],
+      "collegePathways": [
+        "B.S. Mechanical Engineering",
+        "A.A.S. Mechanical Technology"
+      ]
+    },
+    {
+      "title": "Activity 9: Collisions & Momentum",
+      "description": "Creating head-on collisions or rear-end collisions to observe conservation of momentum.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Observation",
+        "Algebra"
+      ],
+      "learningObjectives": [
+        "Distinguish between elastic and inelastic collisions.",
+        "Apply Conservation of Momentum.",
+        "Observe energy transfer between identical masses."
+      ],
+      "teks": [
+        "Physics 6(C): Calculate mechanical energy, power, and momentum.",
+        "Physics 6(D): Apply laws of conservation."
+      ],
+      "texasStemStandards": [
+        "STEM 2(B): Use scientific inquiry."
+      ],
+      "materialsList": [
+        {
+          "item": "Gravitrax Kit",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Review Momentum formula (p=mv).",
+          "Setup collision scenarios (Newton's Cradle style)."
+        ],
+        "detailed": [
+          "Review p = mv.",
+          "Set up a scenario where one stationary marble is hit by a moving marble.",
+          "Ask students to predict the velocity of both marbles after impact (Newton's Cradle effect)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Create collision setups with stationary marbles.",
+          "Record velocity changes after impact."
+        ],
+        "detailed": [
+          "Place a stationary marble on a flat rail section.",
+          "Release a second marble from a slope to strike the stationary one.",
+          "Record observations: Does the first marble stop? Does the second move at the same speed?",
+          "Try with 2 stationary marbles in a row."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Foundational physics instruction regarding momentum.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Instruction in science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Academic instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404 - Reasonable Costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Conservation of Momentum.",
+        "technology": "Crash safety physics.",
+        "engineering": "Impact attenuation.",
+        "math": "Linear equations.",
+        "crossCurricularLinks": [
+          "Physics"
+        ]
+      },
+      "careerPathways": [
+        "Safety Engineer",
+        "Accident Reconstructionist"
+      ],
+      "collegePathways": [
+        "B.S. Physics",
+        "B.S. Automotive Engineering"
+      ]
+    },
+    {
+      "title": "Activity 10: Logic Gates & Switches",
+      "description": "Using switches/splitters to create mechanical logic (IF/THEN paths).",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Logic",
+        "Systems Thinking"
+      ],
+      "learningObjectives": [
+        "Understand basic logic gates (OR, AND, NOT) physically.",
+        "Design a track that splits marbles alternately.",
+        "Predict pathing outcomes based on input sequence."
+      ],
+      "teks": [
+        "Computer Science I 4(A): Develop algorithms.",
+        "STEM 1(B): Use problem-solving models."
+      ],
+      "texasStemStandards": [
+        "STEM 6(D): Demonstrate understanding of computer science concepts."
+      ],
+      "materialsList": [
+        {
+          "item": "Gravitrax Kit (Switches/Splitters)",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain binary logic using mechanical switches.",
+          "Challenge students to build a counter."
+        ],
+        "detailed": [
+          "Introduce the concept of a mechanical switch acting as a binary bit (Left = 0, Right = 1).",
+          "Challenge students to build a 'counter' that sends every 4th marble to a specific finish line."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Study the toggle mechanism of the switch.",
+          "Build a logic path and truth table."
+        ],
+        "detailed": [
+          "Examine the green switch component. Note how it toggles after a marble passes.",
+          "Build a system with cascading switches.",
+          "Map out a 'truth table': If I send 3 marbles, where do they end up?",
+          "Verify your truth table with a test run."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Exposure to STEM Careers (Computer Science)"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Interdisciplinary activity linking mechanics to computer science logic.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Instruction in math",
+          "HEA Sec. 402H - STEM emphasis"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Academic instruction",
+          "34 CFR 645.11(a)(3) - Career exploration"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403 - Allocability"
+        ]
+      },
+      "stemConnections": {
+        "science": "Mechanical systems.",
+        "technology": "Binary logic and computation.",
+        "engineering": "Automation.",
+        "math": "Logic and probability.",
+        "crossCurricularLinks": [
+          "Computer Science"
+        ]
+      },
+      "careerPathways": [
+        "Computer Engineer",
+        "Systems Architect"
+      ],
+      "collegePathways": [
+        "B.S. Computer Science",
+        "B.S. Computer Engineering"
+      ]
+    },
+    {
+      "title": "Activity 11: Statistical Analysis I - Data Collection",
+      "description": "Introduction to statistical variability. Running a single track multiple times to collect a dataset.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Precision Measurement",
+        "Spreadsheet Usage"
+      ],
+      "learningObjectives": [
+        "Understand the importance of sample size.",
+        "Collect quantitative data (time) with precision.",
+        "Identify sources of error (human reaction time, release variation)."
+      ],
+      "teks": [
+        "Stats 2(B): Conduct and design experiments.",
+        "Stats 2(F): Analyze data sets."
+      ],
+      "texasStemStandards": [
+        "STEM 5(A): Use math to solve problems."
+      ],
+      "materialsList": [
+        {
+          "item": "Gravitrax Kit",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Stopwatches",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Excel/Google Sheets access",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Define experimental error.",
+          "Mandate 30 repetitions of one track configuration."
+        ],
+        "detailed": [
+          "Discuss 'experimental error.'",
+          "Assign teams to build a medium-complexity track.",
+          "Require 30 recorded runs of the exact same track.",
+          "Discuss why the time is not identical every run."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Build a track and run it 30 times.",
+          "Record all times in a spreadsheet."
+        ],
+        "detailed": [
+          "Build a track that takes approximately 5-10 seconds to complete.",
+          "Designate one timer and one releaser to minimize variable change.",
+          "Run the marble 30 times.",
+          "Record every time to the hundredth of a second in a spreadsheet."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Direct instruction in Statistics and data collection methodology.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Math instruction"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Academic instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404 - Reasonable Costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Experimental reproducibility.",
+        "technology": "Spreadsheet software.",
+        "engineering": "Quality control.",
+        "math": "Data collection.",
+        "crossCurricularLinks": [
+          "Statistics"
+        ]
+      },
+      "careerPathways": [
+        "Quality Control Engineer",
+        "Data Analyst"
+      ],
+      "collegePathways": [
+        "B.S. Statistics",
+        "B.S. Industrial Engineering"
+      ]
+    },
+    {
+      "title": "Activity 12: Statistical Analysis II - Central Tendency & Spread",
+      "description": "Analyzing the data from Activity 11 to calculate Mean, Median, Mode, and Standard Deviation.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Statistical Calculation",
+        "Graphing"
+      ],
+      "learningObjectives": [
+        "Calculate Mean, Median, and Mode.",
+        "Calculate Standard Deviation (Sigma).",
+        "Determine if the track performance is 'reliable' (low Sigma)."
+      ],
+      "teks": [
+        "Stats 4(A): Calculate and interpret mean, standard deviation.",
+        "Stats 4(C): Describe the shape of distribution."
+      ],
+      "texasStemStandards": [
+        "STEM 5(B): Interpret data."
+      ],
+      "materialsList": [
+        {
+          "item": "Data from Activity 11",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Scientific Calculator/Laptop",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Teach Standard Deviation formula and Bell Curve.",
+          "Guide students to visualize data."
+        ],
+        "detailed": [
+          "Teach the formula for Standard Deviation.",
+          "Explain normal distribution (Bell Curve).",
+          "Have students visualize their data (Histogram).",
+          "Ask: Is the variation due to the track or the timer?"
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Calculate Mean and Standard Deviation from your data.",
+          "Create a histogram."
+        ],
+        "detailed": [
+          "Using your 30 data points, calculate the Mean average.",
+          "Calculate the Standard Deviation.",
+          "Create a histogram of your run times.",
+          "Identify any 'outliers' and hypothesize what caused them."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Rigorous math instruction focused on Statistics.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Math instruction"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Academic instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403 - Allocability"
+        ]
+      },
+      "stemConnections": {
+        "science": "Data analysis.",
+        "technology": "Data visualization.",
+        "engineering": "Reliability engineering.",
+        "math": "Statistics.",
+        "crossCurricularLinks": [
+          "Statistics"
+        ]
+      },
+      "careerPathways": [
+        "Actuary",
+        "Research Scientist"
+      ],
+      "collegePathways": [
+        "B.S. Mathematics",
+        "B.S. Data Science"
+      ]
+    },
+    {
+      "title": "Activity 13: Engineering Design Process - The Constraints Challenge",
+      "description": "Students must build a track meeting specific criteria (e.g., exactly 10 seconds) with limited parts.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Problem Solving",
+        "Iterative Design"
+      ],
+      "learningObjectives": [
+        "Apply the Engineering Design Process (Ask, Imagine, Plan, Create, Improve).",
+        "Work within defined constraints (materials and time).",
+        "Iterate designs based on testing."
+      ],
+      "teks": [
+        "STEM 1(A): Apply the engineering design process.",
+        "STEM 1(C): Evaluate designs and make modifications."
+      ],
+      "texasStemStandards": [
+        "STEM 3(A): Creative problem solving."
+      ],
+      "materialsList": [
+        {
+          "item": "Gravitrax Kit (Limited selection per group)",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Limit component availability.",
+          "Set a 'maximize duration' challenge.",
+          "Emphasize iteration."
+        ],
+        "detailed": [
+          "Limit each group to 15 specific pieces.",
+          "Challenge: Build the longest duration track possible with these pieces.",
+          "Emphasize the 'Improve' phase of EDP."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Design a slow track using only provided parts.",
+          "Iterate to improve time."
+        ],
+        "detailed": [
+          "Count out your allowed pieces.",
+          "Brainstorm a design that maximizes time (slow slopes, spirals).",
+          "Build and test.",
+          "Modify to squeeze out extra milliseconds.",
+          "Final competition: Longest time wins."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Exposure to STEM Careers (Engineering)"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Project-based learning focusing on engineering constraints and optimization.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Instruction in science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(3) - Career exploration"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404 - Reasonable Costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Kinematics.",
+        "technology": "N/A",
+        "engineering": "Design optimization.",
+        "math": "Time measurement.",
+        "crossCurricularLinks": [
+          "Engineering Design"
+        ]
+      },
+      "careerPathways": [
+        "Project Engineer",
+        "Operations Manager"
+      ],
+      "collegePathways": [
+        "B.S. Systems Engineering",
+        "B.S. Industrial Design"
+      ]
+    },
+    {
+      "title": "Activity 14: Cost-Benefit Analysis (Simulated Budget)",
+      "description": "Assigning monetary values to parts. Students must build a functional track under a specific 'budget.'",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Arithmetic",
+        "Budgeting"
+      ],
+      "learningObjectives": [
+        "Perform a cost-benefit analysis.",
+        "Optimize a design for value (Function/Cost).",
+        "Manage a project budget."
+      ],
+      "teks": [
+        "Econ 1(A): Economics of decision making.",
+        "STEM 2(D): Cost analysis."
+      ],
+      "texasStemStandards": [
+        "STEM 1(D): Consider cost and efficiency."
+      ],
+      "materialsList": [
+        {
+          "item": "Gravitrax Kit",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Price Sheet (Teacher created)",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Distribute part price lists and budget limits.",
+          "Challenge students to build a complex track under budget."
+        ],
+        "detailed": [
+          "Provide a price list (e.g., Rail=$10, Pillar=$5, Gauss Cannon=$100).",
+          "Set a budget (e.g., $200).",
+          "Challenge: Build a track with at least one loop and one jump under budget."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Calculate costs of parts.",
+          "Build a track that works without exceeding the budget."
+        ],
+        "detailed": [
+          "Review the price list.",
+          "Sketch a design and calculate the cost before building.",
+          "Swap out expensive parts for cheaper alternatives where possible.",
+          "Build the track and verify it works. If it fails, you must 'buy' fixes or redesign."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Financial Literacy (Simulated)"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Combines math skills with engineering economics.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Financial literacy"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(6) - Financial literacy instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403 - Allocability"
+        ]
+      },
+      "stemConnections": {
+        "science": "N/A",
+        "technology": "Spreadsheets.",
+        "engineering": "Value engineering.",
+        "math": "Arithmetic and budgeting.",
+        "crossCurricularLinks": [
+          "Economics"
+        ]
+      },
+      "careerPathways": [
+        "Cost Estimator",
+        "Construction Manager"
+      ],
+      "collegePathways": [
+        "B.S. Business Administration",
+        "B.S. Construction Science"
+      ]
+    },
+    {
+      "title": "Activity 15: Collaborative Systems",
+      "description": "Merging two groups' tracks into one giant system.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Communication",
+        "Teamwork"
+      ],
+      "learningObjectives": [
+        "Collaborate across teams to solve interface problems.",
+        "Standardize connection points.",
+        "Manage complex system integration."
+      ],
+      "teks": [
+        "STEM 2(E): Teamwork and communication.",
+        "Physics 2(H): Communicate valid conclusions."
+      ],
+      "texasStemStandards": [
+        "STEM 2(A): Collaborate in teams."
+      ],
+      "materialsList": [
+        {
+          "item": "Gravitrax Kits (Multiple)",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Pair student groups.",
+          "Task them with connecting their independent tracks."
+        ],
+        "detailed": [
+          "Pair up student groups.",
+          "Task: Connect Group A's end point to Group B's start point.",
+          "Discuss 'System Integration' challenges in real engineering."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Negotiate connection parameters with the other team.",
+          "Build the link and test the mega-track."
+        ],
+        "detailed": [
+          "Negotiate with the other team: How high must the connection be?",
+          "Modify your tracks to facilitate the merger.",
+          "Test the full 'Mega Track' from start to finish.",
+          "Identify failure points at the connection interface."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Exposure to STEM Careers"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Soft skills development (communication/teamwork) in a technical context.",
+        "heaRequirements": [
+          "HEA Sec. 402H - STEM focus"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(3) - Career exploration"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404 - Reasonable Costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Systems thinking.",
+        "technology": "N/A",
+        "engineering": "Systems integration.",
+        "math": "Spatial reasoning.",
+        "crossCurricularLinks": [
+          "Communications"
+        ]
+      },
+      "careerPathways": [
+        "Systems Engineer",
+        "Urban Planner"
+      ],
+      "collegePathways": [
+        "B.S. Systems Engineering",
+        "Master of Urban Planning"
+      ]
+    },
+    {
+      "title": "Activity 16: Elevation Engineering",
+      "description": "Focusing on verticality. Building multi-level structures using the Pro Vertical expansion concepts.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Structural Balancing",
+        "Geometry"
+      ],
+      "learningObjectives": [
+        "Analyze structural stability and center of gravity.",
+        "Design support structures for high-elevation loads.",
+        "Manage potential energy across multiple tiers."
+      ],
+      "teks": [
+        "Physics 4(D): Forces and equilibrium.",
+        "STEM 1(A): Design process."
+      ],
+      "texasStemStandards": [
+        "STEM 6(B): Apply engineering principles."
+      ],
+      "materialsList": [
+        {
+          "item": "Gravitrax Pro Vertical Expansion (optional, or use all pillars)",
+          "estimatedCost": "$25.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Discuss load bearing and column stability.",
+          "Challenge: Build a 3-story track."
+        ],
+        "detailed": [
+          "Discuss civil engineering concepts: Columns, beams, and load bearing.",
+          "Challenge: Build a track that has 3 distinct 'floors' or levels directly above each other."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Build a multi-level structure.",
+          "Ensure vertical stability."
+        ],
+        "detailed": [
+          "Construct a sturdy base.",
+          "Build the first level track.",
+          "Use pillars and balconies/transparent plates to build a second level directly above.",
+          "Ensure the structure is stable and won't tip when the marble moves."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Exposure to STEM Careers (Civil Engineering)"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Structural engineering focus.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Instruction in Science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Academic instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403 - Allocability"
+        ]
+      },
+      "stemConnections": {
+        "science": "Statics and forces.",
+        "technology": "N/A",
+        "engineering": "Structural engineering.",
+        "math": "Geometry.",
+        "crossCurricularLinks": [
+          "Physics"
+        ]
+      },
+      "careerPathways": [
+        "Structural Engineer",
+        "Architect"
+      ],
+      "collegePathways": [
+        "B.S. Civil Engineering",
+        "B.Arch (Architecture)"
+      ]
+    },
+    {
+      "title": "Activity 17: Rube Goldberg Integration",
+      "description": "Incorporating non-Gravitrax items (dominoes, bells, cups) triggered by the marble.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Creativity",
+        "Force Calculation"
+      ],
+      "learningObjectives": [
+        "Design complex chain reactions.",
+        "Calculate energy transfer to external objects.",
+        "Innovate using mixed media."
+      ],
+      "teks": [
+        "Physics 2(E): Design and implement investigative procedures.",
+        "STEM 3(A): Creative thinking."
+      ],
+      "texasStemStandards": [
+        "STEM 3(A): Innovate."
+      ],
+      "materialsList": [
+        {
+          "item": "Gravitrax Kit",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Classroom supplies (cups, dominoes, tape, string)",
+          "estimatedCost": "$10.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Introduce Rube Goldberg concepts.",
+          "Challenge: Use the marble to trigger an external event."
+        ],
+        "detailed": [
+          "Explain Rube Goldberg machines (overly complex machines for simple tasks).",
+          "Goal: The marble must trigger an event outside the track (e.g., knock over a cup, ring a bell)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Design a finish line task.",
+          "Build a track that triggers this task."
+        ],
+        "detailed": [
+          "Identify a 'finish line task' (e.g., drop a flag).",
+          "Build a Gravitrax run that builds enough momentum to trigger this task.",
+          "Interface the marble run with classroom objects (dominoes are a good bridge)."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Encourages creativity and application of physics in novel scenarios.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Instruction in science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Academic instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404 - Reasonable Costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Energy transfer.",
+        "technology": "N/A",
+        "engineering": "Creative design.",
+        "math": "N/A",
+        "crossCurricularLinks": [
+          "Arts (Creative Design)"
+        ]
+      },
+      "careerPathways": [
+        "Special Effects Coordinator",
+        "Mechanical Designer"
+      ],
+      "collegePathways": [
+        "B.F.A. Design",
+        "B.S. Mechanical Engineering"
+      ]
+    },
+    {
+      "title": "Activity 18: Final Capstone - Planning & Design",
+      "description": "Phase 1 of the final project. Teams plan a massive track incorporating all learned physics and statistical proofs.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Project Management",
+        "Blueprint Reading"
+      ],
+      "learningObjectives": [
+        "Synthesize all curriculum concepts.",
+        "Create a detailed project plan and schematic.",
+        "Assign team roles (Project Manager, Architect, Engineer)."
+      ],
+      "teks": [
+        "STEM 2(A): Manage projects.",
+        "STEM 2(B): Communicate results."
+      ],
+      "texasStemStandards": [
+        "STEM 1(A): Engineering Design."
+      ],
+      "materialsList": [
+        {
+          "item": "Graph Paper/Whiteboards",
+          "estimatedCost": "$5.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Introduce Final Capstone requirements.",
+          "Require a blueprint before building starts."
+        ],
+        "detailed": [
+          "Introduce the Final Capstone: A showcase track that includes a loop, a jump, a cannon, and a statistical prediction of run time.",
+          "Require a blueprint before building starts."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Form teams and sketch a blueprint.",
+          "Calculate theoretical requirements for loops/jumps."
+        ],
+        "detailed": [
+          "Form teams of 3-4.",
+          "Sketch your proposed track on graph paper.",
+          "List required components.",
+          "Calculate theoretical start height required for loops/jumps.",
+          "Submit plan for approval."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Exposure to STEM Careers",
+          "Instruction in Mathematics"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Project management and engineering planning skills.",
+        "heaRequirements": [
+          "HEA Sec. 402H - STEM focus"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(3) - Career exploration"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403 - Allocability"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics synthesis.",
+        "technology": "N/A",
+        "engineering": "Project planning.",
+        "math": "Geometry and calculation.",
+        "crossCurricularLinks": [
+          "Business Management"
+        ]
+      },
+      "careerPathways": [
+        "Project Manager",
+        "Engineering Consultant"
+      ],
+      "collegePathways": [
+        "B.S. Engineering Management",
+        "Master of Business Administration"
+      ]
+    },
+    {
+      "title": "Activity 19: Final Capstone - Construction & Testing",
+      "description": "Phase 2 of the final project. Building, testing, and collecting data for the final report.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Construction",
+        "Troubleshooting"
+      ],
+      "learningObjectives": [
+        "Execute an engineering design plan.",
+        "Troubleshoot unforeseen mechanical issues.",
+        "Collect final performance data."
+      ],
+      "teks": [
+        "STEM 1(C): Evaluate and improve designs.",
+        "Physics 2(I): Communicate investigations."
+      ],
+      "texasStemStandards": [
+        "STEM 3(C): Resilience in problem solving."
+      ],
+      "materialsList": [
+        {
+          "item": "All Gravitrax components",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Supervise construction.",
+          "Encourage unit testing and data recording."
+        ],
+        "detailed": [
+          "Facilitate construction.",
+          "Act as a consultant: Ask questions like 'Why is the ball falling off there?' rather than fixing it for them.",
+          "Remind them to record data for their presentation."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Build according to blueprint.",
+          "Test, refine, and record 10 timed trials."
+        ],
+        "detailed": [
+          "Build the track according to your blueprint.",
+          "Test individual sections (unit testing) before running the whole thing.",
+          "Once complete, run 10 timed trials.",
+          "Calculate the Mean time and Standard Deviation."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Application of scientific method and engineering iteration.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Instruction in Science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Academic instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404 - Reasonable Costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Applied Physics.",
+        "technology": "N/A",
+        "engineering": "Construction and testing.",
+        "math": "Statistical verification.",
+        "crossCurricularLinks": [
+          "Engineering Design"
+        ]
+      },
+      "careerPathways": [
+        "Field Engineer",
+        "Test Engineer"
+      ],
+      "collegePathways": [
+        "B.S. Engineering Technology",
+        "B.S. Physics"
+      ]
+    },
+    {
+      "title": "Activity 20: The Gravitrax Expo - Presentation",
+      "description": "Students present their final builds, explaining the physics and statistics behind them to the class.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Public Speaking",
+        "Data Presentation"
+      ],
+      "learningObjectives": [
+        "Communicate technical information to an audience.",
+        "Justify design decisions using data.",
+        "Demonstrate the finalized system."
+      ],
+      "teks": [
+        "STEM 2(C): Presentation of project.",
+        "ELA 26(A): Listening and Speaking - Presentations."
+      ],
+      "texasStemStandards": [
+        "STEM 2(B): Communicate effectively."
+      ],
+      "materialsList": [
+        {
+          "item": "Projector/Screen (optional)",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Host the Expo.",
+          "Evaluate based on design, reliability, and communication."
+        ],
+        "detailed": [
+          "Host a mini-expo.",
+          "Evaluate groups based on: Design complexity, reliability (did it work during the demo?), and explanation of physics/math concepts.",
+          "Award certificates (e.g., 'Fastest Track', 'Best Engineering')."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Present your blueprint, stats, and physics concepts.",
+          "Demonstrate the track."
+        ],
+        "detailed": [
+          "Set up your track for display.",
+          "Present your blueprint, your cost analysis, and your run-time statistics.",
+          "Explain one major physics challenge you overcame.",
+          "Demonstrate a successful run for the class."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Exposure to STEM Careers",
+          "Mentoring"
+        ],
+        "allowableCosts": [
+          "Participant Support Costs (Certificates/Awards if nominal)",
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Developing soft skills and technical communication required for college success.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Mentoring/Personal Counseling"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b) - Personal counseling/mentoring"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.454 - Student Support Costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Scientific communication.",
+        "technology": "Presentation tools.",
+        "engineering": "Technical sales/reporting.",
+        "math": "Data presentation.",
+        "crossCurricularLinks": [
+          "English Language Arts"
+        ]
+      },
+      "careerPathways": [
+        "Technical Sales Engineer",
+        "Science Communicator"
+      ],
+      "collegePathways": [
+        "B.A. Communications",
+        "B.S. Engineering (General)"
+      ]
+    }
+  ]
+}

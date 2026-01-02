@@ -1,0 +1,1908 @@
+{
+  "curriculumTitle": "Future Ready: Introduction to Artificial Intelligence for Texas High Schoolers",
+  "overview": "A comprehensive 20-module curriculum designed for TRIO Upward Bound and UBMS programs in Texas. This curriculum breaks down AI fundamentals, ethics, coding concepts, and career planning into standalone 30-minute lessons. It moves from basic definitions to technical mechanics, creative applications, and finally career readiness.",
+  "prerequisites": "Students should have basic computer literacy (typing, internet navigation) and a reading level appropriate for 9th grade. No prior coding experience is required.",
+  "targetAgeGroup": "High School (Ages 14-18)",
+  "totalDurationEstimate": "10 Hours (20 Individual Modules x 30 minutes)",
+  "fieldTrips": [
+    {
+      "name": "Perot Museum of Nature and Science - Engineering and Innovation Hall",
+      "location": "Dallas, TX",
+      "description": "Exploration of the Engineering Hall focusing on the 'Robot Arena' and automated systems exhibits to visualize hardware components of AI.",
+      "relevanceToCurriculum": "Provides physical context to the 'Robotics vs. AI' concepts discussed in Module 15. Connects abstract code to physical movement."
+    },
+    {
+      "name": "University of Texas at Arlington (UTA) Research Institute",
+      "location": "Fort Worth, TX",
+      "description": "Tour of the automation and robotics research labs at UTARI.",
+      "relevanceToCurriculum": "Demonstrates collegiate pathways in STEM and exposes students to advanced research environments (UBMS Component)."
+    },
+    {
+      "name": "Richardson IQ (Innovation Quarter)",
+      "location": "Richardson, TX",
+      "description": "Visit to 'The IQ' headquarters to observe startups utilizing machine learning in real-time business applications.",
+      "relevanceToCurriculum": "Connects 'Future of AI' concepts to the local North Texas economic landscape and entrepreneurship."
+    },
+    {
+      "name": "Fort Worth Museum of Science and History",
+      "location": "Fort Worth, TX",
+      "description": "Interaction with the Energy Blast exhibit to understand smart grid technology and data analysis in the energy sector.",
+      "relevanceToCurriculum": "Illustrates the intersection of data science (AI) and the Texas energy sector."
+    },
+    {
+      "name": "Dallas College (Richland Campus) - Computer Science Dept",
+      "location": "Dallas, TX",
+      "description": "Campus tour focusing on the Computer Science and Artificial Intelligence Associate Degree pathways.",
+      "relevanceToCurriculum": "Direct connection to 'College Pathways' and exposure to post-secondary education requirements (HEA Requirement)."
+    }
+  ],
+  "activities": [
+    {
+      "title": "Module 1: The Hierarchy of Intelligence (AI vs. ML vs. DL)",
+      "description": "An introductory lesson defining the relationship between Artificial Intelligence, Machine Learning, and Deep Learning using concentric circle visualization.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Critical thinking",
+        "Note-taking",
+        "Venn diagram interpretation"
+      ],
+      "learningObjectives": [
+        "Define Artificial Intelligence as the umbrella term for smart machines.",
+        "Differentiate between Machine Learning (learning from data) and Deep Learning (neural networks).",
+        "Classify common apps (Netflix, Siri) into the AI hierarchy."
+      ],
+      "teks": [
+        "126.33 (c)(1)(A) - Computer Science I: Identify and define the problem to be solved.",
+        "130.402 (c)(2)(D) - STEM: Describe the history and evolution of technology."
+      ],
+      "texasStemStandards": [
+        "STEM Sub-Chapter A: Inquiry and Design",
+        "STEM Sub-Chapter C: Technology Operations and Concepts"
+      ],
+      "materialsList": [
+        {
+          "item": "Whiteboard and Markers",
+          "estimatedCost": "$0 (Standard Classroom)"
+        },
+        {
+          "item": "Printed Handouts: 'The AI Nesting Dolls' diagram",
+          "estimatedCost": "$5.00 (Printing)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Hook: Ask who uses TikTok. Explain that the 'algorithm' is AI.",
+          "2. Instruction: Draw three concentric circles (AI > ML > DL).",
+          "3. Analogy: AI is the Car, ML is the Engine, Data is the Fuel.",
+          "4. Activity: Students categorize different technologies into the circles."
+        ],
+        "detailed": [
+          "Step 1: Introduction (5 mins) - Start with 'Is a calculator AI?' (No). 'Is Alexa AI?' (Yes).",
+          "Step 2: The Hierarchy (10 mins) - Draw circles. AI (Outer), ML (Middle), DL (Inner).",
+          "Step 3: Analogy (5 mins) - Use the 'Vehicle' analogy. AI is transportation, ML is the engine, Data is gas.",
+          "Step 4: Check for Understanding (10 mins) - Sticky note activity sorting terms like Self-driving car vs Excel."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. Participate in the 'Calculator vs. Alexa' debate.",
+          "2. Draw the AI/ML/DL diagram in your notes.",
+          "3. Sort technology cards into the correct category."
+        ],
+        "detailed": [
+          "1. Discussion: Why do we call it 'Artificial'?",
+          "2. Visualization: Create the diagram. Label AI, ML, DL.",
+          "3. Application: Where does ChatGPT fit? (Deep Learning).",
+          "4. Reflection: Explain why all Deep Learning is AI, but not all AI is Deep Learning."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in mathematics and science",
+          "Exposure to academic programs"
+        ],
+        "allowableCosts": [
+          "Instructional supplies (Paper, Toner, Markers)",
+          "Room rental (if off-site)"
+        ],
+        "programType": "Both",
+        "justification": "This activity provides foundational scientific literacy required for STEM careers, directly supporting the UBMS core science curriculum mandate.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Academic instruction in mathematics and science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Academic instruction in core subjects"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Cognitive Science",
+        "technology": "Computing Fundamentals",
+        "engineering": "Systems Engineering",
+        "math": "Set Theory",
+        "crossCurricularLinks": [
+          "Logic",
+          "Vocabulary"
+        ]
+      },
+      "careerPathways": [
+        "Data Scientist",
+        "AI Researcher",
+        "Technology Consultant"
+      ],
+      "collegePathways": [
+        "Computer Science (BS)",
+        "Data Science (BS)",
+        "Information Systems (BBA)"
+      ]
+    },
+    {
+      "title": "Module 2: A Brief History of Minds (Turing to Transformers)",
+      "description": "A timeline exploration of AI history, focusing on the Turing Test and the evolution from rules-based systems to modern generative AI.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Historical sequencing",
+        "Reading comprehension"
+      ],
+      "learningObjectives": [
+        "Explain the 'Turing Test' and its significance.",
+        "Identify the 'AI Winter' periods.",
+        "Recognize the shift from 'Expert Systems' to 'Neural Networks'."
+      ],
+      "teks": [
+        "130.402 (c)(2)(D) - STEM: History of technology.",
+        "113.41 (c)(27)(C) - US History: Impact of tech innovations."
+      ],
+      "texasStemStandards": [
+        "STEM Sub-Chapter A: Inquiry and Design"
+      ],
+      "materialsList": [
+        {
+          "item": "Projector",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Introduce Alan Turing.",
+          "2. Explain the Imitation Game.",
+          "3. Walk through timeline: 1950s (Hype) -> 1980s (Winter) -> 2010s (Deep Learning)."
+        ],
+        "detailed": [
+          "Step 1: The Turing Test (10 mins) - Can a machine fool a human? Play a chat game.",
+          "Step 2: Timeline (15 mins) - Highlight key milestones (Deep Blue vs Kasparov, AlphaGo).",
+          "Step 3: Reflection (5 mins) - Are we in an AI Spring?"
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. Play the 'Bot or Not' game.",
+          "2. Create a timeline in notes.",
+          "3. Discuss if current AI passes the Turing Test."
+        ],
+        "detailed": [
+          "1. Listen to the chat transcript read aloud. Guess if it's human or bot.",
+          "2. Mark the 'AI Winters' on your timeline.",
+          "3. Write down one invention that changed AI history."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in science",
+          "Mentoring"
+        ],
+        "allowableCosts": [
+          "Instructional supplies"
+        ],
+        "programType": "Both",
+        "justification": "Historical context is essential for scientific literacy.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Instruction in core subjects"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Instruction in Science"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials."
+        ]
+      },
+      "stemConnections": {
+        "science": "History of Science",
+        "technology": "Computing History",
+        "engineering": "Electrical Engineering",
+        "math": "Logic",
+        "crossCurricularLinks": [
+          "History",
+          "Philosophy"
+        ]
+      },
+      "careerPathways": [
+        "Historian of Science",
+        "AI Researcher"
+      ],
+      "collegePathways": [
+        "History (BA)",
+        "Computer Science (BS)"
+      ]
+    },
+    {
+      "title": "Module 3: Algorithms (The Recipe for Intelligence)",
+      "description": "Demystifying algorithms by creating physical flowcharts and 'programming' a teacher to make a sandwich.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Logic",
+        "Sequencing"
+      ],
+      "learningObjectives": [
+        "Define 'Algorithm' as a step-by-step set of instructions.",
+        "Understand the importance of precision in coding.",
+        "Create a flowchart for a daily task."
+      ],
+      "teks": [
+        "126.33 (c)(4)(B) - CS I: Create algorithms.",
+        "111.39 (c)(1)(E) - Algebra I: Communicate mathematical ideas."
+      ],
+      "texasStemStandards": [
+        "STEM Sub-Chapter B: Critical Thinking"
+      ],
+      "materialsList": [
+        {
+          "item": "Bread, Peanut Butter, Jelly, Knife",
+          "estimatedCost": "$10.00"
+        },
+        {
+          "item": "Paper/Pencils",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Define Algorithm.",
+          "2. Activity: Students write instructions to make a PB&J.",
+          "3. Teacher follows instructions literally (malicious compliance).",
+          "4. Debrief on precision."
+        ],
+        "detailed": [
+          "Step 1: The Challenge (5 mins) - Tell students to write instructions.",
+          "Step 2: Execution (15 mins) - If they say 'put peanut butter on bread', put the jar on the loaf. Force them to debug.",
+          "Step 3: Flowchart (10 mins) - Translate corrected steps to a visual map."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. Write steps to make a sandwich.",
+          "2. Watch teacher fail.",
+          "3. Rewrite steps precisely.",
+          "4. Draw a flowchart."
+        ],
+        "detailed": [
+          "1. Be specific. 'Open jar' is step 1.",
+          "2. Fix bugs in your code (instructions).",
+          "3. Use diamond shapes for decisions (Is jar open? Yes/No)."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Math/Science"
+        ],
+        "allowableCosts": [
+          "Instructional supplies (Food for demo only)"
+        ],
+        "programType": "UBMS",
+        "justification": "Fundamental logic and algorithmic thinking.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Math instruction"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1) - Math/Science component"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics (Process)",
+        "technology": "Coding",
+        "engineering": "Process Engineering",
+        "math": "Logic",
+        "crossCurricularLinks": [
+          "Technical Writing"
+        ]
+      },
+      "careerPathways": [
+        "Software Engineer",
+        "Logistics Manager"
+      ],
+      "collegePathways": [
+        "Computer Science (BS)",
+        "Industrial Engineering (BS)"
+      ]
+    },
+    {
+      "title": "Module 4: Data - The Fuel for AI",
+      "description": "Understanding the difference between Structured (Excel) and Unstructured (Images/Text) data and how machines consume it.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Categorization",
+        "Observation"
+      ],
+      "learningObjectives": [
+        "Differentiate between Structured and Unstructured data.",
+        "Explain 'Big Data'.",
+        "Understand why AI needs massive datasets."
+      ],
+      "teks": [
+        "126.33 (c)(2)(A) - CS I: Data representation.",
+        "111.43 (c)(1)(B) - Math Models: Data analysis."
+      ],
+      "texasStemStandards": [
+        "STEM Sub-Chapter C: Technology Operations"
+      ],
+      "materialsList": [
+        {
+          "item": "Sample Datasets (Printouts)",
+          "estimatedCost": "$2.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Analogy: Engine needs gas; AI needs data.",
+          "2. Show a Spreadsheet (Structured).",
+          "3. Show an Instagram feed (Unstructured).",
+          "4. Activity: Labeling data."
+        ],
+        "detailed": [
+          "Step 1: Types of Data (10 mins) - Define Structured vs Unstructured.",
+          "Step 2: The Labeling Problem (15 mins) - Give students raw photos. Ask them to create a spreadsheet describing them. Show how hard it is.",
+          "Step 3: Wrap (5 mins) - Why Google has an advantage (Data supremacy)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. Look at the spreadsheet vs. the photo album.",
+          "2. Try to convert the photos into a table.",
+          "3. Discuss which is harder for a computer to read."
+        ],
+        "detailed": [
+          "1. Categorize list of items as Structured or Unstructured.",
+          "2. 'Tag' a set of images (create metadata).",
+          "3. Explain why ChatGPT needed the whole internet to learn."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Math/Science"
+        ],
+        "allowableCosts": [
+          "Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Data literacy is a core component of modern STEM.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Math/Science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Data Science",
+        "technology": "Databases",
+        "engineering": "Information Engineering",
+        "math": "Statistics",
+        "crossCurricularLinks": [
+          "Library Science"
+        ]
+      },
+      "careerPathways": [
+        "Data Analyst",
+        "Database Administrator"
+      ],
+      "collegePathways": [
+        "Data Science (BS)",
+        "Statistics (BS)"
+      ]
+    },
+    {
+      "title": "Module 5: The Neural Network Game (Kinesthetic Learning)",
+      "description": "A physical activity where students act out the roles of neurons in a network to understand how computers 'learn' through weights and biases.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Cooperation",
+        "Basic arithmetic",
+        "Following instructions"
+      ],
+      "learningObjectives": [
+        "Model a simple neural network structure (Input -> Hidden Layer -> Output).",
+        "Demonstrate how 'weights' determine if a neuron fires.",
+        "Understand the concept of 'Training' via error correction."
+      ],
+      "teks": [
+        "126.33 (c)(4)(A) - CS I: Computational thinking.",
+        "111.40 (c)(1)(A) - Algebra II: Mathematical modeling."
+      ],
+      "texasStemStandards": [
+        "STEM Sub-Chapter A: Creativity and Innovation"
+      ],
+      "materialsList": [
+        {
+          "item": "Paper cups (Neurons)",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Tokens (beans/chips)",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Yarn",
+          "estimatedCost": "$3.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Arrange students: Input, Hidden, Output.",
+          "2. Input passes tokens based on picture.",
+          "3. Hidden sums tokens; fires if > threshold.",
+          "4. Output predicts. 5. Adjust rules if wrong."
+        ],
+        "detailed": [
+          "Step 1: Setup (5 mins) - Create network with string.",
+          "Step 2: Forward Pass (10 mins) - Input nodes fire if pixel is colored. Hidden nodes sum inputs.",
+          "Step 3: Error (5 mins) - Compare output to reality.",
+          "Step 4: Backprop (10 mins) - Change thresholds to fix error."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. Stand in assigned layer.",
+          "2. Pass token if conditions met.",
+          "3. Calculate sum.",
+          "4. Adjust rules upon 'Error' signal."
+        ],
+        "detailed": [
+          "1. Roleplay a neuron.",
+          "2. Sum inputs. Compare to Threshold.",
+          "3. Fire (pass token) if Sum > Threshold.",
+          "4. Backpropagate: Change threshold if teacher says 'Wrong'."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in mathematics",
+          "Exposure to STEM"
+        ],
+        "allowableCosts": [
+          "Instructional supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Rigorous math/science instruction through physical modeling.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Instruction in mathematics"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1) - UBMS Math/Science"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Neuroscience",
+        "technology": "Neural Networks",
+        "engineering": "Network Architecture",
+        "math": "Calculus/Algebra",
+        "crossCurricularLinks": [
+          "PE"
+        ]
+      },
+      "careerPathways": [
+        "Machine Learning Engineer",
+        "Neuroscientist"
+      ],
+      "collegePathways": [
+        "Computer Engineering (BS)",
+        "Applied Math (BS)"
+      ]
+    },
+    {
+      "title": "Module 6: How LLMs Think (Next Token Prediction)",
+      "description": "An interactive lab de-mystifying Large Language Models by explaining the probability math behind 'Next Token Prediction'.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Reading comprehension",
+        "Pattern recognition",
+        "Probability"
+      ],
+      "learningObjectives": [
+        "Understand 'Next Token Prediction'.",
+        "Explain AI 'hallucinations'.",
+        "Differentiate search engines from LLMs."
+      ],
+      "teks": [
+        "110.31 (b)(1) - English I: Vocabulary.",
+        "126.33 (c)(5)(C) - CS I: Synthesize knowledge."
+      ],
+      "texasStemStandards": [
+        "STEM Sub-Chapter B: Critical Thinking"
+      ],
+      "materialsList": [
+        {
+          "item": "Laptops",
+          "estimatedCost": "$0"
+        },
+        {
+          "item": "Internet Access",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Explain 'Fancy Autocomplete'.",
+          "2. Demo: 'Peanut Butter and...'",
+          "3. Lab: Students use AI to finish sentences with low probability.",
+          "4. Debrief Hallucinations."
+        ],
+        "detailed": [
+          "Step 1: Theory (5 mins) - Tokenization.",
+          "Step 2: Prediction Game (5 mins) - Predict next word based on probability.",
+          "Step 3: Hallucination (10 mins) - Ask impossible questions.",
+          "Step 4: Activity (10 mins) - Generate stories word by word."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. Log into AI tool.",
+          "2. Type incomplete sentences.",
+          "3. Try to trick the AI.",
+          "4. Record hallucinations."
+        ],
+        "detailed": [
+          "1. Open AI.",
+          "2. Experiment with 'The sky is green because...'.",
+          "3. Understand AI isn't thinking, just calculating.",
+          "4. Generate fake bio."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in literature/composition",
+          "Exposure to technology"
+        ],
+        "allowableCosts": [
+          "Computer access"
+        ],
+        "programType": "UB",
+        "justification": "Links English composition with technology.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Literature instruction"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(2) - Composition"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.454"
+        ]
+      },
+      "stemConnections": {
+        "science": "Neurolinguistics",
+        "technology": "NLP",
+        "engineering": "Software Engineering",
+        "math": "Probability",
+        "crossCurricularLinks": [
+          "English"
+        ]
+      },
+      "careerPathways": [
+        "NLP Scientist",
+        "Prompt Engineer"
+      ],
+      "collegePathways": [
+        "Linguistics (BA)",
+        "Data Science (BS)"
+      ]
+    },
+    {
+      "title": "Module 7: Prompt Engineering 101 (The RTFC Framework)",
+      "description": "Workshop on controlling AI outputs using Role, Task, Format, Constraint.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Vocabulary",
+        "Iterative testing"
+      ],
+      "learningObjectives": [
+        "Apply Zero-shot vs Few-shot prompting.",
+        "Utilize RTFC framework.",
+        "Evaluate output quality."
+      ],
+      "teks": [
+        "126.33 (c)(5)(A) - CS I: Use software tools.",
+        "110.31 (b)(12) - English I: Writing tools."
+      ],
+      "texasStemStandards": [
+        "STEM Sub-Chapter C: Technology Operations"
+      ],
+      "materialsList": [
+        {
+          "item": "Laptops",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Contrast Vague vs Specific prompts.",
+          "2. Teach RTFC Formula.",
+          "3. Demo: 'Act as a Poet...'",
+          "4. Activity: Poetry Battle."
+        ],
+        "detailed": [
+          "Step 1: Bad Prompt (5 mins).",
+          "Step 2: RTFC Formula (10 mins).",
+          "Step 3: Application (10 mins) - Generate study guide.",
+          "Step 4: Refinement (5 mins)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. Type 'Explain gravity'.",
+          "2. Type RTFC version.",
+          "3. Compare.",
+          "4. Write a rap about Algebra."
+        ],
+        "detailed": [
+          "1. Practice Few-Shot prompting.",
+          "2. Apply RTFC to homework help.",
+          "3. Submit best prompt."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in core subjects",
+          "Study skills"
+        ],
+        "allowableCosts": [
+          "Lab access"
+        ],
+        "programType": "Both",
+        "justification": "Teaches technology as a study aid.",
+        "heaRequirements": [
+          "HEA Sec. 402C(e) - Study skills"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5) - Electives"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "CS",
+        "technology": "HCI",
+        "engineering": "Prompt Engineering",
+        "math": "Logic",
+        "crossCurricularLinks": [
+          "Communications"
+        ]
+      },
+      "careerPathways": [
+        "Prompt Engineer",
+        "Technical Writer"
+      ],
+      "collegePathways": [
+        "Communications (BA)",
+        "CS (BS)"
+      ]
+    },
+    {
+      "title": "Module 8: Computer Vision (How Machines 'See')",
+      "description": "Breaking down images into pixels and RGB numbers to understand computer vision.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Grid mapping",
+        "Basic math"
+      ],
+      "learningObjectives": [
+        "Explain that images are grids of numbers (Pixels).",
+        "Understand RGB color codes.",
+        "Simulate a computer reading a handwritten number."
+      ],
+      "teks": [
+        "126.33 (c)(2)(B) - CS I: Number systems.",
+        "111.39 (c)(1)(D) - Algebra I: Representations."
+      ],
+      "texasStemStandards": [
+        "STEM Sub-Chapter A: Inquiry"
+      ],
+      "materialsList": [
+        {
+          "item": "Graph Paper",
+          "estimatedCost": "$2.00"
+        },
+        {
+          "item": "Colored Pencils",
+          "estimatedCost": "$5.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Show a zoomed-in image (Pixels).",
+          "2. Explain RGB values (0-255).",
+          "3. Activity: Students turn a number grid into a drawing.",
+          "4. Discuss Edge Detection."
+        ],
+        "detailed": [
+          "Step 1: Pixels (5 mins) - Zoom in on a photo.",
+          "Step 2: The Grid (10 mins) - Explain how 0 is black and 255 is white.",
+          "Step 3: Color by Number (10 mins) - Give a grid of numbers; students color it.",
+          "Step 4: Application (5 mins) - Self-driving cars seeing lane lines."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. View the grid of numbers.",
+          "2. Shade squares based on the number value.",
+          "3. Reveal the hidden image.",
+          "4. Discuss how a camera works."
+        ],
+        "detailed": [
+          "1. Treat the grid like a bitmap.",
+          "2. 0 = Black, 1 = White (or RGB codes).",
+          "3. Recognize that computers don't see 'cat', they see matrix math."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Math/Science"
+        ],
+        "allowableCosts": [
+          "Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Mathematical representation of visual data.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Math"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Optics",
+        "technology": "Digital Imaging",
+        "engineering": "Computer Vision",
+        "math": "Matrices",
+        "crossCurricularLinks": [
+          "Art"
+        ]
+      },
+      "careerPathways": [
+        "Computer Vision Engineer",
+        "Radiologist"
+      ],
+      "collegePathways": [
+        "Electrical Engineering (BS)",
+        "Physics (BS)"
+      ]
+    },
+    {
+      "title": "Module 9: Supervised vs. Unsupervised Learning",
+      "description": "A card-sorting game to distinguish between learning with an answer key (Supervised) and finding patterns alone (Unsupervised).",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Classification",
+        "Pattern recognition"
+      ],
+      "learningObjectives": [
+        "Define Supervised Learning (Labeled data).",
+        "Define Unsupervised Learning (Clustering).",
+        "Apply concepts to real-world scenarios (Spam filters vs. Customer segmentation)."
+      ],
+      "teks": [
+        "126.33 (c)(5)(B) - CS I: Solving problems.",
+        "111.43 (c)(2)(A) - Math Models: Problem analysis."
+      ],
+      "texasStemStandards": [
+        "STEM Sub-Chapter A: Inquiry"
+      ],
+      "materialsList": [
+        {
+          "item": "Deck of Cards or Image Set",
+          "estimatedCost": "$5.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Define Supervised (Teacher helps).",
+          "2. Define Unsupervised (Student explores).",
+          "3. Activity 1: Sort fruits with labels.",
+          "4. Activity 2: Cluster alien shapes without labels."
+        ],
+        "detailed": [
+          "Step 1: Definitions (10 mins).",
+          "Step 2: Supervised Game (5 mins) - Sort into buckets labeled 'Apple'/'Banana'.",
+          "Step 3: Unsupervised Game (10 mins) - Give weird shapes. Ask students to group them. There is no 'right' answer, just patterns.",
+          "Step 4: Application (5 mins) - Netflix recommendations (Unsupervised clustering)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. Sort items into labeled bins.",
+          "2. Sort strange items into piles based on similarities.",
+          "3. Compare piles with neighbors.",
+          "4. Discuss the difference."
+        ],
+        "detailed": [
+          "1. Experience 'Training' a model.",
+          "2. Realize Unsupervised learning is about finding hidden structures.",
+          "3. Explain why Unsupervised is harder."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Math/Science"
+        ],
+        "allowableCosts": [
+          "Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Foundational statistics and CS logic.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Math"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Taxonomy",
+        "technology": "ML Algorithms",
+        "engineering": "Data Engineering",
+        "math": "Statistics (Clustering)",
+        "crossCurricularLinks": [
+          "Logic"
+        ]
+      },
+      "careerPathways": [
+        "Data Analyst",
+        "Marketing Analyst"
+      ],
+      "collegePathways": [
+        "Data Science (BS)",
+        "Marketing (BBA)"
+      ]
+    },
+    {
+      "title": "Module 10: Generative Art (Diffusion Models)",
+      "description": "Exploration of how AI creates images from noise, using tools like Bing Image Creator or Stable Diffusion.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Creativity",
+        "Descriptive writing"
+      ],
+      "learningObjectives": [
+        "Understand the concept of 'Diffusion' (Adding/removing noise).",
+        "Create images using text prompts.",
+        "Discuss copyright issues in AI art."
+      ],
+      "teks": [
+        "117.302 (c)(2)(C) - Art I: Use electronic media.",
+        "126.33 (c)(3)(A) - CS I: Legal/Ethical issues."
+      ],
+      "texasStemStandards": [
+        "STEM Sub-Chapter A: Creativity"
+      ],
+      "materialsList": [
+        {
+          "item": "Laptops",
+          "estimatedCost": "$0"
+        },
+        {
+          "item": "Free AI Art Tool",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Explain Diffusion: Turning static into a picture.",
+          "2. Demo generation.",
+          "3. Activity: Prompting for specific art styles.",
+          "4. Ethics Chat: Is it stealing from artists?"
+        ],
+        "detailed": [
+          "Step 1: The Fog Analogy (5 mins) - Imagine looking at clouds until you see a shape.",
+          "Step 2: Lab (15 mins) - Generate images. Try 'Oil Painting' vs 'Photorealistic'.",
+          "Step 3: Ethics (10 mins) - Who owns the image?"
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. Write a prompt describing a scene.",
+          "2. Add style modifiers (e.g., 'Cyberpunk').",
+          "3. Generate and refine.",
+          "4. Discuss: Is this art?"
+        ],
+        "detailed": [
+          "1. Use the tool to create a logo for a fake company.",
+          "2. Experiment with negative prompts (what NOT to include).",
+          "3. Debate: Should artists be paid if AI trains on their work?"
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Exposure to Technology",
+          "Instruction in Electives (Art)"
+        ],
+        "allowableCosts": [
+          "Lab Access"
+        ],
+        "programType": "UB",
+        "justification": "Connects Arts and STEM (STEAM).",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Core subjects"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5) - Electives"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.454"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics (Diffusion)",
+        "technology": "GenAI",
+        "engineering": "Software",
+        "math": "Probabilistic Modeling",
+        "crossCurricularLinks": [
+          "Art History"
+        ]
+      },
+      "careerPathways": [
+        "Digital Artist",
+        "Creative Director"
+      ],
+      "collegePathways": [
+        "Graphic Design (BFA)",
+        "Computer Science (BS)"
+      ]
+    },
+    {
+      "title": "Module 11: Algorithmic Bias (Garbage In, Garbage Out)",
+      "description": "Critical thinking session examining how AI inherits prejudices from human data, focusing on facial recognition.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Critical analysis",
+        "Empathy"
+      ],
+      "learningObjectives": [
+        "Identify sources of bias in training data.",
+        "Analyze real-world impacts (e.g., criminal justice).",
+        "Propose ethical guidelines."
+      ],
+      "teks": [
+        "113.41 (c)(24)(A) - US History: Tech impact.",
+        "126.33 (c)(3)(B) - CS I: Ethics."
+      ],
+      "texasStemStandards": [
+        "STEM Sub-Chapter E: Social Responsibility"
+      ],
+      "materialsList": [
+        {
+          "item": "Case Study Handouts (Gender Shades)",
+          "estimatedCost": "$2.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Hook: AI generated faces.",
+          "2. Define Training Data bias.",
+          "3. Case Study: Gender Shades.",
+          "4. Discussion: Responsibility.",
+          "5. Audit activity."
+        ],
+        "detailed": [
+          "Step 1: Bucket Analogy (5 mins).",
+          "Step 2: Real World Impact (10 mins) - Facial recognition failure rates.",
+          "Step 3: Discussion (10 mins) - Redlining via algorithms.",
+          "Step 4: Closing (5 mins) - Algorithmic Justice."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. Analyze sample dataset.",
+          "2. Identify missing groups.",
+          "3. Predict failures.",
+          "4. Draft a warning label."
+        ],
+        "detailed": [
+          "1. Count demographics in training set.",
+          "2. Discuss fixes (better data).",
+          "3. Reflection on Ethics in STEM."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Mentoring",
+          "Instruction in Social Studies"
+        ],
+        "allowableCosts": [
+          "Materials"
+        ],
+        "programType": "Both",
+        "justification": "Aligns with HEA requirements for critical thinking and civics.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Social Studies"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(6) - Civics"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Sociology",
+        "technology": "Biometrics",
+        "engineering": "Safety Engineering",
+        "math": "Sampling",
+        "crossCurricularLinks": [
+          "Civics"
+        ]
+      },
+      "careerPathways": [
+        "AI Ethicist",
+        "Policy Analyst"
+      ],
+      "collegePathways": [
+        "Philosophy (BA)",
+        "Public Policy (BS)"
+      ]
+    },
+    {
+      "title": "Module 12: Deepfakes & Media Literacy",
+      "description": "Learning to detect synthetic media and understanding the implications of 'Deepfakes' for society.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Observation",
+        "Critical thinking"
+      ],
+      "learningObjectives": [
+        "Define Deepfake technology (GANs).",
+        "Identify visual artifacts in fake videos.",
+        "Discuss the impact on news and trust."
+      ],
+      "teks": [
+        "110.31 (b)(12) - English I: Media literacy.",
+        "126.33 (c)(3)(D) - CS I: Digital safety."
+      ],
+      "texasStemStandards": [
+        "STEM Sub-Chapter B: Critical Thinking"
+      ],
+      "materialsList": [
+        {
+          "item": "Projector (Sample Videos)",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Show a Deepfake of a celebrity.",
+          "2. Explain GANs (Generator vs Discriminator).",
+          "3. Activity: Spot the fake.",
+          "4. Discuss political/social risks."
+        ],
+        "detailed": [
+          "Step 1: The Hook (5 mins) - Is this Tom Cruise?",
+          "Step 2: The Tech (10 mins) - Explain Generative Adversarial Networks.",
+          "Step 3: Detective Work (10 mins) - Look for blinking, lip sync, earlobes.",
+          "Step 4: Ethics (5 mins) - Misinformation."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. Watch video clips.",
+          "2. Vote: Real or Fake?",
+          "3. List clues used to decide.",
+          "4. Discuss how to verify news."
+        ],
+        "detailed": [
+          "1. Examine the 'Uncanny Valley'.",
+          "2. Learn about 'Watermarking' content.",
+          "3. Pledge to verify sources before sharing."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Social Studies",
+          "Mentoring"
+        ],
+        "allowableCosts": [
+          "AV Equipment usage"
+        ],
+        "programType": "Both",
+        "justification": "Media literacy is crucial for college readiness.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Core subjects"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(6)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Forensics",
+        "technology": "GANs",
+        "engineering": "Cybersecurity",
+        "math": "Game Theory",
+        "crossCurricularLinks": [
+          "Journalism"
+        ]
+      },
+      "careerPathways": [
+        "Cybersecurity Analyst",
+        "Digital Forensics"
+      ],
+      "collegePathways": [
+        "Cybersecurity (BS)",
+        "Journalism (BA)"
+      ]
+    },
+    {
+      "title": "Module 13: AI in Healthcare (Diagnosis Detective)",
+      "description": "Simulation of how AI assists doctors in detecting patterns in medical imaging like X-Rays.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Pattern matching",
+        "Attention to detail"
+      ],
+      "learningObjectives": [
+        "Understand Computer Aided Diagnosis (CAD).",
+        "Compare human accuracy vs AI accuracy.",
+        "Discuss the 'Human in the Loop' necessity."
+      ],
+      "teks": [
+        "130.202 (c)(1) - Health Science: Diagnostic services.",
+        "126.33 (c)(1)(D) - CS I: Solutions."
+      ],
+      "texasStemStandards": [
+        "STEM Sub-Chapter A: Inquiry"
+      ],
+      "materialsList": [
+        {
+          "item": "Printed X-Ray samples (Normal vs Pneumonia)",
+          "estimatedCost": "$3.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Roleplay: Students are Radiologists.",
+          "2. Show healthy vs sick X-Rays.",
+          "3. Time trial: Diagnose 10 patients.",
+          "4. Compare with 'AI' speed.",
+          "5. Discuss augmentation."
+        ],
+        "detailed": [
+          "Step 1: Training (5 mins) - Show what pneumonia looks like (cloudy lungs).",
+          "Step 2: Diagnosis (10 mins) - Students race to label images.",
+          "Step 3: AI comparison (5 mins) - Explain AI does this in seconds.",
+          "Step 4: Ethics (10 mins) - Who is liable if AI is wrong?"
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. Study the 'Healthy' examples.",
+          "2. Examine patient files.",
+          "3. Mark 'Healthy' or 'Sick'.",
+          "4. Check score.",
+          "5. Discuss if you'd trust a robot doctor."
+        ],
+        "detailed": [
+          "1. Experience fatigue (getting tired after 10 images).",
+          "2. Understand AI doesn't get tired.",
+          "3. Conclude that Doctor + AI is best."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science",
+          "Career exploration"
+        ],
+        "allowableCosts": [
+          "Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Direct link to medical careers and biology.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1) - Science"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Biology/Anatomy",
+        "technology": "Medical Imaging",
+        "engineering": "Biomedical Engineering",
+        "math": "Statistics",
+        "crossCurricularLinks": [
+          "Health"
+        ]
+      },
+      "careerPathways": [
+        "Radiologist",
+        "Biomedical Engineer"
+      ],
+      "collegePathways": [
+        "Pre-Med",
+        "Biomedical Engineering (BS)"
+      ]
+    },
+    {
+      "title": "Module 14: NLP & Sentiment Analysis",
+      "description": "Teaching computers to understand emotion by assigning numerical values to positive and negative words.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Basic math (Integers)",
+        "Reading"
+      ],
+      "learningObjectives": [
+        "Define Sentiment Analysis.",
+        "Calculate 'Sentiment Scores' for sentences.",
+        "Understand how brands use this to monitor social media."
+      ],
+      "teks": [
+        "110.31 (b)(1) - English I: Connotation.",
+        "126.33 (c)(2)(A) - CS I: Data processing."
+      ],
+      "texasStemStandards": [
+        "STEM Sub-Chapter B: Critical Thinking"
+      ],
+      "materialsList": [
+        {
+          "item": "Worksheet: 'Emotional Math'",
+          "estimatedCost": "$1.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Assign values: Good (+1), Bad (-1), Amazing (+2).",
+          "2. Activity: Score tweets/reviews.",
+          "3. Discuss Sarcasm (The AI killer).",
+          "4. Wrap up."
+        ],
+        "detailed": [
+          "Step 1: The Math of Feelings (5 mins).",
+          "Step 2: Scoring (10 mins) - 'The food was good (+1) but service was bad (-1)' = 0 (Neutral).",
+          "Step 3: Sarcasm (10 mins) - 'Great, another flat tire.' AI sees 'Great' (+2). Discuss context.",
+          "Step 4: Application (5 mins) - Stock market analysis."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. Use the word bank values.",
+          "2. Calculate the score for 5 reviews.",
+          "3. Try to trick the system with sarcasm.",
+          "4. Discuss how companies use this."
+        ],
+        "detailed": [
+          "1. Convert text to numbers.",
+          "2. Identify limitations of simple keyword matching.",
+          "3. Realize importance of context."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Math/English"
+        ],
+        "allowableCosts": [
+          "Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Interdisciplinary Math/English activity.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Core subjects"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Psychology",
+        "technology": "NLP",
+        "engineering": "Data Mining",
+        "math": "Integers/Algebra",
+        "crossCurricularLinks": [
+          "Marketing"
+        ]
+      },
+      "careerPathways": [
+        "Social Media Analyst",
+        "Computational Linguist"
+      ],
+      "collegePathways": [
+        "Marketing (BBA)",
+        "Data Science (BS)"
+      ]
+    },
+    {
+      "title": "Module 15: Robotics vs. AI (Body vs. Brain)",
+      "description": "Distinguishing between the physical machine (Robot) and the software intelligence (AI) using sensors and actuators concepts.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Systems thinking"
+      ],
+      "learningObjectives": [
+        "Differentiate Robotics (Hardware) from AI (Software).",
+        "Identify Sensors (Inputs) and Actuators (Outputs).",
+        "Design a hypothetical robot for a specific task."
+      ],
+      "teks": [
+        "130.402 (c)(8) - STEM: Robotics.",
+        "126.33 (c)(1)(A) - CS I: Systems."
+      ],
+      "texasStemStandards": [
+        "STEM Sub-Chapter C: Technology Operations"
+      ],
+      "materialsList": [
+        {
+          "item": "Diagrams of Robots",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Clarify: A remote control car is a robot, but not AI.",
+          "2. Define Sensors (Eyes/Ears) and Actuators (Muscles).",
+          "3. Activity: Design a trash-picking robot.",
+          "4. Label the parts."
+        ],
+        "detailed": [
+          "Step 1: Definitions (5 mins) - AI is the pilot; Robot is the plane.",
+          "Step 2: Anatomy (10 mins) - Input/Process/Output loop.",
+          "Step 3: Design Challenge (10 mins) - Draw a robot. What sensors does it need? Camera? Lidar?",
+          "Step 4: Review (5 mins)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. List differences between RC car and Self-driving car.",
+          "2. Sketch a robot design.",
+          "3. Label Sensors and Actuators.",
+          "4. Explain the AI's role."
+        ],
+        "detailed": [
+          "1. Understand hardware limitations.",
+          "2. Apply logic: If sensor sees trash, actuator grabs it.",
+          "3. Discuss automation."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science/Engineering"
+        ],
+        "allowableCosts": [
+          "Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Core engineering concepts.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics",
+        "technology": "Embedded Systems",
+        "engineering": "Robotics",
+        "math": "Geometry",
+        "crossCurricularLinks": [
+          "Industrial Design"
+        ]
+      },
+      "careerPathways": [
+        "Robotics Engineer",
+        "Mechatronics Tech"
+      ],
+      "collegePathways": [
+        "Mechanical Engineering (BS)",
+        "Mechatronics (AAS)"
+      ]
+    },
+    {
+      "title": "Module 16: Future of Work (Automation vs. Augmentation)",
+      "description": "Career exploration distinguishing between jobs replaced by AI vs. jobs enhanced by AI.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Self-reflection",
+        "Research"
+      ],
+      "learningObjectives": [
+        "Define 'Augmentation' vs 'Automation'.",
+        "Research careers using O*NET.",
+        "Identify 'Future-Proof' skills."
+      ],
+      "teks": [
+        "127.14 (c)(1) - Career Prep I.",
+        "130.402 (c)(10) - STEM: Careers."
+      ],
+      "texasStemStandards": [
+        "STEM Sub-Chapter D: Career Development"
+      ],
+      "materialsList": [
+        {
+          "item": "Computers",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Headlines: Robots taking jobs?",
+          "2. Define Augmentation.",
+          "3. Activity: Look up dream job on O*NET.",
+          "4. List Human vs AI tasks.",
+          "5. Debrief."
+        ],
+        "detailed": [
+          "Step 1: Reality Check (5 mins).",
+          "Step 2: Research (10 mins) - O*NET OnLine.",
+          "Step 3: Analysis (10 mins) - T-Chart of tasks.",
+          "Step 4: Closing (5 mins) - Identify skills to learn."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. Go to O*NET.",
+          "2. Search career.",
+          "3. Create T-Chart: AI Tasks vs Human Tasks.",
+          "4. Write a goal."
+        ],
+        "detailed": [
+          "1. Imagine 2035.",
+          "2. 'My Day as an AI-Assisted [Job]'.",
+          "3. Share description."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Career exploration",
+          "Counseling"
+        ],
+        "allowableCosts": [
+          "Assessment tools"
+        ],
+        "programType": "Both",
+        "justification": "Primary TRIO mandate: informed career choices.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Career awareness"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(3) - Career counseling"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.467 (Educ only)"
+        ]
+      },
+      "stemConnections": {
+        "science": "Economics",
+        "technology": "Workplace Software",
+        "engineering": "Industrial Eng",
+        "math": "Financial Literacy",
+        "crossCurricularLinks": [
+          "Business"
+        ]
+      },
+      "careerPathways": [
+        "Automation Specialist",
+        "Human-AI Designer"
+      ],
+      "collegePathways": [
+        "Business (BBA)",
+        "Industrial Engineering (BS)"
+      ]
+    },
+    {
+      "title": "Module 17: Ethics - The Trolley Problem 2.0",
+      "description": "Applying moral philosophy to autonomous vehicle programming decisions.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Debate",
+        "Logical reasoning"
+      ],
+      "learningObjectives": [
+        "Analyze the 'Trolley Problem'.",
+        "Discuss how to program ethics into cars.",
+        "Debate liability (Car maker vs. Passenger)."
+      ],
+      "teks": [
+        "113.41 (c)(24)(A) - US History: Law/Society.",
+        "126.33 (c)(3)(A) - CS I: Legal issues."
+      ],
+      "texasStemStandards": [
+        "STEM Sub-Chapter E: Social Responsibility"
+      ],
+      "materialsList": [
+        {
+          "item": "Polling Cards (A/B)",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Introduce the classic Trolley Problem.",
+          "2. Update for Self-Driving Cars (Save passenger vs Save pedestrian).",
+          "3. Debate: Who decides?",
+          "4. Vote on scenarios."
+        ],
+        "detailed": [
+          "Step 1: The Dilemma (5 mins).",
+          "Step 2: Scenarios (15 mins) - Present variations (Jaywalkers, animals, etc.).",
+          "Step 3: Programming (10 mins) - Explain that engineers must write this code ahead of time."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. Listen to the scenario.",
+          "2. Vote A (Swerve) or B (Stay).",
+          "3. Justify your choice.",
+          "4. Discuss: Should you be able to buy a car that prioritizes YOU?"
+        ],
+        "detailed": [
+          "1. Put yourself in the engineer's shoes.",
+          "2. Write a policy for a car company.",
+          "3. Debate with classmates."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Civics/Ethics",
+          "Mentoring"
+        ],
+        "allowableCosts": [
+          "Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Critical thinking and civic engagement.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(6)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Psychology",
+        "technology": "Autonomous Systems",
+        "engineering": "Safety Systems",
+        "math": "Logic/Probability",
+        "crossCurricularLinks": [
+          "Philosophy",
+          "Law"
+        ]
+      },
+      "careerPathways": [
+        "Safety Engineer",
+        "Tech Lawyer"
+      ],
+      "collegePathways": [
+        "Pre-Law",
+        "Engineering Ethics (Cert)"
+      ]
+    },
+    {
+      "title": "Module 18: Capstone Prep - Identifying a Problem",
+      "description": "Brainstorming session using Design Thinking to identify a local community problem solvable with AI.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Brainstorming",
+        "Empathy"
+      ],
+      "learningObjectives": [
+        "Apply the 'Empathize' stage of Design Thinking.",
+        "Identify a local issue (e.g., Traffic, Recycling).",
+        "Formulate a 'How Might We' question."
+      ],
+      "teks": [
+        "126.33 (c)(1)(A) - CS I: Problem definition.",
+        "130.402 (c)(4)(A) - STEM: Solutions."
+      ],
+      "texasStemStandards": [
+        "STEM Sub-Chapter A: Design"
+      ],
+      "materialsList": [
+        {
+          "item": "Sticky Notes",
+          "estimatedCost": "$2.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Introduce Design Thinking.",
+          "2. Brainstorm community problems.",
+          "3. Filter: Can AI help?",
+          "4. Select a topic."
+        ],
+        "detailed": [
+          "Step 1: Empathy (5 mins) - What bugs you about your city?",
+          "Step 2: Ideation (15 mins) - Sticky note storm.",
+          "Step 3: Selection (10 mins) - Pick one feasible problem."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. List 5 problems in your school/town.",
+          "2. Discuss with group.",
+          "3. Ask: Is this a data problem?",
+          "4. Write a problem statement."
+        ],
+        "detailed": [
+          "1. Focus on 'pain points'.",
+          "2. Don't solve it yet, just define it.",
+          "3. Example: 'How might we use camera AI to speed up the lunch line?'"
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Math/Science",
+          "Project-based learning"
+        ],
+        "allowableCosts": [
+          "Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Research project initiation.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Environmental Science",
+        "technology": "App Design",
+        "engineering": "Design Thinking",
+        "math": "Optimization",
+        "crossCurricularLinks": [
+          "Social Studies"
+        ]
+      },
+      "careerPathways": [
+        "Product Manager",
+        "Entrepreneur"
+      ],
+      "collegePathways": [
+        "Business (BBA)",
+        "Engineering (BS)"
+      ]
+    },
+    {
+      "title": "Module 19: Capstone Project - Paper Prototyping",
+      "description": "Creating a low-fidelity paper prototype of an AI application interface.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Sketching",
+        "UX Logic"
+      ],
+      "learningObjectives": [
+        "Sketch a User Interface (UI).",
+        "Map the user journey.",
+        "Explain where the AI 'magic' happens in the app."
+      ],
+      "teks": [
+        "126.33 (c)(5)(A) - CS I: Software design.",
+        "130.402 (c)(6)(B) - STEM: Prototypes."
+      ],
+      "texasStemStandards": [
+        "STEM Sub-Chapter C: Technology"
+      ],
+      "materialsList": [
+        {
+          "item": "Paper, Markers, Scissors",
+          "estimatedCost": "$5.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Explain Prototyping (Fake it 'til you make it).",
+          "2. Activity: Draw the app screens.",
+          "3. Simulation: One student presses 'buttons', another swaps papers.",
+          "4. Critique."
+        ],
+        "detailed": [
+          "Step 1: UI Basics (5 mins).",
+          "Step 2: Drafting (15 mins) - Draw Main Menu, Camera View, Results Screen.",
+          "Step 3: User Flow (10 mins) - Walk through the usage."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. Draw your app screens on paper.",
+          "2. Cut them out.",
+          "3. Test with a partner.",
+          "4. Explain: 'When I click this, the AI recognizes the face.'"
+        ],
+        "detailed": [
+          "1. Visualize the input and output.",
+          "2. Don't worry about artistic skill, worry about flow.",
+          "3. Annotate: Label the AI function."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Tech",
+          "Exposure to Engineering"
+        ],
+        "allowableCosts": [
+          "Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Engineering design process.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Psychology (UX)",
+        "technology": "UI/UX Design",
+        "engineering": "Software Engineering",
+        "math": "Geometry",
+        "crossCurricularLinks": [
+          "Art"
+        ]
+      },
+      "careerPathways": [
+        "UX Designer",
+        "Frontend Developer"
+      ],
+      "collegePathways": [
+        "Digital Media (BA)",
+        "Computer Science (BS)"
+      ]
+    },
+    {
+      "title": "Module 20: Pitch Perfect (Presenting AI Ideas)",
+      "description": "Final presentation workshop teaching students how to communicate technical ideas to non-technical audiences.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Public speaking",
+        "Synthesis"
+      ],
+      "learningObjectives": [
+        "Structure a 1-minute 'Elevator Pitch'.",
+        "Translate technical jargon into plain English.",
+        "Present the Capstone concept."
+      ],
+      "teks": [
+        "110.31 (b)(24) - English I: Oral presentation.",
+        "127.14 (c)(3) - Career Prep: Employability skills."
+      ],
+      "texasStemStandards": [
+        "STEM Sub-Chapter D: Career Development"
+      ],
+      "materialsList": [
+        {
+          "item": "Rubric",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Format: Problem -> Solution -> Impact.",
+          "2. Practice: 1-minute timer.",
+          "3. Peer Feedback.",
+          "4. Final celebration."
+        ],
+        "detailed": [
+          "Step 1: Structure (5 mins).",
+          "Step 2: Drafting (10 mins) - Write the script.",
+          "Step 3: Rehearsal (10 mins) - Practice with partner.",
+          "Step 4: Presentation (5 mins) - Select a few to share."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. Answer: What is it? How does it use AI? Why does it matter?",
+          "2. Practice speaking clearly.",
+          "3. Give feedback to partner.",
+          "4. Deliver pitch."
+        ],
+        "detailed": [
+          "1. Avoid buzzwords without explanation.",
+          "2. Focus on the human benefit.",
+          "3. Sell the idea!"
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Mentoring",
+          "Career counseling"
+        ],
+        "allowableCosts": [
+          "None"
+        ],
+        "programType": "Both",
+        "justification": "Soft skills are essential for college success.",
+        "heaRequirements": [
+          "HEA Sec. 402C(e) - Personal counseling"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(3)"
+        ],
+        "edgarCitations": [
+          "N/A"
+        ]
+      },
+      "stemConnections": {
+        "science": "Communication",
+        "technology": "Business Tech",
+        "engineering": "Sales Engineering",
+        "math": "Data Visualization",
+        "crossCurricularLinks": [
+          "Speech"
+        ]
+      },
+      "careerPathways": [
+        "Sales Engineer",
+        "Startup Founder"
+      ],
+      "collegePathways": [
+        "Business Communication (BA)",
+        "Entrepreneurship (BBA)"
+      ]
+    }
+  ]
+}

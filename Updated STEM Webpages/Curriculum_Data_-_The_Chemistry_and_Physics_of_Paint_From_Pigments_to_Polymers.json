@@ -1,0 +1,396 @@
+{
+  "curriculumTitle": "The Chemistry and Physics of Paint: From Pigments to Polymers",
+  "overview": "This curriculum guides High School students through the chemical composition of paints, the mathematics of color separation, and the engineering of functional conductive art. Students will move beyond art as an aesthetic practice to understand the molecular interactions of binders, solvents, and pigments, as well as the physics of electricity through conductive materials. The curriculum is designed to meet Texas state standards while fulfilling Federal TRIO grant objectives for rigorous STEM instruction.",
+  "prerequisites": "Completion of Algebra I; Laboratory Safety Certification (standard high school science safety protocols).",
+  "targetAgeGroup": "High School (Ages 14-18)",
+  "totalDurationEstimate": "120 Minutes (Three 40-minute modules)",
+  "fieldTrips": [
+    {
+      "name": "Kimbell Art Museum - Conservation Department Tour",
+      "location": "3333 Camp Bowie Blvd, Fort Worth, TX 76107 (Tarrant County)",
+      "description": "A guided tour focusing on the Renzo Piano Pavilion and the on-site conservation labs where science meets art history. Students observe how conservators use chemistry to preserve pigments and binders.",
+      "relevanceToCurriculum": "Directly correlates to Module 1 (Chemistry of Binders) by showing real-world application of material science in preserving historical polymers and pigments."
+    },
+    {
+      "name": "Perot Museum of Nature and Science - Lyda Hill Gems and Minerals Hall",
+      "location": "2201 N Field St, Dallas, TX 75201 (Dallas County)",
+      "description": "Exploration of the raw mineral sources used to create inorganic pigments. Students will identify minerals like Malachite (green) and Azurite (blue) in their natural state.",
+      "relevanceToCurriculum": "Connects to Module 1 and 2 regarding the physical properties of raw pigment materials before they are suspended in binders."
+    }
+  ],
+  "activities": [
+    {
+      "title": "Module 1: Deconstructing Paint - The Chemistry of Binders",
+      "description": "Students investigate the chemical composition of paint by synthesizing their own paints using different ancient and modern binders (egg yolk, casein/milk, and PVA glue). They will analyze how different polymers suspend pigments and adhere to surfaces.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Lab safety protocols",
+        "Basic measurement skills",
+        "Observation and data recording"
+      ],
+      "learningObjectives": [
+        "Identify the three main components of paint: pigment, binder, and solvent.",
+        "Compare the chemical properties of protein-based binders (egg, milk) versus synthetic polymer binders (acrylic/glue).",
+        "Observe and describe the properties of emulsions and colloids."
+      ],
+      "teks": [
+        "§112.35. Chemistry (c)(10)(B): Develop and use general rules regarding solubility through investigations with aqueous solutions.",
+        "§112.35. Chemistry (c)(4)(B): Distinguish between physical and chemical changes in matter.",
+        "§117.302. Art, Level I (c)(2)(C): Use specific tools and materials to create artworks that communicate."
+      ],
+      "texasStemStandards": [
+        "STEM Content Knowledge: Students demonstrate mastery of core concepts in science and mathematics.",
+        "Inquiry-Based Learning: Students engage in hands-on investigations to understand scientific phenomena."
+      ],
+      "materialsList": [
+        {
+          "item": "Powdered Tempera Pigments (Red, Blue, Yellow)",
+          "estimatedCost": "$15.00/set"
+        },
+        {
+          "item": "Eggs (for yolk extraction)",
+          "estimatedCost": "$3.00/dozen"
+        },
+        {
+          "item": "Vinegar (for Casein precipitation)",
+          "estimatedCost": "$2.50"
+        },
+        {
+          "item": "PVA Glue (White Glue)",
+          "estimatedCost": "$4.00"
+        },
+        {
+          "item": "Watercolor paper or heavy cardstock",
+          "estimatedCost": "$10.00"
+        },
+        {
+          "item": "Plastic pallets and mixing sticks",
+          "estimatedCost": "$8.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Prep: Separate egg yolks and prepare milk/vinegar mixture.",
+          "Intro: Discuss Paint = Pigment + Binder + Vehicle.",
+          "Demo: Show raw pigment doesn't stick without binder.",
+          "Activity: Students mix pigment with Egg, PVA, and Water.",
+          "Wrap: Compare drying time and sheen."
+        ],
+        "detailed": [
+          "Preparation: Separate 2-3 egg yolks and place in cups. Prepare a small amount of milk mixed with vinegar to create curdles (casein) beforehand as a demo.",
+          "Introduction (5 mins): Discuss that paint is not just 'color'. Introduce the formula: Paint = Pigment (Color) + Binder (Glue) + Vehicle (Thinner). Discuss historical context (Cave paintings used blood/fat; Renaissance used egg).",
+          "Demonstration (5 mins): Show raw pigment powder. Blow on it (gently) to show it doesn't stick to paper. Explain the need for a polymer/binder to lock it to the substrate.",
+          "Activity (25 mins): Distribute materials. Have students mix the same pigment (e.g., Red) with three different binders: Egg Yolk (Tempera), PVA Glue (Acrylic-like), and Water (control).",
+          "Observation (5 mins): Students apply all three to paper. Discuss texture, drying time, and sheen. Discuss why the water sample fails (evaporation leaves only loose powder)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Place pigment in three wells.",
+          "Add water to well 1, egg yolk to well 2, PVA glue to well 3.",
+          "Mix and paint swatches.",
+          "Label and observe differences."
+        ],
+        "detailed": [
+          "Place a small amount of powdered pigment into three separate wells on your palette.",
+          "In the first well, add a few drops of water. Mix and paint a swatch on your paper. Label it 'Control'.",
+          "In the second well, add a teaspoon of egg yolk. Mix thoroughly until smooth. Paint a swatch. Label it 'Egg Tempera'.",
+          "In the third well, add a teaspoon of PVA glue. Mix and paint a swatch. Label it 'Polymer'.",
+          "Observe the differences. Which one is thicker? Which dries glossier? Touch the water-only sample when dry—does the color rub off?"
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in laboratory science",
+          "Exposure to academic programs"
+        ],
+        "allowableCosts": [
+          "Educational supplies and materials (2 CFR 200.453)",
+          "Instructional equipment"
+        ],
+        "programType": "Both",
+        "justification": "This activity provides direct instruction in chemistry (mixtures, solutions, and polymers), which is a required core curriculum component for UB/UBMS. The materials purchased are necessary for the educational delivery of the lab.",
+        "heaRequirements": [
+          "Section 402C(b) (UB): Instruction in laboratory science",
+          "Section 402E(b) (UBMS): Exposure to laboratory science and research"
+        ],
+        "cfrCitations": [
+          "34 CFR § 645.11(a)(1) (Curriculum services)",
+          "34 CFR § 645.11(b) (Other services)"
+        ],
+        "edgarCitations": [
+          "2 CFR § 200.453 (Materials and supplies costs, including costs of computing devices)"
+        ]
+      },
+      "stemConnections": {
+        "science": "Chemistry of colloids, emulsions, and protein denaturation.",
+        "technology": "Analysis of synthetic polymers used in modern acrylics.",
+        "engineering": "Material science: selecting binders based on desired adhesion properties.",
+        "math": "Ratios of pigment to binder for optimal viscosity.",
+        "crossCurricularLinks": [
+          "Art History (Renaissance painting techniques)",
+          "History (Availability of materials in different eras)"
+        ]
+      },
+      "careerPathways": [
+        "Chemical Engineer",
+        "Materials Scientist",
+        "Art Conservator/Restorer",
+        "Museum Curator"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Chemistry",
+        "Bachelor of Science in Materials Engineering",
+        "Master of Arts in Art Conservation"
+      ]
+    },
+    {
+      "title": "Module 2: Chromatography Forensics - The Math of Mixtures",
+      "description": "Using water-soluble black markers and paints, students perform paper chromatography to calculate the Retention Factor (Rf) of different pigment components. This connects the physical separation of mixtures to mathematical ratios.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Beginner/Intermediate",
+      "requiredSkills": [
+        "Use of metric ruler",
+        "Division with decimals",
+        "Graphing basics"
+      ],
+      "learningObjectives": [
+        "Understand the principles of chromatography as a separation technique.",
+        "Calculate Retention Factor (Rf) values using division and measurement skills.",
+        "Analyze how polarity affects the movement of molecules through a medium."
+      ],
+      "teks": [
+        "§112.35. Chemistry (c)(10)(A): Describe the unique role of water in chemical and biological systems.",
+        "§111.39. Algebra I (c)(1): Mathematical process standards to acquire and demonstrate mathematical understanding.",
+        "§112.34. Biology (c)(9)(B): Compare the reactants and products of photosynthesis (connection to chlorophyll chromatography)."
+      ],
+      "texasStemStandards": [
+        "Process Skills: Students use data to derive conclusions.",
+        "Communication: Students communicate mathematical findings clearly."
+      ],
+      "materialsList": [
+        {
+          "item": "Chromatography paper (or coffee filters)",
+          "estimatedCost": "$8.00"
+        },
+        {
+          "item": "Various black markers (water-soluble) and liquid watercolors",
+          "estimatedCost": "$10.00"
+        },
+        {
+          "item": "Beakers or clear plastic cups",
+          "estimatedCost": "$12.00"
+        },
+        {
+          "item": "Rulers (metric)",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Pencils",
+          "estimatedCost": "$2.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Intro: Explain polarity and capillary action.",
+          "Setup: Draw pencil start lines on filter paper.",
+          "Experiment: Dot ink, suspend in water (solvent below dot).",
+          "Analysis: Measure distances traveled by solvent and pigment.",
+          "Math: Calculate Rf values."
+        ],
+        "detailed": [
+          "Intro (5 mins): Explain that 'black' is often a mixture of many colors. Introduce the concept of Polarity—water pulls polar pigments further up the paper.",
+          "Setup (5 mins): Distribute strips of filter paper. Ensure students use PENCIL for the starting line (graphite doesn't dissolve). Markers will ruin the experiment if used for the start line.",
+          "Experiment (15 mins): Students dot different black inks/paints on the start line and suspend the paper in water. Vital: The water level must be BELOW the ink dots, or the ink will wash into the cup.",
+          "Analysis (15 mins): Once the solvent front reaches near the top, remove and dry. Teach the Rf calculation: Distance traveled by pigment / Distance traveled by water.",
+          "Discussion: Why did some colors travel further? (Higher solubility/polarity)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Cut paper strip, draw pencil line 2cm from bottom.",
+          "Dot marker on line.",
+          "Place in water (keep water below dot).",
+          "Remove before water reaches top.",
+          "Measure and calculate Rf."
+        ],
+        "detailed": [
+          "Cut a strip of filter paper. Draw a pencil line 2cm from the bottom.",
+          "Place a small dot of black marker or paint on the pencil line.",
+          "Place the strip in a beaker with a small amount of water. Do NOT let the water touch the ink dot directly.",
+          "Watch as the water climbs the paper (capillary action) and separates the ink.",
+          "Remove the strip before the water reaches the top. Mark the highest water line with a pencil.",
+          "Measure the distance from the start line to the center of each color spot. Measure the distance to the water line.",
+          "Calculate Rf = (Distance of Color) ÷ (Distance of Water)."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in mathematics",
+          "Instruction in laboratory science"
+        ],
+        "allowableCosts": [
+          "Educational supplies (2 CFR 200.453)"
+        ],
+        "programType": "Both",
+        "justification": "This activity fulfills the requirement for instruction in both math (calculating ratios/decimals) and science (lab techniques/separation of mixtures). It is a standard introductory chemistry lab appropriate for high school readiness.",
+        "heaRequirements": [
+          "Section 402C(b) (UB): Instruction in mathematics and science",
+          "Section 402E(b) (UBMS): Hands-on experience in laboratories"
+        ],
+        "cfrCitations": [
+          "34 CFR § 645.11(a)(2) (Math instruction)",
+          "34 CFR § 645.11(a)(1) (Science instruction)"
+        ],
+        "edgarCitations": [
+          "2 CFR § 200.453 (Materials and supplies)"
+        ]
+      },
+      "stemConnections": {
+        "science": "Solubility, polarity, and capillary action.",
+        "technology": "Forensic science technology used to identify substances.",
+        "engineering": "Chemical engineering separations.",
+        "math": "Calculation of ratios, measuring in metric units, significant figures.",
+        "crossCurricularLinks": [
+          "Forensics (Evidence analysis)",
+          "Biology (Separating plant pigments)"
+        ]
+      },
+      "careerPathways": [
+        "Forensic Science Technician",
+        "Analytical Chemist",
+        "Quality Control Analyst",
+        "Pharmaceutical Scientist"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Forensic Science",
+        "Bachelor of Science in Biochemistry",
+        "Bachelor of Science in Chemical Engineering"
+      ]
+    },
+    {
+      "title": "Module 3: Electric Art - Conductive Paint Engineering",
+      "description": "Students bridge art and engineering by using conductive paint (graphite or carbon-based) to create functioning electrical circuits on paper. They will design a painting that lights up an LED, learning about resistance, continuity, and voltage.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Understanding of simple circuits",
+        "Fine motor skills for drawing",
+        "Troubleshooting/debugging"
+      ],
+      "learningObjectives": [
+        "Construct a complete series circuit using non-traditional conductors (paint).",
+        "Explain the relationship between paint thickness/length and electrical resistance.",
+        "Integrate aesthetic design with functional engineering constraints."
+      ],
+      "teks": [
+        "§112.39. Physics (c)(5)(F): Design, construct, and calculate in terms of current through, potential difference across, resistance of, and power used by electric circuit elements.",
+        "§117.302. Art, Level I (c)(1)(A): Identify and illustrate concepts from direct observation, original sources, and personal experiences."
+      ],
+      "texasStemStandards": [
+        "Design Process: Students identify a problem and design a solution.",
+        "Creativity: Students use innovative thinking to solve challenges."
+      ],
+      "materialsList": [
+        {
+          "item": "Conductive Paint Pens (or graphite sticks/soft pencils 6B-9B)",
+          "estimatedCost": "$30.00"
+        },
+        {
+          "item": "3V Coin Cell Batteries",
+          "estimatedCost": "$8.00"
+        },
+        {
+          "item": "5mm LEDs (various colors)",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Heavy cardstock paper",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Binder clips or scotch tape",
+          "estimatedCost": "$3.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Intro: Review circuit basics. Introduce conductive paint.",
+          "Design: Sketch design where lines = wires.",
+          "Fabrication: Draw thick lines, leaving gaps for LED and Battery.",
+          "Assembly: Tape LED and Battery to paper.",
+          "Test: Troubleshoot connection issues."
+        ],
+        "detailed": [
+          "Intro (5 mins): Review simple circuits (Power source, Path, Load). Introduce conductive paint as a 'liquid wire' that has higher resistance than copper.",
+          "Challenge (5 mins): Sketch a design where the lines of the drawing serve as the wires for the circuit.",
+          "Fabrication (20 mins): Students draw thick, continuous lines with conductive paint/pencils. They must leave a gap for the LED and a gap for the battery. Emphasize that the paint must be wet/thick for good conductivity.",
+          "Testing (10 mins): Attach the LED (long leg to positive) and battery. Troubleshoot. If the light is dim, the line is too long or thin (High Resistance).",
+          "Wrap up: Discuss how the material properties of the paint affect electron flow compared to standard wires."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Plan design (no short circuits).",
+          "Draw positive/negative traces with conductive paint.",
+          "Leave gaps for LED and Battery.",
+          "Tape LED legs to traces.",
+          "Fold paper over battery to switch on."
+        ],
+        "detailed": [
+          "Plan your design on scratch paper. You need a continuous loop that does not cross over itself (short circuit).",
+          "On the cardstock, draw your positive and negative traces using the conductive paint/pen. Make the lines THICK and SOLID.",
+          "Leave a small gap where the LED will sit. The traces should match the width of the LED legs.",
+          "Bend the legs of the LED flat and tape them down over the paint tracks. Ensure good contact between metal and paint.",
+          "Place the battery on the paper. Fold the corner of the paper over the battery to complete the circuit (switch mechanism).",
+          "Does it light up? If not, check your connections or add more paint to lower the resistance."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Exposure to engineering or technology",
+          "Instruction in laboratory science"
+        ],
+        "allowableCosts": [
+          "Educational supplies (2 CFR 200.453)",
+          "STEM Workshops/Activity costs"
+        ],
+        "programType": "Both",
+        "justification": "This aligns with the 'Exposure to Engineering' component of UBMS and General UB. It teaches circuitry (Physics) through an applied, hands-on methodology. The cost is allowable as supplies for a STEM workshop.",
+        "heaRequirements": [
+          "Section 402C(b) (UB): Exposure to new technologies",
+          "Section 402E(b) (UBMS): Exposure to engineering"
+        ],
+        "cfrCitations": [
+          "34 CFR § 645.11(b)(3) (Exposure to careers in which disadvantaged persons are underrepresented)",
+          "34 CFR § 645.11(a)(1) (Science instruction)"
+        ],
+        "edgarCitations": [
+          "2 CFR § 200.453 (Materials and supplies)"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics of electricity: Current (Amps), Voltage (Volts), Resistance (Ohms).",
+        "technology": "Wearable technology and flexible electronics.",
+        "engineering": "Circuit design and troubleshooting/debugging.",
+        "math": "Ohm's Law (V=IR) conceptual application.",
+        "crossCurricularLinks": [
+          "Visual Arts (Mixed media)",
+          "Industrial Design"
+        ]
+      },
+      "careerPathways": [
+        "Electrical Engineer",
+        "Industrial Designer",
+        "Printed Electronics Engineer",
+        "STEAM Educator"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Electrical Engineering",
+        "Bachelor of Fine Arts in Industrial Design",
+        "Bachelor of Science in Applied Physics"
+      ]
+    }
+  ]
+}

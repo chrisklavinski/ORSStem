@@ -1,0 +1,1813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illuminating Physics: Advanced Light, Color, and Shadow Analysis (Expanded) - Master STEM Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1e293b; }
+        .page-break { page-break-before: always; }
+        .avoid-break { break-inside: avoid; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab-btn.active { background-color: #4f46e5; color: white; border-color: #4f46e5; }
+        
+        /* Workbook specific styles */
+        .wb-checklist-item { display: flex; align-items: flex-start; margin-bottom: 12px; }
+        .wb-checkbox { width: 18px; height: 18px; border: 2px solid #cbd5e1; border-radius: 4px; margin-right: 12px; flex-shrink: 0; margin-top: 3px; }
+        .wb-box { background: #f8fafc; border: 1px solid #e2e8f0; padding: 20px; border-radius: 8px; font-size: 14px; }
+        
+        @media print {
+            body { background-color: white; }
+            .no-print { display: none !important; }
+            .tab-content { display: none !important; }
+            .tab-content.active { display: block !important; }
+            /* If user hits print, we want to respect the current tab, or maybe provide a print-all option. 
+               For simplicity, we print the active tab. */
+        }
+    </style>
+    <script>
+        function switchTab(id) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById('btn-' + id).classList.add('active');
+        }
+        function toggleSection(id) {
+            const content = document.getElementById('content-' + id);
+            const chevron = document.getElementById('chevron-' + id);
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                chevron.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                chevron.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</head>
+<body class="py-8 px-4 md:px-8 max-w-7xl mx-auto">
+    <!-- Navigation Tabs -->
+    <div class="flex justify-center mb-8 no-print sticky top-4 z-50">
+        <div class="bg-white p-2 rounded-2xl shadow-lg border border-gray-200 flex gap-2">
+            <button id="btn-guide" onclick="switchTab('guide')" class="tab-btn active px-6 py-2 rounded-xl font-bold text-sm text-slate-600 hover:bg-slate-50 border border-transparent transition-all">Master Guide</button>
+            <button id="btn-workbook" onclick="switchTab('workbook')" class="tab-btn px-6 py-2 rounded-xl font-bold text-sm text-slate-600 hover:bg-slate-50 border border-transparent transition-all">Teacher Workbook</button>
+            <button id="btn-narrative" onclick="switchTab('narrative')" class="tab-btn px-6 py-2 rounded-xl font-bold text-sm text-slate-600 hover:bg-slate-50 border border-transparent transition-all">Grant Narrative</button>
+        </div>
+    </div>
+
+    <!-- TAB 1: MASTER GUIDE -->
+    <div id="guide" class="tab-content active">
+        <header class="mb-8 text-center border-b-4 border-indigo-600 pb-12">
+            <div class="inline-block px-4 py-1 mb-4 bg-indigo-50 text-indigo-700 text-xs font-black uppercase tracking-widest rounded-full">STEM Architect Master Guide</div>
+            <h1 class="text-5xl font-black text-slate-900 mb-6">Illuminating Physics: Advanced Light, Color, and Shadow Analysis (Expanded)</h1>
+            <p class="text-2xl text-slate-500 font-medium max-w-4xl mx-auto leading-relaxed mb-8">This comprehensive 20-module curriculum utilizes professional-grade RGB LED studio lighting to explore high school physics concepts regarding geometric optics, the Inverse Square Law, additive color theory, and electromagnetic wave behavior. Designed for Upward Bound and UBMS programs, it transitions students from qualitative observation to quantitative analysis using app-controlled lighting technology, satisfying federal requirements for rigorous laboratory science instruction.</p>
+            <div class="flex justify-center gap-6 text-sm font-bold text-slate-400 uppercase tracking-widest">
+                <span>Target: High School (Ages 14-18)</span>
+                <span>&bull;</span>
+                <span>Total Time: 800 minutes (20 activities, 40 minutes each)</span>
+                <span>&bull;</span>
+                <span>Est. Cost: $175.00</span>
+            </div>
+        </header>
+
+        
+        <div class="mb-12 page-break">
+            <div class="bg-indigo-900 rounded-[2.5rem] p-12 text-white shadow-2xl relative overflow-hidden">
+                <h2 class="text-3xl font-black mb-8 flex items-center gap-4 border-b border-indigo-700 pb-4"><span>🚌</span> Field Expeditions (60mi Radius)</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <div class="bg-white/10 p-6 rounded-3xl border border-white/10 backdrop-blur-sm">
+                        <h3 class="text-xl font-bold text-white mb-1">Perot Museum of Nature and Science - Expanding Universe Hall</h3>
+                        <div class="text-xs font-bold uppercase tracking-widest text-indigo-300 mb-4 flex items-center gap-2"><span>📍</span> Dallas, TX (Dallas County)</div>
+                        <p class="text-sm text-indigo-100 mb-4 leading-relaxed">Guided exploration of the Expanding Universe hall, focusing on spectroscopy exhibits and light behavior demonstrations.</p>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-3xl border border-white/10 backdrop-blur-sm">
+                        <h3 class="text-xl font-bold text-white mb-1">UTA Planetarium & Physics Department</h3>
+                        <div class="text-xs font-bold uppercase tracking-widest text-indigo-300 mb-4 flex items-center gap-2"><span>📍</span> Arlington, TX (Tarrant County)</div>
+                        <p class="text-sm text-indigo-100 mb-4 leading-relaxed">A private show focusing on electromagnetic radiation followed by a tour of the University of Texas at Arlington optics labs.</p>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-3xl border border-white/10 backdrop-blur-sm">
+                        <h3 class="text-xl font-bold text-white mb-1">Fort Worth Museum of Science and History - Energy Blast</h3>
+                        <div class="text-xs font-bold uppercase tracking-widest text-indigo-300 mb-4 flex items-center gap-2"><span>📍</span> Fort Worth, TX (Tarrant County)</div>
+                        <p class="text-sm text-indigo-100 mb-4 leading-relaxed">Investigation of energy resources, specifically focusing on solar energy capture and efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-y-8">
+            
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(0)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">1</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Umbra and Penumbra: The Geometry of Shadows</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-0" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-0" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students explore the difference between point sources and extended light sources to understand shadow formation (umbra vs. penumbra) using similar triangles and geometric optics.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Differentiate between point sources and extended light sources.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Identify and measure the umbra and penumbra of a shadow.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Apply geometric similarity to calculate expected shadow dimensions.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>NEEWER 660 PRO RGB LED Light</span><span class="text-slate-400 font-mono text-xs">$85.00 (amortized)</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Opaque blocking object</span><span class="text-slate-400 font-mono text-xs">$1.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Tape measure</span><span class="text-slate-400 font-mono text-xs">$5.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in laboratory science, Instruction in mathematics</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402C(b) - Required Services (Science/Math), Sec. 402E(b) - UBMS Required Services, 34 CFR 645.11(b)(1) - Mathematics Instruction, 34 CFR 645.11(b)(2) - Laboratory Science Instruction, 2 CFR 200.453 - Materials and supplies costs</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain that extended sources create fuzzy edges (penumbra) due to light reaching from different angles.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Demonstrate how similar triangles (Source-Object-Screen) predict shadow size.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Check student measurements for accuracy.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(1)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">2</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Fading Fast: Modeling the Inverse Square Law</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-1" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-1" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students utilize dimmable LED lights and smartphone sensors to collect data on light intensity over distance, graphing results to prove the Inverse Square Law.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Collect quantitative data regarding light intensity (Lux).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Graph data points to identify non-linear relationships.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Mathematically verify Intensity ∝ 1/d².</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>NEEWER 660 PRO RGB LED Light</span><span class="text-slate-400 font-mono text-xs">Equipment on hand</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Smartphone with Lux Meter app</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Meter stick</span><span class="text-slate-400 font-mono text-xs">$5.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in laboratory science, Instruction in mathematics</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402E(b) - UBMS Required Services (Mathematics), 34 CFR 645.11(b)(1) - Mathematics Instruction, 2 CFR 200.453 - Materials and supplies</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Ensure room is dark to prevent ambient light pollution in data.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain that doubling distance quarters intensity.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Assist students in using calculator regressions to find the power law curve.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(2)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">3</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Chromatic Shadows: Additive Color Physics</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-2" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-2" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students explore additive color mixing and the phenomenon of colored shadows caused by calculating complementary colors using RGB lights.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Demonstrate additive color mixing.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Predict shadow colors from polychromatic sources.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Use mobile apps to control IoT lighting.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>NEEWER RGB LED Kit</span><span class="text-slate-400 font-mono text-xs">Equipment on hand</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>White backdrop</span><span class="text-slate-400 font-mono text-xs">$20.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in laboratory science, Exposure to cultural events (Art/Physics)</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402C(b) - Core Curriculum, Sec. 402C(b)(4) - Cultural Components, 34 CFR 645.11(a)(2) - Laboratory Science, 34 CFR 645.11(c) - Cultural/Academic Enrichment, 2 CFR 200.313 - Equipment</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain that in additive theory, Red + Green = Yellow.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Show that when an object blocks the Red light, only Green hits the shadow area, creating a Green shadow on a Yellow background.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(3)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">4</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">The Law of Reflection: Plane Mirrors</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-3" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-3" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students verify the Law of Reflection (angle of incidence equals angle of reflection) using focused LED beams and plane mirrors.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>State the Law of Reflection.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Measure angles of incidence and reflection accurately.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Draw normal lines and ray diagrams.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Plane mirror</span><span class="text-slate-400 font-mono text-xs">$3.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Protractor</span><span class="text-slate-400 font-mono text-xs">$1.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>LED Light with barn doors (slit)</span><span class="text-slate-400 font-mono text-xs">Equipment on hand</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in laboratory science, Instruction in mathematics</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402C(b) - Required Services, 34 CFR 645.11(b)(2) - Science Instruction, 2 CFR 200.453 - Materials and supplies</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Emphasize that angles are measured from the Normal line, not the mirror surface.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Check student drawings for perpendicularity of the Normal line.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(4)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">5</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Snell's Law: Refraction through Media</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-4" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-4" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Investigating how light bends when entering a denser medium (acrylic blocks) and calculating the Index of Refraction.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Observe light bending toward the normal.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Calculate sine of angles.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Apply Snell's Law (n1*sin1 = n2*sin2).</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Acrylic Rectangular Block</span><span class="text-slate-400 font-mono text-xs">$5.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Protractor/Scientific Calculator</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in laboratory science, Instruction in mathematics</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402E(b) - UBMS Math/Science, 34 CFR 645.11(b)(1) - Math, 34 CFR 645.11(b)(2) - Science, 2 CFR 200.453 - Materials and supplies</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Walk through the equation n1*sin(theta1) = n2*sin(theta2).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain that n for air is approx 1.0.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Guide students to solve for n2.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(5)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">6</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Total Internal Reflection & Fiber Optics</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-5" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-5" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students determine the 'Critical Angle' where refraction turns into reflection, simulating fiber optic transmission.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Identify the Critical Angle.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Explain Total Internal Reflection (TIR).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Relate TIR to data transmission.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Semicircular Acrylic Block</span><span class="text-slate-400 font-mono text-xs">$6.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>LED Light source</span><span class="text-slate-400 font-mono text-xs">Equipment on hand</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in laboratory science, Exposure to STEM careers (Telecommunications)</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402E(b) - UBMS Science, 34 CFR 645.11(a)(2) - Laboratory Science, 2 CFR 200.453 - Materials and supplies</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Use the semicircular block so light enters the curved side undeviated.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Show the transition point where the refracted ray disappears and the reflected ray becomes 100% bright.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(6)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">7</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Converging Lenses: Finding Focal Length</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-6" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-6" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Using biconvex lenses, students form real images on a screen and use the Thin Lens Equation to find focal length.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Form real images on a screen.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Measure object distance (do) and image distance (di).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Solve 1/f = 1/do + 1/di.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Convex Lens</span><span class="text-slate-400 font-mono text-xs">$4.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Meter stick/Rail</span><span class="text-slate-400 font-mono text-xs">$5.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in laboratory science, Instruction in mathematics</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402C(b) - Math/Science, 34 CFR 645.11(b)(1) - Math, 34 CFR 645.11(b)(2) - Science, 2 CFR 200.453 - Materials and supplies</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Demonstrate that real images are inverted.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Guide students through the algebra of fractions to solve for 'f'.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(7)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">8</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Polarization: The Filter Effect</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-7" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-7" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students use polarizing films to explore the wave nature of light, blocking light by crossing filters at 90 degrees (Malus's Law basics).</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Describe light as a transverse wave.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Observe extinction of light with crossed polarizers.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Test various light sources for polarization.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Polarizing Film sheets (2)</span><span class="text-slate-400 font-mono text-xs">$5.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>LED Light</span><span class="text-slate-400 font-mono text-xs">Equipment on hand</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in laboratory science</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402C(b) - Core Curriculum, 34 CFR 645.11(b)(2) - Science, 2 CFR 200.453 - Materials and supplies</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain that most light is unpolarized (vibrating in all directions).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Show how the first filter selects one direction, and the second blocks it if perpendicular.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(8)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">9</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Diffraction: Bending Light Around Corners</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-8" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-8" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Using narrow slits and hair strands, students observe diffraction patterns to prove the wave nature of light.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Observe diffraction interference patterns.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Relate slit width to pattern spread.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Calculate wavelength (conceptual).</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Single slit slide or Human hair</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Laser pointer or focused LED</span><span class="text-slate-400 font-mono text-xs">$5.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in laboratory science</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402E(b) - UBMS Science, 34 CFR 645.11(a)(2) - Laboratory Science, 2 CFR 200.453 - Materials and supplies</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain that waves bend around obstacles.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Show how to tape a hair across a laser pointer aperture to create a pattern on the wall.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(9)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">10</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">DIY Spectroscopy: Decoding Light</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-9" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-9" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students build a simple spectroscope using a CD fragment to analyze the spectral composition of the RGB LEDs versus sunlight.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Separate white light into component wavelengths.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Compare continuous vs discrete spectra.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Analyze RGB LED output.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>CD/DVD fragment</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Cardboard tube</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in laboratory science</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402E(b) - UBMS Science, 34 CFR 645.11(b)(2) - Science, 2 CFR 200.453 - Materials and supplies</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Use the tracks on a CD as a diffraction grating.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain that LEDs often have 'spiky' spectra compared to the smooth sun spectrum.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(10)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">11</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Lambert's Cosine Law: Solar Simulation</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-10" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-10" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Simulating solar panels, students measure how the angle of incidence affects light intensity received by a surface.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Relate angle of incidence to intensity.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Verify I = Io * cos(theta).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Discuss solar panel efficiency.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Lux Meter App</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Protractor</span><span class="text-slate-400 font-mono text-xs">$1.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>LED Light</span><span class="text-slate-400 font-mono text-xs">Equipment on hand</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in laboratory science, Instruction in mathematics</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402E(b) - UBMS Math/Science, 34 CFR 645.11(b)(1) - Math, 34 CFR 645.11(b)(2) - Science, 2 CFR 200.453 - Materials and supplies</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain that as the angle increases, the same amount of light spreads over a larger area, reducing intensity.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Introduce the Cosine Law.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(11)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">12</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">The Blue Sky Effect: Rayleigh Scattering</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-11" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-11" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students reproduce the scattering of light that makes the sky blue and sunsets red using a water tank and white LED.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Observe Tyndall effect/Scattering.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Explain relationship between wavelength and scattering.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Differentiate transmitted vs scattered light colors.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Clear container with water</span><span class="text-slate-400 font-mono text-xs">$2.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Milk (few drops)</span><span class="text-slate-400 font-mono text-xs">$1.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>LED Light</span><span class="text-slate-400 font-mono text-xs">Equipment on hand</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in laboratory science</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402C(b) - Core Curriculum, 34 CFR 645.11(b)(2) - Science, 2 CFR 200.453 - Materials and supplies</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain that shorter wavelengths (Blue) scatter more easily than long ones (Red).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">As milk increases, more blue scatters out the sides, leaving red to pass through the end.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(12)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">13</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Color Rendering Index (CRI) Lab</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-12" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-12" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students compare how different light sources (RGB White vs Daylight) affect the appearance of object colors, introducing CRI.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Define Color Rendering Index.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Compare RGB-mixed white vs broad spectrum white.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Analyze color fidelity.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Colorful fruit or fabric swatches</span><span class="text-slate-400 font-mono text-xs">$5.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>NEEWER LED (RGB mode vs CCT mode)</span><span class="text-slate-400 font-mono text-xs">Equipment on hand</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in laboratory science, Exposure to STEM careers (Lighting Design)</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402C(b) - Core Curriculum, 34 CFR 645.11(b)(2) - Science, 2 CFR 200.453 - Materials and supplies</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Demonstrate that RGB white has gaps in the spectrum, making some colors look dull.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Show how high CRI light (broad spectrum) reveals true colors.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(13)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">14</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">The Pinhole Camera: Camera Obscura</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-13" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-13" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students construct a simple camera obscura to explore the rectilinear propagation of light and image inversion.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Demonstrate light travels in straight lines.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Observe inverted image formation.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Investigate aperture size effects.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Cardboard box</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Tracing paper</span><span class="text-slate-400 font-mono text-xs">$1.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in laboratory science</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402C(b) - Core Curriculum, 34 CFR 645.11(b)(2) - Science, 2 CFR 200.453 - Materials and supplies</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain that light from the top of the tree travels in a straight line through the hole to the bottom of the screen (inversion).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Discuss focus vs brightness trade-offs.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(14)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">15</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Chroma Key Physics: The Green Screen</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-14" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-14" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Using green LEDs and green paper, students investigate how digital sensors isolate specific hues for special effects (Chroma Keying).</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Explain spectral isolation.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Analyze why green is used for sensors (Bayer filter).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Experiment with lighting evenness.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Green construction paper</span><span class="text-slate-400 font-mono text-xs">$2.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Smartphone video app</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in laboratory science, Exposure to STEM careers (Film Tech)</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402C(b) - Core Curriculum, 34 CFR 645.11(a)(2) - Science, 2 CFR 200.453 - Materials and supplies</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Sensors have 2 green pixels for every 1 red and 1 blue, making them most sensitive to green.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Show how shadows ruin the key.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(15)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">16</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Mixing Pigment vs. Mixing Light</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-15" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-15" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">A comparative lab where students physically mix paints (subtractive) and overlap LEDs (additive) to contrast the two color theories.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Contrast Additive (RGB) and Subtractive (CMY) mixing.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Predict results of mixing primary colors in both systems.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Explain absorption vs reflection.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Paints (Red, Blue, Yellow)</span><span class="text-slate-400 font-mono text-xs">$5.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>LED Lights</span><span class="text-slate-400 font-mono text-xs">Equipment on hand</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in laboratory science, Academic enrichment</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402C(b) - Core Curriculum, 34 CFR 645.11(b)(2) - Science, 2 CFR 200.453 - Materials and supplies</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain that paint absorbs light (Subtractive) - more paint = darker.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Light adds energy (Additive) - more light = brighter/whiter.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(16)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">17</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Light Penetration and Absorption</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-16" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-16" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students use colored filters and water to simulate how different wavelengths penetrate ocean depths.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Observe wavelength-dependent absorption.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Explain why the ocean looks blue/black deep down.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Measure intensity loss through filters.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Blue/Red transparent sheets</span><span class="text-slate-400 font-mono text-xs">$5.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Lux Meter</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in laboratory science, Instruction in mathematics</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402E(b) - UBMS Science, 34 CFR 645.11(a)(2) - Science, 34 CFR 645.11(b)(1) - Math, 2 CFR 200.453 - Materials and supplies</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Water absorbs long wavelengths (Red) quickly.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Blue travels deeper.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">This is why deep sea creatures are often red (they look black/invisible).</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(17)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">18</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Anamorphic Art & Cylindrical Reflection</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-17" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-17" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students create distorted drawings that resolve into normal images when viewed in a cylindrical mirror, exploring reflection off curved surfaces.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Analyze reflection from convex cylindrical surfaces.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Map coordinate transformation (Cartesian to Polar).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Create anamorphic art.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Shiny metal cylinder (can)</span><span class="text-slate-400 font-mono text-xs">$2.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Grid paper</span><span class="text-slate-400 font-mono text-xs">$1.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in mathematics, Instruction in laboratory science</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402C(b) - Math/Science, 34 CFR 645.11(b)(1) - Math, 2 CFR 200.453 - Materials and supplies</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain that the cylinder acts as a convex mirror horizontally but flat vertically.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">This requires the art to be stretched wide (distorted) to appear normal in reflection.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(18)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">19</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Reciprocity: Photography Physics</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-18" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-18" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Using manual camera apps, students investigate the relationship between ISO, Shutter Speed, and Light Intensity.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Define the Exposure Triangle.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Demonstrate reciprocity (doubling light = halving shutter speed).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Analyze histogram data.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Smartphone with Manual Cam app</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>LED Lights</span><span class="text-slate-400 font-mono text-xs">Equipment on hand</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in laboratory science, Instruction in mathematics</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402C(b) - Core Curriculum, 34 CFR 645.11(b)(1) - Math, 2 CFR 200.313 - Equipment</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Show that exposure = Intensity x Time.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">If Intensity doubles (from light source), Time must halve to keep exposure constant.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(19)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">20</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Capstone: Engineering a Lighting System</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 40 minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-19" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-19" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students synthesize all learned concepts to design a lighting setup for a specific scenario (e.g., a suspense scene or product macro-photo), calculating angles and intensities.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Synthesize optics, color theory, and intensity concepts.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Design a system to meet constraints.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Justify design choices with physics principles.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Full NEEWER LED Kit</span><span class="text-slate-400 font-mono text-xs">Equipment on hand</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Props/Subject matter</span><span class="text-slate-400 font-mono text-xs">$0.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Exposure to STEM careers (Engineering), Instruction in laboratory science</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">Sec. 402E(b) - UBMS Science, 34 CFR 645.11(a)(2) - Science, 2 CFR 200.313 - Equipment</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Require students to submit a layout plan before touching equipment.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">The plan must reference Inverse Square Law (distances) and Shadow Geometry (Hard vs Soft).</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+        </div>
+    </div>
+
+    <!-- TAB 2: TEACHER WORKBOOK -->
+    <div id="workbook" class="tab-content max-w-4xl mx-auto">
+        <div class="text-center py-20 border-b-2 border-slate-900 mb-12">
+            <div class="text-xs font-black uppercase tracking-[0.3em] text-slate-400 mb-4">Official Workbook</div>
+            <h1 class="text-4xl font-black text-slate-900 mb-4">Illuminating Physics: Advanced Light, Color, and Shadow Analysis (Expanded)</h1>
+            <p class="text-lg font-serif italic text-slate-500">Instructor Checklists & Facilitation Notes</p>
+        </div>
+        
+        
+        <div class="mb-16">
+            <h2 class="text-2xl font-black text-slate-900 mb-6 border-b border-slate-200 pb-2">Field Expeditions Checklist</h2>
+            
+            <div class="wb-box mb-4 bg-white border-l-4 border-amber-500">
+                <div class="font-bold text-lg text-slate-900">Perot Museum of Nature and Science - Expanding Universe Hall</div>
+                <div class="text-xs font-bold uppercase text-amber-600 mb-2">Dallas, TX (Dallas County)</div>
+                <p class="text-sm text-slate-600">Guided exploration of the Expanding Universe hall, focusing on spectroscopy exhibits and light behavior demonstrations.</p>
+            </div>
+            <div class="wb-box mb-4 bg-white border-l-4 border-amber-500">
+                <div class="font-bold text-lg text-slate-900">UTA Planetarium & Physics Department</div>
+                <div class="text-xs font-bold uppercase text-amber-600 mb-2">Arlington, TX (Tarrant County)</div>
+                <p class="text-sm text-slate-600">A private show focusing on electromagnetic radiation followed by a tour of the University of Texas at Arlington optics labs.</p>
+            </div>
+            <div class="wb-box mb-4 bg-white border-l-4 border-amber-500">
+                <div class="font-bold text-lg text-slate-900">Fort Worth Museum of Science and History - Energy Blast</div>
+                <div class="text-xs font-bold uppercase text-amber-600 mb-2">Fort Worth, TX (Tarrant County)</div>
+                <p class="text-sm text-slate-600">Investigation of energy resources, specifically focusing on solar energy capture and efficiency.</p>
+            </div>
+        </div>
+
+        
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 1</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Umbra and Penumbra: The Geometry of Shadows</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">NEEWER 660 PRO RGB LED Light</div><div class="text-xs text-slate-500">Est: $85.00 (amortized)</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Opaque blocking object</div><div class="text-xs text-slate-500">Est: $1.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Tape measure</div><div class="text-xs text-slate-500">Est: $5.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Differentiate between point sources and extended light sources.</li><li>Identify and measure the umbra and penumbra of a shadow.</li><li>Apply geometric similarity to calculate expected shadow dimensions.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain that extended sources create fuzzy edges (penumbra) due to light reaching from different angles.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Demonstrate how similar triangles (Source-Object-Screen) predict shadow size.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Check student measurements for accuracy.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 2</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Fading Fast: Modeling the Inverse Square Law</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Advanced</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">NEEWER 660 PRO RGB LED Light</div><div class="text-xs text-slate-500">Est: Equipment on hand</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Smartphone with Lux Meter app</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Meter stick</div><div class="text-xs text-slate-500">Est: $5.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Collect quantitative data regarding light intensity (Lux).</li><li>Graph data points to identify non-linear relationships.</li><li>Mathematically verify Intensity ∝ 1/d².</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Ensure room is dark to prevent ambient light pollution in data.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain that doubling distance quarters intensity.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Assist students in using calculator regressions to find the power law curve.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 3</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Chromatic Shadows: Additive Color Physics</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">NEEWER RGB LED Kit</div><div class="text-xs text-slate-500">Est: Equipment on hand</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">White backdrop</div><div class="text-xs text-slate-500">Est: $20.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Demonstrate additive color mixing.</li><li>Predict shadow colors from polychromatic sources.</li><li>Use mobile apps to control IoT lighting.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain that in additive theory, Red + Green = Yellow.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Show that when an object blocks the Red light, only Green hits the shadow area, creating a Green shadow on a Yellow background.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 4</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">The Law of Reflection: Plane Mirrors</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Beginner</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Plane mirror</div><div class="text-xs text-slate-500">Est: $3.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Protractor</div><div class="text-xs text-slate-500">Est: $1.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">LED Light with barn doors (slit)</div><div class="text-xs text-slate-500">Est: Equipment on hand</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>State the Law of Reflection.</li><li>Measure angles of incidence and reflection accurately.</li><li>Draw normal lines and ray diagrams.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Emphasize that angles are measured from the Normal line, not the mirror surface.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Check student drawings for perpendicularity of the Normal line.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 5</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Snell's Law: Refraction through Media</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Advanced</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Acrylic Rectangular Block</div><div class="text-xs text-slate-500">Est: $5.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Protractor/Scientific Calculator</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Observe light bending toward the normal.</li><li>Calculate sine of angles.</li><li>Apply Snell's Law (n1*sin1 = n2*sin2).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Walk through the equation n1*sin(theta1) = n2*sin(theta2).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain that n for air is approx 1.0.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Guide students to solve for n2.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 6</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Total Internal Reflection & Fiber Optics</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Advanced</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Semicircular Acrylic Block</div><div class="text-xs text-slate-500">Est: $6.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">LED Light source</div><div class="text-xs text-slate-500">Est: Equipment on hand</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Identify the Critical Angle.</li><li>Explain Total Internal Reflection (TIR).</li><li>Relate TIR to data transmission.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Use the semicircular block so light enters the curved side undeviated.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Show the transition point where the refracted ray disappears and the reflected ray becomes 100% bright.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 7</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Converging Lenses: Finding Focal Length</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Convex Lens</div><div class="text-xs text-slate-500">Est: $4.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Meter stick/Rail</div><div class="text-xs text-slate-500">Est: $5.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Form real images on a screen.</li><li>Measure object distance (do) and image distance (di).</li><li>Solve 1/f = 1/do + 1/di.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Demonstrate that real images are inverted.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Guide students through the algebra of fractions to solve for 'f'.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 8</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Polarization: The Filter Effect</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Polarizing Film sheets (2)</div><div class="text-xs text-slate-500">Est: $5.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">LED Light</div><div class="text-xs text-slate-500">Est: Equipment on hand</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Describe light as a transverse wave.</li><li>Observe extinction of light with crossed polarizers.</li><li>Test various light sources for polarization.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain that most light is unpolarized (vibrating in all directions).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Show how the first filter selects one direction, and the second blocks it if perpendicular.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 9</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Diffraction: Bending Light Around Corners</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Advanced</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Single slit slide or Human hair</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Laser pointer or focused LED</div><div class="text-xs text-slate-500">Est: $5.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Observe diffraction interference patterns.</li><li>Relate slit width to pattern spread.</li><li>Calculate wavelength (conceptual).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain that waves bend around obstacles.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Show how to tape a hair across a laser pointer aperture to create a pattern on the wall.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 10</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">DIY Spectroscopy: Decoding Light</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">CD/DVD fragment</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Cardboard tube</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Separate white light into component wavelengths.</li><li>Compare continuous vs discrete spectra.</li><li>Analyze RGB LED output.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Use the tracks on a CD as a diffraction grating.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain that LEDs often have 'spiky' spectra compared to the smooth sun spectrum.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 11</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Lambert's Cosine Law: Solar Simulation</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Advanced</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Lux Meter App</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Protractor</div><div class="text-xs text-slate-500">Est: $1.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">LED Light</div><div class="text-xs text-slate-500">Est: Equipment on hand</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Relate angle of incidence to intensity.</li><li>Verify I = Io * cos(theta).</li><li>Discuss solar panel efficiency.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain that as the angle increases, the same amount of light spreads over a larger area, reducing intensity.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Introduce the Cosine Law.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 12</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">The Blue Sky Effect: Rayleigh Scattering</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Beginner</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Clear container with water</div><div class="text-xs text-slate-500">Est: $2.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Milk (few drops)</div><div class="text-xs text-slate-500">Est: $1.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">LED Light</div><div class="text-xs text-slate-500">Est: Equipment on hand</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Observe Tyndall effect/Scattering.</li><li>Explain relationship between wavelength and scattering.</li><li>Differentiate transmitted vs scattered light colors.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain that shorter wavelengths (Blue) scatter more easily than long ones (Red).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">As milk increases, more blue scatters out the sides, leaving red to pass through the end.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 13</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Color Rendering Index (CRI) Lab</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Colorful fruit or fabric swatches</div><div class="text-xs text-slate-500">Est: $5.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">NEEWER LED (RGB mode vs CCT mode)</div><div class="text-xs text-slate-500">Est: Equipment on hand</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Define Color Rendering Index.</li><li>Compare RGB-mixed white vs broad spectrum white.</li><li>Analyze color fidelity.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Demonstrate that RGB white has gaps in the spectrum, making some colors look dull.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Show how high CRI light (broad spectrum) reveals true colors.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 14</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">The Pinhole Camera: Camera Obscura</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Beginner</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Cardboard box</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Tracing paper</div><div class="text-xs text-slate-500">Est: $1.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Demonstrate light travels in straight lines.</li><li>Observe inverted image formation.</li><li>Investigate aperture size effects.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain that light from the top of the tree travels in a straight line through the hole to the bottom of the screen (inversion).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Discuss focus vs brightness trade-offs.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 15</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Chroma Key Physics: The Green Screen</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Green construction paper</div><div class="text-xs text-slate-500">Est: $2.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Smartphone video app</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Explain spectral isolation.</li><li>Analyze why green is used for sensors (Bayer filter).</li><li>Experiment with lighting evenness.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Sensors have 2 green pixels for every 1 red and 1 blue, making them most sensitive to green.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Show how shadows ruin the key.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 16</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Mixing Pigment vs. Mixing Light</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Beginner</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Paints (Red, Blue, Yellow)</div><div class="text-xs text-slate-500">Est: $5.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">LED Lights</div><div class="text-xs text-slate-500">Est: Equipment on hand</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Contrast Additive (RGB) and Subtractive (CMY) mixing.</li><li>Predict results of mixing primary colors in both systems.</li><li>Explain absorption vs reflection.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain that paint absorbs light (Subtractive) - more paint = darker.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Light adds energy (Additive) - more light = brighter/whiter.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 17</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Light Penetration and Absorption</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Blue/Red transparent sheets</div><div class="text-xs text-slate-500">Est: $5.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Lux Meter</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Observe wavelength-dependent absorption.</li><li>Explain why the ocean looks blue/black deep down.</li><li>Measure intensity loss through filters.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Water absorbs long wavelengths (Red) quickly.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Blue travels deeper.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">This is why deep sea creatures are often red (they look black/invisible).</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 18</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Anamorphic Art & Cylindrical Reflection</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Shiny metal cylinder (can)</div><div class="text-xs text-slate-500">Est: $2.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Grid paper</div><div class="text-xs text-slate-500">Est: $1.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Analyze reflection from convex cylindrical surfaces.</li><li>Map coordinate transformation (Cartesian to Polar).</li><li>Create anamorphic art.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain that the cylinder acts as a convex mirror horizontally but flat vertically.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">This requires the art to be stretched wide (distorted) to appear normal in reflection.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 19</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Reciprocity: Photography Physics</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Advanced</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Smartphone with Manual Cam app</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">LED Lights</div><div class="text-xs text-slate-500">Est: Equipment on hand</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Define the Exposure Triangle.</li><li>Demonstrate reciprocity (doubling light = halving shutter speed).</li><li>Analyze histogram data.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Show that exposure = Intensity x Time.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">If Intensity doubles (from light source), Time must halve to keep exposure constant.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 20</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Capstone: Engineering a Lighting System</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 40 minutes</span>
+                        <span>📊 Advanced</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Full NEEWER LED Kit</div><div class="text-xs text-slate-500">Est: Equipment on hand</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Props/Subject matter</div><div class="text-xs text-slate-500">Est: $0.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Synthesize optics, color theory, and intensity concepts.</li><li>Design a system to meet constraints.</li><li>Justify design choices with physics principles.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Require students to submit a layout plan before touching equipment.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">The plan must reference Inverse Square Law (distances) and Shadow Geometry (Hard vs Soft).</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+    </div>
+
+    <!-- TAB 3: GRANT NARRATIVE -->
+    <div id="narrative" class="tab-content max-w-3xl mx-auto font-serif leading-relaxed text-slate-800">
+        <div class="py-12">
+            <h1 class="font-sans text-3xl font-black text-slate-900 mb-8 border-b-2 border-slate-900 pb-4">Curriculum Narrative: Illuminating Physics: Advanced Light, Color, and Shadow Analysis (Expanded)</h1>
+            
+            <div class="mb-10">
+                <h2 class="font-sans text-lg font-bold text-indigo-800 mb-4 uppercase tracking-widest">Executive Summary</h2>
+                <p class="bg-slate-50 p-6 rounded-lg border-l-4 border-indigo-200">The Illuminating Physics curriculum is a rigorous, 20-module instructional sequence designed specifically for Upward Bound and Upward Bound Math-Science (UB/UBMS) programs. By utilizing professional-grade, app-controlled RGB LED technology, this course transitions high school students from qualitative visual observation to complex quantitative analysis of electromagnetic radiation and geometric optics. Students engage in hands-on laboratory experiences that bridge the gap between abstract physics equations and real-world technological applications, such as fiber optics, solar energy efficiency, and digital imaging. The program is designed to foster a college-ready mindset by integrating algebraic and trigonometric modeling with experimental physics, satisfying the federal mandate for intensive laboratory science instruction while exposing participants to high-growth STEM career pathways.</p>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="font-sans text-lg font-bold text-indigo-800 mb-4 uppercase tracking-widest">Compliance & Alignment</h2>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-2">DOE TRIO Compliance Strategy</h3>
+                    <p>This curriculum is meticulously aligned with the allowable services and cost principles outlined for Federal TRIO Programs. It fulfills the 'Instruction in Laboratory Science' and 'Instruction in Mathematics' requirements as mandated by the Higher Education Act (HEA) of 1965, specifically under Sections 402C(b) and 402E(b). Per 34 CFR 645.11(b)(1) and (2), the program provides necessary academic instruction to prepare students for postsecondary success in STEM. Furthermore, all associated equipment and material costs, such as the RGB LED lighting kits and lux-metering sensors, adhere to the cost principles defined in EDGAR and 2 CFR 200.453 (Materials and Supplies Costs), which allows for the purchase of instructional supplies that are necessary and allocable to the project’s goal of enhancing academic competence in science and mathematics.</p>
+                </div>
+                <div>
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-2">Standards Alignment</h3>
+                    <p>This curriculum provides comprehensive coverage of the Texas Essential Knowledge and Skills (TEKS) for Physics, including Section 7 (Waves and Light behavior), Section 2 (Scientific investigation), and Section 5 (Mathematics in physics). Specific alignments include TEKS Physics 7(D) for reflection and refraction, and 7(E) for the characteristics of electromagnetic radiation. Additionally, the curriculum integrates Algebra II and Pre-Calculus standards through the application of inverse variation and trigonometric functions (Snell’s Law). It adheres to the Texas STEM Framework by promoting inquiry-based learning, engineering design processes, and the use of industry-standard technology to solve real-world problems.</p>
+                </div>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="font-sans text-lg font-bold text-indigo-800 mb-4 uppercase tracking-widest">Field Expeditions</h2>
+                <p>To reinforce classroom instruction, three strategic field trip options within the Dallas, Tarrant, and Johnson County areas provide industrial and academic context. The Perot Museum of Nature and Science in Dallas County offers the 'Expanding Universe Hall,' which directly illustrates spectroscopy and the behavior of light on an astronomical scale. The University of Texas at Arlington (UTA) Planetarium and Physics Department in Tarrant County provides students with exposure to university-level optics laboratories and electromagnetic research. Finally, the Fort Worth Museum of Science and History’s 'Energy Blast' exhibit allows students to analyze the physics of solar energy and light incidence, directly connecting to the curriculum’s modules on Lambert’s Cosine Law and renewable energy engineering.</p>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="font-sans text-lg font-bold text-indigo-800 mb-4 uppercase tracking-widest">Module Narratives</h2>
+                
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Umbra and Penumbra: The Geometry of Shadows</h3>
+                    <p class="text-sm text-slate-600">Students investigate the spatial relationship between light sources and objects by analyzing shadow formation. Using professional LED panels, they differentiate between point and extended sources, applying geometric similarity and similar triangles to predict and measure shadow dimensions, fostering essential spatial reasoning skills used in medical imaging and architectural design.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Fading Fast: Modeling the Inverse Square Law</h3>
+                    <p class="text-sm text-slate-600">This module introduces rigorous data collection where students use smartphone-based lux meters to track the decay of light intensity over distance. By performing regression analysis on their data, students mathematically verify the Inverse Square Law, a fundamental concept in both physics and radiation safety engineering.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Chromatic Shadows: Additive Color Physics</h3>
+                    <p class="text-sm text-slate-600">Integrating art with physics (STEAM), students utilize IoT-connected RGB lighting to explore additive color theory. They create complex colored shadows to understand how the human eye perceives white light and the overlap of primary wavelengths, a concept critical for careers in UI/UX design and cinematography.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">The Law of Reflection: Plane Mirrors</h3>
+                    <p class="text-sm text-slate-600">Students engage in a foundational laboratory experiment to verify that the angle of incidence equals the angle of reflection. By tracing narrow LED beams and constructing geometric normals, they build the baseline skills required for surveying and laser-based technical occupations.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Snell's Law: Refraction through Media</h3>
+                    <p class="text-sm text-slate-600">This advanced module requires students to apply trigonometry to physical phenomena. By measuring the 'bending' of light as it passes through acrylic blocks, students calculate the Index of Refraction, simulating the work of optical engineers and materials scientists.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Total Internal Reflection & Fiber Optics</h3>
+                    <p class="text-sm text-slate-600">Students explore the physics behind modern high-speed internet by determining the critical angle of light within a dense medium. This experiment demonstrates how information is transmitted via fiber optics, connecting physics principles to the telecommunications infrastructure.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Converging Lenses: Finding Focal Length</h3>
+                    <p class="text-sm text-slate-600">Using biconvex lenses, students create real, inverted images of LED arrays. They utilize the Thin Lens Equation to solve for focal length, mastering the algebraic manipulation of rational equations while exploring the technology used in cameras and telescopes.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Polarization: The Filter Effect</h3>
+                    <p class="text-sm text-slate-600">This activity demonstrates the wave nature of light by using polarizing filters to block transverse waves. Students learn how polarization is utilized in LCD screen technology and glare reduction, providing insight into the engineering of modern display systems.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Diffraction: Bending Light Around Corners</h3>
+                    <p class="text-sm text-slate-600">Students observe the interference patterns created when light passes through narrow slits or around hair strands. This module provides a conceptual bridge to quantum mechanics and crystallography, illustrating the wave-particle duality of light.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">DIY Spectroscopy: Decoding Light</h3>
+                    <p class="text-sm text-slate-600">By constructing a diffraction-grating spectroscope, students analyze the discrete spectral output of various light sources. This activity links physics with chemical analysis, showing how light can be used to identify elements in stars or forensic samples.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Lambert's Cosine Law: Solar Simulation</h3>
+                    <p class="text-sm text-slate-600">Students simulate the efficiency of solar panels by varying the angle of light incidence and measuring intensity. This module applies trigonometric cosine functions to renewable energy challenges, preparing students for careers in environmental engineering.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">The Blue Sky Effect: Rayleigh Scattering</h3>
+                    <p class="text-sm text-slate-600">Using a liquid medium and white LEDs, students replicate atmospheric scattering to explain why the sky appears blue and sunsets appear red. This laboratory bridges physics with meteorology and atmospheric science.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Color Rendering Index (CRI) Lab</h3>
+                    <p class="text-sm text-slate-600">Students evaluate the quality of light sources by comparing color fidelity under RGB-mixed white light versus broad-spectrum light. This introduces the professional metric of CRI, relevant to museum curation, interior design, and medical lighting.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">The Pinhole Camera: Camera Obscura</h3>
+                    <p class="text-sm text-slate-600">Returning to the origins of optics, students build a camera obscura to witness the rectilinear propagation of light. They investigate how aperture size affects the trade-off between image brightness and sharpness, a fundamental concept in imaging science.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Chroma Key Physics: The Green Screen</h3>
+                    <p class="text-sm text-slate-600">Students explore the physics of digital sensors and the Bayer filter by investigating why green is the optimal color for background isolation. This connects wavelength sensitivity to the film and television production industry.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Mixing Pigment vs. Mixing Light</h3>
+                    <p class="text-sm text-slate-600">This comparative lab clarifies the distinction between additive and subtractive color theories. Students mix both paints and light beams to observe how the physics of absorption differs from emission, correcting a common scientific misconception.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Light Penetration and Absorption</h3>
+                    <p class="text-sm text-slate-600">Simulating deep-sea environments, students measure the attenuation of different wavelengths through water filters. This module introduces the exponential decay of energy and its implications for marine biology and underwater communication.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Anamorphic Art & Cylindrical Reflection</h3>
+                    <p class="text-sm text-slate-600">By exploring reflections off curved surfaces, students map coordinate transformations from Cartesian to polar planes. This engaging activity teaches the physics of distorted mirrors used in VR/AR correction and security mirrors.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Reciprocity: Photography Physics</h3>
+                    <p class="text-sm text-slate-600">Students use manual camera settings to investigate the 'Exposure Triangle.' They discover the proportional relationship between time (shutter speed) and intensity (light brightness), applying algebraic reasoning to the technology of digital imaging.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Capstone: Engineering a Lighting System</h3>
+                    <p class="text-sm text-slate-600">In this final challenge, students synthesize all curriculum concepts to design a lighting system for a specific technical brief. They must justify their equipment placement using the Inverse Square Law, reflection angles, and color theory, demonstrating mastery through engineering design.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1940 @@
+{
+  "curriculumTitle": "Architectural Engineering & Design: From Foundations to Future Skylines",
+  "overview": "A comprehensive 20-lesson STEM curriculum exploring the intersection of art, engineering, and mathematics through architecture. Designed specifically for DOE TRIO programs (UB/UBMS) in Texas, this course scaffolds students from historical foundations to structural physics, transitioning into modern CAD technology and sustainable design. The curriculum emphasizes college readiness in STEM fields, utilizing Texas Essential Knowledge and Skills (TEKS) and fulfilling federal grant objectives regarding rigorous curriculum and exposure to postsecondary programs.",
+  "prerequisites": "Completion of Algebra I (or concurrent enrollment); Basic computer literacy.",
+  "targetAgeGroup": "High School (Ages 14-18)",
+  "totalDurationEstimate": "20 Sessions (40-60 Minutes each)",
+  "fieldTrips": [
+    {
+      "name": "University of Texas at Arlington - CAPPA Tour",
+      "location": "Arlington, TX (Tarrant County)",
+      "description": "A guided tour of the College of Architecture, Planning, and Public Affairs (CAPPA) at UTA, including the Digital Fabrication Lab.",
+      "relevanceToCurriculum": "Fulfills HEA requirement for exposure to postsecondary education. Students visualize the college pathway for Architecture and Architectural Engineering majors."
+    },
+    {
+      "name": "Perot Museum of Nature and Science - Engineering Hall",
+      "location": "Dallas, TX (Dallas County)",
+      "description": "Interactive exploration of the Texas Instruments Engineering and Innovation Hall, focusing on structural dynamics and materials.",
+      "relevanceToCurriculum": "Reinforces Activity 4 (Forces) and Activity 10 (Earthquakes) through hands-on exhibits on static loads and seismic engineering."
+    },
+    {
+      "name": "Kimbell Art Museum (Louis Kahn Building)",
+      "location": "Fort Worth, TX (Tarrant County)",
+      "description": "Architectural tour focusing on the cycloid barrel vaults and natural light diffusion systems designed by Louis Kahn.",
+      "relevanceToCurriculum": "Direct application of Activity 14 (Solar Studies) and Activity 3 (Geometry/Golden Ratio), analyzing natural light and concrete construction."
+    }
+  ],
+  "activities": [
+    {
+      "title": "1. Form Follows Function: Introduction to Architecture",
+      "description": "Students define architecture and analyze everyday buildings to understand the relationship between aesthetic form and practical function.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Observation",
+        "Sketching"
+      ],
+      "learningObjectives": [
+        "Define architecture and distinguish it from construction.",
+        "Analyze a structure based on the principle of 'Form Follows Function'.",
+        "Identify key architectural styles in their local community."
+      ],
+      "teks": [
+        "130.42(c)(1)(A) (Principles of Architecture): Demonstrate knowledge of the history of architecture.",
+        "130.42(c)(4)(A): Apply the concepts of form and function."
+      ],
+      "texasStemStandards": [
+        "TS.3.A: Inquiry-Based Learning",
+        "TS.5.B: Communication of Ideas"
+      ],
+      "materialsList": [
+        {
+          "item": "Sketchbooks (Architectural Journals)",
+          "estimatedCost": "$2.00 per student"
+        },
+        {
+          "item": "Graphite Pencils (HB, 2B) and Erasers",
+          "estimatedCost": "$0.50 per student"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Present contrasting building slides.",
+          "Discuss 'Form Follows Function'.",
+          "Distribute sketchbooks."
+        ],
+        "detailed": [
+          "Present slides showing contrasting buildings (e.g., a Gothic cathedral vs. a modern office).",
+          "Lead a discussion on why buildings look the way they do, introducing the phrase 'Form Follows Function' (Louis Sullivan).",
+          "Introduce the sketchbooks as their 'Architectural Journal' for the course, emphasizing that architects think through drawing."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Sketch an object.",
+          "Redesign it for a new function.",
+          "Reflect."
+        ],
+        "detailed": [
+          "Sketch one object in the room (e.g., a chair).",
+          "Redesign that object to change its function (e.g., a chair that becomes a table).",
+          "Write a reflection on how the shape changed when the function changed."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Exposure to academic programs",
+          "Mentoring"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453 (Materials and supplies costs)"
+        ],
+        "programType": "Both",
+        "justification": "Provides necessary exposure to STEM careers (Architecture) and supplies essential for the curriculum execution.",
+        "heaRequirements": [
+          "Section 402C(b) (Academic improvement services)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) (Curriculum improvement)",
+          "34 CFR 645.43(a) (Upward Bound Services)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 (Supplies: Sketchbooks are necessary for the performance of the award)"
+        ]
+      },
+      "stemConnections": {
+        "science": "Observation and classification.",
+        "technology": "Analysis of construction technology history.",
+        "engineering": "Design constraints.",
+        "math": "Geometric shapes analysis.",
+        "crossCurricularLinks": [
+          "Art History",
+          "Social Studies"
+        ]
+      },
+      "careerPathways": [
+        "Architect",
+        "Architectural Historian",
+        "Design Consultant"
+      ],
+      "collegePathways": [
+        "Bachelor of Architecture (B.Arch)",
+        "B.A. in Art History",
+        "B.S. in Environmental Design"
+      ]
+    },
+    {
+      "title": "2. Ancient Engineering: The Geometry of Pyramids",
+      "description": "Exploration of the structural stability of the pyramid shape and the mathematics behind calculating volume and surface area.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Algebraic substitution",
+        "Measurement"
+      ],
+      "learningObjectives": [
+        "Calculate the slope, volume, and surface area of a pyramid.",
+        "Understand why the pyramid shape was structurally necessary for ancient civilizations."
+      ],
+      "teks": [
+        "111.43(c)(10)(B) (Geometry): Determine the area of composite figures.",
+        "111.43(c)(11)(C): Determine the volume of pyramids."
+      ],
+      "texasStemStandards": [
+        "TS.2.B: Mathematical Reasoning",
+        "TS.4.A: Creative Problem Solving"
+      ],
+      "materialsList": [
+        {
+          "item": "Heavy Cardstock",
+          "estimatedCost": "$5.00 per class"
+        },
+        {
+          "item": "Masking Tape",
+          "estimatedCost": "$2.00 per class"
+        },
+        {
+          "item": "Sand (for load testing)",
+          "estimatedCost": "$5.00 per class"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Review Pyramid formulas.",
+          "Discuss weight distribution.",
+          "Run construction challenge."
+        ],
+        "detailed": [
+          "Review the geometric formulas for pyramids (Volume = 1/3 Base x Height).",
+          "Discuss the distribution of weight in a wide-base structure versus a vertical column.",
+          "Challenge students to build the tallest paper pyramid that can hold a 1lb sandbag."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Calculate base size.",
+          "Build cardstock pyramid.",
+          "Load test."
+        ],
+        "detailed": [
+          "Calculate the required base size for a 10-inch tall pyramid using provided formulas.",
+          "Cut and assemble the pyramid using cardstock and tape.",
+          "Test stability by carefully placing the sandbag weight on top."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Tutoring"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453 (Materials and supplies costs)"
+        ],
+        "programType": "UBMS",
+        "justification": "Direct instruction in Geometry (Math) utilizing hands-on engineering application.",
+        "heaRequirements": [
+          "Section 402C(b) (Core curriculum instruction)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1) (Instruction in Math)",
+          "34 CFR 645.11(b)(2) (Instruction in Science)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics (Center of gravity).",
+        "technology": "Tools for measurement.",
+        "engineering": "Structural integrity.",
+        "math": "Geometry (Volume, Slope).",
+        "crossCurricularLinks": [
+          "World History"
+        ]
+      },
+      "careerPathways": [
+        "Structural Engineer",
+        "Surveyor",
+        "Archaeologist"
+      ],
+      "collegePathways": [
+        "B.S. Civil Engineering",
+        "B.S. Mathematics",
+        "B.A. Archaeology"
+      ]
+    },
+    {
+      "title": "3. The Golden Ratio in Classical Architecture",
+      "description": "Students investigate the Parthenon and Greek orders to understand how the Golden Ratio (Phi) influences aesthetic proportions.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Ratios/Proportions",
+        "Calculator use"
+      ],
+      "learningObjectives": [
+        "Define the Golden Ratio (1:1.618).",
+        "Apply algebraic ratios to architectural measurement.",
+        "Identify Doric, Ionic, and Corinthian columns."
+      ],
+      "teks": [
+        "111.39(c)(1)(A) (Algebra I): Apply mathematics to problems arising in everyday life.",
+        "130.46(c)(6)(B): Apply the principles of scale and proportion."
+      ],
+      "texasStemStandards": [
+        "TS.2.B: Mathematical Reasoning"
+      ],
+      "materialsList": [
+        {
+          "item": "Rulers and Calipers",
+          "estimatedCost": "$15.00 per set"
+        },
+        {
+          "item": "High-res prints of Parthenon/Greek Temples",
+          "estimatedCost": "$1.00 per class"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Teach Phi derivation.",
+          "Demonstrate Golden Rectangle.",
+          "Oversee measurement activity."
+        ],
+        "detailed": [
+          "Teach the mathematical derivation of Phi (1.618...).",
+          "Show examples of the Golden Rectangle overlay on the Parthenon.",
+          "Guide students in measuring printed images to verify if the proportions fit the ratio."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Measure architectural features.",
+          "Calculate ratios.",
+          "Sketch using Phi."
+        ],
+        "detailed": [
+          "Measure the width and height of various architectural features (columns, entablature).",
+          "Calculate the ratio (Width / Height) to see if it approximates 1.618.",
+          "Sketch a building facade using the Golden Ratio as a guide."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453 (Materials and supplies costs)"
+        ],
+        "programType": "Both",
+        "justification": "Math instruction focused on Algebra and Geometry concepts applied to design.",
+        "heaRequirements": [
+          "Section 402C(b) (Math instruction)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.43(a)(3) (Math instruction)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Perception and optics.",
+        "technology": "Calculator use.",
+        "engineering": "Standardization of parts.",
+        "math": "Ratios and Proportions.",
+        "crossCurricularLinks": [
+          "Art"
+        ]
+      },
+      "careerPathways": [
+        "Classical Architect",
+        "Industrial Designer",
+        "Graphic Designer"
+      ],
+      "collegePathways": [
+        "B.Arch",
+        "B.S. Mathematics",
+        "B.F.A. Design"
+      ]
+    },
+    {
+      "title": "4. The Roman Arch: Keystone Physics",
+      "description": "A physics-focused lesson on how arches redirect vertical force into horizontal thrust, allowing for open spaces.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Hand-eye coordination",
+        "Vector drawing"
+      ],
+      "learningObjectives": [
+        "Explain compression forces in an arch.",
+        "Identify the role of the keystone.",
+        "Construct a self-supporting arch."
+      ],
+      "teks": [
+        "112.39(c)(4)(D) (Physics): Analyze the free-body diagram for a system of forces.",
+        "130.46(c)(9)(A): Describe the forces acting on a structure."
+      ],
+      "texasStemStandards": [
+        "TS.1.C: Engineering Design Process"
+      ],
+      "materialsList": [
+        {
+          "item": "High-density Foam blocks or Wooden Voussoirs",
+          "estimatedCost": "$20.00 per kit"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Beam vs. Arch demo.",
+          "Explain Force Vectors.",
+          "Supervise build."
+        ],
+        "detailed": [
+          "Demonstrate how a beam fails under load (bending) versus an arch (compression).",
+          "Draw force vectors on the board showing load transfer down the arch legs.",
+          "Supervise the construction of a voussoir arch using the kits."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Stack blocks on form.",
+          "Insert keystone.",
+          "Remove centering and test."
+        ],
+        "detailed": [
+          "Work in teams to stack blocks into an arch form over a temporary support.",
+          "Insert the keystone at the top center.",
+          "Remove the support (centering) and see if the arch stands.",
+          "Apply gentle downward pressure to test strength."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science",
+          "Instruction in Mathematics"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453 (Materials and supplies costs)"
+        ],
+        "programType": "UBMS",
+        "justification": "Physics instruction regarding force vectors and static equilibrium.",
+        "heaRequirements": [
+          "Section 402C(b) (Lab science instruction)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1) (Instruction in Science)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics (Statics).",
+        "technology": "Masonry techniques.",
+        "engineering": "Load distribution.",
+        "math": "Vectors.",
+        "crossCurricularLinks": [
+          "European History"
+        ]
+      },
+      "careerPathways": [
+        "Civil Engineer",
+        "Masonry Specialist",
+        "Structural Analyst"
+      ],
+      "collegePathways": [
+        "B.S. Civil Engineering",
+        "B.S. Physics",
+        "Construction Management"
+      ]
+    },
+    {
+      "title": "5. Gothic Engineering: Flying Buttresses",
+      "description": "Understanding how external supports allow for taller walls and larger windows (stained glass) by counteracting lateral thrust.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Model building",
+        "Force analysis"
+      ],
+      "learningObjectives": [
+        "Understand the concept of lateral thrust.",
+        "Design a support system to prevent wall collapse.",
+        "Relate structural innovation to aesthetic changes (light)."
+      ],
+      "teks": [
+        "112.39(c)(4)(D) (Physics): Forces and equilibrium.",
+        "130.42(c)(6)(C): Identify structural systems."
+      ],
+      "texasStemStandards": [
+        "TS.4.B: Systems Thinking"
+      ],
+      "materialsList": [
+        {
+          "item": "Cardboard",
+          "estimatedCost": "$0.00 (Recycled)"
+        },
+        {
+          "item": "Hot Glue Guns and Glue Sticks",
+          "estimatedCost": "$10.00 per unit"
+        },
+        {
+          "item": "Small Weights (washers)",
+          "estimatedCost": "$10.00 set"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain Roman Arch limitations.",
+          "Introduce Lateral Thrust.",
+          "Challenge: Tall walls."
+        ],
+        "detailed": [
+          "Explain the limitations of the Roman Arch (thick walls needed to contain thrust).",
+          "Introduce the Pointed Arch and Flying Buttress concepts.",
+          "Challenge students to build two walls that support a heavy roof without collapsing outward."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Build parallel walls.",
+          "Observe bowing under load.",
+          "Add buttresses and retest."
+        ],
+        "detailed": [
+          "Build two parallel cardboard walls.",
+          "Place a heavy roof on top and observe the walls bowing out.",
+          "Design and attach cardboard buttresses to support the walls from the outside.",
+          "Retest the load to demonstrate stability."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453 (Materials and supplies costs)"
+        ],
+        "programType": "UBMS",
+        "justification": "Hands-on physics lab exploring vector forces and structural stability.",
+        "heaRequirements": [
+          "Section 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics (Force vectors).",
+        "technology": "Medieval construction tech.",
+        "engineering": "Structural support systems.",
+        "math": "Angles of support.",
+        "crossCurricularLinks": [
+          "Art History"
+        ]
+      },
+      "careerPathways": [
+        "Restoration Architect",
+        "Structural Engineer",
+        "History Professor"
+      ],
+      "collegePathways": [
+        "B.S. Structural Engineering",
+        "Master of Architecture",
+        "B.A. History"
+      ]
+    },
+    {
+      "title": "6. Tension vs. Compression: Bridge Building I",
+      "description": "Introduction to the two primary forces in engineering through a truss analysis.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Precision gluing",
+        "Geometry identification"
+      ],
+      "learningObjectives": [
+        "Differentiate between tension and compression.",
+        "Identify truss members under tension vs compression.",
+        "Build a simple truss."
+      ],
+      "teks": [
+        "130.362(c)(6)(A) (Engineering Design): Identify the principles of engineering.",
+        "112.39(c)(4)(A): Calculate net force."
+      ],
+      "texasStemStandards": [
+        "TS.1.B: Engineering Design"
+      ],
+      "materialsList": [
+        {
+          "item": "Popsicle Sticks / Craft Sticks",
+          "estimatedCost": "$5.00 per 1000"
+        },
+        {
+          "item": "White PVA Glue",
+          "estimatedCost": "$2.00 per bottle"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Draw truss diagrams.",
+          "Color code Tension/Compression.",
+          "Explain rigidity of triangles."
+        ],
+        "detailed": [
+          "Draw a truss bridge on the board.",
+          "Use colored markers to indicate which beams are being squeezed (compression-Red) and which are pulled (tension-Blue).",
+          "Explain why triangles are rigid geometric shapes compared to squares."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Construct 2D truss.",
+          "Dry and secure.",
+          "Predict failure points."
+        ],
+        "detailed": [
+          "Construct a single 2D truss unit (triangle based) using sticks.",
+          "Wait for glue to dry (or use clips to hold).",
+          "Predict where the truss would break under load based on the lesson."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science",
+          "Exposure to Engineering"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453 (Materials and supplies costs)"
+        ],
+        "programType": "UBMS",
+        "justification": "Core STEM activity focusing on Engineering principles and Physics.",
+        "heaRequirements": [
+          "Section 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics (Material properties).",
+        "technology": "Materials testing.",
+        "engineering": "Truss design.",
+        "math": "Geometry (Triangles).",
+        "crossCurricularLinks": [
+          "Transportation"
+        ]
+      },
+      "careerPathways": [
+        "Bridge Inspector",
+        "Civil Engineer",
+        "Transportation Planner"
+      ],
+      "collegePathways": [
+        "B.S. Civil Engineering",
+        "B.S. Materials Science",
+        "A.A.S. Engineering Technology"
+      ]
+    },
+    {
+      "title": "7. Blueprint Basics: Scale and Measurement",
+      "description": "Students learn to read and use an architect's scale ruler to interpret floor plans.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Reading a ruler",
+        "Multiplication/Division"
+      ],
+      "learningObjectives": [
+        "Read an architectural scale ruler (1/4\" = 1').",
+        "Convert real-world measurements to scale measurements.",
+        "Draw a simple room to scale."
+      ],
+      "teks": [
+        "130.46(c)(3)(A) (Architectural Design I): Use architectural measuring tools.",
+        "111.43(c)(11)(A) (Geometry): Apply formulas for measurement."
+      ],
+      "texasStemStandards": [
+        "TS.2.D: Quantitative Reasoning"
+      ],
+      "materialsList": [
+        {
+          "item": "Architectural Scale Rulers",
+          "estimatedCost": "$6.00 each"
+        },
+        {
+          "item": "Graph Paper (1/4 inch grid)",
+          "estimatedCost": "$0.10 per sheet"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Demo scale ruler sides.",
+          "Explain scale factor.",
+          "Distribute measurement worksheet."
+        ],
+        "detailed": [
+          "Demonstrate the different sides of the scale ruler (specifically the 1/4 inch scale).",
+          "Explain why scale is necessary (buildings don't fit on paper).",
+          "Provide a worksheet with lines to measure and convert."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Measure room.",
+          "Convert to scale.",
+          "Draw on graph paper."
+        ],
+        "detailed": [
+          "Measure the classroom perimeter using a standard tape measure.",
+          "Convert the measurement using 1/4 inch scale (1 real foot = 1/4 paper inch).",
+          "Draw the classroom perimeter on graph paper using the scale ruler."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453 (Materials and supplies costs)"
+        ],
+        "programType": "Both",
+        "justification": "Applied mathematics and vocational skill building (using technical tools).",
+        "heaRequirements": [
+          "Section 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.43(a)(3)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Accuracy vs Precision.",
+        "technology": "Drafting tools.",
+        "engineering": "Technical documentation.",
+        "math": "Ratios and Conversions.",
+        "crossCurricularLinks": [
+          "CTE"
+        ]
+      },
+      "careerPathways": [
+        "CAD Drafter",
+        "Architect",
+        "Construction Estimator"
+      ],
+      "collegePathways": [
+        "A.A.S. Drafting and Design",
+        "B.S. Construction Science",
+        "B.Arch"
+      ]
+    },
+    {
+      "title": "8. Orthographic Projection: Elevations",
+      "description": "Learning to visualize 3D objects in 2D space by drawing front, side, and top views.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Spatial visualization",
+        "Drafting"
+      ],
+      "learningObjectives": [
+        "Understand the concept of orthographic projection.",
+        "Draw the elevations of a simple object (e.g., a lego house).",
+        "Align views correctly on drafting paper."
+      ],
+      "teks": [
+        "130.46(c)(5)(C): Create orthographic projections.",
+        "111.43(c)(1)(A): Spatial reasoning."
+      ],
+      "texasStemStandards": [
+        "TS.5.A: Communication"
+      ],
+      "materialsList": [
+        {
+          "item": "LEGO bricks (assorted)",
+          "estimatedCost": "$20.00 set"
+        },
+        {
+          "item": "Drafting Paper / Vellum",
+          "estimatedCost": "$0.20 per sheet"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain 'Glass Box' theory.",
+          "Show blueprint examples.",
+          "Assign object to draw."
+        ],
+        "detailed": [
+          "Explain the 'Glass Box' theory of projection (unfolding the sides of a box).",
+          "Show examples of blueprints (Plan, Section, Elevation).",
+          "Assign each student a unique Lego structure to document."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Analyze object.",
+          "Draw Top View.",
+          "Draw Front and Side views aligned."
+        ],
+        "detailed": [
+          "Observe the Lego structure from a strictly 90-degree angle.",
+          "Draw the Top View.",
+          "Draw the Front View directly below the top view (projecting lines down).",
+          "Draw the Right Side View to the right of the front view (projecting lines across)."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Exposure to Engineering"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453 (Materials and supplies costs)"
+        ],
+        "programType": "UBMS",
+        "justification": "Development of spatial reasoning skills required for Engineering and Math.",
+        "heaRequirements": [
+          "Section 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Visualization.",
+        "technology": "Drafting standards.",
+        "engineering": "Technical drawing.",
+        "math": "Geometry (3D to 2D mapping).",
+        "crossCurricularLinks": [
+          "Art"
+        ]
+      },
+      "careerPathways": [
+        "Mechanical Drafter",
+        "Architect",
+        "Product Designer"
+      ],
+      "collegePathways": [
+        "B.S. Mechanical Engineering",
+        "B.Arch",
+        "Industrial Design"
+      ]
+    },
+    {
+      "title": "9. Material Science: Concrete Lab",
+      "description": "Mixing and testing different ratios of sand, cement, and aggregate to understand material strength.",
+      "timeRequired": "40 Minutes (Plus drying time)",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Measuring volume",
+        "Lab safety compliance"
+      ],
+      "learningObjectives": [
+        "Understand the chemical reaction of hydration.",
+        "Compare concrete mixes with different aggregate ratios.",
+        "Mold concrete into test shapes."
+      ],
+      "teks": [
+        "112.35(c)(4)(A) (Chemistry): Chemical reactions.",
+        "130.42(c)(8)(A): Identify building materials."
+      ],
+      "texasStemStandards": [
+        "TS.3.B: Scientific Inquiry"
+      ],
+      "materialsList": [
+        {
+          "item": "Quick-dry cement",
+          "estimatedCost": "$15.00 per bucket"
+        },
+        {
+          "item": "Sand/Gravel",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Paper cups (molds)",
+          "estimatedCost": "$3.00"
+        },
+        {
+          "item": "Safety Goggles/Gloves",
+          "estimatedCost": "$2.00 per student"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Review Safety (caustic materials).",
+          "Explain Hydration chemistry.",
+          "Assign mix ratios."
+        ],
+        "detailed": [
+          "Review safety protocols (cement is caustic and can burn skin).",
+          "Explain the chemistry of curing (it's not 'drying', it is an exothermic chemical reaction called hydration).",
+          "Assign different mix ratios to different groups (e.g., 1:1 vs 1:3)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Mix ingredients.",
+          "Pour into molds.",
+          "Label and cure."
+        ],
+        "detailed": [
+          "Mix cement, sand, and water according to assigned ratio.",
+          "Pour into cup molds and tap vigorously to remove air bubbles.",
+          "Label cups with the ratio used and set aside to cure for 24-48 hours."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453 (Materials and supplies costs)",
+          "2 CFR 200.453 (Safety Equipment)"
+        ],
+        "programType": "UBMS",
+        "justification": "Chemistry and Materials Science laboratory instruction.",
+        "heaRequirements": [
+          "Section 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Chemistry (Exothermic reactions).",
+        "technology": "Material manufacturing.",
+        "engineering": "Civil engineering.",
+        "math": "Ratios and Percentages.",
+        "crossCurricularLinks": [
+          "Chemistry"
+        ]
+      },
+      "careerPathways": [
+        "Materials Scientist",
+        "Civil Engineer",
+        "Concrete Foreman"
+      ],
+      "collegePathways": [
+        "B.S. Materials Science",
+        "B.S. Civil Engineering",
+        "Construction Management"
+      ]
+    },
+    {
+      "title": "10. Earthquake Engineering: Shake Tables",
+      "description": "Designing structures that can withstand lateral seismic loads using a simple shake table.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Prototyping",
+        "Analysis"
+      ],
+      "learningObjectives": [
+        "Understand resonance and damping.",
+        "Build a tower with cross-bracing.",
+        "Test failure points under dynamic load."
+      ],
+      "teks": [
+        "112.38(c)(7)(A) (Earth and Space): Cause of earthquakes.",
+        "130.362(c)(7)(C): Test a prototype."
+      ],
+      "texasStemStandards": [
+        "TS.1.C: Engineering Design"
+      ],
+      "materialsList": [
+        {
+          "item": "Straws and Masking Tape",
+          "estimatedCost": "$5.00 per class"
+        },
+        {
+          "item": "Cardboard, Marbles, Rubber Bands (Shake Table)",
+          "estimatedCost": "$2.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Discuss Shear Force.",
+          "Demo Tuned Mass Dampers.",
+          "Setup shake tables."
+        ],
+        "detailed": [
+          "Discuss how earthquakes affect buildings (shear force/lateral movement).",
+          "Show videos of tuned mass dampers in skyscrapers.",
+          "Create a simple shake table (cardboard platform rolling on marbles with rubber bands for tension)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Build straw tower.",
+          "Secure to table.",
+          "Simulate quake.",
+          "Reinforce."
+        ],
+        "detailed": [
+          "Build a tower at least 12 inches tall using straws.",
+          "Secure it to the shake table base.",
+          "Simulate an earthquake and observe deformation.",
+          "Add cross-bracing to improve performance and retest."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science",
+          "Exposure to Engineering"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453 (Materials and supplies costs)"
+        ],
+        "programType": "UBMS",
+        "justification": "Integration of Earth Science (Geophysics) and Structural Engineering.",
+        "heaRequirements": [
+          "Section 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Geophysics.",
+        "technology": "Seismic monitoring.",
+        "engineering": "Seismic design.",
+        "math": "Frequency and Period.",
+        "crossCurricularLinks": [
+          "Geography"
+        ]
+      },
+      "careerPathways": [
+        "Seismic Engineer",
+        "Geologist",
+        "Disaster Relief Architect"
+      ],
+      "collegePathways": [
+        "B.S. Geophysics",
+        "B.S. Structural Engineering",
+        "B.Arch"
+      ]
+    },
+    {
+      "title": "11. Digital Design: Intro to CAD (Tinkercad)",
+      "description": "Introduction to Computer-Aided Design (CAD) using free browser-based software to create digital 3D models.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Computer literacy",
+        "Mouse manipulation"
+      ],
+      "learningObjectives": [
+        "Navigate 3D space on a computer screen.",
+        "Place and resize primitive shapes.",
+        "Group objects to create complex forms."
+      ],
+      "teks": [
+        "130.46(c)(8)(A): Use computer-aided drafting software.",
+        "126.14(c)(1)(A) (Tech Apps): Create digital artifacts."
+      ],
+      "texasStemStandards": [
+        "TS.6.A: Technology Operations"
+      ],
+      "materialsList": [
+        {
+          "item": "Computers/Chromebooks",
+          "estimatedCost": "$0.00 (Existing)"
+        },
+        {
+          "item": "Internet Access",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Demo workplane/camera.",
+          "Explain Additive/Subtractive.",
+          "Assign House build."
+        ],
+        "detailed": [
+          "Demonstrate the workplane, camera controls, and basic shapes in Tinkercad.",
+          "Explain additive vs subtractive modeling (Holes vs Solids).",
+          "Assign a simple task: Build a digital house with a roof and door."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Log in.",
+          "Do 'Starters' tutorial.",
+          "Build house model."
+        ],
+        "detailed": [
+          "Log in to Tinkercad (Classroom account).",
+          "Complete the 'Starters' tutorial to learn navigation.",
+          "Build a simple house with a roof, door hole, and window holes."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics (Geometry)",
+          "Exposure to Technology"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453 (Computing devices - if purchasing)",
+          "2 CFR 200.451 (Computer services)"
+        ],
+        "programType": "Both",
+        "justification": "Modern technical skills required for postsecondary STEM education.",
+        "heaRequirements": [
+          "Section 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.43(a)(3)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Modeling.",
+        "technology": "CAD software.",
+        "engineering": "Prototyping.",
+        "math": "Coordinate geometry (X, Y, Z axes).",
+        "crossCurricularLinks": [
+          "Technology Applications"
+        ]
+      },
+      "careerPathways": [
+        "BIM Manager",
+        "3D Modeler",
+        "Architect"
+      ],
+      "collegePathways": [
+        "B.Arch",
+        "B.S. Computer Science",
+        "A.A.S. CAD Technology"
+      ]
+    },
+    {
+      "title": "12. 3D Modeling: Interior Walls",
+      "description": "Advanced CAD usage to design interior layouts with specific dimensions and partitions.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "CAD Navigation",
+        "Precision measurement"
+      ],
+      "learningObjectives": [
+        "Design to specific dimensions in CAD.",
+        "Create interior partitions.",
+        "Understand wall thickness."
+      ],
+      "teks": [
+        "130.46(c)(8)(C): Create floor plans using CAD."
+      ],
+      "texasStemStandards": [
+        "TS.6.B: Computational Thinking"
+      ],
+      "materialsList": [
+        {
+          "item": "Computers",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Discuss wall thickness.",
+          "Demo 'Ruler' tool.",
+          "Challenge: 2-Bedroom layout."
+        ],
+        "detailed": [
+          "Discuss standard wall thickness (4.5 to 6 inches for residential).",
+          "Show how to use the 'ruler' tool in CAD for precision placement.",
+          "Challenge students to create a 2-bedroom layout within a set footprint."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Create floor slab.",
+          "Extrude exterior walls.",
+          "Add interior rooms."
+        ],
+        "detailed": [
+          "Create a floor slab of 30x40 feet.",
+          "Extrude exterior walls (ensuring thickness).",
+          "Add interior walls to create rooms, ensuring walls are accurate thickness."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Exposure to Engineering/Technology"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453 (Materials and supplies costs)"
+        ],
+        "programType": "UBMS",
+        "justification": "Technical skill building for Architecture/Engineering fields.",
+        "heaRequirements": [
+          "Section 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Spatial analysis.",
+        "technology": "Digital fabrication prep.",
+        "engineering": "Architectural design.",
+        "math": "Area and Perimeter.",
+        "crossCurricularLinks": [
+          "CTE"
+        ]
+      },
+      "careerPathways": [
+        "Interior Designer",
+        "Architectural Drafter",
+        "Space Planner"
+      ],
+      "collegePathways": [
+        "B.F.A. Interior Design",
+        "B.Arch",
+        "Construction Management"
+      ]
+    },
+    {
+      "title": "13. Site Analysis: Topography",
+      "description": "Understanding contour lines and how to design buildings that respect the landscape using physical models.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Map reading",
+        "Cutting with blades (safety)"
+      ],
+      "learningObjectives": [
+        "Read a topographical map.",
+        "Create a physical model of a landscape using layers (chipboard).",
+        "Determine the best location for a building on a slope."
+      ],
+      "teks": [
+        "112.38(c)(8)(B) (Earth Science): Interpret topographic maps.",
+        "130.46(c)(10)(A): Identify site conditions."
+      ],
+      "texasStemStandards": [
+        "TS.3.A: Inquiry"
+      ],
+      "materialsList": [
+        {
+          "item": "Corrugated Cardboard",
+          "estimatedCost": "$0.00 (Recycled)"
+        },
+        {
+          "item": "X-Acto Knives (Teacher supervision required)",
+          "estimatedCost": "$15.00 set"
+        },
+        {
+          "item": "Self-Healing Cutting Mats",
+          "estimatedCost": "$20.00 set"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain Contours.",
+          "Demo Layering technique.",
+          "Discuss Cut-and-Fill."
+        ],
+        "detailed": [
+          "Explain contour intervals (lines close together = steep).",
+          "Show how flat cardboard layers stacked up create a slope (topography model).",
+          "Discuss cut-and-fill strategies for placing foundations."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Trace contours.",
+          "Cut layers.",
+          "Stack and glue.",
+          "Site the building."
+        ],
+        "detailed": [
+          "Trace contour shapes onto cardboard sheets.",
+          "Cut out the layers carefully.",
+          "Stack and glue them to form a hill.",
+          "Identify a flat spot suitable for building a house model."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453 (Materials and supplies costs)"
+        ],
+        "programType": "UBMS",
+        "justification": "Earth Science and Geography concepts applied to Engineering.",
+        "heaRequirements": [
+          "Section 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Geology.",
+        "technology": "Mapping.",
+        "engineering": "Site engineering.",
+        "math": "Slope calculation.",
+        "crossCurricularLinks": [
+          "Geography"
+        ]
+      },
+      "careerPathways": [
+        "Landscape Architect",
+        "Civil Engineer",
+        "Surveyor"
+      ],
+      "collegePathways": [
+        "Master of Landscape Architecture",
+        "B.S. Civil Engineering",
+        "B.S. Geology"
+      ]
+    },
+    {
+      "title": "14. Solar Studies: Orientation and Light",
+      "description": "Analyzing the path of the sun to optimize building orientation for energy efficiency using simulation.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Logical reasoning",
+        "Observation"
+      ],
+      "learningObjectives": [
+        "Understand the sun's path (East to West, angle changes by season).",
+        "Orient a building to maximize/minimize heat gain.",
+        "Design overhangs for shading."
+      ],
+      "teks": [
+        "112.38(c)(11)(A): Energy resources.",
+        "130.45(c)(4)(B): Sustainable design strategies."
+      ],
+      "texasStemStandards": [
+        "TS.4.B: Systems Thinking"
+      ],
+      "materialsList": [
+        {
+          "item": "Flashlights (Sun simulator)",
+          "estimatedCost": "$10.00 pack"
+        },
+        {
+          "item": "Cardboard House Models (from previous lessons)",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Passive Solar principles.",
+          "Demo Summer/Winter angles.",
+          "Discuss Shading."
+        ],
+        "detailed": [
+          "Explain passive solar design principles (Heat gain in winter, shade in summer).",
+          "Demonstrate high summer sun vs. low winter sun angles using flashlight.",
+          "Discuss window placement (South facing for gain)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Position model.",
+          "Simulate sun angles.",
+          "Observe shadows.",
+          "Install awning."
+        ],
+        "detailed": [
+          "Place the model house on the desk.",
+          "Use the flashlight to simulate summer (overhead) and winter (low angle) sun.",
+          "Observe where the light enters the building.",
+          "Add an awning (cardstock) to block summer sun but admit winter sun."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453 (Materials and supplies costs)"
+        ],
+        "programType": "UBMS",
+        "justification": "Environmental Science and Physics.",
+        "heaRequirements": [
+          "Section 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Astronomy (Earth's tilt).",
+        "technology": "Energy modeling.",
+        "engineering": "Passive systems.",
+        "math": "Angles and Geometry.",
+        "crossCurricularLinks": [
+          "Environmental Science"
+        ]
+      },
+      "careerPathways": [
+        "Sustainability Consultant",
+        "Green Building Architect",
+        "Energy Modeler"
+      ],
+      "collegePathways": [
+        "B.S. Environmental Science",
+        "B.Arch",
+        "B.S. Renewable Energy"
+      ]
+    },
+    {
+      "title": "15. HVAC & Airflow: Ventilation Simulation",
+      "description": "Using simple smoke or streamers to visualize airflow and understand natural ventilation dynamics.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Prediction",
+        "Observation"
+      ],
+      "learningObjectives": [
+        "Understand the Stack Effect (hot air rises).",
+        "Design cross-ventilation strategies.",
+        "Visualize invisible fluid dynamics."
+      ],
+      "teks": [
+        "112.39(c)(6)(A) (Physics): Thermal energy transfer.",
+        "130.46(c)(12)(A): Mechanical systems."
+      ],
+      "texasStemStandards": [
+        "TS.3.B: Scientific Inquiry"
+      ],
+      "materialsList": [
+        {
+          "item": "Clear plastic box or aquarium",
+          "estimatedCost": "$15.00"
+        },
+        {
+          "item": "Incense stick or fog source",
+          "estimatedCost": "$10.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Define HVAC.",
+          "Demo Stack Effect.",
+          "Explain pressure differentials."
+        ],
+        "detailed": [
+          "Define HVAC (Heating, Ventilation, Air Conditioning).",
+          "Demonstrate the 'Stack Effect' using a heat source (lamp) and smoke in a box.",
+          "Explain how windows on opposite walls create airflow (Cross ventilation)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Draw prediction.",
+          "Observe smoke path.",
+          "Refine diagram."
+        ],
+        "detailed": [
+          "Draw a diagram predicting airflow in a house with windows open at top and bottom.",
+          "Observe the teacher demonstration of smoke movement.",
+          "Refine the diagram based on observation of fluid dynamics."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453 (Materials and supplies costs)"
+        ],
+        "programType": "UBMS",
+        "justification": "Physics (Thermodynamics) instruction.",
+        "heaRequirements": [
+          "Section 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Thermodynamics.",
+        "technology": "HVAC systems.",
+        "engineering": "Mechanical engineering.",
+        "math": "Volume calculations.",
+        "crossCurricularLinks": [
+          "Health Science"
+        ]
+      },
+      "careerPathways": [
+        "Mechanical Engineer",
+        "HVAC Technician",
+        "Building Physicist"
+      ],
+      "collegePathways": [
+        "B.S. Mechanical Engineering",
+        "A.A.S. HVAC Technology",
+        "B.S. Physics"
+      ]
+    },
+    {
+      "title": "16. Sustainable Design: The Passive House",
+      "description": "Students integrate previous lessons to design a home that requires minimal energy inputs.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Synthesis of concepts",
+        "Drawing"
+      ],
+      "learningObjectives": [
+        "Synthesize concepts of orientation, insulation, and materials.",
+        "Draw a section view showing sustainable features.",
+        "Explain the benefits of Green Building."
+      ],
+      "teks": [
+        "130.45(c)(2)(B): Green building standards (LEED).",
+        "112.37(c)(9)(A) (Env Systems): Human impact on environment."
+      ],
+      "texasStemStandards": [
+        "TS.4.C: Social Responsibility"
+      ],
+      "materialsList": [
+        {
+          "item": "Drawing Paper",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Colored Pencils",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Intro LEED.",
+          "Discuss Insulation (R-value).",
+          "Show Green Roof examples."
+        ],
+        "detailed": [
+          "Introduce LEED certification and Passive House standards.",
+          "Discuss insulation (R-value) and thermal bridging.",
+          "Show examples of green roofs, rainwater harvesting, and solar power."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Sketch Cross-Section.",
+          "Label features.",
+          "Write eco-pitch."
+        ],
+        "detailed": [
+          "Sketch a cross-section of a house.",
+          "Label at least 5 sustainable features (e.g., Solar panels, thick insulation, south-facing windows, rain barrels).",
+          "Write a brief pitch for why this house is eco-friendly."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453 (Materials and supplies costs)"
+        ],
+        "programType": "UBMS",
+        "justification": "Environmental Science and Engineering integration.",
+        "heaRequirements": [
+          "Section 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Ecology.",
+        "technology": "Green tech.",
+        "engineering": "Sustainable design.",
+        "math": "Energy calculations.",
+        "crossCurricularLinks": [
+          "Civics"
+        ]
+      },
+      "careerPathways": [
+        "LEED Accredited Professional",
+        "Environmental Engineer",
+        "Urban Ecologist"
+      ],
+      "collegePathways": [
+        "B.S. Environmental Engineering",
+        "B.Arch",
+        "Master of Urban Planning"
+      ]
+    },
+    {
+      "title": "17. Project Management: Cost Estimation",
+      "description": "The math of construction—calculating the cost of materials for a simple room renovation.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Arithmetic",
+        "Spreadsheet basics"
+      ],
+      "learningObjectives": [
+        "Calculate area of walls and floor.",
+        "Determine paint and flooring quantities needed.",
+        "Create a budget spreadsheet."
+      ],
+      "teks": [
+        "130.46(c)(14)(A): Estimate materials and costs.",
+        "111.39(c)(1)(A): Mathematical modeling."
+      ],
+      "texasStemStandards": [
+        "TS.2.D: Quantitative Reasoning"
+      ],
+      "materialsList": [
+        {
+          "item": "Calculators",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Mock Price List (Handout)",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Provide Floor Plan.",
+          "Provide Price List.",
+          "Explain Contingency."
+        ],
+        "detailed": [
+          "Provide a simple floor plan (e.g., 10x12 room).",
+          "Provide unit prices (e.g., Paint covers 400sqft for $30; Flooring is $2/sqft).",
+          "Explain contingency funds (adding extra for mistakes)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Calculate Areas.",
+          "Calculate Unit Costs.",
+          "Add Overage."
+        ],
+        "detailed": [
+          "Calculate total wall area (excluding windows/doors) and floor area.",
+          "Using the price list, calculate the total cost to renovate the room.",
+          "Add 10% for waste/overage to the final budget."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Financial Literacy (Budgeting)"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453 (Materials and supplies costs)"
+        ],
+        "programType": "Both",
+        "justification": "Applied math and financial literacy (budgeting).",
+        "heaRequirements": [
+          "Section 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.43(a)(3)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "N/A",
+        "technology": "Spreadsheets.",
+        "engineering": "Project management.",
+        "math": "Arithmetic and Algebra.",
+        "crossCurricularLinks": [
+          "Economics"
+        ]
+      },
+      "careerPathways": [
+        "Construction Manager",
+        "Cost Estimator",
+        "Quantity Surveyor"
+      ],
+      "collegePathways": [
+        "B.S. Construction Science",
+        "B.B.A. Finance",
+        "B.S. Civil Engineering"
+      ]
+    },
+    {
+      "title": "18. Landscape Architecture: Zoning and Flow",
+      "description": "Designing the outdoor space to complement the building and serve human needs through botany and planning.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Design",
+        "Symbolism"
+      ],
+      "learningObjectives": [
+        "Distinguish between hardscape and softscape.",
+        "Design circulation paths.",
+        "Create a landscape plan."
+      ],
+      "teks": [
+        "130.46(c)(11)(A): Landscape design.",
+        "112.37(c)(5)(B): Native species."
+      ],
+      "texasStemStandards": [
+        "TS.5.B: Communication"
+      ],
+      "materialsList": [
+        {
+          "item": "Green construction paper",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Glue and Markers",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Define Landscape Arch.",
+          "Native Plants (Xeriscaping).",
+          "Circulation paths."
+        ],
+        "detailed": [
+          "Define Landscape Architecture (it's not just gardening).",
+          "Discuss the importance of native plants (xeriscaping) in Texas climates.",
+          "Explain how people move through outdoor spaces (paths of desire)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Draw Site Plan.",
+          "Add paths/zones.",
+          "Use symbols for plants."
+        ],
+        "detailed": [
+          "Draw a site plan for a community park.",
+          "Indicate walking paths, seating areas, and trees.",
+          "Use symbols to represent different plant types (Trees vs Shrubs)."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science (Botany context)"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453 (Materials and supplies costs)"
+        ],
+        "programType": "UBMS",
+        "justification": "Biology (Botany) and Design integration.",
+        "heaRequirements": [
+          "Section 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Botany.",
+        "technology": "Irrigation systems.",
+        "engineering": "Grading and drainage.",
+        "math": "Area calculations.",
+        "crossCurricularLinks": [
+          "Art"
+        ]
+      },
+      "careerPathways": [
+        "Landscape Architect",
+        "Horticulturist",
+        "Urban Designer"
+      ],
+      "collegePathways": [
+        "Master of Landscape Architecture",
+        "B.S. Horticulture",
+        "B.S. Urban Planning"
+      ]
+    },
+    {
+      "title": "19. Urban Planning: The Neighborhood Layout",
+      "description": "Scaling up from a single building to a community, focusing on zoning, infrastructure, and civic responsibility.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Collaboration",
+        "Systems thinking"
+      ],
+      "learningObjectives": [
+        "Understand zoning (Residential vs Commercial vs Industrial).",
+        "Plan a walkable community.",
+        "Place infrastructure (roads, power)."
+      ],
+      "teks": [
+        "130.46(c)(10)(B): Community planning.",
+        "113.41(c)(13)(A) (Social Studies): Urbanization."
+      ],
+      "texasStemStandards": [
+        "TS.4.C: Social Responsibility"
+      ],
+      "materialsList": [
+        {
+          "item": "Large Butcher Paper",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Markers",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain Zoning.",
+          "15-Minute City concept.",
+          "Group Work: City Council."
+        ],
+        "detailed": [
+          "Explain why factories aren't usually next to houses (Zoning codes).",
+          "Discuss the concept of the '15-minute city' (everything needed is within walking distance).",
+          "Divide class into groups acting as the 'City Council'."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Collaborate on map.",
+          "Zone areas.",
+          "Connect with roads."
+        ],
+        "detailed": [
+          "Collaborate to draw a city map on large paper.",
+          "Designate zones for housing, schools, and shops.",
+          "Draw the road network connecting them."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Exposure to Academic Programs"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453 (Materials and supplies costs)"
+        ],
+        "programType": "Both",
+        "justification": "Civic engagement and systems engineering.",
+        "heaRequirements": [
+          "Section 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.43(a)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Public health.",
+        "technology": "GIS (Geographic Info Systems).",
+        "engineering": "Civil infrastructure.",
+        "math": "Density calculations.",
+        "crossCurricularLinks": [
+          "Government"
+        ]
+      },
+      "careerPathways": [
+        "Urban Planner",
+        "City Manager",
+        "GIS Technician"
+      ],
+      "collegePathways": [
+        "Master of Urban Planning",
+        "B.S. Public Administration",
+        "B.S. Geography (GIS)"
+      ]
+    },
+    {
+      "title": "20. Capstone: The Dream Community Center",
+      "description": "Final presentation where students apply all learned skills to design a community center.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Public Speaking",
+        "Presentation Design"
+      ],
+      "learningObjectives": [
+        "Synthesize structural, aesthetic, and functional design.",
+        "Present a design proposal verbally.",
+        "Critique peer work constructively."
+      ],
+      "teks": [
+        "130.46(c)(15)(A): Presentation skills.",
+        "110.31(c)(24)(A) (ELA): Oral presentation."
+      ],
+      "texasStemStandards": [
+        "TS.5.B: Communication of Ideas"
+      ],
+      "materialsList": [
+        {
+          "item": "Presentation Board (Tri-fold)",
+          "estimatedCost": "$3.00 per student"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Set Design Prompt.",
+          "Review Rubric.",
+          "Facilitate Jury."
+        ],
+        "detailed": [
+          "Set the prompt: Design a community center for your neighborhood.",
+          "Establish rubric: Must include floor plan, elevation, and one sustainable feature.",
+          "Facilitate the 'Design Jury' (presentations)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Assemble display.",
+          "Present (3 mins).",
+          "Explain Engineering."
+        ],
+        "detailed": [
+          "Pin up drawings/models from previous lessons (or create new ones) on the board.",
+          "Present the design to the class (3 minutes).",
+          "Explain the structural system and sustainable features used."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Mentoring",
+          "Exposure to Academic Programs"
+        ],
+        "allowableCosts": [
+          "2 CFR 200.453 (Materials and supplies costs)"
+        ],
+        "programType": "Both",
+        "justification": "Culminating academic project demonstrating mastery of STEM concepts.",
+        "heaRequirements": [
+          "Section 402C(b)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.43(a)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453"
+        ]
+      },
+      "stemConnections": {
+        "science": "Review of all concepts.",
+        "technology": "Presentation software.",
+        "engineering": "System integration.",
+        "math": "Budgeting and Scale.",
+        "crossCurricularLinks": [
+          "Speech/Debate"
+        ]
+      },
+      "careerPathways": [
+        "Project Manager",
+        "Principal Architect",
+        "Community Developer"
+      ],
+      "collegePathways": [
+        "M.B.A. (Real Estate)",
+        "B.Arch",
+        "B.S. Communications"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1702 @@
+{
+  "curriculumTitle": "Waco Surf STEM Academy: High-Frequency Field Research Rotation",
+  "overview": "A refined, high-intensity rotation curriculum designed for UB/UBMS students in Texas (Dallas, Tarrant, Johnson counties). This curriculum breaks down complex hydrodynamics and environmental engineering concepts into 20 distinct, rapid-fire micro-modules (sprints). Students rotate through stations at the Waco Surf facility, covering Physics, Chemistry, Mathematics, and Engineering in 20-30 minute intervals. The curriculum is strictly aligned with HEA Title IV regulations for allowable costs and services, providing rigorous academic instruction in a field setting.",
+  "prerequisites": "Completion of Algebra I; Recommended concurrent enrollment in Geometry or IPC (Integrated Physics and Chemistry).",
+  "targetAgeGroup": "High School (Ages 14-18)",
+  "totalDurationEstimate": "10 Hours (Split between Field Lab and Pre-Lab/Post-Lab analysis)",
+  "fieldTrips": [
+    {
+      "name": "Waco Surf Artificial Wave Facility",
+      "location": "Waco, TX (Accessible via I-35 from Dallas/Tarrant/Johnson)",
+      "description": "A controlled-environment artificial surf lagoon powered by pneumatic wave-generation technology. The facility allows for consistent, repeatable wave physics measurements not possible in ocean environments.",
+      "relevanceToCurriculum": "Primary laboratory site for data collection on wave frequency, amplitude, water chemistry, and fluid dynamics."
+    }
+  ],
+  "activities": [
+    {
+      "title": "Station 1: Wave Period Analysis",
+      "description": "Students measure the precise time interval between wave crests to determine the frequency of the wave generator.",
+      "timeRequired": "20 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Stopwatch usage",
+        "Averaging data"
+      ],
+      "learningObjectives": [
+        "Define and measure wave period (T).",
+        "Calculate frequency (f = 1/T) from collected data."
+      ],
+      "teks": [
+        "Physics 7(B): investigate and analyze characteristics of waves, including frequency."
+      ],
+      "texasStemStandards": [
+        "STEM Level 2: Students use tools to collect data."
+      ],
+      "materialsList": [
+        {
+          "item": "Stopwatch",
+          "estimatedCost": "$5"
+        },
+        {
+          "item": "Waterproof Data Sheet",
+          "estimatedCost": "$1"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Position students at the 50m mark.",
+          "Ensure they time crest-to-crest."
+        ],
+        "detailed": [
+          "Explain that human reaction time is a source of error; encourage averaging.",
+          "Verify students are timing the same wave set (sets usually come in 3s)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Start timer when Wave A hits the mark.",
+          "Stop when Wave B hits the mark."
+        ],
+        "detailed": [
+          "Observe the wave generator 'hiss'.",
+          "Select a fixed visual marker on the wall.",
+          "Time 5 distinct wave sets and calculate the mean Period (T)."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science",
+          "Instruction in Mathematics"
+        ],
+        "allowableCosts": [
+          "Field Trip Admission",
+          "Transportation"
+        ],
+        "programType": "Both",
+        "justification": "Provides rigorous academic instruction in Physics (oscillatory motion) utilizing field equipment.",
+        "heaRequirements": [
+          "Sec. 402C(b) (UB) - Instruction in science/math",
+          "Sec. 402E(b) (UBMS) - Exposure to scientific research"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Curriculum services",
+          "34 CFR 645.40(c) - Allowable field trip costs"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.405(a) - Allocable costs to the Federal award"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics: Frequency and Period.",
+        "technology": "Timing sensors and automation.",
+        "engineering": "Signal processing.",
+        "math": "Algebra: Reciprocals and Averages.",
+        "crossCurricularLinks": [
+          "Music (Rhythm and Beats)"
+        ]
+      },
+      "careerPathways": [
+        "Oceanographer",
+        "Coastal Engineer"
+      ],
+      "collegePathways": [
+        "BS Oceanography",
+        "BS Physics"
+      ]
+    },
+    {
+      "title": "Station 2: Amplitude Measurement",
+      "description": "Visual triangulation of wave height against calibrated wall markers to understand energy displacement.",
+      "timeRequired": "20 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Observation",
+        "Estimation"
+      ],
+      "learningObjectives": [
+        "Measure wave amplitude from equilibrium.",
+        "Differentiate between wave height and amplitude."
+      ],
+      "teks": [
+        "Physics 7(B): analyze amplitude."
+      ],
+      "texasStemStandards": [
+        "STEM Level 2: Data collection."
+      ],
+      "materialsList": [
+        {
+          "item": "Binoculars",
+          "estimatedCost": "$20"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Use pool wall markers as Y-axis."
+        ],
+        "detailed": [
+          "Explain that amplitude is from the 'Still Water Line' up to the crest, not trough to crest (which is wave height)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Identify still water line.",
+          "Record peak height."
+        ],
+        "detailed": [
+          "Using the binoculars, watch the water level against the metric ruler on the far wall.",
+          "Record the baseline water level.",
+          "Record the max height of the wave.",
+          "Subtract baseline from max to find Amplitude."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Application of geometry and measurement in a real-world setting.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Core curriculum instruction"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Academic instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404 - Reasonable costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics: Energy vs Amplitude.",
+        "technology": "Surveying equipment.",
+        "engineering": "Coastal defense structures.",
+        "math": "Geometry: Y-axis coordinates.",
+        "crossCurricularLinks": [
+          "Geography"
+        ]
+      },
+      "careerPathways": [
+        "Hydrographic Surveyor",
+        "Marine Technician"
+      ],
+      "collegePathways": [
+        "BS Geomatics",
+        "AAS Surveying Technology"
+      ]
+    },
+    {
+      "title": "Station 3: Velocity Calculation",
+      "description": "Calculation of wave speed using distance markers and time data to verify wave equations.",
+      "timeRequired": "20 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Algebraic substitution",
+        "Timing"
+      ],
+      "learningObjectives": [
+        "Calculate velocity using v = d/t.",
+        "Verify velocity using v = f * lambda."
+      ],
+      "teks": [
+        "Physics 4(A): calculate average speed using distance and time."
+      ],
+      "texasStemStandards": [
+        "STEM Level 3: Apply content."
+      ],
+      "materialsList": [
+        {
+          "item": "Scientific Calculator",
+          "estimatedCost": "$10"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Identify two static markers 10m apart."
+        ],
+        "detailed": [
+          "Ensure students understand that the water molecules aren't moving at this speed, the energy pulse is."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Time wave travel between markers.",
+          "Divide distance by time."
+        ],
+        "detailed": [
+          "Locate Marker A and Marker B (Distance = 10m).",
+          "Start timer when crest passes A, stop at B.",
+          "Calculate Velocity (meters/second).",
+          "Compare this to the machine setting listed on the control board."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Physics"
+        ],
+        "allowableCosts": [
+          "Field Trip Admission"
+        ],
+        "programType": "Both",
+        "justification": "Kinematics instruction aligning with state physics standards.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b) - Support for rigorous curriculum"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403(a) - Necessary for performance of award"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics: Kinematics.",
+        "technology": "Doppler Radar.",
+        "engineering": "Hydraulics.",
+        "math": "Algebra: Linear equations.",
+        "crossCurricularLinks": [
+          "Automotive Safety"
+        ]
+      },
+      "careerPathways": [
+        "Hydrologist",
+        "Traffic Engineer"
+      ],
+      "collegePathways": [
+        "BS Civil Engineering",
+        "BS Hydrology"
+      ]
+    },
+    {
+      "title": "Station 4: Wave Decay & Friction",
+      "description": "Students measure wave height at the source vs. the shore to calculate energy loss due to friction and turbulence.",
+      "timeRequired": "25 minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Percentage calculation",
+        "Data comparison"
+      ],
+      "learningObjectives": [
+        "Observe damping forces.",
+        "Calculate percentage of energy loss."
+      ],
+      "teks": [
+        "Physics 6(F): investigate energy transformations and conservation."
+      ],
+      "texasStemStandards": [
+        "STEM Level 4: Analyze data."
+      ],
+      "materialsList": [
+        {
+          "item": "Data Sheet",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Compare Station 2 data with shoreline data."
+        ],
+        "detailed": [
+          "Discuss the Law of Conservation of Energy: The wave height decreases, so where did the energy go? (Heat, Sound, Sand displacement)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Measure shoreline wave height.",
+          "Subtract from Station 2 height."
+        ],
+        "detailed": [
+          "Record wave height at the break-point (shore).",
+          "Compare with the deep-water height from Station 2.",
+          "Calculate the % decrease in height.",
+          "Hypothesize the friction coefficient of the pool floor."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Transportation"
+        ],
+        "programType": "UBMS",
+        "justification": "Advanced thermodynamics and energy conservation research.",
+        "heaRequirements": [
+          "Sec. 402E(b) - Research activities"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(2) - Scientific research"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.405 - Allocable costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics: Thermodynamics.",
+        "technology": "Efficiency modeling.",
+        "engineering": "Energy grid loss.",
+        "math": "Percentages and Ratios.",
+        "crossCurricularLinks": [
+          "Environmental Science"
+        ]
+      },
+      "careerPathways": [
+        "Energy Analyst",
+        "Systems Engineer"
+      ],
+      "collegePathways": [
+        "BS Mechanical Engineering",
+        "BS Environmental Science"
+      ]
+    },
+    {
+      "title": "Station 5: Wavelength Estimation",
+      "description": "Visual estimation of the distance between two simultaneous crests to model spatial frequency.",
+      "timeRequired": "20 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Visual estimation",
+        "Scaling"
+      ],
+      "learningObjectives": [
+        "Estimate wavelength in a non-static medium.",
+        "Relate Wavelength to Frequency."
+      ],
+      "teks": [
+        "Physics 7(B): characteristics of waves including wavelength."
+      ],
+      "texasStemStandards": [
+        "STEM Level 3: Inquiry-based learning."
+      ],
+      "materialsList": [
+        {
+          "item": "Reference Photos (Laminated)",
+          "estimatedCost": "$2"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Use surfers or buoys as scale reference."
+        ],
+        "detailed": [
+          "If a surfer is 6ft tall, how many 'surfers' fit between the two wave crests?"
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Wait for two visible waves.",
+          "Estimate distance between them."
+        ],
+        "detailed": [
+          "Find a moment when Wave A and Wave B are both visible.",
+          "Use the fence posts (known distance) or a surfer to estimate the meters between crests.",
+          "Check your work: Velocity divided by Frequency should equal Wavelength."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Field Trip Admission"
+        ],
+        "programType": "Both",
+        "justification": "Core physics curriculum alignment regarding wave properties.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Academic services"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403 - Reasonable and necessary"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics: Spatial analysis.",
+        "technology": "Satellite imaging/Photogrammetry.",
+        "engineering": "Radio communications.",
+        "math": "Estimation/Scaling.",
+        "crossCurricularLinks": [
+          "Astronomy"
+        ]
+      },
+      "careerPathways": [
+        "Remote Sensing Scientist",
+        "Telecommunications Engineer"
+      ],
+      "collegePathways": [
+        "BS Geospatial Science",
+        "BS Electrical Engineering"
+      ]
+    },
+    {
+      "title": "Station 6: Bathymetry Slope Math",
+      "description": "Using basic surveying to calculate the slope of the pool floor (beach entry) to understand wave breaking mechanics.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Measurement",
+        "Trigonometry"
+      ],
+      "learningObjectives": [
+        "Calculate slope (rise over run).",
+        "Understand how depth affects wave shape (breaking)."
+      ],
+      "teks": [
+        "Geometry 5(A): investigate patterns to make conjectures about geometric relationships.",
+        "Physics 7(D): investigate behaviors of waves including reflection and refraction."
+      ],
+      "texasStemStandards": [
+        "STEM Level 3: Design solutions."
+      ],
+      "materialsList": [
+        {
+          "item": "Tape Measure (30m)",
+          "estimatedCost": "$10"
+        },
+        {
+          "item": "Meter Stick",
+          "estimatedCost": "$5"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Perform in shallow wading area only."
+        ],
+        "detailed": [
+          "Ensure students do not go deeper than waist height for safety.",
+          "Discuss how the slope determines if a wave 'spills' or 'plunges'."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Measure 5m out (Run).",
+          "Measure depth (Rise).",
+          "Calculate slope."
+        ],
+        "detailed": [
+          "Start at water's edge (Depth = 0).",
+          "Extend tape measure 5 meters into water (Run).",
+          "Measure depth at the 5m mark (Rise).",
+          "Calculate Slope = Rise/Run.",
+          "Calculate Angle = tan^-1(Rise/Run)."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Applied Geometry and Trigonometry instruction.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in math"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Academic instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404 - Reasonable costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Geology: Topography.",
+        "technology": "Sonar.",
+        "engineering": "Civil Engineering (Grading).",
+        "math": "Trigonometry (Tangent).",
+        "crossCurricularLinks": [
+          "Construction Trades"
+        ]
+      },
+      "careerPathways": [
+        "Land Surveyor",
+        "Civil Engineer"
+      ],
+      "collegePathways": [
+        "BS Civil Engineering",
+        "AAS Construction Management"
+      ]
+    },
+    {
+      "title": "Station 7: Total Volume Estimation",
+      "description": "Using geometric decomposition to estimate the total water volume in the lagoon for chemical treatment analysis.",
+      "timeRequired": "25 minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Volume formulas",
+        "Unit conversion"
+      ],
+      "learningObjectives": [
+        "Decompose complex shapes into rectangles and triangles.",
+        "Calculate volume and convert to gallons."
+      ],
+      "teks": [
+        "Geometry 11(D): apply formulas for volume.",
+        "Chemistry 2(G): dimensional analysis."
+      ],
+      "texasStemStandards": [
+        "STEM Level 4: Synthesis."
+      ],
+      "materialsList": [
+        {
+          "item": "Lagoon Blueprint (Handout)",
+          "estimatedCost": "$1"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Provide schematic of pool dimensions."
+        ],
+        "detailed": [
+          "Explain that 'acre-feet' is a common large-scale water measurement, but we are using gallons."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Divide pool into sections.",
+          "Calculate Volume (Area x Avg Depth).",
+          "Convert to Gallons."
+        ],
+        "detailed": [
+          "Break the pool shape into 3 rectangles and 2 triangles.",
+          "Estimate the volume of each section in Cubic Meters.",
+          "Sum the volumes.",
+          "Convert Total Cubic Meters to Gallons (1 m^3 = 264 gallons)."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics"
+        ],
+        "allowableCosts": [
+          "Field Trip Admission"
+        ],
+        "programType": "UBMS",
+        "justification": "Complex dimensional analysis and mathematical modeling.",
+        "heaRequirements": [
+          "Sec. 402E(b) - Math/Science instruction"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Curriculum"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403 - Allocable costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Hydrology.",
+        "technology": "CAD software.",
+        "engineering": "Reservoir management.",
+        "math": "Calculus (Riemann sums concept).",
+        "crossCurricularLinks": [
+          "Logistics"
+        ]
+      },
+      "careerPathways": [
+        "Water Resource Planner",
+        "Logistician"
+      ],
+      "collegePathways": [
+        "BS Hydrology",
+        "BS Industrial Mathematics"
+      ]
+    },
+    {
+      "title": "Station 8: Flow Rate Analysis",
+      "description": "Observing filtration return jets to calculate flow rate and turnover efficiency.",
+      "timeRequired": "25 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Rate calculation",
+        "Extrapolation"
+      ],
+      "learningObjectives": [
+        "Calculate flow rate (Volume/Time).",
+        "Understand turnover rate requirements."
+      ],
+      "teks": [
+        "Environmental Systems 5(B): identify water quantity and usage."
+      ],
+      "texasStemStandards": [
+        "STEM Level 3: Real-world problem solving."
+      ],
+      "materialsList": [
+        {
+          "item": "5 Gallon Bucket",
+          "estimatedCost": "$5"
+        },
+        {
+          "item": "Stopwatch",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Use a water return pipe accessible from deck."
+        ],
+        "detailed": [
+          "Turnover rate is the time it takes to filter the entire volume of the pool once."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Time to fill bucket.",
+          "Calculate GPM.",
+          "Calculate Turnover time."
+        ],
+        "detailed": [
+          "Place bucket under flow.",
+          "Time how long to fill 5 gallons.",
+          "Calculate Gallons Per Minute (GPM).",
+          "Divide Total Volume (from Station 7) by GPM to find minutes required to filter the whole pool."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Environmental engineering systems analysis.",
+        "heaRequirements": [
+          "Sec. 402E(b) - Research"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Lab science"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404 - Reasonable costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics: Fluid dynamics.",
+        "technology": "Flow meters.",
+        "engineering": "Piping design.",
+        "math": "Rates of change.",
+        "crossCurricularLinks": [
+          "Plumbing/Trades"
+        ]
+      },
+      "careerPathways": [
+        "Wastewater Operator",
+        "Mechanical Engineer"
+      ],
+      "collegePathways": [
+        "AAS Water Quality Technology",
+        "BS Mechanical Engineering"
+      ]
+    },
+    {
+      "title": "Station 9: pH Field Test",
+      "description": "Rapid testing of water acidity using strips or digital meters to ensure bather safety.",
+      "timeRequired": "20 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Following protocols",
+        "Matching data"
+      ],
+      "learningObjectives": [
+        "Determine pH level of a solution.",
+        "Understand the logarithmic scale of pH."
+      ],
+      "teks": [
+        "Chemistry 10(H): understand and differentiate among acid-base reactions."
+      ],
+      "texasStemStandards": [
+        "STEM Level 2: Use tools."
+      ],
+      "materialsList": [
+        {
+          "item": "pH Test Strips",
+          "estimatedCost": "$10"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Discuss pH 7.2-7.6 importance."
+        ],
+        "detailed": [
+          "Explain that pH is logarithmic; pH 7 is 10x more acidic than pH 8."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Dip strip.",
+          "Compare color.",
+          "Record."
+        ],
+        "detailed": [
+          "Take a sample from 1ft depth.",
+          "Dip strip for 2 seconds.",
+          "Wait 15 seconds.",
+          "Compare to color chart.",
+          "Is the water basic, acidic, or neutral?"
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Basic chemistry lab skills in the field.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Instruction in science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Academic instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404 - Reasonable costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Chemistry: Acids/Bases.",
+        "technology": "Chemical sensors.",
+        "engineering": "Water treatment.",
+        "math": "Logarithms.",
+        "crossCurricularLinks": [
+          "Health Science"
+        ]
+      },
+      "careerPathways": [
+        "Chemical Technician",
+        "Water Quality Analyst"
+      ],
+      "collegePathways": [
+        "BS Chemistry",
+        "AAS Environmental Tech"
+      ]
+    },
+    {
+      "title": "Station 10: Chlorine & UV Interaction",
+      "description": "Testing free chlorine levels in sunny vs. shaded areas to analyze photolysis.",
+      "timeRequired": "25 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Titration or Colorimetry",
+        "Variable isolation"
+      ],
+      "learningObjectives": [
+        "Measure chemical concentration.",
+        "Analyze the effect of UV radiation on chemical bonds."
+      ],
+      "teks": [
+        "Chemistry 11(A): describe the unique role of water in chemical and biological systems."
+      ],
+      "texasStemStandards": [
+        "STEM Level 4: Analyze variables."
+      ],
+      "materialsList": [
+        {
+          "item": "DPD Chlorine Test Kit",
+          "estimatedCost": "$15"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain Cyanuric Acid (Stabilizer)."
+        ],
+        "detailed": [
+          "UV light breaks the bond between Chlorine and the pathogen, or degrades the Chlorine itself."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Test deep water (shade/cool).",
+          "Test beach water (sun/warm).",
+          "Compare."
+        ],
+        "detailed": [
+          "Use the DPD kit to measure Free Chlorine in the deep end.",
+          "Measure Free Chlorine in the shallow, sunny end.",
+          "Calculate the difference.",
+          "Explain why UV radiation degrades chlorine."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Chemical interactions and environmental factors.",
+        "heaRequirements": [
+          "Sec. 402E(b) - Science instruction"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Lab science"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404 - Reasonable supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Photochemistry.",
+        "technology": "UV Sterilization.",
+        "engineering": "Environmental Engineering.",
+        "math": "Ratios.",
+        "crossCurricularLinks": [
+          "Ecology"
+        ]
+      },
+      "careerPathways": [
+        "Environmental Chemist",
+        "Pool Operator"
+      ],
+      "collegePathways": [
+        "BS Biochemistry",
+        "BS Environmental Engineering"
+      ]
+    },
+    {
+      "title": "Station 11: Thermal Stratification",
+      "description": "Measuring temperature differences at varying depths to map the thermocline.",
+      "timeRequired": "20 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Sensor usage",
+        "Graphing"
+      ],
+      "learningObjectives": [
+        "Measure temperature variance.",
+        "Understand specific heat capacity of water."
+      ],
+      "teks": [
+        "Physics 6(E): describe how the macroscopic properties of a thermodynamic system change."
+      ],
+      "texasStemStandards": [
+        "STEM Level 2: Data collection."
+      ],
+      "materialsList": [
+        {
+          "item": "Digital Probe Thermometer",
+          "estimatedCost": "$15"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Use probe on string for deep readings."
+        ],
+        "detailed": [
+          "Water is denser when cold (to a point), creating layers."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Record surface temp.",
+          "Record 1m depth temp."
+        ],
+        "detailed": [
+          "Measure temp at surface.",
+          "Drop probe to 1 meter depth.",
+          "Record temp.",
+          "Is there a significant difference? Why or why not (consider mixing/pumps)?"
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Thermodynamics data collection.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Science instruction"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Curriculum"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403 - Necessary costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Meteorology/Thermodynamics.",
+        "technology": "Thermal imaging.",
+        "engineering": "HVAC/Cooling.",
+        "math": "Statistics.",
+        "crossCurricularLinks": [
+          "Marine Biology"
+        ]
+      },
+      "careerPathways": [
+        "Meteorologist",
+        "HVAC Engineer"
+      ],
+      "collegePathways": [
+        "BS Atmospheric Science",
+        "BS Mechanical Engineering"
+      ]
+    },
+    {
+      "title": "Station 12: Turbidity Assessment",
+      "description": "Assessing water clarity using a Secchi disk to evaluate filtration efficiency.",
+      "timeRequired": "20 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Visual measurement",
+        "Record keeping"
+      ],
+      "learningObjectives": [
+        "Measure turbidity.",
+        "Correlate clarity with filtration efficiency."
+      ],
+      "teks": [
+        "Environmental Systems 9(B): analyze test results for water quality."
+      ],
+      "texasStemStandards": [
+        "STEM Level 2: Observation."
+      ],
+      "materialsList": [
+        {
+          "item": "Secchi Disk (DIY)",
+          "estimatedCost": "$5"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain Total Dissolved Solids (TDS)."
+        ],
+        "detailed": [
+          "High turbidity implies poor filtration or high biological load."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Lower disk until invisible.",
+          "Record depth."
+        ],
+        "detailed": [
+          "Slowly lower the black/white disk into the water.",
+          "Stop exactly when you can no longer distinguish the pattern.",
+          "Measure the length of string submerged.",
+          "Relate this to bather load today."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Environmental science field technique.",
+        "heaRequirements": [
+          "Sec. 402E(b) - Science instruction"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Academic instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404 - Reasonable costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Optics/Light scattering.",
+        "technology": "Filtration media.",
+        "engineering": "Sanitation Systems.",
+        "math": "Inverse relationships.",
+        "crossCurricularLinks": [
+          "Public Health"
+        ]
+      },
+      "careerPathways": [
+        "Hydrologist",
+        "Public Health Officer"
+      ],
+      "collegePathways": [
+        "BS Public Health",
+        "BS Environmental Science"
+      ]
+    },
+    {
+      "title": "Station 13: Drag Test - Surface Area",
+      "description": "Towing objects of different sizes to measure fluid resistance.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Force measurement",
+        "Proportional reasoning"
+      ],
+      "learningObjectives": [
+        "Demonstrate relationship between surface area and drag.",
+        "Measure force in Newtons."
+      ],
+      "teks": [
+        "Physics 4(D): calculate the effect of forces."
+      ],
+      "texasStemStandards": [
+        "STEM Level 3: Experimentation."
+      ],
+      "materialsList": [
+        {
+          "item": "Spring Scale",
+          "estimatedCost": "$10"
+        },
+        {
+          "item": "Plastic plates of various sizes",
+          "estimatedCost": "$5"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Pull objects at constant walking pace."
+        ],
+        "detailed": [
+          "Consistency of speed is key. If they speed up, drag increases exponentially."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Pull Small Plate.",
+          "Record Force.",
+          "Pull Large Plate.",
+          "Record Force."
+        ],
+        "detailed": [
+          "Attach spring scale to the small plate.",
+          "Drag it through water at a steady walk.",
+          "Record Newtons of force.",
+          "Repeat with large plate.",
+          "Calculate: Did doubling the area double the force?"
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Instructional Equipment"
+        ],
+        "programType": "Both",
+        "justification": "Fluid dynamics experiment using force measurement.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Science instruction"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Curriculum"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403 - Allocable costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics: Forces.",
+        "technology": "Aerodynamics.",
+        "engineering": "Vehicle design.",
+        "math": "Proportionality.",
+        "crossCurricularLinks": [
+          "Automotive"
+        ]
+      },
+      "careerPathways": [
+        "Aerospace Engineer",
+        "Naval Architect"
+      ],
+      "collegePathways": [
+        "BS Aerospace Engineering",
+        "BS Naval Architecture"
+      ]
+    },
+    {
+      "title": "Station 14: Drag Test - Hydrodynamics",
+      "description": "Comparing a block vs. a streamlined shape (fin) to analyze drag coefficients.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Comparative analysis",
+        "Observation"
+      ],
+      "learningObjectives": [
+        "Compare drag coefficients of different shapes.",
+        "Analyze laminar vs turbulent flow."
+      ],
+      "teks": [
+        "Physics 4(D): analyze forces."
+      ],
+      "texasStemStandards": [
+        "STEM Level 3: Design thinking."
+      ],
+      "materialsList": [
+        {
+          "item": "Spring Scale",
+          "estimatedCost": "$0"
+        },
+        {
+          "item": "Shaped foam blocks",
+          "estimatedCost": "$5"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Focus on the wake (turbulence)."
+        ],
+        "detailed": [
+          "Point out the eddies behind the square block (low pressure zone) which creates drag."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Tow square block.",
+          "Tow streamlined block.",
+          "Compare force."
+        ],
+        "detailed": [
+          "Drag the square block and measure force.",
+          "Drag the teardrop/fin shape and measure force.",
+          "Observe the water behind each shape. Which is smoother?",
+          "Explain why fish are shaped the way they are."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Engineering"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Engineering design process testing.",
+        "heaRequirements": [
+          "Sec. 402E(b) - Science/Engineering instruction"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Academic instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404 - Reasonable costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics: Turbulence.",
+        "technology": "CFD (Computational Fluid Dynamics).",
+        "engineering": "Naval architecture.",
+        "math": "Data comparison.",
+        "crossCurricularLinks": [
+          "Swimming"
+        ]
+      },
+      "careerPathways": [
+        "Automotive Designer",
+        "Marine Engineer"
+      ],
+      "collegePathways": [
+        "BS Mechanical Engineering",
+        "BS Industrial Design"
+      ]
+    },
+    {
+      "title": "Station 15: Buoyancy & Density",
+      "description": "Testing whether specific materials float or sink to apply Archimedes' Principle.",
+      "timeRequired": "20 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Prediction",
+        "Categorization"
+      ],
+      "learningObjectives": [
+        "Apply Archimedes' Principle.",
+        "Calculate density."
+      ],
+      "teks": [
+        "Physics 2(E): design and implement investigative procedures."
+      ],
+      "texasStemStandards": [
+        "STEM Level 2: Investigation."
+      ],
+      "materialsList": [
+        {
+          "item": "Density Cube Set",
+          "estimatedCost": "$15"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Discuss freshwater vs saltwater buoyancy."
+        ],
+        "detailed": [
+          "The lagoon is freshwater. Would these results change in the ocean? (Yes, salt water is denser, things float better)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Predict float/sink.",
+          "Test cubes.",
+          "Discuss displacement."
+        ],
+        "detailed": [
+          "Hold the cubes. Rank them by mass.",
+          "Place them in water. Which float?",
+          "Explain why a heavy steel ship floats (hint: it's mostly air inside, lowering average density)."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Foundational physics concepts.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Science instruction"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Curriculum"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404 - Reasonable costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics: Buoyancy.",
+        "technology": "Submarines.",
+        "engineering": "Shipbuilding.",
+        "math": "Volume/Mass calculations.",
+        "crossCurricularLinks": [
+          "History (Boats)"
+        ]
+      },
+      "careerPathways": [
+        "Cargo Logistics Manager",
+        "Offshore Drilling Engineer"
+      ],
+      "collegePathways": [
+        "BS Maritime Administration",
+        "BS Petroleum Engineering"
+      ]
+    },
+    {
+      "title": "Station 16: Pneumatic Sound Analysis",
+      "description": "Using a decibel meter app to analyze the sound intensity of the pneumatic air release.",
+      "timeRequired": "25 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Technology use",
+        "Safety awareness"
+      ],
+      "learningObjectives": [
+        "Measure sound intensity (dB).",
+        "Relate sound to energy release."
+      ],
+      "teks": [
+        "Physics 7(A): examine wave propagation in media (air)."
+      ],
+      "texasStemStandards": [
+        "STEM Level 3: Technology use."
+      ],
+      "materialsList": [
+        {
+          "item": "Smartphone with dB Meter App",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Stand at safe distance from caissons."
+        ],
+        "detailed": [
+          "Sound drops off by the inverse square law. If you double the distance, intensity drops to 1/4."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Record 'hiss' dB.",
+          "Record 'boom' dB."
+        ],
+        "detailed": [
+          "Open dB meter app.",
+          "Measure the ambient noise.",
+          "Measure the peak volume of the air release hiss.",
+          "Measure the peak volume of the wave impact.",
+          "Are these levels safe for long-term exposure (>85dB)?"
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Field Trip Admission"
+        ],
+        "programType": "Both",
+        "justification": "Physics of sound and industrial safety.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Science instruction"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Academic instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403 - Allocable costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics: Acoustics.",
+        "technology": "Audio engineering.",
+        "engineering": "Noise cancellation.",
+        "math": "Logarithmic scales.",
+        "crossCurricularLinks": [
+          "Music Production"
+        ]
+      },
+      "careerPathways": [
+        "Acoustical Engineer",
+        "Occupational Health & Safety Specialist"
+      ],
+      "collegePathways": [
+        "BS Audio Engineering",
+        "BS Occupational Health"
+      ]
+    },
+    {
+      "title": "Station 17: Pump Station Power Estimation",
+      "description": "Reading motor plates/specs to calculate energy usage and operational cost.",
+      "timeRequired": "25 minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Formula application",
+        "Financial literacy"
+      ],
+      "learningObjectives": [
+        "Calculate Power (P=IV).",
+        "Estimate cost of operation."
+      ],
+      "teks": [
+        "Physics 6(A): investigate and calculate work and power."
+      ],
+      "texasStemStandards": [
+        "STEM Level 4: Systems thinking."
+      ],
+      "materialsList": [
+        {
+          "item": "Motor Spec Sheet (Handout)",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Provide voltage/amperage of main pumps."
+        ],
+        "detailed": [
+          "Real world connection: How much does it cost to run this wave for 1 hour?"
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Calculate Watts.",
+          "Convert to kWh.",
+          "Calculate Cost."
+        ],
+        "detailed": [
+          "Formula: Watts = Volts x Amps.",
+          "Calculate total kW.",
+          "Multiply by hours of operation to find kWh.",
+          "Calculate daily cost at $0.12/kWh.",
+          "Reflect on the energy intensity of recreation."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Exposure to Careers"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Industrial engineering and energy math.",
+        "heaRequirements": [
+          "Sec. 402E(b) - Math instruction"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Curriculum"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404 - Reasonable costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics: Electricity.",
+        "technology": "Power grids.",
+        "engineering": "Electrical Engineering.",
+        "math": "Algebra/Economics.",
+        "crossCurricularLinks": [
+          "Economics"
+        ]
+      },
+      "careerPathways": [
+        "Electrical Engineer",
+        "Facility Manager"
+      ],
+      "collegePathways": [
+        "BS Electrical Engineering",
+        "BS Facilities Management"
+      ]
+    },
+    {
+      "title": "Station 18: Concrete & Material Science",
+      "description": "Examining the pool liner for wear, texture, and friction to understand materials science.",
+      "timeRequired": "20 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Tactile observation",
+        "Inference"
+      ],
+      "learningObjectives": [
+        "Understand material selection for aquatic environments.",
+        "Analyze friction requirements."
+      ],
+      "teks": [
+        "Chemistry 4(A): differentiate between physical and chemical changes."
+      ],
+      "texasStemStandards": [
+        "STEM Level 2: Observation."
+      ],
+      "materialsList": [
+        {
+          "item": "Magnifying Glass",
+          "estimatedCost": "$5"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Discuss coefficient of friction."
+        ],
+        "detailed": [
+          "Too smooth = slip hazard. Too rough = 'pool toe' (abrasion). It must be perfect."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Examine beach texture.",
+          "Compare to sidewalk."
+        ],
+        "detailed": [
+          "Look at the pool floor through the magnifier.",
+          "Is it porous or sealed? Why?",
+          "Look for signs of chemical erosion (pitting).",
+          "Why is polymer used instead of just concrete?"
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Materials science introduction.",
+        "heaRequirements": [
+          "Sec. 402E(b) - Science instruction"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Lab science"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404 - Reasonable costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Geology/Materials.",
+        "technology": "Polymers.",
+        "engineering": "Materials Engineering.",
+        "math": "Surface area.",
+        "crossCurricularLinks": [
+          "Architecture"
+        ]
+      },
+      "careerPathways": [
+        "Materials Scientist",
+        "Architect"
+      ],
+      "collegePathways": [
+        "BS Materials Science",
+        "BArch Architecture"
+      ]
+    },
+    {
+      "title": "Station 19: Physiological Response",
+      "description": "Measuring heart rate before and after water entry to analyze mammalian dive reflex and exertion.",
+      "timeRequired": "20 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Biometric measurement",
+        "Data logging"
+      ],
+      "learningObjectives": [
+        "Measure heart rate (BPM).",
+        "Understand homeostatic response to environment."
+      ],
+      "teks": [
+        "Biology 10(A): describe the interactions that occur among systems."
+      ],
+      "texasStemStandards": [
+        "STEM Level 2: Data collection."
+      ],
+      "materialsList": [
+        {
+          "item": "Pulse Oximeter",
+          "estimatedCost": "$20"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Use control (dry) and test (wet) groups."
+        ],
+        "detailed": [
+          "Discuss Homeostasis: the body trying to maintain temperature and oxygen levels."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Measure resting HR.",
+          "Swim 2 mins.",
+          "Measure active HR.",
+          "Track recovery."
+        ],
+        "detailed": [
+          "Record BPM while sitting dry.",
+          "Enter water and tread water/swim for 2 minutes.",
+          "Immediately record BPM.",
+          "Record how many minutes it takes to return to resting rate (Recovery Time)."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Biology and human physiology.",
+        "heaRequirements": [
+          "Sec. 402C(b) - Science instruction"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Curriculum"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404 - Reasonable costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Biology: Homeostasis.",
+        "technology": "Biometrics/Wearables.",
+        "engineering": "Biomedical.",
+        "math": "Rates.",
+        "crossCurricularLinks": [
+          "Physical Education"
+        ]
+      },
+      "careerPathways": [
+        "Sports Physiologist",
+        "Biomedical Engineer"
+      ],
+      "collegePathways": [
+        "BS Kinesiology",
+        "BS Biomedical Engineering"
+      ]
+    },
+    {
+      "title": "Station 20: Data Symposium & Career Synthesis",
+      "description": "A final rapid-fire session where groups aggregate data and discuss observed careers.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Public speaking",
+        "Synthesis"
+      ],
+      "learningObjectives": [
+        "Synthesize multiple data points.",
+        "Identify STEM careers involved in facility operation."
+      ],
+      "teks": [
+        "Scientific Research and Design 2(E): organize and evaluate data."
+      ],
+      "texasStemStandards": [
+        "STEM Level 5: Communication."
+      ],
+      "materialsList": [
+        {
+          "item": "Whiteboard/Large Pad",
+          "estimatedCost": "$10"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Aggregate class data."
+        ],
+        "detailed": [
+          "Facilitate a discussion on 'Sources of Error'. Why did Group A get different results than Group B?"
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Report findings.",
+          "List 3 careers.",
+          "Discuss errors."
+        ],
+        "detailed": [
+          "Share your group's calculated Wave Velocity and pH.",
+          "Identify 3 STEM jobs required to build or run this surf park.",
+          "What would you do differently next time to get better data?"
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Exposure to STEM Careers",
+          "Mentoring"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Career awareness and scientific communication.",
+        "heaRequirements": [
+          "Sec. 402C(b)(4) - Career guidance"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(6) - Career exploration"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403 - Allocable costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Peer review.",
+        "technology": "Data visualization.",
+        "engineering": "Systems analysis.",
+        "math": "Statistics (Mean/Mode).",
+        "crossCurricularLinks": [
+          "Speech/Communications"
+        ]
+      },
+      "careerPathways": [
+        "Research Scientist",
+        "Project Manager"
+      ],
+      "collegePathways": [
+        "BS Business Analytics",
+        "BS Communication"
+      ]
+    }
+  ]
+}

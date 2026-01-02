@@ -1,0 +1,918 @@
+{
+  "curriculumTitle": "Osteology & Adaptation: The Museum Decathlon",
+  "overview": "Designed specifically for a field experience at the Museum of Osteology (or the Perot Museum Hall of Life), this curriculum consists of 10 high-intensity, 20-minute rotational stations. Students utilize extensive skeletal collections to explore comparative anatomy, forensic anthropology, and evolutionary biology. Unlike a passive tour, this is a structured academic 'decathlon' where student groups rotate through specific exhibit zones to collect data, analyze skeletal adaptations, and solve biological riddles.",
+  "prerequisites": "Completion of High School Biology I is recommended but not required. Familiarity with basic anatomical terms (cranium, pelvis, vertebrae) is helpful.",
+  "targetAgeGroup": "High School (Ages 14-18)",
+  "totalDurationEstimate": "200 Minutes (10 Activities x 20 Minutes)",
+  "fieldTrips": [
+    {
+      "name": "Museum of Osteology",
+      "location": "Oklahoma City, OK (Accessible day trip from North Texas/Dallas Area)",
+      "description": "America's only skeleton museum, housing over 300 real skeletons and 400 skulls. The facility offers specific educational scavenger hunts and hands-on labs tailored to the stations in this curriculum.",
+      "relevanceToCurriculum": "The curriculum is specifically mapped to the exhibits found here (Dermestid beetles, Giraffe neck, Whale placement). It provides the primary data source for the inquiry activities."
+    },
+    {
+      "name": "Perot Museum of Nature and Science",
+      "location": "Dallas, TX",
+      "description": "The T. Boone Pickens Life Then and Now Hall features extensive fossil and modern skeletal exhibits.",
+      "relevanceToCurriculum": "Serves as a local alternative for Dallas/Tarrant County grants unable to travel to OKC. Stations 1, 3, 5, 7, and 10 can be easily adapted to the Perot's collections."
+    }
+  ],
+  "activities": [
+    {
+      "title": "Station 1: The Dietary Detective (Dentition)",
+      "description": "Students analyze skull exhibits to classify animals as carnivores, herbivores, or omnivores based on dental formulas and tooth morphology (molars vs. canines).",
+      "timeRequired": "20 Minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Observation",
+        "Classification",
+        "Hypothesis Generation"
+      ],
+      "learningObjectives": [
+        "Correlate tooth shape with dietary function.",
+        "Identify dental formulas in mammalian skulls.",
+        "Predict an animal's diet based solely on skeletal evidence."
+      ],
+      "teks": [
+        "§112.34. Biology (c)(12)(A): interpret relationships, including predation, parasitism, commensalism",
+        "§112.34. Biology (c)(7)(A): analyze and evaluate how evidence of common ancestry is provided by anatomical homologies"
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Scientific Inquiry"
+      ],
+      "materialsList": [
+        {
+          "item": "Museum Entrance Fee",
+          "estimatedCost": "$12.00 per student (Group Rate)"
+        },
+        {
+          "item": "Student Clipboard & Worksheet",
+          "estimatedCost": "$2.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Direct students to the 'Carnivores and Herbivores' wall.",
+          "Briefly explain the difference between shearing carnassials and grinding molars."
+        ],
+        "detailed": [
+          "Explain that dental morphology is the most accurate predictor of diet in the absence of soft tissue.",
+          "Instruct groups to find one 'mystery skull' and hypothesize its diet based on the ratio of sharp teeth to flat teeth."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Locate a skull with sharp, pointed canines.",
+          "Locate a skull with flat, broad molars."
+        ],
+        "detailed": [
+          "Record the specimen name of the sharp-toothed skull.",
+          "Draw the teeth profile of the Black Bear and determine if it is a carnivore or omnivore based on your observations.",
+          "Hypothesize the diet of the mystery specimen."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in science",
+          "Field trips for educational purposes"
+        ],
+        "allowableCosts": [
+          "Field trip admission fees",
+          "Transportation"
+        ],
+        "programType": "Both",
+        "justification": "Provides a structured, standards-aligned field experience that moves beyond passive observation to active analysis of biological exhibits.",
+        "heaRequirements": [
+          "Section 402C(b)(1): Instruction in laboratory science",
+          "Section 402C(b)(11): Cultural and field trips"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b): Curriculum to include laboratory science",
+          "34 CFR 645.40: Allowable costs for field trips"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.405: Allocable costs for student learning"
+        ]
+      },
+      "stemConnections": {
+        "science": "Zoology and metabolic requirements.",
+        "technology": "N/A",
+        "engineering": "Mechanical breakdown of food sources.",
+        "math": "Ratios of tooth types.",
+        "crossCurricularLinks": [
+          "Nutritional Science"
+        ]
+      },
+      "careerPathways": [
+        "Veterinarian",
+        "Veterinary Dentist",
+        "Zoologist"
+      ],
+      "collegePathways": [
+        "Doctor of Veterinary Medicine (DVM)",
+        "BS in Zoology",
+        "BS in Animal Science"
+      ]
+    },
+    {
+      "title": "Station 2: The 7-Cervical Constant",
+      "description": "A comparative counting challenge where students verify mammalian homology by counting neck vertebrae in extreme examples (Giraffe vs. Human vs. Mouse).",
+      "timeRequired": "20 Minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Counting",
+        "Comparative Analysis"
+      ],
+      "learningObjectives": [
+        "Verify the mammalian constant of seven cervical vertebrae.",
+        "Contrast the size and density of vertebrae across species.",
+        "Discuss evolutionary constraints on skeletal geometry."
+      ],
+      "teks": [
+        "§112.34. Biology (c)(7)(E): analyze and evaluate the relationship of natural selection to adaptation"
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Data Literacy"
+      ],
+      "materialsList": [
+        {
+          "item": "Museum Exhibits (Giraffe)",
+          "estimatedCost": "$0.00 (Included in Entry)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Position the group near the Giraffe skeleton.",
+          "Ask for predictions on neck bone count."
+        ],
+        "detailed": [
+          "Guide students to count the vertebrae physically using the exhibit.",
+          "Explain the concept of 'evolutionary constraint'—why mammals are stuck with 7 cervical vertebrae regardless of neck length."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Count the neck vertebrae on the Human skeleton.",
+          "Count the neck vertebrae on the Giraffe skeleton."
+        ],
+        "detailed": [
+          "Compare the length of a single giraffe vertebra to your own neck.",
+          "Explain in your notes why both have the same number (7) despite the size difference.",
+          "Sketch the difference in bone density."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in science",
+          "Academic enrichment"
+        ],
+        "allowableCosts": [
+          "Field trip admission fees"
+        ],
+        "programType": "Both",
+        "justification": "Reinforces core biological concepts of homology and classification through direct observation of rare specimens.",
+        "heaRequirements": [
+          "Section 402C(b): Core curriculum instruction"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a): Support for diploma completion (Biology)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404: Reasonable costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Vertebrate anatomy.",
+        "technology": "N/A",
+        "engineering": "Structural scaling.",
+        "math": "Counting and geometric ratios.",
+        "crossCurricularLinks": [
+          "Geometry"
+        ]
+      },
+      "careerPathways": [
+        "Comparative Anatomist",
+        "Chiropractor",
+        "Radiologic Technologist"
+      ],
+      "collegePathways": [
+        "BS in Anatomy",
+        "Doctor of Chiropractic (DC)",
+        "BS in Kinesiology"
+      ]
+    },
+    {
+      "title": "Station 3: Locomotion & Limb Mechanics",
+      "description": "Students analyze the appendicular skeletons of varied species to categorize them by locomotion type: plantigrade (flat foot), digitigrade (toes), or unguligrade (hooves).",
+      "timeRequired": "20 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Physics Concepts (Levers)",
+        "Anatomical Identification"
+      ],
+      "learningObjectives": [
+        "Classify animals based on foot posture.",
+        "Analyze the mechanical advantage of elongated tarsals/metatarsals.",
+        "Connect skeletal structure to speed and stability."
+      ],
+      "teks": [
+        "§112.39. Physics (c)(6)(D): demonstrate and apply the laws of conservation of energy and conservation of momentum"
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Critical Thinking"
+      ],
+      "materialsList": [
+        {
+          "item": "Museum Exhibits (Canine, Bear, Deer)",
+          "estimatedCost": "$0.00 (Included in Entry)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain the three types of walking: Plantigrade, Digitigrade, Unguligrade.",
+          "Challenge students to identify examples."
+        ],
+        "detailed": [
+          "Discuss how moving the pivot point (ankle) up the leg increases stride length and speed.",
+          "Ask students to locate the 'heel' on a horse or deer."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Find a plantigrade skeleton (heel on ground).",
+          "Find a digitigrade skeleton (on toes)."
+        ],
+        "detailed": [
+          "Sketch the leg of the Deer. Label where the 'heel' bone is located.",
+          "Hypothesize which leg structure allows for the fastest running speed.",
+          "Classify the human skeleton's walking style."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science",
+          "Exposure to STEM careers (Veterinary Science)"
+        ],
+        "allowableCosts": [
+          "Field trip admission fees"
+        ],
+        "programType": "UBMS",
+        "justification": "Connects biology concepts with physics (biomechanics) and veterinary science, suitable for UBMS rigor.",
+        "heaRequirements": [
+          "Section 402E(b): Instruction in mathematics and science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b): Laboratory science instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403: Necessary for program objectives"
+        ]
+      },
+      "stemConnections": {
+        "science": "Anatomy and physiology.",
+        "technology": "N/A",
+        "engineering": "Levers and mechanical advantage.",
+        "math": "Angles of articulation.",
+        "crossCurricularLinks": [
+          "Physics"
+        ]
+      },
+      "careerPathways": [
+        "Physical Therapist",
+        "Biomechanical Engineer",
+        "Equine Specialist"
+      ],
+      "collegePathways": [
+        "Doctor of Physical Therapy",
+        "BS in Biomedical Engineering",
+        "BS in Animal Science"
+      ]
+    },
+    {
+      "title": "Station 4: The Dermestid Beetle Lab",
+      "description": "An observation station focusing on the museum's cleaning process. Students view the Dermestid beetle colony (if visible) or the prep-lab window to understand osteological preparation.",
+      "timeRequired": "20 Minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Observation",
+        "Ecological Analysis"
+      ],
+      "learningObjectives": [
+        "Describe the life cycle of Dermestid beetles.",
+        "Explain why biological cleaning is preferred over chemical cleaning for bones.",
+        "Understand the role of decomposers in an ecosystem."
+      ],
+      "teks": [
+        "§112.34. Biology (c)(12)(E): describe the flow of matter through... decomposers",
+        "§130.295. Forensic Science (c)(6)(F): differentiate between natural and artificial preservation"
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Scientific Inquiry"
+      ],
+      "materialsList": [
+        {
+          "item": "Museum Prep Lab Window",
+          "estimatedCost": "$0.00 (Included in Entry)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Lead students to the beetle viewing area.",
+          "Discuss bleach vs. beetles."
+        ],
+        "detailed": [
+          "Explain that chemicals damage DNA and bone integrity.",
+          "Ask students to identify larvae vs adults in the colony.",
+          "Discuss the time scale required for cleaning a skull."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Observe the tank containing the Dermestid beetles.",
+          "Identify and draw a larva and an adult beetle."
+        ],
+        "detailed": [
+          "Read the display to find out how long it takes a colony to clean a deer skull.",
+          "List two reasons why museums use beetles instead of boiling water.",
+          "Explain the role of these beetles in the wild."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science",
+          "Exposure to STEM careers"
+        ],
+        "allowableCosts": [
+          "Field trip admission fees"
+        ],
+        "programType": "Both",
+        "justification": "Provides career exposure to niche STEM fields (entomology, museum curation) rarely seen in standard classrooms.",
+        "heaRequirements": [
+          "Section 402C(b): Mentoring and Career Exposure"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b): Instruction in science"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.405: Allocable costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Entomology and decomposition.",
+        "technology": "N/A",
+        "engineering": "N/A",
+        "math": "Time estimation for decomposition.",
+        "crossCurricularLinks": [
+          "Environmental Science"
+        ]
+      },
+      "careerPathways": [
+        "Forensic Entomologist",
+        "Museum Curator",
+        "Taxidermist"
+      ],
+      "collegePathways": [
+        "BS in Entomology",
+        "MA in Museum Studies",
+        "BS in Forensic Science"
+      ]
+    },
+    {
+      "title": "Station 5: Flight Mechanics (Avian vs. Chiroptera)",
+      "description": "A comparative anatomy station contrasting the bird skeleton (keel bone, fused vertebrae) with the bat skeleton (elongated phalanges) to study powered flight.",
+      "timeRequired": "20 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Comparative Anatomy",
+        "Engineering Concepts"
+      ],
+      "learningObjectives": [
+        "Contrast the skeletal structure of bird wings vs. bat wings.",
+        "Identify the 'keel' (sternum) and explain its function for muscle attachment.",
+        "Discuss convergent evolution in flight mechanics."
+      ],
+      "teks": [
+        "§112.34. Biology (c)(7)(B): analyze results of natural selection",
+        "§112.39. Physics (c)(4)(D): calculate the effect of forces on objects"
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Engineering Design (Biomimicry)"
+      ],
+      "materialsList": [
+        {
+          "item": "Museum Exhibits (Bird and Bat)",
+          "estimatedCost": "$0.00 (Included in Entry)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Locate large Bird and Bat exhibits.",
+          "Point out the keel bone on the bird."
+        ],
+        "detailed": [
+          "Discuss the muscle mass required for flight and where it attaches.",
+          "Contrast the 'hand-wing' of the bat with the 'arm-wing' of the bird."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Sketch the wing bones of the Bat.",
+          "Sketch the chest bone (sternum) of the Bird."
+        ],
+        "detailed": [
+          "Color the bones in the bat wing that correspond to human fingers.",
+          "Explain why the bird's sternum is shaped like the keel of a boat.",
+          "Determine which animal uses a membrane vs. feathers for lift."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science",
+          "Academic enrichment"
+        ],
+        "allowableCosts": [
+          "Field trip admission fees"
+        ],
+        "programType": "UBMS",
+        "justification": "Links biological adaptation to physics concepts (aerodynamics and force generation), supporting the Math/Science rigor of UBMS.",
+        "heaRequirements": [
+          "Section 402E(b): Intensive instruction in science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b): Curriculum improvement"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404: Reasonable costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Aerodynamics and anatomy.",
+        "technology": "N/A",
+        "engineering": "Airframe structure and lift.",
+        "math": "Surface area to mass ratios.",
+        "crossCurricularLinks": [
+          "Physics",
+          "Aerospace Engineering"
+        ]
+      },
+      "careerPathways": [
+        "Aerospace Engineer",
+        "Ornithologist",
+        "Wildlife Biologist"
+      ],
+      "collegePathways": [
+        "BS in Aerospace Engineering",
+        "BS in Wildlife Biology",
+        "BS in Zoology"
+      ]
+    },
+    {
+      "title": "Station 6: The Forensic Sex Determination",
+      "description": "Students utilize human osteology replicas (or specific primate exhibits) to identify sexual dimorphism in the pelvis and skull.",
+      "timeRequired": "20 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Measurement",
+        "Forensic Analysis"
+      ],
+      "learningObjectives": [
+        "Identify key markers of biological sex on the skull (brow ridge, mastoid process).",
+        "Analyze the pelvic inlet and subpubic angle.",
+        "Apply forensic criteria to estimate sex of a specimen."
+      ],
+      "teks": [
+        "§130.295. Forensic Science (c)(6)(B): identify the characteristics of the human skeleton to determine... sex"
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Data Literacy"
+      ],
+      "materialsList": [
+        {
+          "item": "Museum Human Anatomy Section",
+          "estimatedCost": "$0.00 (Included in Entry)"
+        },
+        {
+          "item": "Protractor (Plastic)",
+          "estimatedCost": "$15.00 (Set of 10)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Guide students to the human evolution/anatomy section.",
+          "Demonstrate estimating the subpubic angle."
+        ],
+        "detailed": [
+          "Discuss the functional reason for pelvic dimorphism (childbirth).",
+          "Show how to identify the brow ridge and mastoid process on the skull.",
+          "Supervise respectful handling/observation of human remains."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Observe the human pelvis exhibit.",
+          "Observe the skull brow ridge."
+        ],
+        "detailed": [
+          "Determine if the subpubic angle is greater than or less than 90 degrees.",
+          "Is the brow ridge prominent or smooth?",
+          "Based on these two markers, hypothesize the biological sex of the skeleton."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in laboratory science",
+          "Exposure to STEM careers (Forensics)"
+        ],
+        "allowableCosts": [
+          "Field trip admission fees",
+          "Educational supplies (Protractors)"
+        ],
+        "programType": "Both",
+        "justification": "Direct application of forensic science standards using professional-grade specimens not available in high schools.",
+        "heaRequirements": [
+          "Section 402C(b): Instruction in science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b): Elective courses (Forensics)",
+          "34 CFR 645.40: Allowable costs"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.405: Costs allocable to federal award"
+        ]
+      },
+      "stemConnections": {
+        "science": "Human anatomy and reproduction.",
+        "technology": "N/A",
+        "engineering": "N/A",
+        "math": "Geometry (Angles and arcs).",
+        "crossCurricularLinks": [
+          "Law Enforcement/Criminal Justice"
+        ]
+      },
+      "careerPathways": [
+        "Forensic Anthropologist",
+        "Medical Examiner",
+        "Crime Scene Investigator"
+      ],
+      "collegePathways": [
+        "BS in Forensic Science",
+        "BA/BS in Anthropology",
+        "Doctor of Medicine (MD)"
+      ]
+    },
+    {
+      "title": "Station 7: Aquatic Adaptation (The Whale's Hand)",
+      "description": "An investigation of the Cetacean (whale/dolphin) skeletons to find the vestigial pelvis and analyze the homologous structure of the flipper.",
+      "timeRequired": "20 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Evolutionary Analysis",
+        "Anatomical Labeling"
+      ],
+      "learningObjectives": [
+        "Identify homologous bones (humerus, radius, ulna) in a whale flipper.",
+        "Locate vestigial structures (pelvic remnants) in marine mammals.",
+        "Discuss the transition from land to sea."
+      ],
+      "teks": [
+        "§112.34. Biology (c)(7)(A): analyze... homologies, including anatomical... and developmental"
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Scientific Inquiry"
+      ],
+      "materialsList": [
+        {
+          "item": "Museum Exhibits (Whale/Dolphin)",
+          "estimatedCost": "$0.00 (Included in Entry)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Take students to the hanging whale/dolphin skeletons.",
+          "Challenge them to count the 'finger' bones."
+        ],
+        "detailed": [
+          "Explain homology: same structure, different function.",
+          "Point out the vestigial pelvis bones 'floating' near the tail.",
+          "Discuss the evolutionary path of cetaceans from land mammals."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Stand beneath the whale flipper.",
+          "Search for 'floating' bones near the tail."
+        ],
+        "detailed": [
+          "Draw the flipper bones and label the Humerus, Radius, and Ulna.",
+          "Explain what these floating bones used to be when the whale's ancestors walked on land.",
+          "Why are these bones not attached to the spine?"
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science",
+          "Academic enrichment"
+        ],
+        "allowableCosts": [
+          "Field trip admission fees"
+        ],
+        "programType": "Both",
+        "justification": "Visualizing macro-evolutionary concepts through large-scale exhibits facilitates deep understanding of state biology standards.",
+        "heaRequirements": [
+          "Section 402C(b): Core curriculum support"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b): Science instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403: Allowable costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Evolutionary biology.",
+        "technology": "N/A",
+        "engineering": "Hydrodynamics (fin shape).",
+        "math": "N/A",
+        "crossCurricularLinks": [
+          "Marine Science"
+        ]
+      },
+      "careerPathways": [
+        "Marine Biologist",
+        "Evolutionary Biologist",
+        "Oceanographer"
+      ],
+      "collegePathways": [
+        "BS in Marine Biology",
+        "BS in Ecology",
+        "PhD in Evolutionary Biology"
+      ]
+    },
+    {
+      "title": "Station 8: Primate Comparison (Hands & Spines)",
+      "description": "Students compare human skeletons with other primates (Chimps, Orangutans) to note differences in spinal curvature (bipedalism) and hand proportions.",
+      "timeRequired": "20 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Comparative Anatomy",
+        "Data Recording"
+      ],
+      "learningObjectives": [
+        "Contrast the C-shaped spine of apes with the S-shaped spine of humans.",
+        "Compare the length of the thumb relative to the fingers in primates.",
+        "Relate skeletal structure to tool use and walking upright."
+      ],
+      "teks": [
+        "§112.34. Biology (c)(7)(A): evidence of common ancestry",
+        "§112.34. Biology (c)(7)(E): adaptations"
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Data Literacy"
+      ],
+      "materialsList": [
+        {
+          "item": "Museum Primate Hall",
+          "estimatedCost": "$0.00 (Included in Entry)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Have students stand next to Chimpanzee and Human skeletons.",
+          "Point out Lumbar Lordosis (lower back curve) in humans."
+        ],
+        "detailed": [
+          "Discuss how the S-curve acts as a spring/shock absorber for bipedalism.",
+          "Have students simulate the 'opposable thumb' grip vs. a hook grip."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Observe the spine of the Chimpanzee and the Human.",
+          "Compare the hands."
+        ],
+        "detailed": [
+          "Sketch the side-view curve of both spines.",
+          "Which species has a longer thumb relative to the hand size?",
+          "Hypothesize how the thumb length affects the ability to text on a phone or hold a pencil."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science",
+          "Cultural/Academic enrichment"
+        ],
+        "allowableCosts": [
+          "Field trip admission fees"
+        ],
+        "programType": "Both",
+        "justification": "Engages students in comparative anthropology, a key component of advanced biology curricula.",
+        "heaRequirements": [
+          "Section 402C(b): Instruction in laboratory science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b): Curriculum instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404: Reasonable costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Anthropology and primatology.",
+        "technology": "N/A",
+        "engineering": "Structural stability (columns).",
+        "math": "N/A",
+        "crossCurricularLinks": [
+          "Anthropology"
+        ]
+      },
+      "careerPathways": [
+        "Primatologist",
+        "Orthopedic Surgeon",
+        "Physical Anthropologist"
+      ],
+      "collegePathways": [
+        "BA/BS in Anthropology",
+        "Pre-Medical Studies",
+        "BS in Biology"
+      ]
+    },
+    {
+      "title": "Station 9: The Ribcage Riddle (Snakes vs. Turtles)",
+      "description": "A contrast of extreme adaptations in the axial skeleton. Students compare the massive rib count of snakes to the fused rib-shell structure of turtles.",
+      "timeRequired": "20 Minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Estimation",
+        "Observation"
+      ],
+      "learningObjectives": [
+        "Understand how ribs can be modified for protection (turtles) or locomotion (snakes).",
+        "Identify the relationship between the spine and the shell in Testudines.",
+        "Observe the ball-and-socket nature of snake vertebrae."
+      ],
+      "teks": [
+        "§112.34. Biology (c)(11)(A): describe the role of internal feedback mechanisms",
+        "§112.34. Biology (c)(7)(E): adaptation"
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Scientific Inquiry"
+      ],
+      "materialsList": [
+        {
+          "item": "Museum Reptile Exhibits",
+          "estimatedCost": "$0.00 (Included in Entry)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Direct students to the reptile section.",
+          "Debunk the myth that turtles can 'crawl out' of their shells."
+        ],
+        "detailed": [
+          "Explain that the turtle shell IS the ribs and spine fused together.",
+          "Discuss rectilinear locomotion in snakes (walking on ribs)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Look inside the Turtle shell exhibit.",
+          "Observe the rib count on the Python."
+        ],
+        "detailed": [
+          "Can you see the backbone fused to the top of the shell?",
+          "Count the approximate number of ribs on a 10cm section of the Snake.",
+          "Calculate an estimate of how many total ribs the snake has based on its length.",
+          "Explain how the snake uses its ribs to move."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science",
+          "Academic enrichment"
+        ],
+        "allowableCosts": [
+          "Field trip admission fees"
+        ],
+        "programType": "Both",
+        "justification": "Explores vertebrate diversity and specialized adaptations, aligning with state biology standards.",
+        "heaRequirements": [
+          "Section 402C(b): Instruction in science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b): Science instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.405: Allocable costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Herpetology and anatomy.",
+        "technology": "N/A",
+        "engineering": "Armor and flexible linkages.",
+        "math": "Estimation and multiplication.",
+        "crossCurricularLinks": [
+          "Robotics (Snake bots)"
+        ]
+      },
+      "careerPathways": [
+        "Herpetologist",
+        "Prosthetics Designer",
+        "Field Biologist"
+      ],
+      "collegePathways": [
+        "BS in Zoology",
+        "BS in Mechanical Engineering (Biomimetics)",
+        "BS in Biology"
+      ]
+    },
+    {
+      "title": "Station 10: Pathology Hunt (Injuries & Disease)",
+      "description": "The final challenge requires students to find bones showing evidence of 'life history': healed fractures, arthritis, or dental abscesses.",
+      "timeRequired": "20 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Critical Thinking",
+        "Pattern Recognition"
+      ],
+      "learningObjectives": [
+        "Distinguish between healthy bone and pathological bone.",
+        "Identify signs of bone remodeling (callus formation) after a fracture.",
+        "Discuss how skeletal analysis tells the story of an animal's life."
+      ],
+      "teks": [
+        "§130.295. Forensic Science (c)(14)(A): distinguish between antemortem, perimortem, and postmortem injuries"
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Critical Thinking"
+      ],
+      "materialsList": [
+        {
+          "item": "Museum Pathology Exhibits",
+          "estimatedCost": "$0.00 (Included in Entry)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain the scavenger hunt rules.",
+          "Define 'Callus' (healed break) and 'Abscess' (infection)."
+        ],
+        "detailed": [
+          "Encourage students to look for asymmetry in skeletons (one thick bone, one thin).",
+          "Discuss bone remodeling and how the body heals itself."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Find a bone that was broken and healed.",
+          "Find a skull with bad teeth."
+        ],
+        "detailed": [
+          "Sketch the 'bump' (callus) on the healed fracture.",
+          "Find a skeleton showing signs of Arthritis (bumpy, rough joints).",
+          "Choose one specimen and write a 2-sentence 'biography' of its pain or injuries."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science",
+          "Exposure to STEM careers (Paleopathology/Medicine)"
+        ],
+        "allowableCosts": [
+          "Field trip admission fees"
+        ],
+        "programType": "UBMS",
+        "justification": "High-level inquiry activity requiring observation, hypothesis testing, and application of medical concepts.",
+        "heaRequirements": [
+          "Section 402E(b): Career awareness",
+          "Section 402C(b): Instruction in science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b): Science instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.405: Allocable costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Pathology and medicine.",
+        "technology": "N/A",
+        "engineering": "Material failure analysis.",
+        "math": "N/A",
+        "crossCurricularLinks": [
+          "Health Sciences"
+        ]
+      },
+      "careerPathways": [
+        "Paleopathologist",
+        "Radiologist",
+        "Orthopedic Surgeon"
+      ],
+      "collegePathways": [
+        "Doctor of Medicine (MD)",
+        "PhD in Archaeology",
+        "BS in Radiologic Science"
+      ]
+    }
+  ]
+}

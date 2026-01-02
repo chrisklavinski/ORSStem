@@ -1,0 +1,1151 @@
+{
+  "curriculumTitle": "Zoofari Investigations: Ethology, Conservation, and Habitat Engineering (Modular Edition)",
+  "overview": "This refined STEM curriculum adapts the scientific study of wildlife into highly flexible 30-minute modules. It transforms a visit to Fossil Rim Wildlife Center into a rigorous scientific field study suitable for UB and UBMS grants. To accommodate tight schedules and precise compliance reporting, the Field Study component has been segmented into specific 30-minute academic data-collection modules.",
+  "prerequisites": "Completion of 9th Grade Biology (recommended); Understanding of the Scientific Method; Basic Arithmetic (Mean, Median, Mode).",
+  "targetAgeGroup": "High School (Ages 14-18)",
+  "totalDurationEstimate": "14 hours (broken into 30-minute instructional modules)",
+  "fieldTrips": [
+    {
+      "name": "Fossil Rim Wildlife Center",
+      "location": "Glen Rose, TX (Accessible from Tarrant/Johnson Counties via US-67)",
+      "description": "A 1,800-acre wildlife preserve featuring a drive-through safari experience where students can observe herds of exotic and endangered species in semi-natural habitats.",
+      "relevanceToCurriculum": "Provides the 'Living Laboratory' required for the data collection modules. Students observe herd dynamics and enclosure engineering in a setting that mimics natural environments."
+    }
+  ],
+  "activities": [
+    {
+      "title": "Module 1.1: Introduction to Ethology",
+      "description": "Part A of the foundational session. Students define Ethology and categorize behaviors as innate or learned.",
+      "timeRequired": "30 Minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Critical thinking",
+        "Vocabulary acquisition"
+      ],
+      "learningObjectives": [
+        "Define Ethology as a distinct scientific discipline.",
+        "Differentiate between Innate (instinctive) and Learned behaviors.",
+        "Identify three careers related to animal science."
+      ],
+      "teks": [
+        "Biology 112.34 (c)(12)(A): Interpret relationships including predation, parasitism, competition, commensalism, and mutualism."
+      ],
+      "texasStemStandards": [
+        "STEM Content Standard 3.A: Application of scientific inquiry."
+      ],
+      "materialsList": [
+        {
+          "item": "Presentation Deck",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Define Ethology.",
+          "Discuss Innate vs. Learned.",
+          "Career Connection."
+        ],
+        "detailed": [
+          "Introduce 'Ethology' (study of animal behavior) vs. 'Training'.",
+          "Activity: List behaviors on board (e.g., breathing, shaking hands). Have students sort them into Innate vs. Learned.",
+          "Briefly introduce the career pathway of an Ethologist."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Take notes on definitions.",
+          "Participate in sorting activity."
+        ],
+        "detailed": [
+          "Write the definition of Ethology.",
+          "Classify the list of behaviors provided by the instructor.",
+          "Identify one behavior your pet does that is innate, and one that is learned."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Staff Salaries"
+        ],
+        "programType": "Both",
+        "justification": "Academic instruction component.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction in science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1): Academic instruction."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403: Costs must be necessary."
+        ]
+      },
+      "stemConnections": {
+        "science": "Ethology basics.",
+        "technology": "N/A",
+        "engineering": "N/A",
+        "math": "N/A",
+        "crossCurricularLinks": [
+          "Vocabulary"
+        ]
+      },
+      "careerPathways": [
+        "Animal Behaviorist",
+        "Wildlife Biologist"
+      ],
+      "collegePathways": [
+        "B.S. Zoology",
+        "B.S. Animal Science"
+      ]
+    },
+    {
+      "title": "Module 1.2: Objectivity & Anthropomorphism",
+      "description": "Part B of the foundational session. Students learn to eliminate subjective language from observation.",
+      "timeRequired": "30 Minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Observation",
+        "Writing"
+      ],
+      "learningObjectives": [
+        "Define Anthropomorphism.",
+        "Rewrite subjective descriptions into objective data points."
+      ],
+      "teks": [
+        "Biology 112.34 (c)(2)(F): Collect and organize qualitative and quantitative data."
+      ],
+      "texasStemStandards": [
+        "STEM Content Standard 3.A: Scientific inquiry."
+      ],
+      "materialsList": [
+        {
+          "item": "Viral Animal Video Clips",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Show video.",
+          "Define Anthropomorphism.",
+          "Rewrite exercise."
+        ],
+        "detailed": [
+          "Play a 'funny' animal video. Ask students what the animal feels.",
+          "Explain Anthropomorphism (projecting human traits) and why it invalidates research.",
+          "Have students rewrite their initial description using only physical movements (e.g., 'showing teeth' instead of 'smiling')."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Watch video.",
+          "Write initial reaction.",
+          "Rewrite objectively."
+        ],
+        "detailed": [
+          "Watch the clip. Write what the animal is 'feeling'.",
+          "After the lecture, cross out emotion words.",
+          "Rewrite the description focusing only on muscle movements and posture."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Staff Salaries"
+        ],
+        "programType": "Both",
+        "justification": "Ensures academic rigor in observation skills.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1): Academic instruction."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403: Necessary costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Scientific Method.",
+        "technology": "Video analysis.",
+        "engineering": "N/A",
+        "math": "N/A",
+        "crossCurricularLinks": [
+          "English (Descriptive Writing)"
+        ]
+      },
+      "careerPathways": [
+        "Field Researcher",
+        "Science Writer"
+      ],
+      "collegePathways": [
+        "B.S. Psychology",
+        "B.A. Technical Writing"
+      ]
+    },
+    {
+      "title": "Module 2.1: Sampling Methodologies",
+      "description": "Part A of Methodologies. Students differentiate between Focal and Scan sampling techniques.",
+      "timeRequired": "30 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Logic",
+        "Systems thinking"
+      ],
+      "learningObjectives": [
+        "Distinguish between Focal Sampling (individual) and Scan Sampling (group).",
+        "Determine which method is best for specific research questions."
+      ],
+      "teks": [
+        "Biology 112.34 (c)(2)(G): Analyze, evaluate, make inferences, and predict trends from data."
+      ],
+      "texasStemStandards": [
+        "STEM Career Standard 5.B: Explore STEM careers."
+      ],
+      "materialsList": [
+        {
+          "item": "Whiteboard",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Lecture: Focal vs. Scan.",
+          "Simulation Game."
+        ],
+        "detailed": [
+          "Explain that Focal is watching one subject, Scan is taking a snapshot of a group.",
+          "Simulation: Have 3 students act out actions. Have the class try to record all 3 (Scan) vs just 1 (Focal)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Take notes on methods.",
+          "Participate in simulation."
+        ],
+        "detailed": [
+          "Create a T-Chart comparing Focal and Scan sampling.",
+          "During the simulation, attempt to record data based on the method assigned to your row."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Advanced scientific methodology instruction.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.4: UBMS science focus."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404: Reasonable costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Research Design.",
+        "technology": "N/A",
+        "engineering": "N/A",
+        "math": "Logic.",
+        "crossCurricularLinks": [
+          "Social Studies (Census data)"
+        ]
+      },
+      "careerPathways": [
+        "Population Biologist",
+        "Ecologist"
+      ],
+      "collegePathways": [
+        "B.S. Ecology",
+        "B.S. Biology"
+      ]
+    },
+    {
+      "title": "Module 2.2: Ethogram & Hypothesis",
+      "description": "Part B of Methodologies. Students select their species, create the data tool (Ethogram), and write a hypothesis.",
+      "timeRequired": "30 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Categorization",
+        "Prediction"
+      ],
+      "learningObjectives": [
+        "Create a standardized Ethogram with behavior codes (e.g., F=Foraging).",
+        "Formulate a null and alternative hypothesis."
+      ],
+      "teks": [
+        "Biology 112.34 (c)(2)(B): Hypotheses and theories."
+      ],
+      "texasStemStandards": [
+        "STEM Content Standard 3.A: Inquiry."
+      ],
+      "materialsList": [
+        {
+          "item": "Ethogram Templates",
+          "estimatedCost": "$0.50 per student"
+        },
+        {
+          "item": "Tablets for Research",
+          "estimatedCost": "$0 (School Property)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Assign Species.",
+          "Guide Code creation.",
+          "Approve Hypothesis."
+        ],
+        "detailed": [
+          "Assign teams (e.g., Team Rhino).",
+          "Guide students to agree on 5 codes (e.g., R=Resting). Emphasize inter-observer reliability.",
+          "Check that every student has a written hypothesis: 'If [condition], then [behavior] because [reason].'"
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Research species.",
+          "Define codes.",
+          "Write hypothesis."
+        ],
+        "detailed": [
+          "Look up your animal. What do they do most?",
+          "Create a code list. Everyone on the team must agree on the codes.",
+          "Write your prediction for the field trip."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Mentoring",
+          "Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Printing"
+        ],
+        "programType": "UBMS",
+        "justification": "Pre-research preparation.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.4: UBMS science skills."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403: Necessary costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Taxonomy.",
+        "technology": "Database research.",
+        "engineering": "N/A",
+        "math": "N/A",
+        "crossCurricularLinks": [
+          "Writing"
+        ]
+      },
+      "careerPathways": [
+        "Principal Investigator",
+        "Conservationist"
+      ],
+      "collegePathways": [
+        "B.S. Wildlife Management",
+        "B.S. Environmental Science"
+      ]
+    },
+    {
+      "title": "Module 3.1: Field Lab - Calibration & Safety",
+      "description": "The first 30-minute segment of the field study. Students perform on-site safety checks and calibrate their timing devices for inter-observer reliability.",
+      "timeRequired": "30 Minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Safety compliance",
+        "Synchronization"
+      ],
+      "learningObjectives": [
+        "Demonstrate compliance with field safety protocols.",
+        "Synchronize timing devices to within 1 second of accuracy.",
+        "Conduct a test observation on a common species (e.g., Emu) to ensure code agreement."
+      ],
+      "teks": [
+        "Biology 112.34 (c)(1)(A): Demonstrate safe practices during field and laboratory investigations."
+      ],
+      "texasStemStandards": [
+        "STEM Content Standard 4.A: Real-world safety and protocol."
+      ],
+      "materialsList": [
+        {
+          "item": "Admission & Bus",
+          "estimatedCost": "$30 per student approx"
+        },
+        {
+          "item": "Stopwatches/Clipboards",
+          "estimatedCost": "$5 per student"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Review Safety.",
+          "Sync Watches.",
+          "Test Observation."
+        ],
+        "detailed": [
+          "Conduct a head-count and safety briefing upon arrival at Fossil Rim.",
+          "Have all students start stopwatches simultaneously to check for drift.",
+          "Point out the first animal seen and ask all students to code it simultaneously to check for agreement."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Review safety rules.",
+          "Sync stopwatch.",
+          "Practice code."
+        ],
+        "detailed": [
+          "Listen to the safety briefing regarding bus windows and feeding rules.",
+          "Synchronize your watch with the lead researcher (teacher).",
+          "Write down the behavior code for the first animal identified."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science",
+          "Exposure to Academic Programs"
+        ],
+        "allowableCosts": [
+          "Field Trip Admission",
+          "Transportation"
+        ],
+        "programType": "Both",
+        "justification": "Required safety and calibration for scientific data collection.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(10): Activities for limited English proficiency (hands-on)."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(5): Exposure to academic programs."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.432: Educational field trips."
+        ]
+      },
+      "stemConnections": {
+        "science": "Field Safety.",
+        "technology": "Timing devices.",
+        "engineering": "N/A",
+        "math": "Time measurement.",
+        "crossCurricularLinks": [
+          "Civics (Rule following)"
+        ]
+      },
+      "careerPathways": [
+        "Field Technician",
+        "Safety Officer"
+      ],
+      "collegePathways": [
+        "B.S. Occupational Safety",
+        "B.S. Biology"
+      ]
+    },
+    {
+      "title": "Module 3.2: Field Lab - Ruminant Herd Scan",
+      "description": "The second 30-minute segment. Students apply Scan Sampling methodology to herd animals (Wildebeest/Gazelle) in the Grazing Zone.",
+      "timeRequired": "30 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Scan Sampling",
+        "Rapid notation"
+      ],
+      "learningObjectives": [
+        "Execute Scan Sampling on a herd greater than 10 individuals.",
+        "Record interval data every 60 seconds for 20 minutes.",
+        "Identify herd hierarchy behaviors."
+      ],
+      "teks": [
+        "Env Systems 112.37 (c)(7)(D): Analyze flow of energy (grazing)."
+      ],
+      "texasStemStandards": [
+        "STEM Content Standard 3.A: Scientific inquiry."
+      ],
+      "materialsList": [
+        {
+          "item": "Data Sheets (Clipboards)",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Identify Herd.",
+          "Call Intervals.",
+          "Monitor Data."
+        ],
+        "detailed": [
+          "Direct student attention to a herd (e.g., Wildebeest).",
+          "Call 'Mark' every 60 seconds.",
+          "Ensure students are counting the number of individuals engaging in specific behaviors (Scan)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Observe herd.",
+          "Record counts.",
+          "Do not focus on one animal."
+        ],
+        "detailed": [
+          "Look at the whole group.",
+          "At the 'Mark' signal, write how many animals are resting vs. eating.",
+          "Repeat until the session ends."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Active data collection phase.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1): Academic instruction."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.432: Field trips for educational purposes."
+        ]
+      },
+      "stemConnections": {
+        "science": "Ecology.",
+        "technology": "N/A",
+        "engineering": "N/A",
+        "math": "Counting/Frequency.",
+        "crossCurricularLinks": [
+          "Geography"
+        ]
+      },
+      "careerPathways": [
+        "Ecologist",
+        "Range Manager"
+      ],
+      "collegePathways": [
+        "B.S. Rangeland Ecology",
+        "B.S. Animal Science"
+      ]
+    },
+    {
+      "title": "Module 3.3: Field Lab - Mega-Vertebrate Focal Study",
+      "description": "The third 30-minute segment. Students switch to Focal Sampling to observe individual mega-fauna (Rhino or Giraffe).",
+      "timeRequired": "30 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Focal Sampling",
+        "Detailed observation"
+      ],
+      "learningObjectives": [
+        "Execute Focal Sampling on a single subject.",
+        "Record continuous behavior codes.",
+        "Note specific interactions with the environment."
+      ],
+      "teks": [
+        "Biology 112.34 (c)(11)(B): Homeostasis and response to environment."
+      ],
+      "texasStemStandards": [
+        "STEM Content Standard 3.A: Scientific inquiry."
+      ],
+      "materialsList": [
+        {
+          "item": "Binoculars",
+          "estimatedCost": "$0 (if available)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Assign Individuals.",
+          "Call Intervals.",
+          "Check Ethograms."
+        ],
+        "detailed": [
+          "Assign specific animals to student pairs (e.g., 'You watch the giraffe with the dark spots').",
+          "Ensure students are recording behavior changes instantly (Continuous) or at intervals (Instantaneous).",
+          "Verify codes match the Ethogram created in Module 2.2."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Select target.",
+          "Record every move.",
+          "Ignore other animals."
+        ],
+        "detailed": [
+          "Lock eyes on your specific animal.",
+          "Every time the timer beeps, record exactly what THAT animal is doing.",
+          "Do not switch animals even if another one does something interesting."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Advanced data collection technique.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.4: UBMS science focus."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.432: Educational field trips."
+        ]
+      },
+      "stemConnections": {
+        "science": "Zoology.",
+        "technology": "N/A",
+        "engineering": "N/A",
+        "math": "Data logging.",
+        "crossCurricularLinks": [
+          "Art (Sketching)"
+        ]
+      },
+      "careerPathways": [
+        "Veterinarian",
+        "Ethologist"
+      ],
+      "collegePathways": [
+        "Doctor of Veterinary Medicine (DVM)",
+        "B.S. Zoology"
+      ]
+    },
+    {
+      "title": "Module 3.4: Field Lab - Habitat Engineering Audit",
+      "description": "The final 30-minute segment of the field study. Students shift focus from animals to infrastructure, analyzing fences, gates, and enrichment devices.",
+      "timeRequired": "30 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Structural analysis",
+        "Sketching"
+      ],
+      "learningObjectives": [
+        "Identify three types of containment barriers (e.g., moat, electric fence, mesh).",
+        "Sketch the mechanics of a feeding station or gate.",
+        "Evaluate the effectiveness of environmental enrichment."
+      ],
+      "teks": [
+        "Physics 112.39 (c)(3)(D): Free-body diagrams (forces on fences)."
+      ],
+      "texasStemStandards": [
+        "STEM Content Standard 1.C: Engineering Design."
+      ],
+      "materialsList": [
+        {
+          "item": "Graph Paper",
+          "estimatedCost": "$0.10 per student"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Discuss Barriers.",
+          "Analyze Forces.",
+          "Sketch Mechanisms."
+        ],
+        "detailed": [
+          "Point out the differences in fencing for Rhinos (cable) vs. Cheetahs (chain link).",
+          "Discuss why different animals require different engineering solutions.",
+          "Have students sketch a gate or feeder mechanism for Module 5."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Observe fences.",
+          "Sketch gate.",
+          "Note materials."
+        ],
+        "detailed": [
+          "Look at how the animals are kept in.",
+          "Draw a diagram of the fence or gate latch.",
+          "Note what materials are used (wood, metal, wire)."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science",
+          "Exposure to STEM Careers"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Engineering component of the field study.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(2): Connections to services."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.432: Educational field trips."
+        ]
+      },
+      "stemConnections": {
+        "science": "N/A",
+        "technology": "N/A",
+        "engineering": "Civil/Structural Engineering.",
+        "math": "Geometry.",
+        "crossCurricularLinks": [
+          "Design"
+        ]
+      },
+      "careerPathways": [
+        "Civil Engineer",
+        "Landscape Architect"
+      ],
+      "collegePathways": [
+        "B.S. Civil Engineering",
+        "B.S. Construction Management"
+      ]
+    },
+    {
+      "title": "Module 4.1: Data Calculation",
+      "description": "Part A of Data Analysis. Students convert raw tally marks from the field trip into usable percentages.",
+      "timeRequired": "30 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Arithmetic",
+        "Attention to detail"
+      ],
+      "learningObjectives": [
+        "Convert raw frequency counts into percentages.",
+        "Calculate Mean and Mode for specific behaviors."
+      ],
+      "teks": [
+        "Math 111.47 (c)(2): Analyze data sets using summaries."
+      ],
+      "texasStemStandards": [
+        "STEM Content Standard 4.B: Application of math."
+      ],
+      "materialsList": [
+        {
+          "item": "Calculators",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Review raw data.",
+          "Teach percentage formula.",
+          "Verify calculations."
+        ],
+        "detailed": [
+          "Have students sum their tally marks.",
+          "Teach: (Count / Total Observations) * 100 = Percentage.",
+          "Check student work to ensure percentages sum to 100%."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Sum tallies.",
+          "Calculate percent.",
+          "Check work."
+        ],
+        "detailed": [
+          "Count how many times you saw 'Resting'.",
+          "Divide by total minutes observed.",
+          "Multiply by 100 to get the percentage."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Math component for UBMS.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Instruction in mathematics."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.4: UBMS math focus."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403: Necessary costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Data analysis.",
+        "technology": "N/A",
+        "engineering": "N/A",
+        "math": "Statistics.",
+        "crossCurricularLinks": [
+          "Computer Science"
+        ]
+      },
+      "careerPathways": [
+        "Biostatistician",
+        "Data Analyst"
+      ],
+      "collegePathways": [
+        "B.S. Statistics",
+        "B.S. Mathematics"
+      ]
+    },
+    {
+      "title": "Module 4.2: Data Visualization",
+      "description": "Part B of Data Analysis. Students use software to create Activity Budget charts.",
+      "timeRequired": "30 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Spreadsheet software",
+        "Graphing"
+      ],
+      "learningObjectives": [
+        "Create Pie Charts and Bar Graphs.",
+        "Interpret the visual data to accept or reject the hypothesis."
+      ],
+      "teks": [
+        "Math 111.47 (c)(2): Graphs and plots."
+      ],
+      "texasStemStandards": [
+        "STEM Content Standard 4.B: Application of math."
+      ],
+      "materialsList": [
+        {
+          "item": "Laptops with Excel/Sheets",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Open Excel.",
+          "Input Data.",
+          "Generate Chart."
+        ],
+        "detailed": [
+          "Guide students to input their calculated percentages into columns.",
+          "Show how to insert a Pie Chart.",
+          "Ask: 'Does this chart look like a healthy animal?'"
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Enter data.",
+          "Create graph.",
+          "Analyze."
+        ],
+        "detailed": [
+          "Input your data into the spreadsheet.",
+          "Generate a Pie Chart titled 'Activity Budget'.",
+          "Compare the chart to your original prediction."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Instruction in Technology"
+        ],
+        "allowableCosts": [
+          "Computer Lab Access"
+        ],
+        "programType": "UBMS",
+        "justification": "Technology and Math integration.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Instruction in mathematics."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.4: UBMS focus."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403: Necessary costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "N/A",
+        "technology": "Spreadsheets.",
+        "engineering": "N/A",
+        "math": "Graphing.",
+        "crossCurricularLinks": [
+          "Information Technology"
+        ]
+      },
+      "careerPathways": [
+        "Bioinformatics Scientist",
+        "Research Assistant"
+      ],
+      "collegePathways": [
+        "B.S. Data Science",
+        "B.S. Computer Science"
+      ]
+    },
+    {
+      "title": "Module 5.1: Engineering - Problem Identification",
+      "description": "Part A of Engineering Challenge. Students interpret their graphs to identify a biological problem (e.g., boredom, lack of exercise).",
+      "timeRequired": "30 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Critical Thinking",
+        "Empathy"
+      ],
+      "learningObjectives": [
+        "Apply the 'Ask' phase of the Engineering Design Process.",
+        "Correlate data (high pacing) with biological issues (stress)."
+      ],
+      "teks": [
+        "Scientific Research 130.372 (c)(2): Design project."
+      ],
+      "texasStemStandards": [
+        "STEM Culture Standard 6.A: Animal welfare ethics."
+      ],
+      "materialsList": [
+        {
+          "item": "Printed Graphs (from Mod 4.2)",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Review Graphs.",
+          "Discuss Stress behaviors.",
+          "Formulate Problem Statement."
+        ],
+        "detailed": [
+          "Ask: 'If the animal paced 40% of the time, what does that mean?'",
+          "Explain 'Stereotypic Behavior' (stress responses).",
+          "Have students write a Problem Statement: 'The rhino needs more foraging time to reduce pacing.'"
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Analyze graph.",
+          "Identify stress.",
+          "Write Problem Statement."
+        ],
+        "detailed": [
+          "Look at your chart. Is the animal too sedentary? Pacing too much?",
+          "Write a statement defining the problem you want to solve."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science",
+          "Mentoring"
+        ],
+        "allowableCosts": [
+          "Instructional Staff"
+        ],
+        "programType": "UBMS",
+        "justification": "Engineering definition phase.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(2): Connections to services."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403: Necessary costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Animal Physiology.",
+        "technology": "N/A",
+        "engineering": "Design Process (Ask).",
+        "math": "N/A",
+        "crossCurricularLinks": [
+          "Psychology"
+        ]
+      },
+      "careerPathways": [
+        "Animal Welfare Officer",
+        "Zoo Curator"
+      ],
+      "collegePathways": [
+        "B.S. Animal Behavior",
+        "B.S. Zoology"
+      ]
+    },
+    {
+      "title": "Module 5.2: Engineering - Prototyping",
+      "description": "Part B of Engineering Challenge. Students sketch and build a physical model of an enrichment device.",
+      "timeRequired": "30 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Prototyping",
+        "Collaboration"
+      ],
+      "learningObjectives": [
+        "Apply 'Imagine' and 'Create' phases of Engineering Design.",
+        "Build a scale model using craft materials."
+      ],
+      "teks": [
+        "Physics 112.39 (c)(3)(F): Express relationships among physical variables."
+      ],
+      "texasStemStandards": [
+        "STEM Content Standard 1.C: Engineering design."
+      ],
+      "materialsList": [
+        {
+          "item": "Cardboard, Tape, Clay",
+          "estimatedCost": "$30 per class"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Distribute materials.",
+          "Supervise build.",
+          "Check safety/scale."
+        ],
+        "detailed": [
+          "Provide materials. Challenge: 'Build a device to solve the problem defined in Mod 5.1'.",
+          "Ensure designs are safe for animals (no sharp edges in concept).",
+          "Encourage rapid prototyping."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Sketch solution.",
+          "Build model.",
+          "Refine."
+        ],
+        "detailed": [
+          "Sketch a new feeder or climbing structure.",
+          "Build a small model using cardboard and tape.",
+          "Make sure it addresses the specific behavior problem."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science",
+          "Exposure to STEM Careers"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies (Crafts)"
+        ],
+        "programType": "UBMS",
+        "justification": "Hands-on engineering application.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(2): Connections to services."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "N/A",
+        "technology": "N/A",
+        "engineering": "Structural Design.",
+        "math": "Scale.",
+        "crossCurricularLinks": [
+          "Art"
+        ]
+      },
+      "careerPathways": [
+        "Zoo Architect",
+        "Product Designer"
+      ],
+      "collegePathways": [
+        "B.S. Civil Engineering",
+        "B.S. Industrial Design"
+      ]
+    },
+    {
+      "title": "Module 5.3: Engineering - Presentation",
+      "description": "Part C of Engineering Challenge. Students pitch their solutions to a mock grant committee.",
+      "timeRequired": "30 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Public Speaking",
+        "Persuasion"
+      ],
+      "learningObjectives": [
+        "Justify design decisions using data.",
+        "Present technical information to an audience."
+      ],
+      "teks": [
+        "Scientific Research 130.372 (c)(2): Implement and present."
+      ],
+      "texasStemStandards": [
+        "STEM Content Standard 1.C: Engineering communication."
+      ],
+      "materialsList": [
+        {
+          "item": "Models (from Mod 5.2)",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Set up 'Committee'.",
+          "Listen to pitches.",
+          "Provide feedback."
+        ],
+        "detailed": [
+          "Act as the Zoo Director/Grant Officer.",
+          "Have groups present for 2-3 minutes.",
+          "Ask: 'How does this device prove it will reduce the pacing behavior you observed?'"
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Prepare pitch.",
+          "Present model.",
+          "Answer questions."
+        ],
+        "detailed": [
+          "Explain your problem (Data).",
+          "Explain your solution (Model).",
+          "Explain why it works (Biology)."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science",
+          "Mentoring"
+        ],
+        "allowableCosts": [
+          "Instructional Staff"
+        ],
+        "programType": "UBMS",
+        "justification": "Communication of scientific results.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1): Academic instruction."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403: Necessary costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "N/A",
+        "technology": "N/A",
+        "engineering": "Communication.",
+        "math": "N/A",
+        "crossCurricularLinks": [
+          "Speech",
+          "Debate"
+        ]
+      },
+      "careerPathways": [
+        "Environmental Consultant",
+        "Project Manager"
+      ],
+      "collegePathways": [
+        "Master of Landscape Architecture",
+        "B.A. Communications"
+      ]
+    }
+  ]
+}

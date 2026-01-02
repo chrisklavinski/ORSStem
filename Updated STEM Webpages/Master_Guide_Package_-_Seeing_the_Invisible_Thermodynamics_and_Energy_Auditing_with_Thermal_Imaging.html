@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seeing the Invisible: Thermodynamics and Energy Auditing with Thermal Imaging - Master STEM Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1e293b; }
+        .page-break { page-break-before: always; }
+        .avoid-break { break-inside: avoid; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab-btn.active { background-color: #4f46e5; color: white; border-color: #4f46e5; }
+        
+        /* Workbook specific styles */
+        .wb-checklist-item { display: flex; align-items: flex-start; margin-bottom: 12px; }
+        .wb-checkbox { width: 18px; height: 18px; border: 2px solid #cbd5e1; border-radius: 4px; margin-right: 12px; flex-shrink: 0; margin-top: 3px; }
+        .wb-box { background: #f8fafc; border: 1px solid #e2e8f0; padding: 20px; border-radius: 8px; font-size: 14px; }
+        
+        @media print {
+            body { background-color: white; }
+            .no-print { display: none !important; }
+            .tab-content { display: none !important; }
+            .tab-content.active { display: block !important; }
+            /* If user hits print, we want to respect the current tab, or maybe provide a print-all option. 
+               For simplicity, we print the active tab. */
+        }
+    </style>
+    <script>
+        function switchTab(id) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById('btn-' + id).classList.add('active');
+        }
+        function toggleSection(id) {
+            const content = document.getElementById('content-' + id);
+            const chevron = document.getElementById('chevron-' + id);
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                chevron.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                chevron.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</head>
+<body class="py-8 px-4 md:px-8 max-w-7xl mx-auto">
+    <!-- Navigation Tabs -->
+    <div class="flex justify-center mb-8 no-print sticky top-4 z-50">
+        <div class="bg-white p-2 rounded-2xl shadow-lg border border-gray-200 flex gap-2">
+            <button id="btn-guide" onclick="switchTab('guide')" class="tab-btn active px-6 py-2 rounded-xl font-bold text-sm text-slate-600 hover:bg-slate-50 border border-transparent transition-all">Master Guide</button>
+            <button id="btn-workbook" onclick="switchTab('workbook')" class="tab-btn px-6 py-2 rounded-xl font-bold text-sm text-slate-600 hover:bg-slate-50 border border-transparent transition-all">Teacher Workbook</button>
+            <button id="btn-narrative" onclick="switchTab('narrative')" class="tab-btn px-6 py-2 rounded-xl font-bold text-sm text-slate-600 hover:bg-slate-50 border border-transparent transition-all">Grant Narrative</button>
+        </div>
+    </div>
+
+    <!-- TAB 1: MASTER GUIDE -->
+    <div id="guide" class="tab-content active">
+        <header class="mb-8 text-center border-b-4 border-indigo-600 pb-12">
+            <div class="inline-block px-4 py-1 mb-4 bg-indigo-50 text-indigo-700 text-xs font-black uppercase tracking-widest rounded-full">STEM Architect Master Guide</div>
+            <h1 class="text-5xl font-black text-slate-900 mb-6">Seeing the Invisible: Thermodynamics and Energy Auditing with Thermal Imaging</h1>
+            <p class="text-2xl text-slate-500 font-medium max-w-4xl mx-auto leading-relaxed mb-8">This curriculum leverages the Bosch GTC400C Thermal Camera to immerse students in the principles of thermodynamics, electromagnetic radiation, and energy efficiency. Students will move beyond textbook theory to perform real-world investigations: visualizing heat transfer, conducting building energy audits, and inspecting electrical systems. Designed for Upward Bound (UB) and UBMS programs, this module aligns with Texas TEKS for Physics and Engineering while strictly adhering to federal TRIO grant compliance for allowable costs and services.</p>
+            <div class="flex justify-center gap-6 text-sm font-bold text-slate-400 uppercase tracking-widest">
+                <span>Target: High School (Ages 14-18)</span>
+                <span>&bull;</span>
+                <span>Total Time: 6-8 Hours (Split over 3-4 sessions)</span>
+                <span>&bull;</span>
+                <span>Est. Cost: $457.00</span>
+            </div>
+        </header>
+
+        
+        <div class="mb-12 page-break">
+            <div class="bg-indigo-900 rounded-[2.5rem] p-12 text-white shadow-2xl relative overflow-hidden">
+                <h2 class="text-3xl font-black mb-8 flex items-center gap-4 border-b border-indigo-700 pb-4"><span>🚌</span> Field Expeditions (60mi Radius)</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <div class="bg-white/10 p-6 rounded-3xl border border-white/10 backdrop-blur-sm">
+                        <h3 class="text-xl font-bold text-white mb-1">Perot Museum of Nature and Science - Engineering and Innovation Hall</h3>
+                        <div class="text-xs font-bold uppercase tracking-widest text-indigo-300 mb-4 flex items-center gap-2"><span>📍</span> Dallas, TX</div>
+                        <p class="text-sm text-indigo-100 mb-4 leading-relaxed">A world-class museum featuring interactive exhibits on engineering, energy, and physics.</p>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-3xl border border-white/10 backdrop-blur-sm">
+                        <h3 class="text-xl font-bold text-white mb-1">Botanical Research Institute of Texas (BRIT)</h3>
+                        <div class="text-xs font-bold uppercase tracking-widest text-indigo-300 mb-4 flex items-center gap-2"><span>📍</span> Fort Worth, TX</div>
+                        <p class="text-sm text-indigo-100 mb-4 leading-relaxed">An international scientific research and learning center housed in a LEED Platinum certified building.</p>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-3xl border border-white/10 backdrop-blur-sm">
+                        <h3 class="text-xl font-bold text-white mb-1">UTA Civil Engineering Laboratory (University of Texas at Arlington)</h3>
+                        <div class="text-xs font-bold uppercase tracking-widest text-indigo-300 mb-4 flex items-center gap-2"><span>📍</span> Arlington, TX</div>
+                        <p class="text-sm text-indigo-100 mb-4 leading-relaxed">University research facility focusing on structural mechanics, materials, and sustainable infrastructure.</p>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-3xl border border-white/10 backdrop-blur-sm">
+                        <h3 class="text-xl font-bold text-white mb-1">Oncor Electric Delivery - Training Center or Facility Tour</h3>
+                        <div class="text-xs font-bold uppercase tracking-widest text-indigo-300 mb-4 flex items-center gap-2"><span>📍</span> Fort Worth or Dallas, TX</div>
+                        <p class="text-sm text-indigo-100 mb-4 leading-relaxed">Oncor manages the electric grid for much of North Texas. (Requires arranging a specific educational group tour).</p>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-3xl border border-white/10 backdrop-blur-sm">
+                        <h3 class="text-xl font-bold text-white mb-1">Dallas College - Construction Management Center (North Lake Campus)</h3>
+                        <div class="text-xs font-bold uppercase tracking-widest text-indigo-300 mb-4 flex items-center gap-2"><span>📍</span> Irving, TX</div>
+                        <p class="text-sm text-indigo-100 mb-4 leading-relaxed">A higher education facility dedicated to construction trades, HVAC, and building technologies.</p>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-3xl border border-white/10 backdrop-blur-sm">
+                        <h3 class="text-xl font-bold text-white mb-1">Fort Worth Museum of Science and History - Energy Blast</h3>
+                        <div class="text-xs font-bold uppercase tracking-widest text-indigo-300 mb-4 flex items-center gap-2"><span>📍</span> Fort Worth, TX</div>
+                        <p class="text-sm text-indigo-100 mb-4 leading-relaxed">An exhibit dedicated to regional energy resources, alternative energy, and physics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-y-8">
+            
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(0)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">1</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Module 1: The Electromagnetic Spectrum & Thermal Visualization</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 90 Minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-0" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-0" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students are introduced to the Bosch GTC400C to visualize the invisible. They will explore the difference between visible light and infrared radiation through a series of 'mystery item' temperature challenges.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Define the electromagnetic spectrum and locate Infrared (IR) radiation within it.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Demonstrate proper operation and calibration of the Bosch GTC400C.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Differentiate between temperature (intensity) and heat (transfer of energy).</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Bosch GTC400C Thermal Camera (1 per group of 3-4)</span><span class="text-slate-400 font-mono text-xs">$399.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Ice cubes and warm water</span><span class="text-slate-400 font-mono text-xs">$5.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Black plastic trash bags (opaque to visible light, transparent to IR)</span><span class="text-slate-400 font-mono text-xs">$10.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Various materials (aluminum foil, wood, brick samples)</span><span class="text-slate-400 font-mono text-xs">$0.00 (Scrap)</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in reading, writing, study skills, mathematics, science, and other subjects., Exposure to academic programs and cultural events.</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">HEA Sec. 402C(b)(1): Academic instruction in... science., HEA Sec. 402C(b)(2): Personal counseling for academic advice (via STEM exposure)., 34 CFR 645.11(a)(1): Services - Academic instruction in mathematics, laboratory science..., 34 CFR 645.11(a)(6): Education or counseling services designed to improve... financial and economic literacy (via career exposure)., 2 CFR 200.453: Materials and supplies costs, including costs of computing devices., 2 CFR 200.403: Factors affecting allowability of costs (Necessary and Reasonable).</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Step 1: Introduction to Light (15 mins) - Project an image of the EM spectrum. Ask students what 'Heat' looks like. Explain that thermal cameras translate IR radiation (invisible) into visible colors.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Step 2: The Magic Trick (10 mins) - Hold a black trash bag up. Ask if students can see through it. Put your hand behind it. Ask again. Turn on the Thermal Camera connected to the projector/screen. Show that IR passes through the plastic even though visible light does not. This is the 'Hook'.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Step 3: Equipment Safety & Setup (10 mins) - Distribute Bosch GTC400C units. Strict rule: NEVER point the thermal sensor at the sun or high-power lasers (it damages the sensor). Show how to flip the cover and insert the 12V battery.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">4.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Step 4: Exploration Station (30 mins) - Have stations set up: Station A (Ice water vs Hot water), Station B (Friction - rub hands together then touch table), Station C (Reflections - look at a shiny metal sheet vs wood). Discussion Prompt: 'Why does the metal reflection look 'cold' even if the metal is room temp?' (Answer: It is reflecting the cold room temperature, low emissivity).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">5.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Step 5: Analysis (15 mins) - Have students use the 'Freeze' button to save their best image. Connect via USB or Wifi to download one image per group.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">6.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Step 6: Debrief (10 mins) - Check for understanding: 'Does the camera see temperature or radiation?' (Radiation). Troubleshooting: If images are blurry, ensure they are at least 1 meter away from the target (fixed focus limitations).</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(1)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">2</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Module 2: The Energy Audit (Engineering & Environmental Science)</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 120 Minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-1" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-1" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students act as 'Energy Auditors' to inspect the school building or classroom. They will identify thermal bridges (insulation gaps), air leaks around windows, and HVAC efficiency.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Identify modes of heat transfer (Conduction, Convection, Radiation) in a real-world setting.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Calculate Delta T (ΔT) to determine the severity of energy loss.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Propose engineering solutions to improve building energy efficiency.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Bosch GTC400C Thermal Camera</span><span class="text-slate-400 font-mono text-xs">(Reused)</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Blue painters tape (to mark measurement spots)</span><span class="text-slate-400 font-mono text-xs">$6.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Clipboards and Audit Sheets (printed)</span><span class="text-slate-400 font-mono text-xs">$2.00</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Hairdryer (to simulate heat leak if weather is mild)</span><span class="text-slate-400 font-mono text-xs">$20.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Exposure to Engineering and Architecture careers., Instruction in Mathematics (Delta T calculation, data analysis).</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">HEA Sec. 402C(b)(1): Academic instruction in mathematics and science., HEA Sec. 402C(b)(4): Guidance on secondary school reentry or alternative education (Vocational pathways)., 34 CFR 645.11(a)(1): Academic instruction..., 34 CFR 645.11(b): Allowable services - Career awareness., 2 CFR 200.453: Materials and supplies., 2 CFR 200.461: Publication and printing costs.</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Step 1: Theory - Heat Transfer (20 mins) - Use the whiteboard. Draw a wall section. Explain 'Thermal Bridging' (where studs conduct heat faster than insulation). Explain that energy moves from High to Low temperature. If it's hot outside and cool inside, we look for HEAT coming in.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Step 2: The Mission (10 mins) - Tell students they are now 'Energy Engineers.' Their job is to save the school money on electricity. Hand out the 'Audit Log'.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Step 3: Zone Assignments (5 mins) - Divide class. Group A: Windows. Group B: HVAC Vents/Ceiling. Group C: Electrical Outlets/Exterior Walls. Group D: Doors.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">4.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Step 4: The Sweep (45 mins) - Walk with students. Guide them to look for color gradients. A sharp line usually means a draft or lack of insulation. Ask: 'Is that blue spot a water leak or just cold air?' (Evaporation causes cooling). Troubleshooting: If the room is isothermal (same temp everywhere), use the hairdryer to heat a spot on the wall to simulate a 'hot day' exterior for demonstration.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">5.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Step 5: Data Analysis (20 mins) - Teams calculate the ΔT for their worst spot. (Spot Temp - Room Ambient Temp).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">6.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Step 6: Engineering Proposal (20 mins) - Each group presents one 'fix' (e.g., 'We need weather stripping on the North door').</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(2)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">3</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Module 3: Circuit Safety & Electrical Inspection</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 60 Minutes</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UB</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-2" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-2" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students explore the relationship between electrical resistance and heat. They will safely inspect low-voltage circuits or power strips to identify 'overloaded' components using thermal imaging.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Correlate electrical resistance and current flow with heat generation (Joule Heating).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Identify potential electrical hazards (overheating components) using non-contact tools.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Understand the role of predictive maintenance in industry.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Bosch GTC400C Thermal Camera</span><span class="text-slate-400 font-mono text-xs">(Reused)</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Power strip with multiple chargers plugged in (Phone, Laptop)</span><span class="text-slate-400 font-mono text-xs">$0.00 (Bring from home)</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Incandescent bulb vs LED bulb lamp setup</span><span class="text-slate-400 font-mono text-xs">$15.00</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Mentoring programs involving elementary or secondary school teachers or faculty members at institutions of higher education., Workshops and counseling services on career options.</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">HEA Sec. 402C(b)(1): Academic instruction., HEA Sec. 402C(b)(4): Guidance on... alternative education programs (Vocational)., 34 CFR 645.11(a)(1): Academic instruction in... laboratory science., 34 CFR 645.11(b)(1): Career interest inventories and workshops., 2 CFR 200.453: Supplies., 2 CFR 200.405: Allocable costs.</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Step 1: Safety First (5 mins) - Emphasize that thermal cameras allow us to inspect dangerous high-voltage equipment from a SAFE distance. We never open electrical panels, we look at the surface.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Step 2: Physics Concept (10 mins) - Introduce Joule Heating ($P = I^2R$). Explain that as electrons bump into atoms in a wire, they create heat. Loose connections create MORE resistance, which creates MORE heat, which causes fires.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Step 3: The Light Bulb Challenge (15 mins) - Turn on an LED lamp and an Incandescent lamp. Wait 2 minutes. Ask students to predict which is hotter. Use the camera to verify. Discuss efficiency (Heat = Wasted Energy in a lightbulb).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">4.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Step 4: The Load Test (20 mins) - Plug a laptop charger and a phone charger into a power strip. Let them run for a while. Have students scan the power strip. Ask: 'Why is the transformer block hot?' (Voltage conversion creates heat).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">5.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Step 5: Career Connection (10 mins) - Explain that factories pay people to walk around with these cameras to find motors or breakers that are about to explode. This is called 'Predictive Maintenance'.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+        </div>
+    </div>
+
+    <!-- TAB 2: TEACHER WORKBOOK -->
+    <div id="workbook" class="tab-content max-w-4xl mx-auto">
+        <div class="text-center py-20 border-b-2 border-slate-900 mb-12">
+            <div class="text-xs font-black uppercase tracking-[0.3em] text-slate-400 mb-4">Official Workbook</div>
+            <h1 class="text-4xl font-black text-slate-900 mb-4">Seeing the Invisible: Thermodynamics and Energy Auditing with Thermal Imaging</h1>
+            <p class="text-lg font-serif italic text-slate-500">Instructor Checklists & Facilitation Notes</p>
+        </div>
+        
+        
+        <div class="mb-16">
+            <h2 class="text-2xl font-black text-slate-900 mb-6 border-b border-slate-200 pb-2">Field Expeditions Checklist</h2>
+            
+            <div class="wb-box mb-4 bg-white border-l-4 border-amber-500">
+                <div class="font-bold text-lg text-slate-900">Perot Museum of Nature and Science - Engineering and Innovation Hall</div>
+                <div class="text-xs font-bold uppercase text-amber-600 mb-2">Dallas, TX</div>
+                <p class="text-sm text-slate-600">A world-class museum featuring interactive exhibits on engineering, energy, and physics.</p>
+            </div>
+            <div class="wb-box mb-4 bg-white border-l-4 border-amber-500">
+                <div class="font-bold text-lg text-slate-900">Botanical Research Institute of Texas (BRIT)</div>
+                <div class="text-xs font-bold uppercase text-amber-600 mb-2">Fort Worth, TX</div>
+                <p class="text-sm text-slate-600">An international scientific research and learning center housed in a LEED Platinum certified building.</p>
+            </div>
+            <div class="wb-box mb-4 bg-white border-l-4 border-amber-500">
+                <div class="font-bold text-lg text-slate-900">UTA Civil Engineering Laboratory (University of Texas at Arlington)</div>
+                <div class="text-xs font-bold uppercase text-amber-600 mb-2">Arlington, TX</div>
+                <p class="text-sm text-slate-600">University research facility focusing on structural mechanics, materials, and sustainable infrastructure.</p>
+            </div>
+            <div class="wb-box mb-4 bg-white border-l-4 border-amber-500">
+                <div class="font-bold text-lg text-slate-900">Oncor Electric Delivery - Training Center or Facility Tour</div>
+                <div class="text-xs font-bold uppercase text-amber-600 mb-2">Fort Worth or Dallas, TX</div>
+                <p class="text-sm text-slate-600">Oncor manages the electric grid for much of North Texas. (Requires arranging a specific educational group tour).</p>
+            </div>
+            <div class="wb-box mb-4 bg-white border-l-4 border-amber-500">
+                <div class="font-bold text-lg text-slate-900">Dallas College - Construction Management Center (North Lake Campus)</div>
+                <div class="text-xs font-bold uppercase text-amber-600 mb-2">Irving, TX</div>
+                <p class="text-sm text-slate-600">A higher education facility dedicated to construction trades, HVAC, and building technologies.</p>
+            </div>
+            <div class="wb-box mb-4 bg-white border-l-4 border-amber-500">
+                <div class="font-bold text-lg text-slate-900">Fort Worth Museum of Science and History - Energy Blast</div>
+                <div class="text-xs font-bold uppercase text-amber-600 mb-2">Fort Worth, TX</div>
+                <p class="text-sm text-slate-600">An exhibit dedicated to regional energy resources, alternative energy, and physics.</p>
+            </div>
+        </div>
+
+        
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 1</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Module 1: The Electromagnetic Spectrum & Thermal Visualization</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 90 Minutes</span>
+                        <span>📊 Introductory</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Bosch GTC400C Thermal Camera (1 per group of 3-4)</div><div class="text-xs text-slate-500">Est: $399.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Ice cubes and warm water</div><div class="text-xs text-slate-500">Est: $5.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Black plastic trash bags (opaque to visible light, transparent to IR)</div><div class="text-xs text-slate-500">Est: $10.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Various materials (aluminum foil, wood, brick samples)</div><div class="text-xs text-slate-500">Est: $0.00 (Scrap)</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Define the electromagnetic spectrum and locate Infrared (IR) radiation within it.</li><li>Demonstrate proper operation and calibration of the Bosch GTC400C.</li><li>Differentiate between temperature (intensity) and heat (transfer of energy).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Step 1: Introduction to Light (15 mins) - Project an image of the EM spectrum. Ask students what 'Heat' looks like. Explain that thermal cameras translate IR radiation (invisible) into visible colors.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Step 2: The Magic Trick (10 mins) - Hold a black trash bag up. Ask if students can see through it. Put your hand behind it. Ask again. Turn on the Thermal Camera connected to the projector/screen. Show that IR passes through the plastic even though visible light does not. This is the 'Hook'.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Step 3: Equipment Safety & Setup (10 mins) - Distribute Bosch GTC400C units. Strict rule: NEVER point the thermal sensor at the sun or high-power lasers (it damages the sensor). Show how to flip the cover and insert the 12V battery.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">04</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Step 4: Exploration Station (30 mins) - Have stations set up: Station A (Ice water vs Hot water), Station B (Friction - rub hands together then touch table), Station C (Reflections - look at a shiny metal sheet vs wood). Discussion Prompt: 'Why does the metal reflection look 'cold' even if the metal is room temp?' (Answer: It is reflecting the cold room temperature, low emissivity).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">05</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Step 5: Analysis (15 mins) - Have students use the 'Freeze' button to save their best image. Connect via USB or Wifi to download one image per group.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">06</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Step 6: Debrief (10 mins) - Check for understanding: 'Does the camera see temperature or radiation?' (Radiation). Troubleshooting: If images are blurry, ensure they are at least 1 meter away from the target (fixed focus limitations).</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 2</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Module 2: The Energy Audit (Engineering & Environmental Science)</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 120 Minutes</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Bosch GTC400C Thermal Camera</div><div class="text-xs text-slate-500">Est: (Reused)</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Blue painters tape (to mark measurement spots)</div><div class="text-xs text-slate-500">Est: $6.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Clipboards and Audit Sheets (printed)</div><div class="text-xs text-slate-500">Est: $2.00</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Hairdryer (to simulate heat leak if weather is mild)</div><div class="text-xs text-slate-500">Est: $20.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Identify modes of heat transfer (Conduction, Convection, Radiation) in a real-world setting.</li><li>Calculate Delta T (ΔT) to determine the severity of energy loss.</li><li>Propose engineering solutions to improve building energy efficiency.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Step 1: Theory - Heat Transfer (20 mins) - Use the whiteboard. Draw a wall section. Explain 'Thermal Bridging' (where studs conduct heat faster than insulation). Explain that energy moves from High to Low temperature. If it's hot outside and cool inside, we look for HEAT coming in.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Step 2: The Mission (10 mins) - Tell students they are now 'Energy Engineers.' Their job is to save the school money on electricity. Hand out the 'Audit Log'.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Step 3: Zone Assignments (5 mins) - Divide class. Group A: Windows. Group B: HVAC Vents/Ceiling. Group C: Electrical Outlets/Exterior Walls. Group D: Doors.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">04</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Step 4: The Sweep (45 mins) - Walk with students. Guide them to look for color gradients. A sharp line usually means a draft or lack of insulation. Ask: 'Is that blue spot a water leak or just cold air?' (Evaporation causes cooling). Troubleshooting: If the room is isothermal (same temp everywhere), use the hairdryer to heat a spot on the wall to simulate a 'hot day' exterior for demonstration.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">05</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Step 5: Data Analysis (20 mins) - Teams calculate the ΔT for their worst spot. (Spot Temp - Room Ambient Temp).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">06</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Step 6: Engineering Proposal (20 mins) - Each group presents one 'fix' (e.g., 'We need weather stripping on the North door').</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 3</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Module 3: Circuit Safety & Electrical Inspection</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 60 Minutes</span>
+                        <span>📊 Advanced</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Bosch GTC400C Thermal Camera</div><div class="text-xs text-slate-500">Est: (Reused)</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Power strip with multiple chargers plugged in (Phone, Laptop)</div><div class="text-xs text-slate-500">Est: $0.00 (Bring from home)</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Incandescent bulb vs LED bulb lamp setup</div><div class="text-xs text-slate-500">Est: $15.00</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Correlate electrical resistance and current flow with heat generation (Joule Heating).</li><li>Identify potential electrical hazards (overheating components) using non-contact tools.</li><li>Understand the role of predictive maintenance in industry.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Step 1: Safety First (5 mins) - Emphasize that thermal cameras allow us to inspect dangerous high-voltage equipment from a SAFE distance. We never open electrical panels, we look at the surface.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Step 2: Physics Concept (10 mins) - Introduce Joule Heating ($P = I^2R$). Explain that as electrons bump into atoms in a wire, they create heat. Loose connections create MORE resistance, which creates MORE heat, which causes fires.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Step 3: The Light Bulb Challenge (15 mins) - Turn on an LED lamp and an Incandescent lamp. Wait 2 minutes. Ask students to predict which is hotter. Use the camera to verify. Discuss efficiency (Heat = Wasted Energy in a lightbulb).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">04</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Step 4: The Load Test (20 mins) - Plug a laptop charger and a phone charger into a power strip. Let them run for a while. Have students scan the power strip. Ask: 'Why is the transformer block hot?' (Voltage conversion creates heat).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">05</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Step 5: Career Connection (10 mins) - Explain that factories pay people to walk around with these cameras to find motors or breakers that are about to explode. This is called 'Predictive Maintenance'.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+    </div>
+
+    <!-- TAB 3: GRANT NARRATIVE -->
+    <div id="narrative" class="tab-content max-w-3xl mx-auto font-serif leading-relaxed text-slate-800">
+        <div class="py-12">
+            <h1 class="font-sans text-3xl font-black text-slate-900 mb-8 border-b-2 border-slate-900 pb-4">Seeing the Invisible: A Comprehensive Narrative on Thermodynamics and Energy Auditing with Thermal Imaging for UBMS Programs</h1>
+            
+            <div class="mb-10">
+                <h2 class="font-sans text-lg font-bold text-indigo-800 mb-4 uppercase tracking-widest">Executive Summary</h2>
+                <p class="bg-slate-50 p-6 rounded-lg border-l-4 border-indigo-200">This curriculum, titled 'Seeing the Invisible: Thermodynamics and Energy Auditing with Thermal Imaging,' leverages the advanced Bosch GTC400C Thermal Camera to transform abstract thermodynamic principles into tangible, visual learning experiences. Targeted at high school students in Upward Bound (UB) and Upward Bound Math-Science (UBMS) programs, the course moves beyond theoretical physics to immerse students in real-world applications such as building energy audits, electrical system inspections, and material science. By bridging the gap between classroom science and high-demand STEM careers in engineering and environmental consulting, this program provides rigorous academic preparation and technical skill development necessary for postsecondary success.</p>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="font-sans text-lg font-bold text-indigo-800 mb-4 uppercase tracking-widest">Compliance & Alignment</h2>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-2">DOE TRIO Compliance Strategy</h3>
+                    <p>This program is specifically designed to comply with the Higher Education Act (HEA) Section 402C(b)(1), which mandates academic instruction in laboratory science for TRIO projects. It aligns with 34 CFR 645.11(a)(1) by providing direct instructional services in physics and environmental science, and 34 CFR 645.11(b)(1) through career awareness workshops focused on engineering and thermography. Under the Uniform Guidance 2 CFR 200.453 and 2 CFR 200.403 (EDGAR), the acquisition of Bosch GTC400C thermal imaging units is categorized as a necessary and reasonable cost, as these tools are essential specialized equipment for the delivery of the laboratory-based STEM curriculum and are used directly for student instruction in data processing and analysis.</p>
+                </div>
+                <div>
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-2">Standards Alignment</h3>
+                    <p>The curriculum is meticulously mapped to the Texas Essential Knowledge and Skills (TEKS) for Physics, specifically sections 7.A (Electromagnetic Spectrum), 7.B (Wave Behavior), and 6.A (Thermal Energy). It also addresses Environmental Systems TEKS 5.B regarding energy conservation methods and Engineering Design & Problem Solving TEKS 5.A. Furthermore, the modules align with the Texas STEM Framework by requiring students to apply the scientific process (Science 1.A) and utilize digital technology tools to analyze complex data sets (Technology 4.A), ensuring students meet the high rigor expected in Texas secondary education.</p>
+                </div>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="font-sans text-lg font-bold text-indigo-800 mb-4 uppercase tracking-widest">Field Expeditions</h2>
+                <p>The program includes strategic field trip options within Dallas, Tarrant, and Johnson counties to reinforce classroom learning through site-specific observation. Students may visit the Perot Museum of Nature and Science (Dallas) to explore sensor technology, the LEED-certified Botanical Research Institute of Texas (Fort Worth) to witness sustainable architecture in action, or the University of Texas at Arlington (UTA) Civil Engineering Labs to see industrial material testing. Additionally, visits to the Oncor Training Center or Dallas College’s Construction Management Center provide direct exposure to the industrial applications of thermography in electrical grid maintenance and HVAC diagnostics, offering high-value career orientation within 60 miles of the target service area.</p>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="font-sans text-lg font-bold text-indigo-800 mb-4 uppercase tracking-widest">Module Narratives</h2>
+                
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">The Electromagnetic Spectrum & Thermal Visualization</h3>
+                    <p class="text-sm text-slate-600">This introductory module utilizes the Bosch GTC400C to make the invisible visible, challenging students to differentiate between visible light and infrared radiation. Through mystery-object investigations and friction-based heat signatures, students engage in high-rigor scientific observation while developing technical proficiency with professional-grade imaging hardware, directly mirroring the workflows used in photonics and optical engineering careers.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">The Energy Audit: Engineering & Environmental Science</h3>
+                    <p class="text-sm text-slate-600">Students transition into the role of Energy Engineers, conducting an intensive audit of their physical environment to identify thermal bridges and air leaks. This module emphasizes the engineering design process and mathematical rigor as students calculate Delta T (temperature difference) to quantify energy loss. By proposing evidence-based solutions for building efficiency, students gain practical experience in civil engineering and environmental sustainability.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Circuit Safety & Electrical Inspection</h3>
+                    <p class="text-sm text-slate-600">Exploring the intersection of electricity and thermodynamics, this module introduces students to Joule Heating and the physics of electrical resistance. Students use thermal imaging for non-contact inspection of low-voltage circuits, identifying 'hot spots' that signify inefficiency or potential failure. This activity highlights the importance of predictive maintenance and safety engineering, connecting classroom physics to high-stakes industrial and electrical technology career pathways.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

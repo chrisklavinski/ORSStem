@@ -1,0 +1,3743 @@
+{
+  "curriculumTitle": "Essential Chemistry: A 40-Module High School Lab Series (Texas TRIO Edition)",
+  "overview": "A comprehensive, hands-on chemistry curriculum designed for Texas High School students (grades 9-12). This guide structures 40 short-format modules (20-40 minutes each) focusing on foundational concepts ranging from properties of matter to chemical kinetics, stoichiometry, and organic chemistry. Explicitly designed for compliance with Texas TEKS (Chapter 112.35) and Federal TRIO (Upward Bound/UBMS) grant regulations (34 CFR Part 645), emphasizing low-cost consumables (EDGAR 2 CFR 200.453) and high-engagement inquiry.",
+  "prerequisites": "Completion of Algebra I; enrolled in or completed 9th grade Integrated Physics and Chemistry (IPC) or Biology.",
+  "targetAgeGroup": "High School (Ages 14-18)",
+  "totalDurationEstimate": "20-25 Hours (40 Modules x 30-40 mins)",
+  "fieldTrips": [
+    {
+      "name": "Perot Museum of Nature and Science - Lyda Hill Gems and Minerals Hall",
+      "location": "Dallas, TX (Dallas County)",
+      "description": "Guided exploration of crystallography and mineral chemistry.",
+      "relevanceToCurriculum": "Connects to Modules 1, 10, and 29 regarding density, crystallization, and chemical composition."
+    },
+    {
+      "name": "Bureau of Engraving and Printing - Western Currency Facility",
+      "location": "Fort Worth, TX (Tarrant County)",
+      "description": "Tour of the ink chemistry and paper fiber analysis labs used in currency production.",
+      "relevanceToCurriculum": "Direct application of Module 6 (Chromatography) and Module 33 (Corrosion/Materials Science)."
+    },
+    {
+      "name": "Trinity River Authority - Central Regional Wastewater System",
+      "location": "Dallas, TX (Dallas County)",
+      "description": "Industrial scale water filtration and chemical treatment processes.",
+      "relevanceToCurriculum": "Reinforces Module 26 (Filtration), Module 15 (Precipitation), and Module 3 (pH)."
+    },
+    {
+      "name": "University of Texas at Arlington - Shimadzu Center for Advanced Analytical Chemistry",
+      "location": "Arlington, TX (Tarrant County)",
+      "description": "Tour of advanced spectroscopy and chromatography instrumentation labs.",
+      "relevanceToCurriculum": "Provides college pathway exposure for Modules 7 (Flame Tests) and 19 (Isotopes/Mass)."
+    }
+  ],
+  "activities": [
+    {
+      "title": "Module 1: Liquid Layers - Mastering Density",
+      "description": "Students investigate the physical property of density by creating a multi-layered density column using household liquids with varying sugar concentrations.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Pipetting",
+        "Volume measurement"
+      ],
+      "learningObjectives": [
+        "Define density as mass per unit volume.",
+        "Observe how liquids of different densities interact without mixing immediately.",
+        "Calculate density based on mass and volume measurements."
+      ],
+      "teks": [
+        "112.35(c)(4)(B): Investigate and describe physical and chemical properties of matter.",
+        "112.35(c)(2)(E): Plan and implement investigative procedures."
+      ],
+      "texasStemStandards": [
+        "STEM Content Knowledge: Application of science concepts.",
+        "Employability Skills: Critical thinking and problem solving."
+      ],
+      "materialsList": [
+        {
+          "item": "Warm Water",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Granulated Sugar",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Food Coloring",
+          "estimatedCost": "$6.00"
+        },
+        {
+          "item": "Clear Plastic Cups",
+          "estimatedCost": "$8.00"
+        },
+        {
+          "item": "Pipettes",
+          "estimatedCost": "$10.00"
+        },
+        {
+          "item": "Graduated Cylinders",
+          "estimatedCost": "$25.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Prepare sugar solutions of varying concentrations (0%, 20%, 40%, 60%).",
+          "Dye each concentration a different color.",
+          "Distribute pipettes and test tubes.",
+          "Guide students to layer liquids slowly."
+        ],
+        "detailed": [
+          "Pre-Lab Prep: Create four stock solutions. Cup 1: Water only + Red. Cup 2: Water + 1 tbsp sugar + Yellow. Cup 3: Water + 2 tbsp sugar + Green. Cup 4: Water + 3 tbsp sugar + Blue.",
+          "Introduction: Discuss D=m/v. Ask why oil floats on water.",
+          "Activity: Have students attempt to stack the colors, heaviest (Blue) on bottom.",
+          "Review: Discuss why the layers separate."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Collect 4 cups of colored water.",
+          "Identify which liquid is 'heaviest'.",
+          "Use the pipette to slowly add the heaviest liquid first.",
+          "Layer the lighter liquids on top gently."
+        ],
+        "detailed": [
+          "Step 1: Observe the four colored solutions.",
+          "Step 2: Add 5mL of the Blue solution to your cylinder.",
+          "Step 3: Carefully draw up the Green solution.",
+          "Step 4: Tilt the cylinder and drip the Green liquid down the side slowly.",
+          "Step 5: Repeat with Yellow, then Red.",
+          "Step 6: Record observations."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science",
+          "Instruction in Mathematics"
+        ],
+        "allowableCosts": [
+          "Instructional supplies (Sugar, cups, pipettes)",
+          "Lab equipment (Graduated cylinders)"
+        ],
+        "programType": "Both",
+        "justification": "Fulfills mandatory curriculum requirement for instruction in laboratory science.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science.",
+          "34 CFR 645.11(b)(1): Exposure to a rigorous curriculum."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs, including costs of computing devices."
+        ]
+      },
+      "stemConnections": {
+        "science": "Physical properties of matter, miscibility.",
+        "technology": "Precision measurement.",
+        "engineering": "Fluid dynamics.",
+        "math": "Calculating ratios and density.",
+        "crossCurricularLinks": [
+          "Oceanography"
+        ]
+      },
+      "careerPathways": [
+        "Chemical Laboratory Technician",
+        "Hydrologist"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Chemistry",
+        "Bachelor of Science in Oceanography"
+      ]
+    },
+    {
+      "title": "Module 2: Foaming Fury - Catalysts in Action",
+      "description": "A rapid decomposition reaction activity using 'Elephant Toothpaste' to demonstrate exothermic reactions and catalysts.",
+      "timeRequired": "35 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Safety protocol adherence",
+        "Observation"
+      ],
+      "learningObjectives": [
+        "Understand the role of a catalyst.",
+        "Identify an exothermic reaction.",
+        "Observe decomposition of hydrogen peroxide."
+      ],
+      "teks": [
+        "112.35(c)(8)(C): Calculate rates of reactions.",
+        "112.35(c)(11)(C): Classify reactions as exothermic or endothermic."
+      ],
+      "texasStemStandards": [
+        "Scientific Inquiry and Design."
+      ],
+      "materialsList": [
+        {
+          "item": "Hydrogen Peroxide (6%)",
+          "estimatedCost": "$12.00"
+        },
+        {
+          "item": "Dry Yeast",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Dish Soap",
+          "estimatedCost": "$3.00"
+        },
+        {
+          "item": "Plastic Bottles",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Ensure safety goggles are worn.",
+          "Pre-measure warm water for yeast.",
+          "Distribute bottles on trays.",
+          "Discuss 'Catalyst' definition."
+        ],
+        "detailed": [
+          "Safety: Goggles mandatory.",
+          "Intro: Explain 2H2O2 -> 2H2O + O2.",
+          "Activity: Students mix peroxide and soap, then add yeast solution.",
+          "Post-Lab: Feel the warm bottle (exothermic)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Wear goggles.",
+          "Mix yeast and warm water.",
+          "Pour peroxide and soap into bottle.",
+          "Add yeast and step back."
+        ],
+        "detailed": [
+          "Step 1: Put on safety gear.",
+          "Step 2: Mix yeast with warm water in a cup.",
+          "Step 3: Pour 1/2 cup Hydrogen Peroxide into the bottle with a squirt of soap.",
+          "Step 4: Pour yeast mixture into the bottle.",
+          "Step 5: Observe heat and foam."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Lab consumables",
+          "Safety Equipment"
+        ],
+        "programType": "UBMS",
+        "justification": "Hands-on research and lab science exposure.",
+        "heaRequirements": [
+          "HEA Sec. 402E(b): Services to improve math and science literacy."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Kinetics, thermodynamics.",
+        "technology": "Thermal sensors.",
+        "engineering": "Chemical engineering.",
+        "math": "Percentages.",
+        "crossCurricularLinks": [
+          "Biology (Enzymes)"
+        ]
+      },
+      "careerPathways": [
+        "Chemical Engineer",
+        "Hazmat Specialist"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Chemical Engineering",
+        "Associate of Science in Chemistry"
+      ]
+    },
+    {
+      "title": "Module 3: The Color of Chemistry - Acids and Bases",
+      "description": "Students create a natural pH indicator using red cabbage juice to test household substances.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Data recording",
+        "Classification"
+      ],
+      "learningObjectives": [
+        "Differentiate between acids and bases.",
+        "Use an indicator to determine pH.",
+        "Understand the pH scale."
+      ],
+      "teks": [
+        "112.35(c)(10)(A): Describe and calculate pH.",
+        "112.35(c)(10)(G): Define acids and bases."
+      ],
+      "texasStemStandards": [
+        "Inquiry-Based Learning."
+      ],
+      "materialsList": [
+        {
+          "item": "Red Cabbage",
+          "estimatedCost": "$3.00"
+        },
+        {
+          "item": "Test Substances (Vinegar, Soda, Soap)",
+          "estimatedCost": "$10.00"
+        },
+        {
+          "item": "Cups/Pipettes",
+          "estimatedCost": "$15.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Boil cabbage to make indicator.",
+          "Set up stations with unknown liquids.",
+          "Instruct students to match colors to pH chart."
+        ],
+        "detailed": [
+          "Prep: Boil cabbage to get purple water.",
+          "Lecture: Explain pH scale 0-14.",
+          "Activity: Students add indicator to unknowns. Red=Acid, Green=Base.",
+          "Analysis: Arrange from acidic to basic."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Take samples of unknown liquids.",
+          "Add cabbage juice indicator.",
+          "Record color change.",
+          "Identify acid/base."
+        ],
+        "detailed": [
+          "Step 1: Obtain liquid samples.",
+          "Step 2: Add 2mL cabbage juice to each.",
+          "Step 3: Observe color (Pink=Acid, Green=Base).",
+          "Step 4: Rank the cups by pH."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Core chemistry competency using cost-effective materials.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Acid-base chemistry.",
+        "technology": "Spectroscopy.",
+        "engineering": "Water quality testing.",
+        "math": "Logarithmic scales.",
+        "crossCurricularLinks": [
+          "Health Science"
+        ]
+      },
+      "careerPathways": [
+        "Water Quality Technician",
+        "Soil Scientist"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Environmental Science",
+        "Bachelor of Science in Agricultural Sciences"
+      ]
+    },
+    {
+      "title": "Module 4: Gas Laws - The Crushing Can",
+      "description": "Demonstration of Charles's Law and atmospheric pressure by imploding a soda can.",
+      "timeRequired": "25 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Heat safety",
+        "Observation"
+      ],
+      "learningObjectives": [
+        "Demonstrate relationship between temperature and volume.",
+        "Visualize atmospheric pressure."
+      ],
+      "teks": [
+        "112.35(c)(9)(A): Gas laws."
+      ],
+      "texasStemStandards": [
+        "Systemic Thinking."
+      ],
+      "materialsList": [
+        {
+          "item": "Empty Soda Cans",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Hot Plate",
+          "estimatedCost": "$20.00"
+        },
+        {
+          "item": "Ice Water",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Tongs",
+          "estimatedCost": "$5.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Heat water in can until steaming.",
+          "Prepare ice bath.",
+          "Flip can into ice water.",
+          "Watch implosion."
+        ],
+        "detailed": [
+          "Safety: Hot plates cause burns.",
+          "Theory: Gas expands when heated, contracts when cooled.",
+          "Action: Rapidly invert the can into water to seal it.",
+          "Discussion: Atmospheric pressure crushed the vacuum."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Heat water in can.",
+          "Wait for steam.",
+          "Flip into ice water.",
+          "Observe."
+        ],
+        "detailed": [
+          "Step 1: Put on goggles.",
+          "Step 2: Heat 1 tbsp water in can.",
+          "Step 3: When steaming, grab with tongs.",
+          "Step 4: Flip upside down into ice water immediately."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Lab Equipment"
+        ],
+        "programType": "UBMS",
+        "justification": "Physics/Chemistry interface activity.",
+        "heaRequirements": [
+          "HEA Sec. 402E(b): Services to improve math and science literacy."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Gas laws, pressure.",
+        "technology": "Vacuum tech.",
+        "engineering": "HVAC.",
+        "math": "Algebra.",
+        "crossCurricularLinks": [
+          "Meteorology"
+        ]
+      },
+      "careerPathways": [
+        "HVAC Technician",
+        "Aerospace Engineer"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Mechanical Engineering",
+        "Associate of Applied Science in HVAC Technology"
+      ]
+    },
+    {
+      "title": "Module 5: Slime Time - Introduction to Polymers",
+      "description": "Synthesis of cross-linked polymer using PVA glue and borate ions.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Measurement",
+        "Mixing"
+      ],
+      "learningObjectives": [
+        "Define polymer.",
+        "Understand cross-linking.",
+        "Compare reactant vs product properties."
+      ],
+      "teks": [
+        "112.35(c)(4)(B): Properties of matter."
+      ],
+      "texasStemStandards": [
+        "Materials Science."
+      ],
+      "materialsList": [
+        {
+          "item": "White Glue",
+          "estimatedCost": "$15.00"
+        },
+        {
+          "item": "Borax",
+          "estimatedCost": "$5.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Prepare Borax solution.",
+          "Mix glue and water.",
+          "Combine and knead."
+        ],
+        "detailed": [
+          "Concept: Glue molecules are chains; Borax connects them.",
+          "Activity: Mix components, observe viscosity change.",
+          "Cleanup: Use bags, do not sink."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Mix glue and water.",
+          "Add Borax solution.",
+          "Stir and knead."
+        ],
+        "detailed": [
+          "Step 1: Mix equal parts glue/water.",
+          "Step 2: Add Borax solution slowly.",
+          "Step 3: Knead when solid."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Engaging entry-level chemistry.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Polymers.",
+        "technology": "Synthetics.",
+        "engineering": "Materials engineering.",
+        "math": "Ratios.",
+        "crossCurricularLinks": [
+          "History"
+        ]
+      },
+      "careerPathways": [
+        "Materials Scientist",
+        "Product Developer"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Materials Science",
+        "Bachelor of Science in Chemistry"
+      ]
+    },
+    {
+      "title": "Module 6: Chromatographic Colors - Separation Science",
+      "description": "Students use paper chromatography to separate the pigments in black ink, demonstrating solubility and molecular polarity.",
+      "timeRequired": "25 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Measurement",
+        "Observation"
+      ],
+      "learningObjectives": [
+        "Understand separation mixtures.",
+        "Define mobile and stationary phases."
+      ],
+      "teks": [
+        "112.35(c)(4)(D): Classify matter as pure substances or mixtures."
+      ],
+      "texasStemStandards": [
+        "Scientific Inquiry."
+      ],
+      "materialsList": [
+        {
+          "item": "Filter Paper / Coffee Filters",
+          "estimatedCost": "$3.00"
+        },
+        {
+          "item": "Water Soluble Markers (Black)",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Cups and Water",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Cut filter paper strips.",
+          "Mark a dot of ink 2cm from bottom.",
+          "Suspend in water (water level below ink).",
+          "Watch capillary action."
+        ],
+        "detailed": [
+          "Theory: Differential solubility separates pigments.",
+          "Setup: Ensure the ink dot does not touch water directly.",
+          "Analysis: Calculate Rf values (distance traveled by pigment / distance by water)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Draw dot on paper strip.",
+          "Dip bottom of paper in water.",
+          "Watch colors separate."
+        ],
+        "detailed": [
+          "Step 1: Cut a strip of filter paper.",
+          "Step 2: Draw a heavy dot of black ink 2cm from the bottom.",
+          "Step 3: Hang the paper in a cup with a little water at the bottom.",
+          "Step 4: Do not let the dot touch the water directly."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Low-cost separation science activity.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Mixtures, polarity.",
+        "technology": "Purification tech.",
+        "engineering": "Chemical processing.",
+        "math": "Ratios (Rf value).",
+        "crossCurricularLinks": [
+          "Art"
+        ]
+      },
+      "careerPathways": [
+        "Forensic Analyst",
+        "Chemist"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Forensic Science",
+        "Bachelor of Science in Chemistry"
+      ]
+    },
+    {
+      "title": "Module 7: Flame Tests - Atomic Fingerprints",
+      "description": "Students burn various salt solutions to observe characteristic flame colors, identifying elements based on electron energy transitions.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Flame safety",
+        "Observation"
+      ],
+      "learningObjectives": [
+        "Identify elements by flame color.",
+        "Understand electron excitation and emission."
+      ],
+      "teks": [
+        "112.35(c)(6)(B): Atomic spectra."
+      ],
+      "texasStemStandards": [
+        "Scientific Tools."
+      ],
+      "materialsList": [
+        {
+          "item": "Cotton Swabs / Wood Splints",
+          "estimatedCost": "$3.00"
+        },
+        {
+          "item": "Salt Solutions (LiCl, NaCl, KCl, SrCl2)",
+          "estimatedCost": "$20.00"
+        },
+        {
+          "item": "Bunsen Burners or Candles",
+          "estimatedCost": "$10.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Soak splints in salt solutions.",
+          "Have students hold splint in flame.",
+          "Record colors."
+        ],
+        "detailed": [
+          "Safety: Open flame protocols required.",
+          "Theory: Electrons jump to excited state, release photons falling back.",
+          "Colors: Li=Red, Na=Orange, K=Lilac, Cu=Green."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Take a soaked splint.",
+          "Place in flame tip.",
+          "Observe color flash."
+        ],
+        "detailed": [
+          "Step 1: Wear goggles.",
+          "Step 2: Choose a salt splint.",
+          "Step 3: Place damp end into the blue part of the flame.",
+          "Step 4: Note the immediate color change."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Lab Consumables"
+        ],
+        "programType": "UBMS",
+        "justification": "Standard qualitative analysis lab.",
+        "heaRequirements": [
+          "HEA Sec. 402E(b): Services to improve math and science literacy."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Atomic structure, quantum mechanics.",
+        "technology": "Spectrometry.",
+        "engineering": "Pyrotechnics.",
+        "math": "Wavelength calculations.",
+        "crossCurricularLinks": [
+          "Astronomy"
+        ]
+      },
+      "careerPathways": [
+        "Analytical Chemist",
+        "Astronomer"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Physics",
+        "Bachelor of Science in Astronomy"
+      ]
+    },
+    {
+      "title": "Module 8: Bag of Change - Conservation of Mass",
+      "description": "Students conduct a reaction between baking soda and vinegar inside a sealed Ziploc bag to prove mass is conserved.",
+      "timeRequired": "20 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Weighing",
+        "Sealing"
+      ],
+      "learningObjectives": [
+        "Verify Law of Conservation of Mass.",
+        "Observe gas production."
+      ],
+      "teks": [
+        "112.35(c)(8)(A): Conservation of mass."
+      ],
+      "texasStemStandards": [
+        "Inquiry."
+      ],
+      "materialsList": [
+        {
+          "item": "Ziploc Bags",
+          "estimatedCost": "$3.00"
+        },
+        {
+          "item": "Baking Soda & Vinegar",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Digital Scale",
+          "estimatedCost": "$15.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Weigh bag with reactants unmixed.",
+          "Mix inside sealed bag.",
+          "Weigh again."
+        ],
+        "detailed": [
+          "Setup: Put vinegar in bag, baking soda in a small cup *inside* bag.",
+          "Action: Seal bag, tip cup to mix.",
+          "Check: Mass should stay same despite bag inflating."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Set up bag with reactants.",
+          "Weigh system.",
+          "Mix and weigh again."
+        ],
+        "detailed": [
+          "Step 1: Pour vinegar in bag.",
+          "Step 2: Float cup of soda in vinegar.",
+          "Step 3: Seal tight.",
+          "Step 4: Weigh.",
+          "Step 5: Mix and weigh."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Foundational principle demonstration.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Conservation laws.",
+        "technology": "Digital balances.",
+        "engineering": "Closed systems.",
+        "math": "Measurement.",
+        "crossCurricularLinks": [
+          "Physics"
+        ]
+      },
+      "careerPathways": [
+        "Process Engineer",
+        "Quality Control"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Manufacturing Engineering",
+        "Associate of Science in Quality Assurance"
+      ]
+    },
+    {
+      "title": "Module 9: Hot and Cold - Energy in Reactions",
+      "description": "Comparing endothermic and exothermic reactions using ammonium nitrate (cold packs) and calcium chloride (damp rid).",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Thermometer reading",
+        "Graphing"
+      ],
+      "learningObjectives": [
+        "Differentiate endothermic/exothermic.",
+        "Measure temperature change."
+      ],
+      "teks": [
+        "112.35(c)(11)(C): Energy changes."
+      ],
+      "texasStemStandards": [
+        "Data Analysis."
+      ],
+      "materialsList": [
+        {
+          "item": "Ammonium Nitrate (Instant Cold Pack)",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Calcium Chloride (DampRid)",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Thermometers",
+          "estimatedCost": "Reusable"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Dissolve salts in water.",
+          "Measure temp change."
+        ],
+        "detailed": [
+          "Ammonium Nitrate + Water = Endothermic (Cold).",
+          "Calcium Chloride + Water = Exothermic (Hot).",
+          "Have students graph the temp change."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Measure water temp.",
+          "Add salt.",
+          "Stir and record final temp."
+        ],
+        "detailed": [
+          "Step 1: 50mL water in cup.",
+          "Step 2: Add 1 spoon of white solid.",
+          "Step 3: Stir with thermometer.",
+          "Step 4: Is it hot or cold?"
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Thermodynamics introduction.",
+        "heaRequirements": [
+          "HEA Sec. 402E(b): Services to improve math and science literacy."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Thermodynamics.",
+        "technology": "Thermal imaging.",
+        "engineering": "HVAC design.",
+        "math": "Delta T calculation.",
+        "crossCurricularLinks": [
+          "Sports Medicine"
+        ]
+      },
+      "careerPathways": [
+        "Sports Medicine",
+        "Chemical Engineer"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Kinesiology",
+        "Bachelor of Science in Chemical Engineering"
+      ]
+    },
+    {
+      "title": "Module 10: Hot Ice - Supersaturated Solutions",
+      "description": "Students crystallize sodium acetate from a supersaturated solution to create rapid 'hot ice' sculptures.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Precision pouring",
+        "Solution preparation"
+      ],
+      "learningObjectives": [
+        "Define supersaturation.",
+        "Observe exothermic crystallization."
+      ],
+      "teks": [
+        "112.35(c)(10)(F): Solubility."
+      ],
+      "texasStemStandards": [
+        "Inquiry."
+      ],
+      "materialsList": [
+        {
+          "item": "Sodium Acetate Trihydrate",
+          "estimatedCost": "$15.00"
+        },
+        {
+          "item": "Hot Plate / Beaker",
+          "estimatedCost": "Reusable"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Melt sodium acetate.",
+          "Cool liquid carefully.",
+          "Pour onto seed crystal."
+        ],
+        "detailed": [
+          "Prep: This is tricky. Solution must be very pure.",
+          "Action: Pour cooled liquid onto a crystal; it instantly solidifies and releases heat."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Observe liquid.",
+          "Touch with crystal.",
+          "Watch freezing."
+        ],
+        "detailed": [
+          "Step 1: Gently pour liquid.",
+          "Step 2: Touch pile with crystal.",
+          "Step 3: Feel the heat released."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Lab Consumables"
+        ],
+        "programType": "UBMS",
+        "justification": "Advanced solution chemistry.",
+        "heaRequirements": [
+          "HEA Sec. 402E(b): Services to improve math and science literacy."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Solutions, nucleation.",
+        "technology": "Phase change materials.",
+        "engineering": "Thermal storage.",
+        "math": "Concentration.",
+        "crossCurricularLinks": [
+          "Geology"
+        ]
+      },
+      "careerPathways": [
+        "Materials Scientist",
+        "Geologist"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Geology",
+        "Bachelor of Science in Chemistry"
+      ]
+    },
+    {
+      "title": "Module 11: Drop by Drop - Intro to Titration",
+      "description": "Simple acid-base neutralization counting drops of base to neutralize an acid with indicator.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Counting",
+        "Swirling"
+      ],
+      "learningObjectives": [
+        "Perform neutralization.",
+        "Calculate unknown concentration."
+      ],
+      "teks": [
+        "112.35(c)(10)(I): Titration."
+      ],
+      "texasStemStandards": [
+        "Scientific Tools."
+      ],
+      "materialsList": [
+        {
+          "item": "Vinegar (Acid)",
+          "estimatedCost": "$2.00"
+        },
+        {
+          "item": "Baking Soda Solution (Base)",
+          "estimatedCost": "$2.00"
+        },
+        {
+          "item": "Phenolphthalein",
+          "estimatedCost": "$8.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Setup acid in cup with indicator.",
+          "Add base dropwise.",
+          "Stop at color change."
+        ],
+        "detailed": [
+          "Use dilute solutions for safety.",
+          "Endpoint is faint pink.",
+          "Count drops to compare concentrations."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Add indicator to acid.",
+          "Add base 1 drop at time.",
+          "Count drops until pink."
+        ],
+        "detailed": [
+          "Step 1: 10 drops vinegar + 1 drop indicator.",
+          "Step 2: Add base slowly.",
+          "Step 3: Swirl after every drop.",
+          "Step 4: Record total drops."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Standard analytical technique.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Neutralization.",
+        "technology": "Titrators.",
+        "engineering": "Quality control.",
+        "math": "Stoichiometry.",
+        "crossCurricularLinks": [
+          "Medicine"
+        ]
+      },
+      "careerPathways": [
+        "Lab Technician",
+        "Pharmacist"
+      ],
+      "collegePathways": [
+        "Doctor of Pharmacy (Pharm.D.)",
+        "Bachelor of Science in Chemistry"
+      ]
+    },
+    {
+      "title": "Module 12: Lemon Power - Electrochemistry",
+      "description": "Building a battery using lemons, copper coins, and zinc nails to power an LED.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Circuit building",
+        "Measurement"
+      ],
+      "learningObjectives": [
+        "Understand redox reactions.",
+        "Measure voltage."
+      ],
+      "teks": [
+        "112.35(c)(11)(D): Electrochemistry."
+      ],
+      "texasStemStandards": [
+        "Innovation."
+      ],
+      "materialsList": [
+        {
+          "item": "Lemons",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Galvanized Nails (Zinc)",
+          "estimatedCost": "$3.00"
+        },
+        {
+          "item": "Pennies or Copper Wire",
+          "estimatedCost": "$1.00"
+        },
+        {
+          "item": "LEDs / Multimeter",
+          "estimatedCost": "$10.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Insert metals into lemon.",
+          "Connect with alligator clips.",
+          "Measure voltage."
+        ],
+        "detailed": [
+          "Zinc oxidizes, Copper reduces.",
+          "Need multiple lemons in series to light LED."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Push nail and penny into lemon.",
+          "Connect clips.",
+          "Check voltmeter."
+        ],
+        "detailed": [
+          "Step 1: Roll lemon to break cells.",
+          "Step 2: Insert metals (electrodes).",
+          "Step 3: Connect to meter.",
+          "Step 4: Chain lemons to increase voltage."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Energy systems / redox chemistry.",
+        "heaRequirements": [
+          "HEA Sec. 402E(b): Services to improve math and science literacy."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Redox, electricity.",
+        "technology": "Batteries.",
+        "engineering": "Electrical engineering.",
+        "math": "Summing voltage.",
+        "crossCurricularLinks": [
+          "Physics"
+        ]
+      },
+      "careerPathways": [
+        "Electrical Engineer",
+        "Battery Researcher"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Electrical Engineering",
+        "Bachelor of Science in Physics"
+      ]
+    },
+    {
+      "title": "Module 13: Glow Stick Kinetics",
+      "description": "Investigating how temperature affects the rate of the chemical reaction in glow sticks.",
+      "timeRequired": "20 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Observation",
+        "Timing"
+      ],
+      "learningObjectives": [
+        "Relate temperature to reaction rate.",
+        "Understand collision theory."
+      ],
+      "teks": [
+        "112.35(c)(8)(B): Factors affecting rate."
+      ],
+      "texasStemStandards": [
+        "Inquiry."
+      ],
+      "materialsList": [
+        {
+          "item": "Glow Sticks",
+          "estimatedCost": "$10.00"
+        },
+        {
+          "item": "Hot and Ice Water",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Snap glow sticks.",
+          "Place one in hot, one in cold.",
+          "Compare brightness."
+        ],
+        "detailed": [
+          "Hot = Faster reaction (Brighter, shorter life).",
+          "Cold = Slower reaction (Dimmer, longer life)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Activate sticks.",
+          "Submerge in water baths.",
+          "Observe."
+        ],
+        "detailed": [
+          "Step 1: Crack 3 glow sticks.",
+          "Step 2: Put one in ice, one in hot water, one in air.",
+          "Step 3: Compare brightness levels."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Visual kinetics demo.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Kinetics.",
+        "technology": "Chemiluminescence.",
+        "engineering": "Safety lighting.",
+        "math": "Rates.",
+        "crossCurricularLinks": [
+          "Safety"
+        ]
+      },
+      "careerPathways": [
+        "Safety Engineer",
+        "Chemist"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Occupational Safety",
+        "Bachelor of Science in Chemistry"
+      ]
+    },
+    {
+      "title": "Module 14: Crushed vs Whole - Surface Area",
+      "description": "Comparing reaction rates of whole vs crushed Alka-Seltzer tablets in water.",
+      "timeRequired": "20 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Timing",
+        "Grinding"
+      ],
+      "learningObjectives": [
+        "Relate surface area to reaction rate."
+      ],
+      "teks": [
+        "112.35(c)(8)(B): Factors affecting rate."
+      ],
+      "texasStemStandards": [
+        "Inquiry."
+      ],
+      "materialsList": [
+        {
+          "item": "Alka-Seltzer Tablets",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Stopwatch",
+          "estimatedCost": "Phone"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Drop whole tablet.",
+          "Drop crushed tablet.",
+          "Time dissolution."
+        ],
+        "detailed": [
+          "Crushed tablet exposes more particles for collisions, reacting faster."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Crush one tablet.",
+          "Leave one whole.",
+          "Drop in water and time."
+        ],
+        "detailed": [
+          "Step 1: Prepare two cups of water.",
+          "Step 2: Drop whole tablet in A. Time it.",
+          "Step 3: Drop powder in B. Time it."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Basic kinetics.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Kinetics, surface area.",
+        "technology": "Milling.",
+        "engineering": "Pharmaceutical manufacturing.",
+        "math": "Time measurement.",
+        "crossCurricularLinks": [
+          "Pharmacy"
+        ]
+      },
+      "careerPathways": [
+        "Pharmacist",
+        "Process Engineer"
+      ],
+      "collegePathways": [
+        "Doctor of Pharmacy",
+        "Bachelor of Science in Chemical Engineering"
+      ]
+    },
+    {
+      "title": "Module 15: Precipitate Art - Double Replacement",
+      "description": "Mixing Epsom salt and Washing soda to create solid precipitates (magnesium carbonate).",
+      "timeRequired": "25 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Mixing",
+        "Observation"
+      ],
+      "learningObjectives": [
+        "Identify precipitate formation.",
+        "Understand double replacement."
+      ],
+      "teks": [
+        "112.35(c)(10)(H): Precipitation."
+      ],
+      "texasStemStandards": [
+        "Creativity."
+      ],
+      "materialsList": [
+        {
+          "item": "Epsom Salt (MgSO4)",
+          "estimatedCost": "$3.00"
+        },
+        {
+          "item": "Washing Soda (Na2CO3)",
+          "estimatedCost": "$4.00"
+        },
+        {
+          "item": "Dark Paper",
+          "estimatedCost": "$1.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Make saturated solutions of both.",
+          "Mix on dark paper.",
+          "Observe white solid."
+        ],
+        "detailed": [
+          "MgSO4 + Na2CO3 -> Na2SO4 + MgCO3(s).",
+          "Students can paint with solutions."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Dissolve salts.",
+          "Mix drops on paper.",
+          "See white solid form."
+        ],
+        "detailed": [
+          "Step 1: Make Solution A and B.",
+          "Step 2: Place black paper on tray.",
+          "Step 3: Drip A then B on top.",
+          "Step 4: Observe instantaneous solid."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Reaction types.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Solubility rules.",
+        "technology": "Water treatment.",
+        "engineering": "Chemical separation.",
+        "math": "Stoichiometry.",
+        "crossCurricularLinks": [
+          "Art"
+        ]
+      },
+      "careerPathways": [
+        "Water Treatment Specialist",
+        "Chemist"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Chemistry",
+        "Associate of Applied Science in Water Quality"
+      ]
+    },
+    {
+      "title": "Module 16: The Rust Race - Oxidation",
+      "description": "Accelerating the rusting of steel wool using vinegar and bleach to study oxidation-reduction.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Safety protocol",
+        "Observation"
+      ],
+      "learningObjectives": [
+        "Define oxidation.",
+        "Identify rust as iron oxide."
+      ],
+      "teks": [
+        "112.35(c)(11)(A): Oxidation/Reduction."
+      ],
+      "texasStemStandards": [
+        "Inquiry."
+      ],
+      "materialsList": [
+        {
+          "item": "Steel Wool",
+          "estimatedCost": "$3.00"
+        },
+        {
+          "item": "Vinegar",
+          "estimatedCost": "$2.00"
+        },
+        {
+          "item": "Bleach",
+          "estimatedCost": "$3.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Strip coating with vinegar.",
+          "Expose to bleach/air.",
+          "Observe heat and color."
+        ],
+        "detailed": [
+          "Vinegar removes protective coating.",
+          "Bleach is strong oxidizer -> Rapid rust."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Soak steel wool in vinegar.",
+          "Remove and add bleach.",
+          "Watch rust form."
+        ],
+        "detailed": [
+          "Step 1: Dip wool in vinegar 1 min.",
+          "Step 2: Squeeze out.",
+          "Step 3: Place in jar with dilute bleach.",
+          "Step 4: Watch it turn orange instantly."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Redox chemistry.",
+        "heaRequirements": [
+          "HEA Sec. 402E(b): Services to improve math and science literacy."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Redox.",
+        "technology": "Anti-corrosion.",
+        "engineering": "Materials preservation.",
+        "math": "Percent yield.",
+        "crossCurricularLinks": [
+          "History (Iron Age)"
+        ]
+      },
+      "careerPathways": [
+        "Materials Engineer",
+        "Civil Engineer"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Materials Engineering",
+        "Bachelor of Science in Civil Engineering"
+      ]
+    },
+    {
+      "title": "Module 17: Splitting Water - Electrolysis",
+      "description": "Using a 9V battery and pencils to split water into Hydrogen and Oxygen gas.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Circuit connection",
+        "Observation"
+      ],
+      "learningObjectives": [
+        "Perform electrolysis.",
+        "Identify anode and cathode products."
+      ],
+      "teks": [
+        "112.35(c)(11)(D): Electrolysis."
+      ],
+      "texasStemStandards": [
+        "Systems."
+      ],
+      "materialsList": [
+        {
+          "item": "9V Battery",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Pencils (Graphite)",
+          "estimatedCost": "$2.00"
+        },
+        {
+          "item": "Salt Water",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Sharpen pencils both ends.",
+          "Connect to battery.",
+          "Dip in salt water.",
+          "Observe bubbles."
+        ],
+        "detailed": [
+          "Hydrogen at cathode (more bubbles), Oxygen at anode."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Connect pencils to battery.",
+          "Place tips in water.",
+          "Watch bubbles."
+        ],
+        "detailed": [
+          "Step 1: Sharpen pencils.",
+          "Step 2: Touch battery terminals with erasers.",
+          "Step 3: Dip points in water.",
+          "Step 4: Note which side bubbles more (H2)."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Electrochemistry / Renewable energy.",
+        "heaRequirements": [
+          "HEA Sec. 402E(b): Services to improve math and science literacy."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Electrochemistry.",
+        "technology": "Hydrogen fuel cells.",
+        "engineering": "Energy storage.",
+        "math": "Stoichiometry ratios.",
+        "crossCurricularLinks": [
+          "Environment"
+        ]
+      },
+      "careerPathways": [
+        "Energy Engineer",
+        "Chemist"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Electrical Engineering",
+        "Bachelor of Science in Renewable Energy"
+      ]
+    },
+    {
+      "title": "Module 18: Marshmallow Molecules",
+      "description": "Building 3D molecular models using marshmallows and toothpicks to understand VSEPR geometry.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Modeling",
+        "Geometry"
+      ],
+      "learningObjectives": [
+        "Visualize molecular shapes.",
+        "Understand bond angles."
+      ],
+      "teks": [
+        "112.35(c)(7)(C): Molecular geometry."
+      ],
+      "texasStemStandards": [
+        "Modeling."
+      ],
+      "materialsList": [
+        {
+          "item": "Marshmallows (Colors)",
+          "estimatedCost": "$4.00"
+        },
+        {
+          "item": "Toothpicks",
+          "estimatedCost": "$1.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Assign molecules (H2O, CH4, NH3).",
+          "Students build models.",
+          "Discuss shapes."
+        ],
+        "detailed": [
+          "Colors represent atoms. Toothpicks represent bonds."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Select marshmallows for atoms.",
+          "Connect with toothpicks.",
+          "Build Water, Methane, Ammonia."
+        ],
+        "detailed": [
+          "Step 1: White = H, Color = C/O/N.",
+          "Step 2: Build CH4 (Tetrahedral).",
+          "Step 3: Build H2O (Bent)."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Structural chemistry modeling.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "VSEPR theory.",
+        "technology": "Molecular modeling software.",
+        "engineering": "Drug design.",
+        "math": "Geometry angles.",
+        "crossCurricularLinks": [
+          "Math"
+        ]
+      },
+      "careerPathways": [
+        "Pharmacologist",
+        "Chemist"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Biochemistry",
+        "Bachelor of Science in Pharmacology"
+      ]
+    },
+    {
+      "title": "Module 19: Pennium Isotopes",
+      "description": "Using pre-1982 and post-1982 pennies to simulate isotopes and calculate weighted average atomic mass.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Weighing",
+        "Calculation"
+      ],
+      "learningObjectives": [
+        "Define isotope.",
+        "Calculate weighted average mass."
+      ],
+      "teks": [
+        "112.35(c)(6)(D): Average atomic mass."
+      ],
+      "texasStemStandards": [
+        "Math Applications."
+      ],
+      "materialsList": [
+        {
+          "item": "Pennies (Old and New)",
+          "estimatedCost": "$2.00"
+        },
+        {
+          "item": "Digital Scale",
+          "estimatedCost": "Reusable"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Provide mix of pennies.",
+          "Weigh total sample.",
+          "Calculate average mass."
+        ],
+        "detailed": [
+          "Old pennies = 3.1g (Cu). New = 2.5g (Zn).",
+          "Simulates isotopes with different masses."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Weigh sample of 10 pennies.",
+          "Divide by 10 for average.",
+          "Compare to individual masses."
+        ],
+        "detailed": [
+          "Step 1: Weigh 10 mixed pennies.",
+          "Step 2: Calculate average.",
+          "Step 3: Reveal 'isotopes' are different."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science",
+          "Instruction in Mathematics"
+        ],
+        "allowableCosts": [
+          "Lab Equipment"
+        ],
+        "programType": "UBMS",
+        "justification": "Math/Chem bridge activity.",
+        "heaRequirements": [
+          "HEA Sec. 402E(b): Services to improve math and science literacy."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Isotopes.",
+        "technology": "Mass spectrometry.",
+        "engineering": "Nuclear engineering.",
+        "math": "Weighted averages.",
+        "crossCurricularLinks": [
+          "Nuclear Physics"
+        ]
+      },
+      "careerPathways": [
+        "Nuclear Engineer",
+        "Radiologist"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Nuclear Engineering",
+        "Bachelor of Science in Physics"
+      ]
+    },
+    {
+      "title": "Module 20: Specific Heat of Metals",
+      "description": "Heating metal washers and dropping them into water to calculate specific heat capacity.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Thermometer reading",
+        "Calorimetry"
+      ],
+      "learningObjectives": [
+        "Calculate specific heat.",
+        "Apply calorimetry."
+      ],
+      "teks": [
+        "112.35(c)(11)(B): Specific heat."
+      ],
+      "texasStemStandards": [
+        "Data Collection."
+      ],
+      "materialsList": [
+        {
+          "item": "Metal Washers/Bolts",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Styrofoam Cups",
+          "estimatedCost": "$3.00"
+        },
+        {
+          "item": "Thermometer",
+          "estimatedCost": "Reusable"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Boil metal.",
+          "Drop in room temp water.",
+          "Measure max temp."
+        ],
+        "detailed": [
+          "q_metal = -q_water.",
+          "Calculate C of metal."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Heat metal.",
+          "Put in cup of water.",
+          "Record temp rise."
+        ],
+        "detailed": [
+          "Step 1: Weigh metal and water.",
+          "Step 2: Heat metal to 100C.",
+          "Step 3: Transfer to water.",
+          "Step 4: Find final temp."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Lab Consumables"
+        ],
+        "programType": "UBMS",
+        "justification": "Thermodynamics lab.",
+        "heaRequirements": [
+          "HEA Sec. 402E(b): Services to improve math and science literacy."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Thermodynamics.",
+        "technology": "Insulation.",
+        "engineering": "Heat exchangers.",
+        "math": "Algebra.",
+        "crossCurricularLinks": [
+          "Engineering"
+        ]
+      },
+      "careerPathways": [
+        "Mechanical Engineer",
+        "HVAC Specialist"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Mechanical Engineering",
+        "Bachelor of Science in Physics"
+      ]
+    },
+    {
+      "title": "Module 21: Ice Cream Chemistry",
+      "description": "Using rock salt to lower the freezing point of water to make ice cream in a bag.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Shaking",
+        "Observation"
+      ],
+      "learningObjectives": [
+        "Understand freezing point depression.",
+        "Observe phase change."
+      ],
+      "teks": [
+        "112.35(c)(10)(F): Colligative properties."
+      ],
+      "texasStemStandards": [
+        "Food Science."
+      ],
+      "materialsList": [
+        {
+          "item": "Milk/Cream",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Ice and Rock Salt",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Ziploc Bags",
+          "estimatedCost": "$3.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Prepare small bag with milk/sugar.",
+          "Put inside large bag with ice/salt.",
+          "Shake for 10 mins."
+        ],
+        "detailed": [
+          "Salt lowers freezing point, allowing ice to melt at <0C, freezing the milk."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Bag the milk.",
+          "Bag the ice and salt.",
+          "Put milk bag in ice bag.",
+          "Shake."
+        ],
+        "detailed": [
+          "Step 1: Seal milk mixture.",
+          "Step 2: Add salt to ice.",
+          "Step 3: Shake vigorously.",
+          "Step 4: Eat result."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Colligative properties (edible lab allowed if instructional).",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Colligative properties.",
+        "technology": "Refrigeration.",
+        "engineering": "Food processing.",
+        "math": "Temperature scales.",
+        "crossCurricularLinks": [
+          "Culinary Arts"
+        ]
+      },
+      "careerPathways": [
+        "Food Scientist",
+        "Chemist"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Food Science",
+        "Bachelor of Science in Chemistry"
+      ]
+    },
+    {
+      "title": "Module 22: Solubility Curves",
+      "description": "Testing how much sugar dissolves in hot vs cold water to generate a solubility curve.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Measuring",
+        "Graphing"
+      ],
+      "learningObjectives": [
+        "Plot solubility curve.",
+        "Understand temperature effects."
+      ],
+      "teks": [
+        "112.35(c)(10)(B): Solubility."
+      ],
+      "texasStemStandards": [
+        "Data Analysis."
+      ],
+      "materialsList": [
+        {
+          "item": "Sugar",
+          "estimatedCost": "$2.00"
+        },
+        {
+          "item": "Thermometer",
+          "estimatedCost": "Reusable"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Add sugar to water at different temps.",
+          "Stir until saturated.",
+          "Weigh amount dissolved."
+        ],
+        "detailed": [
+          "Hot water holds more solid solute."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Heat water.",
+          "Add sugar until it stops dissolving.",
+          "Record amount."
+        ],
+        "detailed": [
+          "Step 1: Test at 20C, 40C, 60C.",
+          "Step 2: Add measured spoons.",
+          "Step 3: Graph spoons vs temp."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Solutions chemistry.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Solubility.",
+        "technology": "Industrial mixing.",
+        "engineering": "Chemical synthesis.",
+        "math": "Graphing.",
+        "crossCurricularLinks": [
+          "Math"
+        ]
+      },
+      "careerPathways": [
+        "Industrial Chemist",
+        "Lab Technician"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Chemical Engineering",
+        "Bachelor of Science in Chemistry"
+      ]
+    },
+    {
+      "title": "Module 23: Balloon Stoichiometry",
+      "description": "Using varied amounts of baking soda and vinegar to inflate balloons and identify the limiting reactant.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Measurement",
+        "Observation"
+      ],
+      "learningObjectives": [
+        "Identify limiting reactant.",
+        "Visualize stoichiometry."
+      ],
+      "teks": [
+        "112.35(c)(8)(E): Limiting reactants."
+      ],
+      "texasStemStandards": [
+        "Inquiry."
+      ],
+      "materialsList": [
+        {
+          "item": "Balloons",
+          "estimatedCost": "$3.00"
+        },
+        {
+          "item": "Bottles",
+          "estimatedCost": "Recycled"
+        },
+        {
+          "item": "Reactants",
+          "estimatedCost": "Reusable"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Set up 3 bottles with same vinegar.",
+          "Add increasing soda to balloons.",
+          "Mix and compare sizes."
+        ],
+        "detailed": [
+          "Eventually, balloons stop getting bigger because vinegar runs out (Limiting Reactant)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Fill balloons with 1, 2, 3 tsp soda.",
+          "Attach to vinegar bottles.",
+          "Dump soda in."
+        ],
+        "detailed": [
+          "Step 1: Prep bottles.",
+          "Step 2: Invert balloons.",
+          "Step 3: Observe which is biggest."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Stoichiometry visualization.",
+        "heaRequirements": [
+          "HEA Sec. 402E(b): Services to improve math and science literacy."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Stoichiometry.",
+        "technology": "Airbags.",
+        "engineering": "Automotive safety.",
+        "math": "Ratios.",
+        "crossCurricularLinks": [
+          "Engineering"
+        ]
+      },
+      "careerPathways": [
+        "Process Engineer",
+        "Safety Specialist"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Automotive Engineering",
+        "Bachelor of Science in Chemistry"
+      ]
+    },
+    {
+      "title": "Module 24: Boyle's Law Syringes",
+      "description": "Using a syringe and a mini marshmallow to demonstrate the inverse relationship between pressure and volume.",
+      "timeRequired": "15 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Observation"
+      ],
+      "learningObjectives": [
+        "Demonstrate Boyle's Law.",
+        "Understand pressure/volume."
+      ],
+      "teks": [
+        "112.35(c)(9)(A): Gas laws."
+      ],
+      "texasStemStandards": [
+        "Inquiry."
+      ],
+      "materialsList": [
+        {
+          "item": "Plastic Syringes (no needle)",
+          "estimatedCost": "$10.00"
+        },
+        {
+          "item": "Mini Marshmallows",
+          "estimatedCost": "$2.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Put marshmallow in syringe.",
+          "Cap tip.",
+          "Push/Pull plunger."
+        ],
+        "detailed": [
+          "Pushing (High P) -> Marshmallow shrinks (Low V).",
+          "Pulling (Low P) -> Marshmallow expands (High V)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Insert marshmallow.",
+          "Block tip with finger.",
+          "Squeeze and pull."
+        ],
+        "detailed": [
+          "Step 1: Trap air.",
+          "Step 2: Compress -> Shrink.",
+          "Step 3: Expand -> Grow."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Physics/Chem gas laws.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Gas laws.",
+        "technology": "Pneumatics.",
+        "engineering": "Hydraulics.",
+        "math": "Inverse relationships.",
+        "crossCurricularLinks": [
+          "Respiratory Therapy"
+        ]
+      },
+      "careerPathways": [
+        "Respiratory Therapist",
+        "Diver"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Respiratory Care",
+        "Bachelor of Science in Physiology"
+      ]
+    },
+    {
+      "title": "Module 25: Magic Milk - Surface Tension",
+      "description": "Using milk, food coloring, and dish soap to visualize surface tension and polarity.",
+      "timeRequired": "15 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Pipetting",
+        "Observation"
+      ],
+      "learningObjectives": [
+        "Define surface tension.",
+        "Understand surfactants."
+      ],
+      "teks": [
+        "112.35(c)(5)(C): Properties of water."
+      ],
+      "texasStemStandards": [
+        "Art in Science."
+      ],
+      "materialsList": [
+        {
+          "item": "Whole Milk",
+          "estimatedCost": "$3.00"
+        },
+        {
+          "item": "Food Coloring",
+          "estimatedCost": "Reusable"
+        },
+        {
+          "item": "Dish Soap",
+          "estimatedCost": "Reusable"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Pour milk in plate.",
+          "Add drops of color.",
+          "Touch with soapy swap."
+        ],
+        "detailed": [
+          "Soap breaks surface tension and interacts with fats, causing swirling."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Setup milk plate.",
+          "Add dye.",
+          "Touch soap to center."
+        ],
+        "detailed": [
+          "Step 1: Milk in plate.",
+          "Step 2: Dye spots.",
+          "Step 3: Soap touch -> Explosion of color."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Intermolecular forces.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Surface tension.",
+        "technology": "Detergents.",
+        "engineering": "Cleaning products.",
+        "math": "Patterns.",
+        "crossCurricularLinks": [
+          "Art"
+        ]
+      },
+      "careerPathways": [
+        "Formulation Chemist",
+        "Artist"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Chemistry",
+        "Bachelor of Fine Arts"
+      ]
+    },
+    {
+      "title": "Module 26: Water Filter Challenge",
+      "description": "Engineering a water filter using sand, gravel, and charcoal to clean 'dirty' water.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Building",
+        "Filtration"
+      ],
+      "learningObjectives": [
+        "Design filtration system.",
+        "Understand adsorption."
+      ],
+      "teks": [
+        "112.35(c)(1)(A): Safety/Conservation."
+      ],
+      "texasStemStandards": [
+        "Engineering Design Process."
+      ],
+      "materialsList": [
+        {
+          "item": "Bottles cut in half",
+          "estimatedCost": "Recycled"
+        },
+        {
+          "item": "Sand/Gravel/Charcoal",
+          "estimatedCost": "$10.00"
+        },
+        {
+          "item": "Coffee Filters",
+          "estimatedCost": "$2.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Provide materials.",
+          "Challenge students to layer them.",
+          "Test with muddy water."
+        ],
+        "detailed": [
+          "Coarse to fine layering removes particulates. Charcoal removes chemicals."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Build filter layers.",
+          "Pour dirty water.",
+          "Collect filtrate."
+        ],
+        "detailed": [
+          "Step 1: Filter paper at bottom.",
+          "Step 2: Layer charcoal, sand, gravel.",
+          "Step 3: Test."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Environmental engineering.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Filtration.",
+        "technology": "Purification.",
+        "engineering": "Civil engineering.",
+        "math": "Volume.",
+        "crossCurricularLinks": [
+          "Environmental Science"
+        ]
+      },
+      "careerPathways": [
+        "Civil Engineer",
+        "Environmental Scientist"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Environmental Engineering",
+        "Bachelor of Science in Hydrology"
+      ]
+    },
+    {
+      "title": "Module 27: Vitamin C Iodine Clock",
+      "description": "A safer version of the iodine clock reaction using Vitamin C, Iodine, and Peroxide.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Precise mixing",
+        "Timing"
+      ],
+      "learningObjectives": [
+        "Observe chemical kinetics.",
+        "Measure reaction time."
+      ],
+      "teks": [
+        "112.35(c)(8)(C): Reaction rates."
+      ],
+      "texasStemStandards": [
+        "Inquiry."
+      ],
+      "materialsList": [
+        {
+          "item": "Vitamin C tablets",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Iodine Tincture",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Peroxide/Starch",
+          "estimatedCost": "$5.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Prepare Solution A (Vit C + Iodine).",
+          "Prepare Solution B (Starch + Peroxide).",
+          "Mix and time."
+        ],
+        "detailed": [
+          "Colorless to Dark Blue instant change."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Mix liquids.",
+          "Wait.",
+          "Watch for flash."
+        ],
+        "detailed": [
+          "Step 1: Mix A and B.",
+          "Step 2: Stir.",
+          "Step 3: Record time to blue flash."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Lab Consumables"
+        ],
+        "programType": "UBMS",
+        "justification": "Kinetics lab.",
+        "heaRequirements": [
+          "HEA Sec. 402E(b): Services to improve math and science literacy."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Kinetics.",
+        "technology": "Timers.",
+        "engineering": "Process control.",
+        "math": "Time.",
+        "crossCurricularLinks": [
+          "Math"
+        ]
+      },
+      "careerPathways": [
+        "Chemist",
+        "Lab Analyst"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Chemistry",
+        "Bachelor of Science in Biochemistry"
+      ]
+    },
+    {
+      "title": "Module 28: Food Fire - Calorimetry",
+      "description": "Burning a cheese puff or nut under a water can to measure calorie content.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Flame safety",
+        "Calorimetry"
+      ],
+      "learningObjectives": [
+        "Calculate calories.",
+        "Understand energy content."
+      ],
+      "teks": [
+        "112.35(c)(11)(B): Calorimetry."
+      ],
+      "texasStemStandards": [
+        "Data Analysis."
+      ],
+      "materialsList": [
+        {
+          "item": "Soda Can",
+          "estimatedCost": "Recycled"
+        },
+        {
+          "item": "Food Sample (Nut/Chip)",
+          "estimatedCost": "$2.00"
+        },
+        {
+          "item": "Thermometer/Stand",
+          "estimatedCost": "Reusable"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Set up can with water.",
+          "Burn food under can.",
+          "Measure temp rise."
+        ],
+        "detailed": [
+          "Q = mcT. Calculate energy released by food."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Weigh food.",
+          "Burn under water.",
+          "Measure water temp change."
+        ],
+        "detailed": [
+          "Step 1: Setup calorimeter.",
+          "Step 2: Light food.",
+          "Step 3: Capture heat in water."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Thermodynamics.",
+        "heaRequirements": [
+          "HEA Sec. 402E(b): Services to improve math and science literacy."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Energy.",
+        "technology": "Calorimeters.",
+        "engineering": "Nutritional science.",
+        "math": "Energy calc.",
+        "crossCurricularLinks": [
+          "Nutrition"
+        ]
+      },
+      "careerPathways": [
+        "Food Scientist",
+        "Dietitian"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Nutrition",
+        "Bachelor of Science in Food Science"
+      ]
+    },
+    {
+      "title": "Module 29: Drying Crystals - Hydrates",
+      "description": "Heating Epsom salts to remove water of hydration and calculating the percent composition.",
+      "timeRequired": "35 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Weighing",
+        "Heating"
+      ],
+      "learningObjectives": [
+        "Determine hydrate formula.",
+        "Calculate percent composition."
+      ],
+      "teks": [
+        "112.35(c)(8)(E): Stoichiometry."
+      ],
+      "texasStemStandards": [
+        "Inquiry."
+      ],
+      "materialsList": [
+        {
+          "item": "Epsom Salt",
+          "estimatedCost": "$2.00"
+        },
+        {
+          "item": "Hot Plate/Scale",
+          "estimatedCost": "Reusable"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Weigh salt.",
+          "Heat until dry.",
+          "Weigh again."
+        ],
+        "detailed": [
+          "Mass lost is water. Calculate moles of water vs salt."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Weigh sample.",
+          "Cook.",
+          "Reweigh."
+        ],
+        "detailed": [
+          "Step 1: Record initial mass.",
+          "Step 2: Heat 10 mins.",
+          "Step 3: Record final mass."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Lab Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Quantitative analysis.",
+        "heaRequirements": [
+          "HEA Sec. 402E(b): Services to improve math and science literacy."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Hydrates.",
+        "technology": "Drying agents.",
+        "engineering": "Materials.",
+        "math": "Percentages.",
+        "crossCurricularLinks": [
+          "Geology"
+        ]
+      },
+      "careerPathways": [
+        "Analytical Chemist",
+        "Geologist"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Chemistry",
+        "Bachelor of Science in Geology"
+      ]
+    },
+    {
+      "title": "Module 30: The Pineapple Problem - Enzymes",
+      "description": "Testing the effect of bromelain enzyme in fresh vs canned pineapple on Jello setting.",
+      "timeRequired": "Overnight (Setup 20 mins)",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Observation",
+        "Experiment design"
+      ],
+      "learningObjectives": [
+        "Understand enzyme activity.",
+        "Denaturation."
+      ],
+      "teks": [
+        "112.35(c)(13)(B): Biomolecules."
+      ],
+      "texasStemStandards": [
+        "Biotech."
+      ],
+      "materialsList": [
+        {
+          "item": "Gelatin",
+          "estimatedCost": "$2.00"
+        },
+        {
+          "item": "Fresh & Canned Pineapple",
+          "estimatedCost": "$5.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Make Jello.",
+          "Add fresh fruit to one, canned to other.",
+          "Refrigerate."
+        ],
+        "detailed": [
+          "Fresh has active enzyme -> Eats protein -> Liquid Jello. Canned is cooked -> Denatured -> Solid Jello."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Prepare cups.",
+          "Add fruit.",
+          "Check next day."
+        ],
+        "detailed": [
+          "Step 1: Pour liquid Jello.",
+          "Step 2: Label Fresh vs Canned.",
+          "Step 3: Predict results."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Biochemistry.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Enzymes.",
+        "technology": "Food tech.",
+        "engineering": "Biotech.",
+        "math": "Logic.",
+        "crossCurricularLinks": [
+          "Biology"
+        ]
+      },
+      "careerPathways": [
+        "Biochemist",
+        "Food Technologist"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Biochemistry",
+        "Bachelor of Science in Food Science"
+      ]
+    },
+    {
+      "title": "Module 31: Strawberry DNA",
+      "description": "Extracting DNA from strawberries using soap and alcohol.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Filtration",
+        "Extraction"
+      ],
+      "learningObjectives": [
+        "Isolate macromolecules.",
+        "Understand cell structure."
+      ],
+      "teks": [
+        "112.35(c)(13)(A): Biomolecules."
+      ],
+      "texasStemStandards": [
+        "Biotech."
+      ],
+      "materialsList": [
+        {
+          "item": "Strawberries",
+          "estimatedCost": "$4.00"
+        },
+        {
+          "item": "Dish Soap/Salt",
+          "estimatedCost": "$2.00"
+        },
+        {
+          "item": "Rubbing Alcohol",
+          "estimatedCost": "$3.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Smash berry with soap/salt.",
+          "Filter.",
+          "Add cold alcohol."
+        ],
+        "detailed": [
+          "Soap breaks cells, Alcohol precipitates DNA."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Mash berry in bag.",
+          "Filter liquid.",
+          "Layer alcohol on top."
+        ],
+        "detailed": [
+          "Step 1: Make extraction buffer.",
+          "Step 2: Smash fruit.",
+          "Step 3: Strain.",
+          "Step 4: Pour alcohol. Spool goo."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Biotech lab.",
+        "heaRequirements": [
+          "HEA Sec. 402E(b): Services to improve math and science literacy."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Genetics.",
+        "technology": "PCR.",
+        "engineering": "Genetic engineering.",
+        "math": "Probability.",
+        "crossCurricularLinks": [
+          "Biology"
+        ]
+      },
+      "careerPathways": [
+        "Geneticist",
+        "Forensic Scientist"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Genetics",
+        "Bachelor of Science in Molecular Biology"
+      ]
+    },
+    {
+      "title": "Module 32: Saponification - Making Soap",
+      "description": "Creating soap from fat and base (Melt and Pour method for safety, or oil/lye for advanced). *Melt and pour assumed for ease.*",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Melting",
+        "Pouring"
+      ],
+      "learningObjectives": [
+        "Understand saponification.",
+        "Hydrophilic/Hydrophobic."
+      ],
+      "teks": [
+        "112.35(c)(12)(A): Organic compounds."
+      ],
+      "texasStemStandards": [
+        "Materials."
+      ],
+      "materialsList": [
+        {
+          "item": "Soap Base",
+          "estimatedCost": "$10.00"
+        },
+        {
+          "item": "Fragrance/Color",
+          "estimatedCost": "$5.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Melt base.",
+          "Add additives.",
+          "Mold."
+        ],
+        "detailed": [
+          "Discuss the chemistry of fatty acid salts."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Melt.",
+          "Mix.",
+          "Pour."
+        ],
+        "detailed": [
+          "Step 1: Microwave base.",
+          "Step 2: Add scent.",
+          "Step 3: Pour into mold."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Applied organic chemistry.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Organic chem.",
+        "technology": "Manufacturing.",
+        "engineering": "Process engineering.",
+        "math": "Ratios.",
+        "crossCurricularLinks": [
+          "History"
+        ]
+      },
+      "careerPathways": [
+        "Cosmetic Chemist",
+        "Manufacturer"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Chemistry",
+        "Bachelor of Science in Chemical Engineering"
+      ]
+    },
+    {
+      "title": "Module 33: Corrosion Control",
+      "description": "Testing different coatings (paint, oil, grease) on nails to prevent rusting.",
+      "timeRequired": "20 minutes (setup)",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Observation",
+        "Control variables"
+      ],
+      "learningObjectives": [
+        "Prevent oxidation.",
+        "Evaluate materials."
+      ],
+      "teks": [
+        "112.35(c)(11)(A): Oxidation."
+      ],
+      "texasStemStandards": [
+        "Engineering."
+      ],
+      "materialsList": [
+        {
+          "item": "Nails",
+          "estimatedCost": "$2.00"
+        },
+        {
+          "item": "Coatings (Paint, Oil)",
+          "estimatedCost": "$5.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Coat nails.",
+          "Place in salt water.",
+          "Observe over days."
+        ],
+        "detailed": [
+          "Barrier protection prevents O2 contact."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Apply coatings.",
+          "Submerge.",
+          "Record rust."
+        ],
+        "detailed": [
+          "Step 1: Label cups.",
+          "Step 2: Coat nails.",
+          "Step 3: Add water."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Materials engineering.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Corrosion.",
+        "technology": "Coatings.",
+        "engineering": "Infrastructure.",
+        "math": "Area.",
+        "crossCurricularLinks": [
+          "Engineering"
+        ]
+      },
+      "careerPathways": [
+        "Civil Engineer",
+        "Corrosion Specialist"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Civil Engineering",
+        "Bachelor of Science in Materials Science"
+      ]
+    },
+    {
+      "title": "Module 34: Antacid Potency - Buffers",
+      "description": "Titrating different antacids with vinegar to see which neutralizes the most acid.",
+      "timeRequired": "35 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Titration",
+        "Data analysis"
+      ],
+      "learningObjectives": [
+        "Compare neutralizing capacity.",
+        "Understand buffers."
+      ],
+      "teks": [
+        "112.35(c)(10)(I): Titration."
+      ],
+      "texasStemStandards": [
+        "Data Analysis."
+      ],
+      "materialsList": [
+        {
+          "item": "Various Antacids",
+          "estimatedCost": "$8.00"
+        },
+        {
+          "item": "Vinegar/Indicator",
+          "estimatedCost": "Reusable"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Crush antacids.",
+          "Add indicator.",
+          "Titrate with vinegar."
+        ],
+        "detailed": [
+          "More vinegar needed = Stronger antacid."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Dissolve pill.",
+          "Add drops of acid.",
+          "Count drops to color change."
+        ],
+        "detailed": [
+          "Step 1: Prepare pill solution.",
+          "Step 2: Add indicator.",
+          "Step 3: Add vinegar until color shifts."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Consumer chemistry.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Buffers.",
+        "technology": "Pharma.",
+        "engineering": "Drug delivery.",
+        "math": "Cost analysis.",
+        "crossCurricularLinks": [
+          "Health"
+        ]
+      },
+      "careerPathways": [
+        "Pharmacist",
+        "Consumer Safety"
+      ],
+      "collegePathways": [
+        "Doctor of Pharmacy",
+        "Bachelor of Science in Chemistry"
+      ]
+    },
+    {
+      "title": "Module 35: Mystery Powder - Forensics",
+      "description": "Identifying unknown white powders (salt, sugar, baking soda, cornstarch) using chemical tests.",
+      "timeRequired": "40 minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Deduction",
+        "Testing"
+      ],
+      "learningObjectives": [
+        "Identify unknowns.",
+        "Observe chemical properties."
+      ],
+      "teks": [
+        "112.35(c)(4)(B): Chemical properties."
+      ],
+      "texasStemStandards": [
+        "Inquiry."
+      ],
+      "materialsList": [
+        {
+          "item": "Powders",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Iodine/Vinegar",
+          "estimatedCost": "$5.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Provide knowns for testing.",
+          "Provide unknown mix.",
+          "Students identify."
+        ],
+        "detailed": [
+          "Iodine turns starch black. Vinegar fizzes soda."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Test known powders.",
+          "Make flow chart.",
+          "Test unknown."
+        ],
+        "detailed": [
+          "Step 1: Test A, B, C, D.",
+          "Step 2: Record reactions.",
+          "Step 3: Deduce Unknown X."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Forensic science.",
+        "heaRequirements": [
+          "HEA Sec. 402E(b): Services to improve math and science literacy."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Qualitative analysis.",
+        "technology": "Forensics.",
+        "engineering": "Analysis.",
+        "math": "Logic.",
+        "crossCurricularLinks": [
+          "Law"
+        ]
+      },
+      "careerPathways": [
+        "Forensic Scientist",
+        "Chemist"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Forensic Science",
+        "Bachelor of Science in Criminology"
+      ]
+    },
+    {
+      "title": "Module 36: Milk Plastic - Casein",
+      "description": "Extracting casein protein from milk using vinegar to create a moldable plastic.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Filtration",
+        "Molding"
+      ],
+      "learningObjectives": [
+        "Polymerize protein.",
+        "Separate mixtures."
+      ],
+      "teks": [
+        "112.35(c)(13)(A): Biomolecules."
+      ],
+      "texasStemStandards": [
+        "Materials."
+      ],
+      "materialsList": [
+        {
+          "item": "Milk",
+          "estimatedCost": "$3.00"
+        },
+        {
+          "item": "Vinegar",
+          "estimatedCost": "$2.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Heat milk.",
+          "Add vinegar.",
+          "Filter curds.",
+          "Mold."
+        ],
+        "detailed": [
+          "Acid denatures protein, causing coagulation."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Warm milk.",
+          "Stir in vinegar.",
+          "Strain solid.",
+          "Shape."
+        ],
+        "detailed": [
+          "Step 1: Microwave milk.",
+          "Step 2: Add vinegar.",
+          "Step 3: Strain curds.",
+          "Step 4: Dry and mold."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Green chemistry.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Polymers.",
+        "technology": "Bioplastics.",
+        "engineering": "Sustainability.",
+        "math": "Yield.",
+        "crossCurricularLinks": [
+          "Environment"
+        ]
+      },
+      "careerPathways": [
+        "Green Chemist",
+        "Materials Engineer"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Environmental Engineering",
+        "Bachelor of Science in Chemistry"
+      ]
+    },
+    {
+      "title": "Module 37: Floating Egg - Density II",
+      "description": "Changing the density of water with salt to make an egg float.",
+      "timeRequired": "20 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Measurement",
+        "Observation"
+      ],
+      "learningObjectives": [
+        "Manipulate density.",
+        "Understand buoyancy."
+      ],
+      "teks": [
+        "112.35(c)(4)(B): Density."
+      ],
+      "texasStemStandards": [
+        "Inquiry."
+      ],
+      "materialsList": [
+        {
+          "item": "Egg",
+          "estimatedCost": "$2.00"
+        },
+        {
+          "item": "Salt",
+          "estimatedCost": "$1.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Place egg in water (sinks).",
+          "Add salt until floats."
+        ],
+        "detailed": [
+          "Salt increases water density > egg density."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Put egg in cup.",
+          "Add salt.",
+          "Stir gently."
+        ],
+        "detailed": [
+          "Step 1: Fill cup.",
+          "Step 2: Add salt spoon by spoon.",
+          "Step 3: Count spoons to float."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Physical properties.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Buoyancy.",
+        "technology": "Submarines.",
+        "engineering": "Marine engineering.",
+        "math": "Density calc.",
+        "crossCurricularLinks": [
+          "Oceanography"
+        ]
+      },
+      "careerPathways": [
+        "Marine Biologist",
+        "Naval Architect"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Marine Biology",
+        "Bachelor of Science in Ocean Engineering"
+      ]
+    },
+    {
+      "title": "Module 38: Gummy Bear Osmosis",
+      "description": "Soaking gummy bears in water and salt water to observe osmosis.",
+      "timeRequired": "Overnight",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Measurement",
+        "Observation"
+      ],
+      "learningObjectives": [
+        "Define osmosis.",
+        "Hypotonic/Hypertonic."
+      ],
+      "teks": [
+        "112.35(c)(10)(C): Solutions."
+      ],
+      "texasStemStandards": [
+        "Observation."
+      ],
+      "materialsList": [
+        {
+          "item": "Gummy Bears",
+          "estimatedCost": "$3.00"
+        },
+        {
+          "item": "Salt",
+          "estimatedCost": "$1.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Set up water, salt water, and control.",
+          "Soak bears.",
+          "Compare size."
+        ],
+        "detailed": [
+          "Water = Swell (Hypotonic). Salt = Shrink (Hypertonic)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Measure bear.",
+          "Soak.",
+          "Measure again."
+        ],
+        "detailed": [
+          "Step 1: Measure length.",
+          "Step 2: Leave overnight.",
+          "Step 3: Calculate % change."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Solutions/Bio interface.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Osmosis.",
+        "technology": "Dialysis.",
+        "engineering": "Biomedical.",
+        "math": "Percentages.",
+        "crossCurricularLinks": [
+          "Biology"
+        ]
+      },
+      "careerPathways": [
+        "Biomedical Engineer",
+        "Doctor"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Biomedical Engineering",
+        "Doctor of Medicine (MD)"
+      ]
+    },
+    {
+      "title": "Module 39: Invisible Ink - Chemical Reveal",
+      "description": "Writing with lemon juice or baking soda and revealing with heat or turmeric.",
+      "timeRequired": "20 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Heating safety",
+        "Observation"
+      ],
+      "learningObjectives": [
+        "Chemical reaction revealing.",
+        "Carbonization."
+      ],
+      "teks": [
+        "112.35(c)(4)(B): Chemical change."
+      ],
+      "texasStemStandards": [
+        "Creativity."
+      ],
+      "materialsList": [
+        {
+          "item": "Lemon Juice",
+          "estimatedCost": "$2.00"
+        },
+        {
+          "item": "Cotton Swab",
+          "estimatedCost": "$1.00"
+        },
+        {
+          "item": "Heat Source",
+          "estimatedCost": "Reusable"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Write with juice.",
+          "Dry.",
+          "Heat carefully."
+        ],
+        "detailed": [
+          "Acid weakens paper, sugar caramelizes brown."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Dip swab in juice.",
+          "Write secret message.",
+          "Hold near lamp/heat."
+        ],
+        "detailed": [
+          "Step 1: Write.",
+          "Step 2: Dry completely.",
+          "Step 3: Heat to reveal."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Fun intro chemistry.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Oxidation.",
+        "technology": "Steganography.",
+        "engineering": "Security.",
+        "math": "Logic.",
+        "crossCurricularLinks": [
+          "History"
+        ]
+      },
+      "careerPathways": [
+        "Forensic Specialist",
+        "Chemist"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Chemistry",
+        "Bachelor of Arts in History"
+      ]
+    },
+    {
+      "title": "Module 40: Film Canister Rockets",
+      "description": "Using Alka-Seltzer and water in a film canister to create pressure for launch.",
+      "timeRequired": "30 minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Safety protocol",
+        "Timing"
+      ],
+      "learningObjectives": [
+        "Newton's Laws.",
+        "Gas pressure build up."
+      ],
+      "teks": [
+        "112.35(c)(9)(A): Gas pressure."
+      ],
+      "texasStemStandards": [
+        "Engineering Design."
+      ],
+      "materialsList": [
+        {
+          "item": "Film Canisters (Snap lid)",
+          "estimatedCost": "$10.00"
+        },
+        {
+          "item": "Alka-Seltzer",
+          "estimatedCost": "$5.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Go outside.",
+          "Add water and tablet.",
+          "Cap, flip, run."
+        ],
+        "detailed": [
+          "CO2 builds pressure. Cap pops off, rocket goes up (Newton's 3rd)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Fill 1/4 water.",
+          "Add 1/2 tablet.",
+          "Cap quickly.",
+          "Step back."
+        ],
+        "detailed": [
+          "Step 1: Water in canister.",
+          "Step 2: Drop tablet.",
+          "Step 3: Snap lid tight.",
+          "Step 4: Place lid down on ground."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Physics/Chem capstone.",
+        "heaRequirements": [
+          "HEA Sec. 402E(b): Services to improve math and science literacy."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(5): Instruction in laboratory science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Pressure, force.",
+        "technology": "Rocketry.",
+        "engineering": "Propulsion.",
+        "math": "Trajectory.",
+        "crossCurricularLinks": [
+          "Physics"
+        ]
+      },
+      "careerPathways": [
+        "Aerospace Engineer",
+        "Physicist"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Aerospace Engineering",
+        "Bachelor of Science in Physics"
+      ]
+    }
+  ]
+}

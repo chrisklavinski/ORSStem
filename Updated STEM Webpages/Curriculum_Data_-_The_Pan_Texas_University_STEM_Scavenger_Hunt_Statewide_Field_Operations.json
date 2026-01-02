@@ -1,0 +1,682 @@
+{
+  "curriculumTitle": "The Pan-Texas University STEM Scavenger Hunt: Statewide Field Operations",
+  "overview": "A comprehensive, field-based curriculum designed for in-person campus visits to Texas public universities, specifically tailored for TRIO Upward Bound and UBMS programs. These site-specific modules transform standard college tours into rigorous STEM data collection missions. Students engage with geographic, architectural, and research assets at UT, A&M, UH, UNT, and Texas State systems. The curriculum is fully aligned with 34 CFR Part 645 regulations regarding rigorous math/science curriculum and exposure to postsecondary education.",
+  "prerequisites": "Completion of Algebra I; basic familiarity with mobile data collection (camera/GPS); signed field trip permission slips including liability waivers compliant with 2 CFR 200.447.",
+  "targetAgeGroup": "High School (Ages 14-18)",
+  "totalDurationEstimate": "90 Minutes per Module (Site-Specific)",
+  "fieldTrips": [
+    {
+      "name": "University of Texas at Dallas (UTD) - Richardson",
+      "location": "800 W Campbell Rd, Richardson, TX 75080 (Dallas County)",
+      "description": "A high-tech campus located in the Telecom Corridor, focusing on Computer Science and Engineering.",
+      "relevanceToCurriculum": "Direct application of the 'Richardson Tech-Corridor Cipher' module."
+    },
+    {
+      "name": "University of North Texas (UNT) - Denton",
+      "location": "1155 Union Cir, Denton, TX 76203 (Accessible from Tarrant/Dallas)",
+      "description": "A major research university known for the intersection of Green Chemistry and Music Engineering.",
+      "relevanceToCurriculum": "Site for the 'Green Chemistry & Acoustics Audit' module."
+    },
+    {
+      "name": "University of Texas at Arlington (UTA)",
+      "location": "701 S Nedderman Dr, Arlington, TX 76019 (Tarrant County)",
+      "description": "A conveniently located Tier 1 research university for DFW-based TRIO programs.",
+      "relevanceToCurriculum": "Ideal location for the 'Universal Regional Campus' module focusing on Civil Engineering and Nursing."
+    },
+    {
+      "name": "Texas A&M University - College Station",
+      "location": "400 Bizzell St, College Station, TX 77843",
+      "description": "The state's land-grant flagship, focusing on Agriculture and Mechanical Engineering.",
+      "relevanceToCurriculum": "Site for the 'College Station Logistics Challenge' module."
+    }
+  ],
+  "activities": [
+    {
+      "title": "Module: UT Austin (The 40 Acres Topography Audit)",
+      "description": "A site-specific audit of the University of Texas at Austin. Students navigate the distinct elevation changes of the '40 Acres' to analyze civil engineering challenges, focusing on the Dell Medical School bridge infrastructure and the LEED Gold certified Student Activity Center.",
+      "timeRequired": "90 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Trigonometric calculation (Rise/Run)",
+        "Digital photography",
+        "Map navigation"
+      ],
+      "learningObjectives": [
+        "Calculate the 'slope percent' of the walkway leading from the stadium to the main mall.",
+        "Locate the Gates Computer Science Complex and identify the 'Bridge' connecting the North and South distinct buildings.",
+        "Photograph specific research posters in the Engineering Education and Research Center (EERC)."
+      ],
+      "teks": [
+        "130.362 (c)(6): Engineering Science - Document civil infrastructure.",
+        "111.43 (c)(3): Mathematical Models - Collect and analyze geometric data.",
+        "127.14 (c)(1): Career Preparation - Conduct site visits."
+      ],
+      "texasStemStandards": [
+        "Domain 4: Community and Industry Partnerships",
+        "Domain 6: Instruction (Experiential Learning)"
+      ],
+      "materialsList": [
+        {
+          "item": "Smartphone or Digital Camera",
+          "estimatedCost": "$0 (Student Provided)"
+        },
+        {
+          "item": "Inclinometer App",
+          "estimatedCost": "$0 (Free Download)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Define perimeter: MLK Blvd to Dean Keeton.",
+          "Brief on 'Walking Campus' topography.",
+          "Assign EERC and Turtle Pond tasks."
+        ],
+        "detailed": [
+          "Pre-Visit: Drop students at the Welcome Center. Clearly define the safety perimeter.",
+          "Briefing: Instruct students that UT Austin has significant grade changes. Accessibility and ADA compliance is the theme.",
+          "Task 1: Direct students to the EERC to photograph the exposed HVAC systems (architectural transparency).",
+          "Task 2: Have students find the Turtle Pond (Biology) and photograph the species marker."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Selfie at UT Tower.",
+          "Analyze EERC staircase.",
+          "Check PCL Library hours.",
+          "Calculate ramp slope."
+        ],
+        "detailed": [
+          "Start at the UT Tower. Take a selfie with the tower visible to timestamp your start.",
+          "Navigate to the Cockrell School of Engineering. Find the 'floating staircase' in the EERC. Estimate its load-bearing capacity.",
+          "Locate the Perry-Castañeda Library (PCL). Find the STEM tutoring floor. Photograph the operating hours.",
+          "Find a wheelchair ramp near the 'Six Pack' (South Mall). Calculate the rise-over-run. Is it 1:12 ratio compliant?",
+          "Return to the bus pickup zone on Robert Dedman Drive."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Exposure to the range of career options available",
+          "Information on postsecondary education opportunities",
+          "Mentoring (via interaction with campus tour guides)"
+        ],
+        "allowableCosts": [
+          "Transportation (2 CFR 200.475) - Charter bus to Austin.",
+          "Field Trips (2 CFR 200.453) - Educational visit.",
+          "Insurance (2 CFR 200.447) - Student travel liability."
+        ],
+        "programType": "Both",
+        "justification": "A compliant Campus Visit to a Flagship institution. The curriculum adds necessary academic rigor (Math/Science data collection) to justify the cost beyond a standard recreational tour.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Core Curriculum (Math/Science)",
+          "HEA Sec. 402C(d) - Allowable Services (Campus Visits)"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a) - Academic improvement",
+          "34 CFR 645.11(b)(1) - Postsecondary exposure"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.475 - Travel Costs",
+          "2 CFR 200.430 - Compensation for personal services (Staff time)"
+        ]
+      },
+      "stemConnections": {
+        "science": "Biology (Ecology of the Turtle Pond/Waller Creek).",
+        "technology": "Data logging via mobile devices.",
+        "engineering": "Civil Engineering (Slope/ADA compliance) and Structural Engineering (EERC).",
+        "math": "Slope calculations (rise/run) and geometric estimation.",
+        "crossCurricularLinks": [
+          "Physical Education",
+          "Civics (ADA Law)"
+        ]
+      },
+      "careerPathways": [
+        "Civil Engineer",
+        "Urban Planner",
+        "Structural Engineer",
+        "Landscape Architect"
+      ],
+      "collegePathways": [
+        "BS Civil Engineering",
+        "BS Architectural Engineering",
+        "BA Urban Studies",
+        "BS Biology"
+      ]
+    },
+    {
+      "title": "Module: Texas A&M (The College Station Logistics Challenge)",
+      "description": "A navigation-heavy module specific to the massive Texas A&M College Station campus. Students focus on Agricultural Science and Mechanical Engineering, optimizing routes between the 'West Campus' (Ag/Bio) and the 'Main Campus' (Engineering) to simulate logistics efficiency.",
+      "timeRequired": "90 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Time management",
+        "Map reading",
+        "Rate calculation"
+      ],
+      "learningObjectives": [
+        "Optimize a travel route using graph theory logic.",
+        "Identify and photograph specific agricultural research plots at the Leach Teaching Gardens.",
+        "Calculate the structural geometry of the Century Tree or Albritton Bell Tower."
+      ],
+      "teks": [
+        "130.2 (c)(4): Advanced Animal Science - Identify research facilities.",
+        "111.44 (c)(4): Advanced Quantitative Reasoning - Network and graph problems.",
+        "127.15 (c)(1): Project-Based Research - Gather field data."
+      ],
+      "texasStemStandards": [
+        "Domain 1: Equity in STEM Education",
+        "Domain 3: STEM Education and Work-Based Learning"
+      ],
+      "materialsList": [
+        {
+          "item": "Campus Map (Physical)",
+          "estimatedCost": "$0"
+        },
+        {
+          "item": "Pedometer or Step-Counter App",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Identify pedestrian tunnel.",
+          "Brief on campus size/logistics.",
+          "Challenge: Zachry Building & Leach Gardens."
+        ],
+        "detailed": [
+          "Pre-Visit: Identify the pedestrian tunnel connecting West and Main campus.",
+          "Briefing: Explain that A&M is the largest campus by acreage in Texas. Time management is the primary learning outcome.",
+          "Task 1: Challenge students to find the 'Zachry Engineering Education Complex'.",
+          "Task 2: Visit the Leach Teaching Gardens. Find a drought-resistant plant and record its Latin name."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Start at MSC (No walking on grass).",
+          "Time travel to West Campus.",
+          "Photo at Bonfire Memorial.",
+          "Photo at Nuclear Science Center."
+        ],
+        "detailed": [
+          "Start at the Memorial Student Center (MSC). Do not walk on the grass.",
+          "Navigate to the underpass connecting to West Campus. Measure the time it takes to walk from MSC to the Ag buildings.",
+          "Find the 'Bonfire Memorial'. Take a respectful photo and read the engineering history of the collapse.",
+          "Locate the Nuclear Science Center signage. Take a photo.",
+          "Return to the rendezvous point within 90 minutes."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Assistance in course selection (viewing academic buildings)",
+          "Education or counseling services designed to improve financial and economic literacy",
+          "Exposure to academic programs"
+        ],
+        "allowableCosts": [
+          "Transportation (2 CFR 200.475).",
+          "Meals (2 CFR 200.432) - Per diem or group meal allowable."
+        ],
+        "programType": "UBMS",
+        "justification": "Focuses heavily on Agricultural and Mechanical engineering locations. The navigational challenge fulfills the Math/Science rigor required for UBMS site visits.",
+        "heaRequirements": [
+          "HEA Sec. 402E(b) - UBMS focus on Math/Science",
+          "HEA Sec. 402C(e) - Field Trips"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b) - College Exposure",
+          "34 CFR 645.43(c) - Educational/Cultural Trips"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.432 - Conferences (Group meals)",
+          "2 CFR 200.475 - Travel Costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Botany (Plant identification) and Nuclear Science.",
+        "technology": "Logistics and route optimization.",
+        "engineering": "Structural engineering and Mechanical systems.",
+        "math": "Distance/Rate/Time calculations.",
+        "crossCurricularLinks": [
+          "History",
+          "Agriculture"
+        ]
+      },
+      "careerPathways": [
+        "Agricultural Engineer",
+        "Logistics Manager",
+        "Nuclear Technician",
+        "Botanist"
+      ],
+      "collegePathways": [
+        "BS Agricultural Engineering",
+        "BS Supply Chain Management",
+        "BS Nuclear Engineering",
+        "BS Plant and Environmental Soil Science"
+      ]
+    },
+    {
+      "title": "Module: University of Houston (The Third Ward Energy Circuit)",
+      "description": "Specific to the University of Houston. This module focuses on Chemical Engineering, Optometry, and Architecture. Students explore the 'Powerhouse' campus, noting its proximity to the energy corridor and analyzing mid-century modern architecture.",
+      "timeRequired": "90 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Estimation",
+        "Reading architectural plans",
+        "Data recording"
+      ],
+      "learningObjectives": [
+        "Locate the Cullen College of Engineering and identify distinct engineering disciplines.",
+        "Analyze the geometry of campus fountains for flow rate estimation.",
+        "Find the College of Optometry and identify the clinic entrance."
+      ],
+      "teks": [
+        "130.362 (c)(5): Engineering Science - Fluid power systems.",
+        "112.35 (c)(9): Chemistry - Energy transformations.",
+        "130.202 (c)(2): Medical Terminology - Health science careers."
+      ],
+      "texasStemStandards": [
+        "Domain 4: Community and Industry Partnerships",
+        "Domain 5: STEM Program Assessment"
+      ],
+      "materialsList": [
+        {
+          "item": "Smartphone",
+          "estimatedCost": "$0"
+        },
+        {
+          "item": "UH Campus App",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Drop off at Welcome Center.",
+          "Find Ezekiel Cullen Building.",
+          "Visit Student Center South for Skyline view."
+        ],
+        "detailed": [
+          "Pre-Visit: Drop off at the Welcome Center garage.",
+          "Task 1: Instruct students to find the Ezekiel Cullen building (Main Administration).",
+          "Task 2: Direct students to the Student Center South for the 'Skyline' view of downtown Houston (Urban Planning)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Start at Cullen Fountains.",
+          "Find Science Research 1.",
+          "Locate TDECU Stadium.",
+          "Find Architecture Green Roof."
+        ],
+        "detailed": [
+          "Start at the Cullen Family Plaza Fountains. Estimate the height of the water jets.",
+          "Navigate to the Science and Research 1 building. Find the 'Periodic Table' display.",
+          "Locate the TDECU Stadium. Calculate the seating capacity based on the placards.",
+          "Find the College of Architecture. Photograph the 'green roof'.",
+          "Return to the Student Center."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Exposure to the range of career options available (Petrochemical/Medical)",
+          "Information on postsecondary education opportunities",
+          "Mentoring"
+        ],
+        "allowableCosts": [
+          "Transportation (2 CFR 200.475).",
+          "Field Trips (2 CFR 200.453)."
+        ],
+        "programType": "UBMS",
+        "justification": "Emphasizes Chemical Engineering and Health Sciences (Optometry), aligning with UBMS priorities.",
+        "heaRequirements": [
+          "HEA Sec. 402E(b) - Math/Science emphasis",
+          "HEA Sec. 402C(d)(2) - Postsecondary info"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b) - Career exposure",
+          "34 CFR 645.43(a) - Transportation"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.475 - Travel Costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Chemistry and Optics.",
+        "technology": "Industrial technology.",
+        "engineering": "Petroleum and Chemical Engineering.",
+        "math": "Volume and Flow Rate estimations.",
+        "crossCurricularLinks": [
+          "Urban Planning",
+          "Art History"
+        ]
+      },
+      "careerPathways": [
+        "Petroleum Engineer",
+        "Optometrist",
+        "Chemical Engineer",
+        "Urban Planner"
+      ],
+      "collegePathways": [
+        "BS Chemical Engineering",
+        "Doctor of Optometry",
+        "BS Petroleum Engineering",
+        "B.Arch (Architecture)"
+      ]
+    },
+    {
+      "title": "Module: University of North Texas (The Green Chemistry & Acoustics Audit)",
+      "description": "Specific to UNT in Denton. This module highlights the university's dual strengths in Music (Acoustics) and Materials Science/Green Chemistry.",
+      "timeRequired": "90 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Sound level measurement (App)",
+        "Observation",
+        "Note taking"
+      ],
+      "learningObjectives": [
+        "Analyze the Murchison Performing Arts Center for acoustic isolation.",
+        "Locate the Environmental Science building to identify 'LEED' certification markers.",
+        "Identify the shuttle route to Discovery Park."
+      ],
+      "teks": [
+        "112.39 (c)(8): Physics - Waves and Sound.",
+        "130.362 (c)(7): Engineering Science - Materials Science.",
+        "112.37 (c)(9): Environmental Systems - Sustainable design."
+      ],
+      "texasStemStandards": [
+        "Domain 3: STEM Education and Work-Based Learning",
+        "Domain 6: Instruction"
+      ],
+      "materialsList": [
+        {
+          "item": "Decibel Meter App",
+          "estimatedCost": "$0"
+        },
+        {
+          "item": "Camera",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain Discovery Park vs Main Campus.",
+          "Measure noise at Music building.",
+          "Locate wind turbines."
+        ],
+        "detailed": [
+          "Pre-Visit: Note that Engineering is located at 'Discovery Park' (requires bus), while Sciences are on Main Campus.",
+          "Task 1: Have students measure ambient noise levels near the Music building vs. the Library.",
+          "Task 2: Locate the 'Mean Green' stadium wind turbines."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Measure decibels at Library Mall.",
+          "Find Life Sciences poster.",
+          "Observe Murchison roof shape.",
+          "Check Recycling station."
+        ],
+        "detailed": [
+          "Start at the Library Mall. Measure the decibel level.",
+          "Navigate to the Life Sciences Complex. Find a poster about 'Plant Biology'.",
+          "Walk to the Murchison Performing Arts Center. Observe the curved roof and explain its acoustic function.",
+          "Find a 'We Mean Green' recycling station. What items are accepted?",
+          "Return to the Union."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Exposure to the range of career options available",
+          "Information on postsecondary education opportunities",
+          "Assistance in course selection"
+        ],
+        "allowableCosts": [
+          "Transportation (2 CFR 200.475).",
+          "Field Trips (2 CFR 200.453)."
+        ],
+        "programType": "Both",
+        "justification": "UNT provides a unique intersection of Physics (Acoustics) and Environmental Science, fulfilling STEM exposure requirements.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Academic improvement",
+          "HEA Sec. 402C(d) - Mentoring"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b) - Postsecondary exposure"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics (Sound) and Environmental Science.",
+        "technology": "Audio Engineering technology.",
+        "engineering": "Materials Science.",
+        "math": "Wave function analysis (conceptual).",
+        "crossCurricularLinks": [
+          "Music",
+          "Sustainability"
+        ]
+      },
+      "careerPathways": [
+        "Acoustical Engineer",
+        "Materials Scientist",
+        "Environmental Consultant",
+        "Audio Engineer"
+      ],
+      "collegePathways": [
+        "BS Materials Science and Engineering",
+        "BM Music",
+        "BS Ecology for Environmental Science",
+        "BA Audio Engineering"
+      ]
+    },
+    {
+      "title": "Module: UT Dallas (The Richardson Tech-Corridor Cipher)",
+      "description": "Specific to UTD in Richardson. Focuses heavily on Computer Science, Robotics, and Cognitive Science. Students interact with the high-tech aesthetic of the campus and industry partners.",
+      "timeRequired": "90 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Digital literacy",
+        "Observation of automated systems",
+        "Counting/Estimation"
+      ],
+      "learningObjectives": [
+        "Identify infrastructure supporting digital industries.",
+        "Interact with autonomous food delivery robots ('Tobor').",
+        "Locate the NSERL 'Mermaid' building."
+      ],
+      "teks": [
+        "130.402 (c)(5): Computer Science I - Computing practice.",
+        "130.366 (c)(4): Aerospace Engineering - Systems thinking.",
+        "111.43 (c)(3): Mathematical Models - Geometric modeling."
+      ],
+      "texasStemStandards": [
+        "Domain 3: STEM Education and Work-Based Learning",
+        "Domain 6: Instruction"
+      ],
+      "materialsList": [
+        {
+          "item": "Smartphone with QR Code Reader",
+          "estimatedCost": "$0"
+        },
+        {
+          "item": "Stopwatch app",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Brief on 'Telecom Corridor'.",
+          "Find 'Tobor' robot.",
+          "Visit ECS complex."
+        ],
+        "detailed": [
+          "Pre-Visit: Brief students on UTD's reputation as a 'nerd-cool' campus with a heavy CS focus.",
+          "Task 1: Have students find a 'Tobor' (food robot). Observe how it navigates obstacles.",
+          "Task 2: Direct students to the ECS (Engineering/Computer Science) complex."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Selfie with Tobor robot.",
+          "Count monitors in ECS lab.",
+          "Find Atecs building poster."
+        ],
+        "detailed": [
+          "Start at the Plinth (Main Fountain).",
+          "Locate a 'Tobor' delivery robot. Take a selfie. Observe sensors (Lidar/Camera).",
+          "Navigate to the Engineering and Computer Science (ECS) building. Count the dual-monitor workstations.",
+          "Find the 'Atecs' building (Arts and Technology). Find a poster for an Animation or Game Design event.",
+          "Return to the bus near the Visitor Center."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Exposure to the range of career options available (Tech/CS)",
+          "Information on postsecondary education opportunities",
+          "Assistance in course selection"
+        ],
+        "allowableCosts": [
+          "Transportation (2 CFR 200.475).",
+          "Field Trips (2 CFR 200.453)."
+        ],
+        "programType": "UBMS",
+        "justification": "Heavily skewed toward Math and Computer Science, leveraging specific industrial connections to the telecom/tech sector.",
+        "heaRequirements": [
+          "HEA Sec. 402E(b) - Math/Science emphasis"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b) - Postsecondary exposure",
+          "34 CFR 645.43(c) - Educational trips"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Computing devices and supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics (Electricity and Magnetism).",
+        "technology": "Robotics, AI, and Network Systems.",
+        "engineering": "Software Engineering.",
+        "math": "Algorithms and Logic.",
+        "crossCurricularLinks": [
+          "Art (Digital Design)",
+          "Business"
+        ]
+      },
+      "careerPathways": [
+        "Software Developer",
+        "Robotics Engineer",
+        "Game Designer",
+        "Network Architect"
+      ],
+      "collegePathways": [
+        "BS Computer Science",
+        "BS Software Engineering",
+        "BA Arts and Technology (ATEC)",
+        "BS Cognitive Science"
+      ]
+    },
+    {
+      "title": "Module: Universal Regional Campus (The Community Resource Scan)",
+      "description": "Flexible module for regional universities (e.g., UTA, SFA, TWU, Tarleton). Emphasizes Health Sciences, Education, and regional Industry connections.",
+      "timeRequired": "60-90 Minutes",
+      "difficultyLevel": "Introductory",
+      "requiredSkills": [
+        "Information literacy",
+        "Navigation",
+        "Interviewing (optional)"
+      ],
+      "learningObjectives": [
+        "Locate the main Science or Nursing building and identify one major lab facility.",
+        "Find the Student Success Center or Trio Office.",
+        "Identify the primary industry partner of the university."
+      ],
+      "teks": [
+        "127.14 (c)(1): Career Preparation - Research postsecondary institutions.",
+        "130.362 (c)(2): Engineering Science - STEM Careers.",
+        "111.43 (c)(3): Mathematical Models - Data collection."
+      ],
+      "texasStemStandards": [
+        "Domain 4: Community and Industry Partnerships",
+        "Domain 1: Equity in STEM Education"
+      ],
+      "materialsList": [
+        {
+          "item": "Smartphone",
+          "estimatedCost": "$0"
+        },
+        {
+          "item": "Campus Map",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Customize target industry.",
+          "Send to Library STEM section.",
+          "Locate Financial Aid."
+        ],
+        "detailed": [
+          "Pre-Visit: Customize the 'Target Industry' based on the specific campus (e.g., Nursing for TWU, Space Science for UTRGV).",
+          "Task 1: Direct students to the library to find the STEM reference section.",
+          "Task 2: Locate the financial aid office."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Photograph library booking system.",
+          "List departments in Science building.",
+          "Photo of campus monument."
+        ],
+        "detailed": [
+          "Start at the Administration Building.",
+          "Navigate to the Library. Find a study room and photograph the booking system/QR code.",
+          "Locate the largest Science, Nursing, or Engineering building. Read the directory and list three departments.",
+          "Find a statute or monument unique to the campus history. Photograph it.",
+          "Return to the transport vehicle."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Information on postsecondary education opportunities",
+          "Exposure to the range of career options available",
+          "Mentoring"
+        ],
+        "allowableCosts": [
+          "Transportation (2 CFR 200.475).",
+          "Field Trips (2 CFR 200.453)."
+        ],
+        "programType": "Both",
+        "justification": "Ensures students in all regions of Texas have access to structured campus visits.",
+        "heaRequirements": [
+          "HEA Sec. 402C(d) - Postsecondary info"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a) - Academic support"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.475 - Travel Costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "General Science/Health Science.",
+        "technology": "Information Systems (Library/Admin).",
+        "engineering": "Regional Industrial Engineering.",
+        "math": "Tuition Calculation.",
+        "crossCurricularLinks": [
+          "Local History",
+          "Career Prep"
+        ]
+      },
+      "careerPathways": [
+        "Registered Nurse",
+        "Teacher",
+        "Regional Planner",
+        "Lab Technician"
+      ],
+      "collegePathways": [
+        "BS Nursing",
+        "BS Education",
+        "BS General Science",
+        "BS Business Administration"
+      ]
+    }
+  ]
+}

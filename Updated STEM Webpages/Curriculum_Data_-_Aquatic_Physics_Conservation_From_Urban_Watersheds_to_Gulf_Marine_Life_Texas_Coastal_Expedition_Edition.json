@@ -1,0 +1,602 @@
+{
+  "curriculumTitle": "Aquatic Physics & Conservation: From Urban Watersheds to Gulf Marine Life (Texas Coastal Expedition Edition)",
+  "overview": "An advanced, multi-day STEM curriculum connecting North Texas urban watersheds to the Texas Gulf Coast. This expanded modular program begins with classroom physics and local water analysis in the DFW area, followed by a residential field expedition to Galveston and Corpus Christi. Students investigate bioacoustics, fluid dynamics, and estuarine ecology, directly observing the Trinity River's termination point in Galveston Bay. This curriculum meets strict DOE TRIO compliance for summer residential components or rigorous academic field studies.",
+  "prerequisites": "Completion of Algebra I; Biology I recommended; Signed field trip liability waivers.",
+  "targetAgeGroup": "High School (Ages 15-18)",
+  "totalDurationEstimate": "3-4 Days (Includes 12 classroom hours + Overnight Field Expedition)",
+  "fieldTrips": [
+    {
+      "name": "Dallas World Aquarium (DWA)",
+      "location": "Dallas, TX (Dallas County)",
+      "description": "Initial comparative study of river vs. marine ecosystems and introduction to closed-loop life support engineering.",
+      "relevanceToCurriculum": "Serves as the baseline control group for water quality data before traveling to the actual Gulf Coast."
+    },
+    {
+      "name": "Texas A&M University at Galveston (TAMUG) & Wetlands",
+      "location": "Galveston, TX (Galveston County)",
+      "description": "Campus tour of a premier maritime university followed by a marsh ecology excursion to analyze the output of the Trinity River watershed.",
+      "relevanceToCurriculum": "Connects college access (university visit) with real-world field science (salinity gradients and estuary health)."
+    },
+    {
+      "name": "Texas State Aquarium & Wildlife Rescue Center",
+      "location": "Corpus Christi, TX (Nueces County)",
+      "description": "Behind-the-scenes engineering tour of large-scale aquatic habitats and the Sea Turtle rescue hospital.",
+      "relevanceToCurriculum": "Demonstrates the biological consequences of anthropogenic physics (boat strikes, noise pollution) studied in Module 2."
+    }
+  ],
+  "activities": [
+    {
+      "title": "Module 1: Fundamentals of Wave Physics",
+      "description": "An introductory physics lesson using physical manipulatives to understand mechanical waves. Students establish the theoretical framework for sound propagation before moving to digital applications.",
+      "timeRequired": "1.5 Hours",
+      "difficultyLevel": "Beginner/Intermediate",
+      "requiredSkills": [
+        "Observation",
+        "Conceptual modeling"
+      ],
+      "learningObjectives": [
+        "Differentiate between transverse and longitudinal waves.",
+        "Define frequency, amplitude, and wavelength.",
+        "Explain how medium density affects wave speed."
+      ],
+      "teks": [
+        "Physics 7(A): examine and describe oscillatory motion and wave propagation",
+        "IPC 5(G): explore the characteristics and behaviors of energy transferred by waves"
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Scientific Inquiry and Design"
+      ],
+      "materialsList": [
+        {
+          "item": "Slinkys (Metal and Plastic)",
+          "estimatedCost": "$30"
+        },
+        {
+          "item": "Tuning Forks set",
+          "estimatedCost": "$40"
+        },
+        {
+          "item": "Water tubs",
+          "estimatedCost": "$15"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Lecture on wave types.",
+          "Demonstrate compression/rarefaction.",
+          "Lead density discussion."
+        ],
+        "detailed": [
+          "Introduce the concept of energy transfer through media.",
+          "Use slinkys to physically demonstrate the difference between transverse waves (ocean surface) and longitudinal waves (sound).",
+          "Discuss why sound travels faster in water (denser) than air, setting the stage for the bioacoustics lab."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Visualize waves with slinkys.",
+          "Sketch wave parts.",
+          "Compare air vs. water sound."
+        ],
+        "detailed": [
+          "Work in pairs to create standing waves and identify nodes/antinodes.",
+          "Draw diagrams labeling wavelength, crest, trough, compression, and rarefaction.",
+          "Test tuning forks in air versus dipping them in water tubs to observe energy transfer efficiency."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science",
+          "Instruction in Mathematics"
+        ],
+        "allowableCosts": [
+          "Instructional supplies (2 CFR 200.453)"
+        ],
+        "programType": "Both",
+        "justification": "Foundation for rigorous lab science component. Essential for understanding subsequent bioacoustics modules.",
+        "heaRequirements": [
+          "Section 402C: Instruction in laboratory science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1): Curriculum must include laboratory science"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403: Costs must be necessary and reasonable"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics (mechanics/waves).",
+        "technology": "N/A",
+        "engineering": "N/A",
+        "math": "Geometry of waves."
+      },
+      "careerPathways": [
+        "Physicist",
+        "Seismologist"
+      ],
+      "collegePathways": [
+        "BS Physics",
+        "BS Geophysics"
+      ]
+    },
+    {
+      "title": "Module 2: Digital Bioacoustics Laboratory",
+      "description": "A computer-based lab where students apply physics concepts to biological contexts. Students use software to analyze dolphin vocalizations and calculate echolocation distances.",
+      "timeRequired": "1.5 Hours",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Algebraic manipulation",
+        "Computer literacy",
+        "Scientific notation"
+      ],
+      "learningObjectives": [
+        "Analyze spectrograms of marine mammal vocalizations.",
+        "Calculate distance using time-delay of sound (d=vt/2).",
+        "Evaluate the impact of anthropogenic noise on specific frequencies."
+      ],
+      "teks": [
+        "Physics 7(B): investigate and analyze characteristics of waves including velocity, frequency, amplitude",
+        "Biology 10(A): describe interactions among systems (sensory/nervous)"
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Technology Integration"
+      ],
+      "materialsList": [
+        {
+          "item": "Virtual Oscilloscope/Spectrogram Software (Audacity)",
+          "estimatedCost": "$0"
+        },
+        {
+          "item": "Hydrophone Audio Files (NOAA)",
+          "estimatedCost": "$0"
+        },
+        {
+          "item": "Headphones",
+          "estimatedCost": "$0 (Student Provided)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain echolocation anatomy.",
+          "Demo software.",
+          "Assign calculation problems."
+        ],
+        "detailed": [
+          "Present the anatomy of the dolphin melon (lens) and jawbone (receiver).",
+          "Demonstrate how to load audio files into Audacity and identify 'clicks' vs 'whistles' on the spectrogram.",
+          "Guide students through the calculation: if sound in seawater is 1500 m/s and the echo returns in 0.05s, how far is the prey?"
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Analyze audio files.",
+          "Calculate target distance.",
+          "Identify noise pollution."
+        ],
+        "detailed": [
+          "Load the provided NOAA hydrophone files.",
+          "Measure the time interval between a click and its echo using the software cursor.",
+          "Calculate distances to 'virtual prey'.",
+          "Overlay boat motor sounds and identify which dolphin frequencies are masked (obscured) by the noise."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science",
+          "Instruction in Mathematics",
+          "Exposure to STEM technology"
+        ],
+        "allowableCosts": [
+          "Computer lab usage (Allocable indirect cost)"
+        ],
+        "programType": "UBMS",
+        "justification": "High-quality lab experience utilizing technology to simulate field research, directly supporting UBMS goals of technology proficiency.",
+        "heaRequirements": [
+          "Section 402C: Instruction in mathematics and laboratory science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1): Laboratory science",
+          "34 CFR 645.11(b)(2): Mathematics"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.405: Allocable costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Marine Biology, Acoustics.",
+        "technology": "Digital Signal Processing.",
+        "engineering": "Sonar systems.",
+        "math": "Algebra (Distance/Rate/Time)."
+      },
+      "careerPathways": [
+        "Acoustical Engineer",
+        "Marine Biologist",
+        "Naval Architect"
+      ],
+      "collegePathways": [
+        "BS Ocean Engineering",
+        "BS Marine Biology",
+        "BS Computer Science"
+      ]
+    },
+    {
+      "title": "Module 3: TAMUG Estuary Analysis (Galveston Field Lab)",
+      "description": "On-site analysis at Galveston Island State Park or TAMUG wetlands. Students collect water samples to measure salinity gradients where the Trinity River meets the Gulf.",
+      "timeRequired": "3 Hours",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Field safety",
+        "Measurement accuracy"
+      ],
+      "learningObjectives": [
+        "Measure salinity, pH, and dissolved oxygen using field probes.",
+        "Correlate water density with salinity levels.",
+        "Identify halophytic plant adaptations."
+      ],
+      "teks": [
+        "Aquatic Science 10(A): identify sources and effects of water pollutants",
+        "Environmental Systems 9(A): identify physical/chemical changes in ecosystems"
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Environmental Literacy"
+      ],
+      "materialsList": [
+        {
+          "item": "Refractometers",
+          "estimatedCost": "$40"
+        },
+        {
+          "item": "Water Quality Test Kits",
+          "estimatedCost": "$50"
+        },
+        {
+          "item": "Waders/Boots",
+          "estimatedCost": "$100"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Safety briefing.",
+          "Distribute refractometers.",
+          "Supervise transect sampling."
+        ],
+        "detailed": [
+          "Explain the safety protocols for marsh walking (stingray shuffle).",
+          "Demonstrate how to use a refractometer to read specific gravity/salinity.",
+          "Assign groups to different distances from the shore to measure the salinity gradient."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Collect water samples.",
+          "Record chemical data.",
+          "Observe plant life."
+        ],
+        "detailed": [
+          "Collect water samples at 5-meter intervals moving away from the freshwater inflow source.",
+          "Test and record pH, temperature, and salinity for each sample.",
+          "Sketch distinct plant zones and hypothesize how salinity affects their distribution."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science",
+          "Exposure to College Campuses (TAMUG)"
+        ],
+        "allowableCosts": [
+          "Field Trip Transportation (2 CFR 200.474)",
+          "Entrance Fees"
+        ],
+        "programType": "Both",
+        "justification": "Combines rigorous field science with a university visit (TAMUG), satisfying both academic and college-going culture requirements.",
+        "heaRequirements": [
+          "Section 402C: Exposure to college campuses",
+          "Section 402C: Instruction in science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(c): Summer instructional component",
+          "34 CFR 645.40: Educational field trips"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.474: Travel costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Chemistry, Ecology.",
+        "technology": "Field Sensors.",
+        "engineering": "N/A",
+        "math": "Data collection/Graphing."
+      },
+      "careerPathways": [
+        "Hydrologist",
+        "Wetlands Ecologist",
+        "Environmental Technician"
+      ],
+      "collegePathways": [
+        "BS Marine Sciences",
+        "BS Environmental Chemistry",
+        "BS Coastal Management"
+      ]
+    },
+    {
+      "title": "Module 4: Corpus Christi Rehabilitation Engineering",
+      "description": "A visit to the Texas State Aquarium Wildlife Rescue Center to study the intersection of physics (boat strikes, entanglement) and biology (rehabilitation).",
+      "timeRequired": "4 Hours",
+      "difficultyLevel": "All Levels",
+      "requiredSkills": [
+        "Empathy",
+        "Systems thinking"
+      ],
+      "learningObjectives": [
+        "Analyze x-rays of sea turtles to identify anthropogenic trauma.",
+        "Understand the engineering behind life-support filtration systems.",
+        "Discuss the physics of buoyancy disorders in injured turtles."
+      ],
+      "teks": [
+        "Aquatic Science 12(B): describe the role of human activities in aquatic species decline",
+        "Physics 4(B): describe and analyze motion in one dimension (force/impact)"
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Social Responsibility"
+      ],
+      "materialsList": [
+        {
+          "item": "Admission Tickets (TSA)",
+          "estimatedCost": "$20-$30 per student"
+        },
+        {
+          "item": "Bus Charter (Overnight)",
+          "estimatedCost": "$2500+"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Tour Rescue Center.",
+          "Discussion on buoyancy.",
+          "Review filtration engineering."
+        ],
+        "detailed": [
+          "Guide students through the rescue center viewing areas.",
+          "Discuss 'Bubble Butt' syndrome in turtles (trapped gas affecting buoyancy) and how weights are used (physics) to counteract it.",
+          "Have students interview an aquarist or vet tech about their daily routine."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Observe turtle treatments.",
+          "Diagram buoyancy aids.",
+          "Career interview."
+        ],
+        "detailed": [
+          "Take notes on specific injuries listed on patient charts (e.g., boat strike, hook ingestion).",
+          "Draw a free-body diagram representing a floating turtle and the force vectors of gravity vs. buoyancy.",
+          "Ask a staff member about the college degree required for their specific role."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Career exploration",
+          "Instruction in Science"
+        ],
+        "allowableCosts": [
+          "Travel/Per Diem (2 CFR 200.474)",
+          "Admission fees"
+        ],
+        "programType": "Both",
+        "justification": "Provides direct career exposure to veterinary and marine science fields while reinforcing physics concepts in a real-world setting.",
+        "heaRequirements": [
+          "Section 402C: Career awareness",
+          "Section 402C: Cultural enrichment"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(6): Career counseling/exploration"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.474: Commercial carrier travel costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Veterinary Science, Anatomy.",
+        "technology": "Medical Imaging (X-ray/CT).",
+        "engineering": "Biomedical Engineering.",
+        "math": "Dosage calculations."
+      },
+      "careerPathways": [
+        "Veterinarian",
+        "Aquarium Life Support Technician",
+        "Marine Mammal Trainer"
+      ],
+      "collegePathways": [
+        "DVM (Doctor of Veterinary Medicine)",
+        "BS Zoology",
+        "BS Biomedical Science"
+      ]
+    },
+    {
+      "title": "Module 5: Statistical Modeling (Mark-Recapture)",
+      "description": "Post-trip math workshop. Students use the Lincoln-Petersen index to estimate population sizes, using data collected from the field trip (simulated) or provided datasets.",
+      "timeRequired": "1.5 Hours",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Algebra",
+        "Spreadsheet software"
+      ],
+      "learningObjectives": [
+        "Apply the Lincoln-Petersen index formula (N = (M*C) / R).",
+        "Calculate percent error and standard deviation.",
+        "Interpret data validity."
+      ],
+      "teks": [
+        "Statistics 2(C): analyze data by calculating measures of center and spread",
+        "Math Models M.1(A): use mathematical modeling to solve problems"
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Computational Thinking"
+      ],
+      "materialsList": [
+        {
+          "item": "Computer Lab with Excel/Sheets",
+          "estimatedCost": "$0"
+        },
+        {
+          "item": "Bean/Bead simulation kits",
+          "estimatedCost": "$10"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Teach the formula.",
+          "Guide Excel setup.",
+          "Analyze field data."
+        ],
+        "detailed": [
+          "Introduce the problem: 'How do we count fish in the ocean if we can't see them all?'",
+          "Teach the Formula: N = (Marked First Catch * Total Second Catch) / Recaptured Marked.",
+          "Have students input data observed during the Galveston seine netting activity (simulated recapture)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Learn the equation.",
+          "Build Excel model.",
+          "Estimate populations."
+        ],
+        "detailed": [
+          "Set up an Excel sheet with columns for M, C, R, and N.",
+          "Use the formula to calculate the population of specific fish species.",
+          "Discuss how the 'Open System' of the Gulf Coast complicates this formula compared to a 'Closed System' like an aquarium tank."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Tutoring"
+        ],
+        "allowableCosts": [
+          "Educational software/supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "Specific instruction in higher-level mathematics (Statistics) and technology (Excel), satisfying core UBMS requirements.",
+        "heaRequirements": [
+          "Section 402C: Instruction in mathematics"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(2): Instruction in mathematics"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies"
+        ]
+      },
+      "stemConnections": {
+        "science": "Population Ecology.",
+        "technology": "Data analysis software.",
+        "engineering": "N/A",
+        "math": "Statistics, Probability."
+      },
+      "careerPathways": [
+        "Data Scientist",
+        "Statistician",
+        "Fisheries Manager"
+      ],
+      "collegePathways": [
+        "BS Statistics",
+        "BS Mathematics",
+        "BS Data Science"
+      ]
+    },
+    {
+      "title": "Module 6: Capstone - The Trinity Connection",
+      "description": "Students synthesize their knowledge of physics, biology, and pollution to design a solution for the Trinity River watershed, linking local Dallas urban runoff to the health of the Galveston/Corpus ecosystems they visited.",
+      "timeRequired": "2 Hours",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Critical thinking",
+        "Design thinking"
+      ],
+      "learningObjectives": [
+        "Trace watershed pathways using GIS/Maps.",
+        "Design a physical or policy intervention for pollution.",
+        "Present a scientific argument based on field trip observations."
+      ],
+      "teks": [
+        "Environmental Systems 9(E): evaluate the effect of human activities on aquatic ecosystems",
+        "Scientific Research and Design 3(A): analyze and evaluate scientific explanations"
+      ],
+      "texasStemStandards": [
+        "STEM Framework: Social Responsibility",
+        "STEM Framework: Design Process"
+      ],
+      "materialsList": [
+        {
+          "item": "Poster paper / markers",
+          "estimatedCost": "$20"
+        },
+        {
+          "item": "Google Earth (Digital)",
+          "estimatedCost": "$0"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Map the Trinity River.",
+          "Define the problem.",
+          "Evaluate presentations."
+        ],
+        "detailed": [
+          "Show the path from Dallas (Trinity River) -> Lake Livingston -> Galveston Bay -> Gulf of Mexico.",
+          "Remind students of the water quality tests they performed in Galveston.",
+          "Challenge students to design a 'Trash Trap' or a legislative policy to stop plastic at the source (Dallas) before it reaches the turtles in Corpus."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Trace the water flow.",
+          "Brainstorm solutions.",
+          "Present prototype."
+        ],
+        "detailed": [
+          "Use Google Earth to find the nearest storm drain to the school and trace where it empties.",
+          "Design a device (draw/model) that uses buoyancy or nets to catch trash without harming fish.",
+          "Present the design to the class, referencing the specific animals seen at the Rescue Center."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science",
+          "Exposure to STEM careers (Environmental Engineering)"
+        ],
+        "allowableCosts": [
+          "Project supplies"
+        ],
+        "programType": "Both",
+        "justification": "Synthesizes the curriculum into a practical application, demonstrating the 'Engineering' in STEM and fostering critical thinking skills.",
+        "heaRequirements": [
+          "Section 402C: Instruction in science",
+          "Section 402C: Academic advice"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(1): Laboratory science (Application)"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403: Necessary costs"
+        ]
+      },
+      "stemConnections": {
+        "science": "Environmental Science.",
+        "technology": "GIS Mapping.",
+        "engineering": "Civil/Environmental Engineering.",
+        "math": "N/A"
+      },
+      "careerPathways": [
+        "Environmental Engineer",
+        "Urban Planner",
+        "Hydrologist"
+      ],
+      "collegePathways": [
+        "BS Environmental Engineering",
+        "BS Geography/GIS",
+        "BS Public Policy"
+      ]
+    }
+  ]
+}

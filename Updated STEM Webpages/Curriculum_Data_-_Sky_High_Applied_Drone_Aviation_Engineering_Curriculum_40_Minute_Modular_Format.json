@@ -1,0 +1,718 @@
+{
+  "curriculumTitle": "Sky High: Applied Drone Aviation & Engineering Curriculum (40-Minute Modular Format)",
+  "overview": "A refined, modular STEM curriculum adapted for 40-minute instructional blocks, specifically designed for DOE TRIO programs in Texas. This course guides High School students from novice pilots to drone engineers through physics, Python coding, and mathematical application. It is strictly aligned with Texas TEKS, Texas STEM Frameworks, and DOE TRIO allowable services/costs, making it suitable for after-school, Saturday, or summer academy schedules in the DFW area.",
+  "prerequisites": "Basic Algebra I proficiency; familiarity with Cartesian coordinate systems. No prior aviation or coding experience required.",
+  "targetAgeGroup": "High School (Ages 14-18)",
+  "totalDurationEstimate": "25-30 Hours (Broken into 40-minute blocks)",
+  "fieldTrips": [
+    {
+      "name": "Hillwood AllianceTexas Mobility Innovation Zone (MIZ)",
+      "location": "Fort Worth, TX (Tarrant County)",
+      "description": "A tour of the cutting-edge testing ground for aerial and surface mobility technology, observing commercial drone delivery testing and autonomous logistics.",
+      "relevanceToCurriculum": "Demonstrates real-world application of autonomous flight coding and logistics math discussed in Sessions 5, 6, 9, and 10."
+    },
+    {
+      "name": "Bell Flight Experience Center",
+      "location": "Fort Worth, TX (Tarrant County)",
+      "description": "An interactive facility showcasing vertical lift technology, including tiltrotor aircraft and future urban air mobility concepts.",
+      "relevanceToCurriculum": "Directly reinforces the 'Physics of Flight' (Session 1) and 'Engineering Design' (Session 7) by showing industrial application of vertical lift aerodynamics."
+    },
+    {
+      "name": "Frontiers of Flight Museum",
+      "location": "Dallas, TX (Dallas County)",
+      "description": "A comprehensive aviation museum featuring history, rocketry, and STEM education labs focused on aerodynamics.",
+      "relevanceToCurriculum": "Provides historical context to the aerodynamic principles learned in Session 1 and offers exposure to varying aerospace careers."
+    }
+  ],
+  "activities": [
+    {
+      "title": "Session 1: The Physics of Flight & FAA Regulations",
+      "description": "An introductory classroom session focusing on the four forces of flight and the legal requirements for recreational flyers.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Basic Algebra",
+        "Reading Comprehension"
+      ],
+      "learningObjectives": [
+        "Identify and explain Lift, Weight, Thrust, and Drag.",
+        "Understand FAA safety guidelines and the TRUST exam requirements.",
+        "Calculate the thrust-to-weight ratio necessary for takeoff."
+      ],
+      "teks": [
+        "Physics 112.39(c)(4)(A): Generate and interpret graphs describing motion.",
+        "CTE 130.402(c)(8)(A): Identify and describe the forces of flight."
+      ],
+      "texasStemStandards": [
+        "STEM Framework Strategy 2: Project-Based Learning"
+      ],
+      "materialsList": [
+        {
+          "item": "Digital Scales",
+          "estimatedCost": "$15.00 each"
+        },
+        {
+          "item": "Demonstration Drone (Propellers removed for safety)",
+          "estimatedCost": "$0 (Use inventory)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Lecture on Newton's 3rd Law (10 min).",
+          "Review FAA rules (15 min).",
+          "Lab: Weigh drone and calculate thrust (15 min)."
+        ],
+        "detailed": [
+          "Minute 0-10: Lecture on Newton’s Third Law and propeller physics. Use the demo drone to show angle of attack.",
+          "Minute 10-25: Review FAA 'Recreational Flyer' rules and TRUST exam sample questions. Emphasize airspace safety.",
+          "Minute 25-40: Have students weigh the drone in grams, convert to Newtons, and calculate required thrust (>1.0 ratio)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Draw free-body diagram.",
+          "Weigh drone.",
+          "Take safety quiz."
+        ],
+        "detailed": [
+          "Draw a free-body diagram showing the four forces (Lift vs. Weight, Thrust vs. Drag).",
+          "Weigh the drone to find the Force of Gravity (Weight) in Newtons.",
+          "Complete the practice FAA safety quiz to ensure understanding of legal flying zones."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science",
+          "Instruction in Literature/Composition (Regulatory Reading)"
+        ],
+        "allowableCosts": [
+          "Educational Supplies (Scales)"
+        ],
+        "programType": "Both",
+        "justification": "Provides rigorous laboratory science instruction regarding physics and aerodynamics, a required service for UBMS.",
+        "heaRequirements": [
+          "Sec. 402C(b) (UB Required Services): Academic instruction in science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1): Instruction in reading, writing, study skills, mathematics, laboratory science...",
+          "34 CFR 645.11(b)(1): Exposure to academic programs and careers."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs, including computing devices."
+        ]
+      },
+      "stemConnections": {
+        "science": "Newtonian Physics",
+        "technology": "UAS Regulation",
+        "engineering": "Aerodynamics",
+        "math": "Algebraic Force Calculation",
+        "crossCurricularLinks": [
+          "Civics/Law",
+          "Reading Comprehension"
+        ]
+      },
+      "careerPathways": [
+        "Aerospace Engineer",
+        "Commercial Drone Pilot (Part 107)",
+        "Aviation Safety Inspector"
+      ],
+      "collegePathways": [
+        "BS in Aerospace Engineering",
+        "BS in Aviation Management",
+        "BS in Physics"
+      ]
+    },
+    {
+      "title": "Session 2-3: Flight Boot Camp (Manual Control)",
+      "description": "A double-block lab session where students master manual flight controls through specific safety drills and maneuvers.",
+      "timeRequired": "80 Minutes (2 Sessions)",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Hand-Eye Coordination",
+        "Spatial Awareness"
+      ],
+      "learningObjectives": [
+        "Demonstrate mastery of roll, pitch, yaw, and throttle.",
+        "Execute a 4-point box maneuver maintaining constant altitude.",
+        "Perform emergency landing procedures."
+      ],
+      "teks": [
+        "Physics 112.39(c)(4)(C): Analyze accelerated motion in two dimensions.",
+        "CTE 130.402(c)(10)(B): Demonstrate use of precision instruments."
+      ],
+      "texasStemStandards": [
+        "STEM Fluency Skill: Critical Thinking and Problem Solving"
+      ],
+      "materialsList": [
+        {
+          "item": "Micro Drones (e.g., Tello)",
+          "estimatedCost": "$100 - $130 per unit"
+        },
+        {
+          "item": "Safety Goggles",
+          "estimatedCost": "$5.00 per pair"
+        },
+        {
+          "item": "Hula Hoops (Obstacles)",
+          "estimatedCost": "$30.00 total"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Session 2: Hover drills and safety checks.",
+          "Session 3: Lateral movement and Box Pattern test."
+        ],
+        "detailed": [
+          "Session 2 (0-40): Demonstrate pre-flight checklist. Conduct 'Hover Drills' (waist height only). Ensure students keep tails-in orientation.",
+          "Session 3 (40-80): Introduce lateral movement (Roll). Guide students through the 'Box Pattern' drill: Forward, Right, Back, Left."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Pre-flight checklist.",
+          "Hover practice.",
+          "Box Pattern flight.",
+          "Log flight time."
+        ],
+        "detailed": [
+          "Complete pre-flight checklist (props secure, battery charged).",
+          "Practice 'Throttle only' to maintain steady hover at waist height.",
+          "Fly the 'Box Pattern': Forward 1m, Right 1m, Back 1m, Left 1m.",
+          "Log flight time and battery voltage usage in flight journal."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science",
+          "Exposure to STEM Careers"
+        ],
+        "allowableCosts": [
+          "Equipment (Drones <$5k/unit)",
+          "Safety Equipment"
+        ],
+        "programType": "UBMS",
+        "justification": "Hands-on laboratory science experience reinforcing physics concepts of motion and control.",
+        "heaRequirements": [
+          "Sec. 402C(b): Instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1): Laboratory science instruction.",
+          "34 CFR 645.12: Upward Bound Math and Science projects must provide intensive instruction in math and science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.313: Equipment (management and control)."
+        ]
+      },
+      "stemConnections": {
+        "science": "Kinematics",
+        "technology": "Pilot Interface Operation",
+        "engineering": "Flight Systems",
+        "math": "Spatial Reasoning",
+        "crossCurricularLinks": [
+          "Physical Education (Hand-eye coordination)"
+        ]
+      },
+      "careerPathways": [
+        "Remote Pilot in Command",
+        "Cinematographer",
+        "Emergency First Responder (Drone Unit)"
+      ],
+      "collegePathways": [
+        "AAS in Unmanned Aircraft Systems",
+        "BS in Criminal Justice",
+        "BFA in Film/Media Arts"
+      ]
+    },
+    {
+      "title": "Session 4: Introduction to Drone Coding (Python/Blocks)",
+      "description": "Students transition from manual flight to computational thinking, mapping the 3D coordinate plane to code commands.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Typing",
+        "Logic"
+      ],
+      "learningObjectives": [
+        "Apply geometric concepts (X, Y, Z axes) to drone navigation.",
+        "Write a basic flight script: Takeoff, Hover, Land.",
+        "Understand the difference between open-loop and closed-loop control."
+      ],
+      "teks": [
+        "CompSci 126.33(c)(5)(A): Develop algorithms to solve a problem.",
+        "Geometry 111.41(c)(3)(A): Describe transformations in a plane."
+      ],
+      "texasStemStandards": [
+        "STEM Fluency Skill: Computational Thinking"
+      ],
+      "materialsList": [
+        {
+          "item": "Laptops/Chromebooks",
+          "estimatedCost": "$0 (Program Inventory)"
+        },
+        {
+          "item": "Drone Coding Software",
+          "estimatedCost": "$0 - $150 (License)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain 3D coordinates (15 min).",
+          "Show IDE commands (15 min).",
+          "Students write 'Hello World' flight (10 min)."
+        ],
+        "detailed": [
+          "Minute 0-15: Teach the coordinate plane relative to the drone (Pitch=Y, Roll=X, Throttle=Z). Use physical hand gestures.",
+          "Minute 15-30: Demonstrate basic commands in the IDE/Python interface (e.g., drone.takeoff()).",
+          "Minute 30-40: Students write their first 'Hello World' flight script (Takeoff > Sleep(5) > Land)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Launch coding app.",
+          "Map X/Y/Z axes.",
+          "Write Takeoff/Land script.",
+          "Simulate."
+        ],
+        "detailed": [
+          "Open the coding interface and connect to the simulator.",
+          "Map out the X (Left/Right), Y (Forward/Back), and Z (Up/Down) directions.",
+          "Write a script to: Takeoff, Sleep(5), Land.",
+          "Simulate the code before executing on hardware."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Instruction in Computer Science"
+        ],
+        "allowableCosts": [
+          "Computer Software/Licensing",
+          "Instructional Staff"
+        ],
+        "programType": "Both",
+        "justification": "Explicit instruction in Mathematics (Geometry) and Computer Science, fulfilling core curriculum requirements.",
+        "heaRequirements": [
+          "Sec. 402C(b): Instruction in mathematics."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1): Instruction in mathematics.",
+          "34 CFR 645.11(b)(6): Instruction in alternative education programs (computer science)."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.454: Memberships, subscriptions, and professional activity costs (Software licenses)."
+        ]
+      },
+      "stemConnections": {
+        "science": "Logic",
+        "technology": "Algorithms",
+        "engineering": "Software Engineering",
+        "math": "Coordinate Geometry",
+        "crossCurricularLinks": [
+          "Language Arts (Technical Writing)"
+        ]
+      },
+      "careerPathways": [
+        "Software Developer",
+        "Avionics Technician",
+        "Systems Integrator"
+      ],
+      "collegePathways": [
+        "BS in Computer Science",
+        "BS in Electrical Engineering",
+        "BS in Mathematics"
+      ]
+    },
+    {
+      "title": "Session 5-6: The Autonomous Maze Challenge",
+      "description": "A double-block session where students measure a physical environment and write code to navigate it without human intervention.",
+      "timeRequired": "80 Minutes (2 Sessions)",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Measurement",
+        "Debugging"
+      ],
+      "learningObjectives": [
+        "Utilize loops and variables to automate flight paths.",
+        "Measure physical distances and convert to code parameters.",
+        "Debug code by analyzing flight failures."
+      ],
+      "teks": [
+        "Math 111.41(c)(11)(A): Apply formulas for area/distance.",
+        "CTE 130.402(c)(10)(B): Precision measurement."
+      ],
+      "texasStemStandards": [
+        "STEM Framework Strategy 3: Technology Integration"
+      ],
+      "materialsList": [
+        {
+          "item": "Tape (Floor marking)",
+          "estimatedCost": "$10.00"
+        },
+        {
+          "item": "Measuring Tapes",
+          "estimatedCost": "$5.00 each"
+        },
+        {
+          "item": "Drones & Laptops",
+          "estimatedCost": "Inventory"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Session 5: Layout maze, measure, pseudocode.",
+          "Session 6: Code input, testing, debugging, final run."
+        ],
+        "detailed": [
+          "Session 5 (0-40): Layout floor maze using tape. Have students measure distances in centimeters and 'pseudocode' the path on paper.",
+          "Session 6 (40-80): Students input code, test flights, adjust parameters (debugging) for drift, and run for final success."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Map the course.",
+          "Convert cm to code.",
+          "Write script with loops.",
+          "Test and fix."
+        ],
+        "detailed": [
+          "Map the obstacle course on graph paper.",
+          "Calculate distances (cm) and rotations (degrees) needed.",
+          "Write the script using loops for repetitive movements (e.g., 'for i in range(4)').",
+          "Run the code; if it crashes, measure the error and adjust the values."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Exposure to Technology Careers"
+        ],
+        "allowableCosts": [
+          "Educational Supplies",
+          "Instructor Salary"
+        ],
+        "programType": "Both",
+        "justification": "Applies geometry and measurement standards in a technology-rich environment.",
+        "heaRequirements": [
+          "Sec. 402C(b): Instruction in mathematics."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1): Instruction in mathematics.",
+          "34 CFR 645.11(b)(1): Exposure to academic programs and careers."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.430: Compensation - personal services (Instructional staff)."
+        ]
+      },
+      "stemConnections": {
+        "science": "Scientific Method (Trial/Error)",
+        "technology": "Autonomous Systems",
+        "engineering": "Control Systems",
+        "math": "Geometry/Measurement",
+        "crossCurricularLinks": [
+          "Cartography/Geography"
+        ]
+      },
+      "careerPathways": [
+        "Robotics Engineer",
+        "Land Surveyor",
+        "GIS Technician"
+      ],
+      "collegePathways": [
+        "BS in Robotics Engineering",
+        "BS in Geography/GIS",
+        "BS in Civil Engineering"
+      ]
+    },
+    {
+      "title": "Session 7: Payload Engineering - Design & Prototype",
+      "description": "Students apply the engineering design process to create a hook or basket mechanism for the drone.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Fine Motor Skills",
+        "Design Thinking"
+      ],
+      "learningObjectives": [
+        "Apply the Engineering Design Process (Ask, Imagine, Plan).",
+        "Analyze Center of Gravity (CG) issues."
+      ],
+      "teks": [
+        "CTE 130.362(c)(6)(D): Develop a prototype using available materials.",
+        "Physics 112.39(c)(4)(D): Calculate the effect of forces."
+      ],
+      "texasStemStandards": [
+        "STEM Fluency Skill: Creativity and Innovation"
+      ],
+      "materialsList": [
+        {
+          "item": "Craft Supplies (Balsa, wire, tape)",
+          "estimatedCost": "$50.00"
+        },
+        {
+          "item": "Small Weights",
+          "estimatedCost": "$20.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Explain payload scenario and CG (10 min).",
+          "Sketch and Build (20 min).",
+          "Fit-check (10 min)."
+        ],
+        "detailed": [
+          "Minute 0-10: Explain the problem (Search & Rescue Delivery) and Center of Gravity constraints. Show examples of unbalanced loads.",
+          "Minute 10-30: Students sketch designs and build rapid prototypes using craft materials.",
+          "Minute 30-40: Initial fit-check on drones (no flight yet). Check for sensor blockage."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Sketch design.",
+          "Check sensor clearance.",
+          "Build lightweight prototype."
+        ],
+        "detailed": [
+          "Sketch a lightweight carrier design.",
+          "Ensure the design does not block the downward sensors or interfere with props.",
+          "Build the prototype using minimal material to save weight."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science",
+          "Mentoring (Engineering)"
+        ],
+        "allowableCosts": [
+          "Project Supplies (Consumables)",
+          "Tutors/Mentors"
+        ],
+        "programType": "UBMS",
+        "justification": "Pure engineering lab activity aligning with UBMS goals for postsecondary engineering preparation.",
+        "heaRequirements": [
+          "Sec. 402C(b): Instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b)(5): Mentoring programs involving elementary or secondary school teachers or other qualified individuals.",
+          "34 CFR 645.11(a)(1): Laboratory science instruction."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies (Consumables)."
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics (Gravity)",
+        "technology": "Prototyping",
+        "engineering": "Structural Engineering",
+        "math": "Measurement",
+        "crossCurricularLinks": [
+          "Art (Design)"
+        ]
+      },
+      "careerPathways": [
+        "Mechanical Engineer",
+        "Industrial Designer",
+        "Packaging Engineer"
+      ],
+      "collegePathways": [
+        "BS in Mechanical Engineering",
+        "BS in Industrial Design",
+        "BS in Manufacturing Engineering"
+      ]
+    },
+    {
+      "title": "Session 8: Payload Engineering - Testing & Data Analysis",
+      "description": "Students flight-test their prototypes with weights, recording data on stability and battery drain.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Data Collection",
+        "Graphing"
+      ],
+      "learningObjectives": [
+        "Test and Improve prototypes based on performance.",
+        "Collect and analyze data (Weight vs. Flight Time)."
+      ],
+      "teks": [
+        "Math 111.43(c)(4): Use regression methods to describe data."
+      ],
+      "texasStemStandards": [
+        "STEM Framework Strategy 1: Real-World Context"
+      ],
+      "materialsList": [
+        {
+          "item": "Stopwatches",
+          "estimatedCost": "$10.00 each"
+        },
+        {
+          "item": "Drones/Prototypes",
+          "estimatedCost": "Inventory"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Safety Brief (5 min).",
+          "Flight Testing cycles (25 min).",
+          "Graphing results (10 min)."
+        ],
+        "detailed": [
+          "Minute 0-5: Safety briefing (heavy drones fall faster; stay clear).",
+          "Minute 5-30: Teams rotate through the flight cage, adding weight in increments.",
+          "Minute 30-40: Students graph their results (Weight on X-axis, Time on Y-axis) to find relationships."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Hover test empty.",
+          "Add weight, record data.",
+          "Repeat until failure.",
+          "Graph data."
+        ],
+        "detailed": [
+          "Test 1: Hover with empty carrier. Record time to 50% battery.",
+          "Test 2: Add 10g. Record stability and battery drop.",
+          "Test 3: Add 20g. Repeat.",
+          "Graph the data to find the 'Critical Failure Point' where flight becomes unstable."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Instruction in Laboratory Science"
+        ],
+        "allowableCosts": [
+          "Educational Supplies"
+        ],
+        "programType": "Both",
+        "justification": "Data collection and analysis lab fitting Math and Science components.",
+        "heaRequirements": [
+          "Sec. 402C(b): Instruction in mathematics and science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1): Instruction in mathematics/lab science."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics (Electricity/Load)",
+        "technology": "Data Collection",
+        "engineering": "Iterative Design",
+        "math": "Linear Regression",
+        "crossCurricularLinks": [
+          "Economics (Cost/Benefit)"
+        ]
+      },
+      "careerPathways": [
+        "Data Analyst",
+        "Quality Assurance Engineer",
+        "Flight Test Engineer"
+      ],
+      "collegePathways": [
+        "BS in Statistics",
+        "BS in Data Science",
+        "BS in Electrical Engineering"
+      ]
+    },
+    {
+      "title": "Session 9-10: Search & Rescue Math Olympics",
+      "description": "A capstone double-block where students solve math problems derived from live telemetry to locate targets and complete a course.",
+      "timeRequired": "80 Minutes (2 Sessions)",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Algebra",
+        "Teamwork"
+      ],
+      "learningObjectives": [
+        "Calculate velocity given distance and time.",
+        "Apply triangulation to locate objects.",
+        "Work collaboratively under time pressure."
+      ],
+      "teks": [
+        "Physics 112.39(c)(4)(B): Analyze motion in one dimension.",
+        "Math 111.39(c)(1)(E): Solve systems of linear equations."
+      ],
+      "texasStemStandards": [
+        "STEM Fluency Skill: Resilience and Adaptability"
+      ],
+      "materialsList": [
+        {
+          "item": "Obstacle Gates/Targets",
+          "estimatedCost": "$100.00"
+        },
+        {
+          "item": "Calculators",
+          "estimatedCost": "$15.00 each"
+        },
+        {
+          "item": "Awards (Certificates)",
+          "estimatedCost": "$20.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Session 9: Scenario explanation and math planning.",
+          "Session 10: Competition execution."
+        ],
+        "detailed": [
+          "Session 9 (0-40): Explain the SAR scenario. Teams plan their search grids and calculate area coverage requirements based on battery life.",
+          "Session 10 (40-80): The Competition. Teams fly the course. To pass a gate, they must pause and solve a math problem based on their flight data (e.g., speed calc)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Calculate search area.",
+          "Fly mission.",
+          "Solve checkpoint math problems.",
+          "Finish before battery dies."
+        ],
+        "detailed": [
+          "Calculate total search area and required speed to cover it before battery death.",
+          "Fly the mission through the gates.",
+          "At the checkpoint, pause and calculate your average velocity (v=d/t) to get the pass code to proceed."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics",
+          "Academic Tutoring/Mentoring"
+        ],
+        "allowableCosts": [
+          "Awards/Recognition (Nominal cost)",
+          "Field Trip Transportation (if off-site)"
+        ],
+        "programType": "Both",
+        "justification": "Gamifies instruction in Mathematics, increasing engagement while rigorously testing academic standards.",
+        "heaRequirements": [
+          "Sec. 402C(b): Instruction in mathematics."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1): Instruction in mathematics.",
+          "34 CFR 645.11(b)(5): Mentoring."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.421: Advertising and public relations (allows for program outreach/nominal awards in some contexts, consult local OSP)."
+        ]
+      },
+      "stemConnections": {
+        "science": "Optics/Remote Sensing",
+        "technology": "Telemetry",
+        "engineering": "Mission Planning",
+        "math": "Algebra/Geometry",
+        "crossCurricularLinks": [
+          "Public Safety/Emergency Management"
+        ]
+      },
+      "careerPathways": [
+        "Logistics Manager",
+        "Air Traffic Controller",
+        "Search and Rescue Coordinator"
+      ],
+      "collegePathways": [
+        "BS in Supply Chain Management",
+        "BS in Air Traffic Management",
+        "BS in Mathematics"
+      ]
+    }
+  ]
+}

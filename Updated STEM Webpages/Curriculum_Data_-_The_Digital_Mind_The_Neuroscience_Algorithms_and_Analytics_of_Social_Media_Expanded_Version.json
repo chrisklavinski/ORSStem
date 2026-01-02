@@ -1,0 +1,711 @@
+{
+  "curriculumTitle": "The Digital Mind: The Neuroscience, Algorithms, and Analytics of Social Media (Expanded Version)",
+  "overview": "This interdisciplinary STEM curriculum bridges the gap between adolescent social media usage and academic STEM principles. Students explore the neuroscience behind addiction (Biology), the logic behind content feeds (Computer Science/Math), and the statistical impact of screen time on mental health (Data Analysis). The curriculum aligns with Texas Essential Knowledge and Skills (TEKS) and federal TRIO objectives.",
+  "prerequisites": "Completion of Algebra I (understanding of variables and linear functions) is recommended. Basic familiarity with spreadsheet software (Google Sheets/Excel) and common social media platforms.",
+  "targetAgeGroup": "High School (Ages 14-18)",
+  "totalDurationEstimate": "9 Hours (7 Classroom Modules + 1 Field Experience)",
+  "fieldTrips": [
+    {
+      "name": "UT Dallas Center for BrainHealth",
+      "location": "Dallas, TX",
+      "description": "A guided visit to the BrainHealth Imaging Center to observe fMRI technology and discuss neuroplasticity and the brain's reward systems with researchers.",
+      "relevanceToCurriculum": "Reinforces Module 1 and 2 concepts regarding dopamine pathways, addiction, and the biological impact of repetitive digital stimuli."
+    },
+    {
+      "name": "Perot Museum of Nature and Science - Texas Instruments Engineering and Innovation Hall",
+      "location": "Dallas, TX",
+      "description": "Exploration of the robot arena and coding lab to understand how sensors and logic gates process inputs and outputs.",
+      "relevanceToCurriculum": "Connects to Modules 3 and 4 regarding algorithmic logic, 'if/then' processing, and system engineering."
+    }
+  ],
+  "activities": [
+    {
+      "title": "Module 1: The Dopamine Loop (Part 1) - Neuroscience & Simulation",
+      "description": "Students explore the biology of the VTA (Ventral Tegmental Area) and conduct a dice-rolling simulation to mimic the 'Variable Ratio Schedule' used in app design.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Data Recording",
+        "Probability Basics"
+      ],
+      "learningObjectives": [
+        "Identify the role of neurotransmitters (dopamine) in the brain's reward system.",
+        "Simulate 'Intermittent Variable Rewards' using probability tools."
+      ],
+      "teks": [
+        "(Biology) 10.A: Describe the interactions that occur among systems that perform functions of regulation... and defense in animals.",
+        "(Psychology) 6.C: Analyze the relationship between conditioning and behavior modification."
+      ],
+      "texasStemStandards": [
+        "STEM Content Knowledge: Students demonstrate understanding of neurochemistry concepts."
+      ],
+      "materialsList": [
+        {
+          "item": "Dice (6-sided)",
+          "estimatedCost": "$10.00 (pack of 50)"
+        },
+        {
+          "item": "Poker Chips or Tokens",
+          "estimatedCost": "$15.00"
+        },
+        {
+          "item": "Printed 'Notification' Simulation Cards",
+          "estimatedCost": "$0.00 (Self-print)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Mini-Lecture (10 min): Dopamine and the Reward Pathway.",
+          "2. Setup (5 min): Pair students (User vs. Algorithm).",
+          "3. Round 1 (10 min): Low reward probability (roll 6 to win).",
+          "4. Round 2 (10 min): High reward probability (roll 4, 5, 6 to win).",
+          "5. Cleanup: Save data sheets for Module 2."
+        ],
+        "detailed": [
+          "Introduction (10 mins): Explain the biological purpose of dopamine (survival/seeking) vs. the modern application (scrolling). Define 'Variable Ratio Schedule' (slot machine logic).",
+          "Setup (5 mins): Assign partners. Distribute dice and tokens. Explain that the 'Algorithm' student controls the rewards.",
+          "Simulation Round 1 (10 mins): The 'User' attempts to refresh their feed every 5 seconds. The 'Algorithm' rolls. Only a 6 yields a token. Students record the exact time of each reward.",
+          "Simulation Round 2 (10 mins): Increase the odds. Now, rolling a 4, 5, or 6 yields a token. Students record data. Save all data sheets for the next module."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. Listen to the briefing on how your brain processes rewards.",
+          "2. Partner up: One person is the 'Phone', one is the 'User'.",
+          "3. Simulation 1: 'Phone' rolls dice. 'User' only gets a token on a 6.",
+          "4. Simulation 2: 'Phone' rolls dice. 'User' gets a token on 4, 5, or 6.",
+          "5. Record every win on your data sheet."
+        ],
+        "detailed": [
+          "Step 1: The Setup. You are simulating a 'Skinner Box'. The User wants a reward (token); the Phone controls when they get it.",
+          "Step 2: Low Dopamine Round. The 'User' asks for a refresh every 5 seconds. The 'Phone' rolls. If it is 1-5, say 'No Notification'. If it is 6, give a token.",
+          "Step 3: High Dopamine Round. Repeat the process, but now the User wins on a 4, 5, or 6.",
+          "Step 4: Data Logging. Accurate recording is crucial. Mark down exactly which 'scroll attempt' resulted in a token. You will need this for the next class."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Laboratory Science (Biology/Neuroscience)"
+        ],
+        "allowableCosts": [
+          "Educational Supplies (Dice, tokens) under 2 CFR 200.453."
+        ],
+        "programType": "Both",
+        "justification": "Qualifies as Laboratory Science instruction. Students are replicating a behavioral psychology experiment regarding neurochemistry.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Instruction in laboratory science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Mandatory Core Curriculum (Science)."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies costs, including costs of computing devices."
+        ]
+      },
+      "stemConnections": {
+        "science": "Neuroscience: Synaptic transmission and the reward pathway.",
+        "technology": "UX Design: Gamification mechanics.",
+        "engineering": "System Feedback Loops.",
+        "math": "Probability: Introduction to ratios.",
+        "crossCurricularLinks": [
+          "Psychology",
+          "Health"
+        ]
+      },
+      "careerPathways": [
+        "Neuroscientist (BS Biology / PhD Neuroscience)",
+        "Behavioral Psychologist (BS Psychology)",
+        "UX Researcher (BS Human-Computer Interaction)"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Biology",
+        "Bachelor of Arts in Psychology",
+        "Bachelor of Science in Neuroscience"
+      ]
+    },
+    {
+      "title": "Module 2: The Dopamine Loop (Part 2) - Graphing Addiction",
+      "description": "Using data generated in Module 1, students graph the stimulus/response frequency to visualize how unpredictability drives behavior.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Graphing on Cartesian Plane",
+        "Data Interpretation"
+      ],
+      "learningObjectives": [
+        "Graph data related to stimulus and response frequencies.",
+        "Analyze the difference between fixed and variable ratio reinforcement."
+      ],
+      "teks": [
+        "(Math Models) 1.A: Use mathematical models to approximate and predict patterns in data.",
+        "(Science Skills) 2.G: Analyze data by identifying significant statistical features."
+      ],
+      "texasStemStandards": [
+        "Communication: Students use STEM terminology (Variable Ratio, Dopamine, Probability) to communicate arguments."
+      ],
+      "materialsList": [
+        {
+          "item": "Graph Paper",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Data Sheets (From Module 1)",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Rulers/Pencils",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Retrieve data sheets from Module 1.",
+          "2. Instruction (10 min): How to plot cumulative record graphs.",
+          "3. Activity (20 min): Students graph Time (x) vs. Rewards (y).",
+          "4. Analysis (10 min): Compare slope and regularity.",
+          "5. Discussion: Why does the 'unpredictable' line create more anxiety?"
+        ],
+        "detailed": [
+          "Review (5 mins): Recap the two simulation rounds (Hard to win vs. Easy to win).",
+          "Graphing Instruction (10 mins): Demonstrate how to set up the axes. X-axis = Time (Scroll attempts). Y-axis = Cumulative Tokens (Total rewards).",
+          "Execution (15 mins): Students plot both Round 1 and Round 2 data on the same graph using different colors.",
+          "Analysis (10 mins): Facilitate a discussion. Show how Round 1 (Variable Ratio) often leads to 'burst' behavior or frustration, whereas Round 2 is steady. Connect this to the 'pull-to-refresh' mechanic in apps."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. Get your data sheet from the previous session.",
+          "2. Set up your graph: X-axis is 'Time', Y-axis is 'Tokens'.",
+          "3. Plot the points for Round 1 in Blue.",
+          "4. Plot the points for Round 2 in Red.",
+          "5. Compare the lines: Which one looks more like a staircase?"
+        ],
+        "detailed": [
+          "Step 1: Data Viz. You are converting your raw data into a visual model.",
+          "Step 2: Plotting. For every 'scroll' where you got a token, make a mark. Connect the dots. You are creating a 'Cumulative Record'.",
+          "Step 3: Comparison. Look at the Blue Line (Low Reward). Notice the long flat lines (no reward) followed by jumps. This represents 'anticipation'.",
+          "Step 4: Reflection. Write a brief statement: Why do game designers prefer the 'Blue Line' pattern if they want to keep you playing longer?"
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics (Data Analysis/Graphing)"
+        ],
+        "allowableCosts": [
+          "Instructional Supplies (Graph paper) - 2 CFR 200.453."
+        ],
+        "programType": "Both",
+        "justification": "This module fulfills the Math instruction component of UB/UBMS by requiring students to model real-world data using coordinate graphing.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Instruction in mathematics."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Mandatory Core Curriculum (Mathematics)."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "Behavioral Science: Analysis of conditioning.",
+        "technology": "Data Visualization.",
+        "engineering": "Optimization.",
+        "math": "Algebra: Slope as a rate of reinforcement.",
+        "crossCurricularLinks": [
+          "Health Education"
+        ]
+      },
+      "careerPathways": [
+        "Data Analyst (BS Statistics)",
+        "Game Designer (BS Computer Science / Game Design)",
+        "Research Assistant (BA/BS Social Sciences)"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Statistics",
+        "Bachelor of Science in Computer Science"
+      ]
+    },
+    {
+      "title": "Module 3: Unboxing the Black Box (Part 1) - Algorithmic Logic Design",
+      "description": "Students begin the algorithm unit by learning logical operators and designing the 'weighting' system for a social media feed.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Algebraic Thinking",
+        "Logic/Reasoning"
+      ],
+      "learningObjectives": [
+        "Understand the logic of sorting algorithms (If/Then/Else).",
+        "Assign weighted variables to qualitative data."
+      ],
+      "teks": [
+        "(Computer Science I) 4.B: Design and implement algorithms to solve specific problems.",
+        "(Algebra I) 2.A: Determine the domain and range of a linear function."
+      ],
+      "texasStemStandards": [
+        "Design Process: Students identify a problem (information filtering) and design a solution."
+      ],
+      "materialsList": [
+        {
+          "item": "Whiteboard/Projector",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Sample 'User Profiles' (Paper)",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Lecture (15 min): What is an algorithm? (Input -> Process -> Output).",
+          "2. Concept (10 min): Weighted Variables. Why is a video worth more than text?",
+          "3. Activity (15 min): Groups design their 'Ranking Formula'.",
+          "4. Groups assign point values to 'Interests', 'Media Type', and 'Recency'."
+        ],
+        "detailed": [
+          "Concept Intro (15 mins): Explain that computers don't have 'opinions'; they have math. Introduce the concept of a 'Weighted Variable'. Example: If (Post == Video) Then (Score = Score + 5).",
+          "Group Setup (5 mins): Divide students into Engineering Teams. Give each team a target User Profile (e.g., 'The Gamer', 'The Activist').",
+          "Formula Design (20 mins): The teams must write a linear equation to rank content. Example Formula: Total Score = (Topic Match * 5) + (Is_Video * 3) + (Is_Viral * 2). They must justify why they chose those weights."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. Learn how code makes decisions using 'If/Then' logic.",
+          "2. Review your assigned 'User Profile'. What do they like?",
+          "3. Create a formula: How many points is a 'Like' worth? A 'Share'?",
+          "4. Write down your team's specific Algorithm Equation."
+        ],
+        "detailed": [
+          "Step 1: The Engineer's Mindset. You are coding a bot. The bot needs rules.",
+          "Step 2: Assigning Weights. Look at your User. If they love sports, a sports post should get high points. Assign a variable 'S' for Sports match (e.g., S = 10 points).",
+          "Step 3: Media Formats. Do you want to push video? If so, make V (Video) worth 5 points and T (Text) worth 1 point.",
+          "Step 4: Finalize Formula. Write your equation clearly on paper. You will use this in the next class to rank real cards."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics (Algebra/Logic)",
+          "Exposure to Careers in Computer Science"
+        ],
+        "allowableCosts": [
+          "None (Instructional delivery only)."
+        ],
+        "programType": "UBMS",
+        "justification": "Focuses on algebraic logic and computer science principles, key components of the UBMS mandate.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Instruction in mathematics and science."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Mandatory Core Curriculum."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.400 - Principles for cost determination."
+        ]
+      },
+      "stemConnections": {
+        "science": "Logic.",
+        "technology": "Algorithms and Flowcharts.",
+        "engineering": "Software Engineering constraints.",
+        "math": "Algebra: Variables and Linear Equations.",
+        "crossCurricularLinks": [
+          "Social Studies"
+        ]
+      },
+      "careerPathways": [
+        "Software Engineer (BS Computer Science)",
+        "Algorithm Developer (MS/PhD Computer Science)",
+        "Systems Architect (BS Information Technology)"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Computer Science",
+        "Bachelor of Science in Mathematics"
+      ]
+    },
+    {
+      "title": "Module 4: Unboxing the Black Box (Part 2) - Calculation & Sorting",
+      "description": "Students act as the 'CPU', applying their designed formulas to a set of content cards to generate a ranked feed.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Arithmetic",
+        "Order of Operations"
+      ],
+      "learningObjectives": [
+        "Calculate weighted scores for data sorting.",
+        "Execute an algorithm manually to understand processing logic."
+      ],
+      "teks": [
+        "(Math Models) 1.C: Select tools to solve problems.",
+        "(Computer Science) 4.C: Trace the execution of an algorithm."
+      ],
+      "texasStemStandards": [
+        "STEM Content Knowledge: Application of algebraic formulas."
+      ],
+      "materialsList": [
+        {
+          "item": "Index Cards (Content Cards with various topics)",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Calculators",
+          "estimatedCost": "$0.00 (Student phones/school inventory)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Distribute 'Content Card' decks (10-15 cards per group).",
+          "2. Students apply the formula created in Module 3 to each card.",
+          "3. Calculation phase (25 min): Math work.",
+          "4. Sorting phase (10 min): Arrange cards by score (High to Low).",
+          "5. Check work: Verify calculation accuracy."
+        ],
+        "detailed": [
+          "Setup (5 mins): Students retrieve their formulas from Module 3. Hand out the 'Content Decks' (mixed posts: news, memes, ads, friends).",
+          "Processing (25 mins): This is the 'CPU' phase. Students must calculate the precise score for every card based on their User Profile. Example: Card is 'Sports Video'. Formula: (Sports=10) + (Video=5) = 15. Write '15' on the card.",
+          "Sorting (10 mins): Instruct students to stack the cards physically. Highest number on top. This is the 'Feed' the user sees."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. Take your deck of Content Cards.",
+          "2. Use your Formula to grade every single card.",
+          "3. Write the final 'Relevance Score' on the corner of the card.",
+          "4. Stack the cards in order: Highest score on top.",
+          "5. This stack is your User's 'Feed'."
+        ],
+        "detailed": [
+          "Step 1: Processing. You are the processor. Don't use your personal opinion; use the Formula you wrote.",
+          "Step 2: Calculation. Use calculators. Be precise. If the algorithm is coded to give +5 for 'Viral', you must add 5, even if you think the post is annoying.",
+          "Step 3: The Output. Arrange the cards. The top 3 cards are what the user sees on their screen. The bottom cards are what the algorithm 'hid' from them."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics (Algebra/Arithmetic)"
+        ],
+        "allowableCosts": [
+          "Materials (Index cards, markers) - 2 CFR 200.453."
+        ],
+        "programType": "Both",
+        "justification": "Strict application of algebraic concepts to solve a problem. Students are performing 'computational thinking' manually.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Instruction in mathematics."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Mandatory Core Curriculum."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "N/A",
+        "technology": "Data Processing.",
+        "engineering": "N/A",
+        "math": "Arithmetic and Order of Operations.",
+        "crossCurricularLinks": [
+          "Media Literacy"
+        ]
+      },
+      "careerPathways": [
+        "Data Entry Specialist (Associate Degree)",
+        "Software Tester (BS Computer Science)",
+        "Mathematician (BS/MS Mathematics)"
+      ],
+      "collegePathways": [
+        "Associate of Science in Data Science",
+        "Bachelor of Science in Mathematics"
+      ]
+    },
+    {
+      "title": "Module 5: Unboxing the Black Box (Part 3) - Bias & Ethics Analysis",
+      "description": "Students analyze the sorted feeds from Module 4 to identify 'Echo Chambers' and 'Filter Bubbles,' discussing the societal impact of algorithmic sorting.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Critical Thinking",
+        "Analysis"
+      ],
+      "learningObjectives": [
+        "Analyze how algorithmic personalization creates confirmation bias.",
+        "Evaluate the ethical implications of hidden information."
+      ],
+      "teks": [
+        "(Social Studies/Civics) 13.B: Analyze the impact of technology on the political process and society."
+      ],
+      "texasStemStandards": [
+        "Societal Impact: Students evaluate how technology impacts society."
+      ],
+      "materialsList": [
+        {
+          "item": "Sorted Card Decks (From Module 4)",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Reflection Worksheets",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Review the top 3 cards vs. bottom 3 cards of each group (10 min).",
+          "2. Define 'Filter Bubble' and 'Confirmation Bias' (10 min).",
+          "3. Group Rotation (10 min): Look at other groups' feeds.",
+          "4. Discussion (10 min): How does this affect democracy/mental health?"
+        ],
+        "detailed": [
+          "Analysis (10 mins): Ask groups to present their 'Feed'. If the User liked Sports, is their entire feed Sports? What happened to the 'World News' card?",
+          "Concept (10 mins): Explain that algorithms maximize engagement, not truth. Define 'Confirmation Bias': seeing only what you already agree with.",
+          "Synthesis (20 mins): Have students answer: 'If my user only sees these top 3 cards for a year, what will they believe about the world?' Discuss the ethical responsibility of engineers to code for diversity vs. profit."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. Look at the top of your stack. Is it repetitive?",
+          "2. Look at the bottom of the stack. What did your user miss?",
+          "3. Swap with another group. How is their reality different from yours?",
+          "4. Discuss: Is it fair that an equation decides what you see?"
+        ],
+        "detailed": [
+          "Step 1: The Filter Bubble. Notice that your user is isolated. They are in a bubble of their own interests.",
+          "Step 2: Hidden Data. Find the cards with the lowest scores. Imagine these cards contained vital safety information. Why did your formula hide them? (Likely because they weren't 'entertaining' enough).",
+          "Step 3: Ethical Engineering. If you were hired by TikTok or Instagram, would you change the code? How would you balance making money (engagement) with keeping people informed?"
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Exposure to Careers in Technology (Ethics/Policy)",
+          "Instruction in Science (Social Science/Psychology)"
+        ],
+        "allowableCosts": [
+          "Instructional Staff Time."
+        ],
+        "programType": "Both",
+        "justification": "Connects STEM skills to critical thinking and societal impact. Essential for developing responsible future scientists/engineers.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Instruction in literature and society (Media Literacy)."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a) - Core curriculum component."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.400 - Cost principles."
+        ]
+      },
+      "stemConnections": {
+        "science": "Psychology: Cognitive Dissonance.",
+        "technology": "Tech Ethics.",
+        "engineering": "Social Engineering.",
+        "math": "N/A",
+        "crossCurricularLinks": [
+          "Civics",
+          "Philosophy"
+        ]
+      },
+      "careerPathways": [
+        "Tech Policy Advisor (JD/Master of Public Policy)",
+        "Social Media Analyst (BS Marketing/Data Analytics)",
+        "AI Ethicist (MA Philosophy/Computer Science)"
+      ],
+      "collegePathways": [
+        "Bachelor of Arts in Philosophy",
+        "Bachelor of Science in Political Science"
+      ]
+    },
+    {
+      "title": "Module 6: Digital Wellness (Part 1) - The Geometry of Face Filters",
+      "description": "Students learn the engineering and geometry behind AR (Augmented Reality) face filters, focusing on mesh mapping and coordinate systems.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Geometry (Coordinate Plane)",
+        "Spatial Reasoning"
+      ],
+      "learningObjectives": [
+        "Understand how facial recognition mesh mapping works (computer vision).",
+        "Identify the coordinate geometry (X, Y, Z axes) used in AR."
+      ],
+      "teks": [
+        "(Geometry) 1.A: Identify and describe the structural features of geometric figures.",
+        "(Technology Applications) 6.A: Demonstrate knowledge of current technology terminology and concepts."
+      ],
+      "texasStemStandards": [
+        "Inquiry-Based Learning: Students explore the 'how' behind everyday technology."
+      ],
+      "materialsList": [
+        {
+          "item": "Projector (for Face Mesh diagrams)",
+          "estimatedCost": "$0.00"
+        },
+        {
+          "item": "Optional: Smartphone with Snapchat/TikTok for demo",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Lecture (15 min): Computer Vision & Face Meshes.",
+          "2. Visualization (10 min): Show the 468-point landmark map.",
+          "3. Activity (15 min): 'Analog Filter' - Drawing geometry on portraits.",
+          "4. Explain how changing vector distance changes appearance."
+        ],
+        "detailed": [
+          "Tech Theory (20 mins): Explain that computers see faces as a collection of points (vectors). Show a diagram of a Face Mesh. Explain that 'Beauty Filters' work by altering the Euclidean distance between points (e.g., shrinking jaw width, enlarging eye radius).",
+          "Analysis (20 mins): Discuss the 'Golden Ratio' mathematically. Ask students to identify which coordinates are changed most often in filters (Cheekbones: X-axis expansion; Chin: Y-axis reduction)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. Learn how a camera 'reads' your face using dots.",
+          "2. Look at the Face Mesh diagram.",
+          "3. Identify the X (horizontal) and Y (vertical) coordinates.",
+          "4. Discuss: How does the math of the filter change the shape of the face?"
+        ],
+        "detailed": [
+          "Step 1: Computer Vision. Understand that to a computer, your face is just a list of numbers (coordinates).",
+          "Step 2: The Mesh. Visualize the wireframe grid that overlays your face in real-time.",
+          "Step 3: Geometry in Action. If a filter makes your eyes bigger, it is simply increasing the radius of the circle defined by points 33, 133, and 362. It is geometry, not magic."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Science/Engineering (Computer Vision)",
+          "Exposure to Careers in Tech"
+        ],
+        "allowableCosts": [
+          "None."
+        ],
+        "programType": "UBMS",
+        "justification": "This module introduces high-level engineering concepts (Computer Vision/AR) suitable for the Math/Science focus of UBMS.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Instruction in mathematics (Geometry)."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Mandatory Core Curriculum."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.400 - Cost principles."
+        ]
+      },
+      "stemConnections": {
+        "science": "Anatomy (Facial Structure).",
+        "technology": "Computer Vision/AR.",
+        "engineering": "3D Modeling.",
+        "math": "Geometry: Coordinate planes and vectors.",
+        "crossCurricularLinks": [
+          "Art"
+        ]
+      },
+      "careerPathways": [
+        "Computer Vision Engineer (BS/MS Computer Science)",
+        "3D Modeler (BFA Digital Arts)",
+        "AR/VR Developer (BS Software Engineering)"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Computer Engineering",
+        "Bachelor of Fine Arts in Digital Media"
+      ]
+    },
+    {
+      "title": "Module 7: Digital Wellness (Part 2) - Statistical Analysis",
+      "description": "Students conduct a statistical analysis of screen time versus mood, using Excel/Google Sheets to calculate correlation coefficients.",
+      "timeRequired": "40 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Spreadsheet Basics",
+        "Statistics (Mean/Correlation)"
+      ],
+      "learningObjectives": [
+        "Differentiate between correlation and causation.",
+        "Analyze scatter plots related to mental health and technology usage."
+      ],
+      "teks": [
+        "(Statistics) 4.F: Analyze scatterplots to determine the strength and direction of association.",
+        "(Health) 1.F: Analyze the influence of media and technology on health."
+      ],
+      "texasStemStandards": [
+        "Real-world issues: Connecting mental health to technology through data."
+      ],
+      "materialsList": [
+        {
+          "item": "Laptops/Chromebooks with Excel/Sheets",
+          "estimatedCost": "$0.00 (School Inventory)"
+        },
+        {
+          "item": "Anonymous Data Set (Screen Time vs. Anxiety Score)",
+          "estimatedCost": "$0.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Distribute Laptops and Data Set (5 min).",
+          "2. Lab (20 min): Input data, create Scatter Plot.",
+          "3. Math (10 min): Calculate 'r' (Correlation Coefficient).",
+          "4. Wrap-up (5 min): Correlation vs. Causation discussion."
+        ],
+        "detailed": [
+          "Data Entry (10 mins): Provide students with a 2-column dataset (X=Hours Scrolled, Y=Anxiety 1-10). Have them type this into the spreadsheet.",
+          "Visualization (15 mins): Walk through the menu: Insert > Chart > Scatter Plot. Add Trendline.",
+          "Calculation (10 mins): Teach the formula '=CORREL(array1, array2)'. Explain the result (Closer to 1 = Strong Link).",
+          "Conclusion (5 mins): Discuss if the phone causes anxiety, or if anxious people use phones more."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. Open a blank spreadsheet.",
+          "2. Type in the data points provided by the teacher.",
+          "3. Create a Scatter Plot chart.",
+          "4. Use the CORREL formula to find the math behind the trend.",
+          "5. Decide: Is there a link between screen time and mood?"
+        ],
+        "detailed": [
+          "Step 1: Data Science. You are acting as a data analyst. Input the raw data carefully.",
+          "Step 2: Plotting. Create the visual. Look at the slope. Is it going up (Positive correlation)?",
+          "Step 3: The R-Value. Calculate the Correlation Coefficient. If r > 0.7, it is a strong correlation.",
+          "Step 4: Interpretation. Numbers don't lie, but they can mislead. Does this prove phones are bad? Or just that they are related to bad moods?"
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in Mathematics (Statistics)",
+          "Personal Counseling (Mental Health Awareness via Workshops)"
+        ],
+        "allowableCosts": [
+          "Computer Lab Access.",
+          "Printing Data Sets."
+        ],
+        "programType": "Both",
+        "justification": "Fulfills the Statistics requirement while addressing permissible mental health/personal counseling topics.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b) - Instruction in mathematics.",
+          "HEA Sec. 402C(b) - Personal counseling."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1) - Mandatory Core Curriculum.",
+          "34 CFR 645.11(b)(1) - Personal counseling."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453 - Materials and supplies."
+        ]
+      },
+      "stemConnections": {
+        "science": "Psychology.",
+        "technology": "Data Analytics Software.",
+        "engineering": "N/A",
+        "math": "Statistics: Regression and Correlation.",
+        "crossCurricularLinks": [
+          "Health/Wellness"
+        ]
+      },
+      "careerPathways": [
+        "Data Scientist (MS Data Science)",
+        "Public Health Researcher (Master of Public Health)",
+        "Digital Wellbeing Consultant (BS Psychology)"
+      ],
+      "collegePathways": [
+        "Bachelor of Science in Statistics",
+        "Bachelor of Science in Public Health"
+      ]
+    }
+  ]
+}

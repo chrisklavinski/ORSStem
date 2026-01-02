@@ -1,0 +1,360 @@
+{
+  "curriculumTitle": "PinStack STEM: Physics & Physiology in Action",
+  "overview": "A rigorous, federal grant-compliant STEM curriculum designed for Upward Bound (UB) and UB Math & Science (UBMS) programs. This field curriculum utilizes the controlled environments of PinStack facilities (Bowling Lanes, Laser Tag Arena, High Ropes Course) as active physics and biology laboratories. The curriculum is structured to justify costs under 2 CFR 200 by transforming recreational equipment into scientific apparatus for measuring momentum, friction, infrared signal processing, and physiological stress responses. It aligns directly with Texas TEKS and federal objectives to improve standardized test performance in Math and Science.",
+  "prerequisites": "Completion of Algebra I (linear equations); Introduction to Biology recommended.",
+  "targetAgeGroup": "High School (Grades 9-12)",
+  "totalDurationEstimate": "5.5 Hours (1 hour classroom prep, 3.5 hours on-site, 1 hour post-trip analysis)",
+  "fieldTrips": [
+    {
+      "name": "PinStack (Las Colinas or Plano)",
+      "location": "635 N 121 Toll Rd, Lewisville, TX 75067 (Las Colinas) OR 6205 Dallas Pkwy, Plano, TX 75024",
+      "description": "A multi-venue facility containing regulation bowling lanes, a two-level laser tag arena, and a high ropes course suspended above the arcade.",
+      "relevanceToCurriculum": "The facility provides long-distance tracks for friction coefficients (bowling), controlled infrared environments (laser tag), and vertical structures for triangulation (ropes), which cannot be replicated in a standard classroom."
+    }
+  ],
+  "activities": [
+    {
+      "title": "Rolling with Physics: Momentum & Friction on the Lanes",
+      "description": "Students transform bowling lanes into Newtonian physics labs. They calculate average velocity, estimate the coefficient of kinetic friction based on oil pattern deceleration, and calculate momentum transfers (impulse) during pin impact.",
+      "timeRequired": "1.5 Hours",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Algebraic substitution",
+        "Stopwatch timing",
+        "Data recording"
+      ],
+      "learningObjectives": [
+        "Calculate average velocity using distance/time intervals.",
+        "Analyze conservation of momentum (p=mv) during ball-pin collisions.",
+        "Differentiate between static and kinetic friction on oiled surfaces.",
+        "Calculate Kinetic Energy (KE = 1/2mv^2) of the projectile."
+      ],
+      "teks": [
+        "Physics 4(A): Calculate the effect of forces on objects, including the law of inertia and the relationship between force, mass, and acceleration.",
+        "Physics 6(C): Calculate the mechanical energy of, power generated within, impulse applied to, and momentum of a physical system.",
+        "Physics 4(D): Calculate the effect of forces on objects, including friction."
+      ],
+      "texasStemStandards": [
+        "STEM 1(A): Apply the engineering design process to identify and solve problems.",
+        "STEM 4(B): Use critical thinking and problem solving to make informed decisions."
+      ],
+      "materialsList": [
+        {
+          "item": "Stopwatches or Phones with precision timers",
+          "estimatedCost": "$0 (Student Provided)"
+        },
+        {
+          "item": "Digital Scales (to verify ball mass)",
+          "estimatedCost": "$25 (One per group)"
+        },
+        {
+          "item": "Lane Rental Fees (Educational Rate)",
+          "estimatedCost": "$20 per student"
+        },
+        {
+          "item": "Printed Data Collection Packets",
+          "estimatedCost": "$0.50 per student"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Book lanes in advance; request 'house lights' (no cosmic bowl) for visibility.",
+          "Group students by 4: Bowler, Timer, Recorder, Spotter.",
+          "Ensure safety regarding the foul line (oil)."
+        ],
+        "detailed": [
+          "Contact PinStack Events to secure the 'Educational/Non-Profit' rate.",
+          "Pre-Trip: Review the formula for Momentum (p=mv) and Kinetic Energy (KE=0.5mv^2).",
+          "On-site: Instruct students to weigh their chosen house balls using the digital scale to convert lbs to kg.",
+          "Monitor students to ensure they are recording data, not just playing. The 'Bowler' must aim for consistency, not high scores."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Weigh your bowling ball (kg).",
+          "Time the ball from foul line to head pin.",
+          "Calculate velocity and momentum.",
+          "Observe hook/friction variance."
+        ],
+        "detailed": [
+          "Select two balls of different masses. Record the mass in kg.",
+          "Timer: Start timing exactly when the ball crosses the foul line. Stop when it hits the pins.",
+          "Distance: Use 18.29 meters (standard lane length).",
+          "Calculate Velocity (v = 18.29 / time).",
+          "Calculate Momentum (p = mass * velocity) for both heavy and light balls.",
+          "Compare: Which ball had higher momentum? Which had higher velocity?"
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in laboratory science",
+          "Exposure to academic programs"
+        ],
+        "allowableCosts": [
+          "Facility rental for educational activities",
+          "Transportation",
+          "Instructional supplies"
+        ],
+        "programType": "Both",
+        "justification": "This activity provides hands-on laboratory science instruction (Physics). It is allowable because it has a specific academic curriculum attached, distinguishing it from 'entertainment'.",
+        "heaRequirements": [
+          "HEA Sec 402C(b)(1): Instruction in mathematics and science",
+          "HEA Sec 402C(b)(12): Education or counseling services designed to improve the financial and economic literacy of students"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1): Curriculum includes math and science",
+          "34 CFR 645.11(b): UBMS specific requirement for hands-on exposure to science"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.403: Costs must be necessary and reasonable",
+          "2 CFR 200.404: Reasonable costs for educational field experiences",
+          "2 CFR 200.405: Costs are allocable to the Federal award based on relative benefit"
+        ]
+      },
+      "stemConnections": {
+        "science": "Newtonian Physics (Laws of Motion, Friction, Momentum).",
+        "technology": "Pinsetter robotics and optical scoring sensors.",
+        "engineering": "Material Engineering (Urethane vs. Reactive Resin coverstocks).",
+        "math": "Algebra II (Linear equations), Statistics (Averaging trials).",
+        "crossCurricularLinks": [
+          "Physical Education (Motor Skills)",
+          "Data Science"
+        ]
+      },
+      "careerPathways": [
+        "Mechanical Engineer",
+        "Ballistics Expert",
+        "Sports Equipment Designer",
+        "Data Analyst"
+      ],
+      "collegePathways": [
+        "B.S. Mechanical Engineering",
+        "B.S. Physics",
+        "B.S. Kinesiology",
+        "B.S. Materials Science"
+      ]
+    },
+    {
+      "title": "The Physiology of Adrenaline: Laser Tag Biometrics",
+      "description": "Students wear heart rate monitors during Laser Tag sessions to analyze the physiological effects of acute stress (fight or flight). They also explore the physics of infrared light transmission and receiver technology.",
+      "timeRequired": "1 Hour",
+      "difficultyLevel": "Beginner",
+      "requiredSkills": [
+        "Graphing data points",
+        "Understanding percentages",
+        "Basic anatomy knowledge"
+      ],
+      "learningObjectives": [
+        "Measure and graph heart rate recovery times.",
+        "Explain the sympathetic nervous system response ('fight or flight').",
+        "Understand Infrared (IR) light properties on the Electromagnetic Spectrum.",
+        "Calculate target heart rate zones."
+      ],
+      "teks": [
+        "Biology 10(A): Describe interactions among systems performing regulation and defense.",
+        "Physics 7(C): Compare characteristics of electromagnetic waves (Infrared)."
+      ],
+      "texasStemStandards": [
+        "STEM 3(A): Research and analyze STEM careers (Biomedical Engineering)."
+      ],
+      "materialsList": [
+        {
+          "item": "Wrist-based Heart Rate Monitors (or student smartwatches)",
+          "estimatedCost": "$0 (BYOD) or $30 unit"
+        },
+        {
+          "item": "Laser Tag Session Fee",
+          "estimatedCost": "$15 per student"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Establish Resting Heart Rate (RHR) before entry.",
+          "Ensure students know how to find a pulse if no monitors are available.",
+          "Brief on IR safety."
+        ],
+        "detailed": [
+          "Explain that Laser Tag 'guns' are actually Infrared Emitters (like a TV remote), not actual lasers.",
+          "Have students record RHR while seated in the briefing room.",
+          "Instruct students to check their pulse/watch immediately upon the end-of-game buzzer.",
+          "Conduct a cool-down session where students record HR every 60 seconds for 5 minutes to graph the 'Recovery Curve'."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Record Resting Heart Rate (RHR).",
+          "Play session (exert energy).",
+          "Record Peak Heart Rate.",
+          "Record Recovery Rate (1-min intervals)."
+        ],
+        "detailed": [
+          "In the briefing room, sit still and measure your beats per minute (BPM). This is your Baseline.",
+          "During the game, move safely but actively.",
+          "Immediately after the game, record your Peak HR.",
+          "Sit down outside. Record your HR at 1 min, 2 min, 3 min, 4 min, and 5 min post-game.",
+          "Later, you will graph this data to see how fast your heart returns to homeostasis."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in laboratory science (Biology/Anatomy)",
+          "Instruction in mathematics (Data Analysis)"
+        ],
+        "allowableCosts": [
+          "Entrance fees (justified by curriculum)",
+          "Educational supplies"
+        ],
+        "programType": "UBMS",
+        "justification": "This activity serves as a Biology lab focusing on homeostasis and the circulatory system. It qualifies as hands-on exposure to biotechnology and data collection for UBMS.",
+        "heaRequirements": [
+          "HEA Sec 402C(b): Services to improve academic performance in science"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(b): Instruction in laboratory science",
+          "34 CFR 645.11(a): Core curriculum instruction"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404: Costs incurred for a purpose common to the intended outcomes of the grant"
+        ]
+      },
+      "stemConnections": {
+        "science": "Biology (Homeostasis, Sympathetic Nervous System), Physics (IR Light).",
+        "technology": "Infrared sensors, signal processing, biometrics.",
+        "engineering": "Biomedical Engineering (Heart rate sensors).",
+        "math": "Graphing curves, Calculating percentage of Max HR (220-age).",
+        "crossCurricularLinks": [
+          "Health Science",
+          "Physical Education"
+        ]
+      },
+      "careerPathways": [
+        "Biomedical Engineer",
+        "Cardiologist",
+        "Optical Engineer",
+        "Exercise Physiologist"
+      ],
+      "collegePathways": [
+        "B.S. Biomedical Engineering",
+        "Pre-Medicine / Biology",
+        "B.S. Nursing",
+        "B.S. Optical Sciences"
+      ]
+    },
+    {
+      "title": "Vertical Engineering: Ropes Course Trigonometry",
+      "description": "Students use the High Ropes Course to study mechanical advantage (pulleys) and use trigonometry (clinometers) to calculate the height of obstacles without direct measurement.",
+      "timeRequired": "1.5 Hours",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Trigonometric ratios (Tangent)",
+        "Measurement accuracy",
+        "Understanding right triangles"
+      ],
+      "learningObjectives": [
+        "Calculate height using clinometers and tangent ratios.",
+        "Analyze mechanical advantage in pulley/belay systems.",
+        "Discuss structural load distribution (trusses).",
+        "Calculate Potential Energy (PE=mgh)."
+      ],
+      "teks": [
+        "Geometry 9(A): Determine lengths/angles in a right triangle using sine, cosine, tangent.",
+        "Physics 6(B): Investigate kinetic and potential energy transformations."
+      ],
+      "texasStemStandards": [
+        "STEM 2(B): Use engineering graphics and technical writing to communicate ideas."
+      ],
+      "materialsList": [
+        {
+          "item": "DIY Clinometers (Protractor, straw, string, washer)",
+          "estimatedCost": "$2 per student"
+        },
+        {
+          "item": "Long Tape Measure (100ft)",
+          "estimatedCost": "$15"
+        },
+        {
+          "item": "Ropes Course Fee",
+          "estimatedCost": "$20 per student"
+        },
+        {
+          "item": "Scientific Calculator",
+          "estimatedCost": "$0 (School Provided)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "Sign waivers in advance.",
+          "Demonstrate clinometer usage.",
+          "Identify 'Target' beams for measurement."
+        ],
+        "detailed": [
+          "Ensure all students have signed waivers for the ropes course.",
+          "Pre-Activity: Teach the usage of a clinometer to find the angle of elevation.",
+          "Designate a specific vertical beam or platform on the course as the 'Target'.",
+          "Discuss the belay system: Point out the pulley. Ask students if it is fixed or movable (mechanical advantage)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "Construct clinometer.",
+          "Measure distance to wall.",
+          "Sight top of course to get angle.",
+          "Calculate height using Tan(θ)."
+        ],
+        "detailed": [
+          "Stand at a distance from the ropes course where you can see the top platform.",
+          "Measure the distance (Adjacent side) from your feet to the base of the structure.",
+          "Use the clinometer to find the Angle of Elevation to the top platform.",
+          "Measure the distance from your eye to the ground (Eye Height).",
+          "Formula: Height = (Distance * Tan(Angle)) + Eye Height.",
+          "While on the course, observe the trusses. How do triangles provide stability?"
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in mathematics (Geometry/Trig)",
+          "Instruction in laboratory science (Physics)"
+        ],
+        "allowableCosts": [
+          "Field trip fees (Curriculum based)",
+          "Instructional supplies"
+        ],
+        "programType": "Both",
+        "justification": "This activity provides rigorous Math instruction (Trigonometry) applied in a real-world context, a core requirement for UB/UBMS curriculum to prepare students for postsecondary success.",
+        "heaRequirements": [
+          "HEA Sec 402C(b): Instruction in mathematics"
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1): Connections to high school graduation requirements (Geometry)",
+          "34 CFR 645.11(b): UBMS focus on mathematics"
+        ],
+        "edgarCitations": [
+          "2 CFR 200.404: Reasonable cost given the specialized equipment (ropes course) required for the lesson",
+          "2 CFR 200.405: Cost is allocable as it directly benefits the grant objective of math proficiency"
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics (Force vectors, Gravity, Potential Energy).",
+        "technology": "Safety harness material science (Tensile strength).",
+        "engineering": "Structural Engineering (Trusses), Mechanical Engineering (Pulleys).",
+        "math": "Trigonometry (SOH CAH TOA), Geometry.",
+        "crossCurricularLinks": [
+          "Architecture",
+          "Construction Science"
+        ]
+      },
+      "careerPathways": [
+        "Civil Engineer",
+        "Structural Engineer",
+        "Land Surveyor",
+        "Architect"
+      ],
+      "collegePathways": [
+        "B.S. Civil Engineering",
+        "B.S. Construction Management",
+        "B.S. Mathematics",
+        "B. Architecture"
+      ]
+    }
+  ]
+}

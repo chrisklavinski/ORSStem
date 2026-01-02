@@ -1,0 +1,410 @@
+{
+  "curriculumTitle": "Seeing the Invisible: Thermodynamics and Energy Auditing with Thermal Imaging",
+  "overview": "This curriculum leverages the Bosch GTC400C Thermal Camera to immerse students in the principles of thermodynamics, electromagnetic radiation, and energy efficiency. Students will move beyond textbook theory to perform real-world investigations: visualizing heat transfer, conducting building energy audits, and inspecting electrical systems. Designed for Upward Bound (UB) and UBMS programs, this module aligns with Texas TEKS for Physics and Engineering while strictly adhering to federal TRIO grant compliance for allowable costs and services.",
+  "prerequisites": "Students should have a general understanding of the states of matter and basic algebra (understanding variables). Familiarity with the concept of energy transfer (kinetic vs. potential) is helpful but will be reinforced.",
+  "targetAgeGroup": "High School (Ages 14-18)",
+  "totalDurationEstimate": "6-8 Hours (Split over 3-4 sessions)",
+  "fieldTrips": [
+    {
+      "name": "Perot Museum of Nature and Science - Engineering and Innovation Hall",
+      "location": "Dallas, TX",
+      "description": "A world-class museum featuring interactive exhibits on engineering, energy, and physics.",
+      "relevanceToCurriculum": "Students can explore the 'Being Human' and 'Engineering' halls to see practical applications of sensor technology and heat transfer in biological and mechanical systems."
+    },
+    {
+      "name": "Botanical Research Institute of Texas (BRIT)",
+      "location": "Fort Worth, TX",
+      "description": "An international scientific research and learning center housed in a LEED Platinum certified building.",
+      "relevanceToCurriculum": "The building itself is a case study in thermal efficiency. Students can view the living roof and geothermal systems, discussing how thermal imaging verifies the efficiency of these sustainable designs."
+    },
+    {
+      "name": "UTA Civil Engineering Laboratory (University of Texas at Arlington)",
+      "location": "Arlington, TX",
+      "description": "University research facility focusing on structural mechanics, materials, and sustainable infrastructure.",
+      "relevanceToCurriculum": "Connects the curriculum to higher education. Students can observe how engineers test construction materials for thermal expansion and insulation properties."
+    },
+    {
+      "name": "Oncor Electric Delivery - Training Center or Facility Tour",
+      "location": "Fort Worth or Dallas, TX",
+      "description": "Oncor manages the electric grid for much of North Texas. (Requires arranging a specific educational group tour).",
+      "relevanceToCurriculum": "Demonstrates the industrial application of thermal imaging (thermography) used by technicians to spot overheating transformers and grid components before failure."
+    },
+    {
+      "name": "Dallas College - Construction Management Center (North Lake Campus)",
+      "location": "Irving, TX",
+      "description": "A higher education facility dedicated to construction trades, HVAC, and building technologies.",
+      "relevanceToCurriculum": "Direct connection to the 'Energy Auditor' career pathway. Students see commercial HVAC systems where thermal cameras are daily diagnostic tools."
+    },
+    {
+      "name": "Fort Worth Museum of Science and History - Energy Blast",
+      "location": "Fort Worth, TX",
+      "description": "An exhibit dedicated to regional energy resources, alternative energy, and physics.",
+      "relevanceToCurriculum": "Provides context on energy generation and the importance of conservation/efficiency, which students analyze using the thermal cameras."
+    }
+  ],
+  "activities": [
+    {
+      "title": "Module 1: The Electromagnetic Spectrum & Thermal Visualization",
+      "description": "Students are introduced to the Bosch GTC400C to visualize the invisible. They will explore the difference between visible light and infrared radiation through a series of 'mystery item' temperature challenges.",
+      "timeRequired": "90 Minutes",
+      "difficultyLevel": "Introductory",
+      "requiredSkills": [
+        "Observation and data recording",
+        "Basic computer skills (connecting USB to retrieve images)",
+        "Team collaboration"
+      ],
+      "learningObjectives": [
+        "Define the electromagnetic spectrum and locate Infrared (IR) radiation within it.",
+        "Demonstrate proper operation and calibration of the Bosch GTC400C.",
+        "Differentiate between temperature (intensity) and heat (transfer of energy)."
+      ],
+      "teks": [
+        "Physics 7.A: Examine and describe the electromagnetic spectrum.",
+        "Physics 7.B: Explain the behavior of electromagnetic waves.",
+        "Science Skills 2.A: Know the definition of science and understand that it has limitations."
+      ],
+      "texasStemStandards": [
+        "Science 1.A: Apply the scientific process.",
+        "Technology 4.A: Use technology tools to analyze data."
+      ],
+      "materialsList": [
+        {
+          "item": "Bosch GTC400C Thermal Camera (1 per group of 3-4)",
+          "estimatedCost": "$399.00"
+        },
+        {
+          "item": "Ice cubes and warm water",
+          "estimatedCost": "$5.00"
+        },
+        {
+          "item": "Black plastic trash bags (opaque to visible light, transparent to IR)",
+          "estimatedCost": "$10.00"
+        },
+        {
+          "item": "Various materials (aluminum foil, wood, brick samples)",
+          "estimatedCost": "$0.00 (Scrap)"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Introduce the concept of the Electromagnetic Spectrum.",
+          "2. Demonstrate the Bosch GTC400C safety and basic operation.",
+          "3. Have students look at a 'mystery object' (warm hand) behind a black trash bag using the camera.",
+          "4. Distribute cameras to groups; have them capture images of ice vs. hot water.",
+          "5. Guide discussion on Emissivity (reflective vs. matte surfaces).",
+          "6. Wrap up with image export demonstration."
+        ],
+        "detailed": [
+          "Step 1: Introduction to Light (15 mins) - Project an image of the EM spectrum. Ask students what 'Heat' looks like. Explain that thermal cameras translate IR radiation (invisible) into visible colors.",
+          "Step 2: The Magic Trick (10 mins) - Hold a black trash bag up. Ask if students can see through it. Put your hand behind it. Ask again. Turn on the Thermal Camera connected to the projector/screen. Show that IR passes through the plastic even though visible light does not. This is the 'Hook'.",
+          "Step 3: Equipment Safety & Setup (10 mins) - Distribute Bosch GTC400C units. Strict rule: NEVER point the thermal sensor at the sun or high-power lasers (it damages the sensor). Show how to flip the cover and insert the 12V battery.",
+          "Step 4: Exploration Station (30 mins) - Have stations set up: Station A (Ice water vs Hot water), Station B (Friction - rub hands together then touch table), Station C (Reflections - look at a shiny metal sheet vs wood). Discussion Prompt: 'Why does the metal reflection look 'cold' even if the metal is room temp?' (Answer: It is reflecting the cold room temperature, low emissivity).",
+          "Step 5: Analysis (15 mins) - Have students use the 'Freeze' button to save their best image. Connect via USB or Wifi to download one image per group.",
+          "Step 6: Debrief (10 mins) - Check for understanding: 'Does the camera see temperature or radiation?' (Radiation). Troubleshooting: If images are blurry, ensure they are at least 1 meter away from the target (fixed focus limitations)."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. Insert battery and remove lens cap from the camera.",
+          "2. Point camera at the 'Mystery Station' (black bag) and record observations.",
+          "3. Visit Station A, B, and C. Take one clear thermal photo at each.",
+          "4. Connect camera via USB to the laptop.",
+          "5. Save your favorite image to the shared drive folder."
+        ],
+        "detailed": [
+          "1. **Startup:** Insert the 12V battery pack into the handle. Press the red power button. Wait for the calibration shutter (you will hear a click - this is normal).",
+          "2. **The Invisible Hand:** At the teacher's desk, look at the black plastic sheet through the camera screen. Can you identify the object behind it? Why do you think the camera sees it but your eyes don't?",
+          "3. **Friction Test:** Place your hand firmly on your desk for 30 seconds. Remove your hand. Immediately take a thermal photo of the desk surface. How long does the 'heat signature' last?",
+          "4. **Material Test:** Look at the aluminum foil. Does it show the temperature of the foil, or is it acting like a mirror? Compare this to the wood block.",
+          "5. **Capture:** Press the trigger to freeze an image. Press the center button to save it.",
+          "6. **Data Transfer:** Connect the USB cable. Open the drive on the computer. Copy your friction test image to the class folder named 'Group_X_Friction'."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Instruction in reading, writing, study skills, mathematics, science, and other subjects.",
+          "Exposure to academic programs and cultural events."
+        ],
+        "allowableCosts": [
+          "Equipment and Supplies (Cameras) necessary for the educational program.",
+          "Computer access for data processing."
+        ],
+        "programType": "Both",
+        "justification": "This activity provides rigorous academic instruction in Physics (EM Spectrum) and introduces laboratory instrumentation skills required for postsecondary STEM majors.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction in... science.",
+          "HEA Sec. 402C(b)(2): Personal counseling for academic advice (via STEM exposure)."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1): Services - Academic instruction in mathematics, laboratory science...",
+          "34 CFR 645.11(a)(6): Education or counseling services designed to improve... financial and economic literacy (via career exposure)."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies costs, including costs of computing devices.",
+          "2 CFR 200.403: Factors affecting allowability of costs (Necessary and Reasonable)."
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics: Electromagnetic spectrum, Infrared radiation behavior, Emissivity.",
+        "technology": "Imaging sensors, Digital signal processing, WiFi data transfer.",
+        "engineering": "Sensor calibration, Material science (thermal properties).",
+        "math": "Geometry (angles of reflection), Temperature scales (Celsius/Fahrenheit conversion).",
+        "crossCurricularLinks": [
+          "Computer Science (Image formats/Data)",
+          "Art (Color theory/Visual spectrum)"
+        ]
+      },
+      "careerPathways": [
+        "Thermographer",
+        "Nondestructive Testing (NDT) Technician",
+        "Photonics Engineer"
+      ],
+      "collegePathways": [
+        "B.S. Physics",
+        "B.S. Electrical Engineering",
+        "Optical Engineering"
+      ]
+    },
+    {
+      "title": "Module 2: The Energy Audit (Engineering & Environmental Science)",
+      "description": "Students act as 'Energy Auditors' to inspect the school building or classroom. They will identify thermal bridges (insulation gaps), air leaks around windows, and HVAC efficiency.",
+      "timeRequired": "120 Minutes",
+      "difficultyLevel": "Intermediate",
+      "requiredSkills": [
+        "Understanding of conduction and convection",
+        "Ability to calculate difference (subtraction)",
+        "Critical thinking/Hypothesis generation"
+      ],
+      "learningObjectives": [
+        "Identify modes of heat transfer (Conduction, Convection, Radiation) in a real-world setting.",
+        "Calculate Delta T (ΔT) to determine the severity of energy loss.",
+        "Propose engineering solutions to improve building energy efficiency."
+      ],
+      "teks": [
+        "Physics 6.A: Analyze the macroscopic definition of thermal energy.",
+        "Env. Systems 5.B: Identify energy sources and conservation methods.",
+        "Eng. Design & Problem Solving 5.A: Identify and define a problem."
+      ],
+      "texasStemStandards": [
+        "Engineering 2.B: Apply engineering design process.",
+        "Math 3.A: Formulate and solve problems."
+      ],
+      "materialsList": [
+        {
+          "item": "Bosch GTC400C Thermal Camera",
+          "estimatedCost": "(Reused)"
+        },
+        {
+          "item": "Blue painters tape (to mark measurement spots)",
+          "estimatedCost": "$6.00"
+        },
+        {
+          "item": "Clipboards and Audit Sheets (printed)",
+          "estimatedCost": "$2.00"
+        },
+        {
+          "item": "Hairdryer (to simulate heat leak if weather is mild)",
+          "estimatedCost": "$20.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Review heat transfer: Conduction (touch), Convection (air flow), Radiation.",
+          "2. Define 'Delta T' (Difference in temperature).",
+          "3. Assign student teams to specific 'zones' (Windows, Doorways, Vents, Exterior Walls).",
+          "4. Release teams to scan their zones and record Hot/Cold spots.",
+          "5. Have teams mark significant leaks with blue tape.",
+          "6. Regroup and have students propose solutions (caulk, insulation, double-paned glass)."
+        ],
+        "detailed": [
+          "Step 1: Theory - Heat Transfer (20 mins) - Use the whiteboard. Draw a wall section. Explain 'Thermal Bridging' (where studs conduct heat faster than insulation). Explain that energy moves from High to Low temperature. If it's hot outside and cool inside, we look for HEAT coming in.",
+          "Step 2: The Mission (10 mins) - Tell students they are now 'Energy Engineers.' Their job is to save the school money on electricity. Hand out the 'Audit Log'.",
+          "Step 3: Zone Assignments (5 mins) - Divide class. Group A: Windows. Group B: HVAC Vents/Ceiling. Group C: Electrical Outlets/Exterior Walls. Group D: Doors.",
+          "Step 4: The Sweep (45 mins) - Walk with students. Guide them to look for color gradients. A sharp line usually means a draft or lack of insulation. Ask: 'Is that blue spot a water leak or just cold air?' (Evaporation causes cooling). Troubleshooting: If the room is isothermal (same temp everywhere), use the hairdryer to heat a spot on the wall to simulate a 'hot day' exterior for demonstration.",
+          "Step 5: Data Analysis (20 mins) - Teams calculate the ΔT for their worst spot. (Spot Temp - Room Ambient Temp).",
+          "Step 6: Engineering Proposal (20 mins) - Each group presents one 'fix' (e.g., 'We need weather stripping on the North door')."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. Form teams and take your clipboard/Audit Log.",
+          "2. Measure the 'Ambient' temperature (aim camera at center of room wall) and record it.",
+          "3. Scan your assigned zone slowly.",
+          "4. Identify the spot with the biggest color difference compared to the room.",
+          "5. Lock the image, record the temperature of the 'Hot/Cold' spot.",
+          "6. Calculate ΔT (Spot Temp minus Ambient Temp).",
+          "7. Write down a recommended fix for this energy leak."
+        ],
+        "detailed": [
+          "1. **Baseline:** Point the camera at an interior wall away from windows. Note the temperature displayed in the top left corner. This is your **Ambient Room Temperature**. Write it down.",
+          "2. **Scanning:** Move the camera slowly across your assigned area (e.g., the window frame). Look for changes in color. Blue usually means cold/draft; Red/White means heat infiltration.",
+          "3. **Detection:** Find the spot with the most extreme color change. Use the crosshair on the screen to measure that specific point.",
+          "4. **Calculation:** Subtract the Ambient Temp from your Spot Temp to get **Delta T**. \n   *Example: Spot (85°F) - Ambient (72°F) = ΔT of 13°F.*",
+          "5. **Documentation:** Take a photo. Use blue tape to mark the physical location (do not put tape on the glass, only frames).",
+          "6. **Engineering Solution:** Discuss with your team. Is air coming through? You might need **weather stripping**. Is the whole window hot? You might need **Low-E coatings** or blinds."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Exposure to Engineering and Architecture careers.",
+          "Instruction in Mathematics (Delta T calculation, data analysis)."
+        ],
+        "allowableCosts": [
+          "Field trip transportation (if auditing a partner facility).",
+          "Printing costs for audit sheets.",
+          "Instructional supplies."
+        ],
+        "programType": "UBMS",
+        "justification": "This activity focuses on Environmental Science and Civil/Mechanical Engineering, core components of the UBMS mandate.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction in mathematics and science.",
+          "HEA Sec. 402C(b)(4): Guidance on secondary school reentry or alternative education (Vocational pathways)."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1): Academic instruction...",
+          "34 CFR 645.11(b): Allowable services - Career awareness."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Materials and supplies.",
+          "2 CFR 200.461: Publication and printing costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Environmental Science: Energy conservation, Thermodynamics.",
+        "technology": "Data visualization software.",
+        "engineering": "Building Envelope analysis, HVAC system design.",
+        "math": "Algebra (Variables and differences), Statistics (Average temperature).",
+        "crossCurricularLinks": [
+          "Economics (Cost of energy waste)",
+          "Civics (Sustainability regulations)"
+        ]
+      },
+      "careerPathways": [
+        "Energy Auditor",
+        "HVAC Technician",
+        "LEED Accredited Professional"
+      ],
+      "collegePathways": [
+        "B.S. Civil Engineering",
+        "B.S. Environmental Science",
+        "A.A.S. Construction Management"
+      ]
+    },
+    {
+      "title": "Module 3: Circuit Safety & Electrical Inspection",
+      "description": "Students explore the relationship between electrical resistance and heat. They will safely inspect low-voltage circuits or power strips to identify 'overloaded' components using thermal imaging.",
+      "timeRequired": "60 Minutes",
+      "difficultyLevel": "Advanced",
+      "requiredSkills": [
+        "Basic knowledge of circuits (Voltage, Current, Resistance)",
+        "Safety awareness (Electrical hazards)",
+        "Pattern recognition"
+      ],
+      "learningObjectives": [
+        "Correlate electrical resistance and current flow with heat generation (Joule Heating).",
+        "Identify potential electrical hazards (overheating components) using non-contact tools.",
+        "Understand the role of predictive maintenance in industry."
+      ],
+      "teks": [
+        "Physics 5.F: Design, construct, and calculate in terms of current... and resistance.",
+        "Physics 6.B: Investigate and demonstrate the movement of thermal energy."
+      ],
+      "texasStemStandards": [
+        "Science 2.A: Know that scientific hypotheses are tentative and testable.",
+        "Engineering 4.D: Document the design process."
+      ],
+      "materialsList": [
+        {
+          "item": "Bosch GTC400C Thermal Camera",
+          "estimatedCost": "(Reused)"
+        },
+        {
+          "item": "Power strip with multiple chargers plugged in (Phone, Laptop)",
+          "estimatedCost": "$0.00 (Bring from home)"
+        },
+        {
+          "item": "Incandescent bulb vs LED bulb lamp setup",
+          "estimatedCost": "$15.00"
+        }
+      ],
+      "teacherInstructions": {
+        "brief": [
+          "1. Safety Briefing: Do not touch bare wires. We are observing ONLY.",
+          "2. Explain Joule Heating: Electricity moving through resistance creates heat.",
+          "3. Set up comparison: LED bulb vs Incandescent bulb.",
+          "4. Have students image both and compare temperatures.",
+          "5. Have students image a laptop charger block after it has been plugged in for 30 mins.",
+          "6. Discuss 'Predictive Maintenance' in factories."
+        ],
+        "detailed": [
+          "Step 1: Safety First (5 mins) - Emphasize that thermal cameras allow us to inspect dangerous high-voltage equipment from a SAFE distance. We never open electrical panels, we look at the surface.",
+          "Step 2: Physics Concept (10 mins) - Introduce Joule Heating ($P = I^2R$). Explain that as electrons bump into atoms in a wire, they create heat. Loose connections create MORE resistance, which creates MORE heat, which causes fires.",
+          "Step 3: The Light Bulb Challenge (15 mins) - Turn on an LED lamp and an Incandescent lamp. Wait 2 minutes. Ask students to predict which is hotter. Use the camera to verify. Discuss efficiency (Heat = Wasted Energy in a lightbulb).",
+          "Step 4: The Load Test (20 mins) - Plug a laptop charger and a phone charger into a power strip. Let them run for a while. Have students scan the power strip. Ask: 'Why is the transformer block hot?' (Voltage conversion creates heat).",
+          "Step 5: Career Connection (10 mins) - Explain that factories pay people to walk around with these cameras to find motors or breakers that are about to explode. This is called 'Predictive Maintenance'."
+        ]
+      },
+      "studentInstructions": {
+        "brief": [
+          "1. Maintain a safe distance from all electrical outlets.",
+          "2. Scan the LED bulb and the Incandescent bulb.",
+          "3. Record the max temperature of both.",
+          "4. Scan the power strip and charger blocks.",
+          "5. Identify the hottest component in the circuit.",
+          "6. Complete the 'Safety Report' worksheet."
+        ],
+        "detailed": [
+          "1. **Setup:** Ensure the camera is calibrated (point at floor, let it click).",
+          "2. **Bulb Comparison:** Aim at the Incandescent bulb. Note the temperature. Aim at the LED. Note the temperature. \n   *Question: If both give the same amount of light, where is the extra energy in the incandescent bulb going?*",
+          "3. **Circuit Audit:** Look at the power strip where the laptop is plugged in. Look at the cord itself vs. the brick/block.",
+          "4. **Hot Spots:** Does the plug look hotter than the wire? If a plug is very hot, it might mean the connection inside is loose (High Resistance).",
+          "5. **Report:** Sketch the power strip and color in where the heat was highest. Explain why you think that area was hot."
+        ]
+      },
+      "trioCompliance": {
+        "allowableServices": [
+          "Mentoring programs involving elementary or secondary school teachers or faculty members at institutions of higher education.",
+          "Workshops and counseling services on career options."
+        ],
+        "allowableCosts": [
+          "Equipment usage.",
+          "Instructional staff time."
+        ],
+        "programType": "UB",
+        "justification": "Connects physics theory to high-demand vocational and engineering careers.",
+        "heaRequirements": [
+          "HEA Sec. 402C(b)(1): Academic instruction.",
+          "HEA Sec. 402C(b)(4): Guidance on... alternative education programs (Vocational)."
+        ],
+        "cfrCitations": [
+          "34 CFR 645.11(a)(1): Academic instruction in... laboratory science.",
+          "34 CFR 645.11(b)(1): Career interest inventories and workshops."
+        ],
+        "edgarCitations": [
+          "2 CFR 200.453: Supplies.",
+          "2 CFR 200.405: Allocable costs."
+        ]
+      },
+      "stemConnections": {
+        "science": "Physics: Electricity, Joule Heating, Resistance.",
+        "technology": "Thermal sensors in industrial maintenance.",
+        "engineering": "Electrical Engineering, Safety Engineering.",
+        "math": "Algebra (Ohm's Law, Power formulas).",
+        "crossCurricularLinks": [
+          "Industrial Safety",
+          "Sustainability"
+        ]
+      },
+      "careerPathways": [
+        "Electrical Technician",
+        "Facilities Manager",
+        "Safety Inspector"
+      ],
+      "collegePathways": [
+        "B.S. Electrical Engineering",
+        "A.A.S. Electrical Technology",
+        "Occupational Safety and Health"
+      ]
+    }
+  ]
+}

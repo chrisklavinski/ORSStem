@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PinStack STEM: Physics & Physiology in Action - Master STEM Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1e293b; }
+        .page-break { page-break-before: always; }
+        .avoid-break { break-inside: avoid; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab-btn.active { background-color: #4f46e5; color: white; border-color: #4f46e5; }
+        
+        /* Workbook specific styles */
+        .wb-checklist-item { display: flex; align-items: flex-start; margin-bottom: 12px; }
+        .wb-checkbox { width: 18px; height: 18px; border: 2px solid #cbd5e1; border-radius: 4px; margin-right: 12px; flex-shrink: 0; margin-top: 3px; }
+        .wb-box { background: #f8fafc; border: 1px solid #e2e8f0; padding: 20px; border-radius: 8px; font-size: 14px; }
+        
+        @media print {
+            body { background-color: white; }
+            .no-print { display: none !important; }
+            .tab-content { display: none !important; }
+            .tab-content.active { display: block !important; }
+            /* If user hits print, we want to respect the current tab, or maybe provide a print-all option. 
+               For simplicity, we print the active tab. */
+        }
+    </style>
+    <script>
+        function switchTab(id) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById('btn-' + id).classList.add('active');
+        }
+        function toggleSection(id) {
+            const content = document.getElementById('content-' + id);
+            const chevron = document.getElementById('chevron-' + id);
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                chevron.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                chevron.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</head>
+<body class="py-8 px-4 md:px-8 max-w-7xl mx-auto">
+    <!-- Navigation Tabs -->
+    <div class="flex justify-center mb-8 no-print sticky top-4 z-50">
+        <div class="bg-white p-2 rounded-2xl shadow-lg border border-gray-200 flex gap-2">
+            <button id="btn-guide" onclick="switchTab('guide')" class="tab-btn active px-6 py-2 rounded-xl font-bold text-sm text-slate-600 hover:bg-slate-50 border border-transparent transition-all">Master Guide</button>
+            <button id="btn-workbook" onclick="switchTab('workbook')" class="tab-btn px-6 py-2 rounded-xl font-bold text-sm text-slate-600 hover:bg-slate-50 border border-transparent transition-all">Teacher Workbook</button>
+            <button id="btn-narrative" onclick="switchTab('narrative')" class="tab-btn px-6 py-2 rounded-xl font-bold text-sm text-slate-600 hover:bg-slate-50 border border-transparent transition-all">Grant Narrative</button>
+        </div>
+    </div>
+
+    <!-- TAB 1: MASTER GUIDE -->
+    <div id="guide" class="tab-content active">
+        <header class="mb-8 text-center border-b-4 border-indigo-600 pb-12">
+            <div class="inline-block px-4 py-1 mb-4 bg-indigo-50 text-indigo-700 text-xs font-black uppercase tracking-widest rounded-full">STEM Architect Master Guide</div>
+            <h1 class="text-5xl font-black text-slate-900 mb-6">PinStack STEM: Physics & Physiology in Action</h1>
+            <p class="text-2xl text-slate-500 font-medium max-w-4xl mx-auto leading-relaxed mb-8">A rigorous, federal grant-compliant STEM curriculum designed for Upward Bound (UB) and UB Math & Science (UBMS) programs. This field curriculum utilizes the controlled environments of PinStack facilities (Bowling Lanes, Laser Tag Arena, High Ropes Course) as active physics and biology laboratories. The curriculum is structured to justify costs under 2 CFR 200 by transforming recreational equipment into scientific apparatus for measuring momentum, friction, infrared signal processing, and physiological stress responses. It aligns directly with Texas TEKS and federal objectives to improve standardized test performance in Math and Science.</p>
+            <div class="flex justify-center gap-6 text-sm font-bold text-slate-400 uppercase tracking-widest">
+                <span>Target: High School (Grades 9-12)</span>
+                <span>&bull;</span>
+                <span>Total Time: 5.5 Hours (1 hour classroom prep, 3.5 hours on-site, 1 hour post-trip analysis)</span>
+                <span>&bull;</span>
+                <span>Est. Cost: $112.50</span>
+            </div>
+        </header>
+
+        
+        <div class="mb-12 page-break">
+            <div class="bg-indigo-900 rounded-[2.5rem] p-12 text-white shadow-2xl relative overflow-hidden">
+                <h2 class="text-3xl font-black mb-8 flex items-center gap-4 border-b border-indigo-700 pb-4"><span>🚌</span> Field Expeditions (60mi Radius)</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <div class="bg-white/10 p-6 rounded-3xl border border-white/10 backdrop-blur-sm">
+                        <h3 class="text-xl font-bold text-white mb-1">PinStack (Las Colinas or Plano)</h3>
+                        <div class="text-xs font-bold uppercase tracking-widest text-indigo-300 mb-4 flex items-center gap-2"><span>📍</span> 635 N 121 Toll Rd, Lewisville, TX 75067 (Las Colinas) OR 6205 Dallas Pkwy, Plano, TX 75024</div>
+                        <p class="text-sm text-indigo-100 mb-4 leading-relaxed">A multi-venue facility containing regulation bowling lanes, a two-level laser tag arena, and a high ropes course suspended above the arcade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-y-8">
+            
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(0)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">1</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Rolling with Physics: Momentum & Friction on the Lanes</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 1.5 Hours</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-0" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-0" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students transform bowling lanes into Newtonian physics labs. They calculate average velocity, estimate the coefficient of kinetic friction based on oil pattern deceleration, and calculate momentum transfers (impulse) during pin impact.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Calculate average velocity using distance/time intervals.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Analyze conservation of momentum (p=mv) during ball-pin collisions.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Differentiate between static and kinetic friction on oiled surfaces.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Calculate Kinetic Energy (KE = 1/2mv^2) of the projectile.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Stopwatches or Phones with precision timers</span><span class="text-slate-400 font-mono text-xs">$0 (Student Provided)</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Digital Scales (to verify ball mass)</span><span class="text-slate-400 font-mono text-xs">$25 (One per group)</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Lane Rental Fees (Educational Rate)</span><span class="text-slate-400 font-mono text-xs">$20 per student</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Printed Data Collection Packets</span><span class="text-slate-400 font-mono text-xs">$0.50 per student</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in laboratory science, Exposure to academic programs</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">HEA Sec 402C(b)(1): Instruction in mathematics and science, HEA Sec 402C(b)(12): Education or counseling services designed to improve the financial and economic literacy of students, 34 CFR 645.11(a)(1): Curriculum includes math and science, 34 CFR 645.11(b): UBMS specific requirement for hands-on exposure to science, 2 CFR 200.403: Costs must be necessary and reasonable, 2 CFR 200.404: Reasonable costs for educational field experiences, 2 CFR 200.405: Costs are allocable to the Federal award based on relative benefit</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Contact PinStack Events to secure the 'Educational/Non-Profit' rate.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Pre-Trip: Review the formula for Momentum (p=mv) and Kinetic Energy (KE=0.5mv^2).</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">On-site: Instruct students to weigh their chosen house balls using the digital scale to convert lbs to kg.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">4.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Monitor students to ensure they are recording data, not just playing. The 'Bowler' must aim for consistency, not high scores.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(1)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">2</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">The Physiology of Adrenaline: Laser Tag Biometrics</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 1 Hour</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: UBMS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-1" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-1" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students wear heart rate monitors during Laser Tag sessions to analyze the physiological effects of acute stress (fight or flight). They also explore the physics of infrared light transmission and receiver technology.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Measure and graph heart rate recovery times.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Explain the sympathetic nervous system response ('fight or flight').</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Understand Infrared (IR) light properties on the Electromagnetic Spectrum.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Calculate target heart rate zones.</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Wrist-based Heart Rate Monitors (or student smartwatches)</span><span class="text-slate-400 font-mono text-xs">$0 (BYOD) or $30 unit</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Laser Tag Session Fee</span><span class="text-slate-400 font-mono text-xs">$15 per student</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in laboratory science (Biology/Anatomy), Instruction in mathematics (Data Analysis)</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">HEA Sec 402C(b): Services to improve academic performance in science, 34 CFR 645.11(b): Instruction in laboratory science, 34 CFR 645.11(a): Core curriculum instruction, 2 CFR 200.404: Costs incurred for a purpose common to the intended outcomes of the grant</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Explain that Laser Tag 'guns' are actually Infrared Emitters (like a TV remote), not actual lasers.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Have students record RHR while seated in the briefing room.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Instruct students to check their pulse/watch immediately upon the end-of-game buzzer.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">4.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Conduct a cool-down session where students record HR every 60 seconds for 5 minutes to graph the 'Recovery Curve'.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden page-break">
+                    <div onclick="toggleSection(2)" class="p-10 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-100 flex flex-col md:flex-row gap-6 items-start justify-between">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-16 h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg flex-shrink-0">3</div>
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900 mb-2">Vertical Engineering: Ropes Course Trigonometry</h2>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold uppercase text-slate-600">Duration: 1.5 Hours</span>
+                                    <span class="px-3 py-1 bg-indigo-100 rounded-lg text-xs font-bold uppercase text-indigo-700">TRIO: Both</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-slate-100 rounded-full text-slate-400 no-print">
+                            <svg id="chevron-2" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div id="content-2" class="">
+                        <div class="p-12 pt-4">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium pl-6 border-l-4 border-slate-200 mb-12">Students use the High Ropes Course to study mechanical advantage (pulleys) and use trigonometry (clinometers) to calculate the height of obstacles without direct measurement.</p>
+                            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                                <div class="space-y-8">
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Learning Objectives</h3>
+                                        <ul class="space-y-2"><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Calculate height using clinometers and tangent ratios.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Analyze mechanical advantage in pulley/belay systems.</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Discuss structural load distribution (trusses).</li><li class="flex items-start gap-2 text-sm font-medium text-slate-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>Calculate Potential Energy (PE=mgh).</li></ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">Materials</h3>
+                                        <ul class="space-y-2"><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>DIY Clinometers (Protractor, straw, string, washer)</span><span class="text-slate-400 font-mono text-xs">$2 per student</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Long Tape Measure (100ft)</span><span class="text-slate-400 font-mono text-xs">$15</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Ropes Course Fee</span><span class="text-slate-400 font-mono text-xs">$20 per student</span></li><li class="flex justify-between text-sm border-b border-slate-100 pb-1"><span>Scientific Calculator</span><span class="text-slate-400 font-mono text-xs">$0 (School Provided)</span></li></ul>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                                    <h3 class="text-sm font-black uppercase tracking-widest text-indigo-400 mb-6 border-b border-white/10 pb-4">Federal Compliance</h3>
+                                    <div class="space-y-4 text-xs">
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Allowable Services</span><div class="mt-1 opacity-80">Instruction in mathematics (Geometry/Trig), Instruction in laboratory science (Physics)</div></div>
+                                        <div><span class="text-[10px] font-bold text-slate-400 uppercase">Citations</span><div class="mt-1 opacity-80">HEA Sec 402C(b): Instruction in mathematics, 34 CFR 645.11(a)(1): Connections to high school graduation requirements (Geometry), 34 CFR 645.11(b): UBMS focus on mathematics, 2 CFR 200.404: Reasonable cost given the specialized equipment (ropes course) required for the lesson, 2 CFR 200.405: Cost is allocable as it directly benefits the grant objective of math proficiency</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-12 border-t border-slate-100 pt-12">
+                                <div><h3 class="text-xl font-black text-slate-900 mb-6">Teacher Guide</h3><div class="space-y-4"><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">1.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Ensure all students have signed waivers for the ropes course.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">2.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Pre-Activity: Teach the usage of a clinometer to find the angle of elevation.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">3.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Designate a specific vertical beam or platform on the course as the 'Target'.</p></div><div class="flex gap-4"><span class="font-bold text-slate-300 text-sm w-6 text-right pt-0.5">4.</span><p class="text-slate-700 text-sm font-medium leading-relaxed max-w-4xl">Discuss the belay system: Point out the pulley. Ask students if it is fixed or movable (mechanical advantage).</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+        </div>
+    </div>
+
+    <!-- TAB 2: TEACHER WORKBOOK -->
+    <div id="workbook" class="tab-content max-w-4xl mx-auto">
+        <div class="text-center py-20 border-b-2 border-slate-900 mb-12">
+            <div class="text-xs font-black uppercase tracking-[0.3em] text-slate-400 mb-4">Official Workbook</div>
+            <h1 class="text-4xl font-black text-slate-900 mb-4">PinStack STEM: Physics & Physiology in Action</h1>
+            <p class="text-lg font-serif italic text-slate-500">Instructor Checklists & Facilitation Notes</p>
+        </div>
+        
+        
+        <div class="mb-16">
+            <h2 class="text-2xl font-black text-slate-900 mb-6 border-b border-slate-200 pb-2">Field Expeditions Checklist</h2>
+            
+            <div class="wb-box mb-4 bg-white border-l-4 border-amber-500">
+                <div class="font-bold text-lg text-slate-900">PinStack (Las Colinas or Plano)</div>
+                <div class="text-xs font-bold uppercase text-amber-600 mb-2">635 N 121 Toll Rd, Lewisville, TX 75067 (Las Colinas) OR 6205 Dallas Pkwy, Plano, TX 75024</div>
+                <p class="text-sm text-slate-600">A multi-venue facility containing regulation bowling lanes, a two-level laser tag arena, and a high ropes course suspended above the arcade.</p>
+            </div>
+        </div>
+
+        
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 1</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Rolling with Physics: Momentum & Friction on the Lanes</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 1.5 Hours</span>
+                        <span>📊 Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Stopwatches or Phones with precision timers</div><div class="text-xs text-slate-500">Est: $0 (Student Provided)</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Digital Scales (to verify ball mass)</div><div class="text-xs text-slate-500">Est: $25 (One per group)</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Lane Rental Fees (Educational Rate)</div><div class="text-xs text-slate-500">Est: $20 per student</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Printed Data Collection Packets</div><div class="text-xs text-slate-500">Est: $0.50 per student</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Calculate average velocity using distance/time intervals.</li><li>Analyze conservation of momentum (p=mv) during ball-pin collisions.</li><li>Differentiate between static and kinetic friction on oiled surfaces.</li><li>Calculate Kinetic Energy (KE = 1/2mv^2) of the projectile.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Contact PinStack Events to secure the 'Educational/Non-Profit' rate.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Pre-Trip: Review the formula for Momentum (p=mv) and Kinetic Energy (KE=0.5mv^2).</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">On-site: Instruct students to weigh their chosen house balls using the digital scale to convert lbs to kg.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">04</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Monitor students to ensure they are recording data, not just playing. The 'Bowler' must aim for consistency, not high scores.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 2</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">The Physiology of Adrenaline: Laser Tag Biometrics</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 1 Hour</span>
+                        <span>📊 Beginner</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Wrist-based Heart Rate Monitors (or student smartwatches)</div><div class="text-xs text-slate-500">Est: $0 (BYOD) or $30 unit</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Laser Tag Session Fee</div><div class="text-xs text-slate-500">Est: $15 per student</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Measure and graph heart rate recovery times.</li><li>Explain the sympathetic nervous system response ('fight or flight').</li><li>Understand Infrared (IR) light properties on the Electromagnetic Spectrum.</li><li>Calculate target heart rate zones.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Explain that Laser Tag 'guns' are actually Infrared Emitters (like a TV remote), not actual lasers.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Have students record RHR while seated in the briefing room.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Instruct students to check their pulse/watch immediately upon the end-of-game buzzer.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">04</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Conduct a cool-down session where students record HR every 60 seconds for 5 minutes to graph the 'Recovery Curve'.</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+            <div class="mb-16 page-break">
+                <div class="border-b-4 border-slate-900 pb-4 mb-8">
+                    <span class="text-xs font-black uppercase text-slate-500 tracking-widest">Module 3</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-1">Vertical Engineering: Ropes Course Trigonometry</h2>
+                    <div class="flex gap-4 mt-2 text-sm font-bold text-slate-500">
+                        <span>⏱ 1.5 Hours</span>
+                        <span>📊 Advanced</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-8">
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Prep Checklist</h3>
+                        <div class="wb-box">
+                            <div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">DIY Clinometers (Protractor, straw, string, washer)</div><div class="text-xs text-slate-500">Est: $2 per student</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Long Tape Measure (100ft)</div><div class="text-xs text-slate-500">Est: $15</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Ropes Course Fee</div><div class="text-xs text-slate-500">Est: $20 per student</div></div></div><div class="wb-checklist-item"><div class="wb-checkbox"></div><div><div class="font-bold text-sm">Scientific Calculator</div><div class="text-xs text-slate-500">Est: $0 (School Provided)</div></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Objectives</h3>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-slate-700">
+                            <li>Calculate height using clinometers and tangent ratios.</li><li>Analyze mechanical advantage in pulley/belay systems.</li><li>Discuss structural load distribution (trusses).</li><li>Calculate Potential Energy (PE=mgh).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-sm font-black uppercase border-b border-slate-300 pb-2 mb-4">Facilitation Roadmap</h3>
+                    <div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">01</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Ensure all students have signed waivers for the ropes course.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">02</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Pre-Activity: Teach the usage of a clinometer to find the angle of elevation.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">03</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Designate a specific vertical beam or platform on the course as the 'Target'.</p></div><div class="flex gap-4 mb-4"><span class="font-black text-xs text-slate-400 w-6 pt-1">04</span><p class="text-sm text-slate-800 font-serif leading-relaxed">Discuss the belay system: Point out the pulley. Ask students if it is fixed or movable (mechanical advantage).</p></div>
+                </div>
+
+                <div class="wb-box border-dashed border-slate-300 h-48">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Notes & Observations</div>
+                </div>
+            </div>
+    </div>
+
+    <!-- TAB 3: GRANT NARRATIVE -->
+    <div id="narrative" class="tab-content max-w-3xl mx-auto font-serif leading-relaxed text-slate-800">
+        <div class="py-12">
+            <h1 class="font-sans text-3xl font-black text-slate-900 mb-8 border-b-2 border-slate-900 pb-4">Curriculum Narrative Document: PinStack STEM: Physics & Physiology in Action</h1>
+            
+            <div class="mb-10">
+                <h2 class="font-sans text-lg font-bold text-indigo-800 mb-4 uppercase tracking-widest">Executive Summary</h2>
+                <p class="bg-slate-50 p-6 rounded-lg border-l-4 border-indigo-200">PinStack STEM: Physics & Physiology in Action is a rigorous, multi-disciplinary field curriculum specifically engineered for Federal TRIO Upward Bound (UB) and Upward Bound Math & Science (UBMS) programs. This curriculum transforms high-capacity recreational facilities into active scientific laboratories, utilizing bowling lanes, laser tag arenas, and high ropes courses as apparatus for empirical data collection. By bridging the gap between theoretical classroom concepts and real-world kinetic environments, the program seeks to improve student proficiency in Texas TEKS-aligned Math and Science standards while providing exposure to high-growth STEM career pathways. The curriculum is designed to meet the highest standards of academic rigor, ensuring that all off-site activities are focused on measurable learning outcomes and data analysis.</p>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="font-sans text-lg font-bold text-indigo-800 mb-4 uppercase tracking-widest">Compliance & Alignment</h2>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-2">DOE TRIO Compliance Strategy</h3>
+                    <p>This curriculum is meticulously structured to comply with the Higher Education Act (HEA) Section 402C(b), which mandates instruction in mathematics and laboratory science for UB/UBMS projects. Per 34 CFR 645.11(a) and (b), the program provides direct academic instruction in core curriculum areas required for high school graduation and postsecondary success. To satisfy federal cost principles under EDGAR and 2 CFR 200, all associated costs—including facility rentals and instructional supplies—are justified as 'necessary and reasonable' (2 CFR 200.403-404). The program distinguishes itself from unallowable 'entertainment' or 'social' costs by requiring a documented pedagogical framework where equipment is utilized as scientific instrumentation, and costs are allocable (2 CFR 200.405) based on the direct benefit of increasing student competency in physics, biology, and trigonometry.</p>
+                </div>
+                <div>
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-2">Standards Alignment</h3>
+                    <p>The curriculum is mapped directly to the Texas Essential Knowledge and Skills (TEKS) for secondary education. Core alignments include Physics 4(A), 4(D), and 6(C) regarding Newtonian mechanics and conservation of momentum; Biology 10(A) concerning physiological regulation and homeostasis; and Geometry 9(A) regarding trigonometric ratios in right triangles. Additionally, the curriculum integrates Texas STEM Standards 1(A), 2(B), 3(A), and 4(B), emphasizing the engineering design process, technical communication, and critical thinking. This alignment ensures that participating students receive supplemental instruction that reinforces the state-mandated academic foundation required for the STAAR EOC assessments and college readiness.</p>
+                </div>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="font-sans text-lg font-bold text-indigo-800 mb-4 uppercase tracking-widest">Field Expeditions</h2>
+                <p>The instructional component takes place at PinStack facilities located in Las Colinas and Plano, Texas, situated within a 60-mile radius of Dallas, Tarrant, and Johnson counties. These venues provide unique, controlled environments that cannot be replicated in a traditional classroom setting: regulation-length bowling lanes provide the necessary distance for calculating friction coefficients of oiled surfaces; two-level laser tag arenas serve as dark-room laboratories for studying infrared electromagnetic waves; and suspended ropes courses provide the verticality required for clinometer-based triangulation and the study of mechanical advantage in pulley systems. These field experiences offer high-impact, hands-on laboratory science instruction that bridges the gap between abstract formulas and physical reality.</p>
+            </div>
+
+            <div class="mb-10">
+                <h2 class="font-sans text-lg font-bold text-indigo-800 mb-4 uppercase tracking-widest">Module Narratives</h2>
+                
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Rolling with Physics: Momentum & Friction on the Lanes</h3>
+                    <p class="text-sm text-slate-600">In this module, students transform bowling lanes into Newtonian physics laboratories to conduct high-level kinetic research. Participants utilize digital scales and precision timers to calculate average velocity and the momentum transfers (p=mv) occurring during ball-pin impacts. By analyzing the deceleration of various ball masses across oiled lane surfaces, students derive the coefficient of kinetic friction, moving beyond textbook definitions to empirical observation. This activity emphasizes career relevance in sports engineering and ballistics while maintaining academic rigor through complex data recording and the calculation of Kinetic Energy (KE = 1/2mv^2).</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">The Physiology of Adrenaline: Laser Tag Biometrics</h3>
+                    <p class="text-sm text-slate-600">This activity focuses on human biology and biotechnology through the lens of acute stress responses. Students utilize wearable heart rate monitors to track their biometric data during a high-activity laser tag session, mapping the sympathetic nervous system's 'fight or flight' response. Students are tasked with graphing their recovery curves to analyze how the body returns to homeostasis post-exertion. Furthermore, the module explores the physics of the electromagnetic spectrum, as students examine how infrared (IR) sensors and emitters facilitate signal processing, providing a dual-focus on biomedical engineering and optical physics.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-sans text-sm font-bold text-slate-900 mb-1">Vertical Engineering: Ropes Course Trigonometry</h3>
+                    <p class="text-sm text-slate-600">Utilizing the high ropes course as a structural case study, students apply advanced geometric and trigonometric principles to the built environment. Students construct and use clinometers to measure angles of elevation, applying the Tangent ratio to calculate the height of vertical structures without direct physical measurement. The narrative further explores mechanical engineering through the analysis of pulley-driven belay systems and the distribution of loads across triangular trusses. This module is designed to foster interest in civil and structural engineering by demonstrating the practical necessity of trigonometry in construction and safety design.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
